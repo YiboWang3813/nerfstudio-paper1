@@ -1,30 +1,13 @@
-# Real-time Viewer
+# For developers
 
-We provide a real-time viewer that can be used during training or to view a trained model. The purpose of the viewer is to be able to freely move the camera and see the reconstruction from novel viewpoints. It can also be used to draw various primitives (e.g., bounding boxes, camera frustums, etc.).
+The tutorial below shows you how to host the viewer yourself and how you can use it to visualize training.
 
-The viewer is built using [ThreeJS](https://threejs.org/) and packaged into a [ReactJS](https://reactjs.org/) application. This client viewer application will connect via a websocket to a server running on your machine. The following figure helps to illustrate how our viewer framework works:
-
-![visualize_dataset](media/viewer_figure.png)
-
-## Quick start
-
-WOP: This sections is not ready. Please proceed to the "For developers" section below.
-
-1. Open the Client App Viewer at ... `TODO(ethan): host the static website`.
-
-2. Run training script with viewer enabled. Note that you should only use the viewer with a fast pipeline, such as instant ngp.
-    ```shell
-    python scripts/run_train.py --config-name=graph_instant_ngp.yaml viewer.enable=True
-    ```
-
-<hr>
-
-## For developers
-
+(nerfactory_bridge)=
 #### Connection between nerfactory and the Bridge Server
 
 In the center, we have the Bridge Server, which facilitates the connection between nerfactory code and the Client App. This server runs on the same machine that you are using nerfactory. It has a TCP Request/Reply (REQ/REP) connection that nerfactory can connect to with the Viewer object (left). We use [ZeroMQ](https://zeromq.org/), an open-sourced messaging library, to implement this lightweight TCP connection. The Viewer class can send commands to the Bridge Server and receive replies. The Bridge Server will either dispatch commands to the Client App via a websocket or it will return information stored in the Bridge Server state.
 
+(bridge_client)=
 #### Connection between the Bridge Server and the Client App
 
 The connection between the Bridge Server and the Client App works with WebSockets and WebRTC.
@@ -33,8 +16,10 @@ The connection between the Bridge Server and the Client App works with WebSocket
 
 - **WebRTC connection** - We use WebRTC to stream images being rendered from nerfactory. The websocket connection if first used to establish the WebRTC connection. Then, the Client App constantly publishes camera pose information to the Bridge Server and stores the camera information (intrinsics and extrinsics). This information is then queried from the nerfactory code, used to render an image with some Graph, and then the image is send over the TCP connection and dispatched via WebRTC to render the stream of images.
 
+(getting_started)=
 ## Getting started
 
+(bridge)=
 #### Running the Bridge Server
 
 The viewer server runs on the same machine that you use for training. The training code will connect to the server with a lightweight TCP connection.
@@ -50,6 +35,7 @@ It should print out something of the form:
 "ZMQWebSocketBridge using zmq_url=tcp://127.0.0.1:6000 and websocket_port=8051"
 ```
 
+(client)=
 #### Running the Client App
 
 > We will host the viewer online in the future, but for now we have to run it locally.
@@ -66,7 +52,7 @@ npm install --global yarn
 ```
 
 Install nvm and set the node version
-Install nvm with instructions at e.g., https://heynode.com/tutorial/install-nodejs-locally-nvm/
+Install nvm with [instructions](https://heynode.com/tutorial/install-nodejs-locally-nvm/).
 
 ```shell
 nvm install 17.8.0
@@ -93,10 +79,18 @@ PORT=4000
 ESLINT_NO_DEV_ERRORS=true
 ```
 
+(nerfactory)=
 #### Running the nerfactory Code
 
-- **Notebook demo** - See `docs/notebooks/visualize_viewer.ipynb` for an overview for how to interact with the viewer with the Viewer object from nerfactory.
+You can now simply run a training job and visualize progress by enabling the viewer during training:
 
+```bash
+python scripts/run_train.py --config-name=graph_instant_ngp.yaml viewer.enable=true
+```
+
+- **Notebook demo** - See [Programming the viewer](viewer_notebook.ipynb) for an overview for how to interact with the viewer with the Viewer object from nerfactory.
+
+(ack)=
 ## Acknowledgements and references
 
 We thank [Robin Deits](https://github.com/rdeits) and other contributors to the following repos, which we've started with and modified and extended for our use.

@@ -1,0 +1,26 @@
+{
+  "P2_source_sha256": "f0ef8b8a16f36c57cd30e43c50f86b0262c18f8f65b8d7d33babb5bd67534a27",
+  "requested_font": "Times New Roman",
+  "embedded_font_family": "Times New Roman",
+  "source_files": {
+    "H1": {
+      "path": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/docs/production/final_paper_evidence_20260910/ppp/rho_data.tsv",
+      "sha256": "b6e4c2aa10add0dc6651e4d38f083fc9b1eaeb95bf7afcb58cfbdd6ebb656880"
+    },
+    "H2": {
+      "path": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/docs/production/final_paper_evidence_20260910/lgr/hyperparameter_data.tsv",
+      "sha256": "c86b6e2ddd50e3354a28ba12b4aa2f5ab093909cc43de27d52101617b684015b"
+    }
+  },
+  "figure_sizes_inches": {
+    "H1_AFGM": [
+      3.5,
+      1.0
+    ],
+    "H2_PLGR": [
+      3.5,
+      3.7
+    ]
+  },
+  "no_training": true
+}

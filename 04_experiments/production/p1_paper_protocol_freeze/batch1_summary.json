@@ -1,0 +1,14 @@
+{
+  "total_unique": 134,
+  "final_reuse": 2,
+  "remaining": 132,
+  "remaining_by_group": {
+    "main": 76,
+    "structural": 30,
+    "multi_sweep": 14,
+    "hyper_PPP": 12
+  },
+  "source_freeze": "b2525342593c8dd84a1f1ddb8c1ac124c9b1fb179ddcffea3fb902eb2a073ad2",
+  "exact_config_dedup": true,
+  "batch2_authorized": false
+}

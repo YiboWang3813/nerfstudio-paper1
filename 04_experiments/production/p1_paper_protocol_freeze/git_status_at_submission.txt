@@ -1,0 +1,75 @@
+ M configs_hydra/experiment/production/comparisons/us_recon_four_dataset_p100k_v1/gs_strict/ours.yaml
+ M configs_hydra/experiment/production/sensorless/ours_canonical.yaml
+ M configs_hydra/model/ours_us_focus.yaml
+ M docs/production/comparison_final_outputs/2d_rendering_figure_config_tmi_v2.md
+ M docs/production/comparison_final_outputs/figures/paper_all_datasets_2d_rendering.pdf
+ M docs/production/comparison_final_outputs/figures/paper_all_datasets_2d_rendering.png
+ M docs/production/comparison_final_outputs/manifests/paper_all_datasets_2d_rendering_manifest.json
+ M methods/ours/configs.py
+ M methods/ours/dc_diagnostics.py
+ M methods/ours/density_control.py
+ M methods/ours/gaussian_container.py
+ M methods/ours/gs_only_callbacks.py
+ M methods/ours/render.py
+ M ops/ours_renderer/include/shader/plane_cond2d_device.cuh
+ M ops/ours_renderer/include/shader/ray_attenuation.cuh
+ M ops/ours_renderer/include/shader/us_focus_device.cuh
+ M ops/ours_renderer/ours_renderer/__init__.py
+ M ops/ours_renderer/ours_renderer/api.py
+ M ops/ours_renderer/ours_renderer/autograd.py
+ M ops/ours_renderer/ours_renderer/diagnostics.py
+ M ops/ours_renderer/ours_renderer/types.py
+ M ops/ours_renderer/ours_renderer/us_focus_reference.py
+ M ops/ours_renderer/setup.py
+ M ops/ours_renderer/src/bindings.cpp
+ M ops/ours_renderer/src/shader/forward.cu
+ M ops/ours_renderer/src/shader/plane_cond2d.cu
+ M ops/ours_renderer/src/shader/ray_attenuation.cu
+ M ops/ours_renderer/src/shader/us_focus.cu
+ M scripts/production/comparisons/us_recon_four_dataset_p100k_v1/make_tmi_all_datasets_2d_rendering_v2.py
+ M scripts/production/comparisons/us_recon_four_dataset_p100k_v1/run_gs_strict_task.sh
+ M tests/methods/ours/test_pruning_protection.py
+ M tests/ops/ours_renderer/validate_plane_cond2d.py
+?? configs_hydra/experiment/production/ablations/ours/paper_semantic_freeze.yaml
+?? docs/production/ablation_final_outputs/figures/paper_adaptation_event_statistics_supp.pdf
+?? docs/production/ablation_final_outputs/figures/paper_adaptation_event_statistics_supp.png
+?? docs/production/ablation_final_outputs/figures/paper_adaptation_population_trajectory_supp.pdf
+?? docs/production/ablation_final_outputs/figures/paper_adaptation_population_trajectory_supp.png
+?? docs/production/experiment_results_io/
+?? docs/production/p0_semantic_freeze/
+?? docs/production/p1_paper_protocol_freeze/
+?? ops/ours_renderer/src/covariance_diagnostic.cu
+?? scripts/production/ablations/ours/make_adaptation_population_supplement.py
+?? scripts/production/ablations/ours/p05_anchor.py
+?? scripts/production/ablations/ours/p05_anchor_gpu.sh
+?? scripts/production/ablations/ours/p05_assay_report.py
+?? scripts/production/ablations/ours/p05_freeze.py
+?? scripts/production/ablations/ours/p05_paper_patch.py
+?? scripts/production/ablations/ours/p05_plan.py
+?? scripts/production/ablations/ours/p05_test_gpu.sh
+?? scripts/production/ablations/ours/p05_validate_saved.py
+?? scripts/production/ablations/ours/p0_compare.py
+?? scripts/production/ablations/ours/p0_evidence_summary.py
+?? scripts/production/ablations/ours/p0_inventory.py
+?? scripts/production/ablations/ours/p0_plan.py
+?? scripts/production/ablations/ours/p0_post_gpu.sh
+?? scripts/production/ablations/ours/p0_pre_gpu.sh
+?? scripts/production/ablations/ours/p0_provenance.py
+?? scripts/production/ablations/ours/p0_renderer_probe.py
+?? scripts/production/ablations/ours/p0_reuse.py
+?? scripts/production/ablations/ours/p0_smoke.py
+?? scripts/production/ablations/ours/p0_snapshot.py
+?? scripts/production/ablations/ours/p0_validate_gpu.sh
+?? scripts/production/ablations/ours/p1_batch1_gpu.sh
+?? scripts/production/ablations/ours/p1_batch1_plan.py
+?? scripts/production/ablations/ours/p1_batch1_run.py
+?? scripts/production/ablations/ours/p1_batch1_worker.py
+?? scripts/production/ablations/ours/p1_protocol_audit.py
+?? scripts/production/ablations/ours/p1_seal.py
+?? scripts/production/ablations/ours/submit_path_aware_pruning_stage1_multiworker_1m30k.sh
+?? scripts/production/ablations/ours/submit_path_aware_pruning_stage2_t03_t01_multiworker_1m30k.sh
+?? scripts/production/comparisons/us_recon_four_dataset_p100k_v1/run_path_aware_ours_main_multigpu.sh
+?? tests/methods/ours/test_p0_semantics.py
+?? tests/methods/ours/test_path_contribution_cuda.py
+?? tests/ops/ours_renderer/test_p05_covariance.py
+?? tests/ops/ours_renderer/test_p0_local_modes.py

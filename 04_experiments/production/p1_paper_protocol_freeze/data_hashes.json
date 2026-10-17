@@ -1,0 +1,860 @@
+[
+  {
+    "dataset": "spine_phantom",
+    "sweep": "left1",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/spine_phantom/left1",
+    "hashes": {
+      "images.npy": "89082ee128ab1ab523d3a7dff1d1c0c8311c51062d2fe80e538764400b59e1ca",
+      "poses.npy": "bc6d528c7a947c71dcebecb1a11524b0c2bb21939a68878bcd082c21d66ddee2",
+      "relative_poses.npy": "9dc490b8ea488bdcca0e9d4fc326e30456f369839987c07290e0d80e626e5b74",
+      "metadata.json": "4793dedc015dd577fa812239b9a2f11a597540b01ab23c2961808988ced00bf3"
+    }
+  },
+  {
+    "dataset": "spine_phantom",
+    "sweep": "left1_1",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/spine_phantom/left1_1",
+    "hashes": {
+      "images.npy": "e0fba1434a885ed6131f1df4bddfb7c85353a9d5cbc7288c6fb6029cdc09031c",
+      "poses.npy": "0d15be37ee8b3cb93a1eb2c87a32ff4d5fc0030e6e6dc3e09f812bd635ad2152",
+      "relative_poses.npy": "45e08335e16fbaae9f6776741b21dddb111b19a15b197ee4e43716ae8dde227f",
+      "metadata.json": "6b6f2aab43fe2840343c5b6d391401d5727c12426519316faaf356145ab3f453"
+    }
+  },
+  {
+    "dataset": "spine_phantom",
+    "sweep": "left2",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/spine_phantom/left2",
+    "hashes": {
+      "images.npy": "da9456ae79d3a9c407283f85bd12bf4dbcccc40b5a5c845a7e2509796a9b27b0",
+      "poses.npy": "2fdcf3ff38374488265e610ff11c8f11fdd3a5726e5cc623029714cd2136d285",
+      "relative_poses.npy": "3a863bbbe881a7702e8ea930e593f53031f39a966fabd6147e1ef0724dd86020",
+      "metadata.json": "1de6a13b1dab6aadbb49dd7deb7d239ba9471f38ccc290d3425de4cf25143409"
+    }
+  },
+  {
+    "dataset": "spine_phantom",
+    "sweep": "left3",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/spine_phantom/left3",
+    "hashes": {
+      "images.npy": "befbd61a07171a91ee3ca48fdd7cea727bbe45e91565aa5e1587f95838f93ab7",
+      "poses.npy": "d3fb2c32cb51ee7a1fe727ab8eef4fdf42a929eae3f2547bc8da3527da11b1cf",
+      "relative_poses.npy": "8385ea37c3900d31f58c6057f49707ef3875e51de739faa10370debb2981ca25",
+      "metadata.json": "312f6f7ea47ab3abb64468a50ea308d0d6aa6d7e2f6f263f27dfea59cc89d9e7"
+    }
+  },
+  {
+    "dataset": "spine_phantom",
+    "sweep": "left3_2",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/spine_phantom/left3_2",
+    "hashes": {
+      "images.npy": "c6076fd284e9b4e29908ce33a6ba4c18ee35e7dc7e30b3d0977e20f79ff71e21",
+      "poses.npy": "6c1014a6933e312bed36d0731ce69fd65600b932170af512fcc0ce7bd0a879fd",
+      "relative_poses.npy": "886e3af1d41cff1ed4f3dc628a1f2aa2a5276bf3d85017c5ad654258d103e7a3",
+      "metadata.json": "f544687c766cc80afaedec9ef3fa2bee3f12aba15c82a336d52167d2ad0c4844"
+    }
+  },
+  {
+    "dataset": "spine_phantom",
+    "sweep": "right1",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/spine_phantom/right1",
+    "hashes": {
+      "images.npy": "5962eb4c6ddd372501505907ddb95350413d48cba1836d170621e437f69ed03e",
+      "poses.npy": "6a7d79a9a1ad2a8382e40b4c40b939e4d4277d161f3a56b7d5346657c1e7c9e8",
+      "relative_poses.npy": "3233965711bd0712e99423325d316c4636905e64287b24c92c5338d5a6b30793",
+      "metadata.json": "0195013f6c3cc36b4229da4a4506e7369224b9e27ed9b90d0881f0d496719c34"
+    }
+  },
+  {
+    "dataset": "spine_phantom",
+    "sweep": "right1_1",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/spine_phantom/right1_1",
+    "hashes": {
+      "images.npy": "f6c4a3ccda1d4a782d217587b47f7b23cd60d746f5592d0c03a230909a3a6065",
+      "poses.npy": "f58a040f65ffaaaa58d43dc3532e17f1f487e683b071f0820429c53cee55f3ea",
+      "relative_poses.npy": "97a2115537f214b186ca9fde108eb8e5ad19827ad29281c3a6658cf0ea6b1e1a",
+      "metadata.json": "8eb6b4f39eaa7b57b7970fd221050f0167effa4d0981cd14d2b5767f7b15874c"
+    }
+  },
+  {
+    "dataset": "spine_phantom",
+    "sweep": "right3",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/spine_phantom/right3",
+    "hashes": {
+      "images.npy": "a6394edfcc3fdefb4854c94d7bdcc9e7b4b1aa89b1307d32a421677fcab8c5af",
+      "poses.npy": "dec12bd34c8a93c09a554766fd322c32f10902db58b556bd9604dc315f3e1eb5",
+      "relative_poses.npy": "7a4115614d1295f53aab3b3d7f91d1a70298a64d22e9bfd912d5b0d468a44a7c",
+      "metadata.json": "a0b3186e0bbfc90f1713ab3aca422d89dcc2284addf7714fb6eaf1374d70ca1f"
+    }
+  },
+  {
+    "dataset": "spine_phantom",
+    "sweep": "right3_2",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/spine_phantom/right3_2",
+    "hashes": {
+      "images.npy": "42497f08d9af58707b9e783fc3a54fde8bb63ff5f7f37599ef216513aa568cd6",
+      "poses.npy": "42f2b296f0319260bcfd3d3df7bd741e84f5158770dde090b78825cf8d888551",
+      "relative_poses.npy": "2eaafe1e10af2d024cebaa2a6f0074121f3c07fda5ac803068734520474d7959",
+      "metadata.json": "1ea739ccab4656fe43b3f26febd92088e09f01b70b461816fe93667b9fd6ae6b"
+    }
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "l1",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/synthetic_liver/l1",
+    "hashes": {
+      "images.npy": "df7fe8052128048d5c62e6e918ac3057056a5221f63671ae8d6dc97dde3d43a9",
+      "poses.npy": "37c72e3621536e8e6035ef2a7a388b8cdbb4a83d93a3de8e41aaf66f9d4ac568",
+      "relative_poses.npy": "fa138f75d7b80295c2ff682aaa6f36d7f1abc252393e23aff669274a48a2882d",
+      "metadata.json": "00dca3e5d87551f34f8fb5946d30655f3c546db6914b5e09f3f9dcbe99d87895"
+    }
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "l2",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/synthetic_liver/l2",
+    "hashes": {
+      "images.npy": "a15472bb9a358ce929d6a7b341f69fd19e8d69cbea0c084ce7534821c0e852b9",
+      "poses.npy": "ca6af88a83345e15b7d4dc47f587b1c3d115a48d4445438e52deaaffc2ba0983",
+      "relative_poses.npy": "0cfb90d80a6ddc793fe2bc42b057d5c6b1ba955162be2bdd5e8f972d2d6bf135",
+      "metadata.json": "e468ba352e6e02677a28b6d216fe5937ca4516b3ddb293791491d08d9e3d4d18"
+    }
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "l3",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/synthetic_liver/l3",
+    "hashes": {
+      "images.npy": "0ac7f0cae2b72eca43db0f0e8ca7a1997ca4c528e8cdeb97b2873aa24ef159b4",
+      "poses.npy": "f8ad3eeedf152efbc50de506a632beec76683a55c9b473ffbe8ef9cfa0828e1d",
+      "relative_poses.npy": "46a9d43fedcf8d9b7ac2010075439b45d2b54cd6ac15835d18da27165c7143c4",
+      "metadata.json": "18ae2e4c9cee89adf9eafd1a936fb3c3922e83c2b684864ca35998311d574be5"
+    }
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "r1",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/synthetic_liver/r1",
+    "hashes": {
+      "images.npy": "91501075b3ebbe0d838990380f9c7f34424d0d5f0a06afc1cf8c63bde23b952c",
+      "poses.npy": "ce4338f2e53b2d12eb52720b053dfd4f01220125903fc68dd916469e205de75e",
+      "relative_poses.npy": "06f9ca0558692d6b05116183825a205a0c9357f70322572eabde0917944f3cea",
+      "metadata.json": "65867fc92c9f19b410b42401a77018fd175b6c75c995e7511c81b940dce7a21d"
+    }
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "r2",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/synthetic_liver/r2",
+    "hashes": {
+      "images.npy": "d1724c2b371575aec8ccdf74b206e3ddf78afd1b0b1360e15abe04ee8688098c",
+      "poses.npy": "c7079d6e672f2f94b5632c6a04e33bb3be5d4c3074f2ccc043a1e828da845d66",
+      "relative_poses.npy": "18eb8c0b1085d03564b094b577dd30ad874331d3e40de5dd8f478d17e25a9ff1",
+      "metadata.json": "6369ebd7c42e9dd5c5f60dc3c7d8fa02462e94e53484e9254dafe1948ab8a6e3"
+    }
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "r3",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/synthetic_liver/r3",
+    "hashes": {
+      "images.npy": "84068d47c265412a16f8c00a64b633ca980ef6cd0a0586fdb4e31bb72b4fc9fb",
+      "poses.npy": "9e291ea8b6c9dc3b85954526ae769897cedfa09e3676611e04133e4c1b687ea8",
+      "relative_poses.npy": "7767b4f1f0cca1c4e70829c63848c9df2ff1373ad1f906524ad9fad6bea78154",
+      "metadata.json": "444217c602a194ce379306756f17e6b443c1bb15c8c91ec03bb705c1442cdc54"
+    }
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_100",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/tdsc_abus_2023/validation_100",
+    "hashes": {
+      "images.npy": "f8183af8e126b9265562daef337f0d1bbc2b75131ca10ecfdc8e33165d8d6a1a",
+      "poses.npy": "5b8ec0342f59cea4fca10f0ecd033c33c5aac12941b5f6e48df1c9859db2d336",
+      "relative_poses.npy": "5b8ec0342f59cea4fca10f0ecd033c33c5aac12941b5f6e48df1c9859db2d336",
+      "metadata.json": "844529da7b82ca6f338ce79c740fe78bb272ea53c18164c4dda37ecbbe3cdbc9"
+    }
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_101",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/tdsc_abus_2023/validation_101",
+    "hashes": {
+      "images.npy": "998e7440f04d4ebb1c3b343627968793a3283f9920c17a6f4adc1376067061d0",
+      "poses.npy": "4390c0b336b9c73a63ff8bf0141932e43495616064169edc62db40ec5a075ee0",
+      "relative_poses.npy": "4390c0b336b9c73a63ff8bf0141932e43495616064169edc62db40ec5a075ee0",
+      "metadata.json": "ea78f32ab3ef3e1bf6dbaee84bf81434a49e028a9a6c532671ffab4d73e3d1b0"
+    }
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_102",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/tdsc_abus_2023/validation_102",
+    "hashes": {
+      "images.npy": "6a322934057f83803976319d6a00e600fdd35537688182624f98864aed53daec",
+      "poses.npy": "8ea5b5de9b2a69798423b93b741b533f276c4aa70a3312a5c00201c6aa7ee922",
+      "relative_poses.npy": "8ea5b5de9b2a69798423b93b741b533f276c4aa70a3312a5c00201c6aa7ee922",
+      "metadata.json": "14b57b3a0dff6551dcb9879b0a5c46752872d72a2f0c7c704d1423c50dbb45d0"
+    }
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_103",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/tdsc_abus_2023/validation_103",
+    "hashes": {
+      "images.npy": "e64b922539155b80c60f213c205137779dcedc4d108764c2e697b9d68dfb9d11",
+      "poses.npy": "c0f2492adbd73a538a67eb9dab21022e9979a41e32097bee44dc5bb7fc6d91a6",
+      "relative_poses.npy": "c0f2492adbd73a538a67eb9dab21022e9979a41e32097bee44dc5bb7fc6d91a6",
+      "metadata.json": "338da3a43e3cd0dbd2b647ea3335f72fc215945fd5a67af33b907adbc5048817"
+    }
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_104",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/tdsc_abus_2023/validation_104",
+    "hashes": {
+      "images.npy": "b70d1d0024bc3108a34c25d5777ad8de5d5998106b224e60d455aa86da7b65fb",
+      "poses.npy": "c0f2492adbd73a538a67eb9dab21022e9979a41e32097bee44dc5bb7fc6d91a6",
+      "relative_poses.npy": "c0f2492adbd73a538a67eb9dab21022e9979a41e32097bee44dc5bb7fc6d91a6",
+      "metadata.json": "26cd0031fd839f7cf92072ab84d99e717960480e8aa9a0c0c9a64680bf40b7c6"
+    }
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_105",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/tdsc_abus_2023/validation_105",
+    "hashes": {
+      "images.npy": "92b12deafda3d4ebfdcc416c87275c31d2159a2b0234acc1abb7fd17291594a2",
+      "poses.npy": "00defffe44dfb58786603958230245a394b544d712dd2e52a19d20f7c1ab681f",
+      "relative_poses.npy": "00defffe44dfb58786603958230245a394b544d712dd2e52a19d20f7c1ab681f",
+      "metadata.json": "6f7d582e2467cdc7bec5bd4559fdeda7386f5760a49e9d7a5f9bd5ccc0d98676"
+    }
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_106",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/tdsc_abus_2023/validation_106",
+    "hashes": {
+      "images.npy": "fa0620d9affa8b0a996437079c5461391117fae01c4ef9f7270632d32ce051af",
+      "poses.npy": "c0f2492adbd73a538a67eb9dab21022e9979a41e32097bee44dc5bb7fc6d91a6",
+      "relative_poses.npy": "c0f2492adbd73a538a67eb9dab21022e9979a41e32097bee44dc5bb7fc6d91a6",
+      "metadata.json": "ca96c58828b8df87b85c54758ce473e636fd0367648c94a8efa7ad1214cafc33"
+    }
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_107",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/tdsc_abus_2023/validation_107",
+    "hashes": {
+      "images.npy": "6a579d5e8033005f1367cc7d9019940c1288bf5aaa2eb3fcc38db4abfe44b00e",
+      "poses.npy": "4390c0b336b9c73a63ff8bf0141932e43495616064169edc62db40ec5a075ee0",
+      "relative_poses.npy": "4390c0b336b9c73a63ff8bf0141932e43495616064169edc62db40ec5a075ee0",
+      "metadata.json": "b33a6a4c9c34bca61f15bcc8392390fe3776ac06fe09b8855f003e86488492d6"
+    }
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_108",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/tdsc_abus_2023/validation_108",
+    "hashes": {
+      "images.npy": "f6a92b7871ed7668f986c6778ed69e49166a9df7aa43687dd707835a21b32eea",
+      "poses.npy": "c0f2492adbd73a538a67eb9dab21022e9979a41e32097bee44dc5bb7fc6d91a6",
+      "relative_poses.npy": "c0f2492adbd73a538a67eb9dab21022e9979a41e32097bee44dc5bb7fc6d91a6",
+      "metadata.json": "d3b078f3c2aeaef66c9940d98a8a69d7fa4db50081e7617aa1779c2008b56b03"
+    }
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_109",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/tdsc_abus_2023/validation_109",
+    "hashes": {
+      "images.npy": "d3406b5b1aaa916d1bdf96a0bf573865200d8727ff1d0f15d724be286dfb2801",
+      "poses.npy": "c0f2492adbd73a538a67eb9dab21022e9979a41e32097bee44dc5bb7fc6d91a6",
+      "relative_poses.npy": "c0f2492adbd73a538a67eb9dab21022e9979a41e32097bee44dc5bb7fc6d91a6",
+      "metadata.json": "9437d4e00579c741872bb4ec220135f54374bb93b6be9760ffd402dbd93b4960"
+    }
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_110",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/tdsc_abus_2023/validation_110",
+    "hashes": {
+      "images.npy": "faf6963007d13abb351c8ed761daee282a19c067278dfa594e5140c4024b4542",
+      "poses.npy": "5b8ec0342f59cea4fca10f0ecd033c33c5aac12941b5f6e48df1c9859db2d336",
+      "relative_poses.npy": "5b8ec0342f59cea4fca10f0ecd033c33c5aac12941b5f6e48df1c9859db2d336",
+      "metadata.json": "d25cdba41d3f74c87e43ac1dc6c3c44ebf8d5b69d7a7c2b158e435d96d5a2bff"
+    }
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_111",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/tdsc_abus_2023/validation_111",
+    "hashes": {
+      "images.npy": "0ff660e17d6b6423ce47f1f05b1bf6d5907cd4da32ef84fe290ecc484dc70f5c",
+      "poses.npy": "c0f2492adbd73a538a67eb9dab21022e9979a41e32097bee44dc5bb7fc6d91a6",
+      "relative_poses.npy": "c0f2492adbd73a538a67eb9dab21022e9979a41e32097bee44dc5bb7fc6d91a6",
+      "metadata.json": "8d496270eca94680812206273f5f667af10aaa0ecc0f2121e29334461c588e9f"
+    }
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_112",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/tdsc_abus_2023/validation_112",
+    "hashes": {
+      "images.npy": "89bc80ec96ad1fa881c61b562b447f988b0fc23fa574b6e76e7b0ca238067621",
+      "poses.npy": "c0f2492adbd73a538a67eb9dab21022e9979a41e32097bee44dc5bb7fc6d91a6",
+      "relative_poses.npy": "c0f2492adbd73a538a67eb9dab21022e9979a41e32097bee44dc5bb7fc6d91a6",
+      "metadata.json": "2abad7f56e55402de58a0016d08e6905daac69f70159e1281c0362c1fb5226e6"
+    }
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_113",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/tdsc_abus_2023/validation_113",
+    "hashes": {
+      "images.npy": "18f9d4eb567eefc118eea5e19b9d0dce123ec71ff17497000a4c1e41ca8401e1",
+      "poses.npy": "00defffe44dfb58786603958230245a394b544d712dd2e52a19d20f7c1ab681f",
+      "relative_poses.npy": "00defffe44dfb58786603958230245a394b544d712dd2e52a19d20f7c1ab681f",
+      "metadata.json": "4a3e796ef5e160b6b743e0de13609032cc8355410cb96b6e1a78fe218fda6f1f"
+    }
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_114",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/tdsc_abus_2023/validation_114",
+    "hashes": {
+      "images.npy": "03a900866298b9dea6397f9e0467402603f90f2a2b7d78300ba2b85a5ae44c06",
+      "poses.npy": "c0f2492adbd73a538a67eb9dab21022e9979a41e32097bee44dc5bb7fc6d91a6",
+      "relative_poses.npy": "c0f2492adbd73a538a67eb9dab21022e9979a41e32097bee44dc5bb7fc6d91a6",
+      "metadata.json": "f8ee725cbe3473cf0be9ebdecbdd60fe90a0809e2dad0ca6f98b8ccd4b1e11c0"
+    }
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_115",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/tdsc_abus_2023/validation_115",
+    "hashes": {
+      "images.npy": "1372390486885e0d698278fc9d3fb47ba191bef39146aca40564b9fc9269ad66",
+      "poses.npy": "c0f2492adbd73a538a67eb9dab21022e9979a41e32097bee44dc5bb7fc6d91a6",
+      "relative_poses.npy": "c0f2492adbd73a538a67eb9dab21022e9979a41e32097bee44dc5bb7fc6d91a6",
+      "metadata.json": "35eb24d3bd3e3627d388321e1bff43ccbeee5c3ef4daa60d9dddce00f889c466"
+    }
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_116",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/tdsc_abus_2023/validation_116",
+    "hashes": {
+      "images.npy": "0cd4ce4da53b582800b0c6c2eeeec5dcf4e7b9617e53432d73239bf77858ce9d",
+      "poses.npy": "4390c0b336b9c73a63ff8bf0141932e43495616064169edc62db40ec5a075ee0",
+      "relative_poses.npy": "4390c0b336b9c73a63ff8bf0141932e43495616064169edc62db40ec5a075ee0",
+      "metadata.json": "5c014bc042501124b803e2a29aaea8e9e168a701809deb9d959f1e3c07332261"
+    }
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_117",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/tdsc_abus_2023/validation_117",
+    "hashes": {
+      "images.npy": "8d06d8fe3965f75ff6b1f8a14389d5a2a8e9b4d56c05d7026ab78c0bc321a392",
+      "poses.npy": "5b8ec0342f59cea4fca10f0ecd033c33c5aac12941b5f6e48df1c9859db2d336",
+      "relative_poses.npy": "5b8ec0342f59cea4fca10f0ecd033c33c5aac12941b5f6e48df1c9859db2d336",
+      "metadata.json": "a5a0bd14d74b3331f0aa85a1c4467890d24ecd1259a6ef27d27b019693ff96e1"
+    }
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_118",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/tdsc_abus_2023/validation_118",
+    "hashes": {
+      "images.npy": "e9f266e915f37bd72eda5adb3040656e140b845e8718ae0a5a2c25a57e5033e9",
+      "poses.npy": "51f08c2beca73630974935494dae2d00229fb46d90dc178d4ab1572b218431ad",
+      "relative_poses.npy": "51f08c2beca73630974935494dae2d00229fb46d90dc178d4ab1572b218431ad",
+      "metadata.json": "145816c4122425e95c8db6ae807285f7632ce298519ff788e1385bdf361b6824"
+    }
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_119",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/tdsc_abus_2023/validation_119",
+    "hashes": {
+      "images.npy": "fbe1698c3e47134e95b48ed68003dc6d0a6384fe776271b0b91137a3ad3d979e",
+      "poses.npy": "00defffe44dfb58786603958230245a394b544d712dd2e52a19d20f7c1ab681f",
+      "relative_poses.npy": "00defffe44dfb58786603958230245a394b544d712dd2e52a19d20f7c1ab681f",
+      "metadata.json": "86c0cd24b7f5b3af02db5b2b901e8a28842913a01a03d37b3e9721a2fd1c6256"
+    }
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_120",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/tdsc_abus_2023/validation_120",
+    "hashes": {
+      "images.npy": "cad2cea70c3961832184d559045d546407b8c64695bad5e6457d4e3deb823711",
+      "poses.npy": "00defffe44dfb58786603958230245a394b544d712dd2e52a19d20f7c1ab681f",
+      "relative_poses.npy": "00defffe44dfb58786603958230245a394b544d712dd2e52a19d20f7c1ab681f",
+      "metadata.json": "02c3dc295259f7b6869e40ccd1af2e9c6811b4890deabd48f30eeeae338e00a4"
+    }
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_121",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/tdsc_abus_2023/validation_121",
+    "hashes": {
+      "images.npy": "6610bd861b4140a5319ccc2e3510267158b3b2322a9d26c355547f696e144b62",
+      "poses.npy": "51f08c2beca73630974935494dae2d00229fb46d90dc178d4ab1572b218431ad",
+      "relative_poses.npy": "51f08c2beca73630974935494dae2d00229fb46d90dc178d4ab1572b218431ad",
+      "metadata.json": "ad015b112045e59e31ad592416f79ccdae8899ae854d1a4b3ca1ff9842141239"
+    }
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_122",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/tdsc_abus_2023/validation_122",
+    "hashes": {
+      "images.npy": "d4ee660a1962567717f47aafa5cabd3940b1a810fa9d5fe59ee8fdf3e355f422",
+      "poses.npy": "00defffe44dfb58786603958230245a394b544d712dd2e52a19d20f7c1ab681f",
+      "relative_poses.npy": "00defffe44dfb58786603958230245a394b544d712dd2e52a19d20f7c1ab681f",
+      "metadata.json": "8626832dfcdfe8334826990e61baec099ea1e6e448dab685c450614cc1ac2c21"
+    }
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_123",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/tdsc_abus_2023/validation_123",
+    "hashes": {
+      "images.npy": "58e1b799e1178260351ee141c436e5c67b0a86164db4cc8ba1eb56dd1f9da98f",
+      "poses.npy": "ff77bdc8f96e28432ee8f77e7ed10c3ee1d46362fc6d16c145ae6540fc80780d",
+      "relative_poses.npy": "ff77bdc8f96e28432ee8f77e7ed10c3ee1d46362fc6d16c145ae6540fc80780d",
+      "metadata.json": "9a2a6e39364f0b8972e0dcced4a4edb0ddf9a0e533fd11dd9f64caf75ae99e34"
+    }
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_124",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/tdsc_abus_2023/validation_124",
+    "hashes": {
+      "images.npy": "10261b242e7231deaa4f9aff980b7a3f5d6bdf41b9c5b468ef20a0baee976633",
+      "poses.npy": "c0f2492adbd73a538a67eb9dab21022e9979a41e32097bee44dc5bb7fc6d91a6",
+      "relative_poses.npy": "c0f2492adbd73a538a67eb9dab21022e9979a41e32097bee44dc5bb7fc6d91a6",
+      "metadata.json": "cc5d79524f845dd776b347b43c88fc2a3126462f52802141686772dbb4a846c3"
+    }
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_125",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/tdsc_abus_2023/validation_125",
+    "hashes": {
+      "images.npy": "8de6dc8f6f805302e3a6443fd428302732c326d0c5d20c7712dd182cb0491549",
+      "poses.npy": "51f08c2beca73630974935494dae2d00229fb46d90dc178d4ab1572b218431ad",
+      "relative_poses.npy": "51f08c2beca73630974935494dae2d00229fb46d90dc178d4ab1572b218431ad",
+      "metadata.json": "50e61d7ca6a08f472342a53c2998ca96a7e74f3dd3f37def04f5745addb80137"
+    }
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_126",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/tdsc_abus_2023/validation_126",
+    "hashes": {
+      "images.npy": "d59d6cbedc03f07fa34a1a02ffda47ab4def53db591a8ee80049b8824ddab922",
+      "poses.npy": "4390c0b336b9c73a63ff8bf0141932e43495616064169edc62db40ec5a075ee0",
+      "relative_poses.npy": "4390c0b336b9c73a63ff8bf0141932e43495616064169edc62db40ec5a075ee0",
+      "metadata.json": "3275b3aeaf510066cfb6f41891e830a1a8287d340fe9460050cc00249873c779"
+    }
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_127",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/tdsc_abus_2023/validation_127",
+    "hashes": {
+      "images.npy": "376b836016df6e6d0a56a1d2925a6868db664e8ac10f31a318df4e0a08696d82",
+      "poses.npy": "c0f2492adbd73a538a67eb9dab21022e9979a41e32097bee44dc5bb7fc6d91a6",
+      "relative_poses.npy": "c0f2492adbd73a538a67eb9dab21022e9979a41e32097bee44dc5bb7fc6d91a6",
+      "metadata.json": "2bb9b6ac028bdd8cc5bdfcb868ab4c25d7ac9c62eee98825ca20b850ba05ee23"
+    }
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_128",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/tdsc_abus_2023/validation_128",
+    "hashes": {
+      "images.npy": "7680174e8f674ed7354ae739373689574c253da46e375197230b7289a8ef763e",
+      "poses.npy": "c0f2492adbd73a538a67eb9dab21022e9979a41e32097bee44dc5bb7fc6d91a6",
+      "relative_poses.npy": "c0f2492adbd73a538a67eb9dab21022e9979a41e32097bee44dc5bb7fc6d91a6",
+      "metadata.json": "48d3f670505cac641aa09241198d9de22bcc1ace29d6e32bb983c9eef1ec6429"
+    }
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_129",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/tdsc_abus_2023/validation_129",
+    "hashes": {
+      "images.npy": "d4de9cb0a4ec9e0edfd8050c35b6c922b297fce57d412d0b7ad319e5e53320d5",
+      "poses.npy": "4390c0b336b9c73a63ff8bf0141932e43495616064169edc62db40ec5a075ee0",
+      "relative_poses.npy": "4390c0b336b9c73a63ff8bf0141932e43495616064169edc62db40ec5a075ee0",
+      "metadata.json": "3be935ab546df78bb6c22fab900c8494930b53adfa8f5e99a3683b7ccc62d0a7"
+    }
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_LH_Par_C_DtP_qc_0008_0107",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/tus_rec_2024_qc/010_LH_Par_C_DtP_qc_0008_0107",
+    "hashes": {
+      "images.npy": "76196f657c7b6265fab07b1945a48d5cbb1f04e4f8801b6fcce802e00875d8bf",
+      "poses.npy": "3e21da8ca0a8369ce17f50a9c97633b9b1675f244bc9d38ee802a3cb88b8bd06",
+      "relative_poses.npy": "fa7f710e78a559d63cee02e9a51a142ebb1577efe6d006e2525cb0c1e0f34dbf",
+      "metadata.json": "881c99ce3004bebbbe684a5c720071ed432ef9aee2778e8d97b901aeb62d96dd"
+    }
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_LH_Per_C_DtP_qc_0140_0514",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/tus_rec_2024_qc/010_LH_Per_C_DtP_qc_0140_0514",
+    "hashes": {
+      "images.npy": "4dd6861511535858ad616492aea9018140cb63d0eb725dee138d1aff4a663a89",
+      "poses.npy": "03aa0c66757155cc2de24879b4f64f7c228c42c2f54e7c7376c8251ef5ceadc2",
+      "relative_poses.npy": "862d4a2f7ec6b71347e95cc810bf7e8fbf516afe4104c5d1b813b9052c077299",
+      "metadata.json": "35bb9e1291ff68fdd5a6fb792f0b64f52a7f7eff77c103464bddccd4f4789087"
+    }
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_LH_Per_C_PtD_qc_0007_0470",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/tus_rec_2024_qc/010_LH_Per_C_PtD_qc_0007_0470",
+    "hashes": {
+      "images.npy": "bb35a2df9f2e947ab96170aa93d2a56f6371cd493f70498a8436672d1400e2fc",
+      "poses.npy": "057753d3d43b985a4076fb4021a87f1de1eb418628c6ab2b747bdbcd0809c7d9",
+      "relative_poses.npy": "5220bea78205021c455c7f4b872177234227ae20cd0c265fce069bb218e782cd",
+      "metadata.json": "ebe6a3dbb79118945f2a5bd94f8cf3580498ee7e01256425517464f7ac3aa295"
+    }
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_LH_Per_L_DtP_qc_0005_0370",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370",
+    "hashes": {
+      "images.npy": "c4529001e18dc2b201e2795212e80165c0075d692b8a9cbdb46568679eae7065",
+      "poses.npy": "09ce842829acb84289844111bcc53fdd7034f2b744caa50f1a0059a269a6cf49",
+      "relative_poses.npy": "fda7140de899c16ad338d61e3f663fd85a3fca9bf3cf78bd415a7aeb4c9ed225",
+      "metadata.json": "716ffc89e1e96adb84ab59c373975c5bc194541cc92be6478a6f51d1c20b0305"
+    }
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_LH_Per_L_PtD_qc_0020_0222_s01",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/tus_rec_2024_qc/010_LH_Per_L_PtD_qc_0020_0222_s01",
+    "hashes": {
+      "images.npy": "77c4827e6cb1be461f953624e61d046af531e08357e0cc279ffe38ecb0decac3",
+      "poses.npy": "c736718fe85789e6b08f0c4c28d57d8114f776728fa67838aa390481c8a84332",
+      "relative_poses.npy": "ffd13f00bbda94fa1f6b800c9305917750d97c684126c476de713f9b41d355c1",
+      "metadata.json": "4334e33bb7477b69f4bf844360030cb2275c7503f4368f2bc14e91573cb98a73"
+    }
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_LH_Per_L_PtD_qc_0238_0488_s02",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/tus_rec_2024_qc/010_LH_Per_L_PtD_qc_0238_0488_s02",
+    "hashes": {
+      "images.npy": "d34feb4a2592ea93faf6fafd69cdac0ad25d7783ef32cbd972950ef3dcb09f32",
+      "poses.npy": "eadf6e22f0c0597c1ba1264eff4bacc7b06802ddf8a50f119656230c8cbc5b49",
+      "relative_poses.npy": "875a45a663d6eda0c37ef56c50c26bf7255e95e7d225b181edbdfc2ae541b23b",
+      "metadata.json": "bed90cb16bb8dd635bb6141da469e02a660e4de7a5326724b8843a169787140d"
+    }
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_LH_Per_S_DtP_qc_0085_0442_s01",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/tus_rec_2024_qc/010_LH_Per_S_DtP_qc_0085_0442_s01",
+    "hashes": {
+      "images.npy": "1377d3156408567f80de2d3ab08b80d27b93f04080d72094a29d0be72d8338a2",
+      "poses.npy": "19c6a3b54fd4cdbe76ead7052f1d579d34a8d929908adefa6d6a22de27625456",
+      "relative_poses.npy": "41cc0ae6f33078687ffe2c40d88923e5ac888733d006f8e6c62489d6b987c703",
+      "metadata.json": "014540f4eb5f02312e79ac17fd474ad059de83a326471f66f4919c407dac8c35"
+    }
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_LH_Per_S_DtP_qc_0460_0586_s02",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/tus_rec_2024_qc/010_LH_Per_S_DtP_qc_0460_0586_s02",
+    "hashes": {
+      "images.npy": "0b1a5fac28d56b825e38c70acd84775de7b7d90356f600e1c14d9033e6cf89bb",
+      "poses.npy": "15fd12d486f413c7341a694509b55ffca1d79628226f512e90ff4950ab418364",
+      "relative_poses.npy": "193e410058454a6014d57dc5b8833a72ddd74b664cb86823e42c53cc319b87b8",
+      "metadata.json": "2a1ddddeda1b7fee6166222cf100409f5ca709acfe9d3f252511d86ba5606094"
+    }
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_LH_Per_S_PtD_qc_0078_0394",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/tus_rec_2024_qc/010_LH_Per_S_PtD_qc_0078_0394",
+    "hashes": {
+      "images.npy": "2cba05bd42a2078046c6c1b02b9ed23c3dcbc69f3b2da639bf40eea9be02ace1",
+      "poses.npy": "2d2186925468a17a0e9f9decd3dd4fc6ac9bf1db4c0cb13c952ba64ff3dc9b06",
+      "relative_poses.npy": "ac4ab8f1248ac1f8634ebf254510c34d902272d6ea2833ddae3bf2979a87d442",
+      "metadata.json": "0ec744ccaaab7e16fc9d61049b0038b9a509176bfad5c9037127f1932ffd498d"
+    }
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_RH_Par_S_DtP_qc_0005_0091",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/tus_rec_2024_qc/010_RH_Par_S_DtP_qc_0005_0091",
+    "hashes": {
+      "images.npy": "ffa69ec093b8489f62ca61e46705c4ae68698a00d44045803c7cbbac8eca77f8",
+      "poses.npy": "3e1dcdd4ea824410c617396e3329ace4cf060e903863e0789377d35ae22f5334",
+      "relative_poses.npy": "376e4cccd38749ef5e918ac0dffadb904e945e492977b83eda33b666aa5defcb",
+      "metadata.json": "c6582afad16d1b0b49f3cd0d7ca7c7fce2f42022eefb4a7b5c0d9298c7e7d8c4"
+    }
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_RH_Per_C_DtP_qc_0269_0627",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/tus_rec_2024_qc/010_RH_Per_C_DtP_qc_0269_0627",
+    "hashes": {
+      "images.npy": "11bb2dd395304092c8e47f243c6b0094614bbe09c28c3cfb0b5bd40f116816ed",
+      "poses.npy": "daeea67e9f2a31b764c0f04c2a4f534b3ca79b0f19f630d597b4247c26a779c6",
+      "relative_poses.npy": "c0addae974df5019a1763c25fc48c98e61c18fe71a4e5e4fcaa598c64d55b3ef",
+      "metadata.json": "b49dce6fa1cd90367ad0413e4001e0ea211c794367a7a463577ea32b9fc0a3f7"
+    }
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_RH_Per_C_PtD_qc_0006_0427",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/tus_rec_2024_qc/010_RH_Per_C_PtD_qc_0006_0427",
+    "hashes": {
+      "images.npy": "fabc4ac2d1be5d585da5f8129f0e284566d3602ca00f075f51682d8f50dc5d42",
+      "poses.npy": "cea6b11e71d5edb917ba0171612cad149a7be151975af97c2bdee29945292700",
+      "relative_poses.npy": "542208053554557a6dc288d2077d95b7927b0efa4eafc5843623cfd128852524",
+      "metadata.json": "6405d97fd12010fff859dece5519c7a4f6c868ba404aa0de9952144128741e37"
+    }
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_RH_Per_L_DtP_qc_0005_0574",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/tus_rec_2024_qc/010_RH_Per_L_DtP_qc_0005_0574",
+    "hashes": {
+      "images.npy": "b4ca84a1b454a35660bff8224a8dd63e9dc7fdad7aac615f961dd7a1cdaaac7b",
+      "poses.npy": "cfbb0b22c647f14d7fbd0f950b4af70be88c34de9c6abd7894f0a10c472cab98",
+      "relative_poses.npy": "3deb545eb94b07e608f7f1a332f06fa77c57334cc6282b2ee4780a8679333caf",
+      "metadata.json": "f8cbffbca389bd8ea9b034ec91b8f4044afe551cbb60687692a189ed08b4a46e"
+    }
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_RH_Per_L_PtD_qc_0006_0546",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/tus_rec_2024_qc/010_RH_Per_L_PtD_qc_0006_0546",
+    "hashes": {
+      "images.npy": "83f52acfe9f3870976eebd7d0668c4c548778f9a93cb758e895ba804331d2145",
+      "poses.npy": "b170627d8beec8990fc86edb07e47f2e37a91d0b9282b43d133f03d5c9f8ae94",
+      "relative_poses.npy": "bb949e6e7f9894efa11475c81a6b9215fbc75f3c732a9f1d2797598e20706a9c",
+      "metadata.json": "d26dca05b8198e1cfa998ca42c41d2d9f22b5746f03d92e2a3cdc94bbce2cd3e"
+    }
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_RH_Per_S_DtP_qc_0096_0411_s01",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/tus_rec_2024_qc/010_RH_Per_S_DtP_qc_0096_0411_s01",
+    "hashes": {
+      "images.npy": "47a988c0f7fc41d2d5643f6d437435c942b6dd1773c65f11b59013ca64ec5ea3",
+      "poses.npy": "ea4809f2a31dcc85d456437fd0774927df41ec20592d972d25158b13c79a3c6a",
+      "relative_poses.npy": "709918b445aa833b702fc482c746cd23ac26093ae2a42d36b4fc98049373c071",
+      "metadata.json": "92bf2a63070de9c247d8b3acea7c8591bc24bd4f1a4aa5ef9ec22994be20ee1c"
+    }
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_RH_Per_S_DtP_qc_0426_0538_s02",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/tus_rec_2024_qc/010_RH_Per_S_DtP_qc_0426_0538_s02",
+    "hashes": {
+      "images.npy": "c461965575ba74a15188bfdce28ee57bf082a4402b9b9594d746b9ee33b74306",
+      "poses.npy": "56a2b1dae2d2585414dd9d79a0db939236a9246eb7ec1b429810899c52288e28",
+      "relative_poses.npy": "22a44c3fa23aa7d495b943d58971fcb2bfd10eda256b0320c694453abbfa427c",
+      "metadata.json": "5197bb3a8c8a5e0bea9e2d1c9635cd1bbd4276c29b446a6ddc2a5ac828600316"
+    }
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_RH_Per_S_PtD_qc_0062_0150_s01",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/tus_rec_2024_qc/010_RH_Per_S_PtD_qc_0062_0150_s01",
+    "hashes": {
+      "images.npy": "fc5bd888bbfafeea9c1e141c1afa05c28c9f2e8505cd290a0d9b06416583b26c",
+      "poses.npy": "0019616aaa6192159b73fa4e696600d0964844100579d34228c592ff4ba77cdc",
+      "relative_poses.npy": "4a5650f6c828591b79551af45aced2e9ed2b2955816fb058b36e01cc7dc2a5af",
+      "metadata.json": "eda13c8bc5316ff1ba6ce0a08bc71c46bbaa0797d5a51be1f14c7fa9a26848a2"
+    }
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_RH_Per_S_PtD_qc_0165_0364_s02",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/tus_rec_2024_qc/010_RH_Per_S_PtD_qc_0165_0364_s02",
+    "hashes": {
+      "images.npy": "5831a57f615a9883e2d13176d71d3608cf3d17fb5bf99492bc9876f2a5e8b01b",
+      "poses.npy": "f3326465229884fbfcc359d33544b6af59f0b5614f6215499283ffebe7ee2949",
+      "relative_poses.npy": "606b25e5164ea026e3362e07e2e194e80daeaad50527eb71ce3c22b79ef7b7f4",
+      "metadata.json": "b47c9472c6e2867238175f0f0d178429c15118bcd526fc8a41be1f84ce099645"
+    }
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "011_LH_Par_S_DtP_qc_0155_0249",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/tus_rec_2024_qc/011_LH_Par_S_DtP_qc_0155_0249",
+    "hashes": {
+      "images.npy": "009266c6c17944559a868ab94ffda2fb667b54035a496384f80bbbde6d4ee01b",
+      "poses.npy": "bdae8b16def9099967a570deeb1d8b710b5fd1b0da092054d1bfa375f2af28b8",
+      "relative_poses.npy": "916f23fd2854f8779e623fd9930ca053afd810d0d5304fa82b33d6439b7cd20d",
+      "metadata.json": "a00a69f25d05b7566a75007846e47bc46096bc3ab9f192f7fc4df086918f850b"
+    }
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "011_LH_Par_S_PtD_qc_0112_0224",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/tus_rec_2024_qc/011_LH_Par_S_PtD_qc_0112_0224",
+    "hashes": {
+      "images.npy": "2476301ad89a15d5f726bb8a713dac7f41dbe4e445847ac47b2f4c5c0b83306f",
+      "poses.npy": "d4362482a323b0223cb4e4234897df9656c944e3dc8da2a59e385352088d0057",
+      "relative_poses.npy": "c73bd8fffe58ccf6f3052b1330d4bbc9b86a247203e17a72000c8aa71ce89993",
+      "metadata.json": "3e97ca69a11aff4afa089582f317c6ed79e7afb3e951f34bc9956951a8b3dce9"
+    }
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "011_LH_Per_C_DtP_qc_0115_0556",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/tus_rec_2024_qc/011_LH_Per_C_DtP_qc_0115_0556",
+    "hashes": {
+      "images.npy": "99220dc2ecd11f45140d84b7bd9e1966365abf6ec3d88a146e59ce9374797236",
+      "poses.npy": "e2c0e916d19b91236fcca0a03faab7c7d08be8b76754b0b0e1ca46fba7581d60",
+      "relative_poses.npy": "739be3ee290ca28f96636a046351a3210d6fcbcee6b72f04d9a858db56667d8c",
+      "metadata.json": "dc1dbff278bbe96bda66ee413fd49eeebb66cee347c8113bc42e42347b8e96c2"
+    }
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "011_LH_Per_C_PtD_qc_0006_0568",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/tus_rec_2024_qc/011_LH_Per_C_PtD_qc_0006_0568",
+    "hashes": {
+      "images.npy": "91f0f4b2189732d7e086dcd94e6c412a225a115f4380b93eb3568f9a4a57f1a7",
+      "poses.npy": "3f26c5acec597cb438c8808239f499a99410e55708e6659b3c944bb9ebb2b89f",
+      "relative_poses.npy": "e4c63ad1dc4e81f508ab183c3be323d7a23f60af5eb1cdb2d576bb1765cf3670",
+      "metadata.json": "b223b58773edfd256ef5e675c8c801ab3bb5e54d226d6e5e6b6b689d60203633"
+    }
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "011_LH_Per_L_DtP_qc_0005_0594",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/tus_rec_2024_qc/011_LH_Per_L_DtP_qc_0005_0594",
+    "hashes": {
+      "images.npy": "ee3d7f66f562c11c7f4a4951baec896d35b9295f598d3d0b638259193aeb4a53",
+      "poses.npy": "57289e307a68c6e950d972fa46eeec920d7be19e42497b0150111a7904c20ef7",
+      "relative_poses.npy": "ee6182e37b3d3b257757c4d1b1df609c6add41ad74638c8a1d182198c3c89a53",
+      "metadata.json": "5431d2a3cba4775e9e22dc3246214bb24012fc16bb87330e65efd4883974a751"
+    }
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "011_LH_Per_L_PtD_qc_0006_0690",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/tus_rec_2024_qc/011_LH_Per_L_PtD_qc_0006_0690",
+    "hashes": {
+      "images.npy": "88988495f42a14e51894afba7a92e37a27219fb6f2840452d51b9d98af0c4c00",
+      "poses.npy": "972f675ec4b6409d7ccd7852fe2d57224c5110e17461abcf156bc1af8c8d521e",
+      "relative_poses.npy": "f3c23d09711655500e7213c338ebdfd1b9098e9dcd3ab2a65f01c0bbeaeb7be1",
+      "metadata.json": "5d6b435ff454327094aafdfb361cc955be68de1f2f08d9ddf42adcb6889b9320"
+    }
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "011_LH_Per_S_DtP_qc_0118_0529",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/tus_rec_2024_qc/011_LH_Per_S_DtP_qc_0118_0529",
+    "hashes": {
+      "images.npy": "6b90b2245ee13c652584fa4b2086760b1db8a265d63d7a668dfa69e0bbc8f5df",
+      "poses.npy": "a4ab67c66f5acdda92502e6b9d778d400bcf4e3da0e1d807a8ddf12491dbc10b",
+      "relative_poses.npy": "8a8e7b1300450f8567b455eb7a84b9d2dcda2568dc995bd493fdbd93061db2a5",
+      "metadata.json": "1c7ce89482bfc794de36bf6c3f19978b783b7c2075021d66a9a2b9b6b5a6d3da"
+    }
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "011_LH_Per_S_PtD_qc_0008_0447",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/tus_rec_2024_qc/011_LH_Per_S_PtD_qc_0008_0447",
+    "hashes": {
+      "images.npy": "fe7940d7360a15e649c8c6820149004c0a75f4fe49ab9c1185beaa86c8fc1457",
+      "poses.npy": "6189899f09a9fba6dc99e69176de14a0ad90931241ebb503a71664fe62aa9dc2",
+      "relative_poses.npy": "7564b8f71888d0fc33fa6f28c6b9ece03d2066f911ebb1b9cc7657941771629e",
+      "metadata.json": "93552801b91ece2ac8ba6c142a67d499348b952ae97425ff82e1a2d7937001cb"
+    }
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "011_RH_Per_C_DtP_qc_0137_0372",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/tus_rec_2024_qc/011_RH_Per_C_DtP_qc_0137_0372",
+    "hashes": {
+      "images.npy": "c840a29b5c71318568073e0c28a2de442e206604544c6e45160043088bae94d1",
+      "poses.npy": "bb21008e74c7ecb34dd4cac44fda7f0f7c777b9d4c908eba163d05744e10fdf0",
+      "relative_poses.npy": "a8e6192e5c287076b305811cc06b83ba8bc3bb6948119c978c290322134a1255",
+      "metadata.json": "184d1a57cf1234ca8a12145cf8b852e6b12292f16c3dae13b0cee088e5922bdf"
+    }
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "011_RH_Per_C_PtD_qc_0006_0170_s01",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/tus_rec_2024_qc/011_RH_Per_C_PtD_qc_0006_0170_s01",
+    "hashes": {
+      "images.npy": "37b3261bbb8b5633d14305ef19d42d1e07005335082b06e737a1026f0a3407c8",
+      "poses.npy": "9287a0064319fb1e84c4cb37ecad7bb66f56cc74c5893793b60ef55621ee7176",
+      "relative_poses.npy": "103847db7b32192bc1d383bbbf5b630a6ceddbcbd0235b7b4f6cb8b2cf9610b7",
+      "metadata.json": "c2fd686efd18f88e7bdac55267c0d64d7d480a61310dfaeef3324c1f3042f4b5"
+    }
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "011_RH_Per_C_PtD_qc_0186_0557_s02",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/tus_rec_2024_qc/011_RH_Per_C_PtD_qc_0186_0557_s02",
+    "hashes": {
+      "images.npy": "ee40b6c967ae7fe572da997f7e7eaa57e756854c9b99e15e1069fea1485ddeee",
+      "poses.npy": "460c531e30fad5024ecd849f1ac9eb61167850a1c1b374ddcd6f93d01a9b4c3d",
+      "relative_poses.npy": "2afde63c2e2becda663541484d93f9e85aeb9ed10bc85e9155083ee578409a89",
+      "metadata.json": "7bd1ad2d505dd4416ed96c5787d0084d64b3d141eea80718470b7ba8c32baf13"
+    }
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "011_RH_Per_L_DtP_qc_0007_0584",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/tus_rec_2024_qc/011_RH_Per_L_DtP_qc_0007_0584",
+    "hashes": {
+      "images.npy": "fea42323a641d6c225790f77c7cd770cab0e2c483520693e7ed8cc4d9db52c87",
+      "poses.npy": "91b7f9c1f252d52e5a90e4187172fda93dba645747be92d5f9f699f60b2b0036",
+      "relative_poses.npy": "09e8b0c1e6664ea421f0ad69c9f995d9967538661980961562aa72e1392aff55",
+      "metadata.json": "6687ae5d5a04a16a7b88ba19d5edb3abc60f3b9fc050543ee8ffd685889d9ea0"
+    }
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "011_RH_Per_L_PtD_qc_0006_0459",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/tus_rec_2024_qc/011_RH_Per_L_PtD_qc_0006_0459",
+    "hashes": {
+      "images.npy": "61b22482d9251c49a581a44844e369d6f4d5d6f759a015811ebfec1229f63f5d",
+      "poses.npy": "8b18b956874348f33325378debb484f34df14d7d501bb2b1f6e181d433912dd4",
+      "relative_poses.npy": "407afe5ccafe633f38ab2c5fce35bb3934210715a5fe67bb8b789ab2210818a8",
+      "metadata.json": "2e5fc8ed4de17c19de2657acb5b4b95022994d001c91b73fe1100e468e77ac28"
+    }
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "011_RH_Per_S_DtP_qc_0166_0553",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/tus_rec_2024_qc/011_RH_Per_S_DtP_qc_0166_0553",
+    "hashes": {
+      "images.npy": "18917f91408dd3200c1797a722b783819e2458e561271eb56ce9900315bed4af",
+      "poses.npy": "263d50996607030a76efdcf6c7d6cdde62731774c40c94e62c5559b191f3f7ac",
+      "relative_poses.npy": "a6a9a00498b5df88595784f20413ed6ab4fbc42e1c356f68c0a7955f3824563f",
+      "metadata.json": "1a86c243569d716b792a543dc6467d723ddf9238e3ef17e44a22d53440530e2c"
+    }
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "011_RH_Per_S_PtD_qc_0028_0185",
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/data/tus_rec_2024_qc/011_RH_Per_S_PtD_qc_0028_0185",
+    "hashes": {
+      "images.npy": "e1d25522fa4c7d2b57f01de5628e5019ebb697aabc598f6242a4d0d2fa33062b",
+      "poses.npy": "26627414f3a005efbc20f1241f330b2cd981724b12d117c812d10fcf98385113",
+      "relative_poses.npy": "a2b5337aa9c30729e55a1ee22847115b60da0e918fe77af52005765bacf1e31c",
+      "metadata.json": "a8d1b2176505ad118eb92ed530c1cd731d5a8dc7e742f18b4fb69b69359313fb"
+    }
+  }
+]

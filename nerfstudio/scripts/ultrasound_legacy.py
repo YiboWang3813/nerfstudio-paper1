@@ -28,6 +28,14 @@ def main():
         if key not in keys:
             args.append('{}={}'.format(key, value))
     # Keep arbitrary caller-provided Hydra overrides; do not rewrite old aliases.
+    ops = workspace/'gsplat/ultrasound_ops'
+    backend_dirs = [p for p in ops.iterdir() if p.is_dir()] if ops.is_dir() else []
+    historical = ops/'old'
+    if historical.is_dir():
+        backend_dirs += [p for p in historical.iterdir() if p.is_dir()]
+    # Prefer the migrated source over editable-install links to the old tree.
+    for backend in sorted(backend_dirs):
+        sys.path.insert(0, str(backend))
     sys.path.insert(0, str(legacy))
     sys.argv = [str(legacy/'run.py')] + args
     os.chdir(str(legacy))

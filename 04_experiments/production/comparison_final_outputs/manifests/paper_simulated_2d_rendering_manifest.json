@@ -1,0 +1,78 @@
+[
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "l3",
+    "item": 27,
+    "crop_xywh": [
+      19,
+      0,
+      53,
+      107
+    ],
+    "columns": [
+      "ultragauss",
+      "ultragray",
+      "slice_adapted_3dgs",
+      "gaussianpile",
+      "ours",
+      "gt"
+    ]
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "l1",
+    "item": 31,
+    "crop_xywh": [
+      19,
+      0,
+      53,
+      107
+    ],
+    "columns": [
+      "ultragauss",
+      "ultragray",
+      "slice_adapted_3dgs",
+      "gaussianpile",
+      "ours",
+      "gt"
+    ]
+  },
+  {
+    "dataset": "spine_phantom",
+    "sweep": "left3_2",
+    "item": 17,
+    "crop_xywh": [
+      59,
+      0,
+      36,
+      215
+    ],
+    "columns": [
+      "ultragauss",
+      "ultragray",
+      "slice_adapted_3dgs",
+      "gaussianpile",
+      "ours",
+      "gt"
+    ]
+  },
+  {
+    "dataset": "spine_phantom",
+    "sweep": "left1_1",
+    "item": 18,
+    "crop_xywh": [
+      8,
+      378,
+      36,
+      215
+    ],
+    "columns": [
+      "ultragauss",
+      "ultragray",
+      "slice_adapted_3dgs",
+      "gaussianpile",
+      "ours",
+      "gt"
+    ]
+  }
+]

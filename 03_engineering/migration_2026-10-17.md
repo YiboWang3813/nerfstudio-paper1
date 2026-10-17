@@ -87,6 +87,12 @@ python -m nerfstudio.scripts.ultrasound_legacy experiment=<原alias>
 优先。克隆后可运行 `python ../protocol/tools/link_runtime.py` 恢复未跟踪链接。
 数据、权重、原 ABI 二进制需另行提供，Git clone 不会下载这些大型资产。
 
+仓库外资产也有独立内容身份：`protocol/assets/checkpoints.jsonl` 登记了
+604 个检查点目录内文件（含元数据、预训练与验收资产），总计
+30,975,006,834 字节；`protocol/assets/derived_artifacts.jsonl` 登记了
+173 个派生数组、帧索引和源码/二进制冻结产物，总计 3,139,492,009 字节。
+Git 保存其 SHA256 身份，文件本体继续位于独立存储目录。
+
 复查历史实验时优先使用完整配置快照，避免当前 alias 默认值漂移：
 
 ```bash

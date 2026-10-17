@@ -1,0 +1,168 @@
+Paper1 迁移可行性与来源管理审计
+审计日期：2026-10-17
+
+结论
+
+可落地。建议将 paper1 建成项目工作区，Nerfstudio 和 gsplat 各自为保留上游历史的专属 fork；数据、检查点、研究文档、实验结果分别放在代码仓库外。迁移包括训练接口和超声算子改造，不能以改目录、改 import 或复用默认 Splatfacto 代替。
+
+用户所说 gssplat 在本审计中解释为 nerfstudio-project/gsplat。当前阶段交付审计、实测清单和迁移设计；尚未复制代码、安装依赖、编译算子、移动数据、提交任务或改变原仓库。没有查看 paper2/baselines 的实现；仅借鉴工作区、独立代码仓库、协议文件和包结构。
+
+审计范围
+
+旧仓库 /home/boywang25/ultrasound-scene-reconstruction/omniultra，HEAD 为 8f4eb05563c17cf7dcefe0b50f015f8715e66d8f。检查 run.py、engine、配置加载、scene 数据容器、Ours 训练/渲染/密度控制/优化器、CUDA bindings 和共享头文件、生产配置和代表性测试；其他自实现方法检查目录和 renderer 依赖。检查数据目录与代表数组头、三个证据包文件清单及 SHA256、一份正式组合图的全部原图引用和一份最终证据来源 manifest。
+
+这是静态架构审计和有界产物抽查，不是全量输出/权重盘点，也不是 GPU 数值验收。未验证所有旧路径、全部文档链接和所有方法的迁移工作量。inventory.json 保存机器可读实测清单，不包含数据数组内容或检查点内容。
+
+一、已确认的问题
+
+1. Git 提交不足以代表当前研究状态。
+   git ls-files 为 1796 个文件，status -uall 显示 5 项已跟踪修改、577 个未跟踪文件。
+   final_paper_evidence_20260910 有 437 文件、final_ablation_tables_20260916 有 37 文件、final_hyperparameter_figures_20260916 有 120 文件，三者被 Git 跟踪的文件数均为 0。文件总数含被忽略文件，与 untracked 统计口径不同，不能相加推导 status 数量。
+   已跟踪修改包括正式组合图 PNG/PDF、其 manifest、画图脚本和论文对齐文档。迁移必须同时封存提交版本、工作树差异、未跟踪资产和必要的 ignored 资产。不要在原目录自动提交或清理用户修改。
+
+2. 来源管理已有基础，但没有统一入口。
+   最终证据 manifest 有 238 个 source rows，指向 236 个不同 run；记录 execution source、validated source、semantic config hash，并保留配置快照。
+   抽查 paper_all_datasets_2d_rendering_manifest.json，36 个 source_image 引用全部存在；也记录裁剪框、显示范围和 run 路径。可以导入这些已有链路，不需要推倒重做。
+   final_data_source_manifest.json 中声明的 418 个包内文件均存在，SHA256 全部匹配；此 manifest 未声明包内全部 437 文件，迁移清单另行记录全部文件，避免漏迁。
+   症结是标识和路径依赖多个日期目录、outputs、docs/production、阶段脚本及 Python import 链。多数定位靠绝对路径；图像、表格、说明和生成脚本没有共同 release 标识。只把文件集中摆放不会修复来源链。
+
+3. 保存数值证据与保存可重渲染模型是两种能力。
+   最终来源 manifest 的前三个 run 配置存在，但 checkpoints 目录为空。已有 checkpoint_retention.md 明确允许部分批次在验证后删除模型/solver。
+   迁移可以保持这些数值和现有图像，但无法恢复已删除权重。应将每个 run 的能力标为 metrics_only、renderable 或 resumable，缺失权重不得伪装为完整复现包。
+
+4. 当前配置语义与历史材料不能互相覆盖。
+   production/ablations/ours/paper_semantic_freeze 继承 production/sensorless/ours_canonical，当前 pose_mode=canonical_sweep；历史 Ours 文档和脚本还存在 GT/tracked pose 描述。
+   必须按每个 run 当时的 resolved_config、源码 freeze、数据与 split 判定语义，显式区分 tracked pose、canonical sensorless、pose optimization 和历史旧算法。旧论文方法名、执行 SHA 和数值保持原样；新名称只作为映射。
+
+5. 旧 CUDA 实现可以拆出，但依赖不止一个文件夹。
+   methods/ours/render.py 使用 ours_renderer；其 setup.py 编译 mapper、shader、局部切片、全局衰减及协方差诊断，并依赖 ops/common 头文件。
+   bindings 同时导出前后向、ray-tile/ray-CSR 衰减、责任统计和路径贡献统计。这些统计参与密度控制，不能仅迁移输出图像的 forward。
+   其他自实现方法依赖不同 renderer；例如 gaussianpile、ultragray、ultragauss、slice_adapted_3dgs、ultrags_baseline、ultrags。旧 ultrags/render.py 仍引用 ellipsoid_mapper/ultrags_shader；s2s 有 common.scene 等历史依赖。它们需要独立分类与接口盘点，不能因旧目录名含 baseline 就当作外部仓库丢弃。
+
+6. 训练语义分散在长 callback 中。
+   gs_only_callbacks.py 包含取帧、前向、loss、backward、梯度统计、优化器更新、清零、densify/prune、评测和保存。GaussSolver 用一个带多个 param_group 的 Adam，并动态维护参数与 optimizer state。
+   gsplat Strategy 的接口对 optimizer 分组有约束；直接改用其默认策略会改变算法。Nerfstudio loss dict 会被求和；旧 dict 含分项和 total，直接返回会重复计算 loss。梯度累积、1-based iteration、LR 更新、DC 与 optimizer 的先后次序均须单独对齐。
+
+7. 恢复与测试还有工程缺口。
+   IOManager.load_checkpoint 在某个分片缺失时仅打印 Warning，仍返回请求的 iteration；恢复可能在状态不完整时继续。旧 checkpoint IO 未展示完整 RNG、采样顺序/游标和 DC 累积状态的统一保存协议，不能宣称精确续训。
+   test_p05_covariance 在无 CUDA 时将 actual=expected；CPU 通过不代表 CUDA 正确。部分测试读取 ignored outputs 中的冻结文件和历史 run 配置，无法在干净 clone 中独立运行。
+   根 README 有疑似历史凭据字符串；公开迁移前应做文件名/类型级凭据审计与脱敏，报告不复制其值。这里只标记待核实，不判定凭据有效。
+
+二、Nerfstudio 与 gsplat 改造边界
+
+官方依据（2026-10-17 在线查看，main 链接不是锁定版本）：
+https://docs.nerf.studio/developer_guides/new_methods.html
+https://docs.nerf.studio/developer_guides/pipelines/datamanagers.html
+https://raw.githubusercontent.com/nerfstudio-project/nerfstudio/main/nerfstudio/engine/trainer.py
+https://raw.githubusercontent.com/nerfstudio-project/nerfstudio/main/nerfstudio/data/dataparsers/nerfstudio_dataparser.py
+https://raw.githubusercontent.com/nerfstudio-project/nerfstudio/main/pyproject.toml
+https://raw.githubusercontent.com/nerfstudio-project/gsplat/main/gsplat/rendering.py
+https://raw.githubusercontent.com/nerfstudio-project/gsplat/main/gsplat/strategy/base.py
+
+Nerfstudio 支持专属 Model、DataParser、DataManager、Pipeline 和方法注册。采用 fork 满足专属开发要求，但将超声逻辑集中到明确模块，尽量通过已有扩展点接入，控制对公共 Trainer 的改动。
+
+建议映射：
+- scene/container、DatasetMeta -> UltrasoundDataParser + UltrasoundDataset + ProbeGeometry。
+- scene 的取帧、独立 test 文件与 holdout -> UltrasoundDataManager，消费冻结 frame IDs。
+- OursGaussContainer、render、loss -> UltrasoundModel 与明确参数组。
+- 旧 callback 的编排 -> UltrasoundPipeline + training callbacks；只在执行顺序确有需要时扩展 Trainer。
+- OursOfflineDensityController -> 自定义 DensityStrategy，保持原始责任/路径统计和 optimizer state 更新。
+- scalar/eval/IO -> 标准 run 输出与独立 provenance/checkpoint writer。
+- FiMA/其他自实现方法 -> 各自 MethodSpecification/Model，保留原评测语义；NeRF 类不强迫通过 Gaussian CUDA 路径。
+
+超声图像不是透视 RGB 相机图像。自定义 DataParser 必须保持 mm、probe->world、wxyz、像素中心、横向原点、轴向/层向距离和 native TUS 几何。禁止默认自动重定向、自动缩放、去畸变、RGB 文件转换或随机划分改变物理意义。Nerfstudio 默认 parser 的相机预处理不能直接继承后不加检查。第一版 viewer 可关闭；后续单独实现探头切片可视化，不能把普通相机漫游当超声重建验收。
+
+gsplat fork 建议新增 gsplat.ultrasound 的公开 API、autograd、reference、geometry 和专属 CUDA 模块；把局部有限切片、全局因果衰减、贡献统计作为显式超声算子。利用 gsplat 的构建、张量封装、适用的协方差/空间分桶基础设施；是否复用具体 kernel 以数值等价和性能测量决定。
+
+标准 rasterization 以 viewmats/Ks 等相机接口为基础，不能视为当前超声物理模型的直接替代。先将已验证数学移入 fork 并打通独立构建/调用，再逐项替换可复用基础设施；仅在 gsplat 旁边放一个仍依赖旧仓库路径的 ours_renderer，不算完成迁移。
+
+依赖适配必须先做小型验证。当前 Nerfstudio main pyproject 固定 gsplat==1.4.0，而 gsplat main 已有大量新接口。应选择一对兼容的上游 commit，分别保留 upstream base SHA、本地 fork SHA、环境锁、编译参数和 binary SHA。使用一个可解析的 fork distribution，验证 import gsplat.__file__ 指向当前 fork，避免 pip 悄悄装回官方 wheel。此审计不指定未经构建验证的版本组合。
+
+三、建议的 paper1 工作区
+
+paper1/
+  nerfstudio/                 独立代码 Git 仓库，保留 Nerfstudio 上游历史
+  gsplat/                     独立代码 Git 仓库，保留 gsplat 上游历史
+  protocol/                   独立小型 Git 仓库，跨仓库 lock、dataset/split/experiment/release registry
+  docs/                       独立文档 Git 仓库，研究说明、决策、审计、历史索引
+  data/                       外部存储目录或挂载；原始/处理/QC 版本，模型代码仓库外
+  results/                    实验和发布证据，模型代码仓库外
+  checkpoints/                持久权重目录，模型代码仓库外
+  cache/                      可重建缓存和按源码/环境隔离的 CUDA build cache
+  workspace/exchange/         交接缓冲，继续保留批次身份
+
+这是目标方案，本次只创建 docs/audits 下的审计产物；不初始化 Git、不创建上游 fork、不填充其他目录。
+
+paper2 可借鉴：根工作区与独立实现仓库分开、包入口和 pyproject 明确、protocol 独立、数据不混入主代码历史。不要照搬其代码仓库内 work_dirs/outputs/docs 的全部约定；用户当前要求的边界更严格。不要引入 paper2 的 baselines。
+
+模型/训练参数以 Nerfstudio typed dataclass 配置为唯一运行入口；旧 Hydra alias 导入为带来源的 legacy 配方映射，不在正式路径同时维护 Hydra 与另一套可改默认值。protocol 的矩阵只选择已命名配方和数据/预算/seed，不再复制一套模型参数。机器路径放本地未跟踪配置，记录逻辑 asset ID，解析到 storage root；外部资产与 registry 形成显式关系，不靠目录软链接作为唯一依据。
+
+四、docs 分类与实验证据结构
+
+docs/
+  00_index/                   导航、术语、权威入口、当前与历史状态
+  01_problem_and_methods/     问题定义、数学、AFGM/PLGR/CGAS 等术语映射和创新点
+  02_datasets/                来源、许可说明、预处理/QC、几何和 split 说明
+  03_engineering/             运行架构、API、开发、环境和集群操作
+  04_experiments/             各 experiment 的设计、分析、结论和证据引用
+  05_manuscript/              论文叙述、claim-to-evidence、图表目录和最终发布说明
+  90_archive/                 历史路线/负结果/被替代说明，保留原身份与旧路径映射
+  audits/                    迁移及完整性审计
+
+执行用 frame IDs、配置和验证程序放 protocol/或 owning code 的 tests/fixtures；docs 不再承担运行配置存储。归类按内容角色，不按文件日期、旧 phase 或所有内容一股脑 production。旧文档不能简单全移入 archive；仍支撑论文结果的协议和审计要保留为当前可导航证据。
+
+结果以 experiment ID 和 run ID 组织，原始与图表在同一可发布证据包内关联：
+results/experiments/<experiment_id>/
+  experiment.json             假设、矩阵、状态、协议与方法配方身份
+  runs/<run_id>/
+    run.json                  执行 commit/config/data/split/env/binary/parent_run 身份
+    config/                   resolved 配置和原命令快照
+    metrics/                  完整 scalar、per-frame、事件与计时原始记录
+    predictions/              有身份/坐标/数值范围的数值预测；按需要保留
+    renders/                  原始 GT/pred/diff 导出及逐帧来源
+    logs/                     运行和调度日志
+    checkpoint_refs.json      权重 ID、真实路径、SHA、schema、保留状态/清理记录
+  analysis/<analysis_id>/     输入 run 列表、未舍入聚合数据和分析版本
+  figures/<figure_id>/<revision>/
+    inputs.json               原始 TSV/预测/图像身份及 hash；绘图代码 commit
+    plotted_data.tsv          图中实际数值；与训练原始表的转换可追溯
+    recipe.json               field mapping、裁剪、颜色、坐标、显示范围和版式
+    exports/                  PDF/PNG/SVG，各自 hash 与审计
+  releases/<release_id>/      不可变 manifest，锁定本文实验、表、图、claim 的精确版本
+
+数据在 data/，权重在 checkpoints/ 仍是合理分离；experiment 包统一的是资产引用、来源、版本和复现能力。Git 保存配置、注册表、说明、小型数值表和图表 recipe；大数组、全部原图、权重用受管资产存储。DVC 或对象存储可后续选择，先统一 manifest/schema、checksum 与不可变 release，避免同时叠加多套工具。
+
+五、需要补充的工作与验收
+
+阶段 A：封存来源和建立资产清单。
+先保留原仓库与数据不动；按 tracked/modified/untracked/ignored 分类复制必要资产，输出 old->new 映射、SHA256、文件大小和来源状态。保留旧 Git 历史或可恢复 git bundle、dirty patch、源码/二进制 freeze、被引用 reports/scalars/vis，不打包缓存和所有失败 run。原始数据备份路径只在文档中出现，不视为已验证备份；独立检查是否存在并定义持久存储与容量预算。
+验收：所选论文证据的输入/输出/hash 可核对，缺失项有清单，旧目录仍可使用。禁止先删除旧目录再修复引用。
+
+阶段 B：双 fork 与独立环境。
+锁定 upstream/fork SHA、Python/PyTorch/CUDA/compiler/GPU 架构和依赖解析；设置独立 build cache；CPU 侧能导入/检查配置，GPU 节点验证真正加载新 binary。旧环境作为历史复现环境保留，不原地升级。
+验收：包解析、真实 import 路径、编译与最小前后向通过；没有旧路径依赖。
+
+阶段 C：gsplat 超声路径。
+迁移数学 reference 和必要共享头文件；验证局部 none/fixed/adaptive、因果衰减、路径统计、责任统计、frame geometry、scale/quaternion/pose gradients。先覆盖 Ours 正式路径，再按活跃需求迁移其他自实现 renderer；历史模块保留来源而不混入默认入口。
+验收：同输入旧/新前后向、有限差分及 reference 对齐，数值容差预先写入测试；CPU 没有 CUDA 时应明确 skip CUDA 验收。已有协方差修复不能在重构中回退。
+
+阶段 D：Nerfstudio 执行适配。
+独立 DataManager/Model/Pipeline，保持单图曝光数、初始化/随机序列、LR、Adam eps/状态、loss reduction、DC 事件顺序和评测帧。第一阶段关闭 AMP、DDP、viewer 等会扩大对齐面的功能；确认等价后分别验证。
+验收：固定初始化下单步/短轨迹对齐，跨 densify/prune 的参数与 optimizer state 一致，断点恢复与连续训练对比通过。checkpoint 缺分片时拒绝精确恢复；inference 导入与 resume 两种模式明确区分。保存 RNG、数据游标/采样器、DC state 和 schema migration 信息。
+
+阶段 E：证据重组与论文发布。
+导入历史 run、表、图、manifest 及方法名称映射；冻结既有 raw numerical records 不重算覆盖。选择代表表/图，在解析后的路径下用同一 recipe 重建，比较输入 hash、未舍入数值和图中字段；字体/平台变化不要求盲目逐字节 PDF 相同。发现旧 source hash 不匹配则生成新 revision 和差异审计，不重写历史。
+验收：从 figure ID 能找到 plotted data、原始 run/frame、配置、源码、数据/split、checkpoint 能力状态；从每个论文 claim 能找到已发布证据。失去 checkpoint 的结果仍只能声明已有数值/图像复现能力。
+
+阶段 F：覆盖范围与最终切换。
+四数据集逐一做加载/几何和冻结 split 检查；保持所有自实现方法及历史论文显示名的映射，不因迁移换栈自动删掉比较方法。新训练结果使用新 run ID，历史 GPU/FPS 数字不直接冒充新环境速度。先证实迁移等价，再进行算法创新；只有达标后再将 paper1 设为日常入口。
+
+额外必须明确的研究协议：
+- train/tune/test 与 checkpoint 选择集合分离。旧通用规则以 test/psnr 选 best，应在历史报告中如实保留，并检查是否存在测试集选择偏差；新协议使用 validation 选 best 或固定 final step，不能暗改旧排名。
+- 数据版本、QC 规则、数组 hash、物理单位、frame IDs、原始到 QC 索引映射均为版本资产；目录名称和 sweep 数量不足以定义数据版本。
+- 区分不同 seed 与不同 sweep 的统计；图的误差条来源、聚合权重、未舍入排名和显示舍入要写入 recipe。
+- 建立源码、数值和二进制的独立版本身份；不能把 validated equivalent commit 当实际执行 commit。
+- 权重保留与备份策略按 metrics_only/renderable/resumable 明确；/tmp 和同盘复制不作为唯一持久备份。
+- 数据与代码来源许可/引用说明随迁移保留，自实现与完全没有第三方来源不是同一概念。
+
+落地顺序建议：先保存证据并建立跨仓库版本/资产 registry，再打通 Ours 单条 GPU 路径和 Nerfstudio 单步/短跑对齐，最后逐方法迁移与重新发布图表。无需先重新训练整个论文矩阵。

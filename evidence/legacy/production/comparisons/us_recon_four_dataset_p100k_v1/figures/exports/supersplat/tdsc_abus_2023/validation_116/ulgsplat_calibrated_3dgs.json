@@ -1,0 +1,38 @@
+{
+  "format": "Graphdeco 3D Gaussian Splat PLY for SuperSplat",
+  "dataset": "tdsc_abus_2023",
+  "sweep": "validation_116",
+  "reference_2d_item": 39,
+  "method": "ULGSplat",
+  "checkpoint": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/paper_3d_checkpoint_regen/nvs/tdsc_abus_2023/validation_116/ours/checkpoints/iteration_30000_container.pth",
+  "checkpoint_iteration": 30000,
+  "gaussians": 890878,
+  "source_relation": "Same dataset, sweep, configuration and seed as the previously exported 2D PNG, but from a later checkpoint regeneration run; not the exact original training run.",
+  "position_normalization": {
+    "center_mm": [
+      2.2208125591278076,
+      21.152400970458984,
+      83.22251892089844
+    ],
+    "max_abs_distance_mm": 88.70321655273438
+  },
+  "scale_activation": "0.05 + 2.95 * sigmoid(raw_scale), then divide by position normalization distance",
+  "rotation": "raw quaternion normalized, wxyz",
+  "echo_activation": "0.2 * sigmoid(raw_echo_alpha)",
+  "display_color": {
+    "scalar": "echo_alpha",
+    "percentile_range": [
+      1,
+      99
+    ],
+    "measured_p1_p99": [
+      9.66149877967837e-07,
+      0.19999997317790985
+    ],
+    "gamma": 0.75,
+    "brightness": 0.9,
+    "sh_degree": 0
+  },
+  "display_opacity": 0.4,
+  "caveat": "SuperSplat uses standard alpha compositing, which differs from the native ULGSplat ultrasound renderer and can change visual appearance."
+}

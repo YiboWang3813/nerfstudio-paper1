@@ -1,0 +1,36 @@
+{
+  "format": "Graphdeco 3D Gaussian Splat PLY for SuperSplat",
+  "dataset": "tdsc_abus_2023",
+  "sweep": "validation_116",
+  "reference_2d_item": 39,
+  "method": "UltraGauss",
+  "checkpoint": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/paper_3d_checkpoint_regen/nvs/tdsc_abus_2023/validation_116/ultragauss/checkpoints/iteration_30000_container.pth",
+  "checkpoint_iteration": 30000,
+  "gaussians": 959716,
+  "source_relation": "Same dataset, sweep, configuration and seed as the 2D comparison figure, but from a later checkpoint regeneration run; not the exact original training run.",
+  "position_normalization": {
+    "center_mm": [
+      1.9878121614456177,
+      21.6503849029541,
+      83.34881591796875
+    ],
+    "max_abs_distance_mm": 88.44989013671875
+  },
+  "covariance": "L lower triangular: diag=raw_diag^2+1e-4, offdiag=raw_offdiag; covariance=(L L^T)^-1; eigendecomposition yields scales and wxyz quaternion",
+  "display_color": {
+    "scalar": "sigmoid(raw_intensity)",
+    "percentile_range": [
+      1,
+      99
+    ],
+    "measured_p1_p99": [
+      0.025154667906463146,
+      0.9992617607116699
+    ],
+    "gamma": 0.75,
+    "brightness": 0.9,
+    "sh_degree": 0
+  },
+  "display_opacity": 0.4,
+  "caveat": "SuperSplat uses standard alpha compositing, unlike the native UltraGauss weighted-average renderer."
+}

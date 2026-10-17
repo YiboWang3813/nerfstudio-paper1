@@ -1,0 +1,333 @@
+--- a/03_method.tex
++++ b/03_method.tex
+@@ -17,7 +17,7 @@
+ reconstruction and define the Gaussian scene representation
+ (Sec.~\ref{sec:problem-formulation-and-scene-representation}). Subsequently,
+ we introduce an acquisition-guided pseudo-pose parameterization to recover
+-coherent scan geometry without measured probe poses
++coherent scan geometry without using measured probe geometry to construct the pseudo-pose trajectory
+ (Sec.~\ref{sec:acquisition-guided-pseudo-pose-parameterization}). 
+ Next, we develop a physics-aware
+ local-global Gaussian renderer for physically faithful B-mode synthesis
+@@ -37,7 +37,7 @@
+ ordered sequence of $N$ B-mode frames,
+ $\mathcal I=\{\mathbf I_i\}_{i=1}^{N}$, where the corresponding measured
+ probe-pose sequence
+-$\mathcal T=\{\mathbf T_i^{p\rightarrow w}\}_{i=1}^{N}$ is unavailable.
++$\mathcal T=\{\mathbf T_i^{p\rightarrow w}\}_{i=1}^{N}$ is not used to construct the pseudo-pose trajectory.
+ Instead, we associate the frames with a computationally derived pseudo-pose
+ sequence
+ $\widetilde{\mathcal T}
+@@ -137,13 +137,13 @@
+ 
+ Specifically, given the translation-dominant acquisition pattern, we model the
+ inter-frame progression by a shared effective spacing $d=\rho d_0$, where
+-$d_0>0$ is the nominal acquisition spacing and $\rho>0$ globally adjusts 
++$d_0>0$ is the dataset-specific nominal/calibrated acquisition spacing stored in DatasetMeta and $\rho>0$ globally adjusts 
+ the effective scan spacing. Without loss of generality, we take the probe coordinate system of
+ a reference frame $i_0$ as the canonical world frame and use a predefined 
+ signed canonical axis $\mathbf u$ that specifies the scan direction.
+ Accordingly, rather than estimating frame-wise motion independently, the
+ probe-to-world pseudo pose of frame $i$ is directly induced by its relative
+-frame index:
++retained frame index. The loader may read the pose file for frame bookkeeping and consistency processing; measured probe geometry is not used to construct the pseudo-pose trajectory:
+ \begin{equation}
+ \widetilde{\mathbf T}_i^{p\rightarrow w}
+ =
+@@ -222,11 +222,10 @@
+ 
+ \subsubsection{Finite-Slice Local Echo Formation}
+ 
+-To preserve spatial correspondence between pixels and scatterers
+-within the finite acoustic slice, we redesign the Gaussian attribute derivation
+-of the local pathway with two key components: depth-adaptive elevational
+-conditioning, which models depth-dependent slice sensitivity, and probe-plane
+-Gaussian marginalization, which maintains image-plane Gaussian geometry.
++The local pathway forms echoes through two successive stages:
++finite-slice elevational conditioning, followed by footprint-compensated
++probe-plane echo aggregation. Together these operations account for finite
++acoustic-slice overlap and image-plane Gaussian response.
+ 
+ We first establish the probe-space representation shared by these operations.
+ Given the pseudo pose
+@@ -253,41 +252,16 @@
+ $\boldsymbol\Sigma^{p}_{ig}$, which are also reused by the global transmission
+ pathway.
+ 
+-On this probe-space representation, we introduce a depth-adaptive elevational
+-kernel centered on the imaging plane to model the finite-slice geometry and
+-echo formation of each primitive. Given the calibrated axial direction
+-$\mathbf e_{\mathrm{ax}}$ and near depth $z_{\mathrm{near}}$, the axial depth
+-of Gaussian $g$ and the corresponding elevational kernel width are given by
+-\begin{equation}
+-\begin{aligned}
+-z_{ig}
+-&=
+-\max
+-\left(
+-\mathbf e_{\mathrm{ax}}^\top
+-\boldsymbol\mu^p_{ig}
+--
+-z_{\mathrm{near}},
+-0
+-\right),\\
+-\sigma^{\mathrm{ele}}_{ig}
+-&=
+-\operatorname{clip}
+-\left(
+-\sigma^{\mathrm{ele}}_0
+-+
+-\sigma^{\mathrm{ele}}_1 z_{ig},
+-\sigma^{\mathrm{ele}}_{\min},
+-\sigma^{\mathrm{ele}}_{\max}
+-\right),
+-\end{aligned}
+-\label{eq:depth-adaptive-ele-width}
+-\end{equation}
+-where $z_{ig}$ denotes the axial depth relative to the calibrated near plane,
+-$\sigma^{\mathrm{ele}}_0$ and $\sigma^{\mathrm{ele}}_1$ control the initial
+-width and its depth-dependent growth, and
+-$\sigma^{\mathrm{ele}}_{\min}$ and $\sigma^{\mathrm{ele}}_{\max}$ bound the
+-effective elevational support. Specifically, multiplying this kernel by the
++\paragraph{Stage 1: Finite-Slice Elevational Conditioning.}
++We use an elevational kernel centered on the imaging plane, with one fixed
++effective Gaussian slice-width parameter shared across datasets and frames:
++\begin{equation}
++\sigma^{\mathrm{ele}}_{ig}=\sigma_{\mathrm{ele}}=1.0\,\mathrm{mm}.
++\label{eq:fixed-ele-width}
++\end{equation}
++This parameter controls overlap with the finite acoustic slice; no depth-growth
++term or per-sequence width tuning is used in the final method. Multiplying this
++kernel by the
+ probe-space Gaussian
+ $(\boldsymbol\mu^{p}_{ig},\boldsymbol\Sigma^{p}_{ig})$, with
+ $\boldsymbol\Lambda^{p}_{ig}
+@@ -342,6 +316,7 @@
+ while $r^{\mathrm{ele}}_{ig}$ and $\eta_{ig}$ denote the normalized
+ elevational distance and the resulting slice-overlap factor, respectively.
+ 
++\paragraph{Stage 2: Footprint-Compensated Probe-Plane Echo Aggregation.}
+ With the conditioned mean $\boldsymbol\mu^{e}_{ig}$ and covariance
+ $\boldsymbol\Sigma^{e}_{ig}$, we apply probe-plane Gaussian
+ marginalization to derive the image-plane Gaussian attributes for local echo
+@@ -422,8 +397,8 @@
+ \in
+ \mathcal B^{\mathrm{loc}}_{ig},
+ \;
+-\eta_{ig}\nu_{ig}\phi_{igp}
+->
++\alpha_g\eta_{ig}\nu_{ig}\phi_{igp}
++\geq
+ \tau_{\mathrm{loc}}
+ \right\},
+ \label{eq:local-candidate-set}
+@@ -546,7 +521,7 @@
+ \begin{aligned}
+ t^{*}_{igp}
+ &=
+-\operatorname*{arg\,min}_{0\leq t\leq t_p}
++\operatorname*{arg\,min}_{t\in\mathbb R}
+ \mathbf d_{igp}(t)^\top
+ \boldsymbol\Lambda^{p}_{ig}
+ \mathbf d_{igp}(t),\\
+@@ -561,7 +536,7 @@
+ \label{eq:localized-ray-interval}
+ \end{equation}
+ where $t^{*}_{igp}$ is the interaction center, $w$ the integration half-window,
+-and $t_s,t_e$ the clipped endpoints. Integrating over this interval yields 
++and $t_s,t_e$ the clipped endpoints. The interaction center is first found on the infinite line; the overlap is zero if $t_e\leq t_s$. Otherwise, integrating over this interval yields 
+ the approximated ray--Gaussian overlap using low-order Gauss--Legendre quadrature:
+ \begin{equation}
+ \rho_{igp}
+@@ -656,13 +631,13 @@
+ $c_{igp}
+ =
+ \alpha_g\eta_{ig}\nu_{ig}\phi_{igp}$,
+-we accumulate the local contribution
++on the adaptation-event frame, we compute the local contribution
+ $C_g=\sum_p c_{igp}$ and its residual-weighted counterpart
+ $R_g=\sum_p c_{igp}e_{ip}$. The densification score is then formulated as
+ \begin{equation}
+ \omega_g
+ =
+-\frac{R_g}{C_g+\varepsilon}
++\frac{R_g}{\max(C_g,10^{-8})}
+ \log(1+C_g),
+ \label{eq:contribution-aware-densification}
+ \end{equation}
+@@ -671,7 +646,7 @@
+ under-reconstructed regions and should therefore receive additional
+ representation capacity.
+ 
+-Given the high-score quantile $Q_{q_{\mathrm d}}(\{\omega\})$, minimum score
++Given the high-score quantile $Q_{q_{\mathrm d}}(\{\omega_g\mid\omega_g>0\})$, minimum score
+ threshold $\tau_{\omega}$, and per-event candidate budget $B$, we determine
+ the densification threshold and candidate set as
+ \begin{equation}
+@@ -679,7 +654,7 @@
+ =
+ \max
+ \left[
+-Q_{q_{\mathrm d}}(\{\omega\}),
++Q_{q_{\mathrm d}}(\{\omega_g\mid\omega_g>0\}),
+ \tau_{\omega},
+ \tau_{B}
+ \right],
+@@ -696,7 +671,7 @@
+ where $\tau_B$ is the score threshold induced by $B$, approximately limiting
+ the number of selected Gaussians. The selected Gaussians are adapted according
+ to their physical scale: large primitives are refined by spawning child
+-Gaussians to subdivide broad support, whereas smaller candidates are cloned to
++Gaussians: the parent is retained and two children are appended, with each child's raw scale parameter reduced by $\log 2$. This does not exactly halve the bounded-sigmoid physical scale. Smaller candidates are cloned to
+ increase local representation capacity. The newly generated Gaussians inherit
+ the echo and transmission parameters of their parents and are jointly refined
+ during subsequent optimization.
+@@ -704,7 +679,7 @@
+ \subsubsection{Path-Aware Pruning}
+ 
+ To prune Gaussians that are dispensable to both local echo formation and
+-global transmission, we jointly evaluate their accumulated local contribution
++global transmission, we jointly evaluate their adaptation-event-frame local contribution
+ $C_g$ and global path contribution $A_g$, which measures the transmission
+ reduction induced by Gaussian $g$ over the current adaptation interval
+ $\mathcal K$:
+@@ -729,13 +704,13 @@
+ g
+ \;\middle|\;
+ \alpha_g<\tau_{\alpha},\;
+-C_g<Q_{q_{\mathrm p}}(\{C\}),\;
++C_g\leq Q_{q_{\mathrm p}}(\{C\}),\;
+ A_g<Q_{q_{\mathrm A}}(\{A\})
+ \right\},
+ \label{eq:path-aware-pruning}
+ \end{equation}
+ where $q_{\mathrm p}$ and $q_{\mathrm A}$ control the local- and
+-global-contribution pruning levels, respectively. 
++global-contribution pruning levels, respectively. When the global pathway is unavailable, path-aware pruning degrades to local-aware pruning by omitting the global-protection condition. 
+ A Gaussian is removed only when it is consistently uninformative, thereby
+ preserving primitives that remain relevant to ultrasound rendering. 
+ 
+--- a/04_experiments_and_results.tex
++++ b/04_experiments_and_results.tex
+@@ -1,3 +1,5 @@
++% P2 SEMANTIC PATCH: import all final Fixed numerical tables/figures from P2 reports before publication; remaining historical numerical prose is not final evidence.
++% P0.5 SEMANTIC PATCH ONLY: all remaining legacy Ours numerical claims/tables/figures must be replaced before final publication.
+ \vspace{-1mm}
+ \section{Experiments and Results}
+ \label{sec:experiments}
+@@ -9,22 +11,28 @@
+ \subsubsection{Datasets}
+ \label{sec:experiments:datasets}
+ 
+-We conduct experiments on two synthetic/phantom datasets, \textbf{Liver} and
+-\textbf{Spine}, and two real-world datasets, \textbf{Arm} and
+-\textbf{Breast}. Liver and Spine are adopted from
+-UltraNeRF~\cite{wysockiUltraNeRFNeuralRadiance2024}: Liver contains 6
+-CT-based simulated sweeps with 200 frames each at $480\times640$, whereas
+-Spine contains 8 robotic sweeps of a lumbar-spine phantom with 150 frames
+-each at $168\times1300$. Arm and Breast are derived from
+-TUS-REC-2024~\cite{liTUSREC2024Challenge2025} and
+-TDSC-ABUS-2023~\cite{luoTDSCABUSChallenge2025}, respectively. Arm consists of
+-freehand forearm scans from 85 volunteers at $480\times640$, while Breast
+-contains automated 3D breast ultrasound volumes with typical sizes of
+-approximately $850\times600\times300$ voxels. We use all 6 Liver and 8 Spine
+-sweeps, together with 48 Arm sweeps and 30 publicly available Breast volumes.
+-All images are adaptively downsampled to approximately $10^5$ pixels per frame
+-to balance reconstruction efficiency and GPU memory usage while preserving the
+-acquisition geometry.
++We evaluate six locally available Liver sweeps, nine Spine phantom sweeps,
++33 quality-controlled Arm sweep segments, and 30 Breast volumes. Liver and Spine
++originate from UltraNeRF~\cite{wysockiUltraNeRFNeuralRadiance2024}; our within-sweep
++holdout protocol differs from that study's acquisition-level train/test split.
++Arm derives from TUS-REC-2024~\cite{liTUSREC2024Challenge2025}: 48 local source sweeps
++yield 33 continuous segments from 28 source sweeps after fixed pose-motion QC,
++while 20 source sweeps yield no qualifying segment. QC is performed before
++reconstruction, identically for all methods. Breast uses the 30 public validation
++volumes (IDs 100--129) of TDSC-ABUS-2023~\cite{luoTDSCABUSChallenge2025}.
++All methods are evaluated on exactly the same case and held-out frame IDs.
++Processed frame sizes are $448\times224$, $896\times112$, $288\times384$, and
++$280\times356$ for Liver, Spine, Arm, and Breast, respectively; frame counts
++vary by case except for the 200-frame Liver sweeps. We use interval holdout with
++approximately 20\% of each case's frames, restricting test eligibility by eight
++boundary frames for Spine and ten otherwise. Boundary frames remain available
++for training. Dataset metrics are arithmetic means of sweep-level final-30k
++metrics, each itself a mean over held-out frames, without frame-count weighting.
++The measured-pose main comparison is complemented by a separately identified
++16-case MP-versus-PPP validation subset (six Liver, five Arm and five Breast).
++For Arm, pose-based preprocessing remains a limitation: PPP does not use measured
++probe geometry to construct its pseudo-pose trajectory, but this experiment does
++not establish a wholly pose-free preprocessing pipeline.
+ 
+ \subsubsection{Baseline Methods}
+ \label{sec:experiments:baselines}
+@@ -60,7 +68,7 @@
+ 
+ We initialize each scene with $10^6$ Gaussians and optimize it for 30k
+ iterations using Adam. For acquisition-guided pseudo poses, we set $\rho=1$,
+-use the first retained frame as $i_0$, obtain $d_0$ from acquisition metadata,
++use the first retained frame as $i_0$, use dataset-specific nominal/calibrated acquisition spacing $d_0$ stored in DatasetMeta,
+ and adopt the predefined canonical scan direction. For local rendering, we use
+ a support multiplier of $2.5$ and set $\gamma=0.25$. For global rendering, we
+ use a support multiplier of $2.0$, 3-point Gauss--Legendre quadrature with a
+@@ -212,36 +220,36 @@
+ 
+ \subsubsection{Acquisition-Guided Pseudo-Pose Parameterization}
+ 
+-We examine how reconstruction changes as measured pose information is
+-progressively reduced in Table~\ref{tab:ablation:pseudo_pose}, moving from
+-measured poses (MP) to step (PP-S), axis (PP-A), and uniform-spacing pseudo
+-poses (PP-U). Replacing MP with PP-S preserves Liver reconstruction while
+-increasing Arm PSNR from 32.750 to 32.817~dB with unchanged SSIM of 0.866,
+-showing that part of the measured motion information can be discarded. PP-A
+-achieves the highest Liver PSNR of 29.774~dB but degrades Arm PSNR and LPIPS
+-to 32.565~dB and 0.155, suggesting weaker robustness to real acquisition
+-variation. PP-U ultimately raises Arm PSNR to 32.998~dB and SSIM to 0.868
+-while remaining close to MP on Liver
+-($29.748\!\rightarrow\!29.755$~dB), showing that acquisition regularity is
+-sufficient to preserve geometric consistency and image fidelity without
+-measured-pose dependence.
++We compare measured 6-DoF poses (MP), pseudo poses built from cumulative
++Euclidean adjacent measured translation magnitudes (PP-S), cumulative signed
++measured translation projections on the predefined axis (PP-A), and acquisition-
++guided uniform pseudo poses (PPP). PP-S and PP-A discard measured rotations;
++neither fits the scan axis. PPP uses only retained frame indices, nominal/calibrated
++spacing, a predefined signed axis and a reference frame to construct its trajectory.
++Pose-file loading for bookkeeping is distinct from using measured probe geometry.
++% P0.5: insert corrected PPP and multi-sweep results after authorized reruns.
+ 
+ \input{tables/main/tab_ablation_local_global_renderer}
+ 
+ \subsubsection{Local-Global Gaussian Renderer}
+ 
+-Table~\ref{tab:ablation:renderer} traces the renderer from local echo modeling
+-(L) to the addition of global transmission (G), followed by ray integration
+-(RI) with increasing quadrature order. The local-only formulation attains the
+-highest Liver PSNR of 29.854~dB but gives 32.525~dB PSNR and 0.164 LPIPS on
+-Arm, exposing its limited ability to capture propagation-dependent appearance.
+-Introducing G reduces Liver LPIPS from 0.268 to 0.232 while improving Arm PSNR
+-to 32.660~dB and LPIPS to 0.141, confirming the value of propagation-aware
+-acoustic modulation. Ray integration further increases Arm PSNR to
+-32.759~dB with one-point quadrature, and $N_q=3$ reaches 32.764~dB while
+-retaining 0.141 LPIPS, suggesting that low-order quadrature provides an
+-effective approximation to causal ray interaction and thereby improves
+-path-dependent B-mode rendering.
++Table~\ref{tab:ablation:renderer} compares Plane, Fixed, Adaptive,
++Fixed+Simple and Fixed+Full using the same six Liver and five frozen Arm sweeps.
++Plane-to-Fixed tests finite-slice conditioning. Fixed versus Adaptive compares
++alternative local formulations, not progressive additions: the depth-adaptive
++alternative uses $\operatorname{clip}(1+0.01z,0.8,5)$ mm and exhibits
++dataset-dependent reconstruction/perceptual trade-offs. It is not the final
++production formulation. Fixed-to-Fixed+Simple-to-Fixed+Full examines preceding-path
++modulation and explicit causal ray integration. These rows are not assumed to
++improve monotonically on every metric.
++Simple Global uses the equivalent Gaussian scale
++$s_g=\sqrt{(s_{gx}^2+s_{gy}^2+s_{gz}^2)/3}$ and
++$\rho^{\mathrm{simple}}_{igp}=s_g\exp[-(d_{\mathrm{lat}}^2+d_{\mathrm{ele}}^2)/(2s_g^2)]$,
++with $T_{igp}=\tau_g+(1-\tau_g)\exp(-\lambda_{\mathrm{ray}}\rho^{\mathrm{simple}}_{igp})$
++for preceding-depth candidates. It is not pixel-depth-only decay.
++Global-off rows use local-aware pruning; global-on rows use path-aware pruning.
++No separate acoustic-attribute-decoupling ablation is claimed.
++% Import final P2 table values from the manifest-backed reports, not old text.
+ 
+ \input{tables/main/tab_ablation_gaussian_adaptation}
+ 

@@ -1,0 +1,3 @@
+scope	dataset	method	num_runs	render_fps_mean	render_fps_median	render_fps_min	render_fps_max	num_dataset_means
+dataset	tus_rec_2024_qc	ultranerf	1	309.8995570487844	309.8995570487844	309.8995570487844	309.8995570487844	
+paper_tables	all_available_dataset_means	ultranerf		309.8995570487844	309.8995570487844	309.8995570487844	309.8995570487844	1

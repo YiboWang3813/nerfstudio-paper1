@@ -1,0 +1,12 @@
+method_name: nerfus
+experiment_name: paper_fps_checkpoint_regen_missing_tus_rec_2024_qc_010_RH_Per_C_PtD_qc_0006_0427_nerfus_no_prior
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/paper_fps_checkpoint_regen_missing/nvs/tus_rec_2024_qc/010_RH_Per_C_PtD_qc_0006_0427/nerfus_no_prior
+dataset: tus_rec_2024
+sweep: 010_RH_Per_C_PtD_qc_0006_0427
+split: holdout_interval
+train_frames: 337
+test_frames: 84
+resolution: 288x384
+train_steps: 30000
+seed: 42
+final_iteration: 30000

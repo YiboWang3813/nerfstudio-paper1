@@ -1,0 +1,3 @@
+scope	dataset	method	num_runs	render_fps_mean	render_fps_median	render_fps_min	render_fps_max	num_dataset_means
+dataset	tus_rec_2024_qc	slice_adapted_3dgs	1	315.65199691523463	315.65199691523463	315.65199691523463	315.65199691523463	
+paper_tables	all_available_dataset_means	slice_adapted_3dgs		315.65199691523463	315.65199691523463	315.65199691523463	315.65199691523463	1

@@ -1,0 +1,5 @@
+created_at: '2026-07-02T16:40:08'
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/expanded_paper_plan_20260702/runs/t14_renderer_sensitivity/synthetic_liver/l1/min_transmission_0.65
+checkpoint_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/expanded_paper_plan_20260702/runs/t14_renderer_sensitivity/synthetic_liver/l1/min_transmission_0.65/checkpoints
+hydra_output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/expanded_paper_plan_20260702/runs/t14_renderer_sensitivity/synthetic_liver/l1/min_transmission_0.65
+config_path: hydra:experiment=production/ablations/ours/base_1m30k

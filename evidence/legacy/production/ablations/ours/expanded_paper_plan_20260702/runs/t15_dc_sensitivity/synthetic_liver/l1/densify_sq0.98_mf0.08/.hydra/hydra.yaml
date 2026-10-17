@@ -1,0 +1,210 @@
+hydra:
+  run:
+    dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/expanded_paper_plan_20260702/runs/t15_dc_sensitivity/synthetic_liver/l1/densify_sq0.98_mf0.08
+  sweep:
+    dir: ${system.output_root}/multirun/${now:%Y-%m-%d}/${now:%H-%M-%S}
+    subdir: ${hydra.job.num}_${slug:${experiment.family}}-${slug:${experiment.name}}_${slug:${model.name}}_${short_run_id:}
+  launcher:
+    _target_: hydra._internal.core_plugins.basic_launcher.BasicLauncher
+  sweeper:
+    _target_: hydra._internal.core_plugins.basic_sweeper.BasicSweeper
+    max_batch_size: null
+    params: null
+  help:
+    app_name: ${hydra.job.name}
+    header: '${hydra.help.app_name} is powered by Hydra.
+
+      '
+    footer: 'Powered by Hydra (https://hydra.cc)
+
+      Use --hydra-help to view Hydra specific help
+
+      '
+    template: '${hydra.help.header}
+
+      == Configuration groups ==
+
+      Compose your configuration from those groups (group=option)
+
+
+      $APP_CONFIG_GROUPS
+
+
+      == Config ==
+
+      Override anything in the config (foo.bar=value)
+
+
+      $CONFIG
+
+
+      ${hydra.help.footer}
+
+      '
+  hydra_help:
+    template: 'Hydra (${hydra.runtime.version})
+
+      See https://hydra.cc for more info.
+
+
+      == Flags ==
+
+      $FLAGS_HELP
+
+
+      == Configuration groups ==
+
+      Compose your configuration from those groups (For example, append hydra/job_logging=disabled
+      to command line)
+
+
+      $HYDRA_CONFIG_GROUPS
+
+
+      Use ''--cfg hydra'' to Show the Hydra config.
+
+      '
+    hydra_help: ???
+  hydra_logging:
+    version: 1
+    formatters:
+      simple:
+        format: '[%(asctime)s][HYDRA] %(message)s'
+    handlers:
+      console:
+        class: logging.StreamHandler
+        formatter: simple
+        stream: ext://sys.stdout
+    root:
+      level: INFO
+      handlers:
+      - console
+    loggers:
+      logging_example:
+        level: DEBUG
+    disable_existing_loggers: false
+  job_logging:
+    version: 1
+    formatters:
+      simple:
+        format: '[%(asctime)s][%(name)s][%(levelname)s] - %(message)s'
+    handlers:
+      console:
+        class: logging.StreamHandler
+        formatter: simple
+        stream: ext://sys.stdout
+      file:
+        class: logging.FileHandler
+        formatter: simple
+        filename: ${hydra.runtime.output_dir}/${hydra.job.name}.log
+    root:
+      level: INFO
+      handlers:
+      - console
+      - file
+    disable_existing_loggers: false
+  env: {}
+  mode: RUN
+  searchpath: []
+  callbacks: {}
+  output_subdir: .hydra
+  overrides:
+    hydra:
+    - hydra.run.dir=/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/expanded_paper_plan_20260702/runs/t15_dc_sensitivity/synthetic_liver/l1/densify_sq0.98_mf0.08
+    - hydra.mode=RUN
+    task:
+    - experiment=production/ablations/ours/base_1m30k
+    - system.output_root=/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/expanded_paper_plan_20260702
+    - system.exp_tag=t15_dc_sensitivity_synthetic_liver_l1_densify_sq0_98_mf0_08
+    - scene=liver
+    - scene.loading.sweep_name=l1
+    - scene.loading.holdout_trim_each=10
+    - scene.loading.test_mode=holdout_interval
+    - scene.loading.holdout_test_ratio=0.2
+    - scene.loading.holdout_num_samples=0
+    - scene.loading.pose_type=absolute
+    - scene.loading.image_downsample_factor=1
+    - scene.loading.axial_downsample_factor=1
+    - engine.iterations=30000
+    - engine.interval.test=30000
+    - engine.interval.save=30000
+    - scene.sampler.num_init=1000000
+    - model.gauss_init.num_points=1000000
+    - metric.needed_metrics=[psnr,l1,ssim,lpips,dists,gmsd]
+    - metric.max_vis_frames=10
+    - metric.save_per_frame_metrics=true
+    - loss.needed_losses=[l1,ssim]
+    - loss.lambdas.l1=0.8
+    - loss.lambdas.ssim=0.2
+    - loss.lambdas.scale_wall=0.0
+    - loss.l1_cfg.clamp_inputs=false
+    - loss.ssim_cfg.clamp_inputs=false
+    - model.gauss_container.constraints.scale_activation=bounded_sigmoid
+    - model.offline.density_control.timing.start_iter=1000
+    - model.offline.density_control.timing.end_iter=25000
+    - model.offline.density_control.timing.freq=2000
+    - model.slice_render.ray_attenuation_enabled=true
+    - model.slice_render.ray_attenuation_formula=integral
+    - model.slice_render.ray_attenuation_quadrature_points=3
+    - model.slice_render.ray_attenuation_candidate_k_sigma=2.0
+    - model.slice_render.ray_attenuation_beta=0.80
+    - model.slice_render.ray_attenuation_strength=0.55
+    - model.slice_render.ray_attenuation_min_transmission=0.35
+    - model.offline.density_control.strategy=contribution_residual
+    - model.offline.density_control.thresholds.prune_opacity=0.0001
+    - model.offline.density_control.responsibility.enabled=true
+    - model.offline.density_control.responsibility.score_quantile=0.98
+    - model.offline.density_control.responsibility.max_fraction=0.05
+    - model.offline.density_control.responsibility.low_contribution_quantile=0.10
+    - model.offline.density_control.responsibility.protect_attenuation_enabled=true
+    - model.offline.density_control.responsibility.protect_attenuation_quantile=0.80
+    - scene.loading.pose_mode=file
+    - model.offline.density_control.responsibility.score_quantile=0.98
+    - model.offline.density_control.responsibility.max_fraction=0.08
+  job:
+    name: run
+    chdir: false
+    override_dirname: engine.interval.save=30000,engine.interval.test=30000,engine.iterations=30000,experiment=production/ablations/ours/base_1m30k,loss.l1_cfg.clamp_inputs=false,loss.lambdas.l1=0.8,loss.lambdas.scale_wall=0.0,loss.lambdas.ssim=0.2,loss.needed_losses=[l1,ssim],loss.ssim_cfg.clamp_inputs=false,metric.max_vis_frames=10,metric.needed_metrics=[psnr,l1,ssim,lpips,dists,gmsd],metric.save_per_frame_metrics=true,model.gauss_container.constraints.scale_activation=bounded_sigmoid,model.gauss_init.num_points=1000000,model.offline.density_control.responsibility.enabled=true,model.offline.density_control.responsibility.low_contribution_quantile=0.10,model.offline.density_control.responsibility.max_fraction=0.05,model.offline.density_control.responsibility.max_fraction=0.08,model.offline.density_control.responsibility.protect_attenuation_enabled=true,model.offline.density_control.responsibility.protect_attenuation_quantile=0.80,model.offline.density_control.responsibility.score_quantile=0.98,model.offline.density_control.responsibility.score_quantile=0.98,model.offline.density_control.strategy=contribution_residual,model.offline.density_control.thresholds.prune_opacity=0.0001,model.offline.density_control.timing.end_iter=25000,model.offline.density_control.timing.freq=2000,model.offline.density_control.timing.start_iter=1000,model.slice_render.ray_attenuation_beta=0.80,model.slice_render.ray_attenuation_candidate_k_sigma=2.0,model.slice_render.ray_attenuation_enabled=true,model.slice_render.ray_attenuation_formula=integral,model.slice_render.ray_attenuation_min_transmission=0.35,model.slice_render.ray_attenuation_quadrature_points=3,model.slice_render.ray_attenuation_strength=0.55,scene.loading.axial_downsample_factor=1,scene.loading.holdout_num_samples=0,scene.loading.holdout_test_ratio=0.2,scene.loading.holdout_trim_each=10,scene.loading.image_downsample_factor=1,scene.loading.pose_mode=file,scene.loading.pose_type=absolute,scene.loading.sweep_name=l1,scene.loading.test_mode=holdout_interval,scene.sampler.num_init=1000000,scene=liver,system.exp_tag=t15_dc_sensitivity_synthetic_liver_l1_densify_sq0_98_mf0_08,system.output_root=/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/expanded_paper_plan_20260702
+    id: ???
+    num: ???
+    config_name: config
+    env_set: {}
+    env_copy: []
+    config:
+      override_dirname:
+        kv_sep: '='
+        item_sep: ','
+        exclude_keys: []
+  runtime:
+    version: 1.3.2
+    version_base: '1.3'
+    cwd: /home/boywang25/ultrasound-scene-reconstruction/omniultra
+    config_sources:
+    - path: hydra.conf
+      schema: pkg
+      provider: hydra
+    - path: /home/boywang25/ultrasound-scene-reconstruction/omniultra/configs_hydra
+      schema: file
+      provider: main
+    - path: ''
+      schema: structured
+      provider: schema
+    output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/expanded_paper_plan_20260702/runs/t15_dc_sensitivity/synthetic_liver/l1/densify_sq0.98_mf0.08
+    choices:
+      experiment: production/ablations/ours/base_1m30k
+      system: default
+      metric: default
+      loss: default
+      model: ours_us_focus
+      scene: liver
+      engine: debug_offline
+      hydra/env: default
+      hydra/callbacks: null
+      hydra/job_logging: default
+      hydra/hydra_logging: default
+      hydra/hydra_help: default
+      hydra/help: default
+      hydra/sweeper: basic
+      hydra/launcher: basic
+      hydra/output: default
+  verbose: false

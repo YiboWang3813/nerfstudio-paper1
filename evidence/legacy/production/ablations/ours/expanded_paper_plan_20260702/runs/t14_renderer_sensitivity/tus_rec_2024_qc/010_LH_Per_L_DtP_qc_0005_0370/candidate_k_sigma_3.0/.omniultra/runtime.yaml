@@ -1,0 +1,5 @@
+created_at: '2026-07-02T16:56:43'
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/expanded_paper_plan_20260702/runs/t14_renderer_sensitivity/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/candidate_k_sigma_3.0
+checkpoint_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/expanded_paper_plan_20260702/runs/t14_renderer_sensitivity/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/candidate_k_sigma_3.0/checkpoints
+hydra_output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/expanded_paper_plan_20260702/runs/t14_renderer_sensitivity/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/candidate_k_sigma_3.0
+config_path: hydra:experiment=production/ablations/ours/base_1m30k

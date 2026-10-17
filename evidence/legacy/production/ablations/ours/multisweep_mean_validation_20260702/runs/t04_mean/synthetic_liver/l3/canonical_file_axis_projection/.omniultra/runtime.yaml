@@ -1,0 +1,5 @@
+created_at: '2026-07-02T23:04:43'
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/multisweep_mean_validation_20260702/runs/t04_mean/synthetic_liver/l3/canonical_file_axis_projection
+checkpoint_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/multisweep_mean_validation_20260702/runs/t04_mean/synthetic_liver/l3/canonical_file_axis_projection/checkpoints
+hydra_output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/multisweep_mean_validation_20260702/runs/t04_mean/synthetic_liver/l3/canonical_file_axis_projection
+config_path: hydra:experiment=production/ablations/ours/base_1m30k

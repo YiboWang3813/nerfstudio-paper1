@@ -1,0 +1,3 @@
+scope	dataset	method	num_runs	render_fps_mean	render_fps_median	render_fps_min	render_fps_max	num_dataset_means
+dataset	tus_rec_2024_qc	gaussianpile	1	247.75475924653185	247.75475924653185	247.75475924653185	247.75475924653185	
+paper_tables	all_available_dataset_means	gaussianpile		247.75475924653185	247.75475924653185	247.75475924653185	247.75475924653185	1

@@ -1,0 +1,3 @@
+scope	dataset	method	num_runs	render_fps_mean	render_fps_median	render_fps_min	render_fps_max	num_dataset_means
+dataset	tdsc_abus_2023	nerfus_no_prior	1	330.1457694991136	330.1457694991136	330.1457694991136	330.1457694991136	
+paper_tables	all_available_dataset_means	nerfus_no_prior		330.1457694991136	330.1457694991136	330.1457694991136	330.1457694991136	1

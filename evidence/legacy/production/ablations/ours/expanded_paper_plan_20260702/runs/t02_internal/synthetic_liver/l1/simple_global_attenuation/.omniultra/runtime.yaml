@@ -1,0 +1,5 @@
+created_at: '2026-07-02T16:01:12'
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/expanded_paper_plan_20260702/runs/t02_internal/synthetic_liver/l1/simple_global_attenuation
+checkpoint_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/expanded_paper_plan_20260702/runs/t02_internal/synthetic_liver/l1/simple_global_attenuation/checkpoints
+hydra_output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/expanded_paper_plan_20260702/runs/t02_internal/synthetic_liver/l1/simple_global_attenuation
+config_path: hydra:experiment=production/ablations/ours/base_1m30k

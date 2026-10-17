@@ -1,0 +1,12 @@
+method_name: nerfus
+experiment_name: paper_fps_checkpoint_regen_missing_spine_phantom_left3_2_nerfus_no_prior
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/paper_fps_checkpoint_regen_missing/nvs/spine_phantom/left3_2/nerfus_no_prior
+dataset: spine_phantom
+sweep: left3_2
+split: holdout_interval
+train_frames: 118
+test_frames: 30
+resolution: 896x112
+train_steps: 30000
+seed: 42
+final_iteration: 30000

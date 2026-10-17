@@ -1,0 +1,3 @@
+scope	dataset	method	num_runs	render_fps_mean	render_fps_median	render_fps_min	render_fps_max	num_dataset_means
+dataset	synthetic_liver	ultranerf	1	315.5868941047988	315.5868941047988	315.5868941047988	315.5868941047988	
+paper_tables	all_available_dataset_means	ultranerf		315.5868941047988	315.5868941047988	315.5868941047988	315.5868941047988	1

@@ -1,0 +1,12 @@
+method_name: ultranerf
+experiment_name: paper_fps_checkpoint_regen_missing_tdsc_abus_2023_validation_101_ultranerf
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/paper_fps_checkpoint_regen_missing/nvs/tdsc_abus_2023/validation_101/ultranerf
+dataset: tdsc_abus_2023
+sweep: validation_101
+split: holdout_interval
+train_frames: 278
+test_frames: 70
+resolution: 280x356
+train_steps: 30000
+seed: 42
+final_iteration: 30000

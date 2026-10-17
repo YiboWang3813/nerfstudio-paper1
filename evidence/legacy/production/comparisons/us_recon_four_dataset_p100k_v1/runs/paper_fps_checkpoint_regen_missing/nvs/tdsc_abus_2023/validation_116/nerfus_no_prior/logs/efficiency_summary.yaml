@@ -1,0 +1,29 @@
+time: 2026-07-02 11:51:29
+job_id: 66871
+benchmark: us_recon_four_dataset_p100k_v1
+stage: paper_fps_checkpoint_regen_missing
+dataset: tdsc_abus_2023
+sweep: validation_116
+method: nerfus_no_prior
+exp_name: paper_fps_checkpoint_regen_missing_tdsc_abus_2023_validation_116_nerfus_no_prior
+train_start_time: 2026-07-02 11:46:20+0800
+train_end_time: 2026-07-02 11:51:29+0800
+train_wall_time_sec: 309
+train_iterations: 30000
+train_iter_per_sec: 97.0873786407767
+train_start_gpu_mem_mb: 1
+train_end_gpu_mem_mb: 1
+train_peak_gpu_mem_mb: 5269
+train_exit_code: 0
+best_num_gaussians: 
+final_num_gaussians: 
+min_num_gaussians: 
+max_num_gaussians: 
+dc_event_count: 0
+checkpoint_bytes: 1609394
+vis_bytes: 4938228
+eval_bytes: 17998
+output_bytes: 8091300
+latest_output_mtime: 2026-07-02 11:51:29
+efficiency_tsv: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/paper_fps_checkpoint_regen_missing/nvs/tdsc_abus_2023/validation_116/nerfus_no_prior/logs/efficiency.tsv
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/paper_fps_checkpoint_regen_missing/nvs/tdsc_abus_2023/validation_116/nerfus_no_prior

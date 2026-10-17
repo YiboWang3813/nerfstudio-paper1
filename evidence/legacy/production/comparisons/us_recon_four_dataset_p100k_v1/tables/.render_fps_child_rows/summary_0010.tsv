@@ -1,0 +1,3 @@
+scope	dataset	method	num_runs	render_fps_mean	render_fps_median	render_fps_min	render_fps_max	num_dataset_means
+dataset	spine_phantom	ultragauss	1	1285.2424325825612	1285.2424325825612	1285.2424325825612	1285.2424325825612	
+paper_tables	all_available_dataset_means	ultragauss		1285.2424325825612	1285.2424325825612	1285.2424325825612	1285.2424325825612	1

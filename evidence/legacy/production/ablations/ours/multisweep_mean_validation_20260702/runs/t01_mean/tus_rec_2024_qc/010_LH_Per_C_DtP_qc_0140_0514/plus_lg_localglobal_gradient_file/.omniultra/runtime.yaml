@@ -1,0 +1,5 @@
+created_at: '2026-07-02T23:44:34'
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/multisweep_mean_validation_20260702/runs/t01_mean/tus_rec_2024_qc/010_LH_Per_C_DtP_qc_0140_0514/plus_lg_localglobal_gradient_file
+checkpoint_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/multisweep_mean_validation_20260702/runs/t01_mean/tus_rec_2024_qc/010_LH_Per_C_DtP_qc_0140_0514/plus_lg_localglobal_gradient_file/checkpoints
+hydra_output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/multisweep_mean_validation_20260702/runs/t01_mean/tus_rec_2024_qc/010_LH_Per_C_DtP_qc_0140_0514/plus_lg_localglobal_gradient_file
+config_path: hydra:experiment=production/ablations/ours/base_1m30k

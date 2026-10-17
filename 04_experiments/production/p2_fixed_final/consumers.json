@@ -1,0 +1,1280 @@
+[
+  {
+    "dataset": "spine_phantom",
+    "sweep": "left1",
+    "consumer": "main",
+    "row_id": "p2_000"
+  },
+  {
+    "dataset": "spine_phantom",
+    "sweep": "left1_1",
+    "consumer": "main",
+    "row_id": "p2_001"
+  },
+  {
+    "dataset": "spine_phantom",
+    "sweep": "left2",
+    "consumer": "main",
+    "row_id": "p2_002"
+  },
+  {
+    "dataset": "spine_phantom",
+    "sweep": "left3",
+    "consumer": "main",
+    "row_id": "p2_003"
+  },
+  {
+    "dataset": "spine_phantom",
+    "sweep": "left3_2",
+    "consumer": "main",
+    "row_id": "p2_004"
+  },
+  {
+    "dataset": "spine_phantom",
+    "sweep": "right1",
+    "consumer": "main",
+    "row_id": "p2_005"
+  },
+  {
+    "dataset": "spine_phantom",
+    "sweep": "right1_1",
+    "consumer": "main",
+    "row_id": "p2_006"
+  },
+  {
+    "dataset": "spine_phantom",
+    "sweep": "right3",
+    "consumer": "main",
+    "row_id": "p2_007"
+  },
+  {
+    "dataset": "spine_phantom",
+    "sweep": "right3_2",
+    "consumer": "main",
+    "row_id": "p2_008"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "l1",
+    "consumer": "main",
+    "row_id": "p2_009"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "l2",
+    "consumer": "main",
+    "row_id": "p2_010"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "l3",
+    "consumer": "main",
+    "row_id": "p2_011"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "r1",
+    "consumer": "main",
+    "row_id": "p2_012"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "r2",
+    "consumer": "main",
+    "row_id": "p2_013"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "r3",
+    "consumer": "main",
+    "row_id": "p2_014"
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_100",
+    "consumer": "main",
+    "row_id": "p2_015"
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_101",
+    "consumer": "main",
+    "row_id": "p2_016"
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_102",
+    "consumer": "main",
+    "row_id": "p2_017"
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_103",
+    "consumer": "main",
+    "row_id": "p2_018"
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_104",
+    "consumer": "main",
+    "row_id": "p2_019"
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_105",
+    "consumer": "main",
+    "row_id": "p2_020"
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_106",
+    "consumer": "main",
+    "row_id": "p2_021"
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_107",
+    "consumer": "main",
+    "row_id": "p2_022"
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_108",
+    "consumer": "main",
+    "row_id": "p2_023"
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_109",
+    "consumer": "main",
+    "row_id": "p2_024"
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_110",
+    "consumer": "main",
+    "row_id": "p2_025"
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_111",
+    "consumer": "main",
+    "row_id": "p2_026"
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_112",
+    "consumer": "main",
+    "row_id": "p2_027"
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_113",
+    "consumer": "main",
+    "row_id": "p2_028"
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_114",
+    "consumer": "main",
+    "row_id": "p2_029"
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_115",
+    "consumer": "main",
+    "row_id": "p2_030"
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_116",
+    "consumer": "main",
+    "row_id": "p2_031"
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_117",
+    "consumer": "main",
+    "row_id": "p2_032"
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_118",
+    "consumer": "main",
+    "row_id": "p2_033"
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_119",
+    "consumer": "main",
+    "row_id": "p2_034"
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_120",
+    "consumer": "main",
+    "row_id": "p2_035"
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_121",
+    "consumer": "main",
+    "row_id": "p2_036"
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_122",
+    "consumer": "main",
+    "row_id": "p2_037"
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_123",
+    "consumer": "main",
+    "row_id": "p2_038"
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_124",
+    "consumer": "main",
+    "row_id": "p2_039"
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_125",
+    "consumer": "main",
+    "row_id": "p2_040"
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_126",
+    "consumer": "main",
+    "row_id": "p2_041"
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_127",
+    "consumer": "main",
+    "row_id": "p2_042"
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_128",
+    "consumer": "main",
+    "row_id": "p2_043"
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_129",
+    "consumer": "main",
+    "row_id": "p2_044"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_LH_Par_C_DtP_qc_0008_0107",
+    "consumer": "main",
+    "row_id": "p2_045"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_LH_Per_C_DtP_qc_0140_0514",
+    "consumer": "main",
+    "row_id": "p2_046"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_LH_Per_C_PtD_qc_0007_0470",
+    "consumer": "main",
+    "row_id": "p2_047"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_LH_Per_L_DtP_qc_0005_0370",
+    "consumer": "main",
+    "row_id": "p2_048"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_LH_Per_L_PtD_qc_0020_0222_s01",
+    "consumer": "main",
+    "row_id": "p2_049"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_LH_Per_L_PtD_qc_0238_0488_s02",
+    "consumer": "main",
+    "row_id": "p2_050"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_LH_Per_S_DtP_qc_0085_0442_s01",
+    "consumer": "main",
+    "row_id": "p2_051"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_LH_Per_S_DtP_qc_0460_0586_s02",
+    "consumer": "main",
+    "row_id": "p2_052"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_LH_Per_S_PtD_qc_0078_0394",
+    "consumer": "main",
+    "row_id": "p2_053"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_RH_Par_S_DtP_qc_0005_0091",
+    "consumer": "main",
+    "row_id": "p2_054"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_RH_Per_C_DtP_qc_0269_0627",
+    "consumer": "main",
+    "row_id": "p2_055"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_RH_Per_C_PtD_qc_0006_0427",
+    "consumer": "main",
+    "row_id": "p2_056"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_RH_Per_L_DtP_qc_0005_0574",
+    "consumer": "main",
+    "row_id": "p2_057"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_RH_Per_L_PtD_qc_0006_0546",
+    "consumer": "main",
+    "row_id": "p2_058"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_RH_Per_S_DtP_qc_0096_0411_s01",
+    "consumer": "main",
+    "row_id": "p2_059"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_RH_Per_S_DtP_qc_0426_0538_s02",
+    "consumer": "main",
+    "row_id": "p2_060"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_RH_Per_S_PtD_qc_0062_0150_s01",
+    "consumer": "main",
+    "row_id": "p2_061"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_RH_Per_S_PtD_qc_0165_0364_s02",
+    "consumer": "main",
+    "row_id": "p2_062"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "011_LH_Par_S_DtP_qc_0155_0249",
+    "consumer": "main",
+    "row_id": "p2_063"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "011_LH_Par_S_PtD_qc_0112_0224",
+    "consumer": "main",
+    "row_id": "p2_064"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "011_LH_Per_C_DtP_qc_0115_0556",
+    "consumer": "main",
+    "row_id": "p2_065"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "011_LH_Per_C_PtD_qc_0006_0568",
+    "consumer": "main",
+    "row_id": "p2_066"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "011_LH_Per_L_DtP_qc_0005_0594",
+    "consumer": "main",
+    "row_id": "p2_067"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "011_LH_Per_L_PtD_qc_0006_0690",
+    "consumer": "main",
+    "row_id": "p2_068"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "011_LH_Per_S_DtP_qc_0118_0529",
+    "consumer": "main",
+    "row_id": "p2_069"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "011_LH_Per_S_PtD_qc_0008_0447",
+    "consumer": "main",
+    "row_id": "p2_070"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "011_RH_Per_C_DtP_qc_0137_0372",
+    "consumer": "main",
+    "row_id": "p2_071"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "011_RH_Per_C_PtD_qc_0006_0170_s01",
+    "consumer": "main",
+    "row_id": "p2_072"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "011_RH_Per_C_PtD_qc_0186_0557_s02",
+    "consumer": "main",
+    "row_id": "p2_073"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "011_RH_Per_L_DtP_qc_0007_0584",
+    "consumer": "main",
+    "row_id": "p2_074"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "011_RH_Per_L_PtD_qc_0006_0459",
+    "consumer": "main",
+    "row_id": "p2_075"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "011_RH_Per_S_DtP_qc_0166_0553",
+    "consumer": "main",
+    "row_id": "p2_076"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "011_RH_Per_S_PtD_qc_0028_0185",
+    "consumer": "main",
+    "row_id": "p2_077"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "l1",
+    "consumer": "joint/L0C0P0",
+    "row_id": "p2_078"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "l1",
+    "consumer": "joint/L0C0P1",
+    "row_id": "p2_079"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "l1",
+    "consumer": "joint/L0C1P0",
+    "row_id": "p2_080"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "l1",
+    "consumer": "joint/L0C1P1",
+    "row_id": "p2_081"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "l1",
+    "consumer": "joint/L1C0P0",
+    "row_id": "p2_082"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "l1",
+    "consumer": "joint/L1C0P1",
+    "row_id": "p2_083"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "l1",
+    "consumer": "joint/L1C1P0",
+    "row_id": "p2_009"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "l1",
+    "consumer": "joint/L1C1P1",
+    "row_id": "p2_084"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "l1",
+    "consumer": "ppp/MP",
+    "row_id": "p2_009"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "l1",
+    "consumer": "ppp/PP-S",
+    "row_id": "p2_085"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "l1",
+    "consumer": "ppp/PP-A",
+    "row_id": "p2_086"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "l1",
+    "consumer": "ppp/PPP",
+    "row_id": "p2_084"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_LH_Per_L_DtP_qc_0005_0370",
+    "consumer": "joint/L0C0P0",
+    "row_id": "p2_087"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_LH_Per_L_DtP_qc_0005_0370",
+    "consumer": "joint/L0C0P1",
+    "row_id": "p2_088"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_LH_Per_L_DtP_qc_0005_0370",
+    "consumer": "joint/L0C1P0",
+    "row_id": "p2_089"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_LH_Per_L_DtP_qc_0005_0370",
+    "consumer": "joint/L0C1P1",
+    "row_id": "p2_090"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_LH_Per_L_DtP_qc_0005_0370",
+    "consumer": "joint/L1C0P0",
+    "row_id": "p2_091"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_LH_Per_L_DtP_qc_0005_0370",
+    "consumer": "joint/L1C0P1",
+    "row_id": "p2_092"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_LH_Per_L_DtP_qc_0005_0370",
+    "consumer": "joint/L1C1P0",
+    "row_id": "p2_048"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_LH_Per_L_DtP_qc_0005_0370",
+    "consumer": "joint/L1C1P1",
+    "row_id": "p2_093"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_LH_Per_L_DtP_qc_0005_0370",
+    "consumer": "ppp/MP",
+    "row_id": "p2_048"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_LH_Per_L_DtP_qc_0005_0370",
+    "consumer": "ppp/PP-S",
+    "row_id": "p2_094"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_LH_Per_L_DtP_qc_0005_0370",
+    "consumer": "ppp/PP-A",
+    "row_id": "p2_095"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_LH_Per_L_DtP_qc_0005_0370",
+    "consumer": "ppp/PPP",
+    "row_id": "p2_093"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "l1",
+    "consumer": "multi/MP",
+    "row_id": "p2_009"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "l1",
+    "consumer": "multi/PPP",
+    "row_id": "p2_084"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "l2",
+    "consumer": "multi/MP",
+    "row_id": "p2_010"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "l2",
+    "consumer": "multi/PPP",
+    "row_id": "p2_096"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "l3",
+    "consumer": "multi/MP",
+    "row_id": "p2_011"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "l3",
+    "consumer": "multi/PPP",
+    "row_id": "p2_097"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "r1",
+    "consumer": "multi/MP",
+    "row_id": "p2_012"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "r1",
+    "consumer": "multi/PPP",
+    "row_id": "p2_098"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "r2",
+    "consumer": "multi/MP",
+    "row_id": "p2_013"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "r2",
+    "consumer": "multi/PPP",
+    "row_id": "p2_099"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "r3",
+    "consumer": "multi/MP",
+    "row_id": "p2_014"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "r3",
+    "consumer": "multi/PPP",
+    "row_id": "p2_100"
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_100",
+    "consumer": "multi/MP",
+    "row_id": "p2_015"
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_100",
+    "consumer": "multi/PPP",
+    "row_id": "p2_101"
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_101",
+    "consumer": "multi/MP",
+    "row_id": "p2_016"
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_101",
+    "consumer": "multi/PPP",
+    "row_id": "p2_102"
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_102",
+    "consumer": "multi/MP",
+    "row_id": "p2_017"
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_102",
+    "consumer": "multi/PPP",
+    "row_id": "p2_103"
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_103",
+    "consumer": "multi/MP",
+    "row_id": "p2_018"
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_103",
+    "consumer": "multi/PPP",
+    "row_id": "p2_104"
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_104",
+    "consumer": "multi/MP",
+    "row_id": "p2_019"
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_104",
+    "consumer": "multi/PPP",
+    "row_id": "p2_105"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_LH_Per_C_DtP_qc_0140_0514",
+    "consumer": "multi/MP",
+    "row_id": "p2_046"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_LH_Per_C_DtP_qc_0140_0514",
+    "consumer": "multi/PPP",
+    "row_id": "p2_106"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_LH_Per_L_DtP_qc_0005_0370",
+    "consumer": "multi/MP",
+    "row_id": "p2_048"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_LH_Per_L_DtP_qc_0005_0370",
+    "consumer": "multi/PPP",
+    "row_id": "p2_093"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_RH_Per_L_DtP_qc_0005_0574",
+    "consumer": "multi/MP",
+    "row_id": "p2_057"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_RH_Per_L_DtP_qc_0005_0574",
+    "consumer": "multi/PPP",
+    "row_id": "p2_107"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "011_LH_Per_S_PtD_qc_0008_0447",
+    "consumer": "multi/MP",
+    "row_id": "p2_070"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "011_LH_Per_S_PtD_qc_0008_0447",
+    "consumer": "multi/PPP",
+    "row_id": "p2_108"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "011_RH_Per_L_DtP_qc_0007_0584",
+    "consumer": "multi/MP",
+    "row_id": "p2_074"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "011_RH_Per_L_DtP_qc_0007_0584",
+    "consumer": "multi/PPP",
+    "row_id": "p2_109"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "l1",
+    "consumer": "rho/0.6",
+    "row_id": "p2_110"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "l1",
+    "consumer": "rho/0.75",
+    "row_id": "p2_111"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "l1",
+    "consumer": "rho/0.9",
+    "row_id": "p2_112"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "l1",
+    "consumer": "rho/1.0",
+    "row_id": "p2_084"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "l1",
+    "consumer": "rho/1.1",
+    "row_id": "p2_113"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "l1",
+    "consumer": "rho/1.25",
+    "row_id": "p2_114"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "l1",
+    "consumer": "rho/1.5",
+    "row_id": "p2_115"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "l1",
+    "consumer": "cga/GD",
+    "row_id": "p2_082"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "l1",
+    "consumer": "cga/RGD",
+    "row_id": "p2_116"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "l1",
+    "consumer": "cga/RGD+OP",
+    "row_id": "p2_117"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "l1",
+    "consumer": "cga/RGD+LP",
+    "row_id": "p2_118"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "l1",
+    "consumer": "cga/Full",
+    "row_id": "p2_009"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_LH_Per_L_DtP_qc_0005_0370",
+    "consumer": "rho/0.6",
+    "row_id": "p2_119"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_LH_Per_L_DtP_qc_0005_0370",
+    "consumer": "rho/0.75",
+    "row_id": "p2_120"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_LH_Per_L_DtP_qc_0005_0370",
+    "consumer": "rho/0.9",
+    "row_id": "p2_121"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_LH_Per_L_DtP_qc_0005_0370",
+    "consumer": "rho/1.0",
+    "row_id": "p2_093"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_LH_Per_L_DtP_qc_0005_0370",
+    "consumer": "rho/1.1",
+    "row_id": "p2_122"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_LH_Per_L_DtP_qc_0005_0370",
+    "consumer": "rho/1.25",
+    "row_id": "p2_123"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_LH_Per_L_DtP_qc_0005_0370",
+    "consumer": "rho/1.5",
+    "row_id": "p2_124"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_LH_Per_L_DtP_qc_0005_0370",
+    "consumer": "cga/GD",
+    "row_id": "p2_091"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_LH_Per_L_DtP_qc_0005_0370",
+    "consumer": "cga/RGD",
+    "row_id": "p2_125"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_LH_Per_L_DtP_qc_0005_0370",
+    "consumer": "cga/RGD+OP",
+    "row_id": "p2_126"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_LH_Per_L_DtP_qc_0005_0370",
+    "consumer": "cga/RGD+LP",
+    "row_id": "p2_127"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_LH_Per_L_DtP_qc_0005_0370",
+    "consumer": "cga/Full",
+    "row_id": "p2_048"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "l1",
+    "consumer": "lgr/Plane",
+    "row_id": "p2_080"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "l1",
+    "consumer": "lgr/Fixed",
+    "row_id": "p2_128"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "l1",
+    "consumer": "lgr/Adaptive",
+    "row_id": "p2_129"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "l1",
+    "consumer": "lgr/Fixed+Simple",
+    "row_id": "p2_130"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "l1",
+    "consumer": "lgr/Fixed+Full",
+    "row_id": "p2_009"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "l2",
+    "consumer": "lgr/Plane",
+    "row_id": "p2_131"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "l2",
+    "consumer": "lgr/Fixed",
+    "row_id": "p2_132"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "l2",
+    "consumer": "lgr/Adaptive",
+    "row_id": "p2_133"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "l2",
+    "consumer": "lgr/Fixed+Simple",
+    "row_id": "p2_134"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "l2",
+    "consumer": "lgr/Fixed+Full",
+    "row_id": "p2_010"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "l3",
+    "consumer": "lgr/Plane",
+    "row_id": "p2_135"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "l3",
+    "consumer": "lgr/Fixed",
+    "row_id": "p2_136"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "l3",
+    "consumer": "lgr/Adaptive",
+    "row_id": "p2_137"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "l3",
+    "consumer": "lgr/Fixed+Simple",
+    "row_id": "p2_138"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "l3",
+    "consumer": "lgr/Fixed+Full",
+    "row_id": "p2_011"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "r1",
+    "consumer": "lgr/Plane",
+    "row_id": "p2_139"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "r1",
+    "consumer": "lgr/Fixed",
+    "row_id": "p2_140"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "r1",
+    "consumer": "lgr/Adaptive",
+    "row_id": "p2_141"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "r1",
+    "consumer": "lgr/Fixed+Simple",
+    "row_id": "p2_142"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "r1",
+    "consumer": "lgr/Fixed+Full",
+    "row_id": "p2_012"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "r2",
+    "consumer": "lgr/Plane",
+    "row_id": "p2_143"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "r2",
+    "consumer": "lgr/Fixed",
+    "row_id": "p2_144"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "r2",
+    "consumer": "lgr/Adaptive",
+    "row_id": "p2_145"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "r2",
+    "consumer": "lgr/Fixed+Simple",
+    "row_id": "p2_146"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "r2",
+    "consumer": "lgr/Fixed+Full",
+    "row_id": "p2_013"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "r3",
+    "consumer": "lgr/Plane",
+    "row_id": "p2_147"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "r3",
+    "consumer": "lgr/Fixed",
+    "row_id": "p2_148"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "r3",
+    "consumer": "lgr/Adaptive",
+    "row_id": "p2_149"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "r3",
+    "consumer": "lgr/Fixed+Simple",
+    "row_id": "p2_150"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "r3",
+    "consumer": "lgr/Fixed+Full",
+    "row_id": "p2_014"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_LH_Per_C_DtP_qc_0140_0514",
+    "consumer": "lgr/Plane",
+    "row_id": "p2_151"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_LH_Per_C_DtP_qc_0140_0514",
+    "consumer": "lgr/Fixed",
+    "row_id": "p2_152"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_LH_Per_C_DtP_qc_0140_0514",
+    "consumer": "lgr/Adaptive",
+    "row_id": "p2_153"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_LH_Per_C_DtP_qc_0140_0514",
+    "consumer": "lgr/Fixed+Simple",
+    "row_id": "p2_154"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_LH_Per_C_DtP_qc_0140_0514",
+    "consumer": "lgr/Fixed+Full",
+    "row_id": "p2_046"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_LH_Per_L_DtP_qc_0005_0370",
+    "consumer": "lgr/Plane",
+    "row_id": "p2_089"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_LH_Per_L_DtP_qc_0005_0370",
+    "consumer": "lgr/Fixed",
+    "row_id": "p2_155"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_LH_Per_L_DtP_qc_0005_0370",
+    "consumer": "lgr/Adaptive",
+    "row_id": "p2_156"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_LH_Per_L_DtP_qc_0005_0370",
+    "consumer": "lgr/Fixed+Simple",
+    "row_id": "p2_157"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_LH_Per_L_DtP_qc_0005_0370",
+    "consumer": "lgr/Fixed+Full",
+    "row_id": "p2_048"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_RH_Per_L_DtP_qc_0005_0574",
+    "consumer": "lgr/Plane",
+    "row_id": "p2_158"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_RH_Per_L_DtP_qc_0005_0574",
+    "consumer": "lgr/Fixed",
+    "row_id": "p2_159"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_RH_Per_L_DtP_qc_0005_0574",
+    "consumer": "lgr/Adaptive",
+    "row_id": "p2_160"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_RH_Per_L_DtP_qc_0005_0574",
+    "consumer": "lgr/Fixed+Simple",
+    "row_id": "p2_161"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_RH_Per_L_DtP_qc_0005_0574",
+    "consumer": "lgr/Fixed+Full",
+    "row_id": "p2_057"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "011_LH_Per_S_PtD_qc_0008_0447",
+    "consumer": "lgr/Plane",
+    "row_id": "p2_162"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "011_LH_Per_S_PtD_qc_0008_0447",
+    "consumer": "lgr/Fixed",
+    "row_id": "p2_163"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "011_LH_Per_S_PtD_qc_0008_0447",
+    "consumer": "lgr/Adaptive",
+    "row_id": "p2_164"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "011_LH_Per_S_PtD_qc_0008_0447",
+    "consumer": "lgr/Fixed+Simple",
+    "row_id": "p2_165"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "011_LH_Per_S_PtD_qc_0008_0447",
+    "consumer": "lgr/Fixed+Full",
+    "row_id": "p2_070"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "011_RH_Per_L_DtP_qc_0007_0584",
+    "consumer": "lgr/Plane",
+    "row_id": "p2_166"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "011_RH_Per_L_DtP_qc_0007_0584",
+    "consumer": "lgr/Fixed",
+    "row_id": "p2_167"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "011_RH_Per_L_DtP_qc_0007_0584",
+    "consumer": "lgr/Adaptive",
+    "row_id": "p2_168"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "011_RH_Per_L_DtP_qc_0007_0584",
+    "consumer": "lgr/Fixed+Simple",
+    "row_id": "p2_169"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "011_RH_Per_L_DtP_qc_0007_0584",
+    "consumer": "lgr/Fixed+Full",
+    "row_id": "p2_074"
+  }
+]

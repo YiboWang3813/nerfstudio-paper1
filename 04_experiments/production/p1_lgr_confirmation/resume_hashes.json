@@ -1,0 +1,5 @@
+{
+  "docs/production/p1_lgr_confirmation/resume_partition.json": "31f3227c0acb6459078269dfb30e55a4f8cc3b4b7cfafdf0cff994fd00639399",
+  "scripts/production/ablations/ours/p1_lgr_resume.py": "78b77929f06111af7a83b9af4c41f217ffae61862cdc2b3d2cd03953b0c28b8d",
+  "scripts/production/ablations/ours/p1_lgr_resume_gpu.sh": "ad84aa75f9d06cb67a4120f9d46c051ca6f1d7737b0f76d79875b9641a2932d1"
+}

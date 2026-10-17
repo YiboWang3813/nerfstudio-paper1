@@ -1,0 +1,398 @@
+[
+  {
+    "dataset": "synthetic_liver",
+    "panel": "beta",
+    "point": "0.4",
+    "row_id": "b2_000"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "panel": "beta",
+    "point": "0.8",
+    "row_id": "b2_001"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "panel": "beta",
+    "point": "1.0",
+    "row_id": "b2_002"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "panel": "lambda",
+    "point": "0.2",
+    "row_id": "b2_003"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "panel": "lambda",
+    "point": "0.55",
+    "row_id": "b2_001"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "panel": "lambda",
+    "point": "1.0",
+    "row_id": "b2_004"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "panel": "Nq",
+    "point": "1",
+    "row_id": "b2_005"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "panel": "Nq",
+    "point": "2",
+    "row_id": "b2_006"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "panel": "Nq",
+    "point": "3",
+    "row_id": "b2_001"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "panel": "half_window",
+    "point": "1.0",
+    "row_id": "b2_007"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "panel": "half_window",
+    "point": "2.0",
+    "row_id": "b2_001"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "panel": "half_window",
+    "point": "4.0",
+    "row_id": "b2_008"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "panel": "qd_by_B",
+    "point": "0.94_0.001",
+    "row_id": "b2_009"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "panel": "qd_by_B",
+    "point": "0.94_0.005",
+    "row_id": "b2_010"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "panel": "qd_by_B",
+    "point": "0.94_0.05",
+    "row_id": "b2_011"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "panel": "qd_by_B",
+    "point": "0.98_0.001",
+    "row_id": "b2_012"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "panel": "qd_by_B",
+    "point": "0.98_0.005",
+    "row_id": "b2_013"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "panel": "qd_by_B",
+    "point": "0.98_0.05",
+    "row_id": "b2_001"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "panel": "qd_by_B",
+    "point": "0.99_0.001",
+    "row_id": "b2_014"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "panel": "qd_by_B",
+    "point": "0.99_0.005",
+    "row_id": "b2_015"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "panel": "qd_by_B",
+    "point": "0.99_0.05",
+    "row_id": "b2_016"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "panel": "qp_by_qA",
+    "point": "0.05_0.6",
+    "row_id": "b2_017"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "panel": "qp_by_qA",
+    "point": "0.05_0.8",
+    "row_id": "b2_018"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "panel": "qp_by_qA",
+    "point": "0.05_0.9",
+    "row_id": "b2_019"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "panel": "qp_by_qA",
+    "point": "0.1_0.6",
+    "row_id": "b2_020"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "panel": "qp_by_qA",
+    "point": "0.1_0.8",
+    "row_id": "b2_001"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "panel": "qp_by_qA",
+    "point": "0.1_0.9",
+    "row_id": "b2_021"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "panel": "qp_by_qA",
+    "point": "0.2_0.6",
+    "row_id": "b2_022"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "panel": "qp_by_qA",
+    "point": "0.2_0.8",
+    "row_id": "b2_023"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "panel": "qp_by_qA",
+    "point": "0.2_0.9",
+    "row_id": "b2_024"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "panel": "tau_alpha",
+    "point": "1e-05",
+    "row_id": "b2_025"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "panel": "tau_alpha",
+    "point": "0.0001",
+    "row_id": "b2_001"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "panel": "tau_alpha",
+    "point": "0.001",
+    "row_id": "b2_026"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "panel": "beta",
+    "point": "0.4",
+    "row_id": "b2_027"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "panel": "beta",
+    "point": "0.8",
+    "row_id": "b2_028"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "panel": "beta",
+    "point": "1.0",
+    "row_id": "b2_029"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "panel": "lambda",
+    "point": "0.2",
+    "row_id": "b2_030"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "panel": "lambda",
+    "point": "0.55",
+    "row_id": "b2_028"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "panel": "lambda",
+    "point": "1.0",
+    "row_id": "b2_031"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "panel": "Nq",
+    "point": "1",
+    "row_id": "b2_032"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "panel": "Nq",
+    "point": "2",
+    "row_id": "b2_033"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "panel": "Nq",
+    "point": "3",
+    "row_id": "b2_028"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "panel": "half_window",
+    "point": "1.0",
+    "row_id": "b2_034"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "panel": "half_window",
+    "point": "2.0",
+    "row_id": "b2_028"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "panel": "half_window",
+    "point": "4.0",
+    "row_id": "b2_035"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "panel": "qd_by_B",
+    "point": "0.94_0.001",
+    "row_id": "b2_036"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "panel": "qd_by_B",
+    "point": "0.94_0.005",
+    "row_id": "b2_037"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "panel": "qd_by_B",
+    "point": "0.94_0.05",
+    "row_id": "b2_038"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "panel": "qd_by_B",
+    "point": "0.98_0.001",
+    "row_id": "b2_039"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "panel": "qd_by_B",
+    "point": "0.98_0.005",
+    "row_id": "b2_040"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "panel": "qd_by_B",
+    "point": "0.98_0.05",
+    "row_id": "b2_028"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "panel": "qd_by_B",
+    "point": "0.99_0.001",
+    "row_id": "b2_041"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "panel": "qd_by_B",
+    "point": "0.99_0.005",
+    "row_id": "b2_042"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "panel": "qd_by_B",
+    "point": "0.99_0.05",
+    "row_id": "b2_043"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "panel": "qp_by_qA",
+    "point": "0.05_0.6",
+    "row_id": "b2_044"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "panel": "qp_by_qA",
+    "point": "0.05_0.8",
+    "row_id": "b2_045"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "panel": "qp_by_qA",
+    "point": "0.05_0.9",
+    "row_id": "b2_046"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "panel": "qp_by_qA",
+    "point": "0.1_0.6",
+    "row_id": "b2_047"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "panel": "qp_by_qA",
+    "point": "0.1_0.8",
+    "row_id": "b2_028"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "panel": "qp_by_qA",
+    "point": "0.1_0.9",
+    "row_id": "b2_048"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "panel": "qp_by_qA",
+    "point": "0.2_0.6",
+    "row_id": "b2_049"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "panel": "qp_by_qA",
+    "point": "0.2_0.8",
+    "row_id": "b2_050"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "panel": "qp_by_qA",
+    "point": "0.2_0.9",
+    "row_id": "b2_051"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "panel": "tau_alpha",
+    "point": "1e-05",
+    "row_id": "b2_052"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "panel": "tau_alpha",
+    "point": "0.0001",
+    "row_id": "b2_028"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "panel": "tau_alpha",
+    "point": "0.001",
+    "row_id": "b2_053"
+  }
+]

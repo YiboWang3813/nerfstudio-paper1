@@ -1,0 +1,29 @@
+time: 2026-07-01 14:58:18
+job_id: 66815
+benchmark: us_recon_four_dataset_p100k_v1
+stage: implicit_stage1_diagnostic
+dataset: synthetic_liver
+sweep: l1
+method: nerfus_no_prior
+exp_name: implicit_stage1_diagnostic_synthetic_liver_l1_nerfus_no_prior
+train_start_time: 2026-07-01 14:55:57+0800
+train_end_time: 2026-07-01 14:58:18+0800
+train_wall_time_sec: 141
+train_iterations: 5000
+train_iter_per_sec: 35.46099290780142
+train_start_gpu_mem_mb: 1
+train_end_gpu_mem_mb: 5156
+train_peak_gpu_mem_mb: 5156
+train_exit_code: 0
+best_num_gaussians: 
+final_num_gaussians: 
+min_num_gaussians: 
+max_num_gaussians: 
+dc_event_count: 0
+checkpoint_bytes: 1609330
+vis_bytes: 5026055
+eval_bytes: 30643
+output_bytes: 6981812
+latest_output_mtime: 2026-07-01 14:58:18
+efficiency_tsv: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/implicit_stage1_diagnostic/nvs/synthetic_liver/l1/nerfus_no_prior/logs/efficiency.tsv
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/implicit_stage1_diagnostic/nvs/synthetic_liver/l1/nerfus_no_prior

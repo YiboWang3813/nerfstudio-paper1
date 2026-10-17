@@ -1,0 +1,262 @@
+task: train
+experiment:
+  family: production/comparisons/us_recon_four_dataset_p100k_v1/implicit
+  name: nerfus_no_prior
+  protocol: ''
+  description: NeRF-US no-prior deterministic single-sweep production control.
+system:
+  output_root: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1
+  checkpoint_root: ''
+  output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/implicit_stage3_full_sweep/nvs/tus_rec_2024_qc/011_RH_Per_S_PtD_qc_0028_0185/nerfus_no_prior
+  checkpoint_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/implicit_stage3_full_sweep/nvs/tus_rec_2024_qc/011_RH_Per_S_PtD_qc_0028_0185/nerfus_no_prior/checkpoints
+  link_checkpoint_dir: true
+  exp_tag: implicit_stage3_full_sweep_tus_rec_2024_qc_011_RH_Per_S_PtD_qc_0028_0185_nerfus_no_prior
+  run_id: prior
+  run_name: production-comparisons-us_recon_four_dataset_p100k_v1-implicit_nerfus_no_prior_nerfus_prior
+  config_path: hydra:experiment=production/comparisons/us_recon_four_dataset_p100k_v1/implicit/nerfus_no_prior
+  hydra_output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/implicit_stage3_full_sweep/nvs/tus_rec_2024_qc/011_RH_Per_S_PtD_qc_0028_0185/nerfus_no_prior
+  use_legacy_output_naming: false
+  device: cuda
+  seed: 42
+wandb:
+  enable: false
+  project: omniultra
+  entity: ''
+  mode: online
+  group: ''
+  name: ''
+  tags: []
+  log_artifacts: false
+scene:
+  dataset_name: tus_rec_2024
+  loading:
+    baseroot: /home/boywang25/ultrasound-scene-reconstruction/data
+    dataset_dirname: tus_rec_2024_qc
+    sweep_name: 011_RH_Per_S_PtD_qc_0028_0185
+    images_name: images.npy
+    test_images_name: test_images.npy
+    test_poses_name: test_poses.npy
+    image_value_mode: uint8_255
+    image_nan_value: 0.0
+    image_downsample_factor: 1
+    axial_downsample_factor: 1
+    frame_start: 0
+    frame_end: -1
+    frame_stride: 1
+    frame_indices_path: ''
+    test_mode: holdout_interval
+    holdout_trim_each: 10
+    holdout_num_samples: 0
+    holdout_test_ratio: 0.2
+    pose_type: absolute
+    poses_abspath: ''
+    pose_mode: file
+    canonical_sweep_delta_mm: -1.0
+    canonical_sweep_delta_scale: 1.0
+    canonical_sweep_ref_frame: 0
+    canonical_sweep_axis: z
+    canonical_sweep_spacing_mode: uniform
+  sampler:
+    num_init: 300000
+    num_new: 1000
+    scales_init:
+    - 0.3
+    - 0.3
+    - 0.3
+    quats_init:
+    - 1.0
+    - 0.0
+    - 0.0
+    - 0.0
+    uniform_ratio: 0.3
+    intensity_threshold: 0.03
+    jitter_radius: 0.2
+  grid:
+    tile_size: 4.0
+    bbox_margin: 0.05
+  scheduler:
+    test_ratio: 0.1
+engine:
+  name: default_engine
+  state: NerfusOfflineState
+  task: train
+  stream: offline
+  iterations: 30000
+  accum_steps: 1
+  resume: ''
+  stream_eval_skip_head_frames: 0
+  stream_eval_skip_tail_frames: 0
+  stream_eval_interval_frames: 0
+  needed_callbacks:
+  - NerfusOfflineSetupCallback
+  - NerfusOfflineTrainCallback
+  - NerfusOfflineTestCallback
+  - NerfusOfflineFinishCallback
+  interval:
+    train:
+      step: 20
+      print: 100
+    debug: 1000
+    test: 2500
+    save: 5000
+loss:
+  needed_losses:
+  - mse
+  - ssim
+  lambdas:
+    l1: 0.8
+    mse: 0.1
+    ssim: 0.9
+    sobel: 0.0
+    highpass_l1: 0.0
+    marco_ssim: 0.0
+    lpips: 0.0
+    diff_tv: 0.0
+    scale_wall: 0.0
+    scale_aniso: 0.0
+    opacity: 0.0
+    attenuation_l1: 0.0
+    attenuation_tail: 0.0
+    pose_anchor: 0.0
+    pose_prior: 0.0
+    pose_smooth: 0.0
+    pose_acc: 0.0
+    pose_aux_rec: 0.0
+    pose_registration: 0.0
+    pose_neighbor_registration: 0.0
+    pose_cycle: 0.0
+    pose_const_vel: 0.0
+    pose_gt_delta: 0.0
+    pose_occ_conf: 0.0
+  l1_cfg:
+    clamp_inputs: false
+  ssim_cfg:
+    window_size: 11
+    sigma: 1.5
+    downsample_enabled: false
+    downsample_factor: 1
+    downsample_mode: area
+    clamp_inputs: false
+  highpass_l1_cfg:
+    kernel_size: 9
+    sigma: 2.0
+  marco_ssim_cfg:
+    blur_window_size: 21
+    blur_sigma: 3.0
+    ssim_window_size: 11
+    ssim_sigma: 1.5
+  lpips_cfg:
+    metric_name: lpips
+  scale_wall_cfg:
+    min_scales_mm: 0.001
+    max_scales_mm: 1.2
+  scale_aniso_cfg:
+    max_aniso_ratio: 2.5
+  opacity_cfg:
+    target_opacity: 0.5
+  attenuation_tail_cfg:
+    max_attenuation: 0.05
+  pose_anchor_cfg:
+    rot_weight: 1.0
+    trans_weight: 1.0
+  pose_prior_cfg:
+    rot_weight: 1.0
+    trans_weight: 1.0
+  pose_smooth_cfg:
+    rot_weight: 1.0
+    trans_weight: 1.0
+  pose_acc_cfg:
+    rot_weight: 1.0
+    trans_weight: 1.0
+  pose_aux_rec_cfg:
+    l1_weight: 0.8
+    ssim_weight: 0.2
+    window_size: 11
+    sigma: 1.5
+  pose_registration_cfg:
+    photo_weight: 1.0
+    grad_weight: 0.2
+    charbonnier_eps: 0.001
+  pose_neighbor_registration_cfg:
+    photo_weight: 1.0
+    ssim_weight: 0.2
+    charbonnier_eps: 0.001
+    window_size: 11
+    sigma: 1.5
+    min_overlap_ratio: 0.3
+  pose_cycle_cfg:
+    photo_weight: 1.0
+    ssim_weight: 0.1
+    charbonnier_eps: 0.001
+    window_size: 11
+    sigma: 1.5
+    min_overlap_ratio: 0.3
+  pose_const_vel_cfg:
+    rot_weight: 1.0
+    trans_weight: 1.0
+  pose_gt_delta_cfg:
+    rot_weight: 1.0
+    trans_weight: 1.0
+  pose_occ_conf_cfg:
+    charbonnier_epsilon: 0.001
+    confidence_gamma: 1.0
+    confidence_min: 0.05
+    detach_confidence: true
+metric:
+  needed_metrics:
+  - psnr
+  - l1
+  - ssim
+  - lpips
+  - dists
+  - gmsd
+  psnr_cfg:
+    max_val: 1.0
+  max_vis_frames: 10
+  save_per_frame_metrics: true
+model:
+  name: nerfus
+  field:
+    depth: 8
+    width: 128
+    pe_num_freqs: 10
+    include_input: true
+    skip_layer: 4
+    use_viewdirs: false
+    alpha_activation: abs
+    alpha_bias_init: 0.0
+  ray:
+    coordinate_unit: mm
+    coordinate_scale: 1000.0
+    train_patch_height: 512
+    train_patch_width: 256
+    eval_chunk_size: 65536
+  render:
+    boundary_sampling_mode: expectation
+    scatter_sampling_mode: expectation
+    eval_render_mode: expectation
+    eval_mc_samples: 4
+    eval_seed: 20260701
+    eval_save_stochastic: true
+    enable_psf: true
+    psf_kernel_size: 7
+    psf_sigma_lateral: 2.0
+    psf_sigma_axial: 1.0
+    attenuation_scale: 0.001
+    alpha_max: 5.0
+    boundary_attenuation_scale: 0.0
+    reflection_gain: 0.0
+    eps: 1.0e-06
+    output_mode: clamp
+    output_gain: 1.0
+    relaxed_temperature: 0.1
+  solver:
+    optimizer: adam
+    lr: 0.0001
+    lr_final: 1.0e-05
+    lr_decay_steps: 250000
+  offline:
+    diagnostics:
+      enable_render_stats: true
+      train_step: 100
+      save_debug_maps: true

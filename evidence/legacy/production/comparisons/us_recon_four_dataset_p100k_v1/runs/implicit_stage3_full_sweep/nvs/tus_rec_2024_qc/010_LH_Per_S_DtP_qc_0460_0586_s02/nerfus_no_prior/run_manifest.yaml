@@ -1,0 +1,12 @@
+method_name: nerfus
+experiment_name: implicit_stage3_full_sweep_tus_rec_2024_qc_010_LH_Per_S_DtP_qc_0460_0586_s02_nerfus_no_prior
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/implicit_stage3_full_sweep/nvs/tus_rec_2024_qc/010_LH_Per_S_DtP_qc_0460_0586_s02/nerfus_no_prior
+dataset: tus_rec_2024
+sweep: 010_LH_Per_S_DtP_qc_0460_0586_s02
+split: holdout_interval
+train_frames: 101
+test_frames: 25
+resolution: 288x384
+train_steps: 30000
+seed: 42
+final_iteration: 30000

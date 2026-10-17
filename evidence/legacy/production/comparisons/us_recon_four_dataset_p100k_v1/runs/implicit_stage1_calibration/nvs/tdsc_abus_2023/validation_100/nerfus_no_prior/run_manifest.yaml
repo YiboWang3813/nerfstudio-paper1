@@ -1,0 +1,12 @@
+method_name: nerfus
+experiment_name: implicit_stage1_calibration_tdsc_abus_2023_validation_100_nerfus_no_prior
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/implicit_stage1_calibration/nvs/tdsc_abus_2023/validation_100/nerfus_no_prior
+dataset: tdsc_abus_2023
+sweep: validation_100
+split: holdout_interval
+train_frames: 282
+test_frames: 71
+resolution: 280x356
+train_steps: 30000
+seed: 42
+final_iteration: 30000

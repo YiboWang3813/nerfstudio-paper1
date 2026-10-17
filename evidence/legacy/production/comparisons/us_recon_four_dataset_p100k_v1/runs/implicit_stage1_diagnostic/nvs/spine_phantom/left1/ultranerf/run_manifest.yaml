@@ -1,0 +1,12 @@
+method_name: ultranerf
+experiment_name: implicit_stage1_diagnostic_spine_phantom_left1_ultranerf
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/implicit_stage1_diagnostic/nvs/spine_phantom/left1/ultranerf
+dataset: spine_phantom
+sweep: left1
+split: holdout_interval
+train_frames: 122
+test_frames: 30
+resolution: 896x112
+train_steps: 5000
+seed: 42
+final_iteration: 5000

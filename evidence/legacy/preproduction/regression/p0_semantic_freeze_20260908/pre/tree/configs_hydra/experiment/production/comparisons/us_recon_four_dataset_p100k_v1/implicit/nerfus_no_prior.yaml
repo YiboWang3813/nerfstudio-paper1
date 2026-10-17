@@ -1,0 +1,25 @@
+# @package _global_
+
+defaults:
+- /experiment/preproduction/baseline_reproduction/nerfus/fullres_30k_ultranerf_matched
+- _self_
+
+system:
+  exp_tag: nerfus_no_prior_production_single_sweep
+
+model:
+  ray:
+    coordinate_scale: 1000.0
+  render:
+    # NeRF-US-no-prior is kept as a deterministic no-prior control, distinct
+    # from Ultra-NeRF's stochastic boundary/scatter rendering.
+    attenuation_scale: 0.001
+    boundary_sampling_mode: expectation
+    scatter_sampling_mode: expectation
+    eval_render_mode: expectation
+    eval_seed: 20260701
+
+experiment:
+  family: production/comparisons/us_recon_four_dataset_p100k_v1/implicit
+  name: nerfus_no_prior
+  description: NeRF-US no-prior deterministic single-sweep production control.

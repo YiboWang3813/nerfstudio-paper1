@@ -1,0 +1,29 @@
+time: 2026-07-01 15:21:30
+job_id: 66817
+benchmark: us_recon_four_dataset_p100k_v1
+stage: implicit_stage1_calibration
+dataset: tdsc_abus_2023
+sweep: validation_100
+method: ultranerf
+exp_name: implicit_stage1_calibration_tdsc_abus_2023_validation_100_ultranerf
+train_start_time: 2026-07-01 15:13:53+0800
+train_end_time: 2026-07-01 15:21:29+0800
+train_wall_time_sec: 456
+train_iterations: 30000
+train_iter_per_sec: 65.78947368421052
+train_start_gpu_mem_mb: 4124
+train_end_gpu_mem_mb: 5662
+train_peak_gpu_mem_mb: 5662
+train_exit_code: 0
+best_num_gaussians: 
+final_num_gaussians: 
+min_num_gaussians: 
+max_num_gaussians: 
+dc_event_count: 0
+checkpoint_bytes: 9656364
+vis_bytes: 6525139
+eval_bytes: 117734
+output_bytes: 17910996
+latest_output_mtime: 2026-07-01 15:21:29
+efficiency_tsv: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/implicit_stage1_calibration/nvs/tdsc_abus_2023/validation_100/ultranerf/logs/efficiency.tsv
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/implicit_stage1_calibration/nvs/tdsc_abus_2023/validation_100/ultranerf

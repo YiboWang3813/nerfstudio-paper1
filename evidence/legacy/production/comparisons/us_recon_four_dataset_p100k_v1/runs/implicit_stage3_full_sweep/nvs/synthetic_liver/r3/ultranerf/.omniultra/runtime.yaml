@@ -1,0 +1,5 @@
+created_at: '2026-07-01T17:35:52'
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/implicit_stage3_full_sweep/nvs/synthetic_liver/r3/ultranerf
+checkpoint_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/implicit_stage3_full_sweep/nvs/synthetic_liver/r3/ultranerf/checkpoints
+hydra_output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/implicit_stage3_full_sweep/nvs/synthetic_liver/r3/ultranerf
+config_path: hydra:experiment=production/comparisons/us_recon_four_dataset_p100k_v1/implicit/ultranerf

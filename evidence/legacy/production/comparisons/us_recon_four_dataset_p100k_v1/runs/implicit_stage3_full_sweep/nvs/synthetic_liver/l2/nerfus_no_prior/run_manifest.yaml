@@ -1,0 +1,12 @@
+method_name: nerfus
+experiment_name: implicit_stage3_full_sweep_synthetic_liver_l2_nerfus_no_prior
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/implicit_stage3_full_sweep/nvs/synthetic_liver/l2/nerfus_no_prior
+dataset: synthetic_liver
+sweep: l2
+split: holdout_interval
+train_frames: 160
+test_frames: 40
+resolution: 448x224
+train_steps: 30000
+seed: 42
+final_iteration: 30000

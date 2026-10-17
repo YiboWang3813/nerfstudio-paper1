@@ -1,0 +1,29 @@
+time: 2026-07-01 15:05:42
+job_id: 66816
+benchmark: us_recon_four_dataset_p100k_v1
+stage: implicit_stage1_diagnostic
+dataset: tus_rec_2024_qc
+sweep: 010_LH_Per_L_DtP_qc_0005_0370
+method: ultranerf
+exp_name: implicit_stage1_diagnostic_tus_rec_2024_qc_010_LH_Per_L_DtP_qc_0005_0370_ultranerf
+train_start_time: 2026-07-01 15:03:57+0800
+train_end_time: 2026-07-01 15:05:42+0800
+train_wall_time_sec: 105
+train_iterations: 5000
+train_iter_per_sec: 47.61904761904762
+train_start_gpu_mem_mb: 1
+train_end_gpu_mem_mb: 1
+train_peak_gpu_mem_mb: 5662
+train_exit_code: 0
+best_num_gaussians: 
+final_num_gaussians: 
+min_num_gaussians: 
+max_num_gaussians: 
+dc_event_count: 0
+checkpoint_bytes: 1609394
+vis_bytes: 4623276
+eval_bytes: 56112
+output_bytes: 6596072
+latest_output_mtime: 2026-07-01 15:05:42
+efficiency_tsv: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/implicit_probes/us_recon_four_dataset_p100k_v1_implicit_stabilized_probe/runs/implicit_stage1_diagnostic/nvs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/ultranerf/logs/efficiency.tsv
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/implicit_probes/us_recon_four_dataset_p100k_v1_implicit_stabilized_probe/runs/implicit_stage1_diagnostic/nvs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/ultranerf

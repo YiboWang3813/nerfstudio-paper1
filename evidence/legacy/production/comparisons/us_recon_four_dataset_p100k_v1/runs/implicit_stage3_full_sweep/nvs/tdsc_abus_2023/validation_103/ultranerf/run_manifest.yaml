@@ -1,0 +1,12 @@
+method_name: ultranerf
+experiment_name: implicit_stage3_full_sweep_tdsc_abus_2023_validation_103_ultranerf
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/implicit_stage3_full_sweep/nvs/tdsc_abus_2023/validation_103/ultranerf
+dataset: tdsc_abus_2023
+sweep: validation_103
+split: holdout_interval
+train_frames: 264
+test_frames: 66
+resolution: 280x356
+train_steps: 30000
+seed: 42
+final_iteration: 30000

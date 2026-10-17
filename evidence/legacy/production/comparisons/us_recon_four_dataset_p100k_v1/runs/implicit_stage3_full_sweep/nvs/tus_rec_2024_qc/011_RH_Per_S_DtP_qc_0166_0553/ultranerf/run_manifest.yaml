@@ -1,0 +1,12 @@
+method_name: ultranerf
+experiment_name: implicit_stage3_full_sweep_tus_rec_2024_qc_011_RH_Per_S_DtP_qc_0166_0553_ultranerf
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/implicit_stage3_full_sweep/nvs/tus_rec_2024_qc/011_RH_Per_S_DtP_qc_0166_0553/ultranerf
+dataset: tus_rec_2024
+sweep: 011_RH_Per_S_DtP_qc_0166_0553
+split: holdout_interval
+train_frames: 310
+test_frames: 77
+resolution: 288x384
+train_steps: 30000
+seed: 42
+final_iteration: 30000

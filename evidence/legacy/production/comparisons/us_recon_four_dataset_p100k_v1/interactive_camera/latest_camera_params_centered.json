@@ -1,0 +1,30 @@
+{
+  "dataset": "synthetic_liver",
+  "sweep": "l1",
+  "method": "ours",
+  "camera_tag": "manual_centered",
+  "azimuth": -49.6,
+  "elevation": -46.5,
+  "roll": 0,
+  "pad": 12.05,
+  "center_shift_right": 13.792990118092465,
+  "center_shift_up": -15.02158884649507,
+  "pan_x_units": 0.1742587804941048,
+  "pan_y_units": -0.18978073144854038,
+  "brightness": 2,
+  "point_size": 1,
+  "source_npz": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/gsplat_inputs/synthetic_liver__l1__ours.npz",
+  "auto_centered_from": "outputs/production/comparisons/us_recon_four_dataset_p100k_v1/interactive_camera/latest_camera_params.json",
+  "projected_bbox_p01_p99": {
+    "x": [
+      -51.56635905474156,
+      79.15233929092649
+    ],
+    "y": [
+      -75.02884405628913,
+      44.98566636329899
+    ]
+  },
+  "base_extent": 79.15233929092649,
+  "extent": 953.7856884556643
+}

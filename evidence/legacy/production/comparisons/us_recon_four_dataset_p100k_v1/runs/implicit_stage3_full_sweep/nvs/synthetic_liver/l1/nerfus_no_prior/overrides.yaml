@@ -1,0 +1,27 @@
+overrides:
+- experiment=production/comparisons/us_recon_four_dataset_p100k_v1/implicit/nerfus_no_prior
+- system.output_root=/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1
+- system.exp_tag=implicit_stage3_full_sweep_synthetic_liver_l1_nerfus_no_prior
+- scene=liver
+- scene.loading.sweep_name=l1
+- scene.loading.test_mode=holdout_interval
+- scene.loading.holdout_trim_each=10
+- scene.loading.holdout_num_samples=0
+- scene.loading.holdout_test_ratio=0.2
+- scene.loading.pose_type=absolute
+- scene.loading.pose_mode=file
+- scene.loading.image_downsample_factor=1
+- scene.loading.axial_downsample_factor=1
+- system.seed=42
+- metric.needed_metrics=[psnr,l1,ssim,lpips,dists,gmsd]
+- metric.max_vis_frames=10
+- metric.save_per_frame_metrics=true
+- engine.needed_callbacks=[NerfusOfflineSetupCallback,NerfusOfflineTrainCallback,NerfusOfflineTestCallback,NerfusOfflineFinishCallback]
+- model.field.depth=5
+- model.field.width=64
+- model.field.pe_num_freqs=6
+- model.render.psf_kernel_size=13
+- model.render.psf_sigma_lateral=4.0
+- model.render.psf_sigma_axial=2.0
+- model.solver.lr=0.00005
+- model.solver.lr_final=0.000005

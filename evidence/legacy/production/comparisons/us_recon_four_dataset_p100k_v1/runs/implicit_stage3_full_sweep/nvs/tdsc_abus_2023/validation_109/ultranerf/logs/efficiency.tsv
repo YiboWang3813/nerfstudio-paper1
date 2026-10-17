@@ -1,0 +1,11 @@
+key	value
+train_start_time	2026-07-01 20:50:20+0800
+train_start_epoch	1782910220
+train_start_gpu_mem_mb	5114
+train_gpu_mem_samples	/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/implicit_stage3_full_sweep/nvs/tdsc_abus_2023/validation_109/ultranerf/logs/efficiency_gpu_mem_samples.tsv
+train_end_time	2026-07-01 20:57:44+0800
+train_end_epoch	1782910664
+train_wall_time_sec	444
+train_end_gpu_mem_mb	5180
+train_peak_gpu_mem_mb	5180
+train_exit_code	0

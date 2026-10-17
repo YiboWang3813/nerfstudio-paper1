@@ -1,0 +1,183 @@
+hydra:
+  run:
+    dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/implicit_stage3_full_sweep/nvs/tus_rec_2024_qc/011_LH_Par_S_DtP_qc_0155_0249/nerfus_no_prior
+  sweep:
+    dir: ${system.output_root}/multirun/${now:%Y-%m-%d}/${now:%H-%M-%S}
+    subdir: ${hydra.job.num}_${slug:${experiment.family}}-${slug:${experiment.name}}_${slug:${model.name}}_${short_run_id:}
+  launcher:
+    _target_: hydra._internal.core_plugins.basic_launcher.BasicLauncher
+  sweeper:
+    _target_: hydra._internal.core_plugins.basic_sweeper.BasicSweeper
+    max_batch_size: null
+    params: null
+  help:
+    app_name: ${hydra.job.name}
+    header: '${hydra.help.app_name} is powered by Hydra.
+
+      '
+    footer: 'Powered by Hydra (https://hydra.cc)
+
+      Use --hydra-help to view Hydra specific help
+
+      '
+    template: '${hydra.help.header}
+
+      == Configuration groups ==
+
+      Compose your configuration from those groups (group=option)
+
+
+      $APP_CONFIG_GROUPS
+
+
+      == Config ==
+
+      Override anything in the config (foo.bar=value)
+
+
+      $CONFIG
+
+
+      ${hydra.help.footer}
+
+      '
+  hydra_help:
+    template: 'Hydra (${hydra.runtime.version})
+
+      See https://hydra.cc for more info.
+
+
+      == Flags ==
+
+      $FLAGS_HELP
+
+
+      == Configuration groups ==
+
+      Compose your configuration from those groups (For example, append hydra/job_logging=disabled
+      to command line)
+
+
+      $HYDRA_CONFIG_GROUPS
+
+
+      Use ''--cfg hydra'' to Show the Hydra config.
+
+      '
+    hydra_help: ???
+  hydra_logging:
+    version: 1
+    formatters:
+      simple:
+        format: '[%(asctime)s][HYDRA] %(message)s'
+    handlers:
+      console:
+        class: logging.StreamHandler
+        formatter: simple
+        stream: ext://sys.stdout
+    root:
+      level: INFO
+      handlers:
+      - console
+    loggers:
+      logging_example:
+        level: DEBUG
+    disable_existing_loggers: false
+  job_logging:
+    version: 1
+    formatters:
+      simple:
+        format: '[%(asctime)s][%(name)s][%(levelname)s] - %(message)s'
+    handlers:
+      console:
+        class: logging.StreamHandler
+        formatter: simple
+        stream: ext://sys.stdout
+      file:
+        class: logging.FileHandler
+        formatter: simple
+        filename: ${hydra.runtime.output_dir}/${hydra.job.name}.log
+    root:
+      level: INFO
+      handlers:
+      - console
+      - file
+    disable_existing_loggers: false
+  env: {}
+  mode: RUN
+  searchpath: []
+  callbacks: {}
+  output_subdir: .hydra
+  overrides:
+    hydra:
+    - hydra.run.dir=/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/implicit_stage3_full_sweep/nvs/tus_rec_2024_qc/011_LH_Par_S_DtP_qc_0155_0249/nerfus_no_prior
+    - hydra.mode=RUN
+    task:
+    - experiment=production/comparisons/us_recon_four_dataset_p100k_v1/implicit/nerfus_no_prior
+    - system.output_root=/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1
+    - system.exp_tag=implicit_stage3_full_sweep_tus_rec_2024_qc_011_LH_Par_S_DtP_qc_0155_0249_nerfus_no_prior
+    - scene=tus_rec_2024_qc
+    - scene.loading.sweep_name=011_LH_Par_S_DtP_qc_0155_0249
+    - scene.loading.test_mode=holdout_interval
+    - scene.loading.holdout_trim_each=10
+    - scene.loading.holdout_num_samples=0
+    - scene.loading.holdout_test_ratio=0.2
+    - scene.loading.pose_type=absolute
+    - scene.loading.pose_mode=file
+    - scene.loading.image_downsample_factor=1
+    - scene.loading.axial_downsample_factor=1
+    - system.seed=42
+    - metric.needed_metrics=[psnr,l1,ssim,lpips,dists,gmsd]
+    - metric.max_vis_frames=10
+    - metric.save_per_frame_metrics=true
+    - engine.needed_callbacks=[NerfusOfflineSetupCallback,NerfusOfflineTrainCallback,NerfusOfflineTestCallback,NerfusOfflineFinishCallback]
+    - model.render.alpha_max=5.0
+    - model.render.boundary_attenuation_scale=0.0
+    - model.render.reflection_gain=0.0
+  job:
+    name: run
+    chdir: false
+    override_dirname: engine.needed_callbacks=[NerfusOfflineSetupCallback,NerfusOfflineTrainCallback,NerfusOfflineTestCallback,NerfusOfflineFinishCallback],experiment=production/comparisons/us_recon_four_dataset_p100k_v1/implicit/nerfus_no_prior,metric.max_vis_frames=10,metric.needed_metrics=[psnr,l1,ssim,lpips,dists,gmsd],metric.save_per_frame_metrics=true,model.render.alpha_max=5.0,model.render.boundary_attenuation_scale=0.0,model.render.reflection_gain=0.0,scene.loading.axial_downsample_factor=1,scene.loading.holdout_num_samples=0,scene.loading.holdout_test_ratio=0.2,scene.loading.holdout_trim_each=10,scene.loading.image_downsample_factor=1,scene.loading.pose_mode=file,scene.loading.pose_type=absolute,scene.loading.sweep_name=011_LH_Par_S_DtP_qc_0155_0249,scene.loading.test_mode=holdout_interval,scene=tus_rec_2024_qc,system.exp_tag=implicit_stage3_full_sweep_tus_rec_2024_qc_011_LH_Par_S_DtP_qc_0155_0249_nerfus_no_prior,system.output_root=/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1,system.seed=42
+    id: ???
+    num: ???
+    config_name: config
+    env_set: {}
+    env_copy: []
+    config:
+      override_dirname:
+        kv_sep: '='
+        item_sep: ','
+        exclude_keys: []
+  runtime:
+    version: 1.3.2
+    version_base: '1.3'
+    cwd: /home/boywang25/ultrasound-scene-reconstruction/omniultra
+    config_sources:
+    - path: hydra.conf
+      schema: pkg
+      provider: hydra
+    - path: /home/boywang25/ultrasound-scene-reconstruction/omniultra/configs_hydra
+      schema: file
+      provider: main
+    - path: ''
+      schema: structured
+      provider: schema
+    output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/implicit_stage3_full_sweep/nvs/tus_rec_2024_qc/011_LH_Par_S_DtP_qc_0155_0249/nerfus_no_prior
+    choices:
+      experiment: production/comparisons/us_recon_four_dataset_p100k_v1/implicit/nerfus_no_prior
+      system: default
+      metric: default
+      loss: default
+      model: nerfus
+      scene: tus_rec_2024_qc
+      engine: debug_offline
+      hydra/env: default
+      hydra/callbacks: null
+      hydra/job_logging: default
+      hydra/hydra_logging: default
+      hydra/hydra_help: default
+      hydra/help: default
+      hydra/sweeper: basic
+      hydra/launcher: basic
+      hydra/output: default
+  verbose: false

@@ -1,0 +1,17 @@
+{
+  "dataset": "synthetic_liver",
+  "sweep": "l1",
+  "method": "ours",
+  "camera_tag": "manual",
+  "azimuth": -49.6,
+  "elevation": -46.5,
+  "roll": 0,
+  "pad": 12.05,
+  "center_shift_right": 0,
+  "center_shift_up": 0,
+  "pan_x_units": 0,
+  "pan_y_units": 0,
+  "brightness": 2,
+  "point_size": 1,
+  "source_npz": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/gsplat_inputs/synthetic_liver__l1__ours.npz"
+}

@@ -1,0 +1,28 @@
+# @package _global_
+
+defaults:
+- /experiment/preproduction/baseline_reproduction/ultranerf/fullres_30k_mc_eval
+- _self_
+
+system:
+  exp_tag: ultranerf_production_single_sweep
+
+model:
+  ray:
+    # SliceMeta points are in millimeters. The paper/code train on meter-scale
+    # coordinates, so divide by 1000 instead of the older 100-scale setting.
+    coordinate_scale: 1000.0
+  render:
+    # Distances from SliceMeta are millimeters; the Ultra-NeRF renderer applies
+    # attenuation over meters.
+    attenuation_scale: 0.001
+    boundary_sampling_mode: bernoulli
+    scatter_sampling_mode: bernoulli
+    eval_render_mode: mc_average
+    eval_mc_samples: 4
+    eval_seed: 20260530
+
+experiment:
+  family: production/comparisons/us_recon_four_dataset_p100k_v1/implicit
+  name: ultranerf
+  description: Ultra-NeRF single-sweep production protocol with paper-scale coordinates and attenuation.

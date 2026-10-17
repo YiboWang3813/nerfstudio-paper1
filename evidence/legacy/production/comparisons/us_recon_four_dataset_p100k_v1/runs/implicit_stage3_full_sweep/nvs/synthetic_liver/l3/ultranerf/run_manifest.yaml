@@ -1,0 +1,12 @@
+method_name: ultranerf
+experiment_name: implicit_stage3_full_sweep_synthetic_liver_l3_ultranerf
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/implicit_stage3_full_sweep/nvs/synthetic_liver/l3/ultranerf
+dataset: synthetic_liver
+sweep: l3
+split: holdout_interval
+train_frames: 160
+test_frames: 40
+resolution: 448x224
+train_steps: 30000
+seed: 42
+final_iteration: 30000

@@ -1,0 +1,12 @@
+method_name: nerfus
+experiment_name: implicit_stage3_full_sweep_spine_phantom_right1_1_nerfus_no_prior
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/implicit_stage3_full_sweep/nvs/spine_phantom/right1_1/nerfus_no_prior
+dataset: spine_phantom
+sweep: right1_1
+split: holdout_interval
+train_frames: 120
+test_frames: 30
+resolution: 896x112
+train_steps: 30000
+seed: 42
+final_iteration: 30000

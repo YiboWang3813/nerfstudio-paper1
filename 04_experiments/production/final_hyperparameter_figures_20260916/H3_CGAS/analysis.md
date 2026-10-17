@@ -1,0 +1,9 @@
+# H3 — CGAS selection/pruning sensitivity
+
+Source: `docs/production/final_paper_evidence_20260910/cga/hyperparameter_data.tsv`; selection interpretation checked against `cga/selection_behavior_summary.tsv`. MP, Fixed+Full renderer, accumulated path contribution. No old high-tau results.
+
+Two columns (Liver/Arm), two 3x3 heatmap rows, then a spanning tau_alpha marker-line panel. All colors share a zero-centered ±0.016 dB scale, not separate rescaling per heatmap; cell text is delta PSNR to three decimals. A black star marks the default grid cell. Sampled maxima are deliberately not highlighted: this is robustness characterization, not parameter selection. Rows increase downward, matching the reference. The line panel uses default stars. Tau is plotted on a logarithmic x-axis at its actual sampled values; a line panel preserves numeric spacing better than a categorical 1D strip. Small cell differences are descriptive, not significance; zero-looking rounded cells can contain nonzero raw differences.
+
+Actual grids: qd={.96,.98,.99} x B={.001,.005,.05}, default(.98,.05); qp={.05,.10,.15} x qA={.70,.80,.90}, default(.10,.80); tau_alpha={5e-5,1e-4,5e-4}, default1e-4. Early proposed B={.02,.05,.08} was NOT the executed grid and must not be used to label these figures.
+
+Every dataset-specific scan has PSNR range <0.016 dB (largest 0.0159422). This supports quality stability within the tested protocol, not independent activity of every control. All 216 events in the 18 qp-by-qA settings have local contribution threshold zero: qp is saturated. Apparent heatmap variation across qp cannot be attributed to an active local threshold; training numerical variability/co-adaptation is not a controlled seed test. qA genuinely changes protection fractions (~30/20/10%) and population. B is partially active: low budgets can bind; higher budgets are often quantile-limited. See saved selection_behavior_audit.tsv for the event-based evidence.

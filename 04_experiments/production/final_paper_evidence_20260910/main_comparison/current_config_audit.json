@@ -1,0 +1,34 @@
+[
+  {
+    "dataset": "Liver",
+    "anchor_row": "p2_009",
+    "current_vs_frozen": "EXACT MATCH for model/scene/loss/engine/metric/seed",
+    "pose_mode": "file",
+    "local_mode": "fixed",
+    "global_formula": "integral"
+  },
+  {
+    "dataset": "Spine",
+    "anchor_row": "p2_000",
+    "current_vs_frozen": "EXACT MATCH for model/scene/loss/engine/metric/seed",
+    "pose_mode": "file",
+    "local_mode": "fixed",
+    "global_formula": "integral"
+  },
+  {
+    "dataset": "Arm",
+    "anchor_row": "p2_045",
+    "current_vs_frozen": "EXACT MATCH for model/scene/loss/engine/metric/seed",
+    "pose_mode": "file",
+    "local_mode": "fixed",
+    "global_formula": "integral"
+  },
+  {
+    "dataset": "Breast",
+    "anchor_row": "p2_015",
+    "current_vs_frozen": "EXACT MATCH for model/scene/loss/engine/metric/seed",
+    "pose_mode": "file",
+    "local_mode": "fixed",
+    "global_formula": "integral"
+  }
+]

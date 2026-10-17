@@ -1,0 +1,150 @@
+{
+  "reference": {
+    "bitwise_equal": true,
+    "max_abs": 0.0
+  },
+  "0/pred": {
+    "bitwise_equal": true,
+    "max_abs": 0.0
+  },
+  "0/path": {
+    "bitwise_equal": true,
+    "max_abs": 0.0
+  },
+  "0/support": {
+    "bitwise_equal": true,
+    "max_abs": 0.0
+  },
+  "0/grad_means": {
+    "bitwise_equal": false,
+    "max_abs": 3.725290298461914e-09
+  },
+  "0/grad_scales": {
+    "bitwise_equal": false,
+    "max_abs": 7.450580596923828e-06
+  },
+  "0/grad_quats": {
+    "bitwise_equal": false,
+    "max_abs": 7.450580596923828e-06
+  },
+  "0/grad_alpha": {
+    "bitwise_equal": true,
+    "max_abs": 0.0
+  },
+  "0/grad_tau": {
+    "bitwise_equal": true,
+    "max_abs": 0.0
+  },
+  "0/grad_pose": {
+    "bitwise_equal": false,
+    "max_abs": 1.4901161193847656e-08
+  },
+  "1/pred": {
+    "bitwise_equal": true,
+    "max_abs": 0.0
+  },
+  "1/path": {
+    "bitwise_equal": true,
+    "max_abs": 0.0
+  },
+  "1/support": {
+    "bitwise_equal": true,
+    "max_abs": 0.0
+  },
+  "1/grad_means": {
+    "bitwise_equal": false,
+    "max_abs": 9.313225746154785e-10
+  },
+  "1/grad_scales": {
+    "bitwise_equal": false,
+    "max_abs": 7.450580596923828e-06
+  },
+  "1/grad_quats": {
+    "bitwise_equal": false,
+    "max_abs": 7.450580596923828e-06
+  },
+  "1/grad_alpha": {
+    "bitwise_equal": true,
+    "max_abs": 0.0
+  },
+  "1/grad_tau": {
+    "bitwise_equal": true,
+    "max_abs": 0.0
+  },
+  "1/grad_pose": {
+    "bitwise_equal": false,
+    "max_abs": 7.450580596923828e-09
+  },
+  "pre_repeat/pred": {
+    "bitwise_equal": true,
+    "max_abs": 0.0
+  },
+  "pre_repeat/path": {
+    "bitwise_equal": false,
+    "max_abs": 3.814697265625e-06
+  },
+  "pre_repeat/support": {
+    "bitwise_equal": true,
+    "max_abs": 0.0
+  },
+  "pre_repeat/grad_means": {
+    "bitwise_equal": false,
+    "max_abs": 3.725290298461914e-09
+  },
+  "pre_repeat/grad_scales": {
+    "bitwise_equal": false,
+    "max_abs": 7.450580596923828e-06
+  },
+  "pre_repeat/grad_quats": {
+    "bitwise_equal": false,
+    "max_abs": 7.450580596923828e-06
+  },
+  "pre_repeat/grad_alpha": {
+    "bitwise_equal": true,
+    "max_abs": 0.0
+  },
+  "pre_repeat/grad_tau": {
+    "bitwise_equal": true,
+    "max_abs": 0.0
+  },
+  "pre_repeat/grad_pose": {
+    "bitwise_equal": false,
+    "max_abs": 1.4901161193847656e-08
+  },
+  "post_repeat/pred": {
+    "bitwise_equal": true,
+    "max_abs": 0.0
+  },
+  "post_repeat/path": {
+    "bitwise_equal": false,
+    "max_abs": 3.814697265625e-06
+  },
+  "post_repeat/support": {
+    "bitwise_equal": true,
+    "max_abs": 0.0
+  },
+  "post_repeat/grad_means": {
+    "bitwise_equal": false,
+    "max_abs": 9.313225746154785e-10
+  },
+  "post_repeat/grad_scales": {
+    "bitwise_equal": false,
+    "max_abs": 7.450580596923828e-06
+  },
+  "post_repeat/grad_quats": {
+    "bitwise_equal": false,
+    "max_abs": 7.450580596923828e-06
+  },
+  "post_repeat/grad_alpha": {
+    "bitwise_equal": true,
+    "max_abs": 0.0
+  },
+  "post_repeat/grad_tau": {
+    "bitwise_equal": true,
+    "max_abs": 0.0
+  },
+  "post_repeat/grad_pose": {
+    "bitwise_equal": false,
+    "max_abs": 7.450580596923828e-09
+  }
+}

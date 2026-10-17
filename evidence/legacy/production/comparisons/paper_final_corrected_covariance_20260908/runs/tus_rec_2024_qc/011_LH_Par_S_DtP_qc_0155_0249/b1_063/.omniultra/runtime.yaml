@@ -1,0 +1,5 @@
+created_at: '2026-09-08T23:50:50'
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/paper_final_corrected_covariance_20260908/runs/tus_rec_2024_qc/011_LH_Par_S_DtP_qc_0155_0249/b1_063
+checkpoint_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/paper_final_corrected_covariance_20260908/runs/tus_rec_2024_qc/011_LH_Par_S_DtP_qc_0155_0249/b1_063/checkpoints
+hydra_output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/paper_final_corrected_covariance_20260908/runs/tus_rec_2024_qc/011_LH_Par_S_DtP_qc_0155_0249/b1_063
+config_path: hydra:experiment=production/sensorless/paper_semantic_freeze

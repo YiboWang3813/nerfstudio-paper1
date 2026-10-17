@@ -1,0 +1,10 @@
+{
+  "row_id": "b1_006",
+  "exit_code": 0,
+  "train_start_unix": 1788870580.76661,
+  "train_end_unix": 1788871150.9429476,
+  "train_wall_time_sec": 570.1763381958008,
+  "worker": 0,
+  "gpu": "0",
+  "job": "79940"
+}

@@ -1,0 +1,41 @@
+run_id: 0c3424e
+run_name: production-sensorless_paper_semantic_freeze_ours_0c3424e
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/regression/p05_corrected_covariance_20260908/anchors/liver
+checkpoint_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/regression/p05_corrected_covariance_20260908/anchors/liver/checkpoints
+checkpoint_root: ''
+hydra_output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/regression/p05_corrected_covariance_20260908/anchors/liver
+config_path: hydra:experiment=production/sensorless/paper_semantic_freeze
+overrides:
+- experiment=production/ablations/ours/paper_semantic_freeze
+- scene=liver
+- scene.loading.sweep_name=l1
+- scene.loading.test_mode=holdout_interval
+- scene.loading.holdout_trim_each=10
+- scene.loading.holdout_num_samples=0
+- scene.loading.holdout_test_ratio=0.2
+- scene.loading.pose_mode=file
+- experiment.sensorless_required=false
+- system.seed=42
+- engine.iterations=30000
+- engine.interval.test=30000
+- engine.interval.save=30000
+- wandb.enable=false
+- system.output_root=/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/regression/p05_corrected_covariance_20260908/anchors
+- system.exp_tag=p05_corrected_liver
+git_commit: 2834e7ec24a1346b2819fbb27b7efb3981f5c98c
+git_dirty: true
+dataset: synthetic_liver
+model: ours
+exp_tag: p05_corrected_liver
+seed: 42
+wandb:
+  enabled: false
+  project: omniultra
+  mode: online
+  run_id: ''
+p05_source_snapshot: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/regression/p05_corrected_covariance_20260908/freeze
+p05_snapshot_sha256: 56efcb665e0e8e01b3c7c40e73c0b75adff6b7932c8cff258fac16b15f80ebb4
+p05_config_sha256: 6f13064a6ae55a9311954e8ee9f31ef70aa07ab7c9496efec0176eb649fa9841
+p05_binary_hashes:
+  ops/ours_renderer/ours_renderer/_C.cpython-37m-x86_64-linux-gnu.so: 97539bfef33b865b0356f4891ce0d650c3b966485ab7a66c603d409e2a26aaa4
+p05_scope: authorized MP full LGR full CGA impact anchor; not a matrix

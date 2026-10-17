@@ -1,0 +1,350 @@
+engine:
+  name: default_engine
+  state: OursOfflineState
+  task: train
+  stream: offline
+  iterations: 30000
+  accum_steps: 1
+  resume: ''
+  needed_callbacks:
+  - OursOfflineSetupCallback
+  - OursOfflineTrainCallback
+  - OursOfflineTestCallback
+  - OursOfflineSaveCallback
+  - OursOfflineFinishCallback
+  interval:
+    train:
+      step: 10
+      print: 500
+    debug: 1000
+    test: 30000
+    save: 30000
+scene:
+  dataset_name: spine_phantom
+  loading:
+    baseroot: /home/boywang25/ultrasound-scene-reconstruction/data
+    sweep_name: left1
+    images_name: images.npy
+    pose_type: absolute
+    test_mode: holdout_interval
+    holdout_trim_each: 8
+    holdout_num_samples: 0
+    holdout_test_ratio: 0.2
+    image_value_mode: uint8_255
+    image_nan_value: 0.0
+    image_downsample_factor: 1
+    axial_downsample_factor: 1
+    frame_start: 0
+    frame_end: -1
+    frame_stride: 1
+    frame_indices_path: ''
+    pose_mode: file
+    canonical_sweep_delta_mm: -1.0
+    canonical_sweep_delta_scale: 1.0
+    canonical_sweep_ref_frame: 0
+    canonical_sweep_axis: z
+    canonical_sweep_spacing_mode: uniform
+    dataset_dirname: ''
+    test_images_name: test_images.npy
+    test_poses_name: test_poses.npy
+    poses_abspath: ''
+  sampler:
+    num_init: 1000000
+    num_new: 1000
+    scales_init:
+    - 0.3
+    - 0.3
+    - 0.3
+    quats_init:
+    - 1.0
+    - 0.0
+    - 0.0
+    - 0.0
+    uniform_ratio: 0.3
+    intensity_threshold: 0.03
+    jitter_radius: 0.2
+  scheduler:
+    test_ratio: 0.1
+  grid:
+    tile_size: 4.0
+    bbox_margin: 0.05
+model:
+  name: ours
+  render:
+    enable_input_checks: false
+  gauss_init:
+    num_points: 1000000
+  scene_norm:
+    margin: 1.15
+  slice_render:
+    tile_size_px: 8
+    num_slices_elevational: 2
+    elev_corridor_half_mm: 0.395
+    slab_half_thickness_mm: 0.0
+    k_sigma: 2.5
+    mapper_kind: tile
+    num_pixels_lateral: 5
+    num_pixels_axial: 5
+    mapper_sort_by_v: false
+    compositing_mode: additive
+    fixed_bg_color: 0.0
+    shader_weight_mode: us_focus
+    us_focus_sigma_ele_0: 1.0
+    us_focus_sigma_ele_1: 0.01
+    us_focus_sigma_ele_min: 0.8
+    us_focus_sigma_ele_max: 5.0
+    us_focus_sigma_lat_0: 0.8
+    us_focus_sigma_lat_1: 0.002
+    us_focus_sigma_lat_min: 0.4
+    us_focus_sigma_lat_max: 3.0
+    us_focus_det_gamma: 0.25
+    us_focus_det_eps: 1.0e-06
+    us_focus_weight_min: 1.0e-06
+    us_focus_use_lateral_focus: false
+    us_focus_inflate_lat_mm: 0.0
+    us_focus_inflate_ax_mm: 0.0
+    ray_attenuation_enabled: true
+    ray_attenuation_source: attenuation
+    ray_attenuation_beta: 0.8
+    ray_attenuation_strength: 0.55
+    ray_attenuation_min_transmission: 0.35
+    ray_attenuation_weight_min: 0.0001
+    ray_attenuation_axial_margin_mm: 0.0
+    ray_attenuation_quadrature_window_mm: 2.0
+    ray_attenuation_quadrature_points: 3
+    ray_attenuation_mapper_kind: ray_csr
+    ray_attenuation_formula: integral
+    ray_attenuation_candidate_k_sigma: 2.0
+    render_chunk_size: 256
+    local_conditioning_mode: adaptive
+  gauss_container:
+    lr:
+      means: 0.00016
+      scales: 0.005
+      quats: 0.001
+      echo_alphas: 0.08
+      opacities: 0.08
+      intensities: 0.002
+      attenuations: 0.01
+    init_val:
+      echo_alphas: 0.1
+      opacities: 0.1
+      intensities: 0.1
+      attenuations: 0.02
+    constraints:
+      scale_activation: bounded_sigmoid
+      scale_min_mm: 0.05
+      scale_max_mm: 3.0
+      echo_alpha_max: 0.2
+      opacity_max: 0.2
+      intensity_max: 1.0
+      attenuation_max: 1.0
+  offline:
+    density_control:
+      strategy: contribution_residual
+      enable:
+        densify: true
+        prune: true
+      timing:
+        start_iter: 1000
+        end_iter: 25000
+        freq: 2000
+      thresholds:
+        densify_grad: 1.5e-05
+        split_scale: 0.6
+        prune_opacity: 0.0001
+        prune_intensity: 0.015
+      responsibility:
+        enabled: true
+        high_residual_quantile: 0.9
+        score_quantile: 0.98
+        min_score: 1.0e-06
+        max_fraction: 0.05
+        mix_mode: responsibility
+        union_gradient_fraction: 0.5
+        union_gradient_min_factor: 0.25
+        structure_weight_enabled: false
+        structure_boundary_weight: 0.5
+        structure_highpass_weight: 0.5
+        structure_speckle_weight: 0.25
+        structure_max_weight: 2.5
+        low_contribution_quantile: 0.1
+        protect_attenuation_enabled: true
+        protect_attenuation_mode: path_contribution
+        protect_attenuation_quantile: 0.9
+        path_contribution_threshold_mode: quantile
+        path_contribution_quantile: 0.8
+        path_contribution_threshold: 0.0
+      densification_policy: residual_guided
+      pruning_policy: path_aware
+  pose_optimization:
+    enabled: false
+    prior_poses_abspath: ''
+    noise_enabled: false
+    noise_rot_deg: 0.0
+    noise_trans_mm: 0.0
+    noise_seed: 20260526
+    trainable: false
+    start_iter: 0
+    end_iter: -1
+    lr: 3.0e-05
+    lr_rot: null
+    lr_trans: null
+    optimize_rotation: true
+    optimize_translation: true
+    lambda_prior: 0.0
+    lambda_prior_rot: null
+    lambda_prior_trans: null
+    lambda_smooth_rot: 0.0
+    lambda_smooth_trans: 0.0
+    residual_bound_rot_deg: 0.0
+    residual_bound_trans_mm: 0.0
+    pose_only_start_iter: -1
+    pose_only_end_iter: -1
+    log_interval: 500
+    eval_train_count: 64
+loss:
+  needed_losses:
+  - l1
+  - ssim
+  lambdas:
+    l1: 0.8
+    ssim: 0.2
+    sobel: 0.0
+    highpass_l1: 0.0
+    marco_ssim: 0.0
+    lpips: 0.0
+    diff_tv: 0.0
+    scale_wall: 0.0
+    scale_aniso: 0.0
+    opacity: 0.0
+    attenuation_l1: 0.0
+    attenuation_tail: 0.0
+    pose_anchor: 0.0
+    pose_prior: 0.0
+    pose_smooth: 0.0
+    pose_acc: 0.0
+    pose_aux_rec: 0.0
+    pose_registration: 0.0
+    pose_neighbor_registration: 0.0
+    pose_cycle: 0.0
+    pose_const_vel: 0.0
+    pose_gt_delta: 0.0
+    pose_occ_conf: 0.0
+    mse: 0.0
+  ssim_cfg:
+    window_size: 11
+    sigma: 1.5
+    downsample_enabled: false
+    downsample_factor: 1
+    downsample_mode: area
+    clamp_inputs: false
+  l1_cfg:
+    clamp_inputs: false
+  highpass_l1_cfg:
+    kernel_size: 9
+    sigma: 2.0
+  marco_ssim_cfg:
+    blur_window_size: 21
+    blur_sigma: 3.0
+    ssim_window_size: 11
+    ssim_sigma: 1.5
+  lpips_cfg:
+    metric_name: lpips
+  scale_wall_cfg:
+    min_scales_mm: 0.001
+    max_scales_mm: 1.2
+  scale_aniso_cfg:
+    max_aniso_ratio: 2.5
+  opacity_cfg:
+    target_opacity: 0.5
+  attenuation_tail_cfg:
+    max_attenuation: 0.05
+  pose_anchor_cfg:
+    rot_weight: 1.0
+    trans_weight: 1.0
+  pose_prior_cfg:
+    rot_weight: 1.0
+    trans_weight: 1.0
+  pose_smooth_cfg:
+    rot_weight: 1.0
+    trans_weight: 1.0
+  pose_acc_cfg:
+    rot_weight: 1.0
+    trans_weight: 1.0
+  pose_aux_rec_cfg:
+    l1_weight: 0.8
+    ssim_weight: 0.2
+    window_size: 11
+    sigma: 1.5
+  pose_registration_cfg:
+    photo_weight: 1.0
+    grad_weight: 0.2
+    charbonnier_eps: 0.001
+  pose_neighbor_registration_cfg:
+    photo_weight: 1.0
+    ssim_weight: 0.2
+    charbonnier_eps: 0.001
+    window_size: 11
+    sigma: 1.5
+    min_overlap_ratio: 0.3
+  pose_cycle_cfg:
+    photo_weight: 1.0
+    ssim_weight: 0.1
+    charbonnier_eps: 0.001
+    window_size: 11
+    sigma: 1.5
+    min_overlap_ratio: 0.3
+  pose_const_vel_cfg:
+    rot_weight: 1.0
+    trans_weight: 1.0
+  pose_gt_delta_cfg:
+    rot_weight: 1.0
+    trans_weight: 1.0
+  pose_occ_conf_cfg:
+    charbonnier_epsilon: 0.001
+    confidence_gamma: 1.0
+    confidence_min: 0.05
+    detach_confidence: true
+metric:
+  needed_metrics:
+  - psnr
+  - l1
+  - ssim
+  - lpips
+  - dists
+  - gmsd
+  max_vis_frames: 10
+  save_per_frame_metrics: true
+  psnr_cfg:
+    max_val: 1.0
+system:
+  output_root: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/paper_final_corrected_covariance_20260908
+  checkpoint_root: ''
+  output_dir: ''
+  checkpoint_dir: ''
+  link_checkpoint_dir: true
+  exp_tag: b1_000
+  run_id: ''
+  run_name: ''
+  config_path: ''
+  hydra_output_dir: ''
+  use_legacy_output_naming: false
+  device: cuda
+  seed: 42
+wandb:
+  enable: false
+  project: omniultra
+  entity: ''
+  mode: online
+  group: ''
+  name: ''
+  tags: []
+  log_artifacts: false
+experiment:
+  family: production/sensorless
+  name: paper_semantic_freeze
+  description: P0 semantic anchor; formal runs require a separately approved matrix.
+  protocol: canonical_sweep_1m30k_full_ours
+  sensorless_required: false
+task: train

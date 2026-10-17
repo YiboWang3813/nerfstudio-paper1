@@ -1,0 +1,323 @@
+[
+  {
+    "dataset": "liver",
+    "mode": "adaptive",
+    "initial_gaussians": 1000000,
+    "final_gaussians_from_events": 1011658,
+    "adaptation_events": [
+      [
+        50,
+        0,
+        5922,
+        0
+      ],
+      [
+        100,
+        0,
+        5736,
+        0
+      ]
+    ],
+    "peak_local_tile_gaussian_pairs": 2372444,
+    "peak_global_ray_gaussian_pairs": 209969,
+    "forward_calls": 100,
+    "finite_outputs": true,
+    "paper_result": false,
+    "success": true,
+    "wall_seconds": 11.593311104923487,
+    "peak_allocated_bytes": 3094163456,
+    "peak_reserved_bytes": 3116367872,
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "overrides": [
+      "experiment=production/ablations/ours/paper_semantic_freeze",
+      "scene=liver",
+      "scene.loading.sweep_name=l1",
+      "scene.loading.test_mode=holdout_interval",
+      "scene.loading.holdout_trim_each=10",
+      "scene.loading.holdout_num_samples=0",
+      "scene.loading.holdout_test_ratio=0.2",
+      "model.slice_render.local_conditioning_mode=adaptive",
+      "model.slice_render.ray_attenuation_enabled=true",
+      "engine.iterations=100",
+      "engine.interval.test=0",
+      "engine.interval.save=0",
+      "engine.needed_callbacks=[OursOfflineSetupCallback,OursOfflineTrainCallback,OursOfflineFinishCallback]",
+      "model.offline.density_control.timing.start_iter=1",
+      "model.offline.density_control.timing.end_iter=100",
+      "model.offline.density_control.timing.freq=50",
+      "metric.needed_metrics=[psnr]",
+      "wandb.enable=false",
+      "hydra.run.dir=/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/regression/p0_semantic_freeze_20260908/smoke/liver_adaptive",
+      "system.output_root=/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/regression/p0_semantic_freeze_20260908/smoke",
+      "system.exp_tag=p0_liver_adaptive"
+    ]
+  },
+  {
+    "dataset": "liver",
+    "mode": "fixed",
+    "initial_gaussians": 1000000,
+    "final_gaussians_from_events": 1007311,
+    "adaptation_events": [
+      [
+        50,
+        0,
+        3772,
+        0
+      ],
+      [
+        100,
+        0,
+        3539,
+        0
+      ]
+    ],
+    "peak_local_tile_gaussian_pairs": 2372053,
+    "peak_global_ray_gaussian_pairs": 0,
+    "forward_calls": 100,
+    "finite_outputs": true,
+    "paper_result": false,
+    "success": true,
+    "wall_seconds": 6.7387008257210255,
+    "peak_allocated_bytes": 3094163456,
+    "peak_reserved_bytes": 3116367872,
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "overrides": [
+      "experiment=production/ablations/ours/paper_semantic_freeze",
+      "scene=liver",
+      "scene.loading.sweep_name=l1",
+      "scene.loading.test_mode=holdout_interval",
+      "scene.loading.holdout_trim_each=10",
+      "scene.loading.holdout_num_samples=0",
+      "scene.loading.holdout_test_ratio=0.2",
+      "model.slice_render.local_conditioning_mode=fixed",
+      "model.slice_render.ray_attenuation_enabled=false",
+      "engine.iterations=100",
+      "engine.interval.test=0",
+      "engine.interval.save=0",
+      "engine.needed_callbacks=[OursOfflineSetupCallback,OursOfflineTrainCallback,OursOfflineFinishCallback]",
+      "model.offline.density_control.timing.start_iter=1",
+      "model.offline.density_control.timing.end_iter=100",
+      "model.offline.density_control.timing.freq=50",
+      "metric.needed_metrics=[psnr]",
+      "wandb.enable=false",
+      "hydra.run.dir=/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/regression/p0_semantic_freeze_20260908/smoke/liver_fixed",
+      "system.output_root=/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/regression/p0_semantic_freeze_20260908/smoke",
+      "system.exp_tag=p0_liver_fixed"
+    ]
+  },
+  {
+    "dataset": "liver",
+    "mode": "none",
+    "initial_gaussians": 1000000,
+    "final_gaussians_from_events": 1040402,
+    "adaptation_events": [
+      [
+        50,
+        0,
+        20001,
+        0
+      ],
+      [
+        100,
+        0,
+        20401,
+        0
+      ]
+    ],
+    "peak_local_tile_gaussian_pairs": 2371471,
+    "peak_global_ray_gaussian_pairs": 0,
+    "forward_calls": 100,
+    "finite_outputs": true,
+    "paper_result": false,
+    "success": true,
+    "wall_seconds": 6.844432827085257,
+    "peak_allocated_bytes": 3094163456,
+    "peak_reserved_bytes": 3116367872,
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "overrides": [
+      "experiment=production/ablations/ours/paper_semantic_freeze",
+      "scene=liver",
+      "scene.loading.sweep_name=l1",
+      "scene.loading.test_mode=holdout_interval",
+      "scene.loading.holdout_trim_each=10",
+      "scene.loading.holdout_num_samples=0",
+      "scene.loading.holdout_test_ratio=0.2",
+      "model.slice_render.local_conditioning_mode=none",
+      "model.slice_render.ray_attenuation_enabled=false",
+      "engine.iterations=100",
+      "engine.interval.test=0",
+      "engine.interval.save=0",
+      "engine.needed_callbacks=[OursOfflineSetupCallback,OursOfflineTrainCallback,OursOfflineFinishCallback]",
+      "model.offline.density_control.timing.start_iter=1",
+      "model.offline.density_control.timing.end_iter=100",
+      "model.offline.density_control.timing.freq=50",
+      "metric.needed_metrics=[psnr]",
+      "wandb.enable=false",
+      "hydra.run.dir=/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/regression/p0_semantic_freeze_20260908/smoke/liver_none",
+      "system.output_root=/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/regression/p0_semantic_freeze_20260908/smoke",
+      "system.exp_tag=p0_liver_none"
+    ]
+  },
+  {
+    "dataset": "arm",
+    "mode": "adaptive",
+    "initial_gaussians": 1000000,
+    "final_gaussians_from_events": 1003970,
+    "adaptation_events": [
+      [
+        50,
+        0,
+        2074,
+        0
+      ],
+      [
+        100,
+        0,
+        1896,
+        0
+      ]
+    ],
+    "peak_local_tile_gaussian_pairs": 2235743,
+    "peak_global_ray_gaussian_pairs": 61504,
+    "forward_calls": 100,
+    "finite_outputs": true,
+    "paper_result": false,
+    "success": true,
+    "wall_seconds": 8.636604238301516,
+    "peak_allocated_bytes": 6181562880,
+    "peak_reserved_bytes": 6354370560,
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "overrides": [
+      "experiment=production/ablations/ours/paper_semantic_freeze",
+      "scene=tus_rec_2024_qc",
+      "scene.loading.sweep_name=010_LH_Per_L_DtP_qc_0005_0370",
+      "scene.loading.test_mode=holdout_interval",
+      "scene.loading.holdout_trim_each=10",
+      "scene.loading.holdout_num_samples=0",
+      "scene.loading.holdout_test_ratio=0.2",
+      "model.slice_render.local_conditioning_mode=adaptive",
+      "model.slice_render.ray_attenuation_enabled=true",
+      "engine.iterations=100",
+      "engine.interval.test=0",
+      "engine.interval.save=0",
+      "engine.needed_callbacks=[OursOfflineSetupCallback,OursOfflineTrainCallback,OursOfflineFinishCallback]",
+      "model.offline.density_control.timing.start_iter=1",
+      "model.offline.density_control.timing.end_iter=100",
+      "model.offline.density_control.timing.freq=50",
+      "metric.needed_metrics=[psnr]",
+      "wandb.enable=false",
+      "hydra.run.dir=/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/regression/p0_semantic_freeze_20260908/smoke/arm_adaptive",
+      "system.output_root=/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/regression/p0_semantic_freeze_20260908/smoke",
+      "system.exp_tag=p0_arm_adaptive",
+      "model.slice_render.elev_corridor_half_mm=0.202"
+    ]
+  },
+  {
+    "dataset": "arm",
+    "mode": "fixed",
+    "initial_gaussians": 1000000,
+    "final_gaussians_from_events": 1002758,
+    "adaptation_events": [
+      [
+        50,
+        0,
+        1445,
+        0
+      ],
+      [
+        100,
+        0,
+        1313,
+        0
+      ]
+    ],
+    "peak_local_tile_gaussian_pairs": 2236691,
+    "peak_global_ray_gaussian_pairs": 0,
+    "forward_calls": 100,
+    "finite_outputs": true,
+    "paper_result": false,
+    "success": true,
+    "wall_seconds": 7.321413680911064,
+    "peak_allocated_bytes": 6181562880,
+    "peak_reserved_bytes": 6354370560,
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "overrides": [
+      "experiment=production/ablations/ours/paper_semantic_freeze",
+      "scene=tus_rec_2024_qc",
+      "scene.loading.sweep_name=010_LH_Per_L_DtP_qc_0005_0370",
+      "scene.loading.test_mode=holdout_interval",
+      "scene.loading.holdout_trim_each=10",
+      "scene.loading.holdout_num_samples=0",
+      "scene.loading.holdout_test_ratio=0.2",
+      "model.slice_render.local_conditioning_mode=fixed",
+      "model.slice_render.ray_attenuation_enabled=false",
+      "engine.iterations=100",
+      "engine.interval.test=0",
+      "engine.interval.save=0",
+      "engine.needed_callbacks=[OursOfflineSetupCallback,OursOfflineTrainCallback,OursOfflineFinishCallback]",
+      "model.offline.density_control.timing.start_iter=1",
+      "model.offline.density_control.timing.end_iter=100",
+      "model.offline.density_control.timing.freq=50",
+      "metric.needed_metrics=[psnr]",
+      "wandb.enable=false",
+      "hydra.run.dir=/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/regression/p0_semantic_freeze_20260908/smoke/arm_fixed",
+      "system.output_root=/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/regression/p0_semantic_freeze_20260908/smoke",
+      "system.exp_tag=p0_arm_fixed",
+      "model.slice_render.elev_corridor_half_mm=0.202"
+    ]
+  },
+  {
+    "dataset": "arm",
+    "mode": "none",
+    "initial_gaussians": 1000000,
+    "final_gaussians_from_events": 1040400,
+    "adaptation_events": [
+      [
+        50,
+        0,
+        20000,
+        0
+      ],
+      [
+        100,
+        0,
+        20400,
+        0
+      ]
+    ],
+    "peak_local_tile_gaussian_pairs": 2236117,
+    "peak_global_ray_gaussian_pairs": 0,
+    "forward_calls": 100,
+    "finite_outputs": true,
+    "paper_result": false,
+    "success": true,
+    "wall_seconds": 7.484120104461908,
+    "peak_allocated_bytes": 6181562880,
+    "peak_reserved_bytes": 6354370560,
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "overrides": [
+      "experiment=production/ablations/ours/paper_semantic_freeze",
+      "scene=tus_rec_2024_qc",
+      "scene.loading.sweep_name=010_LH_Per_L_DtP_qc_0005_0370",
+      "scene.loading.test_mode=holdout_interval",
+      "scene.loading.holdout_trim_each=10",
+      "scene.loading.holdout_num_samples=0",
+      "scene.loading.holdout_test_ratio=0.2",
+      "model.slice_render.local_conditioning_mode=none",
+      "model.slice_render.ray_attenuation_enabled=false",
+      "engine.iterations=100",
+      "engine.interval.test=0",
+      "engine.interval.save=0",
+      "engine.needed_callbacks=[OursOfflineSetupCallback,OursOfflineTrainCallback,OursOfflineFinishCallback]",
+      "model.offline.density_control.timing.start_iter=1",
+      "model.offline.density_control.timing.end_iter=100",
+      "model.offline.density_control.timing.freq=50",
+      "metric.needed_metrics=[psnr]",
+      "wandb.enable=false",
+      "hydra.run.dir=/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/regression/p0_semantic_freeze_20260908/smoke/arm_none",
+      "system.output_root=/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/regression/p0_semantic_freeze_20260908/smoke",
+      "system.exp_tag=p0_arm_none",
+      "model.slice_render.elev_corridor_half_mm=0.202"
+    ]
+  }
+]

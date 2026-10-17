@@ -1,0 +1,32 @@
+{
+  "peak_local_tile_gaussian_pairs": 3220422,
+  "peak_global_ray_gaussian_pairs": 261852,
+  "total_local_tile_gaussian_pairs": 84662090280,
+  "total_global_ray_gaussian_pairs": 6006321791,
+  "forward_calls": 30040,
+  "finite_sampled_outputs": true,
+  "approved_scope": "two corrected MP anchors",
+  "wall_seconds": 425.97880754992366,
+  "peak_allocated_bytes": 3094163456,
+  "peak_reserved_bytes": 3116367872,
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "overrides": [
+    "experiment=production/ablations/ours/paper_semantic_freeze",
+    "scene=liver",
+    "scene.loading.sweep_name=l1",
+    "scene.loading.test_mode=holdout_interval",
+    "scene.loading.holdout_trim_each=10",
+    "scene.loading.holdout_num_samples=0",
+    "scene.loading.holdout_test_ratio=0.2",
+    "scene.loading.pose_mode=file",
+    "experiment.sensorless_required=false",
+    "system.seed=42",
+    "engine.iterations=30000",
+    "engine.interval.test=30000",
+    "engine.interval.save=30000",
+    "wandb.enable=false",
+    "hydra.run.dir=/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/regression/p05_corrected_covariance_20260908/anchors/liver",
+    "system.output_root=/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/regression/p05_corrected_covariance_20260908/anchors",
+    "system.exp_tag=p05_corrected_liver"
+  ]
+}

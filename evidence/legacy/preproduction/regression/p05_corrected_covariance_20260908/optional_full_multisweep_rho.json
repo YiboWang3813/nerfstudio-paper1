@@ -1,0 +1,452 @@
+[
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "r2",
+    "rho": 0.6,
+    "execution_authorized": false,
+    "overrides": [
+      "scene=liver",
+      "scene.loading.sweep_name=r2",
+      "scene.loading.test_mode=holdout_interval",
+      "scene.loading.holdout_trim_each=10",
+      "scene.loading.holdout_num_samples=0",
+      "scene.loading.holdout_test_ratio=0.2",
+      "scene.loading.pose_mode=canonical_sweep",
+      "experiment.sensorless_required=true",
+      "system.seed=42",
+      "scene.loading.canonical_sweep_delta_scale=0.6"
+    ]
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "r2",
+    "rho": 0.75,
+    "execution_authorized": false,
+    "overrides": [
+      "scene=liver",
+      "scene.loading.sweep_name=r2",
+      "scene.loading.test_mode=holdout_interval",
+      "scene.loading.holdout_trim_each=10",
+      "scene.loading.holdout_num_samples=0",
+      "scene.loading.holdout_test_ratio=0.2",
+      "scene.loading.pose_mode=canonical_sweep",
+      "experiment.sensorless_required=true",
+      "system.seed=42",
+      "scene.loading.canonical_sweep_delta_scale=0.75"
+    ]
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "r2",
+    "rho": 0.9,
+    "execution_authorized": false,
+    "overrides": [
+      "scene=liver",
+      "scene.loading.sweep_name=r2",
+      "scene.loading.test_mode=holdout_interval",
+      "scene.loading.holdout_trim_each=10",
+      "scene.loading.holdout_num_samples=0",
+      "scene.loading.holdout_test_ratio=0.2",
+      "scene.loading.pose_mode=canonical_sweep",
+      "experiment.sensorless_required=true",
+      "system.seed=42",
+      "scene.loading.canonical_sweep_delta_scale=0.9"
+    ]
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "r2",
+    "rho": 1.1,
+    "execution_authorized": false,
+    "overrides": [
+      "scene=liver",
+      "scene.loading.sweep_name=r2",
+      "scene.loading.test_mode=holdout_interval",
+      "scene.loading.holdout_trim_each=10",
+      "scene.loading.holdout_num_samples=0",
+      "scene.loading.holdout_test_ratio=0.2",
+      "scene.loading.pose_mode=canonical_sweep",
+      "experiment.sensorless_required=true",
+      "system.seed=42",
+      "scene.loading.canonical_sweep_delta_scale=1.1"
+    ]
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "r2",
+    "rho": 1.25,
+    "execution_authorized": false,
+    "overrides": [
+      "scene=liver",
+      "scene.loading.sweep_name=r2",
+      "scene.loading.test_mode=holdout_interval",
+      "scene.loading.holdout_trim_each=10",
+      "scene.loading.holdout_num_samples=0",
+      "scene.loading.holdout_test_ratio=0.2",
+      "scene.loading.pose_mode=canonical_sweep",
+      "experiment.sensorless_required=true",
+      "system.seed=42",
+      "scene.loading.canonical_sweep_delta_scale=1.25"
+    ]
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "r2",
+    "rho": 1.5,
+    "execution_authorized": false,
+    "overrides": [
+      "scene=liver",
+      "scene.loading.sweep_name=r2",
+      "scene.loading.test_mode=holdout_interval",
+      "scene.loading.holdout_trim_each=10",
+      "scene.loading.holdout_num_samples=0",
+      "scene.loading.holdout_test_ratio=0.2",
+      "scene.loading.pose_mode=canonical_sweep",
+      "experiment.sensorless_required=true",
+      "system.seed=42",
+      "scene.loading.canonical_sweep_delta_scale=1.5"
+    ]
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_100",
+    "rho": 0.6,
+    "execution_authorized": false,
+    "overrides": [
+      "scene=tdsc_abus_2023",
+      "scene.loading.sweep_name=validation_100",
+      "scene.loading.test_mode=holdout_interval",
+      "scene.loading.holdout_trim_each=10",
+      "scene.loading.holdout_num_samples=0",
+      "scene.loading.holdout_test_ratio=0.2",
+      "scene.loading.pose_mode=canonical_sweep",
+      "experiment.sensorless_required=true",
+      "system.seed=42",
+      "model.slice_render.elev_corridor_half_mm=0.238",
+      "scene.loading.canonical_sweep_delta_scale=0.6"
+    ]
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_100",
+    "rho": 0.75,
+    "execution_authorized": false,
+    "overrides": [
+      "scene=tdsc_abus_2023",
+      "scene.loading.sweep_name=validation_100",
+      "scene.loading.test_mode=holdout_interval",
+      "scene.loading.holdout_trim_each=10",
+      "scene.loading.holdout_num_samples=0",
+      "scene.loading.holdout_test_ratio=0.2",
+      "scene.loading.pose_mode=canonical_sweep",
+      "experiment.sensorless_required=true",
+      "system.seed=42",
+      "model.slice_render.elev_corridor_half_mm=0.238",
+      "scene.loading.canonical_sweep_delta_scale=0.75"
+    ]
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_100",
+    "rho": 0.9,
+    "execution_authorized": false,
+    "overrides": [
+      "scene=tdsc_abus_2023",
+      "scene.loading.sweep_name=validation_100",
+      "scene.loading.test_mode=holdout_interval",
+      "scene.loading.holdout_trim_each=10",
+      "scene.loading.holdout_num_samples=0",
+      "scene.loading.holdout_test_ratio=0.2",
+      "scene.loading.pose_mode=canonical_sweep",
+      "experiment.sensorless_required=true",
+      "system.seed=42",
+      "model.slice_render.elev_corridor_half_mm=0.238",
+      "scene.loading.canonical_sweep_delta_scale=0.9"
+    ]
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_100",
+    "rho": 1.1,
+    "execution_authorized": false,
+    "overrides": [
+      "scene=tdsc_abus_2023",
+      "scene.loading.sweep_name=validation_100",
+      "scene.loading.test_mode=holdout_interval",
+      "scene.loading.holdout_trim_each=10",
+      "scene.loading.holdout_num_samples=0",
+      "scene.loading.holdout_test_ratio=0.2",
+      "scene.loading.pose_mode=canonical_sweep",
+      "experiment.sensorless_required=true",
+      "system.seed=42",
+      "model.slice_render.elev_corridor_half_mm=0.238",
+      "scene.loading.canonical_sweep_delta_scale=1.1"
+    ]
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_100",
+    "rho": 1.25,
+    "execution_authorized": false,
+    "overrides": [
+      "scene=tdsc_abus_2023",
+      "scene.loading.sweep_name=validation_100",
+      "scene.loading.test_mode=holdout_interval",
+      "scene.loading.holdout_trim_each=10",
+      "scene.loading.holdout_num_samples=0",
+      "scene.loading.holdout_test_ratio=0.2",
+      "scene.loading.pose_mode=canonical_sweep",
+      "experiment.sensorless_required=true",
+      "system.seed=42",
+      "model.slice_render.elev_corridor_half_mm=0.238",
+      "scene.loading.canonical_sweep_delta_scale=1.25"
+    ]
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_100",
+    "rho": 1.5,
+    "execution_authorized": false,
+    "overrides": [
+      "scene=tdsc_abus_2023",
+      "scene.loading.sweep_name=validation_100",
+      "scene.loading.test_mode=holdout_interval",
+      "scene.loading.holdout_trim_each=10",
+      "scene.loading.holdout_num_samples=0",
+      "scene.loading.holdout_test_ratio=0.2",
+      "scene.loading.pose_mode=canonical_sweep",
+      "experiment.sensorless_required=true",
+      "system.seed=42",
+      "model.slice_render.elev_corridor_half_mm=0.238",
+      "scene.loading.canonical_sweep_delta_scale=1.5"
+    ]
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_101",
+    "rho": 0.6,
+    "execution_authorized": false,
+    "overrides": [
+      "scene=tdsc_abus_2023",
+      "scene.loading.sweep_name=validation_101",
+      "scene.loading.test_mode=holdout_interval",
+      "scene.loading.holdout_trim_each=10",
+      "scene.loading.holdout_num_samples=0",
+      "scene.loading.holdout_test_ratio=0.2",
+      "scene.loading.pose_mode=canonical_sweep",
+      "experiment.sensorless_required=true",
+      "system.seed=42",
+      "model.slice_render.elev_corridor_half_mm=0.238",
+      "scene.loading.canonical_sweep_delta_scale=0.6"
+    ]
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_101",
+    "rho": 0.75,
+    "execution_authorized": false,
+    "overrides": [
+      "scene=tdsc_abus_2023",
+      "scene.loading.sweep_name=validation_101",
+      "scene.loading.test_mode=holdout_interval",
+      "scene.loading.holdout_trim_each=10",
+      "scene.loading.holdout_num_samples=0",
+      "scene.loading.holdout_test_ratio=0.2",
+      "scene.loading.pose_mode=canonical_sweep",
+      "experiment.sensorless_required=true",
+      "system.seed=42",
+      "model.slice_render.elev_corridor_half_mm=0.238",
+      "scene.loading.canonical_sweep_delta_scale=0.75"
+    ]
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_101",
+    "rho": 0.9,
+    "execution_authorized": false,
+    "overrides": [
+      "scene=tdsc_abus_2023",
+      "scene.loading.sweep_name=validation_101",
+      "scene.loading.test_mode=holdout_interval",
+      "scene.loading.holdout_trim_each=10",
+      "scene.loading.holdout_num_samples=0",
+      "scene.loading.holdout_test_ratio=0.2",
+      "scene.loading.pose_mode=canonical_sweep",
+      "experiment.sensorless_required=true",
+      "system.seed=42",
+      "model.slice_render.elev_corridor_half_mm=0.238",
+      "scene.loading.canonical_sweep_delta_scale=0.9"
+    ]
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_101",
+    "rho": 1.1,
+    "execution_authorized": false,
+    "overrides": [
+      "scene=tdsc_abus_2023",
+      "scene.loading.sweep_name=validation_101",
+      "scene.loading.test_mode=holdout_interval",
+      "scene.loading.holdout_trim_each=10",
+      "scene.loading.holdout_num_samples=0",
+      "scene.loading.holdout_test_ratio=0.2",
+      "scene.loading.pose_mode=canonical_sweep",
+      "experiment.sensorless_required=true",
+      "system.seed=42",
+      "model.slice_render.elev_corridor_half_mm=0.238",
+      "scene.loading.canonical_sweep_delta_scale=1.1"
+    ]
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_101",
+    "rho": 1.25,
+    "execution_authorized": false,
+    "overrides": [
+      "scene=tdsc_abus_2023",
+      "scene.loading.sweep_name=validation_101",
+      "scene.loading.test_mode=holdout_interval",
+      "scene.loading.holdout_trim_each=10",
+      "scene.loading.holdout_num_samples=0",
+      "scene.loading.holdout_test_ratio=0.2",
+      "scene.loading.pose_mode=canonical_sweep",
+      "experiment.sensorless_required=true",
+      "system.seed=42",
+      "model.slice_render.elev_corridor_half_mm=0.238",
+      "scene.loading.canonical_sweep_delta_scale=1.25"
+    ]
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_101",
+    "rho": 1.5,
+    "execution_authorized": false,
+    "overrides": [
+      "scene=tdsc_abus_2023",
+      "scene.loading.sweep_name=validation_101",
+      "scene.loading.test_mode=holdout_interval",
+      "scene.loading.holdout_trim_each=10",
+      "scene.loading.holdout_num_samples=0",
+      "scene.loading.holdout_test_ratio=0.2",
+      "scene.loading.pose_mode=canonical_sweep",
+      "experiment.sensorless_required=true",
+      "system.seed=42",
+      "model.slice_render.elev_corridor_half_mm=0.238",
+      "scene.loading.canonical_sweep_delta_scale=1.5"
+    ]
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "011_LH_Per_S_PtD_qc_0008_0447",
+    "rho": 0.6,
+    "execution_authorized": false,
+    "overrides": [
+      "scene=tus_rec_2024_qc",
+      "scene.loading.sweep_name=011_LH_Per_S_PtD_qc_0008_0447",
+      "scene.loading.test_mode=holdout_interval",
+      "scene.loading.holdout_trim_each=10",
+      "scene.loading.holdout_num_samples=0",
+      "scene.loading.holdout_test_ratio=0.2",
+      "scene.loading.pose_mode=canonical_sweep",
+      "experiment.sensorless_required=true",
+      "system.seed=42",
+      "model.slice_render.elev_corridor_half_mm=0.202",
+      "scene.loading.canonical_sweep_delta_scale=0.6"
+    ]
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "011_LH_Per_S_PtD_qc_0008_0447",
+    "rho": 0.75,
+    "execution_authorized": false,
+    "overrides": [
+      "scene=tus_rec_2024_qc",
+      "scene.loading.sweep_name=011_LH_Per_S_PtD_qc_0008_0447",
+      "scene.loading.test_mode=holdout_interval",
+      "scene.loading.holdout_trim_each=10",
+      "scene.loading.holdout_num_samples=0",
+      "scene.loading.holdout_test_ratio=0.2",
+      "scene.loading.pose_mode=canonical_sweep",
+      "experiment.sensorless_required=true",
+      "system.seed=42",
+      "model.slice_render.elev_corridor_half_mm=0.202",
+      "scene.loading.canonical_sweep_delta_scale=0.75"
+    ]
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "011_LH_Per_S_PtD_qc_0008_0447",
+    "rho": 0.9,
+    "execution_authorized": false,
+    "overrides": [
+      "scene=tus_rec_2024_qc",
+      "scene.loading.sweep_name=011_LH_Per_S_PtD_qc_0008_0447",
+      "scene.loading.test_mode=holdout_interval",
+      "scene.loading.holdout_trim_each=10",
+      "scene.loading.holdout_num_samples=0",
+      "scene.loading.holdout_test_ratio=0.2",
+      "scene.loading.pose_mode=canonical_sweep",
+      "experiment.sensorless_required=true",
+      "system.seed=42",
+      "model.slice_render.elev_corridor_half_mm=0.202",
+      "scene.loading.canonical_sweep_delta_scale=0.9"
+    ]
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "011_LH_Per_S_PtD_qc_0008_0447",
+    "rho": 1.1,
+    "execution_authorized": false,
+    "overrides": [
+      "scene=tus_rec_2024_qc",
+      "scene.loading.sweep_name=011_LH_Per_S_PtD_qc_0008_0447",
+      "scene.loading.test_mode=holdout_interval",
+      "scene.loading.holdout_trim_each=10",
+      "scene.loading.holdout_num_samples=0",
+      "scene.loading.holdout_test_ratio=0.2",
+      "scene.loading.pose_mode=canonical_sweep",
+      "experiment.sensorless_required=true",
+      "system.seed=42",
+      "model.slice_render.elev_corridor_half_mm=0.202",
+      "scene.loading.canonical_sweep_delta_scale=1.1"
+    ]
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "011_LH_Per_S_PtD_qc_0008_0447",
+    "rho": 1.25,
+    "execution_authorized": false,
+    "overrides": [
+      "scene=tus_rec_2024_qc",
+      "scene.loading.sweep_name=011_LH_Per_S_PtD_qc_0008_0447",
+      "scene.loading.test_mode=holdout_interval",
+      "scene.loading.holdout_trim_each=10",
+      "scene.loading.holdout_num_samples=0",
+      "scene.loading.holdout_test_ratio=0.2",
+      "scene.loading.pose_mode=canonical_sweep",
+      "experiment.sensorless_required=true",
+      "system.seed=42",
+      "model.slice_render.elev_corridor_half_mm=0.202",
+      "scene.loading.canonical_sweep_delta_scale=1.25"
+    ]
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "011_LH_Per_S_PtD_qc_0008_0447",
+    "rho": 1.5,
+    "execution_authorized": false,
+    "overrides": [
+      "scene=tus_rec_2024_qc",
+      "scene.loading.sweep_name=011_LH_Per_S_PtD_qc_0008_0447",
+      "scene.loading.test_mode=holdout_interval",
+      "scene.loading.holdout_trim_each=10",
+      "scene.loading.holdout_num_samples=0",
+      "scene.loading.holdout_test_ratio=0.2",
+      "scene.loading.pose_mode=canonical_sweep",
+      "experiment.sensorless_required=true",
+      "system.seed=42",
+      "model.slice_render.elev_corridor_half_mm=0.202",
+      "scene.loading.canonical_sweep_delta_scale=1.5"
+    ]
+  }
+]

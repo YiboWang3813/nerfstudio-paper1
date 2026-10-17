@@ -1,0 +1,4 @@
+scope	dataset	method	num_runs	render_fps_mean	render_fps_median	render_fps_min	render_fps_max	num_dataset_means
+dataset	synthetic_liver	ours	1	249.4925240433623	249.4925240433623	249.4925240433623	249.4925240433623	
+dataset	tus_rec_2024_qc	ours	1	357.9181886291717	357.9181886291717	357.9181886291717	357.9181886291717	
+paper_tables	all_available_dataset_means	ours		303.705356336267	303.705356336267	249.4925240433623	357.9181886291717	2

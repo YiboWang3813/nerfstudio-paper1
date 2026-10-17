@@ -1,0 +1,20 @@
+{
+  "archive": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/paper_final_corrected_covariance_20260908/provenance/p1_postprocess_v1.tar.gz",
+  "archive_sha256": "04eb843212d5329cacccc68306e466efd64352539dd960b8a1278709a567b3fb",
+  "file_hashes": {
+    "scripts/production/ablations/ours/p1_checkpoint_report.py": "1d00781c2cefa7482fd35ac8ef1b6d7a07b81cca20ecdd59e5905193cb91dc0a",
+    "scripts/production/ablations/ours/p1_scientific_checkpoint.py": "e6d525614a8a524f1ee72c1866a8b802a253f5b7f4d436b7a2c0be1abe50f2fb",
+    "scripts/production/ablations/ours/p1_post_batch1.sh": "65fd56c64e1ca5a6668b3da9506d52f566738ec30a01922943d13e862473556f",
+    "scripts/production/ablations/ours/p1_fps_gpu3.sh": "49af330ce49a44631400986685262e0eedbabdc61cd3ede8e8e180511801cecf",
+    "scripts/production/ablations/ours/p1_fps_report.py": "b5ee64d0dbf8189d99ea159270e6a301f6b999574532a5a4077d0f8bb90b4616",
+    "scripts/production/ablations/ours/p1_postprocess_archive.py": "b152243b65567596cf732d55ac7fb32e22832fcfeed745d0b7653ae78c688268",
+    "docs/production/p1_paper_protocol_freeze/execution_status.md": "9812e61baa9c16118fe329a7da060b6626b8f118551ad695f8500d15a1b7f8f2"
+  },
+  "jobs": {
+    "training": 79940,
+    "aggregate_after_success": 79942,
+    "fps_after_aggregate_success": 79943
+  },
+  "production_source_sha256": "b2525342593c8dd84a1f1ddb8c1ac124c9b1fb179ddcffea3fb902eb2a073ad2",
+  "batch2_submitted": false
+}

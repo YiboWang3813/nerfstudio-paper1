@@ -1,0 +1,5 @@
+created_at: '2026-09-08T20:49:16'
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/paper_final_corrected_covariance_20260908/runs/synthetic_liver/r1/b1_012
+checkpoint_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/paper_final_corrected_covariance_20260908/runs/synthetic_liver/r1/b1_012/checkpoints
+hydra_output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/paper_final_corrected_covariance_20260908/runs/synthetic_liver/r1/b1_012
+config_path: hydra:experiment=production/sensorless/paper_semantic_freeze

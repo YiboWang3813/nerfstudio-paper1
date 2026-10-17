@@ -1,0 +1,47 @@
+{
+  "synthetic_liver": {},
+  "tus_rec_2024_qc": {
+    "scene.dataset_name": [
+      "synthetic_liver",
+      "tus_rec_2024"
+    ],
+    "model.slice_render.elev_corridor_half_mm": [
+      0.395,
+      0.202
+    ],
+    "scene.loading.sweep_name": [
+      "l1",
+      "010_LH_Per_L_DtP_qc_0005_0370"
+    ],
+    "scene.sampler.intensity_threshold": [
+      0.05,
+      0.03
+    ],
+    "scene.loading.dataset_dirname": [
+      "",
+      "tus_rec_2024_qc"
+    ]
+  },
+  "tdsc_abus_2023": {
+    "scene.dataset_name": [
+      "synthetic_liver",
+      "tdsc_abus_2023"
+    ],
+    "model.slice_render.elev_corridor_half_mm": [
+      0.395,
+      0.238
+    ],
+    "scene.loading.sweep_name": [
+      "l1",
+      "validation_100"
+    ],
+    "scene.sampler.intensity_threshold": [
+      0.05,
+      0.03
+    ],
+    "scene.loading.dataset_dirname": [
+      "",
+      "tdsc_abus_2023"
+    ]
+  }
+}

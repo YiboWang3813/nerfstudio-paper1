@@ -1,0 +1,39 @@
+{
+  "full": {
+    "total": 254,
+    "remaining_after_anchors": 252,
+    "groups": {
+      "main": 78,
+      "structural": 30,
+      "multi_sweep": 14,
+      "hyper_PPP": 12,
+      "hyper_LGR": 38,
+      "hyper_CGA": 82
+    },
+    "optional_multisweep_rho": 24
+  },
+  "minimal": {
+    "total": 190,
+    "remaining_after_anchors": 188,
+    "groups": {
+      "main": 78,
+      "structural": 30,
+      "multi_sweep": 14,
+      "hyper_PPP": 12,
+      "hyper_LGR": 16,
+      "hyper_CGA": 40
+    },
+    "optional_multisweep_rho": 0
+  },
+  "baselines": "FINAL-REUSE: baseline code/data/protocol unchanged; no baseline training authorized or needed",
+  "old_ours": "LEGACY-REFERENCE; target corrected rows RERUN; newly introduced controls NEW",
+  "legacy_shader_counts": {
+    "us_focus": 538
+  },
+  "main_sweeps": {
+    "spine_phantom": 9,
+    "synthetic_liver": 6,
+    "tdsc_abus_2023": 30,
+    "tus_rec_2024_qc": 33
+  }
+}

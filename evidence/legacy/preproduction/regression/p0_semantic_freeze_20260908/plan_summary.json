@@ -1,0 +1,29 @@
+{
+  "execution_authorized": false,
+  "canonical_paper_confirmed": false,
+  "covariance_semantic_freeze": "BLOCKED_PRE_EXISTING_DISCREPANCY",
+  "acoustic_control": "B proposed, not implemented; 2 conditional runs included",
+  "multi_sweep_rho": "not included; optional +24 non-default runs using paired validation defaults",
+  "full": {
+    "total": 154,
+    "conditional_acoustic": 2,
+    "groups": {
+      "structural": 14,
+      "multi_sweep": 14,
+      "hyper_PPP": 12,
+      "hyper_LGR": 38,
+      "hyper_CGA": 76
+    }
+  },
+  "minimal": {
+    "total": 100,
+    "conditional_acoustic": 2,
+    "groups": {
+      "structural": 14,
+      "multi_sweep": 14,
+      "hyper_PPP": 12,
+      "hyper_LGR": 24,
+      "hyper_CGA": 36
+    }
+  }
+}

@@ -1,0 +1,5 @@
+created_at: '2026-09-08T20:20:15'
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/paper_final_corrected_covariance_20260908/runs/spine_phantom/right1/b1_005
+checkpoint_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/paper_final_corrected_covariance_20260908/runs/spine_phantom/right1/b1_005/checkpoints
+hydra_output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/paper_final_corrected_covariance_20260908/runs/spine_phantom/right1/b1_005
+config_path: hydra:experiment=production/sensorless/paper_semantic_freeze

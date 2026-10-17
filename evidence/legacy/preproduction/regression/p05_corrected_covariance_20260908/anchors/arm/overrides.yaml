@@ -1,0 +1,18 @@
+overrides:
+- experiment=production/ablations/ours/paper_semantic_freeze
+- scene=tus_rec_2024_qc
+- scene.loading.sweep_name=010_LH_Per_L_DtP_qc_0005_0370
+- scene.loading.test_mode=holdout_interval
+- scene.loading.holdout_trim_each=10
+- scene.loading.holdout_num_samples=0
+- scene.loading.holdout_test_ratio=0.2
+- scene.loading.pose_mode=file
+- experiment.sensorless_required=false
+- system.seed=42
+- model.slice_render.elev_corridor_half_mm=0.202
+- engine.iterations=30000
+- engine.interval.test=30000
+- engine.interval.save=30000
+- wandb.enable=false
+- system.output_root=/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/regression/p05_corrected_covariance_20260908/anchors
+- system.exp_tag=p05_corrected_arm

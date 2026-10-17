@@ -1,0 +1,110 @@
+{
+  "configs_hydra/experiment/production/ablations/ours/paper_semantic_freeze.yaml": {
+    "pre": null,
+    "post": "dd46175eced44faf32f56309fd84325190e1bc07c4d8370e79a491d3fa0ed3ec"
+  },
+  "docs/production/p0_semantic_freeze/README.md": {
+    "pre": null,
+    "post": "e3014049e652104c1c4d7a911d5331a5b57573982e44ca0385ad839e799e9635"
+  },
+  "docs/production/p0_semantic_freeze/covariance_blocker.md": {
+    "pre": null,
+    "post": "639b89cd14e421cda7fdb274e533ae1544b2c9f6896b13160a16a522e5b5587a"
+  },
+  "docs/production/p0_semantic_freeze/paper_alignment.md": {
+    "pre": null,
+    "post": "09894b3ca64c53f0edf724a4567d398b7519dbe73f2f4afde1eb162da97056a9"
+  },
+  "methods/ours/configs.py": {
+    "pre": "39caf423d989e465eb62ac966af97233231d89360f4d6f5af95aa51e88c76549",
+    "post": "5641659e64e93765a6eba7d02809cc24ba89e36bdc788a78730c168a5cf3a41f"
+  },
+  "methods/ours/density_control.py": {
+    "pre": "6276102a2b95b74a33baee05ca3a2f1938f7fe438ae5598ab4f6282e21aab3a1",
+    "post": "ab83212d97765b3655a0c3685920da31e89bc7750c7a3a7a86a0ded21882a731"
+  },
+  "methods/ours/gaussian_container.py": {
+    "pre": "1f32e9c2e4bda90696bba1b4f0fb6985e8687db5f255ca47fedc494be9af437e",
+    "post": "50382838afd291121da38a6f61c86e19b5d9a52da0d6fcb99221d85609961aae"
+  },
+  "methods/ours/render.py": {
+    "pre": "b34c670a413291bb3cd655a2898db4165a28d6215c78d7475cd62a4f23701710",
+    "post": "41ecf866caa193e410bcb8346eb5965a796186ac980aafaaff4a0660c8e92256"
+  },
+  "ops/ours_renderer/include/shader/us_focus_device.cuh": {
+    "pre": "3af1d0efe318b0036f4c0af53dfa5eb87f89788dfcf1aaa01d95b143dbcde482",
+    "post": "31fe9a1fb97688f10ecf39ad377cb508b5fe3dbd51d493ca79166f9eb93aa721"
+  },
+  "ops/ours_renderer/ours_renderer/autograd.py": {
+    "pre": "a926354faacd9568b389085ea3b754d53d05c5356210cccd6d1e371fc2532726",
+    "post": "eae4fad853b8f444a0d0a2832d624b925e465cf856671c6db178322f15365a73"
+  },
+  "ops/ours_renderer/ours_renderer/types.py": {
+    "pre": "64889b29d2a4ef5c344f296e120ba25412938f862cbeb02223e9e5454bbd6304",
+    "post": "45b8f49a05048127830ed14e4a9dee600e790e0503c3899409da9b89a3ed746f"
+  },
+  "ops/ours_renderer/ours_renderer/us_focus_reference.py": {
+    "pre": "91698166cc2b6367604b7ad98e69c018909561a1d12b929ea406b77717192a7e",
+    "post": "6ee862fbff87cd6a46a7da47cbc71dc14eb10a127ba4eea9bb7a58e330af02e0"
+  },
+  "ops/ours_renderer/src/shader/forward.cu": {
+    "pre": "c82a03f1376d7bb76e623d782152cc3337683174af20487634c745814233c078",
+    "post": "921a91cb7ff4d56ccba3ce059769752b9e51c24f9c3decdd6b0c883fb4a7a97c"
+  },
+  "ops/ours_renderer/src/shader/us_focus.cu": {
+    "pre": "6060745fce0636ed9261992bb471f24b896ff3de283ecc7ab32b9b52428612ca",
+    "post": "a66120056d1f64cac9be3d01845ef334d436b88994a30da02fec8fa207a299c0"
+  },
+  "scripts/production/ablations/ours/p0_compare.py": {
+    "pre": null,
+    "post": "44d493213b977c1deab0fe488d123bea27202946ffd066b689b27b9b4308556e"
+  },
+  "scripts/production/ablations/ours/p0_evidence_summary.py": {
+    "pre": null,
+    "post": "c85166a77a438b17c02984e3a19b978890c3889956273b74593deda57436c633"
+  },
+  "scripts/production/ablations/ours/p0_inventory.py": {
+    "pre": null,
+    "post": "b94eb0a02f57bcd1dabd3235a59bf6fb68649afa95813bb314785e01b458f45d"
+  },
+  "scripts/production/ablations/ours/p0_plan.py": {
+    "pre": null,
+    "post": "88b05d9bc65947850c80ff7f2832a548fcb46f18939e17fc76b6ab9bf3b193dc"
+  },
+  "scripts/production/ablations/ours/p0_post_gpu.sh": {
+    "pre": null,
+    "post": "457b2bf788c52fe23539cb1f13ac44daeb607902a825683d3156adca485c2350"
+  },
+  "scripts/production/ablations/ours/p0_pre_gpu.sh": {
+    "pre": null,
+    "post": "bef1e4bf16dc1d9109a4a51e7df87bf2d255362fcbe95c069e801f621aafe515"
+  },
+  "scripts/production/ablations/ours/p0_provenance.py": {
+    "pre": null,
+    "post": "98696fa0d879fca1deeb157102e5dd820326e74af4cf0e40b7e2e8a0946ef533"
+  },
+  "scripts/production/ablations/ours/p0_renderer_probe.py": {
+    "pre": null,
+    "post": "c231ec0fe07bf5f21362a24103c4a0e6d84760c069e8fc2818731b33c8021864"
+  },
+  "scripts/production/ablations/ours/p0_reuse.py": {
+    "pre": null,
+    "post": "38531f9174e836f9cce104560cf4773d558fd4af2a59521837ab32b0bb3ac33a"
+  },
+  "scripts/production/ablations/ours/p0_smoke.py": {
+    "pre": null,
+    "post": "608b8e669825b63afaa862746ffd7349039601d16978909f199aecdf6259c070"
+  },
+  "scripts/production/ablations/ours/p0_validate_gpu.sh": {
+    "pre": null,
+    "post": "a0cf9a1bf5f3ca2813adc035a87e912047810d2768081b7c7ca21272671e6951"
+  },
+  "tests/methods/ours/test_p0_semantics.py": {
+    "pre": null,
+    "post": "568df39a0abb9d09a885be4c2de314f10b6c337416897855ebff39e8f195325d"
+  },
+  "tests/ops/ours_renderer/test_p0_local_modes.py": {
+    "pre": null,
+    "post": "dd71582e295636408aeb75147eedb1503ba38a212ccaaf55de472fc6397278bd"
+  }
+}

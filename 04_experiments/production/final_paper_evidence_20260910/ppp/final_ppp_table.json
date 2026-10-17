@@ -1,0 +1,38 @@
+[
+  {
+    "variant": "MP",
+    "Liver_PSNR": 29.4522019,
+    "Liver_SSIM": 0.660274857,
+    "Liver_LPIPS": 0.157043992,
+    "Arm_PSNR": 32.8167049,
+    "Arm_SSIM": 0.865764395,
+    "Arm_LPIPS": 0.112039711
+  },
+  {
+    "variant": "PP-S",
+    "Liver_PSNR": 29.6414782,
+    "Liver_SSIM": 0.667229787,
+    "Liver_LPIPS": 0.182063026,
+    "Arm_PSNR": 33.0329629,
+    "Arm_SSIM": 0.868795518,
+    "Arm_LPIPS": 0.110448105
+  },
+  {
+    "variant": "PP-A",
+    "Liver_PSNR": 29.6804959,
+    "Liver_SSIM": 0.668583851,
+    "Liver_LPIPS": 0.184834895,
+    "Arm_PSNR": 32.7787346,
+    "Arm_SSIM": 0.8653946,
+    "Arm_LPIPS": 0.126325593
+  },
+  {
+    "variant": "PPP",
+    "Liver_PSNR": 29.6484486,
+    "Liver_SSIM": 0.667443721,
+    "Liver_LPIPS": 0.182352949,
+    "Arm_PSNR": 33.2709169,
+    "Arm_SSIM": 0.871552997,
+    "Arm_LPIPS": 0.108021367
+  }
+]

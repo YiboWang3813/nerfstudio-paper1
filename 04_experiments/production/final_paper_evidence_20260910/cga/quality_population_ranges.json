@@ -1,0 +1,22 @@
+[
+  {
+    "dataset": "Liver",
+    "unique_points": 23,
+    "G_min": 565867.0,
+    "G_max": 1050672.0,
+    "PSNR_min": 29.434385,
+    "PSNR_max": 29.4621618,
+    "LPIPS_min": 0.156809623,
+    "LPIPS_max": 0.159314854
+  },
+  {
+    "dataset": "Arm",
+    "unique_points": 23,
+    "G_min": 639733.0,
+    "G_max": 1022586.0,
+    "PSNR_min": 32.7085032,
+    "PSNR_max": 32.8245514,
+    "LPIPS_min": 0.11090269,
+    "LPIPS_max": 0.112262178
+  }
+]

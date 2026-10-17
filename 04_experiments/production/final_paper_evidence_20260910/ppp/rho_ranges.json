@@ -1,0 +1,26 @@
+[
+  {
+    "dataset": "Liver",
+    "psnr_range": 0.8175954999999995,
+    "psnr_best_rho": 0.6,
+    "psnr_default_minus_best": -0.3395511000000013,
+    "ssim_range": 0.02745413799999996,
+    "ssim_best_rho": 0.6,
+    "ssim_default_minus_best": -0.011133558999999904,
+    "lpips_range": 0.05298161600000001,
+    "lpips_best_rho": 1.5,
+    "lpips_default_minus_best": 0.016361253999999992
+  },
+  {
+    "dataset": "Arm",
+    "psnr_range": 0.3896062000000029,
+    "psnr_best_rho": 1.25,
+    "psnr_default_minus_best": -0.06894810000000007,
+    "ssim_range": 0.004823082000000034,
+    "ssim_best_rho": 1.25,
+    "ssim_default_minus_best": -0.0006337330000000252,
+    "lpips_range": 0.016008071999999998,
+    "lpips_best_rho": 1.25,
+    "lpips_default_minus_best": 0.0027024789999999937
+  }
+]

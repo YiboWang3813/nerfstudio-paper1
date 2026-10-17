@@ -1,0 +1,66 @@
+[
+  {
+    "dataset": "Liver",
+    "transition": "GD -> RGD",
+    "delta_G": 422563.0,
+    "population_percent": 67.27542512525693,
+    "delta_psnr": -0.014394300000002858,
+    "delta_lpips": -0.0016118829999999806
+  },
+  {
+    "dataset": "Liver",
+    "transition": "RGD -> RGD+OP",
+    "delta_G": -407378.0,
+    "population_percent": -38.7730899843148,
+    "delta_psnr": 0.008795700000000295,
+    "delta_lpips": 0.001565402999999993
+  },
+  {
+    "dataset": "Liver",
+    "transition": "RGD -> RGD+LP",
+    "delta_G": -405733.0,
+    "population_percent": -38.616523520185176,
+    "delta_psnr": 0.019666300000000803,
+    "delta_lpips": 0.0007319949999999853
+  },
+  {
+    "dataset": "Liver",
+    "transition": "RGD+LP -> Full",
+    "delta_G": 43672.0,
+    "population_percent": 6.771493117953797,
+    "delta_psnr": -0.0018494000000011113,
+    "delta_lpips": -0.000497626000000001
+  },
+  {
+    "dataset": "Arm",
+    "transition": "GD -> RGD",
+    "delta_G": 343044.0,
+    "population_percent": 50.48164793346106,
+    "delta_psnr": -0.07652829999999966,
+    "delta_lpips": 0.0005029350000000099
+  },
+  {
+    "dataset": "Arm",
+    "transition": "RGD -> RGD+OP",
+    "delta_G": -332720.0,
+    "population_percent": -32.53711668260665,
+    "delta_psnr": 0.06453690000000023,
+    "delta_lpips": -0.0002268490000000012
+  },
+  {
+    "dataset": "Arm",
+    "transition": "RGD -> RGD+LP",
+    "delta_G": -331741.0,
+    "population_percent": -32.44137901359886,
+    "delta_psnr": 0.06956329999999866,
+    "delta_lpips": -0.0009239580000000025
+  },
+  {
+    "dataset": "Arm",
+    "transition": "RGD+LP -> Full",
+    "delta_G": 22418.0,
+    "population_percent": 3.245011543834009,
+    "delta_psnr": 0.03863839999999641,
+    "delta_lpips": 0.0007014909999999985
+  }
+]

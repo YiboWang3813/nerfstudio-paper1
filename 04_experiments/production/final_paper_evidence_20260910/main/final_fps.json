@@ -1,0 +1,22 @@
+[
+  {
+    "dataset": "spine_phantom",
+    "time_seconds": 509.2855300108592,
+    "fps": 201.31913657661812
+  },
+  {
+    "dataset": "synthetic_liver",
+    "time_seconds": 517.4052810668945,
+    "fps": 208.55991882404066
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "time_seconds": 378.76087275346123,
+    "fps": 307.42536520694114
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "time_seconds": 459.9817534793507,
+    "fps": 262.7712231425593
+  }
+]

@@ -1,0 +1,424 @@
+{
+  "configs": {
+    "preproduction/baseline_reproduction/fima/paper_edges": {
+      "sha256": "04781ecbfbfea7c1edcc962c487a59baedca97c7229f487bed09377508807b29"
+    },
+    "preproduction/baseline_reproduction/gaussianpile/balanced_probe": {
+      "sha256": "8b999ba78aba6f6446e3a2050a1a794ad9c344d9264110c0f929b3b019f54d9c"
+    },
+    "preproduction/baseline_reproduction/gaussianpile/fidelity_probe": {
+      "sha256": "4de0834634a93e0d172d937daaba3bcf56f2922d95bdbd839fa18850788c422b"
+    },
+    "preproduction/baseline_reproduction/gaussianpile/main_30k": {
+      "sha256": "e65a05ba77f3982368a55a7b9f3f4ea1ddd992bece4ecba2d511a8fbf55672e4"
+    },
+    "preproduction/baseline_reproduction/gaussianpile/smoke": {
+      "sha256": "e13505d1011a3b01d15da317fb4d6e2a460e43dbcc297ceb4735f3166fd83bef"
+    },
+    "preproduction/baseline_reproduction/gaussianpile/speed": {
+      "sha256": "bf543ec5cc165b4729550a5c791fd90ea400dc7d9beed3fa66c4f821d906d764"
+    },
+    "preproduction/baseline_reproduction/nerfus/fullres_30k_no_prior": {
+      "sha256": "63611f4450c7bb68193e0aa919e9d98fcda9443eff19e7fbc144e9189f659d03"
+    },
+    "preproduction/baseline_reproduction/nerfus/fullres_30k_ultranerf_matched": {
+      "sha256": "63fcf71632deeb8689efb689e96e5e9d103800b794d4933c6fe37ed105e57db1"
+    },
+    "preproduction/baseline_reproduction/nerfus/smoke": {
+      "sha256": "cafe50d510e80d0755f3db11931b06bc165087295e7e57a1806e3e06f1126941"
+    },
+    "preproduction/baseline_reproduction/slice_adapted_3dgs/main_30k": {
+      "sha256": "6b64547d38d7b6f4e70aea3ab5e098746cb42b96e19bcdd48cc596fd51a84ecf"
+    },
+    "preproduction/baseline_reproduction/slice_adapted_3dgs/smoke": {
+      "sha256": "aad3f606c13ad2ec5ace029f15c0c71fe13e6bc546154d5ab3712564a7ca7565"
+    },
+    "preproduction/baseline_reproduction/ultragauss/main_10k": {
+      "sha256": "398455c0352b9dc4088befe161f02d659d1fe2804de9ab54baecbd19534cebed"
+    },
+    "preproduction/baseline_reproduction/ultragauss/smoke": {
+      "sha256": "f550325d11023be1c57c5d2977abc36c6ca85645f282dba1dbf92019038959ff"
+    },
+    "preproduction/baseline_reproduction/ultragray/acc_speed_balance": {
+      "sha256": "59240c3da9285c870201a6ee4865825915c12afb17d85fbb6b019660283a6725"
+    },
+    "preproduction/baseline_reproduction/ultragray/main_10k_dc": {
+      "sha256": "22df7a086c8e825ba60d8806ccff7c8f1b72a4ac04c2914ed277eaf37f8d6c45"
+    },
+    "preproduction/baseline_reproduction/ultragray/main_10k_fast": {
+      "sha256": "c5c9007351d35b2e5d5e6f4ee268ee0350844331229c84b8ed7b20a3cdc12d5b"
+    },
+    "preproduction/baseline_reproduction/ultragray/main_10k_no_dc": {
+      "sha256": "c57079a51723e36b05efd43d332a09f7418f09cc4fc6c37a2de319a9a5aa9a2c"
+    },
+    "preproduction/baseline_reproduction/ultragray/main_10k_no_dc_fast": {
+      "sha256": "0fdbf7a9590b7f8f01791740191134a56f8776aa5e766fcde4020acadd7c07e3"
+    },
+    "preproduction/baseline_reproduction/ultragray/paper_30k": {
+      "sha256": "2ff4228d45486e07357560cf3bd08780815aec3384f798ea6c15d67bee1ea55c"
+    },
+    "preproduction/baseline_reproduction/ultragray/smoke": {
+      "sha256": "9a1df4629377553496bfbc89ed670b5d8f728c416a5e78c48227c2c155c59c2f"
+    },
+    "preproduction/baseline_reproduction/ultrags_baseline/main_10k_synthetic_liver": {
+      "sha256": "5c44e35114669d6463e18b1ae70367e5892c4e9ba39e355a63f21e3d0417afde"
+    },
+    "preproduction/baseline_reproduction/ultrags_baseline/main_10k_synthetic_liver_1m_low_opacity_dc": {
+      "sha256": "9c0695796024d221299aa37435b31e083cfb2230c797234053366dd679fa438c"
+    },
+    "preproduction/baseline_reproduction/ultrags_baseline/main_10k_synthetic_liver_1m_opacity_cap_dc": {
+      "sha256": "f33d48b960496f5865ce11cbe51efdeca78bddb4a25c423e9345a9df729a26c1"
+    },
+    "preproduction/baseline_reproduction/ultrags_baseline/main_10k_synthetic_liver_1m_physical_camera_dc": {
+      "sha256": "230c346fdaacea8fe6dfdfe611d55ba355c04d6c8ea6651c83eb9da50a31d49e"
+    },
+    "preproduction/baseline_reproduction/ultrags_baseline/main_10k_synthetic_liver_1m_small_scale_dc": {
+      "sha256": "f25866c319247af1607ae6ea966dd2e35577ec862911bdfe98ce5ea743c46bc2"
+    },
+    "preproduction/baseline_reproduction/ultrags_baseline/main_10k_synthetic_liver_300k_low_opacity_dc": {
+      "sha256": "b4ebd9d556ee5bf415fa2c9afcde189dd55b4f81f9a00cf96efaea5d622d4d18"
+    },
+    "preproduction/baseline_reproduction/ultrags_baseline/main_10k_synthetic_liver_300k_opacity_cap_dc": {
+      "sha256": "adc245a1e8a9816d184b7aa3de50b23c7ff8445fa0986a0527c32045ddf7076e"
+    },
+    "preproduction/baseline_reproduction/ultrags_baseline/main_10k_synthetic_liver_300k_physical_camera_dc": {
+      "sha256": "818e1f5c94d75cce2df625cb015b0a968459582d972854685cf5c413d525af41"
+    },
+    "preproduction/baseline_reproduction/ultrags_baseline/main_10k_synthetic_liver_tuned_dc": {
+      "sha256": "717b405c8c2f87a0c0a72aa58ac7c932c6d19340303c270051fe6cd6dd38daf1"
+    },
+    "preproduction/baseline_reproduction/ultrags_baseline/paper_5k_synthetic_liver": {
+      "sha256": "fb48c8a555f661169be744ef89a2509758f6beaabda01dc959a9398de91f8fff"
+    },
+    "preproduction/baseline_reproduction/ultrags_baseline/smoke": {
+      "sha256": "0bf1e3ecca46b843ddd736380c34541f8c9a098c68a44390f4f1c5a9fef1a188"
+    },
+    "preproduction/baseline_reproduction/ultranerf/fullres_30k": {
+      "sha256": "9c32df5f568ec101c462ed98733e3fa1fdc0c08e3b582e5e7fbfedcbba6fbe9a"
+    },
+    "preproduction/baseline_reproduction/ultranerf/fullres_30k_mc_eval": {
+      "sha256": "3cb8b179831bd92de5212f377239cdabe316ccd8426348c6ab983b84163c3276"
+    },
+    "preproduction/baseline_reproduction/ultranerf/paper_5k": {
+      "sha256": "e6c4477f1c8851e5738e326c2c47dfb8078db9aa263cacc4ddcbc8714fdcf7f4"
+    },
+    "preproduction/baseline_reproduction/ultranerf/smoke": {
+      "sha256": "8b8cd7cb381eb4b2240ab10f5b21df3ce71b84ed3520c94f1a65e2b502ee9b9f"
+    },
+    "preproduction/dataset_preflight/spine_phantom/spine_phantom_minimal": {
+      "sha256": "64e1f37b219444821fb54f2a9705169d7a315d5e4db90bcd58f6adeca73660f1"
+    },
+    "preproduction/dataset_preflight/spine_phantom/spine_phantom_preflight_10k": {
+      "sha256": "79e389b006603db5e98ef99acba4f07cd4d0616d120274f3d2a0413b0f010f94"
+    },
+    "preproduction/dataset_preflight/tus_rec_2024/tus_rec_2024_confirm_30k": {
+      "sha256": "28026361cd5807189fa077551e9f2f50bb0e280591e233f0613fe0f2a77a4d41"
+    },
+    "preproduction/dataset_preflight/tus_rec_2024/tus_rec_2024_preflight_10k": {
+      "sha256": "f446049d66439b558c3660a76fde00c0169ed9b075b0203328d05f9cf0c4d7ed"
+    },
+    "preproduction/dataset_preflight/tus_rec_2024/tus_rec_2024_qc_confirm_30k": {
+      "sha256": "1fe1807f3b92c96aaf4405fb544ff07493719861eb0a92ddb60af08ad736e9b4"
+    },
+    "preproduction/dataset_preflight/tus_rec_2024/tus_rec_2024_qc_preflight_10k": {
+      "sha256": "be1df895ddaa57ed42434ae14395fc7720e2ee3545651f02671b93cdbe149009"
+    },
+    "preproduction/dataset_preflight/tus_rec_2024/tus_rec_2024_validation_2k": {
+      "sha256": "cf9e171357a46e65922b63bd1e8b02b3adfcfe889e02b249de59b628273674b9"
+    },
+    "preproduction/ideas/ours/easy_pose/four_dataset_feasibility": {
+      "sha256": "3520cdbae7b095e78598651d6909c5f4d095f8993ad024388a111cf83256f03a"
+    },
+    "preproduction/ideas/ours/frequency_edge/frequency_edge": {
+      "sha256": "767b1e03702050b0788af294203008714970d9245f176c9d2e6102acf41d06ec"
+    },
+    "preproduction/ideas/ours/local_global_renderer/four_dataset_feasibility": {
+      "sha256": "bd35b9016da3e196d59203cb720f67890c081d6ac053ce771495d25bad4153f5"
+    },
+    "preproduction/ideas/ours/local_global_renderer/four_dataset_local_global_30k": {
+      "sha256": "c6d6c7c3a7c123a8f7a1641fbd48b0ef44119d1c6bf6623a1b1939d1d5c1be2d"
+    },
+    "preproduction/ideas/ours/local_global_renderer/tus_rec_2024_qc_echo_alpha_ray_csr_tail_2k": {
+      "sha256": "8f7f4e28c01e4ce2becc6fbf7085e9b83a8c2ddc3637fe2ff9437aed7ea45d2c"
+    },
+    "preproduction/ideas/ours/local_global_renderer/tus_rec_2024_qc_local_global_ray_tile_2k": {
+      "sha256": "03c62e2679e19cf7a00893df7cb5b931008e2967a320ba770b85685dc33f1fa4"
+    },
+    "preproduction/ideas/ours/local_global_renderer/tus_rec_2024_qc_separated_attenuation_2k": {
+      "sha256": "28ebe05276494c1399b4907355db1c1e7915626774f19a96e236d2db45247d4e"
+    },
+    "preproduction/ideas/ours/local_global_renderer/tus_rec_2024_qc_separated_attenuation_ray_csr_tail_2k": {
+      "sha256": "a7619e28a612fce82ef4ae2fcf84e05360046288ad0a14979f13ed2fb4d8dab9"
+    },
+    "preproduction/ideas/ours/local_global_renderer/tus_rec_2024_qc_separated_attenuation_strong_l1_2k": {
+      "sha256": "aeeea49b475ab2fb2e92d24f5c37bb0baf3c0ff93c11176dc2844474b172270e"
+    },
+    "preproduction/ideas/ours/local_global_renderer/tus_rec_2024_qc_separated_attenuation_strong_tail_2k": {
+      "sha256": "1b224a8d895c1d2f0d065155949ebe66106930b2ad1d1763a5dfb66496dd3569"
+    },
+    "preproduction/ideas/ours/local_global_renderer/tus_rec_2024_qc_validation_2k": {
+      "sha256": "774d918ec0f719a09f1e9a2ba5aac3599afb626cf7b72aaad1feba09d462aa5b"
+    },
+    "preproduction/ideas/ours/pose_uncertainty_prior/pose_prior": {
+      "sha256": "a6cbb2e1641f2992f87060f0c4636a5e4007bb759c284e523a1c64f506ee487b"
+    },
+    "preproduction/ideas/ours/renderer_baseline/baseline": {
+      "sha256": "5f9609990c482af121742f7ad28c5c2be7e5938fc404f1a5ebb34d75e2f825a8"
+    },
+    "preproduction/ideas/ours/renderer_baseline/fast": {
+      "sha256": "86b829547af08d2d7a7f5d8fab1510f92880ecd65d3bc52124aeef466fb7aa22"
+    },
+    "preproduction/ideas/ours/renderer_baseline/fast_fidelity": {
+      "sha256": "43d8a9bcd935b6f2f0d2007ae868c9e5f2d958e2d230605586e088e04b365fe3"
+    },
+    "preproduction/ideas/ours/renderer_baseline/main_10k": {
+      "sha256": "27bfd66d1c290e2eb82d1ecdba0aeb517f1f12fbfcd2e9f4182cc1685c39aae7"
+    },
+    "preproduction/ideas/ours/renderer_baseline/perceptual": {
+      "sha256": "2d85cc76df215e72a8ac5b1528acde548c998516cf909870a94ec2b1a5fc1159"
+    },
+    "preproduction/ideas/ours/renderer_baseline/probe3d": {
+      "sha256": "0c9d3c56fc6efae96a38b9116bf911c9bc08e580f245fe0279c4dbaa9d3d3aee"
+    },
+    "preproduction/ideas/ours/renderer_baseline/x2_fast": {
+      "sha256": "63b2934e8e767988e3e8a5a6594132d43439cfca76315df9832d7b2cb9679d4d"
+    },
+    "preproduction/ideas/ours/responsibility_density_control/fixed_protocol_main_30k": {
+      "sha256": "7a1bf90b101d752140b48c8a5d560c372291321430396b06e4ae664fe317b7c9"
+    },
+    "production/ablations/ours/base_1m30k": {
+      "sha256": "63ef4ec0b780a0002c6f4494b366b5307409c2c6591159a4d831d141698bcb37"
+    },
+    "production/ablations/ours/paper_semantic_freeze": {
+      "sha256": "17b50105b4e1dfaf47b5f2c9e685240749d89ae73e7af20c7b46deb0c962baf4"
+    },
+    "production/comparisons/synthetic_liver_1m30k_dc/ours": {
+      "sha256": "8d9b1dfda0ec3d86cbb0367d9566f1c8649123588915314e76d4a631dc4168f6"
+    },
+    "production/comparisons/synthetic_liver_1m30k_dc/ultragauss": {
+      "sha256": "cd0f0142ab09499fc0ae055fc6a9ca9e4d6b498b9edd071f3a826994e866db0c"
+    },
+    "production/comparisons/synthetic_liver_1m30k_dc/ultragray": {
+      "sha256": "4aa5f6bddb089439962e95ab7f92bb7e9e2c299997130c4c3385552252893616"
+    },
+    "production/comparisons/us_recon_four_dataset_p100k_v1/gaussianpile": {
+      "sha256": "4f801588d9a936eba3103829c50f96035533883bc07c3902e8c4e333b4acd924"
+    },
+    "production/comparisons/us_recon_four_dataset_p100k_v1/gs_strict/gaussianpile": {
+      "sha256": "aea497216106b34c0012373adf6e57bdcfb67341a5d7341c1f0aeab996f2e7a6"
+    },
+    "production/comparisons/us_recon_four_dataset_p100k_v1/gs_strict/ours": {
+      "sha256": "7b2efb241290a97c07bff85794521f6f2c441a17b43394ea1ea98c94eb7fa17f"
+    },
+    "production/comparisons/us_recon_four_dataset_p100k_v1/gs_strict/slice_adapted_3dgs": {
+      "sha256": "caadac7c1a3c7f2560cb51121e2773d99f942a5d609ca32a2359512e967a8898"
+    },
+    "production/comparisons/us_recon_four_dataset_p100k_v1/gs_strict/ultragauss": {
+      "sha256": "e1f63624c3843d117b91f350e4e62369a8ebb29ee476c789e9075440ccb10a2f"
+    },
+    "production/comparisons/us_recon_four_dataset_p100k_v1/gs_strict/ultragray": {
+      "sha256": "c9c5087d4e9fcbecfeba60039da861a50235bf8549449626644042ce99e5b52a"
+    },
+    "production/comparisons/us_recon_four_dataset_p100k_v1/gs_strict/ultrags_baseline": {
+      "sha256": "fef80198d80a9f46dd6e85644a75050d5daf5154eeb03e938ef4213112b7c14a"
+    },
+    "production/comparisons/us_recon_four_dataset_p100k_v1/implicit/nerfus_no_prior": {
+      "sha256": "f4411974e2abe21a46987db86c61481f45e366918e0160edf9e3e84929804c4d"
+    },
+    "production/comparisons/us_recon_four_dataset_p100k_v1/implicit/ultranerf": {
+      "sha256": "83efcff394e06bb26930990a78467d6d019ad4f6dad4ca431d90d3e9e9d1e50d"
+    },
+    "production/comparisons/us_recon_four_dataset_p100k_v1/nerfus_no_prior": {
+      "sha256": "d586da82fd75b8f2ef136e8cacd1604d28a593c36920507133e4378b61fdde0c"
+    },
+    "production/comparisons/us_recon_four_dataset_p100k_v1/ours": {
+      "sha256": "add96b99469ef3ac61f33fd61e54fe939d104e0157a9356f21d22fb5248dc2b5"
+    },
+    "production/comparisons/us_recon_four_dataset_p100k_v1/slice_adapted_3dgs": {
+      "sha256": "e4f05c726e0e7ea005cfba10e803ad9844417e05d6ea0fb6b73239d998bd24d5"
+    },
+    "production/comparisons/us_recon_four_dataset_p100k_v1/ultragauss": {
+      "sha256": "baa963e7f699144a60696e5bc44e5b37e530e87a9ebe4ae527182d7c87b207de"
+    },
+    "production/comparisons/us_recon_four_dataset_p100k_v1/ultragray": {
+      "sha256": "b6002161ff0efbd49ec8a36c07eaa61ac1904c2b1030992a7e4029431df65e6c"
+    },
+    "production/comparisons/us_recon_four_dataset_p100k_v1/ultrags_baseline": {
+      "sha256": "8e9fd29807feec52c29eda3ab54aaa7a0b07a31fa0427ff95eed96cf96517e23"
+    },
+    "production/comparisons/us_recon_four_dataset_p100k_v1/ultranerf": {
+      "sha256": "7221587b1a486bac633aae04333de4a495ffec9f7710e82e8d4d72e2957d495b"
+    },
+    "production/comparisons/us_synthetic_recon_benchmark_v1/gaussianpile": {
+      "sha256": "5abe3bfe8df289f24709c8d2925c411f3f4c267c556cd802017a9ee05dea02f2"
+    },
+    "production/comparisons/us_synthetic_recon_benchmark_v1/nerfus_no_prior": {
+      "sha256": "8bc614ed92b50d7e2ce61232133abcf5a2cc989da7a1b4cb277172a14f2bedfa"
+    },
+    "production/comparisons/us_synthetic_recon_benchmark_v1/ours": {
+      "sha256": "05173f3d105caa5734baed189c4e42358d6c28518514a41d8533e209e1d3c850"
+    },
+    "production/comparisons/us_synthetic_recon_benchmark_v1/slice_adapted_3dgs": {
+      "sha256": "4a3d16ac3159189924ee1af6227724065e1c4243d1b116242523c06067cbb843"
+    },
+    "production/comparisons/us_synthetic_recon_benchmark_v1/ultragauss": {
+      "sha256": "668f7cbccf8761f797666568e07ef13e43d733c930c57813ae3a11ce38113001"
+    },
+    "production/comparisons/us_synthetic_recon_benchmark_v1/ultragray": {
+      "sha256": "f8fe24de5a912b88467e755516cd2dceaefe4c07625e070d8696a1f92d34b5c5"
+    },
+    "production/comparisons/us_synthetic_recon_benchmark_v1/ultrags_baseline": {
+      "sha256": "d88e9a1e14c8d8a3ecb5c4d4463ff525d2df2576d47428c6c8cb8f4407f47c64"
+    },
+    "production/comparisons/us_synthetic_recon_benchmark_v1/ultranerf": {
+      "sha256": "4701e91f929310098bf5efff20fa52823cb89bca656ede1c87eb84ddb9078b46"
+    },
+    "production/sensorless/ours_canonical": {
+      "sha256": "d0dc7e637790cd8ba54f0246b40ee43c8742d0ca56e60f8d2092ded7cac80d32"
+    }
+  },
+  "datasets": {
+    "liver": {
+      "frame_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "image_sha256": "1fc3e7d796cba75c7b26dc5d5879e0067925f359026df222876c59cbc60818c0",
+      "image_shape": [
+        448,
+        224
+      ],
+      "pose_sha256": "5998e9d1dd9bf48af6af87a1ef8c7783b818ac8329637ada08cc5fb329042376",
+      "spacing": [
+        0.35714285714285715,
+        0.3125
+      ],
+      "test_indices": [
+        1,
+        6
+      ],
+      "train_indices": [
+        0,
+        2,
+        7,
+        3,
+        5,
+        4
+      ],
+      "uses_file_poses_for_geometry": false
+    },
+    "spine_phantom": {
+      "frame_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "image_sha256": "5270e310046c77955ac64e4d0f1ac16f6202c7e6873f15735c19d8dec6b6533b",
+      "image_shape": [
+        896,
+        112
+      ],
+      "pose_sha256": "5998e9d1dd9bf48af6af87a1ef8c7783b818ac8329637ada08cc5fb329042376",
+      "spacing": [
+        0.35714285714285715,
+        0.13392857142857142
+      ],
+      "test_indices": [
+        1,
+        6
+      ],
+      "train_indices": [
+        0,
+        2,
+        7,
+        3,
+        5,
+        4
+      ],
+      "uses_file_poses_for_geometry": false
+    },
+    "tdsc_abus_2023": {
+      "frame_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "image_sha256": "cd6d9ab9a36875250a4420e111cf88f0956cad41d755a260c50d0c077600072e",
+      "image_shape": [
+        280,
+        356
+      ],
+      "pose_sha256": "5998e9d1dd9bf48af6af87a1ef8c7783b818ac8329637ada08cc5fb329042376",
+      "spacing": [
+        0.4859550561797753,
+        0.17780714285714283
+      ],
+      "test_indices": [
+        1,
+        6
+      ],
+      "train_indices": [
+        0,
+        2,
+        7,
+        3,
+        5,
+        4
+      ],
+      "uses_file_poses_for_geometry": false
+    },
+    "tus_rec_2024_qc": {
+      "frame_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "image_sha256": "8014d7c9d2fefeb4a7797bde4cd3c06d2dea3464409f3da220331e2610469573",
+      "image_shape": [
+        288,
+        384
+      ],
+      "pose_sha256": "5998e9d1dd9bf48af6af87a1ef8c7783b818ac8329637ada08cc5fb329042376",
+      "spacing": [
+        0.38231531778971334,
+        0.36829948425293
+      ],
+      "test_indices": [
+        1,
+        6
+      ],
+      "train_indices": [
+        0,
+        2,
+        7,
+        3,
+        5,
+        4
+      ],
+      "uses_file_poses_for_geometry": false
+    }
+  },
+  "python": "3.7.12 | packaged by conda-forge | (default, Oct 26 2021, 06:08:21) \n[GCC 9.4.0]",
+  "torch": "1.12.1"
+}

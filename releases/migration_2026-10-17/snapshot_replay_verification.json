@@ -1,0 +1,14 @@
+{
+  "old": {
+    "test/psnr": 16.5747356,
+    "test/l1": 0.109171081,
+    "test/ssim": 0.114748806
+  },
+  "frozen_snapshot_replay": {
+    "test/psnr": 16.5747356,
+    "test/l1": 0.109171081,
+    "test/ssim": 0.114748806
+  },
+  "passed": true,
+  "historical_checkpoint_write_destination_separated": true
+}

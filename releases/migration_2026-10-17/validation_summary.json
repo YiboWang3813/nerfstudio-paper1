@@ -1,0 +1,88 @@
+{
+  "stage": "asset_relocation_and_legacy_compatibility",
+  "native_nerfstudio_pipeline_migrated": false,
+  "native_gsplat_kernel_refactor_complete": false,
+  "config_aliases": 92,
+  "config_composition_failures": 0,
+  "config_signatures_identical": true,
+  "four_dataset_signatures_identical": true,
+  "gpu_reference_tests_per_tree": 40,
+  "cpu_pdf_tests_per_tree": 1,
+  "fixed_checkpoint_comparisons": 16,
+  "fixed_checkpoint_max_abs_difference": 0.0,
+  "fixed_checkpoint_comparisons_passed": true,
+  "independent_retraining_bitwise_certified": false,
+  "full_30k_historical_matrix_rerun": false,
+  "independent_trajectory_strict_check_passed": false,
+  "independent_trajectory_report": "independent_trajectory_comparison_initial.json",
+  "repeat_control_report": "frozen_control_comparison.json",
+  "slurm_jobs": {
+    "initial_setup_attempts": [
+      88700,
+      88702
+    ],
+    "config_and_training_replay": 88703,
+    "initial_reference_attempt": 88708,
+    "passing_reference_tests": 88710,
+    "fixed_state_and_old_repeat_controls": 88712,
+    "offline_metric_weights": 88713,
+    "frozen_snapshot_cli_replay": 88714
+  },
+  "offline_six_metric_comparison": {
+    "old": {
+      "psnr": 7.795760631561279,
+      "l1": 0.3326111137866974,
+      "ssim": 0.07071482390165329,
+      "lpips": 0.08974182605743408,
+      "dists": 0.18062043190002441,
+      "gmsd": 0.1948130577802658
+    },
+    "new": {
+      "psnr": 7.795760631561279,
+      "l1": 0.3326111137866974,
+      "ssim": 0.07071482390165329,
+      "lpips": 0.08974182605743408,
+      "dists": 0.18062043190002441,
+      "gmsd": 0.1948130577802658
+    },
+    "passed": true,
+    "downloads_allowed": false
+  },
+  "file_integrity": {
+    "code_files_checked": 704,
+    "docs_files_checked": 2798,
+    "atomic_moves_checked": 1968,
+    "evidence_hashes_checked": 418,
+    "figure_images_checked": 36,
+    "failures": [],
+    "passed": true,
+    "scope": "File identities, source content, docs, selected evidence and figure references; GPU/config replay reported separately."
+  },
+  "source_import_coverage": {
+    "old_tracked_files": 1796,
+    "old_untracked_files": 577,
+    "missing_tracked": [],
+    "missing_untracked": [],
+    "passed": true
+  },
+  "numeric_snapshot_verification": {
+    "snapshot_files": 33399,
+    "documented_redactions": 1,
+    "failures": [],
+    "passed": true
+  },
+  "frozen_snapshot_cli_replay": {
+    "old": {
+      "test/psnr": 16.5747356,
+      "test/l1": 0.109171081,
+      "test/ssim": 0.114748806
+    },
+    "frozen_snapshot_replay": {
+      "test/psnr": 16.5747356,
+      "test/l1": 0.109171081,
+      "test/ssim": 0.114748806
+    },
+    "passed": true,
+    "historical_checkpoint_write_destination_separated": true
+  }
+}

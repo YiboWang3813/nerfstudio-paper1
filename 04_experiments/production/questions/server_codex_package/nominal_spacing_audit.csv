@@ -1,0 +1,5 @@
+dataset,d0_value,unit,source,uses_pose_analysis,available_in_real_deployment,final_paper_wording
+synthetic_liver,from resolved config per run,mm/frame,synthetic/protocol metadata,no for final canonical runs,synthetic benchmark only,synthetic known protocol spacing
+spine_phantom,from resolved config per run,mm/frame,repository nominal spacing; may reflect benchmark preparation,needs disclosure/audit,not guaranteed,fixed benchmark nominal spacing; scope-boundary dataset
+tus_rec_2024_qc,from resolved config per run,mm/frame,repository nominal spacing; may reflect pose-QC benchmark preparation,needs disclosure/audit,only if protocol/device supplies it,"fixed protocol nominal spacing, no per-sequence tuning"
+tdsc_abus_2023,from resolved config per run,mm/frame,ABUS-style generated-pose dataset/protocol spacing,"generated-pose benchmark, not freehand tracking",device/protocol dependent,ABUS-style protocol spacing

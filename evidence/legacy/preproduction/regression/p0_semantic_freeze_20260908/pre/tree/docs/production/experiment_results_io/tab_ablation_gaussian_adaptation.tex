@@ -1,0 +1,33 @@
+\begin{table}[!t]
+% Source: outputs/production/ablations/ours/path_aware_pruning_update_20260831/
+% stage2_t03_t01/summary.tsv (all four rows; no legacy T03 values).
+\centering
+\caption{Internal ablation of contribution-aware Gaussian adaptation. Final
+Gaussian population is reported in thousands.}
+\label{tab:ablation:adaptation}
+\scriptsize
+\setlength{\tabcolsep}{2.2pt}
+\renewcommand{\arraystretch}{0.88}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{cccc|rrr|rrr}
+\toprule
+\multicolumn{4}{c|}{Adaptation}
+& \multicolumn{3}{c|}{Synthetic Liver}
+& \multicolumn{3}{c}{TUS-REC-2024}\\
+\cmidrule(lr){1-4}\cmidrule(lr){5-7}\cmidrule(lr){8-10}
+GD & CD & LP & GP
+& PSNR$\uparrow$ & LPIPS$\downarrow$ & Final \#G (k)
+& PSNR$\uparrow$ & LPIPS$\downarrow$ & Final \#G (k)\\
+\midrule
+\checkmark &            &            &            & 29.748 & 0.234 & 732
+                                                   & 32.763 & \textbf{0.141} & 819\\
+           & \checkmark &            &            & 29.740 & 0.235 & 1,050
+                                                   & 32.725 & 0.142 & 1,020\\
+           & \checkmark & \checkmark &            & 29.747 & 0.233 & 753
+                                                   & \textbf{32.765} & 0.141 & 830\\
+           & \checkmark & \checkmark & \checkmark & \textbf{29.757} & \textbf{0.233} & 783
+                                                   & 32.762 & 0.141 & 844\\
+\bottomrule
+\end{tabular}}
+\vspace{-2mm}
+\end{table}

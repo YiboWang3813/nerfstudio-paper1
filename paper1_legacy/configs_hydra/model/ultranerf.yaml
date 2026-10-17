@@ -1,0 +1,48 @@
+# @package _global_
+
+model:
+  name: ultranerf
+  field:
+    depth: 8
+    width: 128
+    pe_num_freqs: 10
+    include_input: true
+    skip_layer: 4
+    use_viewdirs: false
+    alpha_activation: abs
+    alpha_bias_init: 0.0
+  ray:
+    coordinate_unit: mm
+    coordinate_scale: 100.0
+    train_patch_height: 128
+    train_patch_width: 128
+    eval_chunk_size: 65536
+  render:
+    boundary_sampling_mode: bernoulli
+    scatter_sampling_mode: bernoulli
+    eval_render_mode: mc_average
+    eval_mc_samples: 4
+    eval_seed: 20260530
+    eval_save_stochastic: true
+    enable_psf: true
+    psf_kernel_size: 7
+    psf_sigma_lateral: 2.0
+    psf_sigma_axial: 1.0
+    attenuation_scale: 0.01
+    alpha_max: 0.0
+    boundary_attenuation_scale: 1.0
+    reflection_gain: 1.0
+    eps: 1.0e-06
+    output_mode: clamp
+    output_gain: 1.0
+    relaxed_temperature: 0.1
+  solver:
+    optimizer: adam
+    lr: 0.0001
+    lr_decay_steps: 250000
+    lr_decay_rate: 0.1
+  offline:
+    diagnostics:
+      enable_render_stats: true
+      train_step: 100
+      save_debug_maps: true

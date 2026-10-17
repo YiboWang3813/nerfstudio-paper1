@@ -1,0 +1,9 @@
+{
+  "row_id": "h2_054",
+  "exit_code": 0,
+  "worker": 1,
+  "job": "80322",
+  "train_start_unix": 1789013150.665618,
+  "train_end_unix": 1789013571.4707546,
+  "train_wall_time_sec": 420.8051371574402
+}

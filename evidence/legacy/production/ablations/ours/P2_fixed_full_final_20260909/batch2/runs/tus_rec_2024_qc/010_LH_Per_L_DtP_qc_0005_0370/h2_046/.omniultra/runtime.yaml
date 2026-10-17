@@ -1,0 +1,5 @@
+created_at: '2026-09-10T11:52:26'
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/P2_fixed_full_final_20260909/batch2/runs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/h2_046
+checkpoint_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/P2_fixed_full_final_20260909/batch2/runs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/h2_046/checkpoints
+hydra_output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/P2_fixed_full_final_20260909/batch2/runs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/h2_046
+config_path: hydra:experiment=production/sensorless/paper_semantic_freeze

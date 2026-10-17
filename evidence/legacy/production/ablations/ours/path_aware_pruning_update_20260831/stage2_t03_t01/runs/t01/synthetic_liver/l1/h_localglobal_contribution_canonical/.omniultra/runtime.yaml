@@ -1,0 +1,5 @@
+created_at: '2026-08-31T15:47:54'
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/path_aware_pruning_update_20260831/stage2_t03_t01/runs/t01/synthetic_liver/l1/h_localglobal_contribution_canonical
+checkpoint_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/path_aware_pruning_update_20260831/stage2_t03_t01/runs/t01/synthetic_liver/l1/h_localglobal_contribution_canonical/checkpoints
+hydra_output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/path_aware_pruning_update_20260831/stage2_t03_t01/runs/t01/synthetic_liver/l1/h_localglobal_contribution_canonical
+config_path: hydra:experiment=production/ablations/ours/base_1m30k

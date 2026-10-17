@@ -1,0 +1,54 @@
+run_id: v2
+run_name: production-ablations-ours_base_1m30k_ours_v2
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/path_aware_pruning_update_20260831/smoke/path_aware_smoke_v2
+checkpoint_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/path_aware_pruning_update_20260831/smoke/path_aware_smoke_v2/checkpoints
+checkpoint_root: ''
+hydra_output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/path_aware_pruning_update_20260831/smoke/path_aware_smoke_v2
+config_path: hydra:experiment=production/ablations/ours/base_1m30k
+overrides:
+- experiment=production/ablations/ours/base_1m30k
+- system.output_root=/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/path_aware_pruning_update_20260831/smoke
+- system.exp_tag=path_aware_smoke_v2
+- scene=liver
+- scene.loading.sweep_name=l1
+- scene.loading.pose_mode=file
+- scene.loading.test_mode=holdout_interval
+- scene.loading.holdout_test_ratio=0.2
+- scene.loading.holdout_trim_each=10
+- engine.iterations=30
+- engine.interval.test=30
+- engine.interval.save=30
+- scene.sampler.num_init=10000
+- model.gauss_init.num_points=10000
+- model.offline.density_control.timing.start_iter=5
+- model.offline.density_control.timing.end_iter=30
+- model.offline.density_control.timing.freq=10
+- model.offline.density_control.strategy=contribution_residual
+- model.offline.density_control.thresholds.prune_opacity=0.0001
+- model.offline.density_control.responsibility.enabled=true
+- model.offline.density_control.responsibility.score_quantile=0.98
+- model.offline.density_control.responsibility.min_score=0.000001
+- model.offline.density_control.responsibility.max_fraction=0.05
+- model.offline.density_control.responsibility.low_contribution_quantile=0.10
+- model.offline.density_control.responsibility.protect_attenuation_enabled=true
+- ++model.offline.density_control.responsibility.protect_attenuation_mode=path_contribution
+- ++model.offline.density_control.responsibility.path_contribution_threshold_mode=quantile
+- ++model.offline.density_control.responsibility.path_contribution_quantile=0.80
+- model.slice_render.ray_attenuation_enabled=true
+- model.slice_render.ray_attenuation_formula=integral
+- model.slice_render.ray_attenuation_quadrature_points=3
+- model.slice_render.ray_attenuation_candidate_k_sigma=2.0
+- model.slice_render.ray_attenuation_strength=0.55
+- model.slice_render.ray_attenuation_min_transmission=0.35
+- model.slice_render.ray_attenuation_beta=0.80
+git_commit: 2834e7ec24a1346b2819fbb27b7efb3981f5c98c
+git_dirty: true
+dataset: synthetic_liver
+model: ours
+exp_tag: path_aware_smoke_v2
+seed: 42
+wandb:
+  enabled: false
+  project: omniultra
+  mode: online
+  run_id: ''

@@ -1,0 +1,5 @@
+created_at: '2026-08-31T15:46:09'
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/path_aware_pruning_update_20260831/stage2_t03_t01/runs/t01/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/g_localglobal_contribution_file
+checkpoint_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/path_aware_pruning_update_20260831/stage2_t03_t01/runs/t01/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/g_localglobal_contribution_file/checkpoints
+hydra_output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/path_aware_pruning_update_20260831/stage2_t03_t01/runs/t01/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/g_localglobal_contribution_file
+config_path: hydra:experiment=production/ablations/ours/base_1m30k

@@ -1,0 +1,11 @@
+key	value
+train_start_time	2026-08-31 18:07:20+0800
+train_start_epoch	1788170840
+train_start_gpu_mem_mb	7557
+train_gpu_mem_samples	/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/path_aware_pruning_update_20260831/main_ours_gpu3/runs/stage3_full_sweep/nvs/spine_phantom/right1/ours/logs/efficiency_gpu_mem_samples.tsv
+train_end_time	2026-08-31 18:20:20+0800
+train_end_epoch	1788171620
+train_wall_time_sec	780
+train_end_gpu_mem_mb	9599
+train_peak_gpu_mem_mb	9599
+train_exit_code	0

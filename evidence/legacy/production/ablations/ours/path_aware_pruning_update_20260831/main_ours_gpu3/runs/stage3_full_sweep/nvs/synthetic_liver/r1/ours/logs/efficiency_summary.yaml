@@ -1,0 +1,29 @@
+time: 2026-08-31 18:07:18
+job_id: 78501
+benchmark: us_recon_four_dataset_p100k_v1
+stage: stage3_full_sweep
+dataset: synthetic_liver
+sweep: r1
+method: ours
+exp_name: stage3_full_sweep_synthetic_liver_r1_ours
+train_start_time: 2026-08-31 17:54:39+0800
+train_end_time: 2026-08-31 18:07:18+0800
+train_wall_time_sec: 759
+train_iterations: 30000
+train_iter_per_sec: 39.52569169960474
+train_start_gpu_mem_mb: 1
+train_end_gpu_mem_mb: 8549
+train_peak_gpu_mem_mb: 8549
+train_exit_code: 0
+best_num_gaussians: 775093.0
+final_num_gaussians: 775093.0
+min_num_gaussians: 775093.0
+max_num_gaussians: 1016813.0
+dc_event_count: 12
+checkpoint_bytes: 111619667
+vis_bytes: 3408624
+eval_bytes: 10340
+output_bytes: 115948452
+latest_output_mtime: 2026-08-31 18:07:18
+efficiency_tsv: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/path_aware_pruning_update_20260831/main_ours_gpu3/runs/stage3_full_sweep/nvs/synthetic_liver/r1/ours/logs/efficiency.tsv
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/path_aware_pruning_update_20260831/main_ours_gpu3/runs/stage3_full_sweep/nvs/synthetic_liver/r1/ours

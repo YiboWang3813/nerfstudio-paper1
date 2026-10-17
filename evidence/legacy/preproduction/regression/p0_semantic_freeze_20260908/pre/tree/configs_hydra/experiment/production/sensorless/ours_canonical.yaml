@@ -1,0 +1,34 @@
+# @package _global_
+
+defaults:
+- /experiment/production/ablations/ours/base_1m30k
+- _self_
+
+system:
+  exp_tag: sensorless_ours_canonical_1m30k
+
+experiment:
+  family: production/sensorless
+  name: ours_canonical
+  protocol: canonical_sweep_1m30k_full_ours
+  sensorless_required: true
+  description: Explicit sensorless Ours production config; canonical uniform sweep poses replace frame-wise file poses before SliceMeta geometry.
+
+scene:
+  loading:
+    pose_type: absolute
+    pose_mode: canonical_sweep
+    canonical_sweep_spacing_mode: uniform
+    canonical_sweep_delta_scale: 1.0
+    canonical_sweep_ref_frame: 0
+    canonical_sweep_axis: z
+
+model:
+  pose_optimization:
+    enabled: false
+  offline:
+    density_control:
+      responsibility:
+        protect_attenuation_mode: path_contribution
+        path_contribution_threshold_mode: quantile
+        path_contribution_quantile: 0.80

@@ -1,0 +1,29 @@
+time: 2026-08-31 18:19:43
+job_id: 78501
+benchmark: us_recon_four_dataset_p100k_v1
+stage: stage3_full_sweep
+dataset: spine_phantom
+sweep: left3
+method: ours
+exp_name: stage3_full_sweep_spine_phantom_left3_ours
+train_start_time: 2026-08-31 18:07:18+0800
+train_end_time: 2026-08-31 18:19:43+0800
+train_wall_time_sec: 745
+train_iterations: 30000
+train_iter_per_sec: 40.26845637583892
+train_start_gpu_mem_mb: 8549
+train_end_gpu_mem_mb: 7505
+train_peak_gpu_mem_mb: 8549
+train_exit_code: 0
+best_num_gaussians: 857817.0
+final_num_gaussians: 857817.0
+min_num_gaussians: 857817.0
+max_num_gaussians: 1002613.0
+dc_event_count: 12
+checkpoint_bytes: 123531923
+vis_bytes: 2153258
+eval_bytes: 7746
+output_bytes: 126604764
+latest_output_mtime: 2026-08-31 18:19:43
+efficiency_tsv: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/path_aware_pruning_update_20260831/main_ours_gpu3/runs/stage3_full_sweep/nvs/spine_phantom/left3/ours/logs/efficiency.tsv
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/path_aware_pruning_update_20260831/main_ours_gpu3/runs/stage3_full_sweep/nvs/spine_phantom/left3/ours

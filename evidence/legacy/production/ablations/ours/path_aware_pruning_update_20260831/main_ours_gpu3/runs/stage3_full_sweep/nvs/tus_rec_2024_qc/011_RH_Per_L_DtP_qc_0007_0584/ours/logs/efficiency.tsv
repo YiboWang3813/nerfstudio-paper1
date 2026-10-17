@@ -1,0 +1,11 @@
+key	value
+train_start_time	2026-08-31 19:15:14+0800
+train_start_epoch	1788174914
+train_start_gpu_mem_mb	13211
+train_gpu_mem_samples	/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/path_aware_pruning_update_20260831/main_ours_gpu3/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/011_RH_Per_L_DtP_qc_0007_0584/ours/logs/efficiency_gpu_mem_samples.tsv
+train_end_time	2026-08-31 19:23:54+0800
+train_end_epoch	1788175433
+train_wall_time_sec	519
+train_end_gpu_mem_mb	10867
+train_peak_gpu_mem_mb	17767
+train_exit_code	0

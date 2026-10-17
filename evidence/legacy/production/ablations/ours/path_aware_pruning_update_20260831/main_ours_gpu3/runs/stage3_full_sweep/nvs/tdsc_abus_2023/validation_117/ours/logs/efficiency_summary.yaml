@@ -1,0 +1,29 @@
+time: 2026-08-31 19:48:14
+job_id: 78501
+benchmark: us_recon_four_dataset_p100k_v1
+stage: stage3_full_sweep
+dataset: tdsc_abus_2023
+sweep: validation_117
+method: ours
+exp_name: stage3_full_sweep_tdsc_abus_2023_validation_117_ours
+train_start_time: 2026-08-31 19:39:35+0800
+train_end_time: 2026-08-31 19:48:14+0800
+train_wall_time_sec: 519
+train_iterations: 30000
+train_iter_per_sec: 57.80346820809248
+train_start_gpu_mem_mb: 11199
+train_end_gpu_mem_mb: 10897
+train_peak_gpu_mem_mb: 11199
+train_exit_code: 0
+best_num_gaussians: 873681.0
+final_num_gaussians: 873681.0
+min_num_gaussians: 873681.0
+max_num_gaussians: 1004480.0
+dc_event_count: 12
+checkpoint_bytes: 125816723
+vis_bytes: 3094181
+eval_bytes: 18416
+output_bytes: 129825193
+latest_output_mtime: 2026-08-31 19:48:14
+efficiency_tsv: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/path_aware_pruning_update_20260831/main_ours_gpu3/runs/stage3_full_sweep/nvs/tdsc_abus_2023/validation_117/ours/logs/efficiency.tsv
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/path_aware_pruning_update_20260831/main_ours_gpu3/runs/stage3_full_sweep/nvs/tdsc_abus_2023/validation_117/ours

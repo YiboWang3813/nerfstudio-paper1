@@ -1,0 +1,22 @@
+overrides:
+- experiment=production/sensorless/ours_canonical
+- system.output_root=/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/sensorless_stage2_minimal_20260716
+- system.exp_tag=r_renderer_synthetic_liver_l1_r0_local_only
+- scene=liver
+- scene.loading.sweep_name=l1
+- scene.loading.holdout_trim_each=10
+- scene.loading.pose_mode=canonical_sweep
+- scene.loading.canonical_sweep_spacing_mode=uniform
+- scene.loading.canonical_sweep_delta_scale=1.0
+- scene.loading.canonical_sweep_ref_frame=0
+- scene.loading.canonical_sweep_axis=z
+- model.pose_optimization.enabled=false
+- experiment.sensorless_required=true
+- model.slice_render.ray_attenuation_enabled=false
+- model.slice_render.ray_attenuation_beta=0.0
+- model.slice_render.ray_attenuation_strength=0.0
+- model.offline.density_control.enable.densify=true
+- model.offline.density_control.enable.prune=true
+- model.offline.density_control.strategy=contribution_residual
+- model.offline.density_control.responsibility.enabled=true
+- model.offline.density_control.responsibility.protect_attenuation_mode=path_effect

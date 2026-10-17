@@ -1,0 +1,47 @@
+run_id: canonical
+run_name: production-sensorless_ours_canonical_ours_canonical
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/sensorless_overnight_202runs_20260717/runs/final_p3/tus_rec_2024_qc/010_RH_Per_L_DtP_qc_0005_0574/p3_canonical
+checkpoint_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/sensorless_overnight_202runs_20260717/runs/final_p3/tus_rec_2024_qc/010_RH_Per_L_DtP_qc_0005_0574/p3_canonical/checkpoints
+checkpoint_root: ''
+hydra_output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/sensorless_overnight_202runs_20260717/runs/final_p3/tus_rec_2024_qc/010_RH_Per_L_DtP_qc_0005_0574/p3_canonical
+config_path: hydra:experiment=production/sensorless/ours_canonical
+overrides:
+- experiment=production/sensorless/ours_canonical
+- system.output_root=/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/sensorless_overnight_202runs_20260717
+- system.exp_tag=final_p3_tus_rec_2024_qc_010_rh_per_l_dtp_qc_0005_0574_p3_canonical
+- scene=tus_rec_2024_qc
+- scene.loading.sweep_name=010_RH_Per_L_DtP_qc_0005_0574
+- scene.loading.holdout_trim_each=10
+- ++model.slice_render.elev_corridor_half_mm=0.202
+- scene.loading.pose_mode=canonical_sweep
+- scene.loading.canonical_sweep_spacing_mode=uniform
+- scene.loading.canonical_sweep_delta_scale=1.0
+- scene.loading.canonical_sweep_ref_frame=0
+- scene.loading.canonical_sweep_axis=z
+- model.pose_optimization.enabled=false
+- experiment.sensorless_required=true
+- model.slice_render.ray_attenuation_enabled=true
+- model.slice_render.ray_attenuation_formula=integral
+- model.slice_render.ray_attenuation_quadrature_points=3
+- model.slice_render.ray_attenuation_candidate_k_sigma=2.0
+- model.slice_render.ray_attenuation_beta=0.80
+- model.slice_render.ray_attenuation_strength=0.55
+- model.slice_render.ray_attenuation_min_transmission=0.35
+- model.offline.density_control.enable.densify=true
+- model.offline.density_control.enable.prune=true
+- model.offline.density_control.strategy=contribution_residual
+- model.offline.density_control.responsibility.enabled=true
+- model.offline.density_control.responsibility.protect_attenuation_enabled=true
+- model.offline.density_control.responsibility.protect_attenuation_mode=path_effect
+- model.offline.density_control.responsibility.protect_attenuation_quantile=0.80
+git_commit: 4961acd238b142888e7c8b514a4b307efba2c7b7
+git_dirty: true
+dataset: tus_rec_2024
+model: ours
+exp_tag: final_p3_tus_rec_2024_qc_010_rh_per_l_dtp_qc_0005_0574_p3_canonical
+seed: 42
+wandb:
+  enabled: false
+  project: omniultra
+  mode: online
+  run_id: ''

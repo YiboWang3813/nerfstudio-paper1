@@ -1,0 +1,29 @@
+time: 2026-06-29 16:35:35
+job_id: 66594
+benchmark: us_recon_four_dataset_p100k_v1
+stage: paper_3d_checkpoint_regen
+dataset: synthetic_liver
+sweep: l3
+method: slice_adapted_3dgs
+exp_name: paper_3d_checkpoint_regen_synthetic_liver_l3_slice_adapted_3dgs
+train_start_time: 2026-06-29 16:26:16+0800
+train_end_time: 2026-06-29 16:35:35+0800
+train_wall_time_sec: 559
+train_iterations: 30000
+train_iter_per_sec: 53.66726296958855
+train_start_gpu_mem_mb: 1
+train_end_gpu_mem_mb: 8121
+train_peak_gpu_mem_mb: 8519
+train_exit_code: 0
+best_num_gaussians: 794466.0
+final_num_gaussians: 794466.0
+min_num_gaussians: 794466.0
+max_num_gaussians: 1000000.0
+dc_event_count: 12
+checkpoint_bytes: 133477199
+vis_bytes: 3345878
+eval_bytes: 10324
+output_bytes: 137639223
+latest_output_mtime: 2026-06-29 16:35:35
+efficiency_tsv: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/paper_3d_checkpoint_regen/nvs/synthetic_liver/l3/slice_adapted_3dgs/logs/efficiency.tsv
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/paper_3d_checkpoint_regen/nvs/synthetic_liver/l3/slice_adapted_3dgs

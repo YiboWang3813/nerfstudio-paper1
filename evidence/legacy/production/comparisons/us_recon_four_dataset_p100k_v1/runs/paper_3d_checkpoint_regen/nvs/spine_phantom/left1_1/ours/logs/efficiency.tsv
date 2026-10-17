@@ -1,0 +1,11 @@
+key	value
+train_start_time	2026-06-29 16:45:21+0800
+train_start_epoch	1782722721
+train_start_gpu_mem_mb	8727
+train_gpu_mem_samples	/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/paper_3d_checkpoint_regen/nvs/spine_phantom/left1_1/ours/logs/efficiency_gpu_mem_samples.tsv
+train_end_time	2026-06-29 16:55:14+0800
+train_end_epoch	1782723314
+train_wall_time_sec	593
+train_end_gpu_mem_mb	12781
+train_peak_gpu_mem_mb	12975
+train_exit_code	0

@@ -1,0 +1,37 @@
+run_id: fdbb8f0
+run_name: production-comparisons-us_recon_four_dataset_p100k_v1-gs_strict_ours_ours_fdbb8f0
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/paper_3d_checkpoint_regen/nvs/spine_phantom/left1_1/ours
+checkpoint_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/paper_3d_checkpoint_regen/nvs/spine_phantom/left1_1/ours/checkpoints
+checkpoint_root: ''
+hydra_output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/paper_3d_checkpoint_regen/nvs/spine_phantom/left1_1/ours
+config_path: hydra:experiment=production/comparisons/us_recon_four_dataset_p100k_v1/gs_strict/ours
+overrides:
+- experiment=production/comparisons/us_recon_four_dataset_p100k_v1/gs_strict/ours
+- system.output_root=/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1
+- system.exp_tag=paper_3d_checkpoint_regen_spine_phantom_left1_1_ours
+- scene=spine_phantom
+- scene.loading.sweep_name=left1_1
+- scene.loading.test_mode=holdout_interval
+- scene.loading.holdout_trim_each=8
+- scene.loading.holdout_num_samples=0
+- scene.loading.holdout_test_ratio=0.2
+- scene.loading.pose_type=absolute
+- scene.loading.pose_mode=file
+- scene.loading.image_downsample_factor=1
+- scene.loading.axial_downsample_factor=1
+- system.seed=42
+- engine.interval.save=30000
+- metric.needed_metrics=[psnr,l1,ssim,lpips,dists,gmsd]
+- metric.max_vis_frames=10
+- metric.save_per_frame_metrics=true
+git_commit: d3bd5a51d3e18626f96d1246fcdbb359e4247a90
+git_dirty: true
+dataset: spine_phantom
+model: ours
+exp_tag: paper_3d_checkpoint_regen_spine_phantom_left1_1_ours
+seed: 42
+wandb:
+  enabled: false
+  project: omniultra
+  mode: online
+  run_id: ''

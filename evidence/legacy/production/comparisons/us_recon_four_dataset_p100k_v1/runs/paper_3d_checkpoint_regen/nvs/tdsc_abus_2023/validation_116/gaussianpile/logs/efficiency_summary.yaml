@@ -1,0 +1,29 @@
+time: 2026-06-29 17:06:05
+job_id: 66594
+benchmark: us_recon_four_dataset_p100k_v1
+stage: paper_3d_checkpoint_regen
+dataset: tdsc_abus_2023
+sweep: validation_116
+method: gaussianpile
+exp_name: paper_3d_checkpoint_regen_tdsc_abus_2023_validation_116_gaussianpile
+train_start_time: 2026-06-29 16:54:37+0800
+train_end_time: 2026-06-29 17:06:05+0800
+train_wall_time_sec: 688
+train_iterations: 30000
+train_iter_per_sec: 43.604651162790695
+train_start_gpu_mem_mb: 12769
+train_end_gpu_mem_mb: 10779
+train_peak_gpu_mem_mb: 12781
+train_exit_code: 0
+best_num_gaussians: 999983.0
+final_num_gaussians: 999983.0
+min_num_gaussians: 999983.0
+max_num_gaussians: 1000000.0
+dc_event_count: 12
+checkpoint_bytes: 264005824
+vis_bytes: 3203439
+eval_bytes: 18060
+output_bytes: 270716821
+latest_output_mtime: 2026-06-29 17:06:05
+efficiency_tsv: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/paper_3d_checkpoint_regen/nvs/tdsc_abus_2023/validation_116/gaussianpile/logs/efficiency.tsv
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/paper_3d_checkpoint_regen/nvs/tdsc_abus_2023/validation_116/gaussianpile

@@ -1,0 +1,5 @@
+created_at: '2026-06-29T16:44:17'
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/paper_3d_checkpoint_regen/nvs/tus_rec_2024_qc/010_RH_Per_S_PtD_qc_0165_0364_s02/ultragauss
+checkpoint_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/paper_3d_checkpoint_regen/nvs/tus_rec_2024_qc/010_RH_Per_S_PtD_qc_0165_0364_s02/ultragauss/checkpoints
+hydra_output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/paper_3d_checkpoint_regen/nvs/tus_rec_2024_qc/010_RH_Per_S_PtD_qc_0165_0364_s02/ultragauss
+config_path: hydra:experiment=production/comparisons/us_recon_four_dataset_p100k_v1/gs_strict/ultragauss

@@ -1,0 +1,29 @@
+time: 2026-06-29 16:42:29
+job_id: 66594
+benchmark: us_recon_four_dataset_p100k_v1
+stage: paper_3d_checkpoint_regen
+dataset: spine_phantom
+sweep: left3_2
+method: ours
+exp_name: paper_3d_checkpoint_regen_spine_phantom_left3_2_ours
+train_start_time: 2026-06-29 16:31:36+0800
+train_end_time: 2026-06-29 16:42:28+0800
+train_wall_time_sec: 652
+train_iterations: 30000
+train_iter_per_sec: 46.012269938650306
+train_start_gpu_mem_mb: 7943
+train_end_gpu_mem_mb: 7487
+train_peak_gpu_mem_mb: 8145
+train_exit_code: 0
+best_num_gaussians: 864846.0
+final_num_gaussians: 864846.0
+min_num_gaussians: 864846.0
+max_num_gaussians: 1001504.0
+dc_event_count: 12
+checkpoint_bytes: 124543955
+vis_bytes: 2117663
+eval_bytes: 7782
+output_bytes: 127555726
+latest_output_mtime: 2026-06-29 16:42:28
+efficiency_tsv: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/paper_3d_checkpoint_regen/nvs/spine_phantom/left3_2/ours/logs/efficiency.tsv
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/paper_3d_checkpoint_regen/nvs/spine_phantom/left3_2/ours

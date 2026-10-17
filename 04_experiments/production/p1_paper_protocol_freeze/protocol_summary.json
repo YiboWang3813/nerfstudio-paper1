@@ -1,0 +1,195 @@
+{
+  "arm_source_excluded": 20,
+  "arm_sources_retained": 28,
+  "baseline_methods": [
+    "gaussianpile",
+    "nerfus_no_prior",
+    "ours",
+    "slice_adapted_3dgs",
+    "ultragauss",
+    "ultragray",
+    "ultrags_baseline",
+    "ultranerf"
+  ],
+  "caveat": "Original external release totals are not local evaluated counts; raw backup /tmp/omniultra_raw_data_20260614_p100k is unavailable.",
+  "exact_scene_and_metric_and_frame_agreement": true,
+  "local_processed_ids": {
+    "spine_phantom": [
+      "left1",
+      "left1_1",
+      "left2",
+      "left3",
+      "left3_2",
+      "right1",
+      "right1_1",
+      "right3",
+      "right3_2"
+    ],
+    "synthetic_liver": [
+      "l1",
+      "l2",
+      "l3",
+      "r1",
+      "r2",
+      "r3"
+    ],
+    "tdsc_abus_2023": [
+      "validation_100",
+      "validation_101",
+      "validation_102",
+      "validation_103",
+      "validation_104",
+      "validation_105",
+      "validation_106",
+      "validation_107",
+      "validation_108",
+      "validation_109",
+      "validation_110",
+      "validation_111",
+      "validation_112",
+      "validation_113",
+      "validation_114",
+      "validation_115",
+      "validation_116",
+      "validation_117",
+      "validation_118",
+      "validation_119",
+      "validation_120",
+      "validation_121",
+      "validation_122",
+      "validation_123",
+      "validation_124",
+      "validation_125",
+      "validation_126",
+      "validation_127",
+      "validation_128",
+      "validation_129"
+    ],
+    "tus_rec_2024_qc": [
+      "010_LH_Par_C_DtP_qc_0008_0107",
+      "010_LH_Per_C_DtP_qc_0140_0514",
+      "010_LH_Per_C_PtD_qc_0007_0470",
+      "010_LH_Per_L_DtP_qc_0005_0370",
+      "010_LH_Per_L_PtD_qc_0020_0222_s01",
+      "010_LH_Per_L_PtD_qc_0238_0488_s02",
+      "010_LH_Per_S_DtP_qc_0085_0442_s01",
+      "010_LH_Per_S_DtP_qc_0460_0586_s02",
+      "010_LH_Per_S_PtD_qc_0078_0394",
+      "010_RH_Par_S_DtP_qc_0005_0091",
+      "010_RH_Per_C_DtP_qc_0269_0627",
+      "010_RH_Per_C_PtD_qc_0006_0427",
+      "010_RH_Per_L_DtP_qc_0005_0574",
+      "010_RH_Per_L_PtD_qc_0006_0546",
+      "010_RH_Per_S_DtP_qc_0096_0411_s01",
+      "010_RH_Per_S_DtP_qc_0426_0538_s02",
+      "010_RH_Per_S_PtD_qc_0062_0150_s01",
+      "010_RH_Per_S_PtD_qc_0165_0364_s02",
+      "011_LH_Par_S_DtP_qc_0155_0249",
+      "011_LH_Par_S_PtD_qc_0112_0224",
+      "011_LH_Per_C_DtP_qc_0115_0556",
+      "011_LH_Per_C_PtD_qc_0006_0568",
+      "011_LH_Per_L_DtP_qc_0005_0594",
+      "011_LH_Per_L_PtD_qc_0006_0690",
+      "011_LH_Per_S_DtP_qc_0118_0529",
+      "011_LH_Per_S_PtD_qc_0008_0447",
+      "011_RH_Per_C_DtP_qc_0137_0372",
+      "011_RH_Per_C_PtD_qc_0006_0170_s01",
+      "011_RH_Per_C_PtD_qc_0186_0557_s02",
+      "011_RH_Per_L_DtP_qc_0007_0584",
+      "011_RH_Per_L_PtD_qc_0006_0459",
+      "011_RH_Per_S_DtP_qc_0166_0553",
+      "011_RH_Per_S_PtD_qc_0028_0185"
+    ]
+  },
+  "qualitative": {
+    "spine_phantom": [
+      "left3_2",
+      17
+    ],
+    "synthetic_liver": [
+      "l3",
+      27
+    ],
+    "tdsc_abus_2023": [
+      "validation_116",
+      39
+    ],
+    "tus_rec_2024_qc": [
+      "010_RH_Per_S_PtD_qc_0165_0364_s02",
+      18
+    ]
+  },
+  "raw_arm_sources": 48,
+  "selected_counts": {
+    "spine_phantom": 9,
+    "synthetic_liver": 6,
+    "tdsc_abus_2023": 30,
+    "tus_rec_2024_qc": 33
+  },
+  "selected_multi_sweep": [
+    [
+      "synthetic_liver",
+      "l1"
+    ],
+    [
+      "synthetic_liver",
+      "l2"
+    ],
+    [
+      "synthetic_liver",
+      "l3"
+    ],
+    [
+      "synthetic_liver",
+      "r1"
+    ],
+    [
+      "synthetic_liver",
+      "r2"
+    ],
+    [
+      "synthetic_liver",
+      "r3"
+    ],
+    [
+      "tdsc_abus_2023",
+      "validation_100"
+    ],
+    [
+      "tdsc_abus_2023",
+      "validation_101"
+    ],
+    [
+      "tdsc_abus_2023",
+      "validation_102"
+    ],
+    [
+      "tdsc_abus_2023",
+      "validation_103"
+    ],
+    [
+      "tdsc_abus_2023",
+      "validation_104"
+    ],
+    [
+      "tus_rec_2024_qc",
+      "010_LH_Per_C_DtP_qc_0140_0514"
+    ],
+    [
+      "tus_rec_2024_qc",
+      "010_LH_Per_L_DtP_qc_0005_0370"
+    ],
+    [
+      "tus_rec_2024_qc",
+      "010_RH_Per_L_DtP_qc_0005_0574"
+    ],
+    [
+      "tus_rec_2024_qc",
+      "011_LH_Per_S_PtD_qc_0008_0447"
+    ],
+    [
+      "tus_rec_2024_qc",
+      "011_RH_Per_L_DtP_qc_0007_0584"
+    ]
+  ]
+}

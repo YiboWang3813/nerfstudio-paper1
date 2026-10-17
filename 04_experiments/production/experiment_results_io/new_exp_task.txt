@@ -1,0 +1,1364 @@
+请基于当前仓库中的最新 Methods、Experiments/Results、production code、已有 ablation 结果和已有 sensitivity 日志，系统重构论文的消融实验体系。不要沿用历史实验设计的惯性，而是严格按照“最新 Methods 中提出了什么 claim，就用什么实验验证该 claim”的原则重新设计。
+
+本次不考虑 Supplementary Materials。原本适合放 supplementary 的、但对方法论证有价值的实验，需要重新分流到主文的 Ablation Studies 或 Hyperparameter Analysis 中。不要加入 limitation 讨论；当前目标只是把方法证据链做完整。
+
+最终实验层级统一为：
+
+1. Joint Component Analysis
+2. Acquisition-Guided Pseudo-Pose Parameterization (PPP)
+3. Local-Global Gaussian Renderer (LGR)
+4. Contribution-Aware Gaussian Adaptation (CGA)
+5. Hyperparameter Analysis
+   - PPP parameters
+   - LGR parameters
+   - CGA parameters
+
+总体原则：
+- Ablation Studies 回答“为什么采用这个设计 / 这个模块是否必要”。
+- Hyperparameter Analysis 回答“选定设计后，关键数值参数是否敏感 / 为什么采用默认值”。
+- 不要把 numerical approximation parameter 和 structural design 混在同一个内部结构消融逻辑中。
+- 所有实验优先在同一 representative Liver sweep 和同一 representative Arm sweep 上进行，保持固定 train/test split、1M initialization、30k iterations、相同 seed、相同 optimizer 和其他未消融配置。
+- 如果已有完全匹配最新实现的结果，优先复用，不重复训练。
+- 如果历史结果对应旧实现、旧 Methods 或存在 confounding，则必须重新跑。
+- 不要为了追求“full row 最好看”而选择实验；实验必须忠实回答 Methods 的设计问题。
+- 所有新实验开始前先确认 latest production code 和 latest Methods 完全一致，尤其 renderer 和 path-aware pruning。
+
+======================================================================
+一、先做一次 Latest Methods ↔ Code ↔ Ablation Audit
+======================================================================
+
+先不要马上批量提交实验。请先逐项核查以下内容，明确最新代码真实实现与最新 Methods 是否一致。
+
+A. PPP
+Methods 核心定义应为：
+- d = rho * d0
+- predefined signed canonical axis u
+- reference frame i0
+- uniform shared trajectory
+- identity frame rotations
+- no frame-wise pose optimization
+- final method does not use measured probe geometry for constructing pseudo poses
+
+需要确认：
+1. PP-S 的代码究竟使用什么 measured-pose information；
+2. PP-A 的代码究竟使用什么 measured-pose information；
+3. final uniform PPP 是否真正只使用 frame order + d0 + rho + predefined axis；
+4. measured pose file 如果仍被 loader 读取用于 frame count / consistency check，必须区分“读取文件”和“使用 measured pose geometry”。
+
+B. LGR
+最新 Methods 中 renderer hierarchy 应明确是：
+
+1. Finite-Slice Local Echo Formation
+   - depth-adaptive elevational conditioning
+   - probe-plane Gaussian marginalization
+   - footprint compensation
+   - additive local echo accumulation
+
+2. Path-Dependent Global Transmission
+   - ray-aware pixel–Gaussian association
+   - causal/localized ray integration
+   - per-Gaussian transmission response
+   - multiplicative path transmission
+
+3. Local-Global Response Composition
+   - I_hat = L * (1 - beta + beta*T)
+
+需要确认：
+1. local pathway 当前 production 完整实现；
+2. fixed-slice / no-slice variants 能否通过 clean override 实现；
+3. current simple global (`slice_depth` 或等价实现) 的实际公式；
+4. current ray-integral global 的真实实现；
+5. independent transmission attribute tau_g 是否真的独立于 alpha_g；
+6. 是否可以构造“shared alpha/opacity as transmission source”作为合理 alternative；
+7. N_q 只是 numerical quadrature order，不应继续作为 structural ablation 的主要层级；
+8. integration half-window w 的当前 production 默认值和实现；
+9. beta / lambda_ray / Tmin / support multiplier / gamma 等参数的真实默认值。
+
+C. CGA
+最新 Methods 中应是：
+
+Residual-Guided Densification:
+- pixel residual e_ip
+- local contribution c_igp
+- C_g
+- residual-weighted R_g
+- omega_g
+- q_d / tau_omega / candidate budget B
+- scale-based clone / child spawning
+
+Path-Aware Pruning:
+- alpha_g
+- local contribution C_g
+- global path contribution A_g
+- q_p / q_A
+- only remove primitives that are weak to both local and global rendering
+
+请重点确认：
+1. 最新 production 是否已经使用真实 accumulated A_g path contribution；
+2. q_A 是否是 quantile threshold，而不是旧 high-tau heuristic；
+3. C_g pruning comparison 是 < 还是 <=；
+4. 当前最新 Stage-2 adaptation 表是否来自真正 A_g-based implementation；
+5. 如果旧 audit report 中的 high_tau 结论已经过时，以最新代码和最新 Stage-2 为准；
+6. 不要把旧 high_tau 结果和新 A_g Methods 混用。
+
+Audit 完成后先输出：
+- 每个 Methods claim
+- 对应代码实现
+- 当前已有实验是否直接匹配
+- 是否需要新跑
+- 是否存在旧结果不可复用
+
+确认无误后再开始下面的实验。
+
+======================================================================
+二、Ablation Studies 总体结构
+======================================================================
+
+最终 Ablation Studies 建议包含：
+
+A. Joint Component Analysis
+   - 1 个单栏 joint table
+   - 1 个单栏 qualitative figure
+
+B. PPP Internal Analysis
+   - 1 个单栏 table
+   - table 内做两个 panel：
+     (a) representative-sweep pose-information ablation
+     (b) multi-sweep MP vs final PPP validation
+
+C. LGR Internal Analysis
+   - 1 个单栏 structural ablation table
+
+D. CGA Internal Analysis
+   - 1 个单栏 structural ablation table
+   - 1 个单栏 Gaussian Population Dynamics figure
+
+也就是说 Ablation Studies 总计：
+- Joint table
+- Joint visual
+- PPP table
+- LGR table
+- CGA table
+- CGA population figure
+
+共 6 个 floating objects。
+
+======================================================================
+三、Joint Component Analysis
+======================================================================
+
+保留当前 2^3 factorial design，不改变结构：
+
+LGR × CGA × PPP
+
+8 行：
+
+1. no LGR / no CGA / no PPP
+2. no LGR / no CGA / PPP
+3. no LGR / CGA / no PPP
+4. no LGR / CGA / PPP
+5. LGR / no CGA / no PPP
+6. LGR / no CGA / PPP
+7. LGR / CGA / no PPP
+8. LGR / CGA / PPP
+
+定义必须固定：
+
+- no LGR:
+  使用最终确定的基础/local-only renderer reference；
+  具体 reference 等 LGR structural design 冻结后决定，不要沿用模糊旧定义。
+
+- no CGA:
+  使用 conventional gradient-based density control / reference adaptation。
+
+- no PPP:
+  使用 measured probe poses。
+
+- LGR:
+  使用最终 full LGR。
+
+- CGA:
+  使用最终 full residual-guided densification + A_g-based path-aware pruning。
+
+- PPP:
+  使用最终 acquisition-guided uniform-spacing pseudo poses。
+
+指标：
+- Liver: PSNR / SSIM / LPIPS
+- Arm: PSNR / SSIM / LPIPS
+
+Joint table 的 claim 不是“逐模块单调提升”，而是：
+- LGR = reconstruction / perceptual fidelity 的主要增益来源；
+- CGA = population regulation，在基本不伤重建质量的前提下改变 Gaussian allocation；
+- PPP = 去除 measured-pose dependence，同时保持重建质量；
+- full configuration = 三类互补功能同时存在，并处于 best / near-best performance group。
+
+非常重要：
+Joint table 必须等 PPP / LGR / CGA 的最终代码都 freeze 后再重跑。
+旧 joint 表可暂时保留用于开发参考，但 paper-final table 应使用 final implementation。
+
+建议最后运行：
+8 variants × 2 datasets = 16 个 30k runs。
+
+Joint qualitative figure：
+不需要展示全部 8 个组合。
+推荐展示一条最容易解释的路径：
+
+Base
+→ +LGR
+→ +LGR+CGA
+→ Full
+
+Liver + Arm 各一个 representative crop。
+目的：
+- LGR 带来最明显 boundary / echo structure 变化；
+- CGA 和 PPP 保持已经获得的结构质量。
+
+======================================================================
+四、PPP Internal Analysis
+======================================================================
+
+PPP 不再写成“内部模块逐级添加”的结构。
+
+最新 Methods 中 PPP 本身很简单：
+- frame order
+- nominal spacing d0
+- rho
+- predefined axis u
+- shared uniform trajectory
+
+因此 PP-S / PP-A 应被定义为：
+“partial measured-pose oracle diagnostics”，
+而不是 final PPP 的内部组成模块。
+
+--------------------------------
+Table PPP — Panel (a)
+Pose-information ablation
+--------------------------------
+
+推荐 4 行：
+
+1. MP
+   Measured Poses
+   使用完整 measured 6-DoF pose sequence。
+   这是 oracle/reference。
+
+2. PP-S
+   Step pseudo poses
+   保留 measured inter-frame step magnitude / step norm。
+   请根据代码给出精确名称。
+   这是 partial oracle，不是最终 sensorless method。
+
+3. PP-A
+   Axis pseudo poses
+   保留 measured axial projection / axis progression information。
+   请根据代码给出精确名称。
+   这是 partial oracle。
+
+4. PPP
+   Final acquisition-guided uniform-spacing pseudo poses。
+   不使用 measured pose geometry。
+   使用 frame order + d0 + rho + predefined canonical axis。
+
+建议最终不要再把最后一行叫 PP-U。
+直接叫：
+PPP
+或 PPP (Ours)
+
+表格 caption 解释：
+MP = measured poses
+PP-S = measured-step diagnostic
+PP-A = measured-axis diagnostic
+PPP = final uniform acquisition-guided formulation
+
+Panel (a) 指标：
+Liver:
+- PSNR
+- SSIM
+- LPIPS
+
+Arm:
+- PSNR
+- SSIM
+- LPIPS
+
+目的：
+不是证明 MP → PP-S → PP-A → PPP 单调提升，
+而是证明：
+即使逐步去除 measured-pose information，
+最终完全 acquisition-guided PPP 仍能达到 comparable reconstruction。
+
+--------------------------------
+Table PPP — Panel (b)
+Multi-sweep validation
+--------------------------------
+
+把原本准备放 supplementary 的 multi-sweep MP vs PPP 结果直接放进同一 table 的下半部分。
+
+只比较：
+MP
+PPP
+
+数据集优先：
+- Liver
+- Arm
+- Breast
+
+如果现有多 sweep 结果覆盖不足，再评估是否补跑。
+
+为了控制单栏宽度，Panel (b) 不需要 PSNR/SSIM/LPIPS 全部放。
+
+优先：
+- mean PSNR
+- mean SSIM
+
+如果已有 standard deviation 且计算方便，可写 mean ± std；
+如果不是严格 multi-seed，而是 multi-sweep variability，则明确是 sweep-wise mean/std，不要叫 training uncertainty。
+
+Panel (b) 的作用：
+证明 final PPP 不是只在一个 representative sweep 上偶然有效。
+
+如果已有：
+- 6 Liver
+- 5 Arm/TUS
+- 5 Breast/TDSC
+类似的 MP vs canonical结果，
+先检查是否对应最新 PPP implementation；
+匹配则直接复用，不重跑。
+
+不要在主文讨论 limitation 或 Spine negative control。
+
+--------------------------------
+PPP Hyperparameter
+--------------------------------
+
+放到 Hyperparameter Analysis，不放在 Ablation table。
+
+核心参数：
+rho
+
+已有 sweep：
+rho = 0.60, 0.75, 0.90, 1.00, 1.10, 1.25, 1.50
+
+保留。
+
+另外可以利用已有 multi-sweep rho 数据做 cross-sweep robustness。
+
+具体设计见后文 Hyperparameter 部分。
+
+======================================================================
+五、LGR Internal Analysis —— 最高优先级，需要重新设计
+======================================================================
+
+这是当前 Methods 与旧 ablation mismatch 最大的一块。
+
+旧表：
+L → L+G → +RI(q=1) → +RI(q=3)
+
+问题：
+- G 是 global formulation；
+- RI 是 global pathway 内部机制；
+- N_q 只是 numerical approximation；
+- 完全没有验证最新 Methods 中最重要的 finite-slice local design；
+- 没有验证 independent alpha / tau acoustic attributes。
+
+因此旧 LGR table 不再作为 paper-final structural ablation。
+
+建议新的 LGR structural ablation 使用 6 行：
+
+--------------------------------------------------
+Row A: Plane Local
+--------------------------------------------------
+
+Local:
+关闭 finite-slice elevational conditioning。
+
+保持：
+- probe-plane image-space Gaussian mapping
+- footprint compensation（如果设计上仍适用）
+- additive echo accumulation
+
+等价目标：
+eta = 1
+不使用 depth-adaptive elevational slice response。
+
+Global:
+None
+
+目的：
+提供最基础的 plane-local Gaussian ultrasound rendering reference。
+
+--------------------------------------------------
+Row B: Fixed Slice
+--------------------------------------------------
+
+Local:
+开启 finite-slice elevational conditioning，
+但 sigma_ele 不随 depth 变化：
+
+sigma_ele(z) = constant
+
+Global:
+None
+
+目的：
+验证“finite elevational slice”本身是否有价值。
+
+--------------------------------------------------
+Row C: Adaptive Slice
+--------------------------------------------------
+
+Local:
+完整 depth-adaptive finite-slice local echo formulation：
+
+sigma_ele(z)
+=
+clip(sigma0 + sigma1*z, ...)
+
+Global:
+None
+
+目的：
+验证 depth-dependent elevational focusing / slice sensitivity 是否优于固定 slice。
+
+--------------------------------------------------
+Row D: + Simple Global
+--------------------------------------------------
+
+Local:
+完整 Adaptive Slice
+
+Global:
+使用现有 simple global attenuation alternative
+例如当前代码中的 slice_depth / simple depth attenuation。
+
+必须精确写清楚 simple global 的真实实现。
+
+目的：
+验证仅加入粗粒度 preceding-depth attenuation 是否已经足够。
+
+--------------------------------------------------
+Row E: + Ray Global (shared attribute)
+--------------------------------------------------
+
+Local:
+完整 Adaptive Slice
+
+Global:
+完整 causal ray-integrated global model：
+- ray-aware association
+- localized causal ray integration
+- multiplicative transmission
+
+但 global transmission attribute 使用 shared local echo / opacity source
+而不是 independent tau_g。
+
+这需要先检查代码能否 cleanly 支持：
+ray_attenuation_source = alpha / opacity / equivalent
+
+如果代码本身已有该 source switch，直接使用。
+如果没有，判断实现成本。
+
+目的：
+验证 explicit causal path modeling 本身的价值，同时作为 attribute decoupling 的对照。
+
+--------------------------------------------------
+Row F: Full LGR
+--------------------------------------------------
+
+Local:
+完整 Adaptive Slice
+
+Global:
+完整 causal ray-integrated transmission
+
+Attribute:
+使用独立 learnable tau_g
+
+Composition:
+完整 beta local-global composition
+
+这就是最终 Methods。
+
+目的：
+验证 local echo strength alpha_g 与 global transmission tau_g 解耦的价值。
+
+--------------------------------------------------
+
+LGR 主表建议列：
+
+Variant / Local / Global / Attr.
++
+Liver:
+PSNR / SSIM / LPIPS
++
+Arm:
+PSNR / SSIM / LPIPS
+
+如果单栏太宽，可以把 Variant 列本身命名成：
+Plane
+Fixed
+Adaptive
++Simple
++Ray
+Full
+
+然后 caption 精确解释这些行的设计。
+
+不再把 N_q=1 / N_q=3 放在 structural table。
+
+--------------------------------------------------
+关于 Probe-Plane Gaussian Marginalization
+--------------------------------------------------
+
+只有在存在真实、合理、可复现的 alternative 时才做 ablation。
+
+例如如果历史代码中已有：
+- conditional 2D covariance
+vs
+- marginal 2D covariance
+
+且其他因素可以保持一致，
+可以增加一行或做小型对比。
+
+如果没有合理 alternative，不要为了“每个公式都消融”硬造实验。
+
+--------------------------------------------------
+需要新增跑的 LGR structural variants
+--------------------------------------------------
+
+先检查哪些已有结果可以复用：
+
+已有可能可复用：
+- Adaptive Slice local-only
+- Adaptive + Simple Global
+- Full ray-integrated global
+
+需要新跑优先：
+- Plane Local
+- Fixed Slice
+- Ray Global with shared alpha/opacity transmission source
+
+按 Liver + Arm：
+最多新增约 3 variants × 2 = 6 个 30k runs。
+
+如果已有某一 variant 的严格匹配结果，则减少运行数。
+
+======================================================================
+六、CGA Internal Analysis
+======================================================================
+
+最新 Stage-2 CGA 已经比旧设计完整很多。
+
+先确认当前 latest production 是否已经真正使用：
+A_g accumulated global path contribution。
+
+如果最新 Stage-2 是 A_g-based，就以它为主。
+如果不是，先统一实现再重新跑，不要混用。
+
+CGA 正式命名统一：
+
+GD:
+Gradient Densification / conventional density-control reference
+
+RGD:
+Residual-Guided Densification
+不要继续叫 CD / contribution densification，因为 Methods 正式名字已经是 Residual-Guided Densification。
+
+LP:
+Local-Utility Pruning
+或 Local-Aware Pruning
+命名必须与实际条件 alpha + C 对齐。
+
+PA:
+Path-Aware Pruning
+最终用 alpha + C + A。
+
+建议 CGA table 最终做 5 行：
+
+--------------------------------------------------
+Row A: GD
+--------------------------------------------------
+
+Densification:
+conventional gradient-based
+
+Pruning:
+conventional opacity-based reference
+
+这是 3DGS-style density-control baseline。
+
+--------------------------------------------------
+Row B: RGD
+--------------------------------------------------
+
+Densification:
+Residual-Guided Densification
+
+Pruning:
+None
+
+目的：
+单独观察 RGD 对 capacity allocation 和 population growth 的影响。
+
+--------------------------------------------------
+Row C: RGD + OP
+--------------------------------------------------
+
+Densification:
+RGD
+
+Pruning:
+Opacity-only
+
+目的：
+直接验证：
+在 residual-guided densification 下，传统 opacity pruning 是否足以控制 Gaussian population。
+
+这是强烈建议新增的一行。
+
+--------------------------------------------------
+Row D: RGD + LP
+--------------------------------------------------
+
+Densification:
+RGD
+
+Pruning:
+local utility
+即 alpha + C
+不使用 A_g protection。
+
+目的：
+验证 local rendering utility 是否能比 opacity-only 更合理地删除 redundancy。
+
+--------------------------------------------------
+Row E: Full CGA
+--------------------------------------------------
+
+Densification:
+RGD
+
+Pruning:
+full path-aware pruning
+即 alpha + C + A
+
+目的：
+验证：
+在 local pruning 基础上，
+保留 global-path-relevant Gaussians，
+同时维持可控 population 和 reconstruction quality。
+
+--------------------------------------------------
+
+CGA table 指标保持：
+
+Liver:
+- PSNR
+- LPIPS
+- #G (k)
+
+Arm:
+- PSNR
+- LPIPS
+- #G (k)
+
+不要恢复 SSIM，区分度低且浪费表宽。
+
+#G 不加 ↑/↓，因为不是越少越好。
+
+主 claim：
+- RGD 改变 capacity allocation；
+- pruning 控制 RGD 带来的 population growth；
+- path-aware pruning 会保留一小部分 globally useful primitives；
+- full CGA 的主要价值是 quality-preserving population regulation，而不是 PSNR boost。
+
+--------------------------------------------------
+需要新增 CGA 实验
+--------------------------------------------------
+
+强烈建议新增：
+
+RGD + opacity-only pruning
+× Liver / Arm
+= 2 个 30k runs
+
+其余四行如果最新 Stage-2 已经与最新 A_g implementation 严格一致，则直接复用。
+
+======================================================================
+七、CGA Gaussian Population Dynamics Figure
+======================================================================
+
+原本计划放 supplementary 的 population trajectory 现在正式放入 Ablation Studies。
+
+新增 1 个单栏 figure：
+
+Figure: Gaussian Population Dynamics
+
+建议 2 个主要 panel：
+
+(a) Liver
+(b) Arm
+
+每个 panel 画：
+- GD
+- RGD
+- RGD+OP
+- RGD+LP
+- Full CGA
+
+x-axis:
+training iteration
+
+y-axis:
+number of Gaussians
+
+标出 adaptation events：
+2k, 4k, ..., 24k
+或实际 production schedule。
+
+这个 figure 的目的：
+直接验证 Methods 的 population-control claim，
+不要只靠 PSNR 间接证明。
+
+--------------------------------------------------
+可选 panel (c)
+--------------------------------------------------
+
+如果版面允许，将已有 event-level statistics 合并成第三个 panel：
+
+clone / child-spawn / prune / path-protected candidate decisions
+
+注意：
+path-protected 数量是 candidate-event decisions，
+不是 unique Gaussians。
+
+如果 panel (c) 太拥挤，则不画；
+把关键统计直接写进 CGA Results 段落。
+
+不要单独再新增一个 event-statistics figure。
+
+======================================================================
+八、Hyperparameter Analysis —— 独立 Subsection
+======================================================================
+
+把现在 Ablation Studies 最后的 Parameter sensitivity 全部移出去。
+
+最终：
+
+\subsection{Hyperparameter Analysis}
+
+下面 3 个 subsubsection / run-in parts：
+
+1. PPP Parameters
+2. LGR Parameters
+3. CGA Parameters
+
+保持“每个创新点一张 figure”的结构。
+
+总计 3 个 figure floats。
+
+======================================================================
+九、PPP Hyperparameter Figure
+======================================================================
+
+Figure H1:
+PPP Hyperparameter Analysis
+
+建议 2 个 panel。
+
+--------------------------------------------------
+Panel (a): Representative rho sensitivity
+--------------------------------------------------
+
+rho:
+0.60
+0.75
+0.90
+1.00
+1.10
+1.25
+1.50
+
+Liver + Arm 两条曲线。
+
+可画：
+PSNR
+或 Delta PSNR relative to rho=1。
+
+如果用 Delta PSNR，caption 明确。
+
+rho=1 用 vertical dashed line 标 default。
+
+不要声称 rho=1 是每个 dataset 的 optimum。
+
+正确结论：
+- synthetic / real 对 spacing scale 的最优方向不同；
+- rho=1 是跨域共享 default；
+- real optimum 与 rho=1 的差距较小；
+- 说明 final setting 是 shared robust operating point，而非 per-dataset tuning。
+
+--------------------------------------------------
+Panel (b): Multi-sweep rho robustness
+--------------------------------------------------
+
+利用已有 T07 或其他 multi-sweep rho sweep。
+
+不要每个 sweep 画一条线导致过乱。
+
+建议：
+x = rho
+y = mean Delta PSNR
+shaded band = sweep-wise std
+
+可以按：
+- synthetic group
+- real group
+
+分别画 mean ± std。
+
+如果已有数据不足以统一计算，则给出最接近的 compact representation。
+
+不需要 sweep：
+- d0
+- u
+- i0
+
+它们是 calibration/gauge definitions，不是 hyperparameters。
+
+======================================================================
+十、LGR Hyperparameter Figure
+======================================================================
+
+Figure H2:
+LGR Hyperparameter Analysis
+
+因为 LGR 数值参数最多，建议使用 2×3 multi-panel figure。
+
+优先包含：
+
+--------------------------------------------------
+(a) beta
+--------------------------------------------------
+
+beta:
+0
+0.4
+0.6
+0.8
+1.0
+
+控制 local-global modulation strength。
+
+--------------------------------------------------
+(b) lambda_ray
+--------------------------------------------------
+
+lambda_ray:
+0
+0.20
+0.35
+0.55
+0.75
+1.00
+
+控制 attenuation strength。
+
+--------------------------------------------------
+(c) N_q
+--------------------------------------------------
+
+N_q:
+1
+2
+3
+
+从旧 structural ablation 移到这里。
+
+这是 numerical quadrature sensitivity，
+不是 structural module。
+
+--------------------------------------------------
+(d) T_min
+--------------------------------------------------
+
+T_min:
+0.20
+0.35
+0.50
+0.65
+0.80
+
+已有结果优先复用。
+
+--------------------------------------------------
+(e) integration half-window w
+--------------------------------------------------
+
+当前 production:
+w = 2 mm half-window
+
+如果没有正式 sweep，建议新增：
+
+w = 1, 2, 3, 4 mm
+
+如果 4mm 明显过大，也可以用：
+0.5, 1, 2, 3 mm
+但先根据代码和 typical Gaussian scale 判断。
+
+这是建议新增的重点 sensitivity，因为最新 Methods 明确采用 localized closest-interaction integration。
+
+--------------------------------------------------
+(f) gamma 或 global support
+--------------------------------------------------
+
+优先级建议：
+
+第一选择：
+gamma
+
+因为 gamma 直接控制 local footprint-area compensation。
+
+如果没有结果，需要新增：
+
+gamma = 0, 0.125, 0.25, 0.5
+或根据实际数值范围设计。
+
+production:
+gamma = 0.25
+
+如果 gamma 实验代价高或效果极弱，可以改用已有 global support multiplier sweep。
+
+Global support 已有：
+1.5
+2.0
+3.0
+以及 fallback / other setting
+
+最终请根据：
+- 方法重要性
+- 已有数据
+- 图面可读性
+
+在 gamma 和 global support 中选一个作为 panel (f)。
+
+不要把两个都塞进去造成过密。
+
+--------------------------------------------------
+LGR figure 的输出形式
+--------------------------------------------------
+
+每个小 panel：
+- Liver curve
+- Arm curve
+- default 标记
+
+y 轴可以统一用 Delta PSNR relative to default，
+便于六个参数放在一张图。
+
+如果 LPIPS 对某些 renderer 参数更敏感，可以保留 raw summary，
+但主图统一 Delta PSNR。
+
+======================================================================
+十一、CGA Hyperparameter Figure
+======================================================================
+
+Figure H3:
+CGA Hyperparameter Analysis
+
+建议 2×2 四 panel。
+
+--------------------------------------------------
+(a) q_d × B heatmap
+--------------------------------------------------
+
+已有：
+
+q_d =
+0.94, 0.96, 0.98, 0.99
+
+B =
+0.02, 0.05, 0.08, 0.12
+
+default:
+(0.98, 0.05)
+
+可以做 Liver / Arm 两个小 heatmap，
+或者一个 panel 内上下两图。
+
+这个验证：
+selection aggressiveness × per-event candidate budget。
+
+--------------------------------------------------
+(b) q_p × q_A heatmap
+--------------------------------------------------
+
+原本准备 supplementary 的结果搬进来。
+
+已有可能为：
+
+q_p =
+0.02, 0.05, 0.10, 0.15, 0.20
+
+q_A =
+0.60, 0.70, 0.80, 0.90
+
+default:
+(0.10, 0.80)
+
+先确认这些结果是否对应 latest A_g-based path-aware pruning。
+
+如果它们仍然对应旧 high_tau protection，则不能直接使用。
+必须：
+- 要么重新跑 A_g-based q_p × q_A；
+- 要么放弃旧结果。
+
+这是非常关键的一点。
+
+--------------------------------------------------
+(c) tau_alpha
+--------------------------------------------------
+
+已有：
+1e-5
+5e-5
+1e-4
+5e-4
+1e-3
+
+production:
+1e-4
+
+同样先确认是否对应 final A_g implementation。
+匹配则复用。
+
+--------------------------------------------------
+(d) split-scale threshold 或 quality-population relation
+--------------------------------------------------
+
+优先建议补 split threshold：
+
+0.4
+0.6
+0.8
+1.0 mm
+
+production:
+0.6 mm
+
+因为 Methods 明确依据 physical scale 决定 child spawning / cloning，
+这是结构内部较重要的 numeric threshold。
+
+如果实现语义尚未完全统一，先修正代码/Methods，再跑。
+
+如果不适合跑 split threshold，则替代为：
+Final #G vs PSNR scatter
+基于 q_d × B / pruning settings。
+
+注意：
+不要创造 PSNR/#G ratio。
+只画普通二维：
+x = final #G
+y = PSNR
+
+用来展示 quality–population operating range。
+
+======================================================================
+十二、哪些原 Supplemental 实验现在如何迁移
+======================================================================
+
+请按下面映射执行：
+
+1. PPP multi-sweep MP vs PPP
+→ PPP internal table Panel (b)
+
+2. PPP multi-sweep rho robustness
+→ PPP Hyperparameter Fig H1(b)
+
+3. N_q sensitivity
+→ LGR Hyperparameter Fig H2(c)
+
+4. T_min sensitivity
+→ LGR Hyperparameter Fig H2(d)
+
+5. global support sensitivity
+→ LGR H2(f) 的备选
+
+6. integration window
+→ LGR H2(e)，建议新增正式 sweep
+
+7. gamma
+→ LGR H2(f) 的优先候选，若新增成本合理
+
+8. Gaussian population trajectory
+→ CGA Ablation Population Dynamics Figure
+
+9. clone/split/prune/protected event statistics
+→ CGA population figure panel (c) 或正文数字
+
+10. q_p × q_A
+→ CGA Hyperparameter Fig H3(b)
+
+11. tau_alpha
+→ CGA Hyperparameter Fig H3(c)
+
+12. split threshold
+→ CGA Hyperparameter Fig H3(d)，建议新增
+
+不再建立 Supplementary section。
+
+======================================================================
+十三、最终 Floating Object 规划
+======================================================================
+
+全文预计：
+
+1. Method overview 双栏图
+2. Main comparison 双栏表
+3. Main comparison 双栏图
+
+Ablation:
+4. Joint table
+5. Joint qualitative figure
+6. PPP internal table
+7. LGR internal table
+8. CGA internal table
+9. CGA population dynamics figure
+
+Hyperparameter:
+10. PPP parameter figure
+11. LGR parameter figure
+12. CGA parameter figure
+
+总计约 12 个浮动体。
+
+如果最终 10 页排版确实超出：
+优先 fallback 是把 CGA population dynamics 作为 CGA Hyperparameter figure 的上半部分合并，
+从而恢复到 11 个 float。
+
+但当前实验设计优先按 12 个 float 准备，不要因为排版提前牺牲证据。
+
+======================================================================
+十四、运行优先级
+======================================================================
+
+严格按以下顺序执行：
+
+P0. Methods ↔ Code Freeze
+- 核验最新 PPP
+- 核验 latest LGR
+- 核验 latest A_g-based CGA
+- 修正所有术语、公式和 implementation mismatch
+- 确认生产配置唯一 source of truth
+
+P1. LGR Structural Ablation
+优先级最高。
+先实现/验证：
+- Plane Local
+- Fixed Slice
+- Adaptive Slice
+- + Simple Global
+- + Ray Global shared attr
+- Full LGR independent tau
+
+复用已有严格匹配结果，只补缺的 variants。
+
+P2. CGA Missing Structural Variant
+补：
+RGD + opacity-only pruning
+× Liver / Arm
+
+P3. PPP Existing Results Audit
+确认：
+MP
+PP-S
+PP-A
+PPP
+的真实 semantics。
+如果匹配最新 code，不重跑 representative table。
+同时整理 multi-sweep MP vs PPP。
+
+P4. Hyperparameter Missing Runs
+优先补：
+- LGR integration half-window
+- LGR gamma（如果选择它）
+- CGA split threshold
+- q_p × q_A 如果旧结果不对应 latest A_g implementation，则重跑
+
+P5. Final Joint Ablation
+当 PPP / LGR / CGA 全部 freeze 后：
+重跑 8 variants × Liver/Arm。
+
+P6. Regenerate All Paper Tables/Figures
+全部使用 final results。
+
+======================================================================
+十五、运行数粗略预算
+======================================================================
+
+先审计已有结果，实际新增量可能低于以下上限。
+
+LGR structural:
+约 3 个新增 variants × 2 datasets
+≈ 6 runs
+
+CGA opacity-only:
+1 variant × 2
+= 2 runs
+
+LGR window sensitivity:
+如果 4 values 且 default 已有，
+约 3 new × 2
+= 6 runs
+
+LGR gamma:
+如果 4 values 且 default 已有，
+约 3 new × 2
+= 6 runs
+
+CGA split threshold:
+如果 4 values 且 default 已有，
+约 3 new × 2
+= 6 runs
+
+如果 q_p × q_A 需要基于新 A_g 重跑：
+5 × 4 × 2
+= 40 runs
+这部分量较大，因此一定先确认现有 grid 是否已经是最新 A_g implementation。
+如果旧 grid 无法使用，再决定是否完整重跑或缩成更小 3×3 grid。
+
+Final Joint:
+8 × 2
+= 16 runs
+
+不要一次性全部提交。
+先做 P0 audit，然后给出：
+- 可复用
+- 必须新增
+- 可选新增
+三个清单及准确 run 数量，我确认后再批量跑。
+
+======================================================================
+十六、结果标注与统计规范
+======================================================================
+
+1. 所有表必须用未四舍五入的 sweep mean 判断 best / second best。
+2. 表中显示统一保留三位小数。
+3. 如果 raw values 不相等，即使显示相同，也只标真实 best / second。
+4. Hyperparameter figure 不需要标“best”，重点显示 default 和 sensitivity。
+5. CGA #G 不加 ↑/↓。
+6. 不要把单 seed 的 0.002–0.01 dB 微差写成显著 improvement。
+7. 只有差异明显时才写 improvement；否则写 comparable / stable / narrow band。
+8. 不要为了追求结果好看临时修改 metric。
+9. 不创造 PSNR/#G ratio 之类复合指标。
+10. 所有 variant 必须严格 paired：
+    - same initialization protocol
+    - same data split
+    - same iteration count
+    - same renderer/adaptation/pose configuration except the intended variable
+
+======================================================================
+十七、最终论文叙事目标
+======================================================================
+
+Joint:
+三大模块是 complementary roles，不是三个 accuracy booster。
+
+PPP:
+核心 claim 是：
+acquisition regularity can replace measured-pose geometry while maintaining coherent reconstruction.
+
+LGR:
+核心 claim 是：
+ultrasound rendering should progressively account for:
+- finite elevational slice
+- depth-adaptive slice response
+- preceding-path propagation
+- explicit causal ray interaction
+- decoupled echo/transmission attributes
+
+最终 full LGR 应对应最新 Methods，而不是旧历史开关。
+
+CGA:
+核心 claim 是：
+residual-guided densification allocates capacity toward under-reconstructed regions;
+local/path-aware pruning controls the resulting population while preserving rendering-relevant primitives.
+
+Hyperparameter:
+核心 claim 不是“default 是所有数据绝对最优”，而是：
+the selected defaults lie in stable operating regions and generalize across synthetic and real data without per-sequence tuning.
+
+======================================================================
+十八、最终需要你输出给我的东西
+======================================================================
+
+第一阶段先不要急着改论文文字。
+
+请先输出一份详细执行报告：
+
+A. Methods ↔ Code audit
+对 PPP / LGR / CGA 分别列：
+- latest Methods claim
+- exact code implementation
+- production config
+- currently available ablation
+- whether reusable
+- mismatch if any
+
+B. Existing result inventory
+逐项列出：
+- result file path
+- experiment variant
+- dataset
+- seed
+- code/config version
+- whether compatible with current Methods
+
+C. New experiment matrix
+给出最终需要新增的所有 runs：
+- experiment name
+- variant
+- Liver / Arm
+- overrides
+- expected run count
+- whether mandatory or optional
+
+D. Reuse matrix
+明确哪些实验不需要重跑。
+
+E. Proposed final paper tables
+给出 4 张 ablation table 的最终 row/column schema：
+- Joint
+- PPP
+- LGR
+- CGA
+
+F. Proposed final hyperparameter figures
+给出 3 张图的 panel schema：
+- PPP
+- LGR
+- CGA
+
+G. Estimated compute cost
+根据当前 30k run 的实际 wall time / GPU time，估算总运行时间。
+如果 wall time 是 shared-GPU worker 环境，要明确说明估算不等同于独占 GPU benchmark。
+
+H. 需要修改或新增的 scripts/configs
+列出文件路径和 planned changes。
+
+等我确认这份 audit + experiment matrix 后，再开始批量提交新训练。
+
+整个过程中不要自动删除旧结果；新实验使用新的明确目录，例如：
+outputs/production/ablations/ours/paper_final_methods_aligned_20260908/
+
+并保存：
+- per-run metrics
+- exact config snapshot
+- git commit/hash
+- final Gaussian count
+- training wall time
+- important event statistics
+- seed
+- dataset/sweep id
+
+最终目标是让 Ablation Studies 和 Hyperparameter Analysis 与最新 Methods 一一对应，而不是继续修补旧 ablation 的表面叙事。

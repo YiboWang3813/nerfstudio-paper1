@@ -1,0 +1,5 @@
+created_at: '2026-06-26T21:08:34'
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/spine_phantom/left1_1/slice_adapted_3dgs
+checkpoint_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/spine_phantom/left1_1/slice_adapted_3dgs/checkpoints
+hydra_output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/spine_phantom/left1_1/slice_adapted_3dgs
+config_path: hydra:experiment=production/comparisons/us_recon_four_dataset_p100k_v1/gs_strict/slice_adapted_3dgs

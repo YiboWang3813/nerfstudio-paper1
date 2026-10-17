@@ -1,0 +1,24 @@
+run_id: v2
+run_name: production-comparisons-us_recon_four_dataset_p100k_v1-gs_strict_ultrags_baseline_ultrags_baseline_v2
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/baseline_reproduction/ultrags_baseline/natural_dc_probe_10k_v2/natural_dc_probe_10k_v2
+hydra_output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/baseline_reproduction/ultrags_baseline/natural_dc_probe_10k_v2/natural_dc_probe_10k_v2
+config_path: hydra:experiment=production/comparisons/us_recon_four_dataset_p100k_v1/gs_strict/ultrags_baseline
+overrides:
+- experiment=production/comparisons/us_recon_four_dataset_p100k_v1/gs_strict/ultrags_baseline
+- system.output_root=outputs/preproduction/baseline_reproduction/ultrags_baseline/natural_dc_probe_10k_v2
+- system.exp_tag=natural_dc_probe_10k_v2
+- engine.iterations=10000
+- engine.interval.test=0
+- engine.interval.save=0
+- system.device=cuda
+git_commit: 512012fb55336d9bb7e67d88ad7bfd6ba741d2cd
+git_dirty: true
+dataset: synthetic_liver
+model: ultrags_baseline
+exp_tag: natural_dc_probe_10k_v2
+seed: 42
+wandb:
+  enabled: false
+  project: omniultra
+  mode: online
+  run_id: ''

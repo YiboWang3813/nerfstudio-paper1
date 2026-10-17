@@ -1,0 +1,11 @@
+key	value
+train_start_time	2026-06-26 19:42:52+0800
+train_start_epoch	1782474172
+train_start_gpu_mem_mb	1
+train_gpu_mem_samples	/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/comparisons/us_recon_four_dataset_p100k_v1/ultrags_baseline_synth_focus_tuning/runs/ultrags_baseline_synth_focus_tuning/nvs/synthetic_liver/l1/ultrags_baseline/r100_oc002/logs/efficiency_gpu_mem_samples.tsv
+train_end_time	2026-06-26 19:48:15+0800
+train_end_epoch	1782474495
+train_wall_time_sec	323
+train_end_gpu_mem_mb	1
+train_peak_gpu_mem_mb	8125
+train_exit_code	0

@@ -1,0 +1,29 @@
+time: 2026-06-26 23:40:48
+job_id: 66133
+benchmark: us_recon_four_dataset_p100k_v1
+stage: stage3_full_sweep
+dataset: spine_phantom
+sweep: right1
+method: ultrags_baseline
+exp_name: stage3_full_sweep_spine_phantom_right1_ultrags_baseline
+train_start_time: 2026-06-26 23:34:31+0800
+train_end_time: 2026-06-26 23:40:48+0800
+train_wall_time_sec: 377
+train_iterations: 30000
+train_iter_per_sec: 79.57559681697613
+train_start_gpu_mem_mb: 1
+train_end_gpu_mem_mb: 3495
+train_peak_gpu_mem_mb: 7709
+train_exit_code: 0
+best_num_gaussians: 232060.0
+final_num_gaussians: 232060.0
+min_num_gaussians: 232060.0
+max_num_gaussians: 1000000.0
+dc_event_count: 12
+checkpoint_bytes: 104899134
+vis_bytes: 2292712
+eval_bytes: 7490
+output_bytes: 111487011
+latest_output_mtime: 2026-06-26 23:40:48
+efficiency_tsv: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/spine_phantom/right1/ultrags_baseline/logs/efficiency.tsv
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/spine_phantom/right1/ultrags_baseline

@@ -1,0 +1,38 @@
+run_id: 957e4a4
+run_name: preproduction-baseline_reproduction-ultragray_acc_speed_balance_ultragray_957e4a4
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/ultragray_acc_speed_balance/runs/tdsc_abus_2023/validation_100/lw2mm
+checkpoint_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/ultragray_acc_speed_balance/runs/tdsc_abus_2023/validation_100/lw2mm/checkpoints
+checkpoint_root: ''
+hydra_output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/ultragray_acc_speed_balance/runs/tdsc_abus_2023/validation_100/lw2mm
+config_path: hydra:experiment=preproduction/baseline_reproduction/ultragray/acc_speed_balance
+overrides:
+- experiment=preproduction/baseline_reproduction/ultragray/acc_speed_balance
+- system.output_root=/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/ultragray_acc_speed_balance
+- system.exp_tag=ultragray_tdsc_abus_2023_validation_100_lw2mm
+- scene=tdsc_abus_2023
+- scene.loading.sweep_name=validation_100
+- scene.loading.test_mode=holdout_interval
+- scene.loading.holdout_trim_each=10
+- scene.loading.holdout_num_samples=0
+- scene.loading.holdout_test_ratio=0.2
+- scene.loading.pose_type=absolute
+- scene.loading.pose_mode=file
+- scene.loading.image_downsample_factor=1
+- scene.loading.axial_downsample_factor=1
+- system.seed=42
+- model.render.local_transmission_window_only=true
+- model.render.local_transmission_max_window_mm=2
+- metric.needed_metrics=[psnr,l1,ssim,lpips,dists,gmsd]
+- metric.max_vis_frames=10
+- metric.save_per_frame_metrics=true
+git_commit: 62082b1f9d520faaf54ac765ae38a9eabeded86a
+git_dirty: true
+dataset: tdsc_abus_2023
+model: ultragray
+exp_tag: ultragray_tdsc_abus_2023_validation_100_lw2mm
+seed: 42
+wandb:
+  enabled: false
+  project: omniultra
+  mode: online
+  run_id: ''

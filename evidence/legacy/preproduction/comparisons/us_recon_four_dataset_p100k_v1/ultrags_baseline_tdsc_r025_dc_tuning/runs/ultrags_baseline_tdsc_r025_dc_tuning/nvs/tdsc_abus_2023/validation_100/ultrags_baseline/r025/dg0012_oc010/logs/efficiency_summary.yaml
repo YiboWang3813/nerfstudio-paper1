@@ -1,0 +1,29 @@
+time: 2026-06-26 17:36:34
+job_id: 66005
+benchmark: us_recon_four_dataset_p100k_v1
+stage: ultrags_baseline_tdsc_r025_dc_tuning
+dataset: tdsc_abus_2023
+sweep: validation_100
+method: ultrags_baseline
+exp_name: ultrags_baseline_tdsc_r025_dc_tuning_tdsc_abus_2023_validation_100_ultrags_baseline_r025_dg0012_oc010
+train_start_time: 2026-06-26 17:32:00+0800
+train_end_time: 2026-06-26 17:36:33+0800
+train_wall_time_sec: 273
+train_iterations: 30000
+train_iter_per_sec: 109.89010989010988
+train_start_gpu_mem_mb: 1
+train_end_gpu_mem_mb: 1
+train_peak_gpu_mem_mb: 6297
+train_exit_code: 0
+best_num_gaussians: 842077.0
+final_num_gaussians: 842077.0
+min_num_gaussians: 842077.0
+max_num_gaussians: 1000000.0
+dc_event_count: 12
+checkpoint_bytes: 380626878
+vis_bytes: 3776582
+eval_bytes: 18382
+output_bytes: 8034291
+latest_output_mtime: 2026-06-26 17:36:33
+efficiency_tsv: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/comparisons/us_recon_four_dataset_p100k_v1/ultrags_baseline_tdsc_r025_dc_tuning/runs/ultrags_baseline_tdsc_r025_dc_tuning/nvs/tdsc_abus_2023/validation_100/ultrags_baseline/r025/dg0012_oc010/logs/efficiency.tsv
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/comparisons/us_recon_four_dataset_p100k_v1/ultrags_baseline_tdsc_r025_dc_tuning/runs/ultrags_baseline_tdsc_r025_dc_tuning/nvs/tdsc_abus_2023/validation_100/ultrags_baseline/r025/dg0012_oc010

@@ -1,0 +1,60 @@
+# @package _global_
+
+model:
+  name: gaussianpile
+  render:
+    enable_input_checks: false
+  gauss_init:
+    num_points: 1000000
+  slice_render:
+    backend: ours_focus
+    tile_size_px: 16
+    radius_sigma: 3.0
+    sigma_z_mm: null
+    sigma_z_ratio: null
+    prefilter_elevational_radius_mm: 0.0
+    det_eps: 1.0e-06
+    cov_eps: 1.0e-06
+    opacity_cull_threshold: 1.0e-06
+    render_chunk_size: 250000
+  gauss_container:
+    lr:
+      means: 0.0006
+      scales: 0.002
+      quats: 0.001
+      opacities: 0.02
+    lr_final_mult: 0.1
+    init_val:
+      opacities: 0.1
+    constraints:
+      scale_activation: bounded_sigmoid
+      scale_min_mm: 0.05
+      scale_max_mm: 3.0
+      opacity_max: 1.0
+  offline:
+    diagnostics:
+      enable_render_stats: true
+      train_step: 100
+      all_black_eps: 1.0e-06
+      warn_on_all_black_test: true
+      fail_on_all_black_test: false
+      restore_best_on_finish: true
+    density_control:
+      enable:
+        densify: true
+        prune: true
+      timing:
+        start_iter: 500
+        end_iter: 25000
+        freq: 500
+        grad_accum_interval: 1
+      thresholds:
+        densify_grad: 5.0e-05
+        split_scale: 0.6
+        min_scale_mm: 0.01
+        prune_opacity: 0.02
+        prune_observation_score: 0.25
+        min_prune_observations: 2
+        max_prune_fraction_per_step: 0.0
+        min_keep_ratio: 0.0
+      n_max: 2000000

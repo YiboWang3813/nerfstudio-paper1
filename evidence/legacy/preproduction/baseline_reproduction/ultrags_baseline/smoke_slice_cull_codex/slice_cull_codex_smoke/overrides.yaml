@@ -1,0 +1,9 @@
+overrides:
+- experiment=preproduction/baseline_reproduction/ultrags_baseline/smoke
+- system.output_root=outputs/preproduction/baseline_reproduction/ultrags_baseline/smoke_slice_cull_codex
+- system.exp_tag=slice_cull_codex_smoke
+- engine.iterations=3
+- scene.sampler.num_init=10000
+- model.render.camera_mode=slice_plane_physical
+- model.render.enable_slice_cull=true
+- system.device=cuda

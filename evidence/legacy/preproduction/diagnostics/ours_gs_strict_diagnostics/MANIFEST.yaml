@@ -1,0 +1,6 @@
+name: ours_gs_strict_diagnostics
+stage: a1_corridor_sweep
+completed_rows: 12
+expected_rows: 12
+decision: A1 not yet positive or incomplete: pause before A2.
+checkpoint_policy: externalized

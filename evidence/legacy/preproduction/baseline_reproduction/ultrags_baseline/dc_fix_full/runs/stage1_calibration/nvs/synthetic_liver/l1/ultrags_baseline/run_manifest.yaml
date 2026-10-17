@@ -1,0 +1,34 @@
+run_id: baseline
+run_name: production-comparisons-us_recon_four_dataset_p100k_v1-gs_strict_ultrags_baseline_ultrags_baseline_baseline
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/baseline_reproduction/ultrags_baseline/dc_fix_full/runs/stage1_calibration/nvs/synthetic_liver/l1/ultrags_baseline
+hydra_output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/baseline_reproduction/ultrags_baseline/dc_fix_full/runs/stage1_calibration/nvs/synthetic_liver/l1/ultrags_baseline
+config_path: hydra:experiment=production/comparisons/us_recon_four_dataset_p100k_v1/gs_strict/ultrags_baseline
+overrides:
+- experiment=production/comparisons/us_recon_four_dataset_p100k_v1/gs_strict/ultrags_baseline
+- system.output_root=/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/baseline_reproduction/ultrags_baseline/dc_fix_full
+- system.exp_tag=stage1_calibration_synthetic_liver_l1_ultrags_baseline
+- scene=liver
+- scene.loading.sweep_name=l1
+- scene.loading.test_mode=holdout_interval
+- scene.loading.holdout_trim_each=10
+- scene.loading.holdout_num_samples=0
+- scene.loading.holdout_test_ratio=0.2
+- scene.loading.pose_type=absolute
+- scene.loading.pose_mode=file
+- scene.loading.image_downsample_factor=1
+- scene.loading.axial_downsample_factor=1
+- system.seed=42
+- metric.needed_metrics=[psnr,l1,ssim,lpips,dists,gmsd]
+- metric.max_vis_frames=10
+- metric.save_per_frame_metrics=true
+git_commit: 512012fb55336d9bb7e67d88ad7bfd6ba741d2cd
+git_dirty: true
+dataset: synthetic_liver
+model: ultrags_baseline
+exp_tag: stage1_calibration_synthetic_liver_l1_ultrags_baseline
+seed: 42
+wandb:
+  enabled: false
+  project: omniultra
+  mode: online
+  run_id: ''

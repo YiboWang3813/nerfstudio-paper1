@@ -1,0 +1,5 @@
+key	value
+train_start_time	2026-06-26 11:03:08+0800
+train_start_epoch	1782442988
+train_start_gpu_mem_mb	1
+train_gpu_mem_samples	/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/baseline_reproduction/ultrags_baseline/dc_fix_full/runs/stage1_calibration/nvs/synthetic_liver/l1/ultrags_baseline/logs/efficiency_gpu_mem_samples.tsv

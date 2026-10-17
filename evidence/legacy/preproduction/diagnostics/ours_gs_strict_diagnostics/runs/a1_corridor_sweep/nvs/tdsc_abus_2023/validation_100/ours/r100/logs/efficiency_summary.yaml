@@ -1,0 +1,29 @@
+time: 2026-06-26 16:18:57
+job_id: 65977
+benchmark: ours_gs_strict_diagnostics
+stage: a1_corridor_sweep
+dataset: tdsc_abus_2023
+sweep: validation_100
+method: ours
+exp_name: a1_corridor_sweep_tdsc_abus_2023_validation_100_ours_r100
+train_start_time: 2026-06-26 16:14:22+0800
+train_end_time: 2026-06-26 16:18:57+0800
+train_wall_time_sec: 275
+train_iterations: 30000
+train_iter_per_sec: 109.0909090909091
+train_start_gpu_mem_mb: 1
+train_end_gpu_mem_mb: 1
+train_peak_gpu_mem_mb: 5489
+train_exit_code: 0
+best_num_gaussians: 926477.0
+final_num_gaussians: 926477.0
+min_num_gaussians: 926477.0
+max_num_gaussians: 1005835.0
+dc_event_count: 12
+checkpoint_bytes: 133418963
+vis_bytes: 3724278
+eval_bytes: 18380
+output_bytes: 4446568
+latest_output_mtime: 2026-06-26 16:18:57
+efficiency_tsv: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/ours_gs_strict_diagnostics/runs/a1_corridor_sweep/nvs/tdsc_abus_2023/validation_100/ours/r100/logs/efficiency.tsv
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/ours_gs_strict_diagnostics/runs/a1_corridor_sweep/nvs/tdsc_abus_2023/validation_100/ours/r100

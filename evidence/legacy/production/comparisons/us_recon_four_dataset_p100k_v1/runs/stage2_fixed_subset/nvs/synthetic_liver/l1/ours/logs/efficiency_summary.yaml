@@ -1,0 +1,29 @@
+time: 2026-06-26 19:09:30
+job_id: 66022
+benchmark: us_recon_four_dataset_p100k_v1
+stage: stage2_fixed_subset
+dataset: synthetic_liver
+sweep: l1
+method: ours
+exp_name: stage2_fixed_subset_synthetic_liver_l1_ours
+train_start_time: 2026-06-26 19:04:33+0800
+train_end_time: 2026-06-26 19:09:30+0800
+train_wall_time_sec: 297
+train_iterations: 30000
+train_iter_per_sec: 101.01010101010101
+train_start_gpu_mem_mb: 1
+train_end_gpu_mem_mb: 1
+train_peak_gpu_mem_mb: 4207
+train_exit_code: 0
+best_num_gaussians: 797176.0
+final_num_gaussians: 797176.0
+min_num_gaussians: 797176.0
+max_num_gaussians: 1016057.0
+dc_event_count: 12
+checkpoint_bytes: 114799571
+vis_bytes: 3376888
+eval_bytes: 10334
+output_bytes: 118891478
+latest_output_mtime: 2026-06-26 19:09:30
+efficiency_tsv: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/synthetic_liver/l1/ours/logs/efficiency.tsv
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/synthetic_liver/l1/ours

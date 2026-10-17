@@ -1,0 +1,294 @@
+task: train
+experiment:
+  family: production/comparisons/us_recon_four_dataset_p100k_v1/gs_strict
+  name: ultrags_baseline
+  protocol: gs_strict_1m30k_dc_t1000_25000_f2000
+  description: UltraGS baseline GS-strict production baseline; physical slice camera,
+    r115 slice thickness from DatasetMeta delta_elevational_mm, 1M init, 30k iterations,
+    slice-aware cull, natural opacity/scale DC pruning with densify_grad=0.0016 and
+    opacity_cull=0.05 without a Gaussian-count cap, opacity reset disabled, final
+    30k checkpoint, shared DC timing, unified 0.8 L1 + 0.2 SSIM loss.
+system:
+  output_root: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1
+  checkpoint_root: ''
+  output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/011_RH_Per_S_PtD_qc_0028_0185/ultrags_baseline
+  checkpoint_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/011_RH_Per_S_PtD_qc_0028_0185/ultrags_baseline/checkpoints
+  link_checkpoint_dir: true
+  exp_tag: stage3_full_sweep_tus_rec_2024_qc_011_RH_Per_S_PtD_qc_0028_0185_ultrags_baseline
+  run_id: baseline
+  run_name: production-comparisons-us_recon_four_dataset_p100k_v1-gs_strict_ultrags_baseline_ultrags_baseline_baseline
+  config_path: hydra:experiment=production/comparisons/us_recon_four_dataset_p100k_v1/gs_strict/ultrags_baseline
+  hydra_output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/011_RH_Per_S_PtD_qc_0028_0185/ultrags_baseline
+  use_legacy_output_naming: false
+  device: cuda
+  seed: 42
+wandb:
+  enable: false
+  project: omniultra
+  entity: ''
+  mode: online
+  group: ''
+  name: ''
+  tags: []
+  log_artifacts: false
+scene:
+  dataset_name: tus_rec_2024
+  loading:
+    baseroot: /home/boywang25/ultrasound-scene-reconstruction/data
+    dataset_dirname: tus_rec_2024_qc
+    sweep_name: 011_RH_Per_S_PtD_qc_0028_0185
+    images_name: images.npy
+    test_images_name: test_images.npy
+    test_poses_name: test_poses.npy
+    image_value_mode: uint8_255
+    image_nan_value: 0.0
+    image_downsample_factor: 1
+    axial_downsample_factor: 1
+    frame_start: 0
+    frame_end: -1
+    frame_stride: 1
+    frame_indices_path: ''
+    test_mode: holdout_interval
+    holdout_trim_each: 10
+    holdout_num_samples: 0
+    holdout_test_ratio: 0.2
+    pose_type: absolute
+    poses_abspath: ''
+    pose_mode: file
+    canonical_sweep_delta_mm: -1.0
+    canonical_sweep_delta_scale: 1.0
+    canonical_sweep_ref_frame: 0
+    canonical_sweep_axis: z
+    canonical_sweep_spacing_mode: uniform
+  sampler:
+    num_init: 1000000
+    num_new: 1000
+    scales_init:
+    - 0.3
+    - 0.3
+    - 0.3
+    quats_init:
+    - 1.0
+    - 0.0
+    - 0.0
+    - 0.0
+    uniform_ratio: 0.3
+    intensity_threshold: 0.05
+    jitter_radius: 0.2
+  grid:
+    tile_size: 4.0
+    bbox_margin: 0.05
+  scheduler:
+    test_ratio: 0.1
+engine:
+  name: default_engine
+  state: UltraGSBaselineOfflineState
+  task: train
+  stream: offline
+  iterations: 30000
+  accum_steps: 1
+  resume: ''
+  stream_eval_skip_head_frames: 0
+  stream_eval_skip_tail_frames: 0
+  stream_eval_interval_frames: 0
+  needed_callbacks:
+  - UltraGSBaselineOfflineSetupCallback
+  - UltraGSBaselineOfflineTrainCallback
+  - UltraGSBaselineOfflineTestCallback
+  - UltraGSBaselineOfflineSaveCallback
+  - UltraGSBaselineOfflineFinishCallback
+  interval:
+    train:
+      step: 10
+      print: 100
+    debug: 1000
+    test: 30000
+    save: 30000
+loss:
+  needed_losses:
+  - l1
+  - ssim
+  lambdas:
+    l1: 0.8
+    mse: 0.0
+    ssim: 0.2
+    sobel: 0.0
+    highpass_l1: 0.0
+    marco_ssim: 0.0
+    lpips: 0.0
+    diff_tv: 0.0
+    scale_wall: 0.0
+    scale_aniso: 0.0
+    opacity: 0.0
+    attenuation_l1: 0.0
+    attenuation_tail: 0.0
+    pose_anchor: 0.0
+    pose_prior: 0.0
+    pose_smooth: 0.0
+    pose_acc: 0.0
+    pose_aux_rec: 0.0
+    pose_registration: 0.0
+    pose_neighbor_registration: 0.0
+    pose_cycle: 0.0
+    pose_const_vel: 0.0
+    pose_gt_delta: 0.0
+    pose_occ_conf: 0.0
+  l1_cfg:
+    clamp_inputs: false
+  ssim_cfg:
+    window_size: 11
+    sigma: 1.5
+    downsample_enabled: false
+    downsample_factor: 1
+    downsample_mode: area
+    clamp_inputs: false
+  highpass_l1_cfg:
+    kernel_size: 9
+    sigma: 2.0
+  marco_ssim_cfg:
+    blur_window_size: 21
+    blur_sigma: 3.0
+    ssim_window_size: 11
+    ssim_sigma: 1.5
+  lpips_cfg:
+    metric_name: lpips
+  scale_wall_cfg:
+    min_scales_mm: 0.001
+    max_scales_mm: 1.2
+  scale_aniso_cfg:
+    max_aniso_ratio: 2.5
+  opacity_cfg:
+    target_opacity: 0.5
+  attenuation_tail_cfg:
+    max_attenuation: 0.05
+  pose_anchor_cfg:
+    rot_weight: 1.0
+    trans_weight: 1.0
+  pose_prior_cfg:
+    rot_weight: 1.0
+    trans_weight: 1.0
+  pose_smooth_cfg:
+    rot_weight: 1.0
+    trans_weight: 1.0
+  pose_acc_cfg:
+    rot_weight: 1.0
+    trans_weight: 1.0
+  pose_aux_rec_cfg:
+    l1_weight: 0.8
+    ssim_weight: 0.2
+    window_size: 11
+    sigma: 1.5
+  pose_registration_cfg:
+    photo_weight: 1.0
+    grad_weight: 0.2
+    charbonnier_eps: 0.001
+  pose_neighbor_registration_cfg:
+    photo_weight: 1.0
+    ssim_weight: 0.2
+    charbonnier_eps: 0.001
+    window_size: 11
+    sigma: 1.5
+    min_overlap_ratio: 0.3
+  pose_cycle_cfg:
+    photo_weight: 1.0
+    ssim_weight: 0.1
+    charbonnier_eps: 0.001
+    window_size: 11
+    sigma: 1.5
+    min_overlap_ratio: 0.3
+  pose_const_vel_cfg:
+    rot_weight: 1.0
+    trans_weight: 1.0
+  pose_gt_delta_cfg:
+    rot_weight: 1.0
+    trans_weight: 1.0
+  pose_occ_conf_cfg:
+    charbonnier_epsilon: 0.001
+    confidence_gamma: 1.0
+    confidence_min: 0.05
+    detach_confidence: true
+metric:
+  needed_metrics:
+  - psnr
+  - l1
+  - ssim
+  - lpips
+  - dists
+  - gmsd
+  psnr_cfg:
+    max_val: 1.0
+  max_vis_frames: 10
+  save_per_frame_metrics: true
+model:
+  name: ultrags_baseline
+  render:
+    sh_degree: 2
+    active_sh_degree_start: 0
+    sh_degree_step_iter: 1000
+    camera_mode: slice_plane_physical
+    physical_camera_distance_mm: 200.0
+    dar_mode: released_disabled
+    fov_x_deg: 60.0
+    fov_y_deg: 60.0
+    fov_x_min_deg: 20.0
+    fov_x_max_deg: 140.0
+    fov_y_min_deg: 20.0
+    fov_y_max_deg: 140.0
+    znear: 0.01
+    zfar: 1000.0
+    bg_color: 0.0
+    scale_modifier: 1.0
+    enable_slice_cull: true
+    slice_thickness_ratio: 1.15
+    slice_thickness_mm: null
+    slice_cull_std: 3.0
+    slice_cull_scale_multiplier: 3.0
+    opacity_slice_attenuation: true
+    debug: false
+    output_grayscale: true
+  gauss_container:
+    lr:
+      means: 0.00016
+      sh_dc: 0.0025
+      sh_rest: 0.000125
+      opacities: 0.01
+      scales_2d: 0.0005
+      quats: 0.001
+      fov_x: 0.001
+      fov_y: 0.001
+    init_val:
+      opacity: 0.005
+      scale_2d:
+      - 0.25
+      - 0.25
+      sh_dc: 0.0
+      fov_x: 0.0
+      fov_y: 0.0
+    scheduler:
+      position_lr_final_scale: 0.01
+      default_lr_final_scale: 0.1
+      position_lr_delay_mult: 0.01
+    constraints:
+      opacity_max: 0.0
+  offline:
+    density_control:
+      enable:
+        densify: true
+        prune: true
+        opacity_reset: false
+      timing:
+        start_iter: 1000
+        end_iter: 25000
+        freq: 2000
+        densification_interval: 2000
+        opacity_reset_interval: 2000
+      thresholds:
+        densify_grad: 0.0016
+        opacity_cull: 0.05
+        percent_dense: 0.01
+        n_max: null
+        min_scale_2d: 0.05
+        max_scale_2d: 0.8
+    diagnostics:
+      enable_render_stats: true
+      train_step: 100

@@ -1,0 +1,51 @@
+run_id: depth
+run_name: production-comparisons-us_recon_four_dataset_p100k_v1-gs_strict_ours_ours_depth
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/ours_gs_strict_diagnostics/runs/b3_soft_attenuation/nvs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/ours/bounded_soft_slice_depth
+checkpoint_dir: /tmp/boywang25/omniultra_checkpoints/runs/b3_soft_attenuation/nvs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/ours/bounded_soft_slice_depth/checkpoints
+checkpoint_root: /tmp/boywang25/omniultra_checkpoints
+hydra_output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/ours_gs_strict_diagnostics/runs/b3_soft_attenuation/nvs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/ours/bounded_soft_slice_depth
+config_path: hydra:experiment=production/comparisons/us_recon_four_dataset_p100k_v1/gs_strict/ours
+overrides:
+- experiment=production/comparisons/us_recon_four_dataset_p100k_v1/gs_strict/ours
+- system.output_root=/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/ours_gs_strict_diagnostics
+- system.exp_tag=b3_soft_attenuation_tus_rec_2024_qc_010_LH_Per_L_DtP_qc_0005_0370_ours_bounded_soft_slice_depth
+- scene=tus_rec_2024_qc
+- scene.loading.sweep_name=010_LH_Per_L_DtP_qc_0005_0370
+- scene.loading.test_mode=holdout_interval
+- scene.loading.holdout_trim_each=10
+- scene.loading.holdout_num_samples=0
+- scene.loading.holdout_test_ratio=0.2
+- scene.loading.pose_type=absolute
+- scene.loading.pose_mode=file
+- scene.loading.image_downsample_factor=1
+- scene.loading.axial_downsample_factor=1
+- system.seed=42
+- system.checkpoint_root=/tmp/boywang25/omniultra_checkpoints
+- system.link_checkpoint_dir=true
+- metric.needed_metrics=[psnr,l1,ssim,lpips,dists,gmsd]
+- metric.max_vis_frames=10
+- metric.save_per_frame_metrics=true
+- ++model.slice_render.elev_corridor_half_mm=0.202000
+- model.gauss_container.constraints.scale_activation=bounded_sigmoid
+- model.gauss_container.constraints.scale_min_mm=0.05
+- model.gauss_container.constraints.scale_max_mm=3.0
+- model.slice_render.ray_attenuation_enabled=true
+- model.slice_render.ray_attenuation_source=attenuation
+- model.slice_render.ray_attenuation_mapper_kind=ray_csr
+- model.slice_render.ray_attenuation_formula=slice_depth
+- model.slice_render.ray_attenuation_candidate_k_sigma=2.0
+- model.slice_render.ray_attenuation_beta=0.60
+- model.slice_render.ray_attenuation_strength=0.30
+- model.slice_render.ray_attenuation_min_transmission=0.55
+- model.slice_render.ray_attenuation_quadrature_points=1
+git_commit: 335f67b58d6dc268cf0a60bc50f0a8705c3a2177
+git_dirty: true
+dataset: tus_rec_2024
+model: ours
+exp_tag: b3_soft_attenuation_tus_rec_2024_qc_010_LH_Per_L_DtP_qc_0005_0370_ours_bounded_soft_slice_depth
+seed: 42
+wandb:
+  enabled: false
+  project: omniultra
+  mode: online
+  run_id: ''

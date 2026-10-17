@@ -1,0 +1,27 @@
+run_id: a05e5e3
+run_name: production-comparisons-us_recon_four_dataset_p100k_v1-gs_strict_slice_adapted_3dgs_slice_adapted_3dgs_a05e5e3
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/2026-06-26/11-07-07_production-comparisons-us_recon_four_dataset_p100k_v1-gs_strict-slice_adapted_3dgs_slice_adapted_3dgs_a05e5e3
+hydra_output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/2026-06-26/11-07-07_production-comparisons-us_recon_four_dataset_p100k_v1-gs_strict-slice_adapted_3dgs_slice_adapted_3dgs_a05e5e3
+config_path: hydra:experiment=production/comparisons/us_recon_four_dataset_p100k_v1/gs_strict/slice_adapted_3dgs
+overrides:
+- experiment=production/comparisons/us_recon_four_dataset_p100k_v1/gs_strict/slice_adapted_3dgs
+- task=dry_run
+- system.device=cpu
+- engine.iterations=1
+- scene=tus_rec_2024_qc
+- scene.loading.sweep_name=010_LH_Per_L_DtP_qc_0005_0370
+- scene.loading.test_mode=holdout_interval
+- scene.loading.pose_type=absolute
+- scene.loading.pose_mode=file
+- model.render.slice_thickness_mm=0.404000
+git_commit: 512012fb55336d9bb7e67d88ad7bfd6ba741d2cd
+git_dirty: true
+dataset: tus_rec_2024
+model: slice_adapted_3dgs
+exp_tag: gs_strict_slice_adapted_3dgs_1m30k_dc_nmax2m_t1000_25000_f2000
+seed: 42
+wandb:
+  enabled: false
+  project: omniultra
+  mode: online
+  run_id: ''

@@ -1,0 +1,38 @@
+run_id: 898f2f3
+run_name: preproduction-baseline_reproduction-ultragray_acc_speed_balance_ultragray_898f2f3
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/ultragray_acc_speed_balance/runs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/lw0.75mm
+checkpoint_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/ultragray_acc_speed_balance/runs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/lw0.75mm/checkpoints
+checkpoint_root: ''
+hydra_output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/ultragray_acc_speed_balance/runs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/lw0.75mm
+config_path: hydra:experiment=preproduction/baseline_reproduction/ultragray/acc_speed_balance
+overrides:
+- experiment=preproduction/baseline_reproduction/ultragray/acc_speed_balance
+- system.output_root=/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/ultragray_acc_speed_balance
+- system.exp_tag=ultragray_tus_rec_2024_qc_010_LH_Per_L_DtP_qc_0005_0370_lw0p75mm
+- scene=tus_rec_2024_qc
+- scene.loading.sweep_name=010_LH_Per_L_DtP_qc_0005_0370
+- scene.loading.test_mode=holdout_interval
+- scene.loading.holdout_trim_each=10
+- scene.loading.holdout_num_samples=0
+- scene.loading.holdout_test_ratio=0.2
+- scene.loading.pose_type=absolute
+- scene.loading.pose_mode=file
+- scene.loading.image_downsample_factor=1
+- scene.loading.axial_downsample_factor=1
+- system.seed=42
+- model.render.local_transmission_window_only=true
+- model.render.local_transmission_max_window_mm=0.75
+- metric.needed_metrics=[psnr,l1,ssim,lpips,dists,gmsd]
+- metric.max_vis_frames=10
+- metric.save_per_frame_metrics=true
+git_commit: c951c667fd3b5a998fb36139e9d35f248194211b
+git_dirty: false
+dataset: tus_rec_2024
+model: ultragray
+exp_tag: ultragray_tus_rec_2024_qc_010_LH_Per_L_DtP_qc_0005_0370_lw0p75mm
+seed: 42
+wandb:
+  enabled: false
+  project: omniultra
+  mode: online
+  run_id: ''

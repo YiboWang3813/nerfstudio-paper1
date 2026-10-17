@@ -1,0 +1,36 @@
+run_id: 3dgs
+run_name: production-comparisons-us_recon_four_dataset_p100k_v1-gs_strict_slice_adapted_3dgs_slice_adapted_3dgs_3dgs
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/synthetic_liver/l1/slice_adapted_3dgs
+checkpoint_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/synthetic_liver/l1/slice_adapted_3dgs/checkpoints
+checkpoint_root: ''
+hydra_output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/synthetic_liver/l1/slice_adapted_3dgs
+config_path: hydra:experiment=production/comparisons/us_recon_four_dataset_p100k_v1/gs_strict/slice_adapted_3dgs
+overrides:
+- experiment=production/comparisons/us_recon_four_dataset_p100k_v1/gs_strict/slice_adapted_3dgs
+- system.output_root=/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1
+- system.exp_tag=stage2_fixed_subset_synthetic_liver_l1_slice_adapted_3dgs
+- scene=liver
+- scene.loading.sweep_name=l1
+- scene.loading.test_mode=holdout_interval
+- scene.loading.holdout_trim_each=10
+- scene.loading.holdout_num_samples=0
+- scene.loading.holdout_test_ratio=0.2
+- scene.loading.pose_type=absolute
+- scene.loading.pose_mode=file
+- scene.loading.image_downsample_factor=1
+- scene.loading.axial_downsample_factor=1
+- system.seed=42
+- metric.needed_metrics=[psnr,l1,ssim,lpips,dists,gmsd]
+- metric.max_vis_frames=10
+- metric.save_per_frame_metrics=true
+git_commit: f18129c546482459a20ff69c5b49ac37e4955f60
+git_dirty: false
+dataset: synthetic_liver
+model: slice_adapted_3dgs
+exp_tag: stage2_fixed_subset_synthetic_liver_l1_slice_adapted_3dgs
+seed: 42
+wandb:
+  enabled: false
+  project: omniultra
+  mode: online
+  run_id: ''

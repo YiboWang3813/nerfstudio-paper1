@@ -1,0 +1,11 @@
+key	value
+train_start_time	2026-06-26 22:59:03+0800
+train_start_epoch	1782485943
+train_start_gpu_mem_mb	1
+train_gpu_mem_samples	/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/synthetic_liver/r2/gaussianpile/logs/efficiency_gpu_mem_samples.tsv
+train_end_time	2026-06-26 23:07:39+0800
+train_end_epoch	1782486459
+train_wall_time_sec	516
+train_end_gpu_mem_mb	1
+train_peak_gpu_mem_mb	8021
+train_exit_code	0

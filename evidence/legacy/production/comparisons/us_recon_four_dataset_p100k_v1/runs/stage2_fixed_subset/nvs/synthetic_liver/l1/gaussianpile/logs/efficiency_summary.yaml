@@ -1,0 +1,29 @@
+time: 2026-06-26 19:10:01
+job_id: 66021
+benchmark: us_recon_four_dataset_p100k_v1
+stage: stage2_fixed_subset
+dataset: synthetic_liver
+sweep: l1
+method: gaussianpile
+exp_name: stage2_fixed_subset_synthetic_liver_l1_gaussianpile
+train_start_time: 2026-06-26 19:04:38+0800
+train_end_time: 2026-06-26 19:10:01+0800
+train_wall_time_sec: 323
+train_iterations: 30000
+train_iter_per_sec: 92.87925696594428
+train_start_gpu_mem_mb: 1
+train_end_gpu_mem_mb: 1
+train_peak_gpu_mem_mb: 3955
+train_exit_code: 0
+best_num_gaussians: 999888.0
+final_num_gaussians: 999888.0
+min_num_gaussians: 999888.0
+max_num_gaussians: 1000000.0
+dc_event_count: 12
+checkpoint_bytes: 263980864
+vis_bytes: 3503624
+eval_bytes: 10282
+output_bytes: 271169004
+latest_output_mtime: 2026-06-26 19:10:01
+efficiency_tsv: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/synthetic_liver/l1/gaussianpile/logs/efficiency.tsv
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/synthetic_liver/l1/gaussianpile

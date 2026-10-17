@@ -1,0 +1,4 @@
+- experiment=preproduction/baseline_reproduction/ultragray/smoke
+- task=dry_run
+- engine.iterations=1
+- system.checkpoint_root=/tmp/boywang25/omniultra_checkpoints_test

@@ -1,0 +1,5 @@
+created_at: '2026-06-26T16:03:16'
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/ours_gs_strict_diagnostics/runs/a1_corridor_sweep/nvs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/ours/r075
+checkpoint_dir: /tmp/boywang25/omniultra_checkpoints/runs/a1_corridor_sweep/nvs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/ours/r075/checkpoints
+hydra_output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/ours_gs_strict_diagnostics/runs/a1_corridor_sweep/nvs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/ours/r075
+config_path: hydra:experiment=production/comparisons/us_recon_four_dataset_p100k_v1/gs_strict/ours

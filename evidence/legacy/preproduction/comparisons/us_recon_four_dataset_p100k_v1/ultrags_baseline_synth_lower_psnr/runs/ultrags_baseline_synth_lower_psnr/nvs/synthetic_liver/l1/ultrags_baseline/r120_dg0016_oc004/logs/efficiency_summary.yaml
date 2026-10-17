@@ -1,0 +1,29 @@
+time: 2026-06-26 20:33:27
+job_id: 66052
+benchmark: us_recon_four_dataset_p100k_v1
+stage: ultrags_baseline_synth_lower_psnr
+dataset: synthetic_liver
+sweep: l1
+method: ultrags_baseline
+exp_name: ultrags_baseline_synth_lower_psnr_synthetic_liver_l1_ultrags_baseline_r120_dg0016_oc004
+train_start_time: 2026-06-26 20:28:51+0800
+train_end_time: 2026-06-26 20:33:27+0800
+train_wall_time_sec: 276
+train_iterations: 30000
+train_iter_per_sec: 108.69565217391305
+train_start_gpu_mem_mb: 1
+train_end_gpu_mem_mb: 1
+train_peak_gpu_mem_mb: 4873
+train_exit_code: 0
+best_num_gaussians: 895313.0
+final_num_gaussians: 895313.0
+min_num_gaussians: 895313.0
+max_num_gaussians: 1000000.0
+dc_event_count: 12
+checkpoint_bytes: 404689982
+vis_bytes: 3579941
+eval_bytes: 10372
+output_bytes: 7820156
+latest_output_mtime: 2026-06-26 20:33:27
+efficiency_tsv: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/comparisons/us_recon_four_dataset_p100k_v1/ultrags_baseline_synth_lower_psnr/runs/ultrags_baseline_synth_lower_psnr/nvs/synthetic_liver/l1/ultrags_baseline/r120_dg0016_oc004/logs/efficiency.tsv
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/comparisons/us_recon_four_dataset_p100k_v1/ultrags_baseline_synth_lower_psnr/runs/ultrags_baseline_synth_lower_psnr/nvs/synthetic_liver/l1/ultrags_baseline/r120_dg0016_oc004

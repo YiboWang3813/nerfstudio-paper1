@@ -1,0 +1,23 @@
+run_id: 4cb32a6
+run_name: preproduction-baseline_reproduction-ultragray_smoke_ultragray_4cb32a6
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/2026-06-26/15-34-57_preproduction-baseline_reproduction-ultragray-smoke_ultragray_4cb32a6
+checkpoint_dir: /tmp/boywang25/omniultra_checkpoints_test/2026-06-26/15-34-57_preproduction-baseline_reproduction-ultragray-smoke_ultragray_4cb32a6/checkpoints
+checkpoint_root: /tmp/boywang25/omniultra_checkpoints_test
+hydra_output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/2026-06-26/15-34-57_preproduction-baseline_reproduction-ultragray-smoke_ultragray_4cb32a6
+config_path: hydra:experiment=preproduction/baseline_reproduction/ultragray/smoke
+overrides:
+- experiment=preproduction/baseline_reproduction/ultragray/smoke
+- task=dry_run
+- engine.iterations=1
+- system.checkpoint_root=/tmp/boywang25/omniultra_checkpoints_test
+git_commit: 951cbe0e2cd4568a832472204063116923e79940
+git_dirty: true
+dataset: synthetic_liver
+model: ultragray
+exp_tag: ultragray_smoke_10k_200
+seed: 42
+wandb:
+  enabled: false
+  project: omniultra
+  mode: online
+  run_id: ''

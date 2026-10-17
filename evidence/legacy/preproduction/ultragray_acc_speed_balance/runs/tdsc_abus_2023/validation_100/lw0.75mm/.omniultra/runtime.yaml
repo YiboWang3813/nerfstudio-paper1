@@ -1,0 +1,5 @@
+created_at: '2026-06-26T18:32:48'
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/ultragray_acc_speed_balance/runs/tdsc_abus_2023/validation_100/lw0.75mm
+checkpoint_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/ultragray_acc_speed_balance/runs/tdsc_abus_2023/validation_100/lw0.75mm/checkpoints
+hydra_output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/ultragray_acc_speed_balance/runs/tdsc_abus_2023/validation_100/lw0.75mm
+config_path: hydra:experiment=preproduction/baseline_reproduction/ultragray/acc_speed_balance

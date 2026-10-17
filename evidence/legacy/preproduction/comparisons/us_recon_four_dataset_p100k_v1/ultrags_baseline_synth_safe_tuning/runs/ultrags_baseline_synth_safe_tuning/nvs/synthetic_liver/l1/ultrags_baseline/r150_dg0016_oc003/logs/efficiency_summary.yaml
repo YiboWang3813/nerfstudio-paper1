@@ -1,0 +1,29 @@
+time: 2026-06-26 19:55:42
+job_id: 66043
+benchmark: us_recon_four_dataset_p100k_v1
+stage: ultrags_baseline_synth_safe_tuning
+dataset: synthetic_liver
+sweep: l1
+method: ultrags_baseline
+exp_name: ultrags_baseline_synth_safe_tuning_synthetic_liver_l1_ultrags_baseline_r150_dg0016_oc003
+train_start_time: 2026-06-26 19:50:57+0800
+train_end_time: 2026-06-26 19:55:42+0800
+train_wall_time_sec: 285
+train_iterations: 30000
+train_iter_per_sec: 105.26315789473684
+train_start_gpu_mem_mb: 1
+train_end_gpu_mem_mb: 1
+train_peak_gpu_mem_mb: 4885
+train_exit_code: 0
+best_num_gaussians: 915604.0
+final_num_gaussians: 915604.0
+min_num_gaussians: 915604.0
+max_num_gaussians: 1000000.0
+dc_event_count: 12
+checkpoint_bytes: 413860990
+vis_bytes: 3555307
+eval_bytes: 10334
+output_bytes: 7797363
+latest_output_mtime: 2026-06-26 19:55:42
+efficiency_tsv: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/comparisons/us_recon_four_dataset_p100k_v1/ultrags_baseline_synth_safe_tuning/runs/ultrags_baseline_synth_safe_tuning/nvs/synthetic_liver/l1/ultrags_baseline/r150_dg0016_oc003/logs/efficiency.tsv
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/comparisons/us_recon_four_dataset_p100k_v1/ultrags_baseline_synth_safe_tuning/runs/ultrags_baseline_synth_safe_tuning/nvs/synthetic_liver/l1/ultrags_baseline/r150_dg0016_oc003

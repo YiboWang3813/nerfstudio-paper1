@@ -1,0 +1,37 @@
+run_id: 01e098c
+run_name: production-comparisons-us_recon_four_dataset_p100k_v1-gs_strict_ours_ours_01e098c
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/011_RH_Per_C_PtD_qc_0186_0557_s02/ours
+checkpoint_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/011_RH_Per_C_PtD_qc_0186_0557_s02/ours/checkpoints
+checkpoint_root: ''
+hydra_output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/011_RH_Per_C_PtD_qc_0186_0557_s02/ours
+config_path: hydra:experiment=production/comparisons/us_recon_four_dataset_p100k_v1/gs_strict/ours
+overrides:
+- experiment=production/comparisons/us_recon_four_dataset_p100k_v1/gs_strict/ours
+- system.output_root=/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1
+- system.exp_tag=stage3_full_sweep_tus_rec_2024_qc_011_RH_Per_C_PtD_qc_0186_0557_s02_ours
+- scene=tus_rec_2024_qc
+- scene.loading.sweep_name=011_RH_Per_C_PtD_qc_0186_0557_s02
+- scene.loading.test_mode=holdout_interval
+- scene.loading.holdout_trim_each=10
+- scene.loading.holdout_num_samples=0
+- scene.loading.holdout_test_ratio=0.2
+- scene.loading.pose_type=absolute
+- scene.loading.pose_mode=file
+- scene.loading.image_downsample_factor=1
+- scene.loading.axial_downsample_factor=1
+- system.seed=42
+- metric.needed_metrics=[psnr,l1,ssim,lpips,dists,gmsd]
+- metric.max_vis_frames=10
+- metric.save_per_frame_metrics=true
+- ++model.slice_render.elev_corridor_half_mm=0.202
+git_commit: 65f5e937f8b92d96ef6fa574c226f68828b90ab2
+git_dirty: false
+dataset: tus_rec_2024
+model: ours
+exp_tag: stage3_full_sweep_tus_rec_2024_qc_011_RH_Per_C_PtD_qc_0186_0557_s02_ours
+seed: 42
+wandb:
+  enabled: false
+  project: omniultra
+  mode: online
+  run_id: ''

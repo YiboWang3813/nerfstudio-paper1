@@ -1,0 +1,29 @@
+time: 2026-06-26 23:23:37
+job_id: 66123
+benchmark: us_recon_four_dataset_p100k_v1
+stage: stage3_full_sweep
+dataset: spine_phantom
+sweep: left2
+method: gaussianpile
+exp_name: stage3_full_sweep_spine_phantom_left2_gaussianpile
+train_start_time: 2026-06-26 23:16:56+0800
+train_end_time: 2026-06-26 23:23:37+0800
+train_wall_time_sec: 401
+train_iterations: 30000
+train_iter_per_sec: 74.81296758104739
+train_start_gpu_mem_mb: 1
+train_end_gpu_mem_mb: 1
+train_peak_gpu_mem_mb: 7259
+train_exit_code: 0
+best_num_gaussians: 988411.0
+final_num_gaussians: 988411.0
+min_num_gaussians: 988411.0
+max_num_gaussians: 1000000.0
+dc_event_count: 12
+checkpoint_bytes: 260951488
+vis_bytes: 2207132
+eval_bytes: 7762
+output_bytes: 265548750
+latest_output_mtime: 2026-06-26 23:23:37
+efficiency_tsv: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/spine_phantom/left2/gaussianpile/logs/efficiency.tsv
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/spine_phantom/left2/gaussianpile

@@ -1,0 +1,29 @@
+time: 2026-06-26 18:28:18
+job_id: 66015
+benchmark: ultragray_acc_speed_balance
+stage: preproduction
+dataset: tus_rec_2024_qc
+sweep: 010_LH_Per_L_DtP_qc_0005_0370
+method: ultragray_lw2mm
+exp_name: ultragray_tus_rec_2024_qc_010_LH_Per_L_DtP_qc_0005_0370_lw2mm
+train_start_time: 
+train_end_time: 
+train_wall_time_sec: 
+train_iterations: 30000
+train_iter_per_sec: 
+train_start_gpu_mem_mb: 
+train_end_gpu_mem_mb: 
+train_peak_gpu_mem_mb: 
+train_exit_code: 
+best_num_gaussians: 830437.0
+final_num_gaussians: 830437.0
+min_num_gaussians: 830437.0
+max_num_gaussians: 1000000.0
+dc_event_count: 12
+checkpoint_bytes: 149486022
+vis_bytes: 2724145
+eval_bytes: 18928
+output_bytes: 153059890
+latest_output_mtime: 2026-06-26 18:28:18
+efficiency_tsv: 
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/ultragray_acc_speed_balance/runs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/lw2mm

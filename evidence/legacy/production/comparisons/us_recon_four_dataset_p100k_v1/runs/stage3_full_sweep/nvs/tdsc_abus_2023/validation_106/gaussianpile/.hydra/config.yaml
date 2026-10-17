@@ -1,0 +1,271 @@
+engine:
+  name: default_engine
+  state: GaussianPileOfflineState
+  task: train
+  stream: offline
+  iterations: 30000
+  accum_steps: 1
+  resume: ''
+  needed_callbacks:
+  - GaussianPileOfflineSetupCallback
+  - GaussianPileOfflineTrainCallback
+  - GaussianPileOfflineTestCallback
+  - GaussianPileOfflineSaveCallback
+  - GaussianPileOfflineFinishCallback
+  interval:
+    train:
+      step: 100
+      print: 500
+    debug: 1000
+    test: 30000
+    save: 30000
+scene:
+  dataset_name: tdsc_abus_2023
+  loading:
+    baseroot: /home/boywang25/ultrasound-scene-reconstruction/data
+    dataset_dirname: tdsc_abus_2023
+    sweep_name: validation_106
+    images_name: images.npy
+    pose_type: absolute
+    test_mode: holdout_interval
+    holdout_trim_each: 10
+    holdout_num_samples: 0
+    holdout_test_ratio: 0.2
+    image_value_mode: uint8_255
+    image_nan_value: 0.0
+    image_downsample_factor: 1
+    axial_downsample_factor: 1
+    frame_start: 0
+    frame_end: -1
+    frame_stride: 1
+    pose_mode: file
+    canonical_sweep_delta_mm: -1.0
+    canonical_sweep_delta_scale: 1.0
+    canonical_sweep_ref_frame: 0
+    canonical_sweep_axis: z
+    canonical_sweep_spacing_mode: uniform
+  sampler:
+    num_init: 1000000
+    num_new: 1000
+    scales_init:
+    - 0.3
+    - 0.3
+    - 0.3
+    quats_init:
+    - 1.0
+    - 0.0
+    - 0.0
+    - 0.0
+    uniform_ratio: 0.3
+    intensity_threshold: 0.03
+    jitter_radius: 0.2
+  scheduler:
+    test_ratio: 0.1
+  grid:
+    tile_size: 4.0
+    bbox_margin: 0.05
+model:
+  name: gaussianpile
+  render:
+    enable_input_checks: false
+  gauss_init:
+    num_points: 1000000
+  slice_render:
+    backend: ours_focus
+    tile_size_px: 16
+    radius_sigma: 3.0
+    sigma_z_mm: null
+    sigma_z_ratio: 0.75
+    prefilter_elevational_radius_mm: 0.0
+    det_eps: 1.0e-06
+    cov_eps: 1.0e-06
+    opacity_cull_threshold: 1.0e-06
+    render_chunk_size: 250000
+  gauss_container:
+    lr:
+      means: 0.0006
+      scales: 0.002
+      quats: 0.001
+      opacities: 0.02
+    lr_final_mult: 0.1
+    init_val:
+      opacities: 0.1
+    constraints:
+      scale_activation: exp
+      scale_min_mm: 0.05
+      scale_max_mm: 3.0
+      opacity_max: 1.0
+  offline:
+    diagnostics:
+      enable_render_stats: true
+      train_step: 100
+      all_black_eps: 1.0e-06
+      warn_on_all_black_test: true
+      fail_on_all_black_test: false
+      restore_best_on_finish: false
+    density_control:
+      enable:
+        densify: true
+        prune: true
+      timing:
+        start_iter: 1000
+        end_iter: 25000
+        freq: 2000
+        grad_accum_interval: 1
+      thresholds:
+        densify_grad: 5.0e-05
+        split_scale: 0.6
+        min_scale_mm: 0.01
+        prune_opacity: 0.002
+        prune_observation_score: 0.25
+        min_prune_observations: 4
+        max_prune_fraction_per_step: 0.0
+        min_keep_ratio: 0.0
+      n_max: 2000000
+loss:
+  needed_losses:
+  - l1
+  - ssim
+  lambdas:
+    l1: 0.8
+    ssim: 0.2
+    sobel: 0.0
+    highpass_l1: 0.0
+    marco_ssim: 0.0
+    lpips: 0.0
+    diff_tv: 0.0
+    scale_wall: 0.0
+    scale_aniso: 0.0
+    opacity: 0.0
+    attenuation_l1: 0.0
+    attenuation_tail: 0.0
+    pose_anchor: 0.0
+    pose_prior: 0.0
+    pose_smooth: 0.0
+    pose_acc: 0.0
+    pose_aux_rec: 0.0
+    pose_registration: 0.0
+    pose_neighbor_registration: 0.0
+    pose_cycle: 0.0
+    pose_const_vel: 0.0
+    pose_gt_delta: 0.0
+    pose_occ_conf: 0.0
+    mse: 0.0
+  ssim_cfg:
+    window_size: 11
+    sigma: 1.5
+    downsample_enabled: false
+    downsample_factor: 1
+    downsample_mode: area
+    clamp_inputs: false
+  l1_cfg:
+    clamp_inputs: false
+  highpass_l1_cfg:
+    kernel_size: 9
+    sigma: 2.0
+  marco_ssim_cfg:
+    blur_window_size: 21
+    blur_sigma: 3.0
+    ssim_window_size: 11
+    ssim_sigma: 1.5
+  lpips_cfg:
+    metric_name: lpips
+  scale_wall_cfg:
+    min_scales_mm: 0.001
+    max_scales_mm: 1.2
+  scale_aniso_cfg:
+    max_aniso_ratio: 2.5
+  opacity_cfg:
+    target_opacity: 0.5
+  attenuation_tail_cfg:
+    max_attenuation: 0.05
+  pose_anchor_cfg:
+    rot_weight: 1.0
+    trans_weight: 1.0
+  pose_prior_cfg:
+    rot_weight: 1.0
+    trans_weight: 1.0
+  pose_smooth_cfg:
+    rot_weight: 1.0
+    trans_weight: 1.0
+  pose_acc_cfg:
+    rot_weight: 1.0
+    trans_weight: 1.0
+  pose_aux_rec_cfg:
+    l1_weight: 0.8
+    ssim_weight: 0.2
+    window_size: 11
+    sigma: 1.5
+  pose_registration_cfg:
+    photo_weight: 1.0
+    grad_weight: 0.2
+    charbonnier_eps: 0.001
+  pose_neighbor_registration_cfg:
+    photo_weight: 1.0
+    ssim_weight: 0.2
+    charbonnier_eps: 0.001
+    window_size: 11
+    sigma: 1.5
+    min_overlap_ratio: 0.3
+  pose_cycle_cfg:
+    photo_weight: 1.0
+    ssim_weight: 0.1
+    charbonnier_eps: 0.001
+    window_size: 11
+    sigma: 1.5
+    min_overlap_ratio: 0.3
+  pose_const_vel_cfg:
+    rot_weight: 1.0
+    trans_weight: 1.0
+  pose_gt_delta_cfg:
+    rot_weight: 1.0
+    trans_weight: 1.0
+  pose_occ_conf_cfg:
+    charbonnier_epsilon: 0.001
+    confidence_gamma: 1.0
+    confidence_min: 0.05
+    detach_confidence: true
+metric:
+  needed_metrics:
+  - psnr
+  - l1
+  - ssim
+  - lpips
+  - dists
+  - gmsd
+  max_vis_frames: 10
+  save_per_frame_metrics: true
+  psnr_cfg:
+    max_val: 1.0
+system:
+  output_root: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1
+  checkpoint_root: ''
+  output_dir: ''
+  checkpoint_dir: ''
+  link_checkpoint_dir: true
+  exp_tag: stage3_full_sweep_tdsc_abus_2023_validation_106_gaussianpile
+  run_id: ''
+  run_name: ''
+  config_path: ''
+  hydra_output_dir: ''
+  use_legacy_output_naming: false
+  device: cuda
+  seed: 42
+wandb:
+  enable: false
+  project: omniultra
+  entity: ''
+  mode: online
+  group: ''
+  name: ''
+  tags: []
+  log_artifacts: false
+experiment:
+  family: production/comparisons/us_recon_four_dataset_p100k_v1/gs_strict
+  name: gaussianpile
+  description: GaussianPile GS-strict production baseline; r075 elevational sigma
+    from DatasetMeta delta_elevational_mm, spine-calibrated low-opacity pruning, 1M
+    init, 30k iterations, n_max 2M, final 30k checkpoint, shared DC timing, unified
+    0.8 L1 + 0.2 SSIM loss.
+  protocol: gs_strict_1m30k_dc_t1000_25000_f2000
+task: train

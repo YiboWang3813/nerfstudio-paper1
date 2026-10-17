@@ -1,0 +1,29 @@
+time: 2026-06-26 18:28:57
+job_id: 66016
+benchmark: ultragray_acc_speed_balance
+stage: preproduction
+dataset: tdsc_abus_2023
+sweep: validation_100
+method: ultragray_lw2mm
+exp_name: ultragray_tdsc_abus_2023_validation_100_lw2mm
+train_start_time: 
+train_end_time: 
+train_wall_time_sec: 
+train_iterations: 30000
+train_iter_per_sec: 
+train_start_gpu_mem_mb: 
+train_end_gpu_mem_mb: 
+train_peak_gpu_mem_mb: 
+train_exit_code: 
+best_num_gaussians: 733396.0
+final_num_gaussians: 733396.0
+min_num_gaussians: 733396.0
+max_num_gaussians: 1000000.0
+dc_event_count: 12
+checkpoint_bytes: 132018630
+vis_bytes: 3818386
+eval_bytes: 18426
+output_bytes: 136707139
+latest_output_mtime: 2026-06-26 18:28:57
+efficiency_tsv: 
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/ultragray_acc_speed_balance/runs/tdsc_abus_2023/validation_100/lw2mm

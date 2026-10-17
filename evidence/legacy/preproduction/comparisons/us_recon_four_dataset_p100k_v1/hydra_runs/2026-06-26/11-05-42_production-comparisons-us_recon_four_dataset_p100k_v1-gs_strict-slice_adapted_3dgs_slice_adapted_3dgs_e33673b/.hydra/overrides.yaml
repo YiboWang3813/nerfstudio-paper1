@@ -1,0 +1,10 @@
+- experiment=production/comparisons/us_recon_four_dataset_p100k_v1/gs_strict/slice_adapted_3dgs
+- task=dry_run
+- system.device=cpu
+- engine.iterations=1
+- scene=tdsc_abus_2023
+- scene.loading.sweep_name=validation_100
+- scene.loading.test_mode=holdout_interval
+- scene.loading.pose_type=absolute
+- scene.loading.pose_mode=file
+- model.render.slice_thickness_mm=0.475674

@@ -1,0 +1,39 @@
+run_id: f04f52b
+run_name: production-comparisons-us_recon_four_dataset_p100k_v1-gs_strict_ours_ours_f04f52b
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/ours_gs_strict_diagnostics/runs/a1_corridor_sweep/nvs/tdsc_abus_2023/validation_100/ours/r200
+checkpoint_dir: /tmp/boywang25/omniultra_checkpoints/runs/a1_corridor_sweep/nvs/tdsc_abus_2023/validation_100/ours/r200/checkpoints
+checkpoint_root: /tmp/boywang25/omniultra_checkpoints
+hydra_output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/ours_gs_strict_diagnostics/runs/a1_corridor_sweep/nvs/tdsc_abus_2023/validation_100/ours/r200
+config_path: hydra:experiment=production/comparisons/us_recon_four_dataset_p100k_v1/gs_strict/ours
+overrides:
+- experiment=production/comparisons/us_recon_four_dataset_p100k_v1/gs_strict/ours
+- system.output_root=/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/ours_gs_strict_diagnostics
+- system.exp_tag=a1_corridor_sweep_tdsc_abus_2023_validation_100_ours_r200
+- scene=tdsc_abus_2023
+- scene.loading.sweep_name=validation_100
+- scene.loading.test_mode=holdout_interval
+- scene.loading.holdout_trim_each=10
+- scene.loading.holdout_num_samples=0
+- scene.loading.holdout_test_ratio=0.2
+- scene.loading.pose_type=absolute
+- scene.loading.pose_mode=file
+- scene.loading.image_downsample_factor=1
+- scene.loading.axial_downsample_factor=1
+- system.seed=42
+- system.checkpoint_root=/tmp/boywang25/omniultra_checkpoints
+- system.link_checkpoint_dir=true
+- metric.needed_metrics=[psnr,l1,ssim,lpips,dists,gmsd]
+- metric.max_vis_frames=10
+- metric.save_per_frame_metrics=true
+- ++model.slice_render.elev_corridor_half_mm=0.951348
+git_commit: 335f67b58d6dc268cf0a60bc50f0a8705c3a2177
+git_dirty: true
+dataset: tdsc_abus_2023
+model: ours
+exp_tag: a1_corridor_sweep_tdsc_abus_2023_validation_100_ours_r200
+seed: 42
+wandb:
+  enabled: false
+  project: omniultra
+  mode: online
+  run_id: ''

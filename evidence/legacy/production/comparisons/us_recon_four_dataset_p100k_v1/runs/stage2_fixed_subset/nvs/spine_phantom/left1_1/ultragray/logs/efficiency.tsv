@@ -1,0 +1,31 @@
+key	value
+train_start_time	2026-06-26 21:08:32+0800
+train_start_epoch	1782479312
+train_start_gpu_mem_mb	1
+train_gpu_mem_samples	/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/spine_phantom/left1_1/ultragray/logs/efficiency_gpu_mem_samples.tsv
+train_end_time	2026-06-26 21:12:07+0800
+train_end_epoch	1782479527
+train_wall_time_sec	215
+train_end_gpu_mem_mb	1
+train_peak_gpu_mem_mb	3627
+train_exit_code	0
+train_start_time	2026-06-26 21:20:35+0800
+train_start_epoch	1782480035
+train_start_gpu_mem_mb	1
+train_gpu_mem_samples	/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/spine_phantom/left1_1/ultragray/logs/efficiency_gpu_mem_samples.tsv
+train_end_time	2026-06-26 21:23:39+0800
+train_end_epoch	1782480219
+train_wall_time_sec	184
+train_end_gpu_mem_mb	1
+train_peak_gpu_mem_mb	3627
+train_exit_code	0
+train_start_time	2026-06-26 21:28:12+0800
+train_start_epoch	1782480492
+train_start_gpu_mem_mb	1
+train_gpu_mem_samples	/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/spine_phantom/left1_1/ultragray/logs/efficiency_gpu_mem_samples.tsv
+train_end_time	2026-06-26 21:30:36+0800
+train_end_epoch	1782480636
+train_wall_time_sec	144
+train_end_gpu_mem_mb	1
+train_peak_gpu_mem_mb	3627
+train_exit_code	0

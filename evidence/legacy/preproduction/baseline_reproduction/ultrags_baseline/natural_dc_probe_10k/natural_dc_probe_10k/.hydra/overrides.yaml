@@ -1,0 +1,7 @@
+- experiment=production/comparisons/us_recon_four_dataset_p100k_v1/gs_strict/ultrags_baseline
+- system.output_root=outputs/preproduction/baseline_reproduction/ultrags_baseline/natural_dc_probe_10k
+- system.exp_tag=natural_dc_probe_10k
+- engine.iterations=10000
+- engine.interval.test=0
+- engine.interval.save=0
+- system.device=cuda

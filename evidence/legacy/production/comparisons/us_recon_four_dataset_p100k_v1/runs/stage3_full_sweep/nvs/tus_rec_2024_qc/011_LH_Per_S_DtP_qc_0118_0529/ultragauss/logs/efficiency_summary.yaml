@@ -1,0 +1,29 @@
+time: 2026-06-27 04:50:57
+job_id: 66264
+benchmark: us_recon_four_dataset_p100k_v1
+stage: stage3_full_sweep
+dataset: tus_rec_2024_qc
+sweep: 011_LH_Per_S_DtP_qc_0118_0529
+method: ultragauss
+exp_name: stage3_full_sweep_tus_rec_2024_qc_011_LH_Per_S_DtP_qc_0118_0529_ultragauss
+train_start_time: 2026-06-27 04:48:07+0800
+train_end_time: 2026-06-27 04:50:57+0800
+train_wall_time_sec: 170
+train_iterations: 30000
+train_iter_per_sec: 176.47058823529412
+train_start_gpu_mem_mb: 1
+train_end_gpu_mem_mb: 6565
+train_peak_gpu_mem_mb: 13289
+train_exit_code: 0
+best_num_gaussians: 758757.0
+final_num_gaussians: 758757.0
+min_num_gaussians: 758757.0
+max_num_gaussians: 1000000.0
+dc_event_count: 12
+checkpoint_bytes: 100161312
+vis_bytes: 2626111
+eval_bytes: 21310
+output_bytes: 104604644
+latest_output_mtime: 2026-06-27 04:50:57
+efficiency_tsv: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/011_LH_Per_S_DtP_qc_0118_0529/ultragauss/logs/efficiency.tsv
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/011_LH_Per_S_DtP_qc_0118_0529/ultragauss

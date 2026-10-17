@@ -1,0 +1,43 @@
+dataset	panel	y_value	x_value	row_id	delta_psnr	final_G	annotation_G_k	is_default
+Liver	qd_by_B	0.96	0.001	h2_016	0.0038586	675713.0	676	False
+Liver	qd_by_B	0.96	0.005	h2_017	-0.0016635	703443.0	703	False
+Liver	qd_by_B	0.96	0.05	h2_018	-0.0105727	711076.0	711	False
+Liver	qd_by_B	0.98	0.001	h2_019	0.0004661	675737.0	676	False
+Liver	qd_by_B	0.98	0.005	h2_020	0.0010634	688560.0	689	False
+Liver	qd_by_B	0.98	0.05	h2_001	0	688611.0	689	True
+Liver	qd_by_B	0.99	0.001	h2_021	-0.0002218	675559.0	676	False
+Liver	qd_by_B	0.99	0.005	h2_022	-0.0015447	678828.0	679	False
+Liver	qd_by_B	0.99	0.05	h2_023	0.0021039	678026.0	678	False
+Arm	qd_by_B	0.96	0.001	h2_050	-0.0024937	711101.0	711	False
+Arm	qd_by_B	0.96	0.005	h2_051	-0.0042852	724242.0	724	False
+Arm	qd_by_B	0.96	0.05	h2_052	-0.0051351	724108.0	724	False
+Arm	qd_by_B	0.98	0.001	h2_053	-0.0060518	711098.0	711	False
+Arm	qd_by_B	0.98	0.005	h2_054	-0.0024427	713979.0	714	False
+Arm	qd_by_B	0.98	0.05	h2_035	0	713263.0	713	True
+Arm	qd_by_B	0.99	0.001	h2_055	-0.0028507	707877.0	708	False
+Arm	qd_by_B	0.99	0.005	h2_056	0.0071192	707735.0	708	False
+Arm	qd_by_B	0.99	0.05	h2_057	0.0062296	708435.0	708	False
+Liver	qp_by_qA	0.05	0.7	h2_024	-0.0038469	722969.0	723	False
+Liver	qp_by_qA	0.05	0.8	h2_025	-0.0083901	688566.0	689	False
+Liver	qp_by_qA	0.05	0.9	h2_026	-0.0056806	661306.0	661	False
+Liver	qp_by_qA	0.1	0.7	h2_027	-0.0092843	722679.0	723	False
+Liver	qp_by_qA	0.1	0.8	h2_001	0	688611.0	689	True
+Liver	qp_by_qA	0.1	0.9	h2_028	0.0038832	661460.0	661	False
+Liver	qp_by_qA	0.15	0.7	h2_029	-0.0080358	722517.0	723	False
+Liver	qp_by_qA	0.15	0.8	h2_030	-0.0066058	688682.0	689	False
+Liver	qp_by_qA	0.15	0.9	h2_031	0.0051189	662097.0	662	False
+Arm	qp_by_qA	0.05	0.7	h2_058	0.0032528	728740.0	729	False
+Arm	qp_by_qA	0.05	0.8	h2_059	-0.0005754	713655.0	714	False
+Arm	qp_by_qA	0.05	0.9	h2_060	0.0066189	701034.0	701	False
+Arm	qp_by_qA	0.1	0.7	h2_061	-0.0024633	728551.0	729	False
+Arm	qp_by_qA	0.1	0.8	h2_035	0	713263.0	713	True
+Arm	qp_by_qA	0.1	0.9	h2_062	0.0046608	702094.0	702	False
+Arm	qp_by_qA	0.15	0.7	h2_063	0.0048676	727557.0	728	False
+Arm	qp_by_qA	0.15	0.8	h2_064	0.0056868	713286.0	713	False
+Arm	qp_by_qA	0.15	0.9	h2_065	0.0008189	702379.0	702	False
+Liver	tau_alpha		0.00005	h2_032	-0.0059823	732376.0	732	False
+Liver	tau_alpha		0.0001	h2_001	0	688611.0	689	True
+Liver	tau_alpha		0.0005	h2_033	0.0099599	565867.0	566	False
+Arm	tau_alpha		0.00005	h2_066	-0.0039076	738377.0	738	False
+Arm	tau_alpha		0.0001	h2_035	0	713263.0	713	True
+Arm	tau_alpha		0.0005	h2_067	0.0078465	639733.0	640	False

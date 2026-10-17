@@ -1,0 +1,16 @@
+benchmark: ours_production_ablations
+status: reset_for_rerun
+reset_date: "2026-06-27"
+reason: "Align Ours ablations with latest GS-strict production comparison config."
+checkpoint_retention: none
+required_artifacts:
+  - summaries
+  - per_run_metric_tables
+  - per_frame_metrics
+  - scalar_logs
+  - efficiency_logs
+  - manifests
+  - hydra_config_snapshots
+  - analysis_notes
+  - generated_tables
+  - generated_figures

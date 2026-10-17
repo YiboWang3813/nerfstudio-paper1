@@ -1,0 +1,38 @@
+run_id: plr0050
+run_name: production-comparisons-us_recon_four_dataset_p100k_v1-gs_strict_ultragauss_ultragauss_plr0050
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/ultragauss_tus2024qc_ablation/runs/precision_lr_one_sweep/nvs/tus_rec_2024_qc/011_LH_Per_L_PtD_qc_0006_0690/ultragauss_plr0050
+checkpoint_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/ultragauss_tus2024qc_ablation/runs/precision_lr_one_sweep/nvs/tus_rec_2024_qc/011_LH_Per_L_PtD_qc_0006_0690/ultragauss_plr0050/checkpoints
+checkpoint_root: ''
+hydra_output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/ultragauss_tus2024qc_ablation/runs/precision_lr_one_sweep/nvs/tus_rec_2024_qc/011_LH_Per_L_PtD_qc_0006_0690/ultragauss_plr0050
+config_path: hydra:experiment=production/comparisons/us_recon_four_dataset_p100k_v1/gs_strict/ultragauss
+overrides:
+- experiment=production/comparisons/us_recon_four_dataset_p100k_v1/gs_strict/ultragauss
+- system.output_root=/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/ultragauss_tus2024qc_ablation
+- system.exp_tag=precision_lr_one_sweep_tus_rec_2024_qc_011_LH_Per_L_PtD_qc_0006_0690_ultragauss_plr0050
+- scene=tus_rec_2024_qc
+- scene.loading.sweep_name=011_LH_Per_L_PtD_qc_0006_0690
+- scene.loading.test_mode=holdout_interval
+- scene.loading.holdout_trim_each=10
+- scene.loading.holdout_num_samples=0
+- scene.loading.holdout_test_ratio=0.2
+- scene.loading.pose_type=absolute
+- scene.loading.pose_mode=file
+- scene.loading.image_downsample_factor=1
+- scene.loading.axial_downsample_factor=1
+- system.seed=42
+- engine.interval.save=0
+- metric.needed_metrics=[psnr,l1,ssim,lpips,dists,gmsd]
+- metric.max_vis_frames=10
+- metric.save_per_frame_metrics=true
+- model.gauss_container.lr.precision_tril=0.050
+git_commit: 49ba676007498cb3701fd71ac1495c9b84726ad9
+git_dirty: true
+dataset: tus_rec_2024
+model: ultragauss
+exp_tag: precision_lr_one_sweep_tus_rec_2024_qc_011_LH_Per_L_PtD_qc_0006_0690_ultragauss_plr0050
+seed: 42
+wandb:
+  enabled: false
+  project: omniultra
+  mode: online
+  run_id: ''

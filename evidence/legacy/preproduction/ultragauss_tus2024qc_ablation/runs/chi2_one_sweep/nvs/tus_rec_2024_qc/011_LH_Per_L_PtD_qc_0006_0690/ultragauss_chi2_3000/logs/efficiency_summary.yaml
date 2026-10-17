@@ -1,0 +1,29 @@
+time: 2026-06-27 11:13:59
+job_id: 66340
+benchmark: us_recon_four_dataset_p100k_v1
+stage: chi2_one_sweep
+dataset: tus_rec_2024_qc
+sweep: 011_LH_Per_L_PtD_qc_0006_0690
+method: ultragauss_chi2_3000
+exp_name: chi2_one_sweep_tus_rec_2024_qc_011_LH_Per_L_PtD_qc_0006_0690_ultragauss_chi2_3000
+train_start_time: 
+train_end_time: 
+train_wall_time_sec: 
+train_iterations: 30000
+train_iter_per_sec: 
+train_start_gpu_mem_mb: 
+train_end_gpu_mem_mb: 
+train_peak_gpu_mem_mb: 
+train_exit_code: 
+best_num_gaussians: 888404.0
+final_num_gaussians: 888404.0
+min_num_gaussians: 888404.0
+max_num_gaussians: 1000000.0
+dc_event_count: 12
+checkpoint_bytes: 0
+vis_bytes: 2578639
+eval_bytes: 35266
+output_bytes: 4381336
+latest_output_mtime: 2026-06-27 11:13:58
+efficiency_tsv: 
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/ultragauss_tus2024qc_ablation/runs/chi2_one_sweep/nvs/tus_rec_2024_qc/011_LH_Per_L_PtD_qc_0006_0690/ultragauss_chi2_3000

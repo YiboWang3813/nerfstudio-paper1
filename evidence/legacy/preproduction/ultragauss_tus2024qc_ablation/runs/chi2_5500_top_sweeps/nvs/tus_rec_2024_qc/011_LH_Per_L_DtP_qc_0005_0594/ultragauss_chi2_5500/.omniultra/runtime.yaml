@@ -1,0 +1,5 @@
+created_at: '2026-06-27T11:20:10'
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/ultragauss_tus2024qc_ablation/runs/chi2_5500_top_sweeps/nvs/tus_rec_2024_qc/011_LH_Per_L_DtP_qc_0005_0594/ultragauss_chi2_5500
+checkpoint_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/ultragauss_tus2024qc_ablation/runs/chi2_5500_top_sweeps/nvs/tus_rec_2024_qc/011_LH_Per_L_DtP_qc_0005_0594/ultragauss_chi2_5500/checkpoints
+hydra_output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/ultragauss_tus2024qc_ablation/runs/chi2_5500_top_sweeps/nvs/tus_rec_2024_qc/011_LH_Per_L_DtP_qc_0005_0594/ultragauss_chi2_5500
+config_path: hydra:experiment=production/comparisons/us_recon_four_dataset_p100k_v1/gs_strict/ultragauss

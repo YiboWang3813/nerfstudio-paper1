@@ -1,0 +1,5 @@
+created_at: '2026-06-27T11:51:00'
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/runs/t02/spine_phantom/left1/local_gradient
+checkpoint_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/runs/t02/spine_phantom/left1/local_gradient/checkpoints
+hydra_output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/runs/t02/spine_phantom/left1/local_gradient
+config_path: hydra:experiment=production/ablations/ours/base_1m30k

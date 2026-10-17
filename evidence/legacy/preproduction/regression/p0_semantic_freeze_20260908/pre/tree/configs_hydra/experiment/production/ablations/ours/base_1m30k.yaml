@@ -1,0 +1,14 @@
+# @package _global_
+
+defaults:
+- /experiment/production/comparisons/us_recon_four_dataset_p100k_v1/gs_strict/ours
+- _self_
+
+system:
+  exp_tag: ours_ablation_base_1m30k_gs_strict_rerun
+
+experiment:
+  family: production/ablations/ours
+  name: base_1m30k
+  protocol: gs_strict_1m30k_final30k_no_checkpoint_retention
+  description: Ours ablation base aligned to the latest GS-strict production comparison row; submitters provide dataset, variant, and ablation-specific overrides.

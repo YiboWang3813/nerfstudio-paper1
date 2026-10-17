@@ -1,0 +1,57 @@
+run_id: seed0
+run_name: production-ablations-ours_base_1m30k_ours_seed0
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/runs/t09/tdsc_abus_2023/validation_100/base_local_gradient_file_seed0
+checkpoint_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/runs/t09/tdsc_abus_2023/validation_100/base_local_gradient_file_seed0/checkpoints
+checkpoint_root: ''
+hydra_output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/runs/t09/tdsc_abus_2023/validation_100/base_local_gradient_file_seed0
+config_path: hydra:experiment=production/ablations/ours/base_1m30k
+overrides:
+- experiment=production/ablations/ours/base_1m30k
+- system.output_root=/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours
+- system.exp_tag=t09_tdsc_abus_2023_validation_100_base_local_gradient_file_seed0
+- scene=tdsc_abus_2023
+- scene.loading.sweep_name=validation_100
+- scene.loading.holdout_trim_each=10
+- ++model.slice_render.elev_corridor_half_mm=0.238
+- scene.loading.test_mode=holdout_interval
+- scene.loading.holdout_test_ratio=0.2
+- scene.loading.holdout_num_samples=0
+- scene.loading.pose_type=absolute
+- scene.loading.image_downsample_factor=1
+- scene.loading.axial_downsample_factor=1
+- engine.iterations=30000
+- engine.interval.test=30000
+- engine.interval.save=30000
+- scene.sampler.num_init=1000000
+- model.gauss_init.num_points=1000000
+- metric.needed_metrics=[psnr,l1,ssim,lpips,dists,gmsd]
+- metric.max_vis_frames=10
+- metric.save_per_frame_metrics=true
+- loss.needed_losses=[l1,ssim]
+- loss.lambdas.l1=0.8
+- loss.lambdas.ssim=0.2
+- loss.lambdas.scale_wall=0.0
+- loss.l1_cfg.clamp_inputs=false
+- loss.ssim_cfg.clamp_inputs=false
+- model.gauss_container.constraints.scale_activation=bounded_sigmoid
+- model.offline.density_control.timing.start_iter=1000
+- model.offline.density_control.timing.end_iter=25000
+- model.offline.density_control.timing.freq=2000
+- model.slice_render.ray_attenuation_enabled=false
+- model.slice_render.ray_attenuation_beta=0.0
+- model.slice_render.ray_attenuation_strength=0.0
+- model.offline.density_control.strategy=gradient
+- model.offline.density_control.responsibility.enabled=false
+- scene.loading.pose_mode=file
+- system.seed=0
+git_commit: 4fe88c2aeffc47bc8f34bfb2e412aeefbd08bf4a
+git_dirty: true
+dataset: tdsc_abus_2023
+model: ours
+exp_tag: t09_tdsc_abus_2023_validation_100_base_local_gradient_file_seed0
+seed: 0
+wandb:
+  enabled: false
+  project: omniultra
+  mode: online
+  run_id: ''

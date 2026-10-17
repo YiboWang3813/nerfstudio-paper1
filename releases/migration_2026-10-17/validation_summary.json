@@ -86,5 +86,15 @@
     "passed": true,
     "historical_checkpoint_write_destination_separated": true
   },
-  "additional_renderer_tests_per_tree": 22
+  "additional_renderer_tests_per_tree": 22,
+  "external_artifact_content_index": {
+    "checkpoints": {
+      "files": 604,
+      "bytes": 30975006834
+    },
+    "derived_artifacts": {
+      "files": 173,
+      "bytes": 3139492009
+    }
+  }
 }

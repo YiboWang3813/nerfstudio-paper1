@@ -1,0 +1,4 @@
+created_at: '2026-06-25T18:18:19'
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage1_scale_tail_diag/nvs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/ultragauss_scale_tail_diag_v2
+hydra_output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage1_scale_tail_diag/nvs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/ultragauss_scale_tail_diag_v2
+config_path: hydra:experiment=production/comparisons/us_recon_four_dataset_p100k_v1/gs_strict/ultragauss

@@ -1,0 +1,4 @@
+created_at: '2026-06-25T19:22:00'
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/2026-06-25/19-22-00_production-comparisons-us_recon_four_dataset_p100k_v1-gs_strict-slice_adapted_3dgs_slice_adapted_3dgs_3ac3ab3
+hydra_output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/2026-06-25/19-22-00_production-comparisons-us_recon_four_dataset_p100k_v1-gs_strict-slice_adapted_3dgs_slice_adapted_3dgs_3ac3ab3
+config_path: hydra:experiment=production/comparisons/us_recon_four_dataset_p100k_v1/gs_strict/slice_adapted_3dgs

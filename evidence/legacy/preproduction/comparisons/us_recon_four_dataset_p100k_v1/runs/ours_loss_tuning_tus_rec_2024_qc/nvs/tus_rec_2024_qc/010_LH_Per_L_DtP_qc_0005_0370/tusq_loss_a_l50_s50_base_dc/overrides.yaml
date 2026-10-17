@@ -1,0 +1,27 @@
+overrides:
+- experiment=production/comparisons/us_recon_four_dataset_p100k_v1/gs_strict/ours
+- system.output_root=/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1
+- system.exp_tag=ours_loss_tuning_tus_rec_2024_qc_tus_rec_2024_qc_010_LH_Per_L_DtP_qc_0005_0370_tusq_loss_a_l50_s50_base_dc
+- scene=tus_rec_2024_qc
+- scene.loading.sweep_name=010_LH_Per_L_DtP_qc_0005_0370
+- scene.loading.test_mode=holdout_interval
+- scene.loading.holdout_trim_each=10
+- scene.loading.holdout_num_samples=0
+- scene.loading.holdout_test_ratio=0.2
+- scene.loading.pose_type=absolute
+- scene.loading.pose_mode=file
+- scene.loading.image_downsample_factor=1
+- scene.loading.axial_downsample_factor=1
+- system.seed=42
+- metric.needed_metrics=[psnr,l1,ssim,lpips,dists,gmsd]
+- metric.max_vis_frames=10
+- metric.save_per_frame_metrics=true
+- ++model.slice_render.elev_corridor_half_mm=0.202
+- loss.lambdas.l1=0.50
+- loss.lambdas.ssim=0.50
+- model.offline.density_control.thresholds.densify_grad=0.000015
+- model.offline.density_control.thresholds.prune_opacity=0.0001
+- model.offline.density_control.responsibility.score_quantile=0.98
+- model.offline.density_control.responsibility.max_fraction=0.05
+- model.offline.density_control.responsibility.low_contribution_quantile=0.10
+- model.offline.density_control.responsibility.protect_attenuation_quantile=0.80

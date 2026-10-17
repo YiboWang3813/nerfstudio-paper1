@@ -1,0 +1,29 @@
+time: 2026-06-25 11:33:04
+job_id: 65569
+benchmark: us_recon_four_dataset_p100k_v1
+stage: dc_tuning
+dataset: spine_phantom
+sweep: left1
+method: ultrags_baseline
+exp_name: dc_tuning_spine_phantom_left1_ugs_op0005_reset_on
+train_start_time: 2026-06-25 11:23:18+0800
+train_end_time: 2026-06-25 11:33:03+0800
+train_wall_time_sec: 585
+train_iterations: 30000
+train_iter_per_sec: 51.282051282051285
+train_start_gpu_mem_mb: 1
+train_end_gpu_mem_mb: 1
+train_peak_gpu_mem_mb: 5389
+train_exit_code: 0
+best_num_gaussians: 1014270.0
+final_num_gaussians: 1014270.0
+min_num_gaussians: 1000000.0
+max_num_gaussians: 1014270.0
+dc_event_count: 12
+checkpoint_bytes: 2745423540
+vis_bytes: 2112965
+eval_bytes: 26951
+output_bytes: 2751973815
+latest_output_mtime: 2026-06-25 11:33:03
+efficiency_tsv: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/dc_tuning/nvs/spine_phantom/left1/ugs_op0005_reset_on/logs/efficiency.tsv
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/dc_tuning/nvs/spine_phantom/left1/ugs_op0005_reset_on

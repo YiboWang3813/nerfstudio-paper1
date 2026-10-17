@@ -1,0 +1,11 @@
+key	value
+train_start_time	2026-06-25 21:46:51+0800
+train_start_epoch	1782395211
+train_start_gpu_mem_mb	1
+train_gpu_mem_samples	/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/ideas/ours/tdsc_attenuation_formula_tuning/runs/stage_tdsc_validation100/nvs/tdsc_abus_2023/validation_100/ours_b8_no_intprune_slice_depth_b080_s055_min035/logs/efficiency_gpu_mem_samples.tsv
+train_end_time	2026-06-25 21:51:01+0800
+train_end_epoch	1782395461
+train_wall_time_sec	250
+train_end_gpu_mem_mb	1
+train_peak_gpu_mem_mb	5623
+train_exit_code	0

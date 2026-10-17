@@ -1,0 +1,11 @@
+key	value
+train_start_time	2026-06-25 14:00:15+0800
+train_start_epoch	1782367214
+train_start_gpu_mem_mb	1
+train_gpu_mem_samples	/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/ours_tuning_tus_rec_2024_qc/nvs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/tusq_dc_c_grad75_sq97_mf08_lcq10_paq80/logs/efficiency_gpu_mem_samples.tsv
+train_end_time	2026-06-25 14:05:25+0800
+train_end_epoch	1782367525
+train_wall_time_sec	311
+train_end_gpu_mem_mb	1
+train_peak_gpu_mem_mb	6055
+train_exit_code	0

@@ -1,0 +1,29 @@
+time: 2026-06-25 10:57:58
+job_id: 65551
+benchmark: us_recon_four_dataset_p100k_v1
+stage: stage1_calibration
+dataset: spine_phantom
+sweep: left1
+method: ours
+exp_name: stage1_calibration_spine_phantom_left1_ours
+train_start_time: 2026-06-25 10:52:00+0800
+train_end_time: 2026-06-25 10:57:57+0800
+train_wall_time_sec: 357
+train_iterations: 30000
+train_iter_per_sec: 84.03361344537815
+train_start_gpu_mem_mb: 1
+train_end_gpu_mem_mb: 1
+train_peak_gpu_mem_mb: 3815
+train_exit_code: 0
+best_num_gaussians: 851543.0
+final_num_gaussians: 851543.0
+min_num_gaussians: 851543.0
+max_num_gaussians: 1002185.0
+dc_event_count: 12
+checkpoint_bytes: 779683058
+vis_bytes: 2156154
+eval_bytes: 27152
+output_bytes: 782763292
+latest_output_mtime: 2026-06-25 10:57:57
+efficiency_tsv: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage1_calibration/nvs/spine_phantom/left1/ours/logs/efficiency.tsv
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage1_calibration/nvs/spine_phantom/left1/ours

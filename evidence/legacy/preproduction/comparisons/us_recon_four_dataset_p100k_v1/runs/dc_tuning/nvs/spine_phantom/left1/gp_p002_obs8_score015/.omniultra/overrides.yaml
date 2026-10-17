@@ -1,0 +1,21 @@
+overrides:
+- experiment=production/comparisons/us_recon_four_dataset_p100k_v1/gs_strict/gaussianpile
+- system.output_root=/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1
+- system.exp_tag=dc_tuning_spine_phantom_left1_gp_p002_obs8_score015
+- scene=spine_phantom
+- scene.loading.sweep_name=left1
+- scene.loading.test_mode=holdout_interval
+- scene.loading.holdout_trim_each=8
+- scene.loading.holdout_num_samples=0
+- scene.loading.holdout_test_ratio=0.2
+- scene.loading.pose_type=absolute
+- scene.loading.pose_mode=file
+- scene.loading.image_downsample_factor=1
+- scene.loading.axial_downsample_factor=1
+- system.seed=42
+- metric.needed_metrics=[psnr,l1,ssim,lpips,dists,gmsd]
+- metric.max_vis_frames=10
+- metric.save_per_frame_metrics=true
+- model.offline.density_control.thresholds.prune_opacity=0.002
+- model.offline.density_control.thresholds.min_prune_observations=8
+- model.offline.density_control.thresholds.prune_observation_score=0.15

@@ -1,0 +1,34 @@
+run_id: f538bf6
+run_name: production-comparisons-us_recon_four_dataset_p100k_v1-gs_strict_ours_ours_f538bf6
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage1_calibration/nvs/spine_phantom/left1/ours
+hydra_output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage1_calibration/nvs/spine_phantom/left1/ours
+config_path: hydra:experiment=production/comparisons/us_recon_four_dataset_p100k_v1/gs_strict/ours
+overrides:
+- experiment=production/comparisons/us_recon_four_dataset_p100k_v1/gs_strict/ours
+- system.output_root=/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1
+- system.exp_tag=stage1_calibration_spine_phantom_left1_ours
+- scene=spine_phantom
+- scene.loading.sweep_name=left1
+- scene.loading.test_mode=holdout_interval
+- scene.loading.holdout_trim_each=8
+- scene.loading.holdout_num_samples=0
+- scene.loading.holdout_test_ratio=0.2
+- scene.loading.pose_type=absolute
+- scene.loading.pose_mode=file
+- scene.loading.image_downsample_factor=1
+- scene.loading.axial_downsample_factor=1
+- system.seed=42
+- metric.needed_metrics=[psnr,l1,ssim,lpips,dists,gmsd]
+- metric.max_vis_frames=10
+- metric.save_per_frame_metrics=true
+git_commit: 64652f56ea5ead0c9da516cd3f0d8ca304262667
+git_dirty: false
+dataset: spine_phantom
+model: ours
+exp_tag: stage1_calibration_spine_phantom_left1_ours
+seed: 42
+wandb:
+  enabled: false
+  project: omniultra
+  mode: online
+  run_id: ''

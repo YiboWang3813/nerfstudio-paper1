@@ -1,0 +1,29 @@
+time: 2026-06-25 22:40:04
+job_id: 65807
+benchmark: tdsc_echo_saturation_fix
+stage: stage_tdsc_validation100
+dataset: tdsc_abus_2023
+sweep: validation_100
+method: ours_b8_no_intprune_slice_depth_echo_init005_lr004_attlr005
+exp_name: stage_tdsc_validation100_tdsc_abus_2023_validation_100_ours_b8_no_intprune_slice_depth_echo_init005_lr004_attlr005
+train_start_time: 2026-06-25 22:35:09+0800
+train_end_time: 2026-06-25 22:40:04+0800
+train_wall_time_sec: 295
+train_iterations: 30000
+train_iter_per_sec: 101.69491525423729
+train_start_gpu_mem_mb: 1
+train_end_gpu_mem_mb: 1
+train_peak_gpu_mem_mb: 5489
+train_exit_code: 0
+best_num_gaussians: 1000052.0
+final_num_gaussians: 1000052.0
+min_num_gaussians: 1000000.0
+max_num_gaussians: 1012382.0
+dc_event_count: 12
+checkpoint_bytes: 144013715
+vis_bytes: 3743667
+eval_bytes: 64293
+output_bytes: 148537003
+latest_output_mtime: 2026-06-25 22:40:04
+efficiency_tsv: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/ideas/ours/tdsc_echo_saturation_fix/runs/stage_tdsc_validation100/nvs/tdsc_abus_2023/validation_100/ours_b8_no_intprune_slice_depth_echo_init005_lr004_attlr005/logs/efficiency.tsv
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/ideas/ours/tdsc_echo_saturation_fix/runs/stage_tdsc_validation100/nvs/tdsc_abus_2023/validation_100/ours_b8_no_intprune_slice_depth_echo_init005_lr004_attlr005

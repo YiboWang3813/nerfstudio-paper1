@@ -1,0 +1,4 @@
+created_at: '2026-06-25T20:39:39'
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/ideas/ours/tdsc_scale_attenuation_diagnosis/runs/stage_tdsc_validation100/nvs/tdsc_abus_2023/validation_100/ours_b5_attn_on
+hydra_output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/ideas/ours/tdsc_scale_attenuation_diagnosis/runs/stage_tdsc_validation100/nvs/tdsc_abus_2023/validation_100/ours_b5_attn_on
+config_path: hydra:experiment=production/comparisons/us_recon_four_dataset_p100k_v1/gs_strict/ours

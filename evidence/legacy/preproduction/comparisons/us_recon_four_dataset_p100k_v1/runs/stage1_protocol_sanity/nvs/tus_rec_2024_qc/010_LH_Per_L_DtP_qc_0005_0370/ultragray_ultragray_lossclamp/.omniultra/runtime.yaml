@@ -1,0 +1,4 @@
+created_at: '2026-06-25T18:50:09'
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage1_protocol_sanity/nvs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/ultragray_ultragray_lossclamp
+hydra_output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage1_protocol_sanity/nvs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/ultragray_ultragray_lossclamp
+config_path: hydra:experiment=production/comparisons/us_recon_four_dataset_p100k_v1/gs_strict/ultragray

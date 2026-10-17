@@ -1,0 +1,29 @@
+time: 2026-06-25 21:50:44
+job_id: 65804
+benchmark: tdsc_attenuation_formula_tuning
+stage: stage_tdsc_validation100
+dataset: tdsc_abus_2023
+sweep: validation_100
+method: ours_b8_no_intprune_slice_depth_b060_s030_min055
+exp_name: stage_tdsc_validation100_tdsc_abus_2023_validation_100_ours_b8_no_intprune_slice_depth_b060_s030_min055
+train_start_time: 2026-06-25 21:46:32+0800
+train_end_time: 2026-06-25 21:50:44+0800
+train_wall_time_sec: 252
+train_iterations: 30000
+train_iter_per_sec: 119.04761904761905
+train_start_gpu_mem_mb: 1
+train_end_gpu_mem_mb: 1
+train_peak_gpu_mem_mb: 5489
+train_exit_code: 0
+best_num_gaussians: 908152.0
+final_num_gaussians: 908152.0
+min_num_gaussians: 908152.0
+max_num_gaussians: 1004350.0
+dc_event_count: 12
+checkpoint_bytes: 130780115
+vis_bytes: 3681913
+eval_bytes: 64167
+output_bytes: 135235470
+latest_output_mtime: 2026-06-25 21:50:44
+efficiency_tsv: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/ideas/ours/tdsc_attenuation_formula_tuning/runs/stage_tdsc_validation100/nvs/tdsc_abus_2023/validation_100/ours_b8_no_intprune_slice_depth_b060_s030_min055/logs/efficiency.tsv
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/ideas/ours/tdsc_attenuation_formula_tuning/runs/stage_tdsc_validation100/nvs/tdsc_abus_2023/validation_100/ours_b8_no_intprune_slice_depth_b060_s030_min055

@@ -1,0 +1,29 @@
+time: 2026-06-25 14:00:22
+job_id: 65622
+benchmark: us_recon_four_dataset_p100k_v1
+stage: ours_tuning_tus_rec_2024_qc
+dataset: tus_rec_2024_qc
+sweep: 010_LH_Per_L_DtP_qc_0005_0370
+method: tusq_dc_b_grad50_sq98_mf05_lcq10_paq80
+exp_name: ours_tuning_tus_rec_2024_qc_tus_rec_2024_qc_010_LH_Per_L_DtP_qc_0005_0370_tusq_dc_b_grad50_sq98_mf05_lcq10_paq80
+train_start_time: 2026-06-25 13:54:54+0800
+train_end_time: 2026-06-25 14:00:22+0800
+train_wall_time_sec: 328
+train_iterations: 30000
+train_iter_per_sec: 91.46341463414635
+train_start_gpu_mem_mb: 1
+train_end_gpu_mem_mb: 1
+train_peak_gpu_mem_mb: 5919
+train_exit_code: 0
+best_num_gaussians: 872137.0
+final_num_gaussians: 872137.0
+min_num_gaussians: 872137.0
+max_num_gaussians: 1003465.0
+dc_event_count: 12
+checkpoint_bytes: 793083378
+vis_bytes: 2713190
+eval_bytes: 66205
+output_bytes: 796650798
+latest_output_mtime: 2026-06-25 14:00:22
+efficiency_tsv: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/ours_tuning_tus_rec_2024_qc/nvs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/tusq_dc_b_grad50_sq98_mf05_lcq10_paq80/logs/efficiency.tsv
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/ours_tuning_tus_rec_2024_qc/nvs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/tusq_dc_b_grad50_sq98_mf05_lcq10_paq80

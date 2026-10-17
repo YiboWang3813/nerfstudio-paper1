@@ -1,0 +1,47 @@
+[
+  {
+    "variant": "Plane",
+    "Liver_PSNR": 25.091588266666665,
+    "Liver_SSIM": 0.5996403021666666,
+    "Liver_LPIPS": 0.42721727666666665,
+    "Arm_PSNR": 21.4375927,
+    "Arm_SSIM": 0.6763446438,
+    "Arm_LPIPS": 0.34375897440000003
+  },
+  {
+    "variant": "Fixed",
+    "Liver_PSNR": 29.160628016666667,
+    "Liver_SSIM": 0.6427693041666667,
+    "Liver_LPIPS": 0.16918332283333334,
+    "Arm_PSNR": 33.673747999999996,
+    "Arm_SSIM": 0.8843078158000001,
+    "Arm_LPIPS": 0.125563105
+  },
+  {
+    "variant": "Adaptive",
+    "Liver_PSNR": 29.338577033333333,
+    "Liver_SSIM": 0.6530315318333333,
+    "Liver_LPIPS": 0.1953118725,
+    "Arm_PSNR": 33.41119012,
+    "Arm_SSIM": 0.8795687036,
+    "Arm_LPIPS": 0.1363588652
+  },
+  {
+    "variant": "Fixed+Simple",
+    "Liver_PSNR": 29.0571864,
+    "Liver_SSIM": 0.6356317686666666,
+    "Liver_LPIPS": 0.15649058883333333,
+    "Arm_PSNR": 34.02372032,
+    "Arm_SSIM": 0.8871079502,
+    "Arm_LPIPS": 0.1129893848
+  },
+  {
+    "variant": "Fixed+Full",
+    "Liver_PSNR": 29.02507005,
+    "Liver_SSIM": 0.6354632843333333,
+    "Liver_LPIPS": 0.1566903245,
+    "Arm_PSNR": 34.12498686,
+    "Arm_SSIM": 0.8876789310000001,
+    "Arm_LPIPS": 0.112476644
+  }
+]

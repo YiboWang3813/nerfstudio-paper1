@@ -1,0 +1,23 @@
+run_id: 7cbf663
+run_name: us_focus_tus_rec_2024_qc_validation_2k_ours_7cbf663
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/2026-06-16/11-34-33_us_focus-tus_rec_2024_qc_validation_2k_ours_7cbf663
+hydra_output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/2026-06-16/11-34-33_us_focus-tus_rec_2024_qc_validation_2k_ours_7cbf663
+config_path: hydra:experiment=us_focus/tus_rec_2024_qc_validation_2k
+overrides:
+- experiment=us_focus/tus_rec_2024_qc_validation_2k
+- engine.iterations=20
+- engine.interval.test=100000
+- engine.interval.save=100000
+- engine.interval.train.print=10
+- system.exp_tag=ours_base_20iter_63692
+git_commit: 7d3a381783dc2f9d29e20de6fa83f672092ea4b0
+git_dirty: true
+dataset: tus_rec_2024
+model: ours
+exp_tag: ours_base_20iter_63692
+seed: 42
+wandb:
+  enabled: false
+  project: omniultra
+  mode: online
+  run_id: ''

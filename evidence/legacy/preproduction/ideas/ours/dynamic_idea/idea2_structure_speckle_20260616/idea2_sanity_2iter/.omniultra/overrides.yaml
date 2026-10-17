@@ -1,0 +1,7 @@
+overrides:
+- experiment=us_focus/structure_speckle
+- system.output_root=/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/workbench/idea2_structure_speckle_20260616
+- system.exp_tag=idea2_sanity_2iter
+- engine.iterations=2
+- engine.interval.test=0
+- engine.interval.save=0

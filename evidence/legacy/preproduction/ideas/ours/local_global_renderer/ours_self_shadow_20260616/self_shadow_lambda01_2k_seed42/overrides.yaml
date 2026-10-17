@@ -1,0 +1,5 @@
+overrides:
+- experiment=us_focus/tus_rec_2024_qc_self_shadow_2k
+- model.slice_render.self_shadowing_lambda=0.1
+- system.output_root=outputs/workbench/ours_self_shadow_20260616
+- system.exp_tag=self_shadow_lambda01_2k_seed42

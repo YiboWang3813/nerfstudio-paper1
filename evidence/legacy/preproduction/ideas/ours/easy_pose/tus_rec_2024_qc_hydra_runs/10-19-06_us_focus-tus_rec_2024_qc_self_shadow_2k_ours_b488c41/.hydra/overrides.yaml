@@ -1,0 +1,3 @@
+- experiment=us_focus/tus_rec_2024_qc_self_shadow_2k
+- task=dry_run
+- engine.iterations=1

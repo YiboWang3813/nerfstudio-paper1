@@ -1,0 +1,13 @@
+step	key	value
+10	train/loss/total	0.280336618
+10	train/loss/l1	0.0630357936
+10	train/loss/ssim	0.217300817
+10	train/loss/scale_wall	0
+10	train/lr	5.05964426e-05
+10	train/num_gaussians	300000
+20	train/loss/total	0.276896477
+20	train/loss/l1	0.062808603
+20	train/loss/ssim	0.214087859
+20	train/loss/scale_wall	0
+20	train/lr	1.6e-05
+20	train/num_gaussians	300000

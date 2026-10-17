@@ -1,0 +1,6 @@
+- experiment=us_focus/contribution_highpass
+- system.output_root=/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/workbench/idea1_2_gs_1k_20260616
+- system.exp_tag=idea1_contribution_highpass_1k_seed42
+- engine.iterations=1000
+- engine.interval.test=1000
+- engine.interval.save=0

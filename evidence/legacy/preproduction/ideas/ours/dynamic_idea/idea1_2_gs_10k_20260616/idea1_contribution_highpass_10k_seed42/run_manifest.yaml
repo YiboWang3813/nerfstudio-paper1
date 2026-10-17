@@ -1,0 +1,20 @@
+run_id: seed42
+run_name: us_focus_contribution_highpass_ours_seed42
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/workbench/idea1_2_gs_10k_20260616/idea1_contribution_highpass_10k_seed42
+hydra_output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/workbench/idea1_2_gs_10k_20260616/idea1_contribution_highpass_10k_seed42
+config_path: hydra:experiment=us_focus/contribution_highpass
+overrides:
+- experiment=us_focus/contribution_highpass
+- system.output_root=/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/workbench/idea1_2_gs_10k_20260616
+- system.exp_tag=idea1_contribution_highpass_10k_seed42
+git_commit: cd4d25929014b65987b92dae0daff8eeebb49edb
+git_dirty: true
+dataset: synthetic_liver
+model: ours
+exp_tag: idea1_contribution_highpass_10k_seed42
+seed: 42
+wandb:
+  enabled: false
+  project: omniultra
+  mode: online
+  run_id: ''

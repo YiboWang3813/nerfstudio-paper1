@@ -1,0 +1,20 @@
+run_id: b488c41
+run_name: us_focus_tus_rec_2024_qc_self_shadow_2k_ours_b488c41
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/2026-06-16/10-19-06_us_focus-tus_rec_2024_qc_self_shadow_2k_ours_b488c41
+hydra_output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/2026-06-16/10-19-06_us_focus-tus_rec_2024_qc_self_shadow_2k_ours_b488c41
+config_path: hydra:experiment=us_focus/tus_rec_2024_qc_self_shadow_2k
+overrides:
+- experiment=us_focus/tus_rec_2024_qc_self_shadow_2k
+- task=dry_run
+- engine.iterations=1
+git_commit: cd4d25929014b65987b92dae0daff8eeebb49edb
+git_dirty: true
+dataset: tus_rec_2024
+model: ours
+exp_tag: ours_us_focus_tus_rec_2024_qc_self_shadow_2k
+seed: 42
+wandb:
+  enabled: false
+  project: omniultra
+  mode: online
+  run_id: ''

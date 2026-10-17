@@ -1,0 +1,4 @@
+created_at: '2026-06-16T09:15:48'
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/workbench/idea2_structure_speckle_20260616/idea2_sanity_2iter
+hydra_output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/workbench/idea2_structure_speckle_20260616/idea2_sanity_2iter
+config_path: hydra:experiment=us_focus/structure_speckle

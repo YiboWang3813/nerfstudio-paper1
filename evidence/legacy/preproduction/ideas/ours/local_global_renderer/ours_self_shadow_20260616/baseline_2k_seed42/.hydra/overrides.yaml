@@ -1,0 +1,3 @@
+- experiment=us_focus/tus_rec_2024_qc_validation_2k
+- system.output_root=outputs/workbench/ours_self_shadow_20260616
+- system.exp_tag=baseline_2k_seed42

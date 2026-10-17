@@ -1,0 +1,21 @@
+run_id: seed42
+run_name: us_focus_tus_rec_2024_qc_self_shadow_2k_ours_seed42
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/workbench/ours_self_shadow_20260616/self_shadow_lambda01_2k_seed42
+hydra_output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/workbench/ours_self_shadow_20260616/self_shadow_lambda01_2k_seed42
+config_path: hydra:experiment=us_focus/tus_rec_2024_qc_self_shadow_2k
+overrides:
+- experiment=us_focus/tus_rec_2024_qc_self_shadow_2k
+- model.slice_render.self_shadowing_lambda=0.1
+- system.output_root=outputs/workbench/ours_self_shadow_20260616
+- system.exp_tag=self_shadow_lambda01_2k_seed42
+git_commit: cd4d25929014b65987b92dae0daff8eeebb49edb
+git_dirty: true
+dataset: tus_rec_2024
+model: ours
+exp_tag: self_shadow_lambda01_2k_seed42
+seed: 42
+wandb:
+  enabled: false
+  project: omniultra
+  mode: online
+  run_id: ''

@@ -1,0 +1,5 @@
+- experiment=us_focus/structure_speckle
+- system.output_root=/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/workbench/idea1_2_gs_10k_20260616
+- system.exp_tag=idea2_structure_speckle_10k_seed42
+- task=test
+- engine.resume=10000

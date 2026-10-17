@@ -1,0 +1,7 @@
+overrides:
+- experiment=us_focus/contribution_highpass
+- system.output_root=/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/workbench/idea1_contribution_highpass_20260616
+- system.exp_tag=idea1_sanity_2iter
+- engine.iterations=2
+- engine.interval.test=0
+- engine.interval.save=0

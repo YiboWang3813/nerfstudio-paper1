@@ -1,0 +1,23 @@
+run_id: seed42
+run_name: us_focus_main_10k_ours_seed42
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/workbench/idea1_2_gs_1k_20260616/baseline_1k_seed42
+hydra_output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/workbench/idea1_2_gs_1k_20260616/baseline_1k_seed42
+config_path: hydra:experiment=us_focus/main_10k
+overrides:
+- experiment=us_focus/main_10k
+- system.output_root=/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/workbench/idea1_2_gs_1k_20260616
+- system.exp_tag=baseline_1k_seed42
+- engine.iterations=1000
+- engine.interval.test=1000
+- engine.interval.save=0
+git_commit: cd4d25929014b65987b92dae0daff8eeebb49edb
+git_dirty: true
+dataset: synthetic_liver
+model: ours
+exp_tag: baseline_1k_seed42
+seed: 42
+wandb:
+  enabled: false
+  project: omniultra
+  mode: online
+  run_id: ''

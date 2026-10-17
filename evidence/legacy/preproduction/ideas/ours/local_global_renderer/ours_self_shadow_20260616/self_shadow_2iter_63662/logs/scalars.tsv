@@ -1,0 +1,5 @@
+step	key	value
+2	test/psnr	16.4840852
+2	test/l1	0.0921017403
+2	test/ssim	0.340861364
+2	test/lpips	0.470406576

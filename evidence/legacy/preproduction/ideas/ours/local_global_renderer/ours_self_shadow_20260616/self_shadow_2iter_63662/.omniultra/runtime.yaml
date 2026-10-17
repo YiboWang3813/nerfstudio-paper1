@@ -1,0 +1,4 @@
+created_at: '2026-06-16T10:19:28'
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/workbench/ours_self_shadow_20260616/self_shadow_2iter_63662
+hydra_output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/workbench/ours_self_shadow_20260616/self_shadow_2iter_63662
+config_path: hydra:experiment=us_focus/tus_rec_2024_qc_self_shadow_2k

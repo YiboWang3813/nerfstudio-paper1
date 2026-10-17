@@ -1,0 +1,20 @@
+run_id: 76fc122
+run_name: us_focus_contribution_highpass_ours_76fc122
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/2026-06-16/09-14-59_us_focus-contribution_highpass_ours_76fc122
+hydra_output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/2026-06-16/09-14-59_us_focus-contribution_highpass_ours_76fc122
+config_path: hydra:experiment=us_focus/contribution_highpass
+overrides:
+- experiment=us_focus/contribution_highpass
+- task=dry_run
+- engine.iterations=1
+git_commit: cd4d25929014b65987b92dae0daff8eeebb49edb
+git_dirty: true
+dataset: synthetic_liver
+model: ours
+exp_tag: ours_us_focus_contribution_highpass_l1_ssim_scale_wall_1m_10k_dc
+seed: 42
+wandb:
+  enabled: false
+  project: omniultra
+  mode: online
+  run_id: ''

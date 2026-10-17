@@ -1,0 +1,7 @@
+overrides:
+- experiment=us_focus/tus_rec_2024_qc_self_shadow_2k
+- engine.iterations=2
+- engine.interval.test=2
+- engine.interval.save=2
+- system.output_root=outputs/workbench/ours_self_shadow_20260616
+- system.exp_tag=self_shadow_2iter_63662

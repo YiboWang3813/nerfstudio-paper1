@@ -1,0 +1,3 @@
+- experiment=us_focus/structure_speckle
+- task=dry_run
+- engine.iterations=1

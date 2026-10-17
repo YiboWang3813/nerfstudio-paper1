@@ -1,0 +1,313 @@
+task: train
+experiment:
+  family: us_focus
+  name: main_10k
+  description: Production us_focus 10k configuration.
+system:
+  output_root: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/workbench/idea1_2_gs_1k_20260616
+  output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/workbench/idea1_2_gs_1k_20260616/baseline_1k_seed42
+  exp_tag: baseline_1k_seed42
+  run_id: seed42
+  run_name: us_focus_main_10k_ours_seed42
+  config_path: hydra:experiment=us_focus/main_10k
+  hydra_output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/workbench/idea1_2_gs_1k_20260616/baseline_1k_seed42
+  use_legacy_output_naming: false
+  device: cuda
+  seed: 42
+wandb:
+  enable: false
+  project: omniultra
+  entity: ''
+  mode: online
+  group: ''
+  name: ''
+  tags: []
+  log_artifacts: false
+scene:
+  dataset_name: synthetic_liver
+  loading:
+    baseroot: /home/boywang25/ultrasound-scene-reconstruction/data
+    dataset_dirname: ''
+    sweep_name: l1
+    images_name: images.npy
+    test_images_name: test_images.npy
+    test_poses_name: test_poses.npy
+    image_value_mode: uint8_255
+    image_nan_value: 0.0
+    image_downsample_factor: 1
+    axial_downsample_factor: 1
+    test_mode: holdout_interval
+    holdout_trim_each: 10
+    holdout_num_samples: 40
+    pose_type: relative
+    poses_abspath: ''
+  sampler:
+    num_init: 1000000
+    num_new: 5000
+    scales_init:
+    - 0.3
+    - 0.3
+    - 0.3
+    quats_init:
+    - 1.0
+    - 0.0
+    - 0.0
+    - 0.0
+    uniform_ratio: 0.3
+    intensity_threshold: 0.05
+    jitter_radius: 0.2
+  grid:
+    tile_size: 4.0
+    bbox_margin: 0.05
+  scheduler:
+    test_ratio: 0.1
+engine:
+  name: default_engine
+  state: OursOfflineState
+  task: train
+  stream: offline
+  iterations: 1000
+  accum_steps: 1
+  resume: ''
+  stream_eval_skip_head_frames: 0
+  stream_eval_skip_tail_frames: 0
+  stream_eval_interval_frames: 0
+  needed_callbacks:
+  - OursOfflineSetupCallback
+  - OursOfflineTrainCallback
+  - OursOfflineTestCallback
+  - OursOfflineSaveCallback
+  - OursOfflineFinishCallback
+  interval:
+    train:
+      step: 10
+      print: 100
+    debug: 1000
+    test: 1000
+    save: 0
+loss:
+  needed_losses:
+  - l1
+  - ssim
+  - scale_wall
+  lambdas:
+    l1: 0.65
+    mse: 0.0
+    ssim: 0.35
+    sobel: 0.0
+    highpass_l1: 0.0
+    marco_ssim: 0.0
+    lpips: 0.0
+    diff_tv: 0.0
+    scale_wall: 50.0
+    scale_aniso: 0.0
+    opacity: 0.0
+    acoustic_contribution: 0.0
+    pose_anchor: 0.0
+    pose_prior: 0.0
+    pose_smooth: 0.0
+    pose_acc: 0.0
+    pose_aux_rec: 0.0
+    pose_registration: 0.0
+    pose_neighbor_registration: 0.0
+    pose_cycle: 0.0
+    pose_const_vel: 0.0
+    pose_gt_delta: 0.0
+    pose_occ_conf: 0.0
+  ssim_cfg:
+    window_size: 11
+    sigma: 1.5
+    downsample_enabled: false
+    downsample_factor: 1
+    downsample_mode: area
+  highpass_l1_cfg:
+    kernel_size: 9
+    sigma: 2.0
+  marco_ssim_cfg:
+    blur_window_size: 21
+    blur_sigma: 3.0
+    ssim_window_size: 11
+    ssim_sigma: 1.5
+  lpips_cfg:
+    metric_name: lpips
+  scale_wall_cfg:
+    min_scales_mm: 0.001
+    max_scales_mm: 1.2
+  scale_aniso_cfg:
+    max_aniso_ratio: 2.5
+  opacity_cfg:
+    target_opacity: 0.5
+  acoustic_contribution_cfg:
+    threshold: 0.0
+    normalizer: 1000000.0
+  pose_anchor_cfg:
+    rot_weight: 1.0
+    trans_weight: 1.0
+  pose_prior_cfg:
+    rot_weight: 1.0
+    trans_weight: 1.0
+  pose_smooth_cfg:
+    rot_weight: 1.0
+    trans_weight: 1.0
+  pose_acc_cfg:
+    rot_weight: 1.0
+    trans_weight: 1.0
+  pose_aux_rec_cfg:
+    l1_weight: 0.8
+    ssim_weight: 0.2
+    window_size: 11
+    sigma: 1.5
+  pose_registration_cfg:
+    photo_weight: 1.0
+    grad_weight: 0.2
+    charbonnier_eps: 0.001
+  pose_neighbor_registration_cfg:
+    photo_weight: 1.0
+    ssim_weight: 0.2
+    charbonnier_eps: 0.001
+    window_size: 11
+    sigma: 1.5
+    min_overlap_ratio: 0.3
+  pose_cycle_cfg:
+    photo_weight: 1.0
+    ssim_weight: 0.1
+    charbonnier_eps: 0.001
+    window_size: 11
+    sigma: 1.5
+    min_overlap_ratio: 0.3
+  pose_const_vel_cfg:
+    rot_weight: 1.0
+    trans_weight: 1.0
+  pose_gt_delta_cfg:
+    rot_weight: 1.0
+    trans_weight: 1.0
+  pose_occ_conf_cfg:
+    charbonnier_epsilon: 0.001
+    confidence_gamma: 1.0
+    confidence_min: 0.05
+    detach_confidence: true
+metric:
+  needed_metrics:
+  - psnr
+  - l1
+  - ssim
+  - lpips
+  psnr_cfg:
+    max_val: 1.0
+model:
+  name: ours
+  render:
+    enable_input_checks: false
+  gauss_init:
+    num_points: 1000000
+  scene_norm:
+    margin: 1.15
+  slice_render:
+    tile_size_px: 8
+    num_slices_elevational: 2
+    elev_corridor_half_mm: 0.228225
+    slab_half_thickness_mm: 0.0
+    k_sigma: 2.5
+    mapper_kind: tile
+    num_pixels_lateral: 5
+    num_pixels_axial: 5
+    mapper_sort_by_v: false
+    compositing_mode: additive
+    fixed_bg_color: 0.0
+    shader_weight_mode: us_focus
+    us_focus_sigma_ele_0: 1.0
+    us_focus_sigma_ele_1: 0.01
+    us_focus_sigma_ele_min: 0.8
+    us_focus_sigma_ele_max: 5.0
+    us_focus_sigma_lat_0: 0.8
+    us_focus_sigma_lat_1: 0.002
+    us_focus_sigma_lat_min: 0.4
+    us_focus_sigma_lat_max: 3.0
+    us_focus_det_gamma: 0.25
+    us_focus_det_eps: 1.0e-06
+    us_focus_weight_min: 1.0e-06
+    us_focus_use_lateral_focus: false
+    us_focus_inflate_lat_mm: 0.0
+    us_focus_inflate_ax_mm: 0.0
+    render_chunk_size: 256
+  gauss_container:
+    lr:
+      means: 0.00016
+      scales: 0.005
+      quats: 0.001
+      opacities: 0.08
+      intensities: 0.002
+    init_val:
+      opacities: 0.1
+      intensities: 0.1
+    constraints:
+      scale_activation: bounded_sigmoid
+      scale_min_mm: 0.05
+      scale_max_mm: 3.0
+      opacity_max: 0.2
+      intensity_max: 1.0
+  offline:
+    density_control:
+      enable:
+        densify: true
+        prune: true
+      timing:
+        start_iter: 1000
+        end_iter: 8000
+        freq: 1000
+      thresholds:
+        densify_grad: 1.5e-05
+        split_scale: 0.6
+        prune_opacity: 0.015
+        prune_intensity: 0.015
+  pose_optimization:
+    enabled: false
+    prior_poses_abspath: ''
+    noise_enabled: false
+    noise_rot_deg: 0.0
+    noise_trans_mm: 0.0
+    noise_seed: 20260526
+    trainable: false
+    start_iter: 0
+    end_iter: -1
+    lr: 3.0e-05
+    lr_rot: null
+    lr_trans: null
+    optimize_rotation: true
+    optimize_translation: true
+    lambda_prior: 0.0
+    lambda_prior_rot: null
+    lambda_prior_trans: null
+    lambda_smooth_rot: 0.0
+    lambda_smooth_trans: 0.0
+    pose_only_start_iter: -1
+    pose_only_end_iter: -1
+    log_interval: 500
+    eval_train_count: 64
+  pose_uncertainty:
+    enabled: false
+    uncertainty_abspath: ''
+    weight_mode: direct
+    min_weight: 0.1
+    max_weight: 1.0
+    alpha: 1.0
+    image_loss_names:
+    - l1
+    - ssim
+    - mse
+    - lpips
+    decouple_density_control: true
+    log_interval: 500
+    mc_enabled: false
+    mc_samples: 2
+    mc_trans_sigma_mm: 0.0
+    mc_rot_sigma_deg: 0.0
+  structure_speckle:
+    enabled: false
+    lr: 0.01
+    init_speckle_prob: 0.25
+    lowpass_kernel_size: 9
+    lambda_structure_lowpass: 0.0
+    lambda_speckle_l1: 0.0
+    lambda_gate_sparsity: 0.0
+    log_interval: 500

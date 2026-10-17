@@ -1,0 +1,7 @@
+overrides:
+- experiment=us_focus/tus_rec_2024_qc_validation_2k
+- engine.iterations=20
+- engine.interval.test=100000
+- engine.interval.save=100000
+- engine.interval.train.print=10
+- system.exp_tag=ours_base_20iter_63692

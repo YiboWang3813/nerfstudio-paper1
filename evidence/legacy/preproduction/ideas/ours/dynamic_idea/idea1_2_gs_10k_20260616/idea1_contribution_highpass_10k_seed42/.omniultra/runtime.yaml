@@ -1,0 +1,4 @@
+created_at: '2026-06-16T09:18:35'
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/workbench/idea1_2_gs_10k_20260616/idea1_contribution_highpass_10k_seed42
+hydra_output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/workbench/idea1_2_gs_10k_20260616/idea1_contribution_highpass_10k_seed42
+config_path: hydra:experiment=us_focus/contribution_highpass

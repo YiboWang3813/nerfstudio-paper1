@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "workspace": "paper1",
+  "stage": "asset relocation and legacy compatibility; native framework adaptation pending",
+  "repositories": {
+    "nerfstudio": {
+      "repository": "git@github.com:YiboWang3813/nerfstudio-paper1.git",
+      "branch": "paper1/main",
+      "commit": "fa2006d8ad82149bb89ea50f554e8b49edfe77bb",
+      "upstream_tag": "v1.1.5",
+      "upstream_commit": "6b60855003011b2ca23c2fe3f8e2ca6314c69924"
+    },
+    "gsplat": {
+      "repository": "git@github.com:YiboWang3813/gsplat-paper1.git",
+      "branch": "paper1/main",
+      "commit": "a2c4c9b86ccbf0e0bc2a6cbca66be07f1af1e66f",
+      "upstream_tag": "v1.4.0",
+      "upstream_commit": "4d3a3b69db4de0326f983ccf7b7b255271a17b01"
+    },
+    "docs": {
+      "repository": "git@github.com:YiboWang3813/nerfstudio-paper1.git",
+      "branch": "paper1/docs",
+      "commit": "72bfedce0bb647fe6bb1d38acff6ae1e9e405111"
+    },
+    "results": {
+      "repository": "git@github.com:YiboWang3813/nerfstudio-paper1.git",
+      "branch": "paper1/results",
+      "commit": "a8cfd579422cefd0833133362e1e255ab95dcbdf"
+    }
+  },
+  "protocol_repository": "git@github.com:YiboWang3813/nerfstudio-paper1.git",
+  "protocol_branch": "paper1/protocol",
+  "legacy_environment": "environments/legacy.json",
+  "conda_explicit": "environments/legacy-conda-explicit.txt",
+  "legacy_binary_hashes": "environments/legacy_binaries.json",
+  "data_manifest": "assets/data.jsonl",
+  "pretrained_manifest": "assets/pretrained.json",
+  "heavy_assets_in_git": false
+}

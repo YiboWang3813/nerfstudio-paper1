@@ -1,0 +1,14 @@
+[
+  {
+    "public_copy": "/home/boywang25/paper1/nerfstudio/paper1_legacy/README.md",
+    "public_sha256": "8e8b27a3a1a61e882983039c73ae5d9474fb2d0a65fffdb87cfa1798c685c91f",
+    "reason": "Remove historical apparent credential memo from public copy; original local source/archives retained.",
+    "original_sha256": "beaaf386cf4b7c04c4e0ffb6a1eaebc88fbeddd7d0ecdec3b0e71fd932727e7b"
+  },
+  {
+    "public_copy": "/home/boywang25/paper1/results/evidence/legacy/preproduction/regression/p0_semantic_freeze_20260908/pre/tree/README.md",
+    "public_sha256": "8e8b27a3a1a61e882983039c73ae5d9474fb2d0a65fffdb87cfa1798c685c91f",
+    "copied_sha256_before_redaction": "beaaf386cf4b7c04c4e0ffb6a1eaebc88fbeddd7d0ecdec3b0e71fd932727e7b",
+    "reason": "Remove historical apparent credential memo from public copy; original local source/archives retained."
+  }
+]

@@ -1,0 +1,322 @@
+[
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "l1",
+    "sheet": "full_fixed_vs_adaptive",
+    "item": 5,
+    "crop_xywh": [
+      0,
+      0,
+      53,
+      107
+    ],
+    "label": "fixed / Full",
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/paper_final_corrected_covariance_20260908/lgr_interaction/runs/synthetic_liver/l1/li_002/vis/item_5/pred.png",
+    "sha256": "3ab62c84210526826f0e5fe658877486df1bd0ccfb974ccbd62f773db72bbd14",
+    "gt_sha256": "f6a6e09ebe4bebe1462aca36fc8bb469f540eb52d53f4afb0c361969921ca25c"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "l1",
+    "sheet": "full_fixed_vs_adaptive",
+    "item": 5,
+    "crop_xywh": [
+      0,
+      0,
+      53,
+      107
+    ],
+    "label": "adaptive / Full",
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/regression/p05_corrected_covariance_20260908/anchors/liver/vis/item_5/pred.png",
+    "sha256": "a480c863fd67755562bf972d187d422fd2a3b61931e66e2000d3566a5d98891c",
+    "gt_sha256": "f6a6e09ebe4bebe1462aca36fc8bb469f540eb52d53f4afb0c361969921ca25c"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "l1",
+    "sheet": "full_fixed_vs_adaptive",
+    "item": 5,
+    "crop_xywh": [
+      0,
+      0,
+      53,
+      107
+    ],
+    "label": "GT",
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/paper_final_corrected_covariance_20260908/lgr_interaction/runs/synthetic_liver/l1/li_002/vis/item_5/gt.png",
+    "sha256": "f6a6e09ebe4bebe1462aca36fc8bb469f540eb52d53f4afb0c361969921ca25c",
+    "gt_sha256": "f6a6e09ebe4bebe1462aca36fc8bb469f540eb52d53f4afb0c361969921ca25c"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "l1",
+    "sheet": "six_combinations",
+    "item": 5,
+    "crop_xywh": [
+      0,
+      0,
+      53,
+      107
+    ],
+    "label": "fixed / None",
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/paper_final_corrected_covariance_20260908/runs/synthetic_liver/l1/b1_098/vis/item_5/pred.png",
+    "sha256": "05c41d98c6c99474b26af4db896796ef1d615bcf61fd8a05c60289c21d64e62f",
+    "gt_sha256": "f6a6e09ebe4bebe1462aca36fc8bb469f540eb52d53f4afb0c361969921ca25c"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "l1",
+    "sheet": "six_combinations",
+    "item": 5,
+    "crop_xywh": [
+      0,
+      0,
+      53,
+      107
+    ],
+    "label": "fixed / Simple",
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/paper_final_corrected_covariance_20260908/lgr_interaction/runs/synthetic_liver/l1/li_001/vis/item_5/pred.png",
+    "sha256": "d4d8fd717bf0d7a2eb4e8e2abb67448369e3d2fa8ac196344ba21f6d85bd5b0a",
+    "gt_sha256": "f6a6e09ebe4bebe1462aca36fc8bb469f540eb52d53f4afb0c361969921ca25c"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "l1",
+    "sheet": "six_combinations",
+    "item": 5,
+    "crop_xywh": [
+      0,
+      0,
+      53,
+      107
+    ],
+    "label": "fixed / Full",
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/paper_final_corrected_covariance_20260908/lgr_interaction/runs/synthetic_liver/l1/li_002/vis/item_5/pred.png",
+    "sha256": "3ab62c84210526826f0e5fe658877486df1bd0ccfb974ccbd62f773db72bbd14",
+    "gt_sha256": "f6a6e09ebe4bebe1462aca36fc8bb469f540eb52d53f4afb0c361969921ca25c"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "l1",
+    "sheet": "six_combinations",
+    "item": 5,
+    "crop_xywh": [
+      0,
+      0,
+      53,
+      107
+    ],
+    "label": "adaptive / None",
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/paper_final_corrected_covariance_20260908/runs/synthetic_liver/l1/b1_080/vis/item_5/pred.png",
+    "sha256": "ce76c96eb29fbcb2a466cb7bf1c6f6d2860a1946ed0abc6760d8e7065e4851d2",
+    "gt_sha256": "f6a6e09ebe4bebe1462aca36fc8bb469f540eb52d53f4afb0c361969921ca25c"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "l1",
+    "sheet": "six_combinations",
+    "item": 5,
+    "crop_xywh": [
+      0,
+      0,
+      53,
+      107
+    ],
+    "label": "adaptive / Simple",
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/paper_final_corrected_covariance_20260908/runs/synthetic_liver/l1/b1_100/vis/item_5/pred.png",
+    "sha256": "fd25c3e2392fff6942514adf7e1304cba30b8ce16d7d014fee8600bc4c1cb9e7",
+    "gt_sha256": "f6a6e09ebe4bebe1462aca36fc8bb469f540eb52d53f4afb0c361969921ca25c"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "l1",
+    "sheet": "six_combinations",
+    "item": 5,
+    "crop_xywh": [
+      0,
+      0,
+      53,
+      107
+    ],
+    "label": "adaptive / Full",
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/regression/p05_corrected_covariance_20260908/anchors/liver/vis/item_5/pred.png",
+    "sha256": "a480c863fd67755562bf972d187d422fd2a3b61931e66e2000d3566a5d98891c",
+    "gt_sha256": "f6a6e09ebe4bebe1462aca36fc8bb469f540eb52d53f4afb0c361969921ca25c"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "l1",
+    "sheet": "six_combinations",
+    "item": 5,
+    "crop_xywh": [
+      0,
+      0,
+      53,
+      107
+    ],
+    "label": "GT",
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/paper_final_corrected_covariance_20260908/runs/synthetic_liver/l1/b1_098/vis/item_5/gt.png",
+    "sha256": "f6a6e09ebe4bebe1462aca36fc8bb469f540eb52d53f4afb0c361969921ca25c",
+    "gt_sha256": "f6a6e09ebe4bebe1462aca36fc8bb469f540eb52d53f4afb0c361969921ca25c"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_LH_Per_L_DtP_qc_0005_0370",
+    "sheet": "full_fixed_vs_adaptive",
+    "item": 57,
+    "crop_xywh": [
+      194,
+      97,
+      92,
+      69
+    ],
+    "label": "fixed / Full",
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/paper_final_corrected_covariance_20260908/lgr_interaction/runs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/li_044/vis/item_57/pred.png",
+    "sha256": "6ad7ad9119775ff03b42fd3c49f54e147f08ead4137a62d0ca9fc83c1436b1a6",
+    "gt_sha256": "e8b3804ca0f746a470560bac7479af29f0cee0f7433ad7d5dc4f7e24e421633a"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_LH_Per_L_DtP_qc_0005_0370",
+    "sheet": "full_fixed_vs_adaptive",
+    "item": 57,
+    "crop_xywh": [
+      194,
+      97,
+      92,
+      69
+    ],
+    "label": "adaptive / Full",
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/regression/p05_corrected_covariance_20260908/anchors/arm/vis/item_57/pred.png",
+    "sha256": "d0fe54f6fa9b3820bc08fc786c50e8acc4244e9850a7d2576271a23eb3315ac2",
+    "gt_sha256": "e8b3804ca0f746a470560bac7479af29f0cee0f7433ad7d5dc4f7e24e421633a"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_LH_Per_L_DtP_qc_0005_0370",
+    "sheet": "full_fixed_vs_adaptive",
+    "item": 57,
+    "crop_xywh": [
+      194,
+      97,
+      92,
+      69
+    ],
+    "label": "GT",
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/paper_final_corrected_covariance_20260908/lgr_interaction/runs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/li_044/vis/item_57/gt.png",
+    "sha256": "e8b3804ca0f746a470560bac7479af29f0cee0f7433ad7d5dc4f7e24e421633a",
+    "gt_sha256": "e8b3804ca0f746a470560bac7479af29f0cee0f7433ad7d5dc4f7e24e421633a"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_LH_Per_L_DtP_qc_0005_0370",
+    "sheet": "six_combinations",
+    "item": 57,
+    "crop_xywh": [
+      194,
+      97,
+      92,
+      69
+    ],
+    "label": "fixed / None",
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/paper_final_corrected_covariance_20260908/runs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/b1_099/vis/item_57/pred.png",
+    "sha256": "be91d60fdc7aeb434d696fc7a73c4d1fdecd8591c5336624a5a50262738b2e44",
+    "gt_sha256": "e8b3804ca0f746a470560bac7479af29f0cee0f7433ad7d5dc4f7e24e421633a"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_LH_Per_L_DtP_qc_0005_0370",
+    "sheet": "six_combinations",
+    "item": 57,
+    "crop_xywh": [
+      194,
+      97,
+      92,
+      69
+    ],
+    "label": "fixed / Simple",
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/paper_final_corrected_covariance_20260908/lgr_interaction/runs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/li_043/vis/item_57/pred.png",
+    "sha256": "880f35beb9934e0a620c6b79fa4c1e804c667d644118428e7049095500a65979",
+    "gt_sha256": "e8b3804ca0f746a470560bac7479af29f0cee0f7433ad7d5dc4f7e24e421633a"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_LH_Per_L_DtP_qc_0005_0370",
+    "sheet": "six_combinations",
+    "item": 57,
+    "crop_xywh": [
+      194,
+      97,
+      92,
+      69
+    ],
+    "label": "fixed / Full",
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/paper_final_corrected_covariance_20260908/lgr_interaction/runs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/li_044/vis/item_57/pred.png",
+    "sha256": "6ad7ad9119775ff03b42fd3c49f54e147f08ead4137a62d0ca9fc83c1436b1a6",
+    "gt_sha256": "e8b3804ca0f746a470560bac7479af29f0cee0f7433ad7d5dc4f7e24e421633a"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_LH_Per_L_DtP_qc_0005_0370",
+    "sheet": "six_combinations",
+    "item": 57,
+    "crop_xywh": [
+      194,
+      97,
+      92,
+      69
+    ],
+    "label": "adaptive / None",
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/paper_final_corrected_covariance_20260908/runs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/b1_081/vis/item_57/pred.png",
+    "sha256": "12f68dc4a7b12c5915cc47c15227a31c94022c2b724d2ebc0435fa45fa32b1af",
+    "gt_sha256": "e8b3804ca0f746a470560bac7479af29f0cee0f7433ad7d5dc4f7e24e421633a"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_LH_Per_L_DtP_qc_0005_0370",
+    "sheet": "six_combinations",
+    "item": 57,
+    "crop_xywh": [
+      194,
+      97,
+      92,
+      69
+    ],
+    "label": "adaptive / Simple",
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/paper_final_corrected_covariance_20260908/runs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/b1_101/vis/item_57/pred.png",
+    "sha256": "b377783603128d135a9b50390962d38d213a77818c565f09729621b5c85938c5",
+    "gt_sha256": "e8b3804ca0f746a470560bac7479af29f0cee0f7433ad7d5dc4f7e24e421633a"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_LH_Per_L_DtP_qc_0005_0370",
+    "sheet": "six_combinations",
+    "item": 57,
+    "crop_xywh": [
+      194,
+      97,
+      92,
+      69
+    ],
+    "label": "adaptive / Full",
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/regression/p05_corrected_covariance_20260908/anchors/arm/vis/item_57/pred.png",
+    "sha256": "d0fe54f6fa9b3820bc08fc786c50e8acc4244e9850a7d2576271a23eb3315ac2",
+    "gt_sha256": "e8b3804ca0f746a470560bac7479af29f0cee0f7433ad7d5dc4f7e24e421633a"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_LH_Per_L_DtP_qc_0005_0370",
+    "sheet": "six_combinations",
+    "item": 57,
+    "crop_xywh": [
+      194,
+      97,
+      92,
+      69
+    ],
+    "label": "GT",
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/paper_final_corrected_covariance_20260908/runs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/b1_099/vis/item_57/gt.png",
+    "sha256": "e8b3804ca0f746a470560bac7479af29f0cee0f7433ad7d5dc4f7e24e421633a",
+    "gt_sha256": "e8b3804ca0f746a470560bac7479af29f0cee0f7433ad7d5dc4f7e24e421633a"
+  }
+]

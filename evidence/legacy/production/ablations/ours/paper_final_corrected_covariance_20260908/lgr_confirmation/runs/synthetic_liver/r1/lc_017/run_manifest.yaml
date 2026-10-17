@@ -1,0 +1,149 @@
+run_id: '017'
+run_name: production-sensorless_paper_semantic_freeze_ours_017
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/paper_final_corrected_covariance_20260908/lgr_confirmation/runs/synthetic_liver/r1/lc_017
+checkpoint_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/paper_final_corrected_covariance_20260908/lgr_confirmation/runs/synthetic_liver/r1/lc_017/checkpoints
+checkpoint_root: ''
+hydra_output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/paper_final_corrected_covariance_20260908/lgr_confirmation/runs/synthetic_liver/r1/lc_017
+config_path: hydra:experiment=production/sensorless/paper_semantic_freeze
+overrides:
+- experiment=production/ablations/ours/paper_semantic_freeze
+- scene=liver
+- ++scene.dataset_name="synthetic_liver"
+- ++scene.loading.baseroot="/home/boywang25/ultrasound-scene-reconstruction/data"
+- ++scene.loading.dataset_dirname=""
+- ++scene.loading.sweep_name="r1"
+- ++scene.loading.images_name="images.npy"
+- ++scene.loading.test_images_name="test_images.npy"
+- ++scene.loading.test_poses_name="test_poses.npy"
+- ++scene.loading.image_value_mode="uint8_255"
+- ++scene.loading.image_nan_value=0.0
+- ++scene.loading.image_downsample_factor=1
+- ++scene.loading.axial_downsample_factor=1
+- ++scene.loading.frame_start=0
+- ++scene.loading.frame_end=-1
+- ++scene.loading.frame_stride=1
+- ++scene.loading.frame_indices_path=""
+- ++scene.loading.test_mode="holdout_interval"
+- ++scene.loading.holdout_trim_each=10
+- ++scene.loading.holdout_num_samples=0
+- ++scene.loading.holdout_test_ratio=0.2
+- ++scene.loading.pose_type="absolute"
+- ++scene.loading.poses_abspath=""
+- ++scene.loading.pose_mode="file"
+- ++scene.loading.canonical_sweep_delta_mm=-1.0
+- ++scene.loading.canonical_sweep_delta_scale=1.0
+- ++scene.loading.canonical_sweep_ref_frame=0
+- ++scene.loading.canonical_sweep_axis="z"
+- ++scene.loading.canonical_sweep_spacing_mode="uniform"
+- ++scene.sampler.num_init=1000000
+- ++scene.sampler.num_new=1000
+- ++scene.sampler.scales_init=[0.3, 0.3, 0.3]
+- ++scene.sampler.quats_init=[1.0, 0.0, 0.0, 0.0]
+- ++scene.sampler.uniform_ratio=0.3
+- ++scene.sampler.intensity_threshold=0.05
+- ++scene.sampler.jitter_radius=0.2
+- ++scene.grid.tile_size=4.0
+- ++scene.grid.bbox_margin=0.05
+- ++scene.scheduler.test_ratio=0.1
+- ++metric.needed_metrics=["psnr", "l1", "ssim", "lpips", "dists", "gmsd"]
+- ++metric.psnr_cfg.max_val=1.0
+- ++metric.max_vis_frames=10
+- ++metric.save_per_frame_metrics=true
+- scene.loading.sweep_name=r1
+- scene.loading.test_mode=holdout_interval
+- scene.loading.holdout_trim_each=10
+- scene.loading.holdout_num_samples=0
+- scene.loading.holdout_test_ratio=0.2
+- scene.loading.pose_mode=file
+- experiment.sensorless_required=false
+- system.seed=42
+- scene.loading.canonical_sweep_spacing_mode=uniform
+- scene.loading.canonical_sweep_delta_scale=1.0
+- model.offline.density_control.densification_policy=residual_guided
+- engine.iterations=30000
+- engine.interval.test=30000
+- engine.interval.save=30000
+- wandb.enable=false
+- model.slice_render.local_conditioning_mode=adaptive
+- model.slice_render.ray_attenuation_enabled=false
+- model.slice_render.ray_attenuation_formula=integral
+- model.offline.density_control.pruning_policy=local_aware
+- system.output_root=/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/paper_final_corrected_covariance_20260908/lgr_confirmation
+- system.exp_tag=lc_017
+git_commit: e3fabc6bb695bc43b53efd99c97d1766c5f7a759
+git_dirty: true
+dataset: synthetic_liver
+model: ours
+exp_tag: lc_017
+seed: 42
+wandb:
+  enabled: false
+  project: omniultra
+  mode: online
+  run_id: ''
+paper_final_source_sha256: b2525342593c8dd84a1f1ddb8c1ac124c9b1fb179ddcffea3fb902eb2a073ad2
+paper_final_batch: LGR_confirmation_only
+paper_final_row_id: lc_017
+paper_final_matrix_sha256: f5e6190a20d39892195d5d0507f60fd19633229e356749173cc504a06a7246fd
+paper_final_submission_hashes:
+  docs/production/p1_lgr_confirmation/exact_configs/lc_000.yaml: da7453e2d072323ea301998fc9fbf039ba3c5055317e59490d9775689589ac5d
+  docs/production/p1_lgr_confirmation/exact_configs/lc_001.yaml: f0fb2962f826cc00fde6d747aa3079d0bbafc5cd602fb7e830b7ff2a8f3617fc
+  docs/production/p1_lgr_confirmation/exact_configs/lc_002.yaml: 96490d0db914df0d31799c551d60fe3f117d2638907f5a37e19992abf4026e12
+  docs/production/p1_lgr_confirmation/exact_configs/lc_003.yaml: f3b8aa08daaec0638afc619e5994234e3c7f43582622af361bb4bdc389a48f36
+  docs/production/p1_lgr_confirmation/exact_configs/lc_004.yaml: d4bf7cdf3108a783e253d310331c3f1e48884739ffa8be30d21c72bf66877fa0
+  docs/production/p1_lgr_confirmation/exact_configs/lc_005.yaml: 325bf52e31ecd4e3939d0e7fcc70ad8143b5a37b3143c3ebab22b5c3e98435cc
+  docs/production/p1_lgr_confirmation/exact_configs/lc_006.yaml: 94f5b58fcb753bda1541671bb18317825646c33cdd2dead6296007f0263e5be2
+  docs/production/p1_lgr_confirmation/exact_configs/lc_007.yaml: 04458c12107010da97b6efeab6f8fbd7214eebb11903ee829876b25568eb11c2
+  docs/production/p1_lgr_confirmation/exact_configs/lc_008.yaml: f72e399743b91ba2cc667df86a11fd06fa7ddb94eff7847ecbfae1325f5256b9
+  docs/production/p1_lgr_confirmation/exact_configs/lc_009.yaml: 2e3c198f27bb31cf2c76a8aff1c5e98295d02b6d741fd4ac9e0f89ede079e5b9
+  docs/production/p1_lgr_confirmation/exact_configs/lc_010.yaml: 8644284e0d1b658a35f8bac0ffb4a16ddc68502f4a29aca20a7d607ac3dbe385
+  docs/production/p1_lgr_confirmation/exact_configs/lc_011.yaml: c507da953ae01448f05109e2ad348ab689053a0a07fa420dceed91270dc3e529
+  docs/production/p1_lgr_confirmation/exact_configs/lc_012.yaml: 1f77c8af104466a8f43d46a9ab8dd1131c7670bf1857e9032f33ddabe1673b2e
+  docs/production/p1_lgr_confirmation/exact_configs/lc_013.yaml: 01708aa0216e303cd838947e750c98c25bbe16869cb8be38eda861d79d37319c
+  docs/production/p1_lgr_confirmation/exact_configs/lc_014.yaml: 76267792745f03e0d13010bf57cdb35ff6334618c6387365ddfdff9ac8bb937c
+  docs/production/p1_lgr_confirmation/exact_configs/lc_015.yaml: 7b62addabe2e94990f5b9f206def4783ddfa6b30ed0cf963173c5dc8d1cf4c22
+  docs/production/p1_lgr_confirmation/exact_configs/lc_016.yaml: 07a820be82bb9dc3533bbc8e8ba1539114ae0a1f8e61b7eff441013b8f7247f9
+  docs/production/p1_lgr_confirmation/exact_configs/lc_017.yaml: 3c41934a63a038c0bf79af438c273960e181bd0494a7cd912c21181f6195dd12
+  docs/production/p1_lgr_confirmation/exact_configs/lc_018.yaml: 7e9a004b686f43dd08a195151553cf02d3e7f12f2edd6e4cd154ee59136963c1
+  docs/production/p1_lgr_confirmation/exact_configs/lc_019.yaml: 75a511c87516c98f0b24dc4cbc1dbaa0edc086165f6e337087337bd5d2a50940
+  docs/production/p1_lgr_confirmation/exact_configs/lc_020.yaml: 9f3e3def3a63793be7b0e5086e6e3b4c03d707db43f504b483eb174a849b52f8
+  docs/production/p1_lgr_confirmation/exact_configs/lc_021.yaml: 97a3bdb53872c9a44395d021940601cd0b715fc1f3703712d260da2a9b8ed57b
+  docs/production/p1_lgr_confirmation/exact_configs/lc_022.yaml: 3304786afbcb53b347149d985e391afc1c4d3c7c815d1a9987eead7a9b355e89
+  docs/production/p1_lgr_confirmation/exact_configs/lc_023.yaml: d8ee6818a5574285453ec06ed8b06bf2079be118e44cae8d176b6997f6a0bc8d
+  docs/production/p1_lgr_confirmation/exact_configs/lc_024.yaml: 53acbb98a180f1f1f92df5d4f3a1c0aea3e37618de50da03ae4694daed6b5aa0
+  docs/production/p1_lgr_confirmation/exact_configs/lc_025.yaml: f0b876ecad23c57981c4cab8be33574cac0ffc646e9fafdcfc90e1d373e5119c
+  docs/production/p1_lgr_confirmation/exact_configs/lc_026.yaml: 970e55b542de3af54d76aa6ac89dd184cb8b2472ab39e509703df2533c7c420b
+  docs/production/p1_lgr_confirmation/exact_configs/lc_027.yaml: 3f3342ba767bb22b063ee96085299e9aa9ea19ca5e89c85633d639c9d61baf26
+  docs/production/p1_lgr_confirmation/exact_configs/lc_028.yaml: 0fc3b17c51474f75735a02f97f5a92aa0d35421950591a9003b3c3e2242061c3
+  docs/production/p1_lgr_confirmation/exact_configs/lc_029.yaml: 157d0ab9d297d7e9520f5f1b5d78ce4aa2447f48f1c9630236d359b68f2b9962
+  docs/production/p1_lgr_confirmation/exact_configs/lc_030.yaml: 6d4435e6493c0571ee11bf665c894783ef940ac08d706f9955eb1c0a898b2b6a
+  docs/production/p1_lgr_confirmation/exact_configs/lc_031.yaml: b615fbe814be28b46ef66643a42987a831ae5c7f05e5887e8bbb650fab3188e9
+  docs/production/p1_lgr_confirmation/exact_configs/lc_032.yaml: 429c33fbd4a0f3dbbf7c55e399f1ca7642830686c5e3f0db64b02f704cbb5d65
+  docs/production/p1_lgr_confirmation/exact_configs/lc_033.yaml: d7a1fd3075dd81b7f27867faf19c839e8bdeac425b5e28d1a363f52a6878f6af
+  docs/production/p1_lgr_confirmation/exact_configs/lc_034.yaml: 9cf59b8841921f7b0e9bf406b642912184efcb317fb02e1db94b6758289a95f1
+  docs/production/p1_lgr_confirmation/exact_configs/lc_035.yaml: 60a4c2ee571657a3a2ebd811c276f5d107c4566b0d31eef1d947a5825acbc8b8
+  docs/production/p1_lgr_confirmation/exact_configs/lc_036.yaml: 3f9ae192434cc19b14f6b96255e22a8f1ef67f5e13be2d46c34d640eba1e2c5b
+  docs/production/p1_lgr_confirmation/exact_configs/lc_037.yaml: 8409a19f8f5d73d774edd4dcefd7eda441a9c05e066f43661f812c072e77fce8
+  docs/production/p1_lgr_confirmation/exact_configs/lc_038.yaml: 697e966fc5c70d11de355ea8e4c4e330376e142323a8cfed5490941d7b42aacd
+  docs/production/p1_lgr_confirmation/exact_configs/lc_039.yaml: 687648916bfe3e8644b2ed7f1f3a55ac8602250b53cb88d0e5cf2d3eee5e2042
+  docs/production/p1_lgr_confirmation/exact_configs/lc_040.yaml: c12df17d8dc5b5dd0195cf3f3ba701b8466bbeb09d0cacdf19ca056e7632b455
+  docs/production/p1_lgr_confirmation/exact_configs/lc_041.yaml: 9f77b7a637adbcc676479a18791b870609cc4ab289c46c54717e487baa2f27fd
+  docs/production/p1_lgr_confirmation/exact_configs/lc_042.yaml: d86478f73e65a5b32caf9cf16a37610ef1887b44c63f97f1515f6a545d42b9ce
+  docs/production/p1_lgr_confirmation/exact_configs/lc_043.yaml: 66d7638de4590c3e81950766b654c79e91ef352ff6a77f3cdfed2956b55a00b7
+  docs/production/p1_lgr_confirmation/exact_configs/lc_044.yaml: c0481a10ac8922536fe65a29c48c78e98ec18f6a3c9860854219d25f1a414bba
+  docs/production/p1_lgr_confirmation/exact_configs/lc_045.yaml: 88c5a96b614b846cb2acbda8f6d8c7f0c2b648ead0537b909f08b3975ae18f9e
+  docs/production/p1_lgr_confirmation/exact_configs/lc_046.yaml: fd9f42d1446d5611070c446836ec351c49d316433b54f3b0bb9a35c633667d72
+  docs/production/p1_lgr_confirmation/exact_configs/lc_047.yaml: 395e71d5c93e77f1243e3aef4f757d539de42394019890fdc5b9775e771d2967
+  docs/production/p1_lgr_confirmation/exact_configs/lc_048.yaml: e3b336ec81e6211a649540a2482155595312dbc99f4d5d0a528b8c5c9cec74d6
+  docs/production/p1_lgr_confirmation/exact_configs/lc_049.yaml: 4618ec41ac42767ab07818bb3b33c9807899dd2dea45976e8d51888b17a1600a
+  docs/production/p1_lgr_confirmation/exact_configs/lc_050.yaml: f48c87b93b62019c52ab062135387d7c724859c8e61104be6f9fd3110f2d4797
+  docs/production/p1_lgr_confirmation/exact_configs/lc_051.yaml: 0816123597cea18e7b7be0a1f7c9106dec8cd33dfa6fe53288f132dd65ccd82f
+  docs/production/p1_lgr_confirmation/exact_configs/lc_052.yaml: 58d521bf6badb2283a4b412d8dc7b0e287b8a0590830d467be4ba7044d3b01d9
+  docs/production/p1_lgr_confirmation/exact_configs/lc_053.yaml: 5937ebd79a1db3d6615d347ef614ad0e1e445162595c27fe39114a36f54742a6
+  docs/production/p1_lgr_confirmation/exact_configs/lc_054.yaml: 6d5b3d763b620edcf6fe48d241d86c013b5f42589b9848c4aeb9cedfe3f91813
+  docs/production/p1_lgr_confirmation/lgr_multisweep_structural_matrix.json: f5e6190a20d39892195d5d0507f60fd19633229e356749173cc504a06a7246fd
+  docs/production/p1_lgr_confirmation/executed_runner.py: ff3f2988560be631e8aac0dbda482ae95a6ff7f241cf41b2d93110c903e4dceb
+  scripts/production/ablations/ours/p1_lgr_confirmation.py: ae675046da02dd298d259fe692dee2ae5e97dc608fac24677f68edc04c3b0501
+  scripts/production/ablations/ours/p1_lgr_gpu.sh: d9b257a83f50a6607715f7696928cee13efbb8deb0b03cfc6a4f7abafd110dcf
+paper_final_binary_hashes:
+  ops/ours_renderer/ours_renderer/_C.cpython-37m-x86_64-linux-gnu.so: 97539bfef33b865b0356f4891ce0d650c3b966485ab7a66c603d409e2a26aaa4

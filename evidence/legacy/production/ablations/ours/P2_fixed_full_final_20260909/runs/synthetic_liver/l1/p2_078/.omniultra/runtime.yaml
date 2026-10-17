@@ -1,0 +1,5 @@
+created_at: '2026-09-09T16:21:05'
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/P2_fixed_full_final_20260909/runs/synthetic_liver/l1/p2_078
+checkpoint_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/P2_fixed_full_final_20260909/runs/synthetic_liver/l1/p2_078/checkpoints
+hydra_output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/P2_fixed_full_final_20260909/runs/synthetic_liver/l1/p2_078
+config_path: hydra:experiment=production/sensorless/paper_semantic_freeze

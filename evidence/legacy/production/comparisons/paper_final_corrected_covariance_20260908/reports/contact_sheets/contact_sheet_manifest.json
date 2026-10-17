@@ -1,0 +1,1234 @@
+[
+  {
+    "sheet": "main_Liver",
+    "label": "UltraNeRF",
+    "item": 27,
+    "crop_xywh": [
+      19,
+      0,
+      53,
+      107
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/implicit_stage3_full_sweep/nvs/synthetic_liver/l3/ultranerf/vis/item_27/pred.png",
+    "sha256": "0e28f694b68bf9487c8c930e506e559d427be6ab06ea6ae57b9f8b0bc3d364f4",
+    "gt_sha256": "d2d4cf4c32f400ef012517de441a7e489e1ecfab5e6255c40296f7ca4c31abc3"
+  },
+  {
+    "sheet": "main_Liver",
+    "label": "NeRF-US",
+    "item": 27,
+    "crop_xywh": [
+      19,
+      0,
+      53,
+      107
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/implicit_stage3_full_sweep/nvs/synthetic_liver/l3/nerfus_no_prior/vis/item_27/pred.png",
+    "sha256": "60f444729b90fc153d7dfdca3ec851274b313652e95bec1a3ccad661d972e7a3",
+    "gt_sha256": "d2d4cf4c32f400ef012517de441a7e489e1ecfab5e6255c40296f7ca4c31abc3"
+  },
+  {
+    "sheet": "main_Liver",
+    "label": "UltraGauss",
+    "item": 27,
+    "crop_xywh": [
+      19,
+      0,
+      53,
+      107
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/synthetic_liver/l3/ultragauss/vis/item_27/pred.png",
+    "sha256": "4360cc23d5615c424bc31b4252a303980a83de74501aa458688cc9dd2dd8d1b2",
+    "gt_sha256": "d2d4cf4c32f400ef012517de441a7e489e1ecfab5e6255c40296f7ca4c31abc3"
+  },
+  {
+    "sheet": "main_Liver",
+    "label": "UltraGRay",
+    "item": 27,
+    "crop_xywh": [
+      19,
+      0,
+      53,
+      107
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/synthetic_liver/l3/ultragray/vis/item_27/pred.png",
+    "sha256": "a6d75eaa063052c660fb7620530102e9dd148d9fc3f426611dbf43ff53617bf3",
+    "gt_sha256": "d2d4cf4c32f400ef012517de441a7e489e1ecfab5e6255c40296f7ca4c31abc3"
+  },
+  {
+    "sheet": "main_Liver",
+    "label": "UltraGS",
+    "item": 27,
+    "crop_xywh": [
+      19,
+      0,
+      53,
+      107
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/synthetic_liver/l3/ultrags_baseline/vis/item_27/pred.png",
+    "sha256": "50b67e4dd52432cbe5d0140f38e7cded30615a7bb2d5809cf575fe634e2005ae",
+    "gt_sha256": "d2d4cf4c32f400ef012517de441a7e489e1ecfab5e6255c40296f7ca4c31abc3"
+  },
+  {
+    "sheet": "main_Liver",
+    "label": "3DGS",
+    "item": 27,
+    "crop_xywh": [
+      19,
+      0,
+      53,
+      107
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/synthetic_liver/l3/slice_adapted_3dgs/vis/item_27/pred.png",
+    "sha256": "11f7ae1f5d9552e019e0a6fa4b53deb5b4fa60ad93fb08c819f1f86360df986a",
+    "gt_sha256": "d2d4cf4c32f400ef012517de441a7e489e1ecfab5e6255c40296f7ca4c31abc3"
+  },
+  {
+    "sheet": "main_Liver",
+    "label": "GaussianPile",
+    "item": 27,
+    "crop_xywh": [
+      19,
+      0,
+      53,
+      107
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/synthetic_liver/l3/gaussianpile/vis/item_27/pred.png",
+    "sha256": "31b41224a1717cc534ef43fd74b8ae2b7cb8cce4feb9e1d68d23470773268e47",
+    "gt_sha256": "d2d4cf4c32f400ef012517de441a7e489e1ecfab5e6255c40296f7ca4c31abc3"
+  },
+  {
+    "sheet": "main_Liver",
+    "label": "ULGSplat",
+    "item": 27,
+    "crop_xywh": [
+      19,
+      0,
+      53,
+      107
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/paper_final_corrected_covariance_20260908/runs/synthetic_liver/l3/b1_011/vis/item_27/pred.png",
+    "sha256": "3f9e3e9f151989ef4243c5f79e730f7f076540d89e674428ef9581e4f2fe71b5",
+    "gt_sha256": "d2d4cf4c32f400ef012517de441a7e489e1ecfab5e6255c40296f7ca4c31abc3"
+  },
+  {
+    "sheet": "main_Liver",
+    "label": "GT",
+    "item": 27,
+    "crop_xywh": [
+      19,
+      0,
+      53,
+      107
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/implicit_stage3_full_sweep/nvs/synthetic_liver/l3/ultranerf/vis/item_27/gt.png",
+    "sha256": "d2d4cf4c32f400ef012517de441a7e489e1ecfab5e6255c40296f7ca4c31abc3",
+    "gt_sha256": "d2d4cf4c32f400ef012517de441a7e489e1ecfab5e6255c40296f7ca4c31abc3"
+  },
+  {
+    "sheet": "main_Spine",
+    "label": "UltraNeRF",
+    "item": 17,
+    "crop_xywh": [
+      59,
+      0,
+      36,
+      215
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/implicit_stage3_full_sweep/nvs/spine_phantom/left3_2/ultranerf/vis/item_17/pred.png",
+    "sha256": "1a9769221ade58c3fb175ff47a43387c186c98193c991e77f67967ae8c892375",
+    "gt_sha256": "90a816a35136aec062f7d6e39f7a52bc5c77c49ce53cfda081a7cd3c3f00a4b0"
+  },
+  {
+    "sheet": "main_Spine",
+    "label": "NeRF-US",
+    "item": 17,
+    "crop_xywh": [
+      59,
+      0,
+      36,
+      215
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/implicit_stage3_full_sweep/nvs/spine_phantom/left3_2/nerfus_no_prior/vis/item_17/pred.png",
+    "sha256": "5fd3bd66541063e5e5cbff1e02da77c7b7767c10b3ecf18d671a64e5eb8712aa",
+    "gt_sha256": "90a816a35136aec062f7d6e39f7a52bc5c77c49ce53cfda081a7cd3c3f00a4b0"
+  },
+  {
+    "sheet": "main_Spine",
+    "label": "UltraGauss",
+    "item": 17,
+    "crop_xywh": [
+      59,
+      0,
+      36,
+      215
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/spine_phantom/left3_2/ultragauss/vis/item_17/pred.png",
+    "sha256": "77ea52f81d4448726122c5a45b581d86d55da937493ae9ed3ef4909ad288bb21",
+    "gt_sha256": "90a816a35136aec062f7d6e39f7a52bc5c77c49ce53cfda081a7cd3c3f00a4b0"
+  },
+  {
+    "sheet": "main_Spine",
+    "label": "UltraGRay",
+    "item": 17,
+    "crop_xywh": [
+      59,
+      0,
+      36,
+      215
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/spine_phantom/left3_2/ultragray/vis/item_17/pred.png",
+    "sha256": "0081c381bc72c8e4c2b0f741812567ee859aab1440cfeac24c3798d5c718778d",
+    "gt_sha256": "90a816a35136aec062f7d6e39f7a52bc5c77c49ce53cfda081a7cd3c3f00a4b0"
+  },
+  {
+    "sheet": "main_Spine",
+    "label": "UltraGS",
+    "item": 17,
+    "crop_xywh": [
+      59,
+      0,
+      36,
+      215
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/spine_phantom/left3_2/ultrags_baseline/vis/item_17/pred.png",
+    "sha256": "b196b6e20914fc6c6d872e8e7a597054614b33f91c96197f1dd96e7cb0f03b36",
+    "gt_sha256": "90a816a35136aec062f7d6e39f7a52bc5c77c49ce53cfda081a7cd3c3f00a4b0"
+  },
+  {
+    "sheet": "main_Spine",
+    "label": "3DGS",
+    "item": 17,
+    "crop_xywh": [
+      59,
+      0,
+      36,
+      215
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/spine_phantom/left3_2/slice_adapted_3dgs/vis/item_17/pred.png",
+    "sha256": "0adf5b96c94b36cdeb213a4f87496f1fab46fcb64fe5b47553ff11cd3bfba52b",
+    "gt_sha256": "90a816a35136aec062f7d6e39f7a52bc5c77c49ce53cfda081a7cd3c3f00a4b0"
+  },
+  {
+    "sheet": "main_Spine",
+    "label": "GaussianPile",
+    "item": 17,
+    "crop_xywh": [
+      59,
+      0,
+      36,
+      215
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/spine_phantom/left3_2/gaussianpile/vis/item_17/pred.png",
+    "sha256": "34538bbe3cb54e300b71f8b7c09a908ca7bff5ae83cc6996ea8b7de6500a9a48",
+    "gt_sha256": "90a816a35136aec062f7d6e39f7a52bc5c77c49ce53cfda081a7cd3c3f00a4b0"
+  },
+  {
+    "sheet": "main_Spine",
+    "label": "ULGSplat",
+    "item": 17,
+    "crop_xywh": [
+      59,
+      0,
+      36,
+      215
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/paper_final_corrected_covariance_20260908/runs/spine_phantom/left3_2/b1_004/vis/item_17/pred.png",
+    "sha256": "af9db9bda77708cd50b29bf055fef8e3640506141edad2c8acee933c678d3818",
+    "gt_sha256": "90a816a35136aec062f7d6e39f7a52bc5c77c49ce53cfda081a7cd3c3f00a4b0"
+  },
+  {
+    "sheet": "main_Spine",
+    "label": "GT",
+    "item": 17,
+    "crop_xywh": [
+      59,
+      0,
+      36,
+      215
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/implicit_stage3_full_sweep/nvs/spine_phantom/left3_2/ultranerf/vis/item_17/gt.png",
+    "sha256": "90a816a35136aec062f7d6e39f7a52bc5c77c49ce53cfda081a7cd3c3f00a4b0",
+    "gt_sha256": "90a816a35136aec062f7d6e39f7a52bc5c77c49ce53cfda081a7cd3c3f00a4b0"
+  },
+  {
+    "sheet": "main_Arm",
+    "label": "UltraNeRF",
+    "item": 18,
+    "crop_xywh": [
+      129,
+      24,
+      92,
+      69
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/implicit_stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_S_PtD_qc_0165_0364_s02/ultranerf/vis/item_18/pred.png",
+    "sha256": "43405c2c8571967da643867e2294bb23c4b7d91e4770eb930541d06215fc3017",
+    "gt_sha256": "c4f3c0e585ff535348e2bf1fbc6efae5c591fb51b79dd631a0093b302f422f57"
+  },
+  {
+    "sheet": "main_Arm",
+    "label": "NeRF-US",
+    "item": 18,
+    "crop_xywh": [
+      129,
+      24,
+      92,
+      69
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/implicit_stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_S_PtD_qc_0165_0364_s02/nerfus_no_prior/vis/item_18/pred.png",
+    "sha256": "b0359f0f645627dc37fa83c6547f92b36a1d023db39568793dcdf8cf2d52bd3f",
+    "gt_sha256": "c4f3c0e585ff535348e2bf1fbc6efae5c591fb51b79dd631a0093b302f422f57"
+  },
+  {
+    "sheet": "main_Arm",
+    "label": "UltraGauss",
+    "item": 18,
+    "crop_xywh": [
+      129,
+      24,
+      92,
+      69
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/ultragauss_chi2_5500_replacement/nvs/tus_rec_2024_qc/010_RH_Per_S_PtD_qc_0165_0364_s02/ultragauss/vis/item_18/pred.png",
+    "sha256": "8bd52abdec3de3fa7a3c9343ac2b414e10c2f769a0c9f7648f16c9b357f4d857",
+    "gt_sha256": "c4f3c0e585ff535348e2bf1fbc6efae5c591fb51b79dd631a0093b302f422f57"
+  },
+  {
+    "sheet": "main_Arm",
+    "label": "UltraGRay",
+    "item": 18,
+    "crop_xywh": [
+      129,
+      24,
+      92,
+      69
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_S_PtD_qc_0165_0364_s02/ultragray/vis/item_18/pred.png",
+    "sha256": "3a1f277c93db17ce1a1f490cecd545ae6cc2a97cecda9f41e88a3a87dce33fea",
+    "gt_sha256": "c4f3c0e585ff535348e2bf1fbc6efae5c591fb51b79dd631a0093b302f422f57"
+  },
+  {
+    "sheet": "main_Arm",
+    "label": "UltraGS",
+    "item": 18,
+    "crop_xywh": [
+      129,
+      24,
+      92,
+      69
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_S_PtD_qc_0165_0364_s02/ultrags_baseline/vis/item_18/pred.png",
+    "sha256": "949cd4fe2b3dd172d30de8aed92386fa59016d0c9e4975e3b5ea3b0a60806289",
+    "gt_sha256": "c4f3c0e585ff535348e2bf1fbc6efae5c591fb51b79dd631a0093b302f422f57"
+  },
+  {
+    "sheet": "main_Arm",
+    "label": "3DGS",
+    "item": 18,
+    "crop_xywh": [
+      129,
+      24,
+      92,
+      69
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_S_PtD_qc_0165_0364_s02/slice_adapted_3dgs/vis/item_18/pred.png",
+    "sha256": "9eb9d6991d1eb1e21b4b5f897b5103c4c1caee77c40a06deec4f52fb821ee965",
+    "gt_sha256": "c4f3c0e585ff535348e2bf1fbc6efae5c591fb51b79dd631a0093b302f422f57"
+  },
+  {
+    "sheet": "main_Arm",
+    "label": "GaussianPile",
+    "item": 18,
+    "crop_xywh": [
+      129,
+      24,
+      92,
+      69
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_S_PtD_qc_0165_0364_s02/gaussianpile/vis/item_18/pred.png",
+    "sha256": "153384bc3fcc12d349ba7d8fd4e700e11e45e491338dc0bd36096a9c41c5e237",
+    "gt_sha256": "c4f3c0e585ff535348e2bf1fbc6efae5c591fb51b79dd631a0093b302f422f57"
+  },
+  {
+    "sheet": "main_Arm",
+    "label": "ULGSplat",
+    "item": 18,
+    "crop_xywh": [
+      129,
+      24,
+      92,
+      69
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/paper_final_corrected_covariance_20260908/runs/tus_rec_2024_qc/010_RH_Per_S_PtD_qc_0165_0364_s02/b1_062/vis/item_18/pred.png",
+    "sha256": "5185059d8285ea1571198b322e07e062d85ccddfdb7925c676bd8ca5943119a3",
+    "gt_sha256": "c4f3c0e585ff535348e2bf1fbc6efae5c591fb51b79dd631a0093b302f422f57"
+  },
+  {
+    "sheet": "main_Arm",
+    "label": "GT",
+    "item": 18,
+    "crop_xywh": [
+      129,
+      24,
+      92,
+      69
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/implicit_stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_S_PtD_qc_0165_0364_s02/ultranerf/vis/item_18/gt.png",
+    "sha256": "c4f3c0e585ff535348e2bf1fbc6efae5c591fb51b79dd631a0093b302f422f57",
+    "gt_sha256": "c4f3c0e585ff535348e2bf1fbc6efae5c591fb51b79dd631a0093b302f422f57"
+  },
+  {
+    "sheet": "main_Breast",
+    "label": "UltraNeRF",
+    "item": 39,
+    "crop_xywh": [
+      150,
+      23,
+      85,
+      67
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/implicit_stage3_full_sweep/nvs/tdsc_abus_2023/validation_116/ultranerf/vis/item_39/pred.png",
+    "sha256": "38c42037ea9ccfd1c18835d7208c44b83121b8bb6f320770498b211c8ef3c022",
+    "gt_sha256": "bb8d6cb3fe1467c94704c2ad139061b376c179b1f0a816fc06dcd895ed7a3473"
+  },
+  {
+    "sheet": "main_Breast",
+    "label": "NeRF-US",
+    "item": 39,
+    "crop_xywh": [
+      150,
+      23,
+      85,
+      67
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/implicit_stage3_full_sweep/nvs/tdsc_abus_2023/validation_116/nerfus_no_prior/vis/item_39/pred.png",
+    "sha256": "814dccb6615b4a6c1f2e8e27f8180fcb8369532d5176ca973c57ddc5fa48c7fb",
+    "gt_sha256": "bb8d6cb3fe1467c94704c2ad139061b376c179b1f0a816fc06dcd895ed7a3473"
+  },
+  {
+    "sheet": "main_Breast",
+    "label": "UltraGauss",
+    "item": 39,
+    "crop_xywh": [
+      150,
+      23,
+      85,
+      67
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tdsc_abus_2023/validation_116/ultragauss/vis/item_39/pred.png",
+    "sha256": "093f3b8a6d8daf6675248cc83f4b96a244623f94a46272fe6f004a415fa17b98",
+    "gt_sha256": "bb8d6cb3fe1467c94704c2ad139061b376c179b1f0a816fc06dcd895ed7a3473"
+  },
+  {
+    "sheet": "main_Breast",
+    "label": "UltraGRay",
+    "item": 39,
+    "crop_xywh": [
+      150,
+      23,
+      85,
+      67
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tdsc_abus_2023/validation_116/ultragray/vis/item_39/pred.png",
+    "sha256": "75a8c1fd2df9e5db91641a68973d82396e3ba4b5162dd69f6f32648d17adf857",
+    "gt_sha256": "bb8d6cb3fe1467c94704c2ad139061b376c179b1f0a816fc06dcd895ed7a3473"
+  },
+  {
+    "sheet": "main_Breast",
+    "label": "UltraGS",
+    "item": 39,
+    "crop_xywh": [
+      150,
+      23,
+      85,
+      67
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tdsc_abus_2023/validation_116/ultrags_baseline/vis/item_39/pred.png",
+    "sha256": "712249f0a8a35f3bf06761c9f1d4a7532eaad2bf02a9094cf09a7bbb78416c50",
+    "gt_sha256": "bb8d6cb3fe1467c94704c2ad139061b376c179b1f0a816fc06dcd895ed7a3473"
+  },
+  {
+    "sheet": "main_Breast",
+    "label": "3DGS",
+    "item": 39,
+    "crop_xywh": [
+      150,
+      23,
+      85,
+      67
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tdsc_abus_2023/validation_116/slice_adapted_3dgs/vis/item_39/pred.png",
+    "sha256": "4db18c587940d9099a324a6a4b3233284a16aa7e825ee960902e12762317f5b1",
+    "gt_sha256": "bb8d6cb3fe1467c94704c2ad139061b376c179b1f0a816fc06dcd895ed7a3473"
+  },
+  {
+    "sheet": "main_Breast",
+    "label": "GaussianPile",
+    "item": 39,
+    "crop_xywh": [
+      150,
+      23,
+      85,
+      67
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tdsc_abus_2023/validation_116/gaussianpile/vis/item_39/pred.png",
+    "sha256": "fec71e8ed0082dd27532996e75db6182698a5eec6954d54efb93fd900867afa9",
+    "gt_sha256": "bb8d6cb3fe1467c94704c2ad139061b376c179b1f0a816fc06dcd895ed7a3473"
+  },
+  {
+    "sheet": "main_Breast",
+    "label": "ULGSplat",
+    "item": 39,
+    "crop_xywh": [
+      150,
+      23,
+      85,
+      67
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/paper_final_corrected_covariance_20260908/runs/tdsc_abus_2023/validation_116/b1_031/vis/item_39/pred.png",
+    "sha256": "a451209693685a80c9ec2815254fb5b43c27171a932a1fc70930da4e5f87c705",
+    "gt_sha256": "bb8d6cb3fe1467c94704c2ad139061b376c179b1f0a816fc06dcd895ed7a3473"
+  },
+  {
+    "sheet": "main_Breast",
+    "label": "GT",
+    "item": 39,
+    "crop_xywh": [
+      150,
+      23,
+      85,
+      67
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/implicit_stage3_full_sweep/nvs/tdsc_abus_2023/validation_116/ultranerf/vis/item_39/gt.png",
+    "sha256": "bb8d6cb3fe1467c94704c2ad139061b376c179b1f0a816fc06dcd895ed7a3473",
+    "gt_sha256": "bb8d6cb3fe1467c94704c2ad139061b376c179b1f0a816fc06dcd895ed7a3473"
+  },
+  {
+    "sheet": "joint_Liver",
+    "label": "P0 L0 C0",
+    "item": 23,
+    "crop_xywh": [
+      0,
+      0,
+      53,
+      107
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/paper_final_corrected_covariance_20260908/runs/synthetic_liver/l1/b1_078/vis/item_23/pred.png",
+    "sha256": "ba77f16205461366f1439f4739ae76014d046d7b1bcce37a256c88f958f4dd00",
+    "gt_sha256": "79f35f7be36b87b0243e94a88040b7a3de7a2dadb20f7a455bb6adbf7742ca43"
+  },
+  {
+    "sheet": "joint_Liver",
+    "label": "P0 L0 C1",
+    "item": 23,
+    "crop_xywh": [
+      0,
+      0,
+      53,
+      107
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/paper_final_corrected_covariance_20260908/runs/synthetic_liver/l1/b1_080/vis/item_23/pred.png",
+    "sha256": "7388bf301f16c8a2dea8e97c276ca2e1306bffb006edc67180e2d8696ee90340",
+    "gt_sha256": "79f35f7be36b87b0243e94a88040b7a3de7a2dadb20f7a455bb6adbf7742ca43"
+  },
+  {
+    "sheet": "joint_Liver",
+    "label": "P0 L1 C0",
+    "item": 23,
+    "crop_xywh": [
+      0,
+      0,
+      53,
+      107
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/paper_final_corrected_covariance_20260908/runs/synthetic_liver/l1/b1_082/vis/item_23/pred.png",
+    "sha256": "c8ee153816a97d8e505f5f6a043bc900e46ccfa844966c11887754b1bcb7a90c",
+    "gt_sha256": "79f35f7be36b87b0243e94a88040b7a3de7a2dadb20f7a455bb6adbf7742ca43"
+  },
+  {
+    "sheet": "joint_Liver",
+    "label": "P0 L1 C1",
+    "item": 23,
+    "crop_xywh": [
+      0,
+      0,
+      53,
+      107
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/regression/p05_corrected_covariance_20260908/anchors/liver/vis/item_23/pred.png",
+    "sha256": "2e140883eba0b81f2e797d45ac41196e135b05537cb611fdf12c7e366ab2487b",
+    "gt_sha256": "79f35f7be36b87b0243e94a88040b7a3de7a2dadb20f7a455bb6adbf7742ca43"
+  },
+  {
+    "sheet": "joint_Liver",
+    "label": "P1 L0 C0",
+    "item": 23,
+    "crop_xywh": [
+      0,
+      0,
+      53,
+      107
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/paper_final_corrected_covariance_20260908/runs/synthetic_liver/l1/b1_084/vis/item_23/pred.png",
+    "sha256": "fdf37e90efb66ea1f9beb4fca68779d0b7301fe7d56b2623d629a117ce2bbccd",
+    "gt_sha256": "79f35f7be36b87b0243e94a88040b7a3de7a2dadb20f7a455bb6adbf7742ca43"
+  },
+  {
+    "sheet": "joint_Liver",
+    "label": "P1 L0 C1",
+    "item": 23,
+    "crop_xywh": [
+      0,
+      0,
+      53,
+      107
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/paper_final_corrected_covariance_20260908/runs/synthetic_liver/l1/b1_086/vis/item_23/pred.png",
+    "sha256": "632d5749a67dcafd50a43959801d227f73a0e7cc1f08ebe5ea02e7886281f815",
+    "gt_sha256": "79f35f7be36b87b0243e94a88040b7a3de7a2dadb20f7a455bb6adbf7742ca43"
+  },
+  {
+    "sheet": "joint_Liver",
+    "label": "P1 L1 C0",
+    "item": 23,
+    "crop_xywh": [
+      0,
+      0,
+      53,
+      107
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/paper_final_corrected_covariance_20260908/runs/synthetic_liver/l1/b1_088/vis/item_23/pred.png",
+    "sha256": "ba25f741c397952527299a4c8f8baef8cb06431aa44433a2cf567df056ca8dc4",
+    "gt_sha256": "79f35f7be36b87b0243e94a88040b7a3de7a2dadb20f7a455bb6adbf7742ca43"
+  },
+  {
+    "sheet": "joint_Liver",
+    "label": "P1 L1 C1",
+    "item": 23,
+    "crop_xywh": [
+      0,
+      0,
+      53,
+      107
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/paper_final_corrected_covariance_20260908/runs/synthetic_liver/l1/b1_090/vis/item_23/pred.png",
+    "sha256": "5a43334f71fd6a1ea8e766e8a4a05ab913a039df4277eb51263e75c136bd062f",
+    "gt_sha256": "79f35f7be36b87b0243e94a88040b7a3de7a2dadb20f7a455bb6adbf7742ca43"
+  },
+  {
+    "sheet": "joint_Liver",
+    "label": "GT",
+    "item": 23,
+    "crop_xywh": [
+      0,
+      0,
+      53,
+      107
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/paper_final_corrected_covariance_20260908/runs/synthetic_liver/l1/b1_078/vis/item_23/gt.png",
+    "sha256": "79f35f7be36b87b0243e94a88040b7a3de7a2dadb20f7a455bb6adbf7742ca43",
+    "gt_sha256": "79f35f7be36b87b0243e94a88040b7a3de7a2dadb20f7a455bb6adbf7742ca43"
+  },
+  {
+    "sheet": "ppp_internal_Liver",
+    "label": "MP",
+    "item": 14,
+    "crop_xywh": [
+      0,
+      0,
+      53,
+      107
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/regression/p05_corrected_covariance_20260908/anchors/liver/vis/item_14/pred.png",
+    "sha256": "6a5fb719c8888d5205389710c526add9effad86ffa07de8a812695d71e96acc6",
+    "gt_sha256": "b377d2ca005eb52cd7f2ba727c8b828f724617cace469041be39bb7a9c834803"
+  },
+  {
+    "sheet": "ppp_internal_Liver",
+    "label": "PP-S",
+    "item": 14,
+    "crop_xywh": [
+      0,
+      0,
+      53,
+      107
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/paper_final_corrected_covariance_20260908/runs/synthetic_liver/l1/b1_092/vis/item_14/pred.png",
+    "sha256": "289024cf544f7710f0af37d08c1ec98521f9b4033982dca1154e0e67ef0138c2",
+    "gt_sha256": "b377d2ca005eb52cd7f2ba727c8b828f724617cace469041be39bb7a9c834803"
+  },
+  {
+    "sheet": "ppp_internal_Liver",
+    "label": "PP-A",
+    "item": 14,
+    "crop_xywh": [
+      0,
+      0,
+      53,
+      107
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/paper_final_corrected_covariance_20260908/runs/synthetic_liver/l1/b1_094/vis/item_14/pred.png",
+    "sha256": "9b25938e3c5fc33eae80038e7662a04e040eecc34bd1c1f7fd06055088362b38",
+    "gt_sha256": "b377d2ca005eb52cd7f2ba727c8b828f724617cace469041be39bb7a9c834803"
+  },
+  {
+    "sheet": "ppp_internal_Liver",
+    "label": "PPP",
+    "item": 14,
+    "crop_xywh": [
+      0,
+      0,
+      53,
+      107
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/paper_final_corrected_covariance_20260908/runs/synthetic_liver/l1/b1_090/vis/item_14/pred.png",
+    "sha256": "82a5857302587e488dac2a2fa145a3a759be4fe7b1724dad9b20a9483f68c603",
+    "gt_sha256": "b377d2ca005eb52cd7f2ba727c8b828f724617cace469041be39bb7a9c834803"
+  },
+  {
+    "sheet": "ppp_internal_Liver",
+    "label": "GT",
+    "item": 14,
+    "crop_xywh": [
+      0,
+      0,
+      53,
+      107
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/regression/p05_corrected_covariance_20260908/anchors/liver/vis/item_14/gt.png",
+    "sha256": "b377d2ca005eb52cd7f2ba727c8b828f724617cace469041be39bb7a9c834803",
+    "gt_sha256": "b377d2ca005eb52cd7f2ba727c8b828f724617cace469041be39bb7a9c834803"
+  },
+  {
+    "sheet": "lgr_structural_Liver",
+    "label": "Plane",
+    "item": 5,
+    "crop_xywh": [
+      0,
+      0,
+      53,
+      107
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/paper_final_corrected_covariance_20260908/runs/synthetic_liver/l1/b1_096/vis/item_5/pred.png",
+    "sha256": "208cbfb8b3cf90f4abf856987b30543a0ac9adabe319941776807fb49a18c2fc",
+    "gt_sha256": "f6a6e09ebe4bebe1462aca36fc8bb469f540eb52d53f4afb0c361969921ca25c"
+  },
+  {
+    "sheet": "lgr_structural_Liver",
+    "label": "Fixed",
+    "item": 5,
+    "crop_xywh": [
+      0,
+      0,
+      53,
+      107
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/paper_final_corrected_covariance_20260908/runs/synthetic_liver/l1/b1_098/vis/item_5/pred.png",
+    "sha256": "05c41d98c6c99474b26af4db896796ef1d615bcf61fd8a05c60289c21d64e62f",
+    "gt_sha256": "f6a6e09ebe4bebe1462aca36fc8bb469f540eb52d53f4afb0c361969921ca25c"
+  },
+  {
+    "sheet": "lgr_structural_Liver",
+    "label": "Adaptive",
+    "item": 5,
+    "crop_xywh": [
+      0,
+      0,
+      53,
+      107
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/paper_final_corrected_covariance_20260908/runs/synthetic_liver/l1/b1_080/vis/item_5/pred.png",
+    "sha256": "ce76c96eb29fbcb2a466cb7bf1c6f6d2860a1946ed0abc6760d8e7065e4851d2",
+    "gt_sha256": "f6a6e09ebe4bebe1462aca36fc8bb469f540eb52d53f4afb0c361969921ca25c"
+  },
+  {
+    "sheet": "lgr_structural_Liver",
+    "label": "Simple",
+    "item": 5,
+    "crop_xywh": [
+      0,
+      0,
+      53,
+      107
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/paper_final_corrected_covariance_20260908/runs/synthetic_liver/l1/b1_100/vis/item_5/pred.png",
+    "sha256": "fd25c3e2392fff6942514adf7e1304cba30b8ce16d7d014fee8600bc4c1cb9e7",
+    "gt_sha256": "f6a6e09ebe4bebe1462aca36fc8bb469f540eb52d53f4afb0c361969921ca25c"
+  },
+  {
+    "sheet": "lgr_structural_Liver",
+    "label": "Full",
+    "item": 5,
+    "crop_xywh": [
+      0,
+      0,
+      53,
+      107
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/regression/p05_corrected_covariance_20260908/anchors/liver/vis/item_5/pred.png",
+    "sha256": "a480c863fd67755562bf972d187d422fd2a3b61931e66e2000d3566a5d98891c",
+    "gt_sha256": "f6a6e09ebe4bebe1462aca36fc8bb469f540eb52d53f4afb0c361969921ca25c"
+  },
+  {
+    "sheet": "lgr_structural_Liver",
+    "label": "GT",
+    "item": 5,
+    "crop_xywh": [
+      0,
+      0,
+      53,
+      107
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/paper_final_corrected_covariance_20260908/runs/synthetic_liver/l1/b1_096/vis/item_5/gt.png",
+    "sha256": "f6a6e09ebe4bebe1462aca36fc8bb469f540eb52d53f4afb0c361969921ca25c",
+    "gt_sha256": "f6a6e09ebe4bebe1462aca36fc8bb469f540eb52d53f4afb0c361969921ca25c"
+  },
+  {
+    "sheet": "cga_structural_Liver",
+    "label": "GD",
+    "item": 1,
+    "crop_xywh": [
+      0,
+      0,
+      53,
+      107
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/paper_final_corrected_covariance_20260908/runs/synthetic_liver/l1/b1_082/vis/item_1/pred.png",
+    "sha256": "ab822e0a59b8dd0d3df96da72ad4838c025542109208a54fa6e7ab8921328c61",
+    "gt_sha256": "916b0b84003923266debc9e038028d3470130ebeab67ee62b6b3c2be431ae086"
+  },
+  {
+    "sheet": "cga_structural_Liver",
+    "label": "RGD",
+    "item": 1,
+    "crop_xywh": [
+      0,
+      0,
+      53,
+      107
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/paper_final_corrected_covariance_20260908/runs/synthetic_liver/l1/b1_102/vis/item_1/pred.png",
+    "sha256": "bbea94059bcfd84c13de1d320fbca8660fa7d7c39134bbe4846ce284a72b434d",
+    "gt_sha256": "916b0b84003923266debc9e038028d3470130ebeab67ee62b6b3c2be431ae086"
+  },
+  {
+    "sheet": "cga_structural_Liver",
+    "label": "RGD+OP",
+    "item": 1,
+    "crop_xywh": [
+      0,
+      0,
+      53,
+      107
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/paper_final_corrected_covariance_20260908/runs/synthetic_liver/l1/b1_104/vis/item_1/pred.png",
+    "sha256": "23fbe891a34739ee432d42cb828a98a74489a89303cce9c839793f8657f1dbd2",
+    "gt_sha256": "916b0b84003923266debc9e038028d3470130ebeab67ee62b6b3c2be431ae086"
+  },
+  {
+    "sheet": "cga_structural_Liver",
+    "label": "RGD+LP",
+    "item": 1,
+    "crop_xywh": [
+      0,
+      0,
+      53,
+      107
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/paper_final_corrected_covariance_20260908/runs/synthetic_liver/l1/b1_106/vis/item_1/pred.png",
+    "sha256": "25a2c193b94b51078cc11b97e71f5e009d5e3b8b8201c167faf1c11e4985da9a",
+    "gt_sha256": "916b0b84003923266debc9e038028d3470130ebeab67ee62b6b3c2be431ae086"
+  },
+  {
+    "sheet": "cga_structural_Liver",
+    "label": "Full",
+    "item": 1,
+    "crop_xywh": [
+      0,
+      0,
+      53,
+      107
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/regression/p05_corrected_covariance_20260908/anchors/liver/vis/item_1/pred.png",
+    "sha256": "460d106cade1cbbb2651cb78857638bf51959d1ba320f97e6f945369267853bb",
+    "gt_sha256": "916b0b84003923266debc9e038028d3470130ebeab67ee62b6b3c2be431ae086"
+  },
+  {
+    "sheet": "cga_structural_Liver",
+    "label": "GT",
+    "item": 1,
+    "crop_xywh": [
+      0,
+      0,
+      53,
+      107
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/paper_final_corrected_covariance_20260908/runs/synthetic_liver/l1/b1_082/vis/item_1/gt.png",
+    "sha256": "916b0b84003923266debc9e038028d3470130ebeab67ee62b6b3c2be431ae086",
+    "gt_sha256": "916b0b84003923266debc9e038028d3470130ebeab67ee62b6b3c2be431ae086"
+  },
+  {
+    "sheet": "joint_Arm",
+    "label": "P0 L0 C0",
+    "item": 9,
+    "crop_xywh": [
+      129,
+      24,
+      92,
+      69
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/paper_final_corrected_covariance_20260908/runs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/b1_079/vis/item_9/pred.png",
+    "sha256": "1c903376ebc1e880768493fa517f6e71103805a6ee5bc5076c742d742f2b04d8",
+    "gt_sha256": "9ae35e80a9a4c840d33ab802adfbca77c9e09bd136dfc7500147d53852a13d9d"
+  },
+  {
+    "sheet": "joint_Arm",
+    "label": "P0 L0 C1",
+    "item": 9,
+    "crop_xywh": [
+      129,
+      24,
+      92,
+      69
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/paper_final_corrected_covariance_20260908/runs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/b1_081/vis/item_9/pred.png",
+    "sha256": "ed76fcc4607ac755667d0f730dd4409e7cf93b24b23d9356dee391d5094291c9",
+    "gt_sha256": "9ae35e80a9a4c840d33ab802adfbca77c9e09bd136dfc7500147d53852a13d9d"
+  },
+  {
+    "sheet": "joint_Arm",
+    "label": "P0 L1 C0",
+    "item": 9,
+    "crop_xywh": [
+      129,
+      24,
+      92,
+      69
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/paper_final_corrected_covariance_20260908/runs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/b1_083/vis/item_9/pred.png",
+    "sha256": "63d932d8def4628a12bee9505bd6b2c15c3b918b3aef41c3475905589c49ec5b",
+    "gt_sha256": "9ae35e80a9a4c840d33ab802adfbca77c9e09bd136dfc7500147d53852a13d9d"
+  },
+  {
+    "sheet": "joint_Arm",
+    "label": "P0 L1 C1",
+    "item": 9,
+    "crop_xywh": [
+      129,
+      24,
+      92,
+      69
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/regression/p05_corrected_covariance_20260908/anchors/arm/vis/item_9/pred.png",
+    "sha256": "e897bf7877d5d2833c03d43c2053af96aab2ed3da84ed720c65b5c08478a225e",
+    "gt_sha256": "9ae35e80a9a4c840d33ab802adfbca77c9e09bd136dfc7500147d53852a13d9d"
+  },
+  {
+    "sheet": "joint_Arm",
+    "label": "P1 L0 C0",
+    "item": 9,
+    "crop_xywh": [
+      129,
+      24,
+      92,
+      69
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/paper_final_corrected_covariance_20260908/runs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/b1_085/vis/item_9/pred.png",
+    "sha256": "ea9a94bb11ebebf7668cebddfc673c0e6040f3779f9e2e12eb89b7c5341850b3",
+    "gt_sha256": "9ae35e80a9a4c840d33ab802adfbca77c9e09bd136dfc7500147d53852a13d9d"
+  },
+  {
+    "sheet": "joint_Arm",
+    "label": "P1 L0 C1",
+    "item": 9,
+    "crop_xywh": [
+      129,
+      24,
+      92,
+      69
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/paper_final_corrected_covariance_20260908/runs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/b1_087/vis/item_9/pred.png",
+    "sha256": "0b8b8f23641419f9b7ea7c0a57a1378f1f3b91718eab5ea247a0b0024dbaf13a",
+    "gt_sha256": "9ae35e80a9a4c840d33ab802adfbca77c9e09bd136dfc7500147d53852a13d9d"
+  },
+  {
+    "sheet": "joint_Arm",
+    "label": "P1 L1 C0",
+    "item": 9,
+    "crop_xywh": [
+      129,
+      24,
+      92,
+      69
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/paper_final_corrected_covariance_20260908/runs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/b1_089/vis/item_9/pred.png",
+    "sha256": "9b04bbaf8967d20b07131cce67b477341595eed8e77621f9042e69b4e0040837",
+    "gt_sha256": "9ae35e80a9a4c840d33ab802adfbca77c9e09bd136dfc7500147d53852a13d9d"
+  },
+  {
+    "sheet": "joint_Arm",
+    "label": "P1 L1 C1",
+    "item": 9,
+    "crop_xywh": [
+      129,
+      24,
+      92,
+      69
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/paper_final_corrected_covariance_20260908/runs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/b1_091/vis/item_9/pred.png",
+    "sha256": "dbe6c7277da4fcf66923223067d752edb7764b28760866d012c7b4846a205dc3",
+    "gt_sha256": "9ae35e80a9a4c840d33ab802adfbca77c9e09bd136dfc7500147d53852a13d9d"
+  },
+  {
+    "sheet": "joint_Arm",
+    "label": "GT",
+    "item": 9,
+    "crop_xywh": [
+      129,
+      24,
+      92,
+      69
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/paper_final_corrected_covariance_20260908/runs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/b1_079/vis/item_9/gt.png",
+    "sha256": "9ae35e80a9a4c840d33ab802adfbca77c9e09bd136dfc7500147d53852a13d9d",
+    "gt_sha256": "9ae35e80a9a4c840d33ab802adfbca77c9e09bd136dfc7500147d53852a13d9d"
+  },
+  {
+    "sheet": "ppp_internal_Arm",
+    "label": "MP",
+    "item": 25,
+    "crop_xywh": [
+      162,
+      24,
+      92,
+      69
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/regression/p05_corrected_covariance_20260908/anchors/arm/vis/item_25/pred.png",
+    "sha256": "e800b077fa1b7fc8de3f0c9c15130f8fb5b9dda7770e0b3f215c51a0a0a9c660",
+    "gt_sha256": "07e33866f0ea5bd673a3e64fa42da7f5440c36e9b5c440d486ba345c3f3eae69"
+  },
+  {
+    "sheet": "ppp_internal_Arm",
+    "label": "PP-S",
+    "item": 25,
+    "crop_xywh": [
+      162,
+      24,
+      92,
+      69
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/paper_final_corrected_covariance_20260908/runs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/b1_093/vis/item_25/pred.png",
+    "sha256": "a63937fcaf671078a8c489667e0267bb9621d3d7780a4502bdb5b8b810930005",
+    "gt_sha256": "07e33866f0ea5bd673a3e64fa42da7f5440c36e9b5c440d486ba345c3f3eae69"
+  },
+  {
+    "sheet": "ppp_internal_Arm",
+    "label": "PP-A",
+    "item": 25,
+    "crop_xywh": [
+      162,
+      24,
+      92,
+      69
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/paper_final_corrected_covariance_20260908/runs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/b1_095/vis/item_25/pred.png",
+    "sha256": "a819f727edcfa569d7f52860f0dcd9cdbeae9ec0ef4302cbf38c05562d9e7247",
+    "gt_sha256": "07e33866f0ea5bd673a3e64fa42da7f5440c36e9b5c440d486ba345c3f3eae69"
+  },
+  {
+    "sheet": "ppp_internal_Arm",
+    "label": "PPP",
+    "item": 25,
+    "crop_xywh": [
+      162,
+      24,
+      92,
+      69
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/paper_final_corrected_covariance_20260908/runs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/b1_091/vis/item_25/pred.png",
+    "sha256": "22201b845e2f0e9d281590e8863419e4caa256dfa6dd864f47316ac670374528",
+    "gt_sha256": "07e33866f0ea5bd673a3e64fa42da7f5440c36e9b5c440d486ba345c3f3eae69"
+  },
+  {
+    "sheet": "ppp_internal_Arm",
+    "label": "GT",
+    "item": 25,
+    "crop_xywh": [
+      162,
+      24,
+      92,
+      69
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/regression/p05_corrected_covariance_20260908/anchors/arm/vis/item_25/gt.png",
+    "sha256": "07e33866f0ea5bd673a3e64fa42da7f5440c36e9b5c440d486ba345c3f3eae69",
+    "gt_sha256": "07e33866f0ea5bd673a3e64fa42da7f5440c36e9b5c440d486ba345c3f3eae69"
+  },
+  {
+    "sheet": "lgr_structural_Arm",
+    "label": "Plane",
+    "item": 57,
+    "crop_xywh": [
+      194,
+      97,
+      92,
+      69
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/paper_final_corrected_covariance_20260908/runs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/b1_097/vis/item_57/pred.png",
+    "sha256": "36a3503508d025b2df92009fcdf89bf2287d2c877c410e69a37fe73dc191a9eb",
+    "gt_sha256": "e8b3804ca0f746a470560bac7479af29f0cee0f7433ad7d5dc4f7e24e421633a"
+  },
+  {
+    "sheet": "lgr_structural_Arm",
+    "label": "Fixed",
+    "item": 57,
+    "crop_xywh": [
+      194,
+      97,
+      92,
+      69
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/paper_final_corrected_covariance_20260908/runs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/b1_099/vis/item_57/pred.png",
+    "sha256": "be91d60fdc7aeb434d696fc7a73c4d1fdecd8591c5336624a5a50262738b2e44",
+    "gt_sha256": "e8b3804ca0f746a470560bac7479af29f0cee0f7433ad7d5dc4f7e24e421633a"
+  },
+  {
+    "sheet": "lgr_structural_Arm",
+    "label": "Adaptive",
+    "item": 57,
+    "crop_xywh": [
+      194,
+      97,
+      92,
+      69
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/paper_final_corrected_covariance_20260908/runs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/b1_081/vis/item_57/pred.png",
+    "sha256": "12f68dc4a7b12c5915cc47c15227a31c94022c2b724d2ebc0435fa45fa32b1af",
+    "gt_sha256": "e8b3804ca0f746a470560bac7479af29f0cee0f7433ad7d5dc4f7e24e421633a"
+  },
+  {
+    "sheet": "lgr_structural_Arm",
+    "label": "Simple",
+    "item": 57,
+    "crop_xywh": [
+      194,
+      97,
+      92,
+      69
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/paper_final_corrected_covariance_20260908/runs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/b1_101/vis/item_57/pred.png",
+    "sha256": "b377783603128d135a9b50390962d38d213a77818c565f09729621b5c85938c5",
+    "gt_sha256": "e8b3804ca0f746a470560bac7479af29f0cee0f7433ad7d5dc4f7e24e421633a"
+  },
+  {
+    "sheet": "lgr_structural_Arm",
+    "label": "Full",
+    "item": 57,
+    "crop_xywh": [
+      194,
+      97,
+      92,
+      69
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/regression/p05_corrected_covariance_20260908/anchors/arm/vis/item_57/pred.png",
+    "sha256": "d0fe54f6fa9b3820bc08fc786c50e8acc4244e9850a7d2576271a23eb3315ac2",
+    "gt_sha256": "e8b3804ca0f746a470560bac7479af29f0cee0f7433ad7d5dc4f7e24e421633a"
+  },
+  {
+    "sheet": "lgr_structural_Arm",
+    "label": "GT",
+    "item": 57,
+    "crop_xywh": [
+      194,
+      97,
+      92,
+      69
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/paper_final_corrected_covariance_20260908/runs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/b1_097/vis/item_57/gt.png",
+    "sha256": "e8b3804ca0f746a470560bac7479af29f0cee0f7433ad7d5dc4f7e24e421633a",
+    "gt_sha256": "e8b3804ca0f746a470560bac7479af29f0cee0f7433ad7d5dc4f7e24e421633a"
+  },
+  {
+    "sheet": "cga_structural_Arm",
+    "label": "GD",
+    "item": 33,
+    "crop_xywh": [
+      259,
+      97,
+      92,
+      69
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/paper_final_corrected_covariance_20260908/runs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/b1_083/vis/item_33/pred.png",
+    "sha256": "c6031476397ef8b054d143cb1441cfd0abbc4a21e62ec27a6054e7e375fbdbee",
+    "gt_sha256": "22654e5078b2891024683a3f849fcc983fc3862ebc519f2ea7c8e93a4fbdd2df"
+  },
+  {
+    "sheet": "cga_structural_Arm",
+    "label": "RGD",
+    "item": 33,
+    "crop_xywh": [
+      259,
+      97,
+      92,
+      69
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/paper_final_corrected_covariance_20260908/runs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/b1_103/vis/item_33/pred.png",
+    "sha256": "97c0171c28cd0ea422f548230b928a727afab3fdd4a4625b7dc93ce4adc6f35f",
+    "gt_sha256": "22654e5078b2891024683a3f849fcc983fc3862ebc519f2ea7c8e93a4fbdd2df"
+  },
+  {
+    "sheet": "cga_structural_Arm",
+    "label": "RGD+OP",
+    "item": 33,
+    "crop_xywh": [
+      259,
+      97,
+      92,
+      69
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/paper_final_corrected_covariance_20260908/runs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/b1_105/vis/item_33/pred.png",
+    "sha256": "9548e528fa4b1b4f6e2a6ee2ba5afdf39d11c9997d375196562e4ec3393a5c33",
+    "gt_sha256": "22654e5078b2891024683a3f849fcc983fc3862ebc519f2ea7c8e93a4fbdd2df"
+  },
+  {
+    "sheet": "cga_structural_Arm",
+    "label": "RGD+LP",
+    "item": 33,
+    "crop_xywh": [
+      259,
+      97,
+      92,
+      69
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/paper_final_corrected_covariance_20260908/runs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/b1_107/vis/item_33/pred.png",
+    "sha256": "626d9ead33cdd12f7163734f4c1858972e227101e1cbd2e2e6e77cb4bf4a644a",
+    "gt_sha256": "22654e5078b2891024683a3f849fcc983fc3862ebc519f2ea7c8e93a4fbdd2df"
+  },
+  {
+    "sheet": "cga_structural_Arm",
+    "label": "Full",
+    "item": 33,
+    "crop_xywh": [
+      259,
+      97,
+      92,
+      69
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/regression/p05_corrected_covariance_20260908/anchors/arm/vis/item_33/pred.png",
+    "sha256": "a7e5efc8aa323f37fe016228a1b250e69aa5d91f7d87bf8597f0258481d53085",
+    "gt_sha256": "22654e5078b2891024683a3f849fcc983fc3862ebc519f2ea7c8e93a4fbdd2df"
+  },
+  {
+    "sheet": "cga_structural_Arm",
+    "label": "GT",
+    "item": 33,
+    "crop_xywh": [
+      259,
+      97,
+      92,
+      69
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/paper_final_corrected_covariance_20260908/runs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/b1_083/vis/item_33/gt.png",
+    "sha256": "22654e5078b2891024683a3f849fcc983fc3862ebc519f2ea7c8e93a4fbdd2df",
+    "gt_sha256": "22654e5078b2891024683a3f849fcc983fc3862ebc519f2ea7c8e93a4fbdd2df"
+  }
+]

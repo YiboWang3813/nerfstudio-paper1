@@ -1,0 +1,9 @@
+{
+  "total_unique": 134,
+  "completed": 134,
+  "corrected_anchor_reuse": 2,
+  "new_training_completed": 132,
+  "remaining": 0,
+  "pending": [],
+  "final_scientific_checkpoint_ready": true
+}

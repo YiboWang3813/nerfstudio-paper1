@@ -1,0 +1,25 @@
+dataset	metric	best	second	corrected_rank	ranking
+spine_phantom	psnr	ours_corrected	ultragray	1	ours_corrected > ultragray > ultrags_baseline > ultragauss > gaussianpile > slice_adapted_3dgs > nerfus_no_prior > ultranerf
+spine_phantom	l1	ours_corrected	ultrags_baseline	1	ours_corrected > ultrags_baseline > ultragray > nerfus_no_prior > ultranerf > gaussianpile > ultragauss > slice_adapted_3dgs
+spine_phantom	ssim	ours_corrected	ultragray	1	ours_corrected > ultragray > ultrags_baseline > gaussianpile > slice_adapted_3dgs > nerfus_no_prior > ultranerf > ultragauss
+spine_phantom	lpips	ultragray	ours_corrected	2	ultragray > ours_corrected > gaussianpile > ultrags_baseline > ultragauss > slice_adapted_3dgs > ultranerf > nerfus_no_prior
+spine_phantom	dists	ultragray	ours_corrected	2	ultragray > ours_corrected > ultragauss > gaussianpile > ultrags_baseline > slice_adapted_3dgs > ultranerf > nerfus_no_prior
+spine_phantom	gmsd	ours_corrected	ultragray	1	ours_corrected > ultragray > ultrags_baseline > gaussianpile > ultragauss > slice_adapted_3dgs > ultranerf > nerfus_no_prior
+synthetic_liver	psnr	ours_corrected	ultrags_baseline	1	ours_corrected > ultrags_baseline > ultragray > ultragauss > slice_adapted_3dgs > gaussianpile > nerfus_no_prior > ultranerf
+synthetic_liver	l1	ours_corrected	ultrags_baseline	1	ours_corrected > ultrags_baseline > ultragray > ultragauss > slice_adapted_3dgs > gaussianpile > nerfus_no_prior > ultranerf
+synthetic_liver	ssim	ours_corrected	nerfus_no_prior	1	ours_corrected > nerfus_no_prior > ultrags_baseline > slice_adapted_3dgs > ultragauss > ultranerf > ultragray > gaussianpile
+synthetic_liver	lpips	ultragray	ultragauss	3	ultragray > ultragauss > ours_corrected > ultrags_baseline > slice_adapted_3dgs > gaussianpile > ultranerf > nerfus_no_prior
+synthetic_liver	dists	ultragray	ultragauss	3	ultragray > ultragauss > ours_corrected > ultrags_baseline > slice_adapted_3dgs > gaussianpile > ultranerf > nerfus_no_prior
+synthetic_liver	gmsd	ours_corrected	ultrags_baseline	1	ours_corrected > ultrags_baseline > ultragray > ultragauss > ultranerf > slice_adapted_3dgs > gaussianpile > nerfus_no_prior
+tdsc_abus_2023	psnr	ours_corrected	ultragauss	1	ours_corrected > ultragauss > ultragray > slice_adapted_3dgs > gaussianpile > ultrags_baseline > nerfus_no_prior > ultranerf
+tdsc_abus_2023	l1	ours_corrected	ultragauss	1	ours_corrected > ultragauss > slice_adapted_3dgs > gaussianpile > ultragray > ultrags_baseline > nerfus_no_prior > ultranerf
+tdsc_abus_2023	ssim	ours_corrected	slice_adapted_3dgs	1	ours_corrected > slice_adapted_3dgs > ultragauss > gaussianpile > ultragray > ultrags_baseline > nerfus_no_prior > ultranerf
+tdsc_abus_2023	lpips	ours_corrected	ultragauss	1	ours_corrected > ultragauss > slice_adapted_3dgs > ultragray > gaussianpile > ultrags_baseline > nerfus_no_prior > ultranerf
+tdsc_abus_2023	dists	ours_corrected	ultragauss	1	ours_corrected > ultragauss > slice_adapted_3dgs > ultragray > gaussianpile > ultrags_baseline > nerfus_no_prior > ultranerf
+tdsc_abus_2023	gmsd	ours_corrected	slice_adapted_3dgs	1	ours_corrected > slice_adapted_3dgs > ultragauss > gaussianpile > ultrags_baseline > ultragray > nerfus_no_prior > ultranerf
+tus_rec_2024_qc	psnr	slice_adapted_3dgs	ultragray	3	slice_adapted_3dgs > ultragray > ours_corrected > gaussianpile > ultragauss > ultrags_baseline > nerfus_no_prior > ultranerf
+tus_rec_2024_qc	l1	ours_corrected	slice_adapted_3dgs	1	ours_corrected > slice_adapted_3dgs > ultragray > gaussianpile > ultragauss > nerfus_no_prior > ultrags_baseline > ultranerf
+tus_rec_2024_qc	ssim	slice_adapted_3dgs	ours_corrected	2	slice_adapted_3dgs > ours_corrected > gaussianpile > nerfus_no_prior > ultragray > ultragauss > ultrags_baseline > ultranerf
+tus_rec_2024_qc	lpips	slice_adapted_3dgs	ours_corrected	2	slice_adapted_3dgs > ours_corrected > ultragray > gaussianpile > ultrags_baseline > ultragauss > ultranerf > nerfus_no_prior
+tus_rec_2024_qc	dists	ours_corrected	slice_adapted_3dgs	1	ours_corrected > slice_adapted_3dgs > ultragray > gaussianpile > ultrags_baseline > ultragauss > ultranerf > nerfus_no_prior
+tus_rec_2024_qc	gmsd	slice_adapted_3dgs	ours_corrected	2	slice_adapted_3dgs > ours_corrected > ultragray > gaussianpile > ultragauss > ultrags_baseline > nerfus_no_prior > ultranerf

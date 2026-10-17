@@ -1,0 +1,5 @@
+dataset	n	fps_mean	selected_ids
+spine_phantom	2	201.31913657661812	left1_1;left3_2
+synthetic_liver	2	208.55991882404066	l1;l3
+tdsc_abus_2023	2	307.42536520694114	validation_101;validation_116
+tus_rec_2024_qc	2	262.7712231425593	010_RH_Per_C_PtD_qc_0006_0427;010_RH_Per_S_PtD_qc_0165_0364_s02

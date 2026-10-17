@@ -1,0 +1,3 @@
+scope	dataset	method	num_runs	render_fps_mean	render_fps_median	render_fps_min	render_fps_max	num_dataset_means
+dataset	synthetic_liver	ours	1	238.62061014182316	238.62061014182316	238.62061014182316	238.62061014182316	
+paper_tables	all_available_dataset_means	ours		238.62061014182316	238.62061014182316	238.62061014182316	238.62061014182316	1

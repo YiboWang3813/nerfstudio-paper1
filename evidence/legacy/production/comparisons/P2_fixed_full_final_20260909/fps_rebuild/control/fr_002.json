@@ -1,0 +1,9 @@
+{
+  "row_id": "fr_002",
+  "exit_code": 0,
+  "worker": 2,
+  "job": "80171",
+  "train_start_unix": 1788940330.1675007,
+  "train_end_unix": 1788940760.590982,
+  "train_wall_time_sec": 430.42348170280457
+}

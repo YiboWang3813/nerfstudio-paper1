@@ -1,0 +1,39 @@
+run_id: c27ad09
+run_name: production-sensorless_paper_semantic_freeze_ours_c27ad09
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/regression/P2_fixed_full_final_20260909/smoke/liver
+checkpoint_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/regression/P2_fixed_full_final_20260909/smoke/liver/checkpoints
+checkpoint_root: ''
+hydra_output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/regression/P2_fixed_full_final_20260909/smoke/liver
+config_path: hydra:experiment=production/sensorless/paper_semantic_freeze
+overrides:
+- experiment=production/ablations/ours/paper_semantic_freeze
+- scene=liver
+- scene.loading.sweep_name=l1
+- scene.loading.pose_mode=file
+- experiment.sensorless_required=false
+- scene.loading.test_mode=holdout_interval
+- scene.loading.holdout_trim_each=10
+- scene.loading.holdout_num_samples=0
+- scene.loading.holdout_test_ratio=0.2
+- engine.iterations=100
+- engine.interval.test=0
+- engine.interval.save=0
+- engine.needed_callbacks=[OursOfflineSetupCallback,OursOfflineTrainCallback,OursOfflineFinishCallback]
+- model.offline.density_control.timing.start_iter=1
+- model.offline.density_control.timing.end_iter=100
+- model.offline.density_control.timing.freq=50
+- metric.needed_metrics=[psnr]
+- wandb.enable=false
+- system.output_root=/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/regression/P2_fixed_full_final_20260909/smoke
+- system.exp_tag=p2_liver_fixed_full
+git_commit: e3fabc6bb695bc43b53efd99c97d1766c5f7a759
+git_dirty: true
+dataset: synthetic_liver
+model: ours
+exp_tag: p2_liver_fixed_full
+seed: 42
+wandb:
+  enabled: false
+  project: omniultra
+  mode: online
+  run_id: ''

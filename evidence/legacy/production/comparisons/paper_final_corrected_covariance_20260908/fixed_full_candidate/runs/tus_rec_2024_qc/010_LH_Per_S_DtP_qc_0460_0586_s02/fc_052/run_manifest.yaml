@@ -1,0 +1,177 @@
+run_id: '052'
+run_name: production-sensorless_paper_semantic_freeze_ours_052
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/paper_final_corrected_covariance_20260908/fixed_full_candidate/runs/tus_rec_2024_qc/010_LH_Per_S_DtP_qc_0460_0586_s02/fc_052
+checkpoint_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/paper_final_corrected_covariance_20260908/fixed_full_candidate/runs/tus_rec_2024_qc/010_LH_Per_S_DtP_qc_0460_0586_s02/fc_052/checkpoints
+checkpoint_root: ''
+hydra_output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/paper_final_corrected_covariance_20260908/fixed_full_candidate/runs/tus_rec_2024_qc/010_LH_Per_S_DtP_qc_0460_0586_s02/fc_052
+config_path: hydra:experiment=production/sensorless/paper_semantic_freeze
+overrides:
+- experiment=production/ablations/ours/paper_semantic_freeze
+- scene=tus_rec_2024_qc
+- ++scene.dataset_name="tus_rec_2024"
+- ++scene.loading.baseroot="/home/boywang25/ultrasound-scene-reconstruction/data"
+- ++scene.loading.dataset_dirname="tus_rec_2024_qc"
+- ++scene.loading.sweep_name="010_LH_Per_S_DtP_qc_0460_0586_s02"
+- ++scene.loading.images_name="images.npy"
+- ++scene.loading.test_images_name="test_images.npy"
+- ++scene.loading.test_poses_name="test_poses.npy"
+- ++scene.loading.image_value_mode="uint8_255"
+- ++scene.loading.image_nan_value=0.0
+- ++scene.loading.image_downsample_factor=1
+- ++scene.loading.axial_downsample_factor=1
+- ++scene.loading.frame_start=0
+- ++scene.loading.frame_end=-1
+- ++scene.loading.frame_stride=1
+- ++scene.loading.frame_indices_path=""
+- ++scene.loading.test_mode="holdout_interval"
+- ++scene.loading.holdout_trim_each=10
+- ++scene.loading.holdout_num_samples=0
+- ++scene.loading.holdout_test_ratio=0.2
+- ++scene.loading.pose_type="absolute"
+- ++scene.loading.poses_abspath=""
+- ++scene.loading.pose_mode="file"
+- ++scene.loading.canonical_sweep_delta_mm=-1.0
+- ++scene.loading.canonical_sweep_delta_scale=1.0
+- ++scene.loading.canonical_sweep_ref_frame=0
+- ++scene.loading.canonical_sweep_axis="z"
+- ++scene.loading.canonical_sweep_spacing_mode="uniform"
+- ++scene.sampler.num_init=1000000
+- ++scene.sampler.num_new=1000
+- ++scene.sampler.scales_init=[0.3, 0.3, 0.3]
+- ++scene.sampler.quats_init=[1.0, 0.0, 0.0, 0.0]
+- ++scene.sampler.uniform_ratio=0.3
+- ++scene.sampler.intensity_threshold=0.03
+- ++scene.sampler.jitter_radius=0.2
+- ++scene.grid.tile_size=4.0
+- ++scene.grid.bbox_margin=0.05
+- ++scene.scheduler.test_ratio=0.1
+- ++metric.needed_metrics=["psnr", "l1", "ssim", "lpips", "dists", "gmsd"]
+- ++metric.psnr_cfg.max_val=1.0
+- ++metric.max_vis_frames=10
+- ++metric.save_per_frame_metrics=true
+- scene.loading.sweep_name=010_LH_Per_S_DtP_qc_0460_0586_s02
+- scene.loading.test_mode=holdout_interval
+- scene.loading.holdout_trim_each=10
+- scene.loading.holdout_num_samples=0
+- scene.loading.holdout_test_ratio=0.2
+- scene.loading.pose_mode=file
+- experiment.sensorless_required=false
+- system.seed=42
+- model.slice_render.elev_corridor_half_mm=0.202
+- scene.loading.canonical_sweep_spacing_mode=uniform
+- scene.loading.canonical_sweep_delta_scale=1.0
+- model.slice_render.ray_attenuation_enabled=true
+- model.slice_render.ray_attenuation_formula=integral
+- model.offline.density_control.densification_policy=residual_guided
+- model.offline.density_control.pruning_policy=path_aware
+- engine.iterations=30000
+- engine.interval.test=30000
+- engine.interval.save=30000
+- wandb.enable=false
+- model.slice_render.local_conditioning_mode=fixed
+- system.output_root=/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/paper_final_corrected_covariance_20260908/fixed_full_candidate
+- system.exp_tag=fc_052
+git_commit: e3fabc6bb695bc43b53efd99c97d1766c5f7a759
+git_dirty: true
+dataset: tus_rec_2024
+model: ours
+exp_tag: fc_052
+seed: 42
+wandb:
+  enabled: false
+  project: omniultra
+  mode: online
+  run_id: ''
+paper_final_source_sha256: b2525342593c8dd84a1f1ddb8c1ac124c9b1fb179ddcffea3fb902eb2a073ad2
+paper_final_batch: FixedFull_candidate_only
+paper_final_row_id: fc_052
+paper_final_matrix_sha256: 7ff54516301f5a4e4cf057fa99dcd1be2d9ed5c0fe53f421b2f38e0ed8dbde76
+paper_final_submission_hashes:
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_000.yaml: 9d5f80c04da298c393f6b61f300a1ac50de118db88b13d18c9d9bb50c935273b
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_001.yaml: f6296744bc136f4273608ee47faf7270762b310114a74a261f94c007247633b4
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_002.yaml: b2639b8a186b71492c5f663e57483cb091a00835a644a062be1dc882fb6f8070
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_003.yaml: 54269f19adbfc5f980459fc7b368a342e83e355e07549b921db0179f46af2a65
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_004.yaml: 5756f450c0258aaa867bde52d7c22d946c8fff700863c5ffb1d8bde9ac913b90
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_005.yaml: a55ba743cfdef6b5f03c2eaee9e3854146f9ce276cdbfaf419ce6ad55f88007a
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_006.yaml: b5f32e993379d0a14b16a2a6d7628fed46310fd7c519ca6d8b5be6b850ed6bc7
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_007.yaml: 79d8b9e0ff3c578f63da4d01950f1335ed6dd970fea1c7e1ad451fc8e3238364
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_008.yaml: 82e3e057ecb6d6a72ea6e1b1183e7ad15460c37a7d016942c8d63266b6aa55ae
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_009.yaml: bfb24f1d730e7bbc3b20ca4e60fad1807765af1db45bfdab1c10e5b9cd16acc0
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_010.yaml: c9097fab9341b0a185e5d4573b4ea631251f58f4ee46aa7b39698190ae608d61
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_011.yaml: 496af0bc889ffb816a83d0b1c4762a1b46c09a3eab32b0aac08fe494e51517e4
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_012.yaml: 01e6d6824c2611f4bd06fe5ddf5db3d46e6619fed5670076e23a4d79a1ba633b
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_013.yaml: 39bcd9e0f778618fe999474c73dbb8052ef21ab1fb75ea5584fb1b766b7e1f3b
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_014.yaml: 16138e51812db48f2f5ae816f5106250eeba3801792f2de483a4ad1c55209d63
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_015.yaml: d2d02020dd38e278a1f4d56dd8755aa6627285dfff645299caca638433a7c926
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_016.yaml: faaa6dd19a9553e2b7bac62b4f73c8e7ed2b32e347a08f47b0409882aececb6f
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_017.yaml: 4d43766541849e8fb84def57d0e9445d7d285f18dcc8401fe1298e3c19dc1712
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_018.yaml: b932b388cad96617bf0a4ea35440bd642dafac5da65a4f443d66e1a3dc493a15
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_019.yaml: 366f5226a9d2b226238d3bbdcc0ca6f22f9a5f3816b6a9df7edf492103a45362
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_020.yaml: 95ba2c3450790ce6e774a142f16d104b1a756349f8d4b02bcd603a0fb33019ad
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_021.yaml: a89b7669345472a881814cc9699dc0dc3c19350d8570c593954d02ba98ffa5a1
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_022.yaml: bdeeac09778bb3391472e89943686c477de45e418402d73c8870b1eb3115f3db
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_023.yaml: a9eb61465c3c78f496c970a1827366237d134f70916eff8262e9fb386532dab5
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_024.yaml: 8327ba000fed2b0ae77c456855d22d5e4171357e7187f57629c2cc439cd385fe
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_025.yaml: 53a2a73a33bef3ba267a3b3dbf2ce8b73d87fff28efa667a502ad039537ea959
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_026.yaml: 31302a112f33df18acf2d2fd878a4213a625100d38b434d7d1a7c3e05bc1bdb4
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_027.yaml: 6a5ab7aa7da61e3ea4d45bb40b5b94f4efb0a7f4d01a6c8b0c606463e88a97a0
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_028.yaml: 9cd1926e932c578aea4dd36de751cc6251077f30ef0c8b38ae3fc922346d89a1
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_029.yaml: 7ed65db4320c84f1b5c7d7f82db529f181870ba94def485eb088fc599978bba2
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_030.yaml: 3ebf3d02fb6515bff00587846855f653c551391296089ba1039461e117bd9448
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_031.yaml: d65fa39af4112b8c9e7195bb3a6a42ef171151232c0e43bf1d601994e466980e
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_032.yaml: 4961b2cecc3a3c81a80183391a558d9d3292408a49f6c3c01dc75645ffa88bf6
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_033.yaml: 8dc8dd951cd94ccf024264549c01be2578a99cda2894fd8e6575bb7c57f5b523
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_034.yaml: 464ed692aee7288246ccec594f0b5cfe498ce5257d12b6994ed8dc84234d6faf
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_035.yaml: 829571dc038a3e88ff85d8a4004ec819bec50a21eb67fe88f21c86113639e2ed
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_036.yaml: 25323c5af168a76b6d4e1f3b23b97926ba99db67a3bdd1c2eb2f9e7d2d6c0976
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_037.yaml: e7d24d69813ff1448fdce6bda441e6ab669da4a0229216557b511edf629529eb
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_038.yaml: b1162e986a556ffe225ed4e167772d07d71cdf312ebe49981fbc2a4579d2e9c2
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_039.yaml: 0ea11e59cd9e5e371fefe7ce3beaa4c8c9c58735d57794a9bf7248e7148dffa0
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_040.yaml: e2a80d0f6bfce9013930ed747b958b8b4cc948d57bfe90203bd553a5760427bc
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_041.yaml: 5fe103a851d6d8f6d04c494f1b69c2790f0bca6ab4a8efdf9ab25e805ddb1dba
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_042.yaml: 10c0f4cd191e2579b838d9a5018d8025a8e9e61eb14ef8d122b0821c2bb1afb6
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_043.yaml: 9e438d7818112f434303b8a1c4cae3d7727d9de0c1a39dc6060b5caec667b346
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_044.yaml: e5409bcda284dd4c557da33d0237bf38ca839696befe78aedc2fb1413d1ac653
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_045.yaml: 4b11f93d3c9d24c1132c8a03c9e1fa7166ffa7a279a5ba9c217149ba5a8b4923
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_046.yaml: d176a141365247ef59500a0fb996a341b3bda43ce2dfd04068697c49126b4b2c
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_047.yaml: 8319c92ff60119cdd5cf4691d38891718032f3e27dfbc84512dd498628549c3b
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_048.yaml: e2bb4eea6bd106c9913c8aa6d33ee100b9235d30a1334d92c049f2c040c675d1
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_049.yaml: 2563250c7ef4d23245a876e55035981423dc51d3d225d7ea054ee7b6d60719bd
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_050.yaml: 55f90d276cc6c70ef2b114cec1c9e2f5342b009a8ca57f1547ec16b0a92a9a67
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_051.yaml: 9c833d235342aaaa769645f7a367db45e1ef98c8ab3d112dd73a527a87d75cb8
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_052.yaml: 1ef010eb0f2b578260e68efa6529f953f867d84b75e2bc92f5865872638ac3ba
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_053.yaml: 360cc399db3d9a5ce37ca61fbe1447be72c0ac755094dca42ef5b8860cf33329
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_054.yaml: cc3d90a6501db727f9c7b64224d6799d9327a0edba1905b939b01f9ca1c88e9b
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_055.yaml: 5618851f3126bf185d5c481c32efbfcc165d67625efa246a73937bce1c96f91d
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_056.yaml: f38a4eab279cb718ea1230533fada0c4456fb113a267bba9bdaff24671c43894
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_057.yaml: cb9b88fa47269c2001144309269195813acbb9d111dc8eedbb0da63b069195de
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_058.yaml: 0df842505bfff71dedf25eade36b75d3e799ef7523cfb51dd43808ff46cbbe23
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_059.yaml: 07ba2abd4f93bc4b9946c1bc29884046ff825c3b326cc8b5456118229f116d96
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_060.yaml: 7e7b6a19cbed5c62d8dfd344f43a32ceeb7d2cb42f0aa87eb53cb105b8ca4a8f
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_061.yaml: 4cc5859646ff24abb4fd75134a1b4c574a5fcb602ad1baf9258fcd0ca94e66b4
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_062.yaml: cfdf0df4903ad23664cc56127c3187ad17dc41b84dd7d093373a8d5df37de439
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_063.yaml: 05a7dd8593e4a618326331349f27e7855173d8e9cb8f9c1d8a706f0b3553c3c1
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_064.yaml: 54f19d079c46931e0d2be9e703dc59724c16887286d7380591b3812022872b1e
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_065.yaml: 7fad4b86230121a69da614f6a9a3afc155e270641f20cb6f43f5c1d3806d135b
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_066.yaml: 997427c2cd3f0bcef7528323c3a3ba48008428346624962b0d7028b0e1f88f79
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_067.yaml: 0a410a6180c641a5f4f0178b44bee8bff8dbde32e65df84a5fa73310c4ca5503
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_068.yaml: 41143a97adba6a8621cdc21741e18086c277df3334dad04d3d315e9e3b895ea9
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_069.yaml: 76d3680d25a18eb3c95c10bb62ab103ad3c4cd5bfd65a418e922d9bcac475e58
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_070.yaml: d568b17cd8a5795b83c2948a6c560fb4a4861113b50dfd956199f7f0a32c27d5
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_071.yaml: 07dc8273f997610bf00a5b98ccdbdbb14675002054cf38c2ad331ba816a5dd98
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_072.yaml: 3df07bbaa96250984150292e6a423888b22d48d0501d294f883ba6cf5bee6754
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_073.yaml: e62eefdc099ffaca4020323a3a139f318f917864f6fea5916d621a8428dcb1eb
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_074.yaml: 559ba1af36b9e9d098b8c582a3ab1e7bf7324f6451e8c24c69e8d82c58493538
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_075.yaml: dbea296f2e08942f581cbc7652527afa40abfbe0f18548b334f0ce8911b05b14
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_076.yaml: 3828c08cdd03a87a27c47e46543889dde1d49b55cb350cb69c4b972c85f6b335
+  docs/production/p1_fixed_main_candidate/exact_configs/fc_077.yaml: 3d0eeafe5f492919b27cb4ef03e4af6ea40c1cb0ae9e312af965f36003c87945
+  docs/production/p1_fixed_main_candidate/fixed_full_main_candidate_matrix.json: 7ff54516301f5a4e4cf057fa99dcd1be2d9ed5c0fe53f421b2f38e0ed8dbde76
+  docs/production/p1_fixed_main_candidate/worker_partition.json: ed42a2cb5fcc65a593087cf36c6fcb18d19fc2b8f7ba665b8fb49e9a0f7858ed
+  docs/production/p1_fixed_main_candidate/executed_runner.py: 47b74998557e8f01540576e0446eef6ff824ec75746765bb76d3102db1273d8f
+  scripts/production/ablations/ours/p1_fixed_candidate.py: 5ef2c0d04b8cb57da2e9469f98ac4a229d0a258e2e3682776714dab6697f05c5
+  scripts/production/ablations/ours/p1_lgr_confirmation.py: ae675046da02dd298d259fe692dee2ae5e97dc608fac24677f68edc04c3b0501
+  scripts/production/ablations/ours/p1_fixed_candidate_gpu.sh: d04528df8fa0ed9b5119fdb8e40808dcf89d63712746082f986262c7f9b0411b
+  scripts/production/ablations/ours/p1_fixed_candidate_report.py: e81f51e9bd5cb3811e016f1f7d96adc2c883ef4c24fe2643f22a8e6625c32b87
+  scripts/production/ablations/ours/p1_fixed_candidate_post.sh: d8b4058b37e6b4555843639f4838ef7089e01cb3771aa21f006dd4b69ae88c72
+paper_final_binary_hashes:
+  ops/ours_renderer/ours_renderer/_C.cpython-37m-x86_64-linux-gnu.so: 97539bfef33b865b0356f4891ce0d650c3b966485ab7a66c603d409e2a26aaa4

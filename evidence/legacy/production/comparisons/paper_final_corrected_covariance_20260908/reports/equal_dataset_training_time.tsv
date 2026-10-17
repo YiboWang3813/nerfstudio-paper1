@@ -1,0 +1,19 @@
+group	method	equal_dataset_mean_train_seconds	time_status	timing_caveat
+synthetic_phantom	gaussianpile	416.16666666666663	complete	historical4090 concurrency
+synthetic_phantom	nerfus_no_prior	334.1388888888889	complete	historical4090 concurrency
+synthetic_phantom	ours_corrected	562.1668022226336	complete	4080SUPER plus reused4090 anchors
+synthetic_phantom	ours_legacy	354.6111111111111	complete	historical4090 concurrency
+synthetic_phantom	slice_adapted_3dgs	423.77777777777777	complete	historical4090 concurrency
+synthetic_phantom	ultragauss	170.1111111111111	complete	historical4090 concurrency
+synthetic_phantom	ultragray	203.72222222222223	complete	historical4090 concurrency
+synthetic_phantom	ultrags_baseline	398.30555555555554	complete	historical4090 concurrency
+synthetic_phantom	ultranerf	475.08333333333337	complete	historical4090 concurrency
+real	gaussianpile		incomplete_use_frozen_baseline_panel	historical4090 concurrency
+real	nerfus_no_prior	474.1136363636364	complete	historical4090 concurrency
+real	ours_corrected	449.0069288215515	complete	4080SUPER plus reused4090 anchors
+real	ours_legacy	337.57575757575756	complete	historical4090 concurrency
+real	slice_adapted_3dgs	459.5969696969697	complete	historical4090 concurrency
+real	ultragauss	171.2712121212121	complete	historical4090 concurrency
+real	ultragray	190.64545454545453	complete	historical4090 concurrency
+real	ultrags_baseline	440.3515151515152	complete	historical4090 concurrency
+real	ultranerf	450.7106060606061	complete	historical4090 concurrency

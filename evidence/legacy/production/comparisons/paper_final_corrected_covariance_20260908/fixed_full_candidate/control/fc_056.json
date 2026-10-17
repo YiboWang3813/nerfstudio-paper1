@@ -1,0 +1,9 @@
+{
+  "row_id": "fc_056",
+  "exit_code": 0,
+  "worker": 1,
+  "job": "80112",
+  "train_start_unix": 1788935827.6230593,
+  "train_end_unix": 1788936254.112003,
+  "train_wall_time_sec": 426.4889440536499
+}

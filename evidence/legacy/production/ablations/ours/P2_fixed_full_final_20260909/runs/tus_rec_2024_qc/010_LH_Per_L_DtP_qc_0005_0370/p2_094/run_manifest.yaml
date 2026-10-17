@@ -1,0 +1,267 @@
+run_id: '094'
+run_name: production-sensorless_paper_semantic_freeze_ours_094
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/P2_fixed_full_final_20260909/runs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/p2_094
+checkpoint_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/P2_fixed_full_final_20260909/runs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/p2_094/checkpoints
+checkpoint_root: ''
+hydra_output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/P2_fixed_full_final_20260909/runs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/p2_094
+config_path: hydra:experiment=production/sensorless/paper_semantic_freeze
+overrides:
+- experiment=production/ablations/ours/paper_semantic_freeze
+- scene=tus_rec_2024_qc
+- ++scene.dataset_name="tus_rec_2024"
+- ++scene.loading.baseroot="/home/boywang25/ultrasound-scene-reconstruction/data"
+- ++scene.loading.dataset_dirname="tus_rec_2024_qc"
+- ++scene.loading.sweep_name="010_LH_Per_L_DtP_qc_0005_0370"
+- ++scene.loading.images_name="images.npy"
+- ++scene.loading.test_images_name="test_images.npy"
+- ++scene.loading.test_poses_name="test_poses.npy"
+- ++scene.loading.image_value_mode="uint8_255"
+- ++scene.loading.image_nan_value=0.0
+- ++scene.loading.image_downsample_factor=1
+- ++scene.loading.axial_downsample_factor=1
+- ++scene.loading.frame_start=0
+- ++scene.loading.frame_end=-1
+- ++scene.loading.frame_stride=1
+- ++scene.loading.frame_indices_path=""
+- ++scene.loading.test_mode="holdout_interval"
+- ++scene.loading.holdout_trim_each=10
+- ++scene.loading.holdout_num_samples=0
+- ++scene.loading.holdout_test_ratio=0.2
+- ++scene.loading.pose_type="absolute"
+- ++scene.loading.poses_abspath=""
+- ++scene.loading.canonical_sweep_delta_mm=-1.0
+- ++scene.loading.canonical_sweep_ref_frame=0
+- ++scene.loading.canonical_sweep_axis="z"
+- ++scene.sampler.num_init=1000000
+- ++scene.sampler.num_new=1000
+- ++scene.sampler.scales_init=[0.3, 0.3, 0.3]
+- ++scene.sampler.quats_init=[1.0, 0.0, 0.0, 0.0]
+- ++scene.sampler.uniform_ratio=0.3
+- ++scene.sampler.intensity_threshold=0.03
+- ++scene.sampler.jitter_radius=0.2
+- ++scene.grid.tile_size=4.0
+- ++scene.grid.bbox_margin=0.05
+- ++scene.scheduler.test_ratio=0.1
+- ++metric.needed_metrics=["psnr", "l1", "ssim", "lpips", "dists", "gmsd"]
+- ++metric.psnr_cfg.max_val=1.0
+- ++metric.max_vis_frames=10
+- ++metric.save_per_frame_metrics=true
+- scene.loading.sweep_name=010_LH_Per_L_DtP_qc_0005_0370
+- scene.loading.test_mode=holdout_interval
+- scene.loading.holdout_trim_each=10
+- scene.loading.holdout_num_samples=0
+- scene.loading.holdout_test_ratio=0.2
+- system.seed=42
+- model.slice_render.elev_corridor_half_mm=0.202
+- engine.iterations=30000
+- engine.interval.test=30000
+- engine.interval.save=30000
+- wandb.enable=false
+- model.slice_render.local_conditioning_mode=fixed
+- model.slice_render.ray_attenuation_enabled=true
+- model.slice_render.ray_attenuation_formula=integral
+- model.offline.density_control.densification_policy=residual_guided
+- model.offline.density_control.pruning_policy=path_aware
+- scene.loading.pose_mode=canonical_sweep
+- scene.loading.canonical_sweep_spacing_mode=file_step_norm
+- scene.loading.canonical_sweep_delta_scale=1.0
+- experiment.sensorless_required=false
+- system.output_root=/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/P2_fixed_full_final_20260909
+- system.exp_tag=p2_094
+git_commit: e3fabc6bb695bc43b53efd99c97d1766c5f7a759
+git_dirty: true
+dataset: tus_rec_2024
+model: ours
+exp_tag: p2_094
+seed: 42
+wandb:
+  enabled: false
+  project: omniultra
+  mode: online
+  run_id: ''
+paper_final_source_sha256: f0ef8b8a16f36c57cd30e43c50f86b0262c18f8f65b8d7d33babb5bd67534a27
+paper_final_batch: P2_Final_Method_Refresh
+paper_final_row_id: p2_094
+paper_final_matrix_sha256: 4d6e6ecd200a34999dcbba74a3665428eb0b980d80a99c8559c538166b6768a6
+paper_final_submission_hashes:
+  docs/production/p2_fixed_final/exact_configs/p2_000.yaml: 9d5f80c04da298c393f6b61f300a1ac50de118db88b13d18c9d9bb50c935273b
+  docs/production/p2_fixed_final/exact_configs/p2_001.yaml: f6296744bc136f4273608ee47faf7270762b310114a74a261f94c007247633b4
+  docs/production/p2_fixed_final/exact_configs/p2_002.yaml: b2639b8a186b71492c5f663e57483cb091a00835a644a062be1dc882fb6f8070
+  docs/production/p2_fixed_final/exact_configs/p2_003.yaml: 54269f19adbfc5f980459fc7b368a342e83e355e07549b921db0179f46af2a65
+  docs/production/p2_fixed_final/exact_configs/p2_004.yaml: 5756f450c0258aaa867bde52d7c22d946c8fff700863c5ffb1d8bde9ac913b90
+  docs/production/p2_fixed_final/exact_configs/p2_005.yaml: a55ba743cfdef6b5f03c2eaee9e3854146f9ce276cdbfaf419ce6ad55f88007a
+  docs/production/p2_fixed_final/exact_configs/p2_006.yaml: b5f32e993379d0a14b16a2a6d7628fed46310fd7c519ca6d8b5be6b850ed6bc7
+  docs/production/p2_fixed_final/exact_configs/p2_007.yaml: 79d8b9e0ff3c578f63da4d01950f1335ed6dd970fea1c7e1ad451fc8e3238364
+  docs/production/p2_fixed_final/exact_configs/p2_008.yaml: 82e3e057ecb6d6a72ea6e1b1183e7ad15460c37a7d016942c8d63266b6aa55ae
+  docs/production/p2_fixed_final/exact_configs/p2_009.yaml: bfb24f1d730e7bbc3b20ca4e60fad1807765af1db45bfdab1c10e5b9cd16acc0
+  docs/production/p2_fixed_final/exact_configs/p2_010.yaml: c9097fab9341b0a185e5d4573b4ea631251f58f4ee46aa7b39698190ae608d61
+  docs/production/p2_fixed_final/exact_configs/p2_011.yaml: 496af0bc889ffb816a83d0b1c4762a1b46c09a3eab32b0aac08fe494e51517e4
+  docs/production/p2_fixed_final/exact_configs/p2_012.yaml: 01e6d6824c2611f4bd06fe5ddf5db3d46e6619fed5670076e23a4d79a1ba633b
+  docs/production/p2_fixed_final/exact_configs/p2_013.yaml: 39bcd9e0f778618fe999474c73dbb8052ef21ab1fb75ea5584fb1b766b7e1f3b
+  docs/production/p2_fixed_final/exact_configs/p2_014.yaml: 16138e51812db48f2f5ae816f5106250eeba3801792f2de483a4ad1c55209d63
+  docs/production/p2_fixed_final/exact_configs/p2_015.yaml: d2d02020dd38e278a1f4d56dd8755aa6627285dfff645299caca638433a7c926
+  docs/production/p2_fixed_final/exact_configs/p2_016.yaml: faaa6dd19a9553e2b7bac62b4f73c8e7ed2b32e347a08f47b0409882aececb6f
+  docs/production/p2_fixed_final/exact_configs/p2_017.yaml: 4d43766541849e8fb84def57d0e9445d7d285f18dcc8401fe1298e3c19dc1712
+  docs/production/p2_fixed_final/exact_configs/p2_018.yaml: b932b388cad96617bf0a4ea35440bd642dafac5da65a4f443d66e1a3dc493a15
+  docs/production/p2_fixed_final/exact_configs/p2_019.yaml: 366f5226a9d2b226238d3bbdcc0ca6f22f9a5f3816b6a9df7edf492103a45362
+  docs/production/p2_fixed_final/exact_configs/p2_020.yaml: 95ba2c3450790ce6e774a142f16d104b1a756349f8d4b02bcd603a0fb33019ad
+  docs/production/p2_fixed_final/exact_configs/p2_021.yaml: a89b7669345472a881814cc9699dc0dc3c19350d8570c593954d02ba98ffa5a1
+  docs/production/p2_fixed_final/exact_configs/p2_022.yaml: bdeeac09778bb3391472e89943686c477de45e418402d73c8870b1eb3115f3db
+  docs/production/p2_fixed_final/exact_configs/p2_023.yaml: a9eb61465c3c78f496c970a1827366237d134f70916eff8262e9fb386532dab5
+  docs/production/p2_fixed_final/exact_configs/p2_024.yaml: 8327ba000fed2b0ae77c456855d22d5e4171357e7187f57629c2cc439cd385fe
+  docs/production/p2_fixed_final/exact_configs/p2_025.yaml: 53a2a73a33bef3ba267a3b3dbf2ce8b73d87fff28efa667a502ad039537ea959
+  docs/production/p2_fixed_final/exact_configs/p2_026.yaml: 31302a112f33df18acf2d2fd878a4213a625100d38b434d7d1a7c3e05bc1bdb4
+  docs/production/p2_fixed_final/exact_configs/p2_027.yaml: 6a5ab7aa7da61e3ea4d45bb40b5b94f4efb0a7f4d01a6c8b0c606463e88a97a0
+  docs/production/p2_fixed_final/exact_configs/p2_028.yaml: 9cd1926e932c578aea4dd36de751cc6251077f30ef0c8b38ae3fc922346d89a1
+  docs/production/p2_fixed_final/exact_configs/p2_029.yaml: 7ed65db4320c84f1b5c7d7f82db529f181870ba94def485eb088fc599978bba2
+  docs/production/p2_fixed_final/exact_configs/p2_030.yaml: 3ebf3d02fb6515bff00587846855f653c551391296089ba1039461e117bd9448
+  docs/production/p2_fixed_final/exact_configs/p2_031.yaml: d65fa39af4112b8c9e7195bb3a6a42ef171151232c0e43bf1d601994e466980e
+  docs/production/p2_fixed_final/exact_configs/p2_032.yaml: 4961b2cecc3a3c81a80183391a558d9d3292408a49f6c3c01dc75645ffa88bf6
+  docs/production/p2_fixed_final/exact_configs/p2_033.yaml: 8dc8dd951cd94ccf024264549c01be2578a99cda2894fd8e6575bb7c57f5b523
+  docs/production/p2_fixed_final/exact_configs/p2_034.yaml: 464ed692aee7288246ccec594f0b5cfe498ce5257d12b6994ed8dc84234d6faf
+  docs/production/p2_fixed_final/exact_configs/p2_035.yaml: 829571dc038a3e88ff85d8a4004ec819bec50a21eb67fe88f21c86113639e2ed
+  docs/production/p2_fixed_final/exact_configs/p2_036.yaml: 25323c5af168a76b6d4e1f3b23b97926ba99db67a3bdd1c2eb2f9e7d2d6c0976
+  docs/production/p2_fixed_final/exact_configs/p2_037.yaml: e7d24d69813ff1448fdce6bda441e6ab669da4a0229216557b511edf629529eb
+  docs/production/p2_fixed_final/exact_configs/p2_038.yaml: b1162e986a556ffe225ed4e167772d07d71cdf312ebe49981fbc2a4579d2e9c2
+  docs/production/p2_fixed_final/exact_configs/p2_039.yaml: 0ea11e59cd9e5e371fefe7ce3beaa4c8c9c58735d57794a9bf7248e7148dffa0
+  docs/production/p2_fixed_final/exact_configs/p2_040.yaml: e2a80d0f6bfce9013930ed747b958b8b4cc948d57bfe90203bd553a5760427bc
+  docs/production/p2_fixed_final/exact_configs/p2_041.yaml: 5fe103a851d6d8f6d04c494f1b69c2790f0bca6ab4a8efdf9ab25e805ddb1dba
+  docs/production/p2_fixed_final/exact_configs/p2_042.yaml: 10c0f4cd191e2579b838d9a5018d8025a8e9e61eb14ef8d122b0821c2bb1afb6
+  docs/production/p2_fixed_final/exact_configs/p2_043.yaml: 9e438d7818112f434303b8a1c4cae3d7727d9de0c1a39dc6060b5caec667b346
+  docs/production/p2_fixed_final/exact_configs/p2_044.yaml: e5409bcda284dd4c557da33d0237bf38ca839696befe78aedc2fb1413d1ac653
+  docs/production/p2_fixed_final/exact_configs/p2_045.yaml: 4b11f93d3c9d24c1132c8a03c9e1fa7166ffa7a279a5ba9c217149ba5a8b4923
+  docs/production/p2_fixed_final/exact_configs/p2_046.yaml: d176a141365247ef59500a0fb996a341b3bda43ce2dfd04068697c49126b4b2c
+  docs/production/p2_fixed_final/exact_configs/p2_047.yaml: 8319c92ff60119cdd5cf4691d38891718032f3e27dfbc84512dd498628549c3b
+  docs/production/p2_fixed_final/exact_configs/p2_048.yaml: e2bb4eea6bd106c9913c8aa6d33ee100b9235d30a1334d92c049f2c040c675d1
+  docs/production/p2_fixed_final/exact_configs/p2_049.yaml: 2563250c7ef4d23245a876e55035981423dc51d3d225d7ea054ee7b6d60719bd
+  docs/production/p2_fixed_final/exact_configs/p2_050.yaml: 55f90d276cc6c70ef2b114cec1c9e2f5342b009a8ca57f1547ec16b0a92a9a67
+  docs/production/p2_fixed_final/exact_configs/p2_051.yaml: 9c833d235342aaaa769645f7a367db45e1ef98c8ab3d112dd73a527a87d75cb8
+  docs/production/p2_fixed_final/exact_configs/p2_052.yaml: 1ef010eb0f2b578260e68efa6529f953f867d84b75e2bc92f5865872638ac3ba
+  docs/production/p2_fixed_final/exact_configs/p2_053.yaml: 360cc399db3d9a5ce37ca61fbe1447be72c0ac755094dca42ef5b8860cf33329
+  docs/production/p2_fixed_final/exact_configs/p2_054.yaml: cc3d90a6501db727f9c7b64224d6799d9327a0edba1905b939b01f9ca1c88e9b
+  docs/production/p2_fixed_final/exact_configs/p2_055.yaml: 5618851f3126bf185d5c481c32efbfcc165d67625efa246a73937bce1c96f91d
+  docs/production/p2_fixed_final/exact_configs/p2_056.yaml: f38a4eab279cb718ea1230533fada0c4456fb113a267bba9bdaff24671c43894
+  docs/production/p2_fixed_final/exact_configs/p2_057.yaml: cb9b88fa47269c2001144309269195813acbb9d111dc8eedbb0da63b069195de
+  docs/production/p2_fixed_final/exact_configs/p2_058.yaml: 0df842505bfff71dedf25eade36b75d3e799ef7523cfb51dd43808ff46cbbe23
+  docs/production/p2_fixed_final/exact_configs/p2_059.yaml: 07ba2abd4f93bc4b9946c1bc29884046ff825c3b326cc8b5456118229f116d96
+  docs/production/p2_fixed_final/exact_configs/p2_060.yaml: 7e7b6a19cbed5c62d8dfd344f43a32ceeb7d2cb42f0aa87eb53cb105b8ca4a8f
+  docs/production/p2_fixed_final/exact_configs/p2_061.yaml: 4cc5859646ff24abb4fd75134a1b4c574a5fcb602ad1baf9258fcd0ca94e66b4
+  docs/production/p2_fixed_final/exact_configs/p2_062.yaml: cfdf0df4903ad23664cc56127c3187ad17dc41b84dd7d093373a8d5df37de439
+  docs/production/p2_fixed_final/exact_configs/p2_063.yaml: 05a7dd8593e4a618326331349f27e7855173d8e9cb8f9c1d8a706f0b3553c3c1
+  docs/production/p2_fixed_final/exact_configs/p2_064.yaml: 54f19d079c46931e0d2be9e703dc59724c16887286d7380591b3812022872b1e
+  docs/production/p2_fixed_final/exact_configs/p2_065.yaml: 7fad4b86230121a69da614f6a9a3afc155e270641f20cb6f43f5c1d3806d135b
+  docs/production/p2_fixed_final/exact_configs/p2_066.yaml: 997427c2cd3f0bcef7528323c3a3ba48008428346624962b0d7028b0e1f88f79
+  docs/production/p2_fixed_final/exact_configs/p2_067.yaml: 0a410a6180c641a5f4f0178b44bee8bff8dbde32e65df84a5fa73310c4ca5503
+  docs/production/p2_fixed_final/exact_configs/p2_068.yaml: 41143a97adba6a8621cdc21741e18086c277df3334dad04d3d315e9e3b895ea9
+  docs/production/p2_fixed_final/exact_configs/p2_069.yaml: 76d3680d25a18eb3c95c10bb62ab103ad3c4cd5bfd65a418e922d9bcac475e58
+  docs/production/p2_fixed_final/exact_configs/p2_070.yaml: d568b17cd8a5795b83c2948a6c560fb4a4861113b50dfd956199f7f0a32c27d5
+  docs/production/p2_fixed_final/exact_configs/p2_071.yaml: 07dc8273f997610bf00a5b98ccdbdbb14675002054cf38c2ad331ba816a5dd98
+  docs/production/p2_fixed_final/exact_configs/p2_072.yaml: 3df07bbaa96250984150292e6a423888b22d48d0501d294f883ba6cf5bee6754
+  docs/production/p2_fixed_final/exact_configs/p2_073.yaml: e62eefdc099ffaca4020323a3a139f318f917864f6fea5916d621a8428dcb1eb
+  docs/production/p2_fixed_final/exact_configs/p2_074.yaml: 559ba1af36b9e9d098b8c582a3ab1e7bf7324f6451e8c24c69e8d82c58493538
+  docs/production/p2_fixed_final/exact_configs/p2_075.yaml: dbea296f2e08942f581cbc7652527afa40abfbe0f18548b334f0ce8911b05b14
+  docs/production/p2_fixed_final/exact_configs/p2_076.yaml: 3828c08cdd03a87a27c47e46543889dde1d49b55cb350cb69c4b972c85f6b335
+  docs/production/p2_fixed_final/exact_configs/p2_077.yaml: 3d0eeafe5f492919b27cb4ef03e4af6ea40c1cb0ae9e312af965f36003c87945
+  docs/production/p2_fixed_final/exact_configs/p2_078.yaml: 0583359287b7585b03c17f9bf62c1bc856b618819b5466d51cede203c6c0764e
+  docs/production/p2_fixed_final/exact_configs/p2_079.yaml: 2bad17d38a9dbaf2e6413c9308e818b334a0ac7bef6747eeb2e7676200e2cd1b
+  docs/production/p2_fixed_final/exact_configs/p2_080.yaml: 31a6235ebb4c311fc8e6175976b9d790d5682e37f19e48de4729806da4149a2a
+  docs/production/p2_fixed_final/exact_configs/p2_081.yaml: 60e85b27e59ef49a115104084d4e9277fa8ab9f8683f33c347dd08ba86465c6b
+  docs/production/p2_fixed_final/exact_configs/p2_082.yaml: a123b1e02a2c58539c491f6e2f3acbb65a47b9fc4b70ad70085d9297ad7c009a
+  docs/production/p2_fixed_final/exact_configs/p2_083.yaml: e6c7ee99983b117f76ece5dda64ee389d480b05450b4a59527913cfcdbdd073d
+  docs/production/p2_fixed_final/exact_configs/p2_084.yaml: 342db6fa1114638bd6f952341fbd493131f7a1bd83dbef69db9f846a575995a8
+  docs/production/p2_fixed_final/exact_configs/p2_085.yaml: f7673d7bb33bdb17b006a371335b5fe8d724f196ec2990a433ddbfc375a4309f
+  docs/production/p2_fixed_final/exact_configs/p2_086.yaml: 0bd8d052847808fa37bcfefa60bc9b9d059e0676c9eac913af96916227262a84
+  docs/production/p2_fixed_final/exact_configs/p2_087.yaml: 4a4af3c1c03e1618e4b31c0dbbb8e0f7792ab22ea29fb513585a943188f52d92
+  docs/production/p2_fixed_final/exact_configs/p2_088.yaml: 66ef14cb43f6a4e2f9c65275119bb9ab8081b7bce82076d613cf86d66696185f
+  docs/production/p2_fixed_final/exact_configs/p2_089.yaml: 4aa704aa24d3fa658af141066b674eb3aab9c76cae8174347cfbb7818b38e887
+  docs/production/p2_fixed_final/exact_configs/p2_090.yaml: eb551ec38b5da68f68ee1a1e21c44f6d54fb1aaaa4aa7a6a9324dcb634198f85
+  docs/production/p2_fixed_final/exact_configs/p2_091.yaml: 87f687de305f58d4da2534a8c587aa6d9105791620b77133cc98ab1822947a62
+  docs/production/p2_fixed_final/exact_configs/p2_092.yaml: 915ed5fc26be9f1d9bbd2b0641308d316b3d5befdff9b1b96a16cf8176fc09f3
+  docs/production/p2_fixed_final/exact_configs/p2_093.yaml: acc48dd8cb50f7bf09b5444db27d7d67b0512b59d745bae5f95ac46382c367d0
+  docs/production/p2_fixed_final/exact_configs/p2_094.yaml: a62aa23f720593e486406686bb5255bdfd9f680b1140e0a8eda3c4bfec5568a0
+  docs/production/p2_fixed_final/exact_configs/p2_095.yaml: 4e7b7930c78d572de87874e532d35da46e8a556ee1afa2280375aa91519426dd
+  docs/production/p2_fixed_final/exact_configs/p2_096.yaml: 2fa0579a22513b9c3059f1ee001bc95643d3b5b4b393df143da4c8a2b2d7894d
+  docs/production/p2_fixed_final/exact_configs/p2_097.yaml: c8aad09030328e0ffe231a3eb8b755cee46acd48bc036eff49dd80532dcc3cd3
+  docs/production/p2_fixed_final/exact_configs/p2_098.yaml: 40e574d8ee2ae732c8587abd680a6dd00efadff5299055c1ad275dd048c07b33
+  docs/production/p2_fixed_final/exact_configs/p2_099.yaml: fe6c1f7356040a44f223c6d49694db6585ef6e96b1771c770be00698c6bb61b3
+  docs/production/p2_fixed_final/exact_configs/p2_100.yaml: 7b88e38d51389899a08cceb928efa0dd9e62a7bcb8ec8da51576583811d13e66
+  docs/production/p2_fixed_final/exact_configs/p2_101.yaml: 619cf704a1991da977eb298402c734e206d942b0de5e40ab8de5c36782348478
+  docs/production/p2_fixed_final/exact_configs/p2_102.yaml: d8e9fcd211b4e9533aab8a047cdaa0345fe2b74a0fc445372b874a557f197d05
+  docs/production/p2_fixed_final/exact_configs/p2_103.yaml: e4f43f4b51767b77631962946c198f57c8636971b883f8fed88e4cd6b99aef35
+  docs/production/p2_fixed_final/exact_configs/p2_104.yaml: 4b87e1de04f55d8553a217333676651dcc545b4ff9acf1bbfd8461fa0681d8d3
+  docs/production/p2_fixed_final/exact_configs/p2_105.yaml: 7ddff18f1ab5de898c50aa5c0f4acf0d9c19a2b50f05895fd4489f22e695a94c
+  docs/production/p2_fixed_final/exact_configs/p2_106.yaml: 05a85189b9d65aa9b6382be13a9301796f4eb0552f7d5ea947d66484a91b91ad
+  docs/production/p2_fixed_final/exact_configs/p2_107.yaml: 1316840527ab50b0df34fe010b60db9fc24c0372a964c549fa5d4d716ebe014c
+  docs/production/p2_fixed_final/exact_configs/p2_108.yaml: 3a87be7f828ef92b71772190bb939ca2e152b8e7782ef46e3d60086c300bc073
+  docs/production/p2_fixed_final/exact_configs/p2_109.yaml: d4bdd3c73684ce4b3cb28c69c2cb9577113f7110a0e38653bdbb4eb25292cdf8
+  docs/production/p2_fixed_final/exact_configs/p2_110.yaml: 9c83fa1f27c862309feb872dcc4cbbdd785dbdddef55db3881257649b86d11dd
+  docs/production/p2_fixed_final/exact_configs/p2_111.yaml: d9e90ed25be717c41774c9c3dd8fbe8d46649a9f3435b6ec4c856cd80b43d797
+  docs/production/p2_fixed_final/exact_configs/p2_112.yaml: f80384e7d488f792f32d6995b5358454949fba7f25d396ab455832bc08b38335
+  docs/production/p2_fixed_final/exact_configs/p2_113.yaml: 46673aa21b9a08233809cce03e85207cbadbcee6c55bc573062af8e10e58dab6
+  docs/production/p2_fixed_final/exact_configs/p2_114.yaml: 54223578b2afd55008e6949b2ec0d3afaa3902cf8cede86c56c0d948a0c19896
+  docs/production/p2_fixed_final/exact_configs/p2_115.yaml: 7b9760be965a0f280a3c915f32588225731f3efd1407afa784ff9738228d4a42
+  docs/production/p2_fixed_final/exact_configs/p2_116.yaml: 4a1ac47caa18f959713772b06970225f2868518d1c31d77bc00084f2dad47647
+  docs/production/p2_fixed_final/exact_configs/p2_117.yaml: 1d16058ffea5bd7a107b9395838f7b9e3281accb4f9854cdd35f8a9919a77a34
+  docs/production/p2_fixed_final/exact_configs/p2_118.yaml: 9392bbe7f2d25335e492319ea638bbc9f6f464906406870fca333df806a09db2
+  docs/production/p2_fixed_final/exact_configs/p2_119.yaml: fcb727f1f74e9b391ea1451a7b6cf0a7d8a76c02d2b7f8317eef1d01e6f0a3a5
+  docs/production/p2_fixed_final/exact_configs/p2_120.yaml: f5d0e85ef47b1a013fe73b811092a19e748f280859f9e2e3ca3a83e522bb177e
+  docs/production/p2_fixed_final/exact_configs/p2_121.yaml: 64b86203db5556b450f446d911ec8dc548d09b06b97ad59ac68051bcfdb6a4ce
+  docs/production/p2_fixed_final/exact_configs/p2_122.yaml: e9306a98abc8ac3be5a3595a19daaac7ad1b8a537014161bfa75848e0a255742
+  docs/production/p2_fixed_final/exact_configs/p2_123.yaml: ac3a6551d31541ea241a2bc68b3d60459f47dbaea936b125d52079ec35843c21
+  docs/production/p2_fixed_final/exact_configs/p2_124.yaml: 7e949c83186662562252e0374739b3c91ef218f0428de1cd505da243c90a3859
+  docs/production/p2_fixed_final/exact_configs/p2_125.yaml: 519be128555bafb10c82f92997997c9c317e2197e64e686327abbdce41179ffa
+  docs/production/p2_fixed_final/exact_configs/p2_126.yaml: 70ed1eb0f7962630af191e869477089710aa0fd4f11295e8df4a3f1bce6ba0d4
+  docs/production/p2_fixed_final/exact_configs/p2_127.yaml: d146aa8e9a737c14cb7772de41dc832cd81cd4ee7819470d230a5299a2289d41
+  docs/production/p2_fixed_final/exact_configs/p2_128.yaml: 009cc567b09804dc58ed5f8fe3daec3a5007998498729b6ce5a753f4648224d2
+  docs/production/p2_fixed_final/exact_configs/p2_129.yaml: 1b7aadb855c54e300f3eab4e3b3c595c354ff74af6f4fbc692a4adad21c8de68
+  docs/production/p2_fixed_final/exact_configs/p2_130.yaml: 9eba2dfe0c4d049b5378e5bd8ec62581b224cd17ea4ddaee18b6a11de4cae6f1
+  docs/production/p2_fixed_final/exact_configs/p2_131.yaml: 46bf3c94143d905cefaeaede900bbc2f7da705f5744e7448340dcda18624840f
+  docs/production/p2_fixed_final/exact_configs/p2_132.yaml: 116e8f0ba0a299ad13df4b8f604e7ca1df8f9276e5d1f57476c81b7a37d4e524
+  docs/production/p2_fixed_final/exact_configs/p2_133.yaml: 383cc48ae48dc0df0a0599376ec54fe6f400c05b56d84bfcb5d53effaa8a7786
+  docs/production/p2_fixed_final/exact_configs/p2_134.yaml: 422f3195154cb699f265ed4b6b97bef2e43d25ba42b83befb680e01dead0c511
+  docs/production/p2_fixed_final/exact_configs/p2_135.yaml: 57215353db2c4c0c8e6552f7589b662056b2deff1cc3a386923ec1b0edcb7a6c
+  docs/production/p2_fixed_final/exact_configs/p2_136.yaml: 0c9d9c87c4b84059e6bbfce4766dfca1f3a10c775296cc6f5b4b2259c3cc0ec7
+  docs/production/p2_fixed_final/exact_configs/p2_137.yaml: 3802278b0bd53ddc340dc0799e4ce937cf942dbd6ac319ea40fe7fad09c6572c
+  docs/production/p2_fixed_final/exact_configs/p2_138.yaml: f1db5b7cf7a14df815261bb7011958a1bc385c1c3a6a9c049cab80e400a8b59c
+  docs/production/p2_fixed_final/exact_configs/p2_139.yaml: 18341d0625a2b9efa04de28d232029de30f4cca50fc8acacd5e1957f9ae6b9c1
+  docs/production/p2_fixed_final/exact_configs/p2_140.yaml: 18a52967b3d3e54f7ad411f10ecdfa35900c2a289bddc0e07a7ed1c1ee588849
+  docs/production/p2_fixed_final/exact_configs/p2_141.yaml: fa2f8ac6f164adc0609cdd1bf3f3ffd979de80983548a4a4e82f81acdb32227a
+  docs/production/p2_fixed_final/exact_configs/p2_142.yaml: 78da6add7c4505bc98ff8d3ea7bca572f60ada50edcb81b95df435952ef7dfe5
+  docs/production/p2_fixed_final/exact_configs/p2_143.yaml: 8fac6590ae84df636e2435ef347b3cc8e28ad9c03043f7bc5d937b34cc144976
+  docs/production/p2_fixed_final/exact_configs/p2_144.yaml: aa6ee3862671b4411b203b5dafd46f38519ed02758cb1c9a95a779c6a4db7454
+  docs/production/p2_fixed_final/exact_configs/p2_145.yaml: d2fcdcd80370808fde4aefeb4e4d12396bb75590d8bf75d5aa9b05602c486cc4
+  docs/production/p2_fixed_final/exact_configs/p2_146.yaml: 52c1005595329dd7fb81dd9056453ed70abec4853bf5bf20ea12a39726bfb63e
+  docs/production/p2_fixed_final/exact_configs/p2_147.yaml: 953ab37ca669eafb5ef487727c87015d6857280a62a8a0b9f3469688edf70882
+  docs/production/p2_fixed_final/exact_configs/p2_148.yaml: 4d7d8a4c3af48c59f3caf61af4b83b837f9e8b346ea3cd204b13f459b679efea
+  docs/production/p2_fixed_final/exact_configs/p2_149.yaml: 8fe9c150e0eb611b8ed0501b076d2eb5cf8a06dabb177629b4ec8efc6f6db913
+  docs/production/p2_fixed_final/exact_configs/p2_150.yaml: 5640e47fcf8cd7ccb0c0fb0bd891f4613a53a424f296cc03c48779cfdec11613
+  docs/production/p2_fixed_final/exact_configs/p2_151.yaml: b22db0e593fa8733d8d29d9880ad33cb9d81ed5779fb03d13c0f2ae97c068746
+  docs/production/p2_fixed_final/exact_configs/p2_152.yaml: 43cd7f9a0c98f9060a1d47de402d2c108ef1938dce4daea49a972005a17a4bc7
+  docs/production/p2_fixed_final/exact_configs/p2_153.yaml: 3a3b227c92ae616930e419c81f36f3a09d9f33dca981392ab61aaf1dde0471fe
+  docs/production/p2_fixed_final/exact_configs/p2_154.yaml: 87d289ef203a66de7994be0789e5f6dc2f1689fbcd7ed36d06d91340a43bc88a
+  docs/production/p2_fixed_final/exact_configs/p2_155.yaml: 5e454388c73b8958c207f2d2dbf851d3cb8fc5780737c8d8623d856679e7f532
+  docs/production/p2_fixed_final/exact_configs/p2_156.yaml: ec310ebf9ed0bccacfdc3419c9c54613ee12ac2b080b0108d46ddb05a02d6e50
+  docs/production/p2_fixed_final/exact_configs/p2_157.yaml: dd7fbb7d62b6cafceaaef1b955f6925a39f957975d4855e9faa36f6e24863304
+  docs/production/p2_fixed_final/exact_configs/p2_158.yaml: 20134437699a9ddc46387aa77a874bcdfdfe1c1dfc3af23d8c1dfee4db5b5477
+  docs/production/p2_fixed_final/exact_configs/p2_159.yaml: 7385c9d5398090fb930fed16cc7b0bf6fbcd44eda122df75ecd2ac8e609276f3
+  docs/production/p2_fixed_final/exact_configs/p2_160.yaml: 8023fb939b2133693b0425816a322bfd276bafb7d0301e0f7d52067f044bdd03
+  docs/production/p2_fixed_final/exact_configs/p2_161.yaml: 6c6ed2ea5e3188a93fbad1ebe95e3a77e47df8685c527d2860ddb38ff2f1feed
+  docs/production/p2_fixed_final/exact_configs/p2_162.yaml: 3e72bc90cc17a6a19c547eaa3e3eca16e4d91b5919ab38af393c70ee774df43e
+  docs/production/p2_fixed_final/exact_configs/p2_163.yaml: 67652efaf1b22869035e218978fed93aa65a2aad420139e06662d606befe5282
+  docs/production/p2_fixed_final/exact_configs/p2_164.yaml: 997ef9dfa0e31e47ead9368c78d0328f40fe63b0741c980c6b5fac1d5051ea7e
+  docs/production/p2_fixed_final/exact_configs/p2_165.yaml: 0da4e80eba0e82b9a8ea79719912fcf784fcad1904e1d577d875f037253c9ae4
+  docs/production/p2_fixed_final/exact_configs/p2_166.yaml: 430c7e980de78686fd34f1fa635d9b13b3d4d97a6d8892702047a2b33fab4326
+  docs/production/p2_fixed_final/exact_configs/p2_167.yaml: b2bc14881885eaf346ae087014ffc5f3cfd05e32d6c934b31fa63822e59934c6
+  docs/production/p2_fixed_final/exact_configs/p2_168.yaml: f31406c79415704bb3cd80b47f3e8a40aada95cfe624f0c52c397adfac04cdfe
+  docs/production/p2_fixed_final/exact_configs/p2_169.yaml: 44ff4070dc45c38501d5a3a15df04946a3ec42bd1f802c153edf570bc47cad13
+  docs/production/p2_fixed_final/final_refresh_matrix.json: 4d6e6ecd200a34999dcbba74a3665428eb0b980d80a99c8559c538166b6768a6
+  docs/production/p2_fixed_final/freeze.json: ae0a748fff56578cdf7a3803fe9fab221bf89c584656a0ff4b43a6246c76fad4
+  docs/production/p2_fixed_final/executed_runner.py: 9d0e316928c34ee2b74508cfbd83cba87a30ebfa341bc188d6372983f82bfd84
+  docs/production/p2_fixed_final/worker_partition.json: b053d0c25690159e554569cf5c3a21f43221060969fdb1d4e433a350e3758786
+  scripts/production/ablations/ours/p2_refresh.py: 6cf4e4d356e62862d489b0e626833ac757160ac0bf6741afd664489d3e0e437a
+  scripts/production/ablations/ours/p1_fixed_candidate.py: 5ef2c0d04b8cb57da2e9469f98ac4a229d0a258e2e3682776714dab6697f05c5
+  scripts/production/ablations/ours/p2_refresh_gpu.sh: 37d1fdd777698a88026788acee82c51fbdfa9ed3fd5a63a5d3585a40df1635c9
+  scripts/production/ablations/ours/p2_refresh_report.py: 14e21ef2ef778b62f0e2f6bc4d23ef7aee8d299a4f523363142b22dc1293c00f
+  scripts/production/ablations/ours/p2_refresh_post.sh: f965dc48b1519c4545d68a4548799fe56b7987e79dde47dd9e131b40f970ebe3
+paper_final_binary_hashes:
+  ops/ours_renderer/ours_renderer/_C.cpython-37m-x86_64-linux-gnu.so: 97539bfef33b865b0356f4891ce0d650c3b966485ab7a66c603d409e2a26aaa4

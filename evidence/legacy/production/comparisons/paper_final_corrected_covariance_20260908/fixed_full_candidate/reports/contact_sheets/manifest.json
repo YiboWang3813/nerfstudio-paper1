@@ -1,0 +1,182 @@
+[
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "l3",
+    "label": "Fixed + Full",
+    "item": 27,
+    "crop_xywh": [
+      19,
+      0,
+      53,
+      107
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/paper_final_corrected_covariance_20260908/lgr_interaction/runs/synthetic_liver/l3/li_014/vis/item_27/pred.png",
+    "sha256": "24d62b3125014d57d6b9a108b50a3cf8993c6d075470609ebaeef094cea62600",
+    "gt_sha256": "d2d4cf4c32f400ef012517de441a7e489e1ecfab5e6255c40296f7ca4c31abc3"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "l3",
+    "label": "Adaptive + Full",
+    "item": 27,
+    "crop_xywh": [
+      19,
+      0,
+      53,
+      107
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/paper_final_corrected_covariance_20260908/runs/synthetic_liver/l3/b1_011/vis/item_27/pred.png",
+    "sha256": "3f9e3e9f151989ef4243c5f79e730f7f076540d89e674428ef9581e4f2fe71b5",
+    "gt_sha256": "d2d4cf4c32f400ef012517de441a7e489e1ecfab5e6255c40296f7ca4c31abc3"
+  },
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "l3",
+    "label": "GT",
+    "item": 27,
+    "crop_xywh": [
+      19,
+      0,
+      53,
+      107
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/paper_final_corrected_covariance_20260908/runs/synthetic_liver/l3/b1_011/vis/item_27/gt.png",
+    "sha256": "d2d4cf4c32f400ef012517de441a7e489e1ecfab5e6255c40296f7ca4c31abc3",
+    "gt_sha256": "d2d4cf4c32f400ef012517de441a7e489e1ecfab5e6255c40296f7ca4c31abc3"
+  },
+  {
+    "dataset": "spine_phantom",
+    "sweep": "left3_2",
+    "label": "Fixed + Full",
+    "item": 17,
+    "crop_xywh": [
+      59,
+      0,
+      36,
+      215
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/paper_final_corrected_covariance_20260908/fixed_full_candidate/runs/spine_phantom/left3_2/fc_004/vis/item_17/pred.png",
+    "sha256": "9b8cbb73283305666442e215b3228ae0b9606c01916803819d6bf345878e5734",
+    "gt_sha256": "90a816a35136aec062f7d6e39f7a52bc5c77c49ce53cfda081a7cd3c3f00a4b0"
+  },
+  {
+    "dataset": "spine_phantom",
+    "sweep": "left3_2",
+    "label": "Adaptive + Full",
+    "item": 17,
+    "crop_xywh": [
+      59,
+      0,
+      36,
+      215
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/paper_final_corrected_covariance_20260908/runs/spine_phantom/left3_2/b1_004/vis/item_17/pred.png",
+    "sha256": "af9db9bda77708cd50b29bf055fef8e3640506141edad2c8acee933c678d3818",
+    "gt_sha256": "90a816a35136aec062f7d6e39f7a52bc5c77c49ce53cfda081a7cd3c3f00a4b0"
+  },
+  {
+    "dataset": "spine_phantom",
+    "sweep": "left3_2",
+    "label": "GT",
+    "item": 17,
+    "crop_xywh": [
+      59,
+      0,
+      36,
+      215
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/paper_final_corrected_covariance_20260908/runs/spine_phantom/left3_2/b1_004/vis/item_17/gt.png",
+    "sha256": "90a816a35136aec062f7d6e39f7a52bc5c77c49ce53cfda081a7cd3c3f00a4b0",
+    "gt_sha256": "90a816a35136aec062f7d6e39f7a52bc5c77c49ce53cfda081a7cd3c3f00a4b0"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_RH_Per_S_PtD_qc_0165_0364_s02",
+    "label": "Fixed + Full",
+    "item": 18,
+    "crop_xywh": [
+      129,
+      24,
+      92,
+      69
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/paper_final_corrected_covariance_20260908/fixed_full_candidate/runs/tus_rec_2024_qc/010_RH_Per_S_PtD_qc_0165_0364_s02/fc_062/vis/item_18/pred.png",
+    "sha256": "57c5f7b38c167f783552bd56707a6229a8a8529c5be5743b8b0617a00df926bc",
+    "gt_sha256": "c4f3c0e585ff535348e2bf1fbc6efae5c591fb51b79dd631a0093b302f422f57"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_RH_Per_S_PtD_qc_0165_0364_s02",
+    "label": "Adaptive + Full",
+    "item": 18,
+    "crop_xywh": [
+      129,
+      24,
+      92,
+      69
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/paper_final_corrected_covariance_20260908/runs/tus_rec_2024_qc/010_RH_Per_S_PtD_qc_0165_0364_s02/b1_062/vis/item_18/pred.png",
+    "sha256": "5185059d8285ea1571198b322e07e062d85ccddfdb7925c676bd8ca5943119a3",
+    "gt_sha256": "c4f3c0e585ff535348e2bf1fbc6efae5c591fb51b79dd631a0093b302f422f57"
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_RH_Per_S_PtD_qc_0165_0364_s02",
+    "label": "GT",
+    "item": 18,
+    "crop_xywh": [
+      129,
+      24,
+      92,
+      69
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/paper_final_corrected_covariance_20260908/runs/tus_rec_2024_qc/010_RH_Per_S_PtD_qc_0165_0364_s02/b1_062/vis/item_18/gt.png",
+    "sha256": "c4f3c0e585ff535348e2bf1fbc6efae5c591fb51b79dd631a0093b302f422f57",
+    "gt_sha256": "c4f3c0e585ff535348e2bf1fbc6efae5c591fb51b79dd631a0093b302f422f57"
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_116",
+    "label": "Fixed + Full",
+    "item": 39,
+    "crop_xywh": [
+      150,
+      23,
+      85,
+      67
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/paper_final_corrected_covariance_20260908/fixed_full_candidate/runs/tdsc_abus_2023/validation_116/fc_031/vis/item_39/pred.png",
+    "sha256": "8618beb438440dad431be63d14b6d5339c865fff80f4a5b14082d2365623fc90",
+    "gt_sha256": "bb8d6cb3fe1467c94704c2ad139061b376c179b1f0a816fc06dcd895ed7a3473"
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_116",
+    "label": "Adaptive + Full",
+    "item": 39,
+    "crop_xywh": [
+      150,
+      23,
+      85,
+      67
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/paper_final_corrected_covariance_20260908/runs/tdsc_abus_2023/validation_116/b1_031/vis/item_39/pred.png",
+    "sha256": "a451209693685a80c9ec2815254fb5b43c27171a932a1fc70930da4e5f87c705",
+    "gt_sha256": "bb8d6cb3fe1467c94704c2ad139061b376c179b1f0a816fc06dcd895ed7a3473"
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_116",
+    "label": "GT",
+    "item": 39,
+    "crop_xywh": [
+      150,
+      23,
+      85,
+      67
+    ],
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/paper_final_corrected_covariance_20260908/runs/tdsc_abus_2023/validation_116/b1_031/vis/item_39/gt.png",
+    "sha256": "bb8d6cb3fe1467c94704c2ad139061b376c179b1f0a816fc06dcd895ed7a3473",
+    "gt_sha256": "bb8d6cb3fe1467c94704c2ad139061b376c179b1f0a816fc06dcd895ed7a3473"
+  }
+]

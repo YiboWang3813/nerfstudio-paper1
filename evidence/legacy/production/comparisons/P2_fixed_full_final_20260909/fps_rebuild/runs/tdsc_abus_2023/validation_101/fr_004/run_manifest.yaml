@@ -1,0 +1,108 @@
+run_id: '004'
+run_name: production-sensorless_paper_semantic_freeze_ours_004
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/P2_fixed_full_final_20260909/fps_rebuild/runs/tdsc_abus_2023/validation_101/fr_004
+checkpoint_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/P2_fixed_full_final_20260909/fps_rebuild/runs/tdsc_abus_2023/validation_101/fr_004/checkpoints
+checkpoint_root: ''
+hydra_output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/P2_fixed_full_final_20260909/fps_rebuild/runs/tdsc_abus_2023/validation_101/fr_004
+config_path: hydra:experiment=production/sensorless/paper_semantic_freeze
+overrides:
+- experiment=production/ablations/ours/paper_semantic_freeze
+- scene=tdsc_abus_2023
+- ++scene.dataset_name="tdsc_abus_2023"
+- ++scene.loading.baseroot="/home/boywang25/ultrasound-scene-reconstruction/data"
+- ++scene.loading.dataset_dirname="tdsc_abus_2023"
+- ++scene.loading.sweep_name="validation_101"
+- ++scene.loading.images_name="images.npy"
+- ++scene.loading.test_images_name="test_images.npy"
+- ++scene.loading.test_poses_name="test_poses.npy"
+- ++scene.loading.image_value_mode="uint8_255"
+- ++scene.loading.image_nan_value=0.0
+- ++scene.loading.image_downsample_factor=1
+- ++scene.loading.axial_downsample_factor=1
+- ++scene.loading.frame_start=0
+- ++scene.loading.frame_end=-1
+- ++scene.loading.frame_stride=1
+- ++scene.loading.frame_indices_path=""
+- ++scene.loading.test_mode="holdout_interval"
+- ++scene.loading.holdout_trim_each=10
+- ++scene.loading.holdout_num_samples=0
+- ++scene.loading.holdout_test_ratio=0.2
+- ++scene.loading.pose_type="absolute"
+- ++scene.loading.poses_abspath=""
+- ++scene.loading.pose_mode="file"
+- ++scene.loading.canonical_sweep_delta_mm=-1.0
+- ++scene.loading.canonical_sweep_delta_scale=1.0
+- ++scene.loading.canonical_sweep_ref_frame=0
+- ++scene.loading.canonical_sweep_axis="z"
+- ++scene.loading.canonical_sweep_spacing_mode="uniform"
+- ++scene.sampler.num_init=1000000
+- ++scene.sampler.num_new=1000
+- ++scene.sampler.scales_init=[0.3, 0.3, 0.3]
+- ++scene.sampler.quats_init=[1.0, 0.0, 0.0, 0.0]
+- ++scene.sampler.uniform_ratio=0.3
+- ++scene.sampler.intensity_threshold=0.03
+- ++scene.sampler.jitter_radius=0.2
+- ++scene.grid.tile_size=4.0
+- ++scene.grid.bbox_margin=0.05
+- ++scene.scheduler.test_ratio=0.1
+- ++metric.needed_metrics=["psnr", "l1", "ssim", "lpips", "dists", "gmsd"]
+- ++metric.psnr_cfg.max_val=1.0
+- ++metric.max_vis_frames=10
+- ++metric.save_per_frame_metrics=true
+- scene.loading.sweep_name=validation_101
+- scene.loading.test_mode=holdout_interval
+- scene.loading.holdout_trim_each=10
+- scene.loading.holdout_num_samples=0
+- scene.loading.holdout_test_ratio=0.2
+- scene.loading.pose_mode=file
+- experiment.sensorless_required=false
+- system.seed=42
+- model.slice_render.elev_corridor_half_mm=0.238
+- scene.loading.canonical_sweep_spacing_mode=uniform
+- scene.loading.canonical_sweep_delta_scale=1.0
+- model.slice_render.ray_attenuation_enabled=true
+- model.slice_render.ray_attenuation_formula=integral
+- model.offline.density_control.densification_policy=residual_guided
+- model.offline.density_control.pruning_policy=path_aware
+- engine.iterations=30000
+- engine.interval.test=30000
+- engine.interval.save=30000
+- wandb.enable=false
+- model.slice_render.local_conditioning_mode=fixed
+- system.output_root=/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/P2_fixed_full_final_20260909/fps_rebuild
+- system.exp_tag=fr_004
+git_commit: e3fabc6bb695bc43b53efd99c97d1766c5f7a759
+git_dirty: true
+dataset: tdsc_abus_2023
+model: ours
+exp_tag: fr_004
+seed: 42
+wandb:
+  enabled: false
+  project: omniultra
+  mode: online
+  run_id: ''
+paper_final_source_sha256: b2525342593c8dd84a1f1ddb8c1ac124c9b1fb179ddcffea3fb902eb2a073ad2
+paper_final_batch: FPS_rebuild_only
+paper_final_row_id: fr_004
+paper_final_matrix_sha256: 7edce8c0924fa0321fbbf068f1460b2a4590b020b38c3691de520442c4246623
+paper_final_submission_hashes:
+  docs/production/p2_fps_rebuild/exact_configs/fr_000.yaml: 8ccb5901a449037c04e503045dc24a5c3934d4dd955badfeef663833f638ee95
+  docs/production/p2_fps_rebuild/exact_configs/fr_001.yaml: 8d095c45b764efb98f9c74d2c28ee0909a0948243362afe5627fb107157875b6
+  docs/production/p2_fps_rebuild/exact_configs/fr_002.yaml: b34d16d2c0462c4550b9a888eb6a50e7a1f2225cb3adcbc165de241918b006f8
+  docs/production/p2_fps_rebuild/exact_configs/fr_003.yaml: f5c3b164c50dfdf436208d446bad5759cc7bcb135a0ffb6aa1b0fa7f70e3f061
+  docs/production/p2_fps_rebuild/exact_configs/fr_004.yaml: f1c0918bdcadfaeed907fd52c32b07d1b7c56384a2e4858cf36d0608f191fdb3
+  docs/production/p2_fps_rebuild/exact_configs/fr_005.yaml: d5efbb238fee17cedeff3e5d2335b9a2634111edf8692f690c016183b53213bb
+  docs/production/p2_fps_rebuild/exact_configs/fr_006.yaml: 289db5e3206b5ccd06de809c4804315e26f2febf63292415b494856fc4cc0f67
+  docs/production/p2_fps_rebuild/exact_configs/fr_007.yaml: 45ec131d1631570a09d5cbd2eecb288b69c6b53997af4aa2dd89b90cdbf6b963
+  docs/production/p2_fps_rebuild/fps_rebuild_matrix.json: 7edce8c0924fa0321fbbf068f1460b2a4590b020b38c3691de520442c4246623
+  docs/production/p2_fps_rebuild/worker_partition.json: addf962a3183c6e01d210d86f53c2fabac3aae4362e140d128bce6476014077f
+  docs/production/p2_fps_rebuild/executed_runner.py: 8beae685bd273b19a856a3e46eba08083cfbe8f8938f25d0368422854294b380
+  scripts/production/ablations/ours/p2_fps_rebuild.py: 381dec6f5c9413a510320e9ef69dcde597ae76ae103fbd75a72796a27bc41415
+  scripts/production/ablations/ours/p1_fixed_candidate.py: 5ef2c0d04b8cb57da2e9469f98ac4a229d0a258e2e3682776714dab6697f05c5
+  scripts/production/ablations/ours/p1_lgr_confirmation.py: ae675046da02dd298d259fe692dee2ae5e97dc608fac24677f68edc04c3b0501
+  scripts/production/ablations/ours/p2_fps_rebuild_gpu.sh: 4f4969ae3d1db9d710bfd24a073d1c3a8d31aa13ca081d9ff4e87c4070ecf316
+  scripts/production/ablations/ours/p2_fps_rebuild_post.sh: 26bb45198e1043bbc3e3fd0e65c6952f34af5880a88603dec5de8eb6ea92a4db
+  scripts/production/ablations/ours/p2_fps_rebuild_report.py: 156cbc7b98cce6285d27894c4e961b4ab46f53ef0bd4b2151a1465c9ba1a7da5
+paper_final_binary_hashes:
+  ops/ours_renderer/ours_renderer/_C.cpython-37m-x86_64-linux-gnu.so: 97539bfef33b865b0356f4891ce0d650c3b966485ab7a66c603d409e2a26aaa4

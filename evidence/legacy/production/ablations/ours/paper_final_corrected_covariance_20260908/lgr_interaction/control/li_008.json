@@ -1,0 +1,9 @@
+{
+  "row_id": "li_008",
+  "exit_code": 0,
+  "worker": 3,
+  "job": "80102",
+  "train_start_unix": 1788925663.4462447,
+  "train_end_unix": 1788926096.7673254,
+  "train_wall_time_sec": 433.321081161499
+}

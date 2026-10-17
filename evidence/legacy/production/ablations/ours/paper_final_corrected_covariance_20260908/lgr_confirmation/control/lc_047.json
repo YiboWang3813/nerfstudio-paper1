@@ -1,0 +1,9 @@
+{
+  "row_id": "lc_047",
+  "exit_code": 0,
+  "worker": 2,
+  "job": "80083",
+  "train_start_unix": 1788922173.650769,
+  "train_end_unix": 1788922419.0283866,
+  "train_wall_time_sec": 245.37761807441711
+}

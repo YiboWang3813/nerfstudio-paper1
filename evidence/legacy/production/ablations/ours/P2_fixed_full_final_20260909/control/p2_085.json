@@ -1,0 +1,9 @@
+{
+  "row_id": "p2_085",
+  "exit_code": 0,
+  "worker": 2,
+  "job": "80179",
+  "train_start_unix": 1788942533.5034025,
+  "train_end_unix": 1788942964.4406662,
+  "train_wall_time_sec": 430.93726420402527
+}

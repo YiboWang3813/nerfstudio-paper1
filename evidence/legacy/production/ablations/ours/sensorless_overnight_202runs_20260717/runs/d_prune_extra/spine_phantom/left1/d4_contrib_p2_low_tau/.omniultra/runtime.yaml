@@ -1,0 +1,5 @@
+created_at: '2026-07-17T03:37:40'
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/sensorless_overnight_202runs_20260717/runs/d_prune_extra/spine_phantom/left1/d4_contrib_p2_low_tau
+checkpoint_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/sensorless_overnight_202runs_20260717/runs/d_prune_extra/spine_phantom/left1/d4_contrib_p2_low_tau/checkpoints
+hydra_output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/sensorless_overnight_202runs_20260717/runs/d_prune_extra/spine_phantom/left1/d4_contrib_p2_low_tau
+config_path: hydra:experiment=production/sensorless/ours_canonical

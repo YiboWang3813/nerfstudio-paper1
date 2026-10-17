@@ -1,0 +1,5 @@
+created_at: '2026-07-16T20:51:04'
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/sensorless_stage2_minimal_20260716/runs/g_axis/synthetic_liver/l1/opposite_sign
+checkpoint_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/sensorless_stage2_minimal_20260716/runs/g_axis/synthetic_liver/l1/opposite_sign/checkpoints
+hydra_output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/sensorless_stage2_minimal_20260716/runs/g_axis/synthetic_liver/l1/opposite_sign
+config_path: hydra:experiment=production/sensorless/ours_canonical

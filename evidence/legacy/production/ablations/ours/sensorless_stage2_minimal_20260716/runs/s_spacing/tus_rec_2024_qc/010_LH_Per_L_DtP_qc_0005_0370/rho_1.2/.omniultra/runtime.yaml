@@ -1,0 +1,5 @@
+created_at: '2026-07-16T20:52:26'
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/sensorless_stage2_minimal_20260716/runs/s_spacing/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/rho_1.2
+checkpoint_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/sensorless_stage2_minimal_20260716/runs/s_spacing/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/rho_1.2/checkpoints
+hydra_output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/sensorless_stage2_minimal_20260716/runs/s_spacing/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/rho_1.2
+config_path: hydra:experiment=production/sensorless/ours_canonical

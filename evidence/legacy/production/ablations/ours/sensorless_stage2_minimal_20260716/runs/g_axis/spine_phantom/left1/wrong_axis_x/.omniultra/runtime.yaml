@@ -1,0 +1,5 @@
+created_at: '2026-07-16T21:23:50'
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/sensorless_stage2_minimal_20260716/runs/g_axis/spine_phantom/left1/wrong_axis_x
+checkpoint_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/sensorless_stage2_minimal_20260716/runs/g_axis/spine_phantom/left1/wrong_axis_x/checkpoints
+hydra_output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/sensorless_stage2_minimal_20260716/runs/g_axis/spine_phantom/left1/wrong_axis_x
+config_path: hydra:experiment=production/sensorless/ours_canonical

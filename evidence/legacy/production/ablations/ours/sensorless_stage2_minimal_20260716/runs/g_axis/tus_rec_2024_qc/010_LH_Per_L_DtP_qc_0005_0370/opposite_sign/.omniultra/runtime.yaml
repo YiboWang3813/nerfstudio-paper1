@@ -1,0 +1,5 @@
+created_at: '2026-07-16T20:52:56'
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/sensorless_stage2_minimal_20260716/runs/g_axis/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/opposite_sign
+checkpoint_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/sensorless_stage2_minimal_20260716/runs/g_axis/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/opposite_sign/checkpoints
+hydra_output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/sensorless_stage2_minimal_20260716/runs/g_axis/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/opposite_sign
+config_path: hydra:experiment=production/sensorless/ours_canonical

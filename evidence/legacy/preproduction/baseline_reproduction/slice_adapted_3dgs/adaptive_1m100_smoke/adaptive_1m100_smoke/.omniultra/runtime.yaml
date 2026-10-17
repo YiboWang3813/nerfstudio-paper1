@@ -1,0 +1,4 @@
+created_at: '2026-06-24T19:19:25'
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/baseline_reproduction/slice_adapted_3dgs/adaptive_1m100_smoke/adaptive_1m100_smoke
+hydra_output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/baseline_reproduction/slice_adapted_3dgs/adaptive_1m100_smoke/adaptive_1m100_smoke
+config_path: hydra:experiment=preproduction/baseline_reproduction/slice_adapted_3dgs/smoke

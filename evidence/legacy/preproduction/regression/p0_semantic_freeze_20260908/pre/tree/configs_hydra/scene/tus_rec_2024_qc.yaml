@@ -1,0 +1,47 @@
+# @package _global_
+
+scene:
+  dataset_name: tus_rec_2024
+  loading:
+    baseroot: /home/boywang25/ultrasound-scene-reconstruction/data
+    dataset_dirname: tus_rec_2024_qc
+    sweep_name: 010_LH_Per_L_DtP_qc_0005_0370
+    images_name: images.npy
+    pose_type: absolute
+    test_mode: holdout_interval
+    holdout_trim_each: 10
+    holdout_num_samples: 0
+    holdout_test_ratio: 0.2
+    image_value_mode: uint8_255
+    image_nan_value: 0.0
+    image_downsample_factor: 1
+    axial_downsample_factor: 1
+    frame_start: 0
+    frame_end: -1
+    frame_stride: 1
+    pose_mode: file
+    canonical_sweep_delta_mm: -1.0
+    canonical_sweep_delta_scale: 1.0
+    canonical_sweep_ref_frame: 0
+    canonical_sweep_axis: z
+    canonical_sweep_spacing_mode: uniform
+  sampler:
+    num_init: 300000
+    num_new: 1000
+    scales_init:
+    - 0.3
+    - 0.3
+    - 0.3
+    quats_init:
+    - 1.0
+    - 0.0
+    - 0.0
+    - 0.0
+    uniform_ratio: 0.3
+    intensity_threshold: 0.03
+    jitter_radius: 0.2
+  scheduler:
+    test_ratio: 0.1
+  grid:
+    tile_size: 4.0
+    bbox_margin: 0.05

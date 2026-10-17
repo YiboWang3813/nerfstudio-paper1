@@ -1,0 +1,13 @@
+overrides:
+- experiment=preproduction/baseline_reproduction/slice_adapted_3dgs/smoke
+- system.output_root=/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/baseline_reproduction/slice_adapted_3dgs/tile_binned_1m100_smoke
+- system.exp_tag=tile_binned_1m100_smoke
+- system.device=cuda
+- engine.iterations=100
+- engine.interval.test=100
+- engine.interval.save=0
+- scene.sampler.num_init=1000000
+- model.offline.density_control.enable.densify=false
+- model.offline.density_control.enable.prune=false
+- model.offline.diagnostics.enable_render_stats=false
+- system.seed=42

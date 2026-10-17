@@ -1,0 +1,4 @@
+created_at: '2026-06-24T19:42:05'
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/ultragray_dc_tuning/nvs/synthetic_liver/l1/ugray_ms20_g75e6
+hydra_output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/ultragray_dc_tuning/nvs/synthetic_liver/l1/ugray_ms20_g75e6
+config_path: hydra:experiment=production/comparisons/us_recon_four_dataset_p100k_v1/gs_strict/ultragray

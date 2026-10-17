@@ -1,0 +1,29 @@
+run_id: smoke
+run_name: preproduction-baseline_reproduction-slice_adapted_3dgs_smoke_slice_adapted_3dgs_smoke
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/baseline_reproduction/slice_adapted_3dgs/adaptive_fb_1m100_smoke/adaptive_fb_1m100_smoke
+hydra_output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/baseline_reproduction/slice_adapted_3dgs/adaptive_fb_1m100_smoke/adaptive_fb_1m100_smoke
+config_path: hydra:experiment=preproduction/baseline_reproduction/slice_adapted_3dgs/smoke
+overrides:
+- experiment=preproduction/baseline_reproduction/slice_adapted_3dgs/smoke
+- system.output_root=/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/baseline_reproduction/slice_adapted_3dgs/adaptive_fb_1m100_smoke
+- system.exp_tag=adaptive_fb_1m100_smoke
+- system.device=cuda
+- engine.iterations=100
+- engine.interval.test=100
+- engine.interval.save=0
+- scene.sampler.num_init=1000000
+- model.offline.density_control.enable.densify=false
+- model.offline.density_control.enable.prune=false
+- model.offline.diagnostics.enable_render_stats=false
+- system.seed=42
+git_commit: 7141dce1fb160a1622323f83b353bcb4d932baff
+git_dirty: true
+dataset: synthetic_liver
+model: slice_adapted_3dgs
+exp_tag: adaptive_fb_1m100_smoke
+seed: 42
+wandb:
+  enabled: false
+  project: omniultra
+  mode: online
+  run_id: ''

@@ -1,0 +1,78 @@
+[
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_RH_Per_S_PtD_qc_0165_0364_s02",
+    "item": 18,
+    "crop_xywh": [
+      129,
+      24,
+      92,
+      69
+    ],
+    "columns": [
+      "ultragauss",
+      "ultragray",
+      "slice_adapted_3dgs",
+      "gaussianpile",
+      "ours",
+      "gt"
+    ]
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_RH_Per_C_PtD_qc_0006_0427",
+    "item": 66,
+    "crop_xywh": [
+      129,
+      24,
+      92,
+      69
+    ],
+    "columns": [
+      "ultragauss",
+      "ultragray",
+      "slice_adapted_3dgs",
+      "gaussianpile",
+      "ours",
+      "gt"
+    ]
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_116",
+    "item": 39,
+    "crop_xywh": [
+      150,
+      23,
+      85,
+      67
+    ],
+    "columns": [
+      "ultragauss",
+      "ultragray",
+      "slice_adapted_3dgs",
+      "gaussianpile",
+      "ours",
+      "gt"
+    ]
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "sweep": "validation_101",
+    "item": 32,
+    "crop_xywh": [
+      90,
+      23,
+      85,
+      67
+    ],
+    "columns": [
+      "ultragauss",
+      "ultragray",
+      "slice_adapted_3dgs",
+      "gaussianpile",
+      "ours",
+      "gt"
+    ]
+  }
+]

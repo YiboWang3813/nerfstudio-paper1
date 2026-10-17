@@ -1,0 +1,104 @@
+# @package _global_
+
+loss:
+  needed_losses:
+  - l1
+  - ssim
+  lambdas:
+    l1: 0.8
+    ssim: 0.2
+    sobel: 0.0
+    highpass_l1: 0.0
+    marco_ssim: 0.0
+    lpips: 0.0
+    diff_tv: 0.0
+    scale_wall: 0.0
+    scale_aniso: 0.0
+    opacity: 0.0
+    attenuation_l1: 0.0
+    attenuation_tail: 0.0
+    pose_anchor: 0.0
+    pose_prior: 0.0
+    pose_smooth: 0.0
+    pose_acc: 0.0
+    pose_aux_rec: 0.0
+    pose_registration: 0.0
+    pose_neighbor_registration: 0.0
+    pose_cycle: 0.0
+    pose_const_vel: 0.0
+    pose_gt_delta: 0.0
+    pose_occ_conf: 0.0
+  ssim_cfg:
+    window_size: 11
+    sigma: 1.5
+    downsample_enabled: false
+    downsample_factor: 1
+    downsample_mode: area
+    clamp_inputs: false
+  l1_cfg:
+    clamp_inputs: false
+  highpass_l1_cfg:
+    kernel_size: 9
+    sigma: 2.0
+  marco_ssim_cfg:
+    blur_window_size: 21
+    blur_sigma: 3.0
+    ssim_window_size: 11
+    ssim_sigma: 1.5
+  lpips_cfg:
+    metric_name: lpips
+  scale_wall_cfg:
+    min_scales_mm: 0.001
+    max_scales_mm: 1.2
+  scale_aniso_cfg:
+    max_aniso_ratio: 2.5
+  opacity_cfg:
+    target_opacity: 0.5
+  attenuation_tail_cfg:
+    max_attenuation: 0.05
+  pose_anchor_cfg:
+    rot_weight: 1.0
+    trans_weight: 1.0
+  pose_prior_cfg:
+    rot_weight: 1.0
+    trans_weight: 1.0
+  pose_smooth_cfg:
+    rot_weight: 1.0
+    trans_weight: 1.0
+  pose_acc_cfg:
+    rot_weight: 1.0
+    trans_weight: 1.0
+  pose_aux_rec_cfg:
+    l1_weight: 0.8
+    ssim_weight: 0.2
+    window_size: 11
+    sigma: 1.5
+  pose_registration_cfg:
+    photo_weight: 1.0
+    grad_weight: 0.2
+    charbonnier_eps: 0.001
+  pose_neighbor_registration_cfg:
+    photo_weight: 1.0
+    ssim_weight: 0.2
+    charbonnier_eps: 0.001
+    window_size: 11
+    sigma: 1.5
+    min_overlap_ratio: 0.3
+  pose_cycle_cfg:
+    photo_weight: 1.0
+    ssim_weight: 0.1
+    charbonnier_eps: 0.001
+    window_size: 11
+    sigma: 1.5
+    min_overlap_ratio: 0.3
+  pose_const_vel_cfg:
+    rot_weight: 1.0
+    trans_weight: 1.0
+  pose_gt_delta_cfg:
+    rot_weight: 1.0
+    trans_weight: 1.0
+  pose_occ_conf_cfg:
+    charbonnier_epsilon: 0.001
+    confidence_gamma: 1.0
+    confidence_min: 0.05
+    detach_confidence: true

@@ -4,6 +4,8 @@
 `YiboWang3813/nerfstudio-paper1` 的 `paper1/protocol` 分支。
 
 - `assets/data.jsonl`：外部数据文件 SHA256、大小、原修改时间和 NPY 头。
+- `assets/checkpoints.jsonl`：外部检查点目录内文件的内容身份与大小。
+- `assets/derived_artifacts.jsonl`：派生数组、帧索引和源码/二进制冻结产物的内容身份。
 - `releases/`：历史正式结果和图表来源的当前位置索引，保留原执行身份。
 - `migration/`：原路径映射、按修改时间排序的导入记录及验收摘要。
 - `tools/`：迁移、校验与旧实验对照工具。

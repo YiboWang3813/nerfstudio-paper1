@@ -20,12 +20,12 @@
     "docs": {
       "repository": "git@github.com:YiboWang3813/nerfstudio-paper1.git",
       "branch": "paper1/docs",
-      "commit": "72bfedce0bb647fe6bb1d38acff6ae1e9e405111"
+      "commit": "16af21b46e2e0b662b4d9b8712002ff0011a1cdb"
     },
     "results": {
       "repository": "git@github.com:YiboWang3813/nerfstudio-paper1.git",
       "branch": "paper1/results",
-      "commit": "a8cfd579422cefd0833133362e1e255ab95dcbdf"
+      "commit": "80f15957ede5e48a37ebe5227c1a209404a53cb0"
     }
   },
   "protocol_repository": "git@github.com:YiboWang3813/nerfstudio-paper1.git",
@@ -35,5 +35,7 @@
   "legacy_binary_hashes": "environments/legacy_binaries.json",
   "data_manifest": "assets/data.jsonl",
   "pretrained_manifest": "assets/pretrained.json",
-  "heavy_assets_in_git": false
+  "heavy_assets_in_git": false,
+  "checkpoint_manifest": "assets/checkpoints.jsonl",
+  "derived_artifact_manifest": "assets/derived_artifacts.jsonl"
 }

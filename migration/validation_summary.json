@@ -6,7 +6,7 @@
   "config_composition_failures": 0,
   "config_signatures_identical": true,
   "four_dataset_signatures_identical": true,
-  "gpu_reference_tests_per_tree": 40,
+  "gpu_reference_tests_per_tree": 62,
   "cpu_pdf_tests_per_tree": 1,
   "fixed_checkpoint_comparisons": 16,
   "fixed_checkpoint_max_abs_difference": 0.0,
@@ -26,7 +26,8 @@
     "passing_reference_tests": 88710,
     "fixed_state_and_old_repeat_controls": 88712,
     "offline_metric_weights": 88713,
-    "frozen_snapshot_cli_replay": 88714
+    "frozen_snapshot_cli_replay": 88714,
+    "additional_renderer_references": 88715
   },
   "offline_six_metric_comparison": {
     "old": {
@@ -84,5 +85,16 @@
     },
     "passed": true,
     "historical_checkpoint_write_destination_separated": true
+  },
+  "additional_renderer_tests_per_tree": 22,
+  "external_artifact_content_index": {
+    "checkpoints": {
+      "files": 604,
+      "bytes": 30975006834
+    },
+    "derived_artifacts": {
+      "files": 173,
+      "bytes": 3139492009
+    }
   }
 }

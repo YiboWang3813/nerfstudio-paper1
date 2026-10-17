@@ -1,0 +1,696 @@
+\vspace{-2mm}
+\section{Method}
+\label{sec:method}
+
+In this section, we first formulate Gaussian-based sensorless 3D ultrasound
+reconstruction and define the Gaussian scene representation
+(Sec.~\ref{sec:method:problem-formulation-and-scene-representation}). Subsequently,
+we introduce an \emph{Acquisition-constrained Frame Geometry Model} (AFGM) to
+construct coherent frame geometry without measured probe poses
+(Sec.~\ref{sec:method:acquisition-constrained-frame-geometry-model}).
+Next, we develop a \emph{Physics-aware Local-Global Renderer} (PLGR) for
+physically faithful B-mode synthesis
+(Sec.~\ref{sec:method:physics-aware-local-global-renderer}).
+Furthermore, a \emph{Contribution-guided Gaussian Adaptation Strategy} (CGAS)
+is proposed to regulate the Gaussian population for ultrasound reconstruction
+(Sec.~\ref{sec:method:contribution-guided-gaussian-adaptation-strategy}).
+The overall framework of ULGSplat is illustrated in
+Fig.~\ref{fig:methods-pipeline}.
+
+\vspace{-3mm}
+\subsection{Problem Formulation and Scene Representation}
+\label{sec:method:problem-formulation-and-scene-representation}
+
+We consider Gaussian-based sensorless 3D ultrasound reconstruction from an
+ordered sequence of $N$ B-mode frames,
+$\mathcal I=\{\mathbf I_i\}_{i=1}^{N}$. With external tracking, the spatial
+configuration of a sweep can be specified by the measured probe poses
+$\mathcal T^{\mathrm M}
+=
+\{\mathbf T_i^{p\rightarrow w}\}_{i=1}^{N}$,
+where each rigid transform maps the probe coordinate system of frame $i$ to an
+externally referenced world coordinate system $w$. However, in the sensorless
+setting, measured poses are inaccessible and reconstruction only requires the
+relative geometry among frames within a sweep rather than its absolute
+placement in the world coordinate system. In this paradigm, we design AFGM to
+construct an acquisition-constrained frame-transform sequence
+$\mathcal T^{\mathrm A}
+=
+\{\mathbf T_{i,\mathrm A}^{p\rightarrow c}\}_{i=1}^{N}$
+in a canonical coordinate system $c$, providing the consistent relative frame
+geometry required for reconstruction.
+
+Following 3D Gaussian Splatting (3DGS)
+\cite{kerbl3DGaussianSplatting2023}, we represent the ultrasound scene in the
+canonical coordinate system as a set of $G$ anisotropic Gaussian primitives,
+$\mathcal G=\{\mathbf G_g\}_{g=1}^{G}$. Each Gaussian is parameterized by its
+center $\boldsymbol\mu_g\in\mathbb R^3$, anisotropic scale
+$\mathbf s_g\in\mathbb R_+^3$, unit quaternion $\mathbf q_g$, local echo
+amplitude $\alpha_g$, and transmission attribute $\tau_g$. Its covariance is
+given by
+$\boldsymbol\Sigma_g
+=
+\mathbf R_g\mathbf S_g\mathbf S_g^\top\mathbf R_g^\top$,
+where $\mathbf R_g=\mathbf R(\mathbf q_g)$ and
+$\mathbf S_g=\operatorname{diag}(\mathbf s_g)$. In contrast to conventional
+3DGS, which models optical appearance using opacity and spherical-harmonic
+coefficients, we introduce $\alpha_g$ and $\tau_g$ to characterize local echo
+formation and acoustic transmission, respectively, yielding a scene
+representation tailored to ultrasound image formation.
+
+Given the ordered B-mode sequence $\mathcal I$, the AFGM-derived frame
+transforms $\mathcal T^{\mathrm A}$, and an initialized Gaussian scene
+$\mathcal G$, the reconstruction task and loss function are formulated as
+\begin{equation}
+\begin{aligned}
+\mathcal G^{*}
+={}&
+\arg\min_{\mathcal G}
+\sum_{i=1}^{N}
+\mathcal L
+\left(
+\widehat{\mathbf I}_i,
+\mathbf I_i
+\right),
+\quad
+\widehat{\mathbf I}_i
+=
+\mathcal R
+\left(
+\mathcal G,
+\mathbf T_{i,\mathrm A}^{p\rightarrow c}
+\right),
+\\
+\mathcal L
+\left(
+\widehat{\mathbf I}_i,
+\mathbf I_i
+\right)
+&=
+(1-\lambda)
+\left\|
+\widehat{\mathbf I}_i-\mathbf I_i
+\right\|_1
++
+\lambda
+\left[
+1-
+\operatorname{SSIM}
+\left(
+\widehat{\mathbf I}_i,
+\mathbf I_i
+\right)
+\right],
+\end{aligned}
+\label{eq:overall-reconstruction}
+\end{equation}
+where $\mathcal R$ denotes PLGR, $\mathcal A$ denotes CGAS, and $\lambda=0.2$
+balances pixel fidelity and structural similarity. During optimization, CGAS
+periodically updates the Gaussian population via
+$\mathcal G\leftarrow\mathcal A(\mathcal G)$, which is omitted from
+Eq.~\eqref{eq:overall-reconstruction} for clarity.
+
+\vspace{-3mm}
+\subsection{Acquisition-constrained Frame Geometry Model}
+\label{sec:method:acquisition-constrained-frame-geometry-model}
+
+Existing sensorless ultrasound reconstruction methods often recover
+frame-wise probe motion from adjacent B-mode images using learned motion
+estimators, which require additional training and computation and may
+accumulate errors when pairwise estimates are chained. Reliable motion
+inference from ultrasound appearance is also challenging due to limited
+inter-slice overlap, repetitive anatomy, view-dependent speckle, and
+substantial intensity variation. In contrast, many ultrasound sweep protocols
+exhibit strong acquisition regularity, with approximately parallel imaging
+planes and translation-dominant progression rather than large frame-to-frame
+rotations. Motivated by this observation, we design the
+\emph{Acquisition-constrained Frame Geometry Model} (AFGM) in ULGSplat to
+replace frame-wise 6-DoF motion estimation with a compact shared geometry
+model that exploits frame order and nominal scan progression to directly
+construct the relative frame geometry within a sweep.
+
+Specifically, under the translation-dominant acquisition pattern, we take the
+probe coordinate system of a reference frame $i_0$ as the canonical coordinate
+system $c$ and assume a shared canonical orientation across the sweep. The
+inter-frame progression is then modeled by a shared effective spacing $d$
+along a predefined signed unit axis $\mathbf u$, yielding the AFGM-derived
+frame transform
+\begin{equation}
+\mathbf T_{i,\mathrm A}^{p\rightarrow c}
+=
+\begin{bmatrix}
+\mathbf I_3 & (i-i_0)d\mathbf u\\
+\mathbf 0^\top & 1
+\end{bmatrix},
+\label{eq:calibration-geometry-single}
+\end{equation}
+where $d=\rho d_0$ denotes the shared effective inter-frame spacing,
+$d_0>0$ is the nominal acquisition spacing, $\rho>0$ globally adjusts the
+scan spacing, and $(i-i_0)$ encodes the relative frame order with respect to
+the reference frame. 
+
+This construction yields three geometric properties of the resulting frame
+geometry.
+First, expressing all frames in the same canonical coordinate system provides
+a unified spatial reference, with a homogeneous point
+$\bar{\mathbf x}^{p_i}$ in frame $i$ mapped as
+$\bar{\mathbf x}^{c}
+=
+\mathbf T_{i,\mathrm A}^{p\rightarrow c}
+\bar{\mathbf x}^{p_i}$,
+allowing observations from different B-mode frames to be organized directly
+within the same Gaussian scene.
+Second, the relative transform between any two
+frames $i$ and $j$ is analytically determined by
+\begin{equation}
+\mathbf T_{j\leftarrow i}^{\mathrm A}
+=
+\left(
+\mathbf T_{j,\mathrm A}^{p\rightarrow c}
+\right)^{-1}
+\mathbf T_{i,\mathrm A}^{p\rightarrow c}
+=
+\begin{bmatrix}
+\mathbf I_3 & (i-j)d\mathbf u\\
+\mathbf 0^\top & 1
+\end{bmatrix},
+\label{eq:afgm-relative-transform}
+\end{equation}
+which directly guarantees bidirectional consistency,
+$\mathbf T_{i\leftarrow j}^{\mathrm A}
+=
+(\mathbf T_{j\leftarrow i}^{\mathrm A})^{-1}$.
+More importantly, the transforms further satisfy composition consistency,
+$\mathbf T_{k\leftarrow j}^{\mathrm A}
+\mathbf T_{j\leftarrow i}^{\mathrm A}
+=
+\mathbf T_{k\leftarrow i}^{\mathrm A}$,
+for arbitrary frames $i$, $j$, and $k$, making the resulting relative geometry
+independent of the transformation path and avoiding error accumulation from
+pairwise motion chaining.
+
+Consequently, AFGM replaces independent frame-wise motion estimation with a
+shared acquisition model, eliminating the need for appearance-based inference
+and pairwise motion chaining, thereby establishing a consistent spatial
+organization of the sweep and a reliable geometric basis for subsequent
+Gaussian initialization and rendering.
+
+\vspace{-3mm}
+\subsection{Physics-Aware Local-Global Renderer}
+\label{sec:method:physics-aware-local-global-renderer}
+
+Conventional 3DGS renders an image by projecting 3D Gaussian primitives onto
+the image plane and compositing their opacity-weighted appearance in
+front-to-back depth order. Nevertheless, B-mode ultrasound follows acoustic
+focusing within a finite elevational slice, so each pixel may aggregate echoes
+from multiple scatterers within the local acoustic support; meanwhile, echoes
+from deeper structures are modulated by tissues encountered earlier along the
+propagation path, making the observed intensity jointly dependent on
+finite-slice echo formation and preceding-path transmission.
+
+To address this mismatch, we develop a \emph{Physics-aware Local-Global
+Renderer} (PLGR) in ULGSplat, comprising a finite-slice local echo pathway and
+a path-dependent global transmission pathway. The local pathway models
+finite-slice echo formation by accounting for the elevational interaction of
+3D Gaussians with the acoustic slice and their probe-plane geometry, whereas
+the global pathway models acoustic transmission by tracing the propagation
+path and accumulating the effects of causally preceding structures. The two
+responses are then composed for physically faithful B-mode synthesis.
+
+\subsubsection{Finite-Slice Local Echo Formation}
+
+To model local echo formation within the finite acoustic slice, we derive the
+Gaussian response through two components: finite-slice elevational
+conditioning and probe-plane Gaussian marginalization.
+
+We first establish the probe-space Gaussian representation shared by the local
+and global pathways. Given either a measured probe pose
+$\mathbf T_i^{p\rightarrow w}$ or an AFGM-derived frame transform
+$\mathbf T_{i,\mathrm A}^{p\rightarrow c}$, with either transform written as
+$[\mathbf R_i\mid\mathbf t_i]$, Gaussian $g$ is transformed from the
+corresponding world or canonical coordinate system into probe space as
+\begin{equation}
+\boldsymbol\mu^{p}_{ig}
+=
+\mathbf R_i^\top
+\left(
+\boldsymbol\mu_g-\mathbf t_i
+\right),
+\qquad
+\boldsymbol\Sigma^{p}_{ig}
+=
+\mathbf R_i^\top
+\boldsymbol\Sigma_g
+\mathbf R_i,
+\label{eq:probe-space-gaussian}
+\end{equation}
+yielding the probe-space mean
+$\boldsymbol\mu^{p}_{ig}$ and covariance
+$\boldsymbol\Sigma^{p}_{ig}$, which are also reused by the global transmission
+pathway.
+
+To model finite-slice elevational sensitivity, we condition each probe-space
+Gaussian with a zero-centered Gaussian slice profile along the calibrated
+elevational direction $\mathbf e_{\mathrm{ele}}$, using a shared effective
+slice width $\sigma^{\mathrm{ele}}>0$. With
+$\boldsymbol\Lambda^{p}_{ig}
+=
+(\boldsymbol\Sigma^{p}_{ig})^{-1}$,
+the resulting Gaussian product yields the conditioned attributes
+\begin{equation}
+\begin{aligned}
+\boldsymbol\Sigma^{e}_{ig}
+&=
+\left[
+\boldsymbol\Lambda^{p}_{ig}
++
+\left(\sigma^{\mathrm{ele}}\right)^{-2}
+\mathbf e_{\mathrm{ele}}
+\mathbf e_{\mathrm{ele}}^\top
+\right]^{-1},
+\qquad
+\boldsymbol\mu^{e}_{ig}
+=
+\boldsymbol\Sigma^{e}_{ig}
+\boldsymbol\Lambda^{p}_{ig}
+\boldsymbol\mu^{p}_{ig},
+\\
+r^{\mathrm{ele}}_{ig}
+&=
+\frac{
+\left(
+\mathbf e_{\mathrm{ele}}^\top
+\boldsymbol\mu^{p}_{ig}
+\right)^2
+}{
+\mathbf e_{\mathrm{ele}}^\top
+\boldsymbol\Sigma^{p}_{ig}
+\mathbf e_{\mathrm{ele}}
++
+\left(\sigma^{\mathrm{ele}}\right)^2
++
+\varepsilon
+},
+\qquad
+\eta_{ig}
+=
+\exp
+\left(
+-\frac{1}{2}r^{\mathrm{ele}}_{ig}
+\right),
+\end{aligned}
+\label{eq:elevational-conditioned-attributes}
+\end{equation}
+where $\boldsymbol\mu^{e}_{ig}$ and
+$\boldsymbol\Sigma^{e}_{ig}$ denote the conditioned mean and covariance,
+while $r^{\mathrm{ele}}_{ig}$ measures the normalized elevational separation
+and $\eta_{ig}$ gives the corresponding slice-overlap factor.
+
+With the conditioned mean $\boldsymbol\mu^{e}_{ig}$ and covariance
+$\boldsymbol\Sigma^{e}_{ig}$, we next apply probe-plane Gaussian
+marginalization to derive the image-plane Gaussian geometry for local echo
+formation. Given the calibrated lateral and axial directions
+$\mathbf e_{\mathrm{lat}}$ and $\mathbf e_{\mathrm{ax}}$, we define the
+projection matrix
+$\mathbf P_{\mathrm{la}}
+=
+[\mathbf e_{\mathrm{lat}},
+\mathbf e_{\mathrm{ax}}]^\top$
+and obtain
+\begin{equation}
+\begin{aligned}
+\boldsymbol\mu^{2D}_{ig}
+&=
+\mathbf P_{\mathrm{la}}
+\boldsymbol\mu^{e}_{ig},
+\qquad
+\boldsymbol\Sigma^{2D}_{ig}
+=
+\mathbf P_{\mathrm{la}}
+\boldsymbol\Sigma^{e}_{ig}
+\mathbf P_{\mathrm{la}}^\top,
+\\
+\nu_{ig}
+&=
+\left[
+\det
+\left(
+\boldsymbol\Sigma^{2D}_{ig}
+\right)
++
+\varepsilon
+\right]^{-\gamma},
+\end{aligned}
+\label{eq:local-image-attributes}
+\end{equation}
+where $\boldsymbol\mu^{2D}_{ig}$ and
+$\boldsymbol\Sigma^{2D}_{ig}$ denote the image-plane mean and covariance,
+$\nu_{ig}$ compensates for the Gaussian footprint area, and $\gamma$ controls
+the compensation strength.
+
+To avoid exhaustive pixel--Gaussian pairing, we follow the sparse
+strategy of 3DGS and construct a local candidate set by jointly considering
+the image-space coverage of Gaussian $g$ over pixel $p$ and its local response:
+\begin{equation}
+\begin{aligned}
+\phi_{igp}
+&=
+\exp
+\left[
+-\frac{1}{2}
+\mathbf d_{igp}^{\top}
+\left(
+\boldsymbol\Sigma^{2D}_{ig}
+\right)^{-1}
+\mathbf d_{igp}
+\right],
+\\
+\mathcal N^{\mathrm{loc}}_{ip}
+&=
+\left\{
+g
+\;\middle|\;
+\boldsymbol\xi^{2D}_{p}
+\in
+\mathcal B^{2D}_{ig},
+\;
+\alpha_g\eta_{ig}\nu_{ig}\phi_{igp}
+\geq
+\tau_{\mathrm{loc}}
+\right\}.
+\end{aligned}
+\label{eq:local-candidate-set}
+\end{equation}
+Here, $\boldsymbol\xi^{2D}_{p}$ denotes the 2D coordinate of pixel $p$,
+$\mathbf d_{igp}
+=
+\boldsymbol\xi^{2D}_{p}
+-
+\boldsymbol\mu^{2D}_{ig}$
+is its offset from Gaussian $g$, $\phi_{igp}$ denotes the corresponding
+image-space response, $\mathcal B^{2D}_{ig}$ is the compact image-space
+support, and $\mathcal N^{\mathrm{loc}}_{ip}$ is the resulting candidate set
+for local echo accumulation; $\tau_{\mathrm{loc}}$ discards negligible
+contributions.
+
+Finally, we jointly combine the echo amplitude $\alpha_g$, slice-overlap factor
+$\eta_{ig}$, footprint compensation $\nu_{ig}$, and image-space response
+$\phi_{igp}$ to form the full local response in an additive manner, as
+ultrasound echo formation differs from the front-to-back alpha compositing
+used in optical 3DGS:
+\begin{equation}
+L_{ip}
+=
+\sum_{g\in\mathcal N^{\mathrm{loc}}_{ip}}
+\alpha_g
+\eta_{ig}
+\nu_{ig}
+\phi_{igp},
+\label{eq:local-response}
+\end{equation}
+where $L_{ip}$ denotes the accumulated local echo response.
+
+
+
+\subsubsection{Path-Dependent Global Transmission}
+
+Using the local pathway alone is insufficient to capture ultrasound image
+formation, as it ignores preceding structures along the acoustic path and
+therefore cannot model path-dependent transmission. To address this limitation,
+we introduce path-dependent global transmission through two components:
+ray-aware pixel--Gaussian association and causal ray integration.
+
+To identify the Gaussians that can causally affect pixel $p$, we construct a
+sparse global candidate set according to the interaction between each
+probe-space Gaussian and the corresponding pre-pixel acoustic path. Given the
+calibrated pixel coordinate
+$\boldsymbol\xi^{2D}_{p}
+=
+[\xi_{\mathrm{lat},p},\xi_{\mathrm{ax},p}]^\top$,
+the acoustic ray in probe space is defined as
+\begin{equation}
+\mathbf q_{ip}(t)
+=
+\xi_{\mathrm{lat},p}\mathbf e_{\mathrm{lat}}
++
+\left(z_{\mathrm{near}}+t\right)\mathbf e_{\mathrm{ax}},
+\qquad
+0\leq t\leq t_p,
+\label{eq:global-ray}
+\end{equation}
+where
+$t_p=\xi_{\mathrm{ax},p}-z_{\mathrm{near}}$
+denotes the propagation distance from the calibrated near plane to the target
+pixel. We retain only Gaussians whose compact probe-space support overlaps the
+pre-pixel ray corridor and satisfies depth causality:
+\begin{equation}
+\mathcal N^{\mathrm{glo}}_{ip}
+=
+\left\{
+g
+\;\middle|\;
+\mathcal B^{\mathrm{glo}}_{ig}
+\cap
+\mathcal R_{ip}
+\neq
+\varnothing,\;
+\mathbf e_{\mathrm{ax}}^\top
+\boldsymbol\mu^{p}_{ig}
+\leq
+\xi_{\mathrm{ax},p}
+\right\},
+\label{eq:global-candidate-set}
+\end{equation}
+where
+$\mathcal R_{ip}
+=
+\{\mathbf q_{ip}(t)\mid0\leq t\leq t_p\}$
+denotes the pre-pixel acoustic segment and
+$\mathcal B^{\mathrm{glo}}_{ig}$ denotes the compact probe-space support used
+for ray association.
+
+For each candidate Gaussian, we quantify its ideal causal overlap with the
+pre-pixel acoustic path by first evaluating its pointwise influence along the
+ray and then integrating this influence over the complete propagation
+interval:
+\begin{equation}
+\begin{aligned}
+\psi_{igp}(t)
+&=
+\exp
+\left[
+-\frac{1}{2}
+\mathbf d_{igp}(t)^\top
+\boldsymbol\Lambda^{p}_{ig}
+\mathbf d_{igp}(t)
+\right],
+\\
+\bar{\rho}_{igp}
+&=
+\int_{0}^{t_p}
+\psi_{igp}(t)\,dt.
+\end{aligned}
+\label{eq:causal-ray-overlap-ideal}
+\end{equation}
+where
+$\mathbf d_{igp}(t)
+=
+\mathbf q_{ip}(t)-\boldsymbol\mu^{p}_{ig}$
+denotes the probe-space offset from Gaussian $g$ to the queried ray point,
+$\psi_{igp}(t)$ is its pointwise influence, and $\bar{\rho}_{igp}$ denotes the
+ideal ray--Gaussian overlap accumulated over the complete pre-pixel path.
+
+Direct evaluation over the complete pre-pixel interval is computationally
+expensive and unnecessary because Gaussian influence rapidly decays away from
+its closest interaction with the ray. We therefore approximate the full-path
+overlap using a localized integration window, obtained by locating the closest
+interaction point $t^{c}_{igp}$ on the infinite acoustic line and clipping its
+neighborhood to the causal pre-pixel segment:
+\begin{equation}
+\begin{aligned}
+t_s &= \max(0,t^{c}_{igp}-w),
+\qquad
+t_e = \min(t_p,t^{c}_{igp}+w),
+\\
+\rho_{igp}
+&=
+\int_{t_s}^{t_e}
+\psi_{igp}(t)\,dt
+\approx
+\bar{\rho}_{igp}.
+\end{aligned}
+\label{eq:localized-ray-overlap}
+\end{equation}
+where $w$ denotes the integration half-window and $\rho_{igp}$ is the
+localized approximation of the ideal ray--Gaussian overlap. The integral is
+evaluated using low-order Gauss--Legendre quadrature; if $t_s\geq t_e$, we set
+$\rho_{igp}=0$.
+
+Finally, each ray--Gaussian overlap is converted into a transmission factor
+through the learnable transmission attribute $\tau_g$, and the preceding
+effects are accumulated multiplicatively:
+\begin{equation}
+\begin{aligned}
+T_{igp}
+&=
+\tau_g
++
+\left(
+1-\tau_g
+\right)
+\exp
+\left(
+-\lambda_{\mathrm{ray}}\rho_{igp}
+\right),
+\\
+T_{ip}
+&=
+\operatorname{clip}
+\left(
+\prod_{g\in\mathcal N^{\mathrm{glo}}_{ip}}
+T_{igp},
+T_{\min},
+1
+\right),
+\end{aligned}
+\label{eq:global-transmission}
+\end{equation}
+where $\lambda_{\mathrm{ray}}$ controls the attenuation strength,
+$T_{igp}$ denotes the per-Gaussian transmission factor, and $T_{\min}$ prevents
+collapse of the accumulated global transmission $T_{ip}$.
+
+\subsubsection{Local-Global Response Composition}
+
+Finally, we use the global transmission response $T_{ip}$ to modulate the local
+echo response $L_{ip}$, with $\beta$ blending $T_{ip}$ with identity
+transmission to control the strength of path-dependent modulation:
+\begin{equation}
+\widehat I_{ip}
+=
+L_{ip}
+\left(
+1-\beta+\beta T_{ip}
+\right),
+\label{eq:local-global-composition}
+\end{equation}
+where $\beta\in[0,1]$ controls the global transmission strength, with
+$\beta=0$ retaining the local response and $\beta=1$ applying the full
+transmission response.
+
+By coupling finite-slice local echo formation with path-dependent global
+transmission, PLGR preserves local structural detail while incorporating
+propagation-dependent context, thereby achieving physically faithful B-mode
+synthesis.
+
+\vspace{-4mm}
+\subsection{Contribution-guided Gaussian Adaptation Strategy}
+\label{sec:method:contribution-guided-gaussian-adaptation-strategy}
+
+Conventional 3DGS density control relies on image-space gradients for
+densification and opacity for pruning, which are poorly suited to ultrasound
+because speckle can distort gradient cues and B-mode signals are formed by
+additive echo accumulation rather than optical alpha compositing. To overcome
+these limitations, we design the \emph{Contribution-guided Gaussian Adaptation
+Strategy} (CGAS) in ULGSplat, represented by the adaptation operator
+$\mathcal A$, with residual-guided densification and path-aware pruning
+governed by the candidate sets $\mathcal D$ and $\mathcal P$, respectively.
+CGAS allocates additional primitives to under-reconstructed regions and removes
+them only when their local and global rendering contributions are jointly weak.
+
+\subsubsection{Residual-Guided Densification}
+
+To identify Gaussians that require additional representation capacity in
+under-reconstructed regions, we first define a residual-guided densification
+score that measures their contribution to high-error pixels. For an
+adaptation-event frame, the pixel residual is
+$e_{ip}=|\widehat I_{ip}-I_{ip}|$, while the local contribution of Gaussian
+$g$ to pixel $p$ is
+$c_{igp}=\alpha_g\eta_{ig}\nu_{ig}\phi_{igp}$. We aggregate these quantities
+into the total local contribution
+$C_g=\sum_p c_{igp}$ and the residual-weighted contribution
+$R_g=\sum_p c_{igp}e_{ip}$, and define the densification score as
+\begin{equation}
+\omega_g
+=
+\frac{R_g}{C_g+\varepsilon}
+\log(1+C_g),
+\label{eq:contribution-aware-densification}
+\end{equation}
+where a larger $\omega_g$ indicates that Gaussian $g$ contributes more strongly
+to under-reconstructed regions and therefore requires additional
+representation capacity. We
+then construct the densification candidate set by retaining Gaussians with
+high positive responsibility scores, subject to a minimum significance
+threshold and an approximate per-event budget:
+\begin{equation}
+\mathcal D
+=
+\left\{
+g
+\;\middle|\;
+\omega_g
+\geq
+\max
+\left[
+Q_{q_{\mathrm d}}
+\left(
+\{\omega_h\mid\omega_h>0\}
+\right),
+\tau_{\omega},
+\tau_B
+\right]
+\right\},
+\label{eq:densification-selection}
+\end{equation}
+where $q_{\mathrm d}$ specifies the upper-tail quantile over positive scores,
+$\tau_{\omega}$ is the minimum score threshold, and $\tau_B$ is induced by
+the per-event budget $B$ to approximately limit the number of selected
+Gaussians. Large candidates are refined by retaining the parent and appending
+two child Gaussians with reduced raw-scale parameters, whereas smaller
+candidates are cloned to increase local representation capacity. The generated
+Gaussians inherit the echo and transmission attributes of their parents and
+are subsequently refined during optimization.
+
+\subsubsection{Path-Aware Pruning}
+
+To remove Gaussians that are dispensable to both local echo formation and
+global transmission, we introduce a global path-contribution measure that
+quantifies the accumulated transmission effect of each Gaussian over the
+current adaptation interval:
+\begin{equation}
+A_g
+=
+\sum_{i\in\mathcal K}
+\sum_{p:\,g\in\mathcal N^{\mathrm{glo}}_{ip}}
+\left(
+1-T_{igp}
+\right),
+\label{eq:global-path-contribution}
+\end{equation}
+where $\mathcal K$ denotes the current adaptation interval and $A_g$
+accumulates the path-dependent contribution of Gaussian $g$. Together with the
+event-frame local contribution $C_g$ and echo amplitude $\alpha_g$, this
+measure enables pruning only when a Gaussian is weak in both local and global
+rendering:
+\begin{equation}
+\mathcal P
+=
+\left\{
+g
+\;\middle|\;
+\alpha_g<\tau_{\alpha},\;
+C_g\leq Q_{q_{\mathrm p}}(\{C_g\}),\;
+A_g<Q_{q_{\mathrm A}}(\{A_g\})
+\right\},
+\label{eq:path-aware-pruning}
+\end{equation}
+where $\tau_{\alpha}$ is the echo-amplitude threshold,
+$q_{\mathrm p}$ controls the low local-contribution quantile, and
+$q_{\mathrm A}$ controls the path-effect protection level. This criterion
+preserves Gaussians with meaningful global path effects even when their local
+responses are weak; when global path statistics are unavailable, it reduces
+to the corresponding local-aware pruning rule.
+
+Through residual-guided densification and path-aware pruning, CGAS adapts the
+Gaussian population to ultrasound-specific rendering demands, expanding
+capacity where needed while suppressing redundant primitives.

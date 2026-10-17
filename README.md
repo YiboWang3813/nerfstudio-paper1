@@ -31,5 +31,6 @@
 - [最终消融表](04_experiments/production/final_ablation_tables_20260916/README.md)
 - [超参数图的图形约定](04_experiments/production/final_hyperparameter_figures_20260916/FIGURE_CONTRACT.md)
 - [工作区规约](03_engineering/workspace_rules.md)
+- [迁移验收与冻结配置重放](03_engineering/migration_2026-10-17.md)
 
 历史执行 SHA、配置和数值不会因搬迁被改写为新 fork 的执行结果。

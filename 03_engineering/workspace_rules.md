@@ -34,6 +34,11 @@ python -m nerfstudio.scripts.ultrasound_legacy experiment=<原alias>
 已有生产脚本仍可从 legacy 目录运行；重新执行前必须选择新 run 目录，
 不覆盖历史配置、日志和数值表。
 
+历史实验优先使用 `python -m nerfstudio.scripts.ultrasound_replay` 读取完整
+`resolved_config.yaml`，而非假设今天的 alias 与当时默认值相同。
+该入口拒绝覆盖非空 run 目录，将历史权重读取与新权重写入分开；测试只
+要求模型/位姿状态，恢复训练要求所有必要分片。
+
 ## 实验证据与续训
 
 每个 run 保存数据/split、算法执行 SHA、有效配置、环境和 binary 身份。

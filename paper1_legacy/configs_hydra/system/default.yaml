@@ -1,0 +1,25 @@
+# @package _global_
+
+system:
+  output_root: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs
+  checkpoint_root: ''
+  output_dir: ''
+  checkpoint_dir: ''
+  link_checkpoint_dir: true
+  exp_tag: ''
+  run_id: ''
+  run_name: ''
+  config_path: ''
+  hydra_output_dir: ''
+  use_legacy_output_naming: false
+  device: cuda
+  seed: 42
+wandb:
+  enable: false
+  project: omniultra
+  entity: ''
+  mode: online
+  group: ''
+  name: ''
+  tags: []
+  log_artifacts: false

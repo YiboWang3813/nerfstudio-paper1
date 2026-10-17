@@ -1,0 +1,106 @@
+# @package _global_
+
+defaults:
+- /experiment/preproduction/baseline_reproduction/ultrags_baseline/main_10k_synthetic_liver_1m_physical_camera_dc
+- _self_
+
+system:
+  exp_tag: gs_strict_ultrags_baseline_1m30k_r115_dg0016_oc005_physical_camera_dc_natural_prune_resetoff_t1000_25000_f2000
+
+scene:
+  loading:
+    pose_type: absolute
+    pose_mode: file
+    holdout_num_samples: 0
+    holdout_test_ratio: 0.2
+  sampler:
+    num_init: 1000000
+
+engine:
+  iterations: 30000
+  interval:
+    test: 30000
+    save: 30000
+
+model:
+  render:
+    camera_mode: slice_plane_physical
+    physical_camera_distance_mm: 200.0
+    enable_slice_cull: true
+    slice_thickness_ratio: 1.15
+    slice_thickness_mm: null
+    slice_cull_std: 3.0
+    slice_cull_scale_multiplier: 3.0
+    opacity_slice_attenuation: true
+  gauss_container:
+    lr:
+      opacities: 0.01
+      scales_2d: 0.0005
+    init_val:
+      opacity: 0.005
+      scale_2d:
+      - 0.25
+      - 0.25
+  offline:
+    density_control:
+      enable:
+        densify: true
+        prune: true
+        opacity_reset: false
+      timing:
+        start_iter: 1000
+        end_iter: 25000
+        freq: 2000
+        densification_interval: 2000
+        opacity_reset_interval: 2000
+      thresholds:
+        densify_grad: 0.0016
+        opacity_cull: 0.05
+        n_max: null
+        min_scale_2d: 0.05
+        max_scale_2d: 0.8
+
+loss:
+  needed_losses:
+  - l1
+  - ssim
+  lambdas:
+    l1: 0.8
+    mse: 0.0
+    ssim: 0.2
+    sobel: 0.0
+    highpass_l1: 0.0
+    marco_ssim: 0.0
+    lpips: 0.0
+    diff_tv: 0.0
+    scale_wall: 0.0
+    scale_aniso: 0.0
+    opacity: 0.0
+    attenuation_l1: 0.0
+    attenuation_tail: 0.0
+    pose_anchor: 0.0
+    pose_prior: 0.0
+    pose_smooth: 0.0
+    pose_acc: 0.0
+    pose_aux_rec: 0.0
+  l1_cfg:
+    clamp_inputs: false
+  ssim_cfg:
+    clamp_inputs: false
+
+metric:
+  needed_metrics:
+  - psnr
+  - l1
+  - ssim
+  - lpips
+  - dists
+  - gmsd
+  max_vis_frames: 10
+  save_per_frame_metrics: true
+
+experiment:
+  family: production/comparisons/us_recon_four_dataset_p100k_v1/gs_strict
+  name: ultrags_baseline
+  protocol: gs_strict_1m30k_dc_t1000_25000_f2000
+  description: UltraGS baseline GS-strict production baseline; physical slice camera, r115 slice thickness from DatasetMeta delta_elevational_mm, 1M init, 30k iterations, slice-aware cull, natural opacity/scale DC pruning with densify_grad=0.0016 and opacity_cull=0.05 without a Gaussian-count cap, opacity reset disabled, final 30k checkpoint, shared DC timing, unified 0.8 L1 + 0.2 SSIM loss.

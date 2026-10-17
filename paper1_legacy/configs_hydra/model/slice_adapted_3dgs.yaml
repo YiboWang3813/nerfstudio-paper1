@@ -1,0 +1,64 @@
+# @package _global_
+
+model:
+  name: slice_adapted_3dgs
+  render:
+    backend: cuda
+    camera_mode: slice_plane_physical
+    physical_camera_distance_mm: 200.0
+    slice_thickness_mm: 0.3
+    slice_thickness_ratio: null
+    thickness_scale: 1.0
+    cull_std: 3.0
+    max_points_per_chunk: 1024
+    max_pixels_per_chunk: 8192
+    min_covariance: 0.0001
+    normalize_by_footprint: true
+    clamp_output: true
+    bg_color: 0.0
+    output_grayscale: true
+    debug: false
+  gauss_container:
+    lr:
+      means: 0.00016
+      sh_dc: 0.0025
+      sh_rest: 0.000125
+      opacities: 0.05
+      scales_3d: 0.005
+      quats: 0.001
+    init_val:
+      opacity: 0.1
+      scale_3d:
+      - 0.3
+      - 0.3
+      - 0.3
+      sh_dc: 0.0
+    scheduler:
+      position_lr_final_scale: 0.01
+      default_lr_final_scale: 0.1
+      position_lr_delay_mult: 0.01
+    constraints:
+      opacity_max: 0.0
+      min_scale_3d: 0.001
+      max_scale_3d: 0.0
+  offline:
+    density_control:
+      enable:
+        densify: true
+        prune: true
+        opacity_reset: false
+      timing:
+        start_iter: 1000
+        end_iter: 25000
+        freq: 2000
+        opacity_reset_interval: 3000
+      thresholds:
+        densify_grad: 1.0e-05
+        split_scale_mm: 0.6
+        min_scale_mm: 5.0e-05
+        max_scale_mm: 5.0
+        prune_opacity: 0.01
+      n_max: 2000000
+    diagnostics:
+      enable_render_stats: true
+      train_step: 100

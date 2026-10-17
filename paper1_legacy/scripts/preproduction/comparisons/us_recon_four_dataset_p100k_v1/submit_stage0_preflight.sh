@@ -1,0 +1,27 @@
+#!/bin/bash
+set -euo pipefail
+
+PROJECT_DIR="${PROJECT_DIR:-/home/boywang25/ultrasound-scene-reconstruction/omniultra}"
+BENCHMARK="${BENCHMARK:-us_recon_four_dataset_p100k_v1}"
+TASK_RUNNER="${TASK_RUNNER:-scripts/preproduction/comparisons/${BENCHMARK}/run_comparison_task.sh}"
+OUTPUT_ROOT="${OUTPUT_ROOT:-${PROJECT_DIR}/outputs/production/comparisons/${BENCHMARK}}"
+SUMMARY_PATH="${SUMMARY_PATH:-${OUTPUT_ROOT}/tables/stage0_preflight_per_run.tsv}"
+START_INDEX="${START_INDEX:-0}"
+END_INDEX="${END_INDEX:-31}"
+MAX_PARALLEL="${MAX_PARALLEL:-2}"
+WANDB_MODE="${WANDB_MODE:-offline}"
+PREFLIGHT_ITERATIONS="${PREFLIGHT_ITERATIONS:-200}"
+PREFLIGHT_TEST_INTERVAL="${PREFLIGHT_TEST_INTERVAL:-100}"
+PREFLIGHT_SAVE_INTERVAL="${PREFLIGHT_SAVE_INTERVAL:-200}"
+
+mkdir -p "logs/comparison/${BENCHMARK}" "${OUTPUT_ROOT}/tables"
+
+echo "[INFO] Submitting Stage0 preflight for ${BENCHMARK}"
+echo "[INFO] Array: ${START_INDEX}-${END_INDEX}%${MAX_PARALLEL}"
+echo "[INFO] Output root: ${OUTPUT_ROOT}"
+echo "[INFO] Summary: ${SUMMARY_PATH}"
+
+sbatch \
+  --array="${START_INDEX}-${END_INDEX}%${MAX_PARALLEL}" \
+  --export=ALL,PROJECT_DIR="${PROJECT_DIR}",BENCHMARK="${BENCHMARK}",OUTPUT_ROOT="${OUTPUT_ROOT}",SUMMARY_PATH="${SUMMARY_PATH}",WANDB_MODE="${WANDB_MODE}",PREFLIGHT_ITERATIONS="${PREFLIGHT_ITERATIONS}",PREFLIGHT_TEST_INTERVAL="${PREFLIGHT_TEST_INTERVAL}",PREFLIGHT_SAVE_INTERVAL="${PREFLIGHT_SAVE_INTERVAL}" \
+  "${TASK_RUNNER}"

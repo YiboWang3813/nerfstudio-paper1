@@ -1,0 +1,13 @@
+# @package _global_
+
+# Preproduction UltraGray accuracy/speed balance alias.
+# Uses the current GS-strict production UltraGray settings and sweeps only
+# local_transmission_max_window_mm through command-line overrides.
+defaults:
+- /experiment/production/comparisons/us_recon_four_dataset_p100k_v1/gs_strict/ultragray
+- _self_
+
+experiment:
+  family: preproduction/baseline_reproduction/ultragray
+  name: acc_speed_balance
+  description: UltraGray preproduction local-transmission-window sweep for TUS-QC and TDSC before production relaunch.

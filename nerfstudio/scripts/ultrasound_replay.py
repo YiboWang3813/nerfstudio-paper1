@@ -23,6 +23,10 @@ def main():
         p.error('Output must be absent or empty; refusing to overwrite existing evidence.')
     if args.task=='test' and (args.checkpoint_dir is None or args.resume is None):
         p.error('Test replay requires --checkpoint-dir and --resume; never guess a historical checkpoint.')
+    if (args.checkpoint_dir is None)!=(args.resume is None):
+        p.error('--checkpoint-dir and --resume must be supplied together.')
+    if args.resume is not None and args.resume<=0:
+        p.error('--resume must be a positive checkpoint iteration.')
     fork=Path(__file__).resolve().parents[2]
     workspace=Path(os.environ.get('PAPER1_WORKSPACE',str(fork.parent))).resolve()
     legacy=configure_workspace(fork,workspace)
@@ -30,6 +34,8 @@ def main():
     from configs.setup import setup_experiment
     from utils.experiment_management import short_run_id, save_experiment_snapshot, update_run_manifest
     raw=OmegaConf.load(str(source))
+    if args.task=='train' and str(raw.engine.resume or '') not in ('','0') and args.resume is None:
+        p.error('This historical config resumed training; supply its source checkpoint directory and iteration explicitly.')
     original_id=str(raw.system.run_id)
     raw.task=args.task
     raw.engine.task=args.task
@@ -51,6 +57,8 @@ def main():
     source_manifest=source.parent/'run_manifest.yaml'
     provenance={'frozen_config':str(source),'frozen_config_sha256':hashlib.sha256(source.read_bytes()).hexdigest(),
                 'original_run_id':original_id,'task':args.task,
+                'source_checkpoint_dir':str(args.checkpoint_dir.expanduser().resolve()) if args.checkpoint_dir else None,
+                'source_checkpoint_iteration':args.resume,
                 'source_manifest':str(source_manifest) if source_manifest.is_file() else None,
                 'source_manifest_sha256':hashlib.sha256(source_manifest.read_bytes()).hexdigest() if source_manifest.is_file() else None,
                 'source_execution_identity':'Read original source manifest; current execution identity is in new run_manifest.yaml.',
@@ -78,8 +86,7 @@ def main():
             finally:
                 io.checkpoint_dir=destination
         io.load_checkpoint=load_historical
-    Engine_run=engine.run
-    Engine_run()
+    engine.run()
 
 
 if __name__=='__main__':main()

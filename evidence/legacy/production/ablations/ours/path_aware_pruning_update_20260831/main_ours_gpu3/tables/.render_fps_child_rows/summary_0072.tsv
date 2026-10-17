@@ -1,0 +1,3 @@
+scope	dataset	method	num_runs	render_fps_mean	render_fps_median	render_fps_min	render_fps_max	num_dataset_means
+dataset	tdsc_abus_2023	ours	1	381.8274554670522	381.8274554670522	381.8274554670522	381.8274554670522	
+paper_tables	all_available_dataset_means	ours		381.8274554670522	381.8274554670522	381.8274554670522	381.8274554670522	1

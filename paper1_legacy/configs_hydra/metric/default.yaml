@@ -1,0 +1,14 @@
+# @package _global_
+
+metric:
+  needed_metrics:
+  - psnr
+  - l1
+  - ssim
+  - lpips
+  - dists
+  - gmsd
+  max_vis_frames: 10
+  save_per_frame_metrics: true
+  psnr_cfg:
+    max_val: 1.0

@@ -1,0 +1,48 @@
+# Sensorless Revision Repository Audit
+
+- Date: 2026-07-16
+- Branch: main
+- Commit: 4961acd238b142888e7c8b514a4b307efba2c7b7
+- Relevant production config:
+  - `configs_hydra/experiment/production/ablations/ours/base_1m30k.yaml`
+  - `configs_hydra/experiment/production/comparisons/us_recon_four_dataset_p100k_v1/gs_strict/ours.yaml`
+  - `configs_hydra/experiment/production/sensorless/ours_canonical.yaml`
+- Current tracked upper-bound pose mode: `scene.loading.pose_mode=file`
+- Sensorless production pose mode: `scene.loading.pose_mode=canonical_sweep`
+- Sensorless spacing mode: `uniform`
+- Sensorless rho: `scene.loading.canonical_sweep_delta_scale=1.0`
+- Sensorless reference frame: `scene.loading.canonical_sweep_ref_frame=0`
+- Sensorless axis: `z` unless overridden by axis/sign ablation.
+- Renderer:
+  - `ray_attenuation_formula=integral`
+  - `ray_attenuation_quadrature_points=3`
+  - `ray_attenuation_candidate_k_sigma=2.0`
+  - `ray_attenuation_beta=0.80`
+  - `ray_attenuation_strength=0.55`
+  - `ray_attenuation_min_transmission=0.35`
+- Density control:
+  - `strategy=contribution_residual`
+  - `start_iter=1000`, `end_iter=25000`, `freq=2000`
+  - `prune_opacity=0.0001`
+  - `score_quantile=0.98`, `max_fraction=0.05`
+  - `low_contribution_quantile=0.10`
+  - P1 legacy protection: `protect_attenuation_mode=high_tau`
+  - P2 protection: `protect_attenuation_mode=low_tau`
+  - P3 protection: `protect_attenuation_mode=path_effect`
+- Sensorless leakage guard:
+  - `experiment.sensorless_required=true` asserts that train/test SliceMeta geometry is not built from file poses.
+  - `poses.npy` may be loaded for frame count validation; canonical uniform mode replaces poses before geometry construction.
+- Current result directories:
+  - `outputs/production/ablations/ours/sensorless_stage1_canonical_main_20260716`
+  - `outputs/production/comparisons/us_recon_four_dataset_p100k_v1`
+- Uncommitted changes at audit time:
+  - `artifacts/`
+  - `docs/production/questions/`
+  - `configs/root.py`
+  - `configs_hydra/experiment/production/sensorless/ours_canonical.yaml`
+  - `methods/ours/configs.py`
+  - `methods/ours/density_control.py`
+  - `scene/container/single_sweep_container.py`
+  - `scene/factory.py`
+  - `scripts/production/ablations/ours/submit_sensorless_stage1_canonical_main_multiworker_1m30k.sh`
+  - `tests/methods/ours/test_pruning_protection.py`

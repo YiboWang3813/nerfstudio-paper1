@@ -1,0 +1,47 @@
+{
+  "date": "2026-07-16",
+  "branch": "main",
+  "commit": "4961acd238b142888e7c8b514a4b307efba2c7b7",
+  "configs": {
+    "tracked_upper_bound": "configs_hydra/experiment/production/comparisons/us_recon_four_dataset_p100k_v1/gs_strict/ours.yaml",
+    "ablation_base": "configs_hydra/experiment/production/ablations/ours/base_1m30k.yaml",
+    "sensorless": "configs_hydra/experiment/production/sensorless/ours_canonical.yaml"
+  },
+  "pose": {
+    "tracked_upper_bound_pose_mode": "file",
+    "sensorless_pose_mode": "canonical_sweep",
+    "canonical_sweep_spacing_mode": "uniform",
+    "canonical_sweep_delta_scale": 1.0,
+    "canonical_sweep_ref_frame": 0,
+    "canonical_sweep_axis": "z",
+    "sensorless_required": true
+  },
+  "renderer": {
+    "ray_attenuation_formula": "integral",
+    "ray_attenuation_quadrature_points": 3,
+    "ray_attenuation_candidate_k_sigma": 2.0,
+    "ray_attenuation_beta": 0.8,
+    "ray_attenuation_strength": 0.55,
+    "ray_attenuation_min_transmission": 0.35
+  },
+  "density_control": {
+    "strategy": "contribution_residual",
+    "start_iter": 1000,
+    "end_iter": 25000,
+    "freq": 2000,
+    "prune_opacity": 0.0001,
+    "score_quantile": 0.98,
+    "max_fraction": 0.05,
+    "low_contribution_quantile": 0.1,
+    "protection_modes": {
+      "P0": "none",
+      "P1": "high_tau",
+      "P2": "low_tau",
+      "P3": "path_effect"
+    }
+  },
+  "results": {
+    "stage1_sensorless_main": "outputs/production/ablations/ours/sensorless_stage1_canonical_main_20260716",
+    "tracked_upper_bound": "outputs/production/comparisons/us_recon_four_dataset_p100k_v1"
+  }
+}

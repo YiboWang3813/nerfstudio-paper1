@@ -1,0 +1,50 @@
+[
+  {
+    "dataset": "synthetic_liver",
+    "sweep": "l1",
+    "item": 23,
+    "crop_xywh": [
+      0,
+      0,
+      53,
+      107
+    ],
+    "columns": [
+      "Base",
+      "+LG",
+      "+LG+DC",
+      "+LG+DC+EP",
+      "GT"
+    ],
+    "run_dirs": {
+      "Base": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/runs/t02/synthetic_liver/l1/local_gradient",
+      "+LG": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/runs/t02/synthetic_liver/l1/localglobal_gradient",
+      "+LG+DC": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/runs/t02/synthetic_liver/l1/localglobal_responsibility",
+      "+LG+DC+EP": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/runs/t06/synthetic_liver/l1/canonical_sweep"
+    }
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "sweep": "010_LH_Per_L_DtP_qc_0005_0370",
+    "item": 9,
+    "crop_xywh": [
+      129,
+      24,
+      92,
+      69
+    ],
+    "columns": [
+      "Base",
+      "+LG",
+      "+LG+DC",
+      "+LG+DC+EP",
+      "GT"
+    ],
+    "run_dirs": {
+      "Base": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/runs/t02/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/local_gradient",
+      "+LG": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/runs/t02/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/localglobal_gradient",
+      "+LG+DC": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/runs/t02/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/localglobal_responsibility",
+      "+LG+DC+EP": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/runs/t06/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/canonical_sweep"
+    }
+  }
+]

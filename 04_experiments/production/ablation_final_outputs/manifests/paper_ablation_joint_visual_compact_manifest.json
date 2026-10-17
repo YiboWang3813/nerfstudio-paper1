@@ -1,0 +1,300 @@
+{
+  "version": "TMI v2",
+  "source_manifest": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/docs/production/ablation_final_outputs/manifests/paper_ablation_joint_visual_manifest.json",
+  "layout": {
+    "rows": 2,
+    "columns": 5,
+    "figsize_inches": [
+      12.5,
+      4.6
+    ],
+    "dpi": 300
+  },
+  "abbreviations": {
+    "LGR": "physics-aware local-global Gaussian renderer",
+    "CGA": "contribution-aware Gaussian adaptation",
+    "PP": "acquisition-guided pseudo-pose parameterization"
+  },
+  "panels": [
+    {
+      "row": 0,
+      "column": 0,
+      "dataset": "synthetic_liver",
+      "dataset_label": "Synthetic Liver",
+      "sweep": "l1",
+      "item": 23,
+      "variant": "Base",
+      "run_directory": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/runs/t02/synthetic_liver/l1/local_gradient",
+      "source_image": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/runs/t02/synthetic_liver/l1/local_gradient/vis/item_23/pred.png",
+      "crop_xywh": [
+        0,
+        0,
+        53,
+        107
+      ],
+      "inset_axes_bounds": [
+        0.57,
+        0.04,
+        0.4,
+        0.4
+      ],
+      "display_range": [
+        0.0,
+        1.0
+      ],
+      "metric_text": "PSNR 29.35\nSSIM 0.642"
+    },
+    {
+      "row": 0,
+      "column": 1,
+      "dataset": "synthetic_liver",
+      "dataset_label": "Synthetic Liver",
+      "sweep": "l1",
+      "item": 23,
+      "variant": "+LGR",
+      "run_directory": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/runs/t02/synthetic_liver/l1/localglobal_gradient",
+      "source_image": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/runs/t02/synthetic_liver/l1/localglobal_gradient/vis/item_23/pred.png",
+      "crop_xywh": [
+        0,
+        0,
+        53,
+        107
+      ],
+      "inset_axes_bounds": [
+        0.57,
+        0.04,
+        0.4,
+        0.4
+      ],
+      "display_range": [
+        0.0,
+        1.0
+      ],
+      "metric_text": "PSNR 29.27\nSSIM 0.636"
+    },
+    {
+      "row": 0,
+      "column": 2,
+      "dataset": "synthetic_liver",
+      "dataset_label": "Synthetic Liver",
+      "sweep": "l1",
+      "item": 23,
+      "variant": "+LGR+CGA",
+      "run_directory": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/runs/t02/synthetic_liver/l1/localglobal_responsibility",
+      "source_image": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/runs/t02/synthetic_liver/l1/localglobal_responsibility/vis/item_23/pred.png",
+      "crop_xywh": [
+        0,
+        0,
+        53,
+        107
+      ],
+      "inset_axes_bounds": [
+        0.57,
+        0.04,
+        0.4,
+        0.4
+      ],
+      "display_range": [
+        0.0,
+        1.0
+      ],
+      "metric_text": "PSNR 29.28\nSSIM 0.637"
+    },
+    {
+      "row": 0,
+      "column": 3,
+      "dataset": "synthetic_liver",
+      "dataset_label": "Synthetic Liver",
+      "sweep": "l1",
+      "item": 23,
+      "variant": "+LGR+CGA+PP",
+      "run_directory": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/runs/t06/synthetic_liver/l1/canonical_sweep",
+      "source_image": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/runs/t06/synthetic_liver/l1/canonical_sweep/vis/item_23/pred.png",
+      "crop_xywh": [
+        0,
+        0,
+        53,
+        107
+      ],
+      "inset_axes_bounds": [
+        0.57,
+        0.04,
+        0.4,
+        0.4
+      ],
+      "display_range": [
+        0.0,
+        1.0
+      ],
+      "metric_text": "PSNR 29.33\nSSIM 0.637"
+    },
+    {
+      "row": 0,
+      "column": 4,
+      "dataset": "synthetic_liver",
+      "dataset_label": "Synthetic Liver",
+      "sweep": "l1",
+      "item": 23,
+      "variant": "GT",
+      "run_directory": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/runs/t06/synthetic_liver/l1/canonical_sweep",
+      "source_image": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/runs/t06/synthetic_liver/l1/canonical_sweep/vis/item_23/gt.png",
+      "crop_xywh": [
+        0,
+        0,
+        53,
+        107
+      ],
+      "inset_axes_bounds": [
+        0.57,
+        0.04,
+        0.4,
+        0.4
+      ],
+      "display_range": [
+        0.0,
+        1.0
+      ],
+      "metric_text": ""
+    },
+    {
+      "row": 1,
+      "column": 0,
+      "dataset": "tus_rec_2024_qc",
+      "dataset_label": "TUS-REC-2024",
+      "sweep": "010_LH_Per_L_DtP_qc_0005_0370",
+      "item": 9,
+      "variant": "Base",
+      "run_directory": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/runs/t02/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/local_gradient",
+      "source_image": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/runs/t02/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/local_gradient/vis/item_9/pred.png",
+      "crop_xywh": [
+        129,
+        24,
+        92,
+        69
+      ],
+      "inset_axes_bounds": [
+        0.57,
+        0.04,
+        0.4,
+        0.4
+      ],
+      "display_range": [
+        0.0,
+        1.0
+      ],
+      "metric_text": "PSNR 30.92\nSSIM 0.829"
+    },
+    {
+      "row": 1,
+      "column": 1,
+      "dataset": "tus_rec_2024_qc",
+      "dataset_label": "TUS-REC-2024",
+      "sweep": "010_LH_Per_L_DtP_qc_0005_0370",
+      "item": 9,
+      "variant": "+LGR",
+      "run_directory": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/runs/t02/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/localglobal_gradient",
+      "source_image": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/runs/t02/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/localglobal_gradient/vis/item_9/pred.png",
+      "crop_xywh": [
+        129,
+        24,
+        92,
+        69
+      ],
+      "inset_axes_bounds": [
+        0.57,
+        0.04,
+        0.4,
+        0.4
+      ],
+      "display_range": [
+        0.0,
+        1.0
+      ],
+      "metric_text": "PSNR 30.90\nSSIM 0.825"
+    },
+    {
+      "row": 1,
+      "column": 2,
+      "dataset": "tus_rec_2024_qc",
+      "dataset_label": "TUS-REC-2024",
+      "sweep": "010_LH_Per_L_DtP_qc_0005_0370",
+      "item": 9,
+      "variant": "+LGR+CGA",
+      "run_directory": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/runs/t02/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/localglobal_responsibility",
+      "source_image": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/runs/t02/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/localglobal_responsibility/vis/item_9/pred.png",
+      "crop_xywh": [
+        129,
+        24,
+        92,
+        69
+      ],
+      "inset_axes_bounds": [
+        0.57,
+        0.04,
+        0.4,
+        0.4
+      ],
+      "display_range": [
+        0.0,
+        1.0
+      ],
+      "metric_text": "PSNR 30.87\nSSIM 0.825"
+    },
+    {
+      "row": 1,
+      "column": 3,
+      "dataset": "tus_rec_2024_qc",
+      "dataset_label": "TUS-REC-2024",
+      "sweep": "010_LH_Per_L_DtP_qc_0005_0370",
+      "item": 9,
+      "variant": "+LGR+CGA+PP",
+      "run_directory": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/runs/t06/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/canonical_sweep",
+      "source_image": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/runs/t06/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/canonical_sweep/vis/item_9/pred.png",
+      "crop_xywh": [
+        129,
+        24,
+        92,
+        69
+      ],
+      "inset_axes_bounds": [
+        0.57,
+        0.04,
+        0.4,
+        0.4
+      ],
+      "display_range": [
+        0.0,
+        1.0
+      ],
+      "metric_text": "PSNR 31.43\nSSIM 0.835"
+    },
+    {
+      "row": 1,
+      "column": 4,
+      "dataset": "tus_rec_2024_qc",
+      "dataset_label": "TUS-REC-2024",
+      "sweep": "010_LH_Per_L_DtP_qc_0005_0370",
+      "item": 9,
+      "variant": "GT",
+      "run_directory": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/runs/t06/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/canonical_sweep",
+      "source_image": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/runs/t06/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/canonical_sweep/vis/item_9/gt.png",
+      "crop_xywh": [
+        129,
+        24,
+        92,
+        69
+      ],
+      "inset_axes_bounds": [
+        0.57,
+        0.04,
+        0.4,
+        0.4
+      ],
+      "display_range": [
+        0.0,
+        1.0
+      ],
+      "metric_text": ""
+    }
+  ]
+}

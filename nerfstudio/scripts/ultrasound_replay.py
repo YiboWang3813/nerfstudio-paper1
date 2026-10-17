@@ -76,6 +76,9 @@ def main():
         io=engine.state.io_manager
         original_load=io.load_checkpoint
         def load_historical(items,step):
+            if args.task=='test':
+                # Model/pose state is required for inference; optimizer state is not.
+                items=[(name,obj) for name,obj in items if not name.lower().endswith(('solver','optimizer','scheduler','scaler'))]
             expected=[source_weights/('iteration_{}_{}.pth'.format(step,name)) for name,_ in items]
             missing=[str(path) for path in expected if not path.is_file()]
             if missing:raise FileNotFoundError('Incomplete historical checkpoint: '+repr(missing))

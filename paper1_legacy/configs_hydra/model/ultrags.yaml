@@ -1,0 +1,113 @@
+# @package _global_
+
+model:
+  name: ultrags
+  render:
+    k_sigma: 2.0
+    fixed_bg_color: 0.0
+    slab_thickness_ratio: 0.85
+    jitter_radius_ratio: 0.25
+    mapper_sort_by_depth: true
+    shader_compositing_mode: alpha
+    batched_kernel: false
+    batch_size: 1
+    drop_last_batch: true
+    intermediates_level: none
+  gauss_container:
+    lr:
+      means: 0.00016
+      scales: 0.005
+      quats: 0.001
+      opacities: 0.05
+      intensities: 0.001
+    init_val:
+      opacities: 0.1
+      intensities: 0.1
+  offline:
+    local_window:
+      enable: false
+      window_size_frames: 16
+      overlap_k_frames: 4
+      gauss_expand_m_frames: 8
+      use_gauss_subset: true
+      joint_opt:
+        enable: true
+        lambda_seam: 0.05
+        num_overlap_samples: 1
+    density_control:
+      enable:
+        densify: true
+        prune: true
+      timing:
+        start_iter: 1000
+        end_iter: 25000
+        freq: 2000
+      thresholds:
+        densify_grad: 1.0e-05
+        split_scale: 0.6
+        prune_opacity: 0.01
+        prune_intensity: 0.01
+  online:
+    mode: A
+    seed_every_frames: 1
+    save_every_frames: 50
+    num_pose_refinement: 1
+    log_scalars_every_gs_step: false
+    console_log_every_gs_step: false
+    console_frame_summary_interval: 10
+    console_print_eval_metrics: false
+    lwm:
+      window_size_frames: 10
+      total_opt_steps: 0
+      ratio_front: 0.5
+      ratio_rear: 0.5
+    gsm:
+      mode: false
+      membership:
+        membership_k: 5
+        sub_locality_l: 0
+      slice_identity:
+        exclude_num_ids: 15
+      spatial_chunk:
+        chunk_size_mm: 1.0
+        active_half_width_mm: 3.0
+        scale_margin_ratio: 1.0
+    stream_seed:
+      mode: legacy
+      first_frame_dense: false
+      occupancy_lack_weight: 0.7
+      diff_weight: 0.3
+      score_quantile: 0.9
+      max_new_cap: 15000
+      diff_blur_sigma: 0.0
+      debug_enabled: false
+    density_control:
+      enable:
+        densify: false
+        prune: false
+      timing:
+        start_gs_step: 1000
+        end_gs_step: 25000
+        freq_gs_steps: 2000
+      thresholds:
+        densify_grad: 1.0e-05
+        split_scale: 0.6
+        prune_opacity: 0.01
+        prune_intensity: 0.01
+      merge_after_dc: false
+      merge_every_frames: 0
+      merge_dist_thresh_mm: 0.02
+      merge_opacity_thresh: 0.01
+      merge_max_pairs: 100000
+    noise_pose:
+      rot_std_deg: 1.0
+      trans_std_mm: 1.0
+    pose_refiner:
+      pose_dim: 16
+      num_frequencies: 6
+      encoder_hidden_dim: 256
+      encoder_layers: 2
+      bottleneck_dim: 128
+      decoder_hidden_dim: 256
+      decoder_layers: 2
+      lr: 0.0001

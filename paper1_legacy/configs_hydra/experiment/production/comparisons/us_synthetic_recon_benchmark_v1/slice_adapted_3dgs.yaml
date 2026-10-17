@@ -1,0 +1,10 @@
+# @package _global_
+
+defaults:
+- /experiment/preproduction/baseline_reproduction/slice_adapted_3dgs/main_30k
+- _self_
+
+experiment:
+  family: production/comparisons/us_synthetic_recon_benchmark_v1
+  name: slice_adapted_3dgs
+  description: Production benchmark alias for slice-adapted 3DGS in US synthetic reconstruction benchmark v1.

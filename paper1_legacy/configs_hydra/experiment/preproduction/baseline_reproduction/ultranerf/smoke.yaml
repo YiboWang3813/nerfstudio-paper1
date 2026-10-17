@@ -1,0 +1,53 @@
+# @package _global_
+
+defaults:
+- /engine: debug_offline
+- /scene: liver
+- /model: ultranerf
+- /loss: default
+- /metric: default
+- /system: default
+- _self_
+system:
+  exp_tag: ultranerf_liver_smoke_512x256_500_paper_bernoulli_fullimage
+scene:
+  loading:
+    test_mode: holdout_interval
+    holdout_trim_each: 10
+    holdout_num_samples: 40
+engine:
+  state: UltraNeRFOfflineState
+  iterations: 500
+  needed_callbacks:
+  - UltraNeRFOfflineSetupCallback
+  - UltraNeRFOfflineTrainCallback
+  - UltraNeRFOfflineTestCallback
+  - UltraNeRFOfflineSaveCallback
+  - UltraNeRFOfflineFinishCallback
+  interval:
+    train:
+      step: 10
+      print: 50
+    test: 250
+    save: 500
+model:
+  ray:
+    train_patch_height: 512
+    train_patch_width: 256
+loss:
+  needed_losses:
+  - mse
+  - ssim
+  lambdas:
+    mse: 0.1
+    ssim: 0.9
+metric:
+  needed_metrics:
+  - psnr
+  - l1
+  - ssim
+  - lpips
+experiment:
+  family: preproduction/baseline_reproduction/ultranerf
+  name: smoke
+  description: UltraNeRF smoke template.

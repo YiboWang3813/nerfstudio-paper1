@@ -1,0 +1,59 @@
+# @package _global_
+
+defaults:
+- /engine: debug_offline
+- /scene: liver
+- /model: gaussianpile
+- /loss: default
+- /metric: default
+- /system: default
+- _self_
+system:
+  exp_tag: gaussianpile_liver_smoke_100k_500
+scene:
+  loading:
+    test_mode: holdout_interval
+engine:
+  state: GaussianPileOfflineState
+  iterations: 500
+  needed_callbacks:
+  - GaussianPileOfflineSetupCallback
+  - GaussianPileOfflineTrainCallback
+  - GaussianPileOfflineTestCallback
+  - GaussianPileOfflineSaveCallback
+  - GaussianPileOfflineFinishCallback
+  interval:
+    train:
+      step: 10
+      print: 100
+    test: 250
+    save: 500
+model:
+  gauss_init:
+    num_points: 100000
+  offline:
+    density_control:
+      enable:
+        densify: true
+        prune: true
+      timing:
+        start_iter: 100
+        end_iter: 400
+        freq: 100
+loss:
+  needed_losses:
+  - l1
+  - ssim
+  lambdas:
+    l1: 1.0
+    ssim: 0.2
+metric:
+  needed_metrics:
+  - psnr
+  - l1
+  - ssim
+  - lpips
+experiment:
+  family: preproduction/baseline_reproduction/gaussianpile
+  name: smoke
+  description: GaussianPile smoke template.

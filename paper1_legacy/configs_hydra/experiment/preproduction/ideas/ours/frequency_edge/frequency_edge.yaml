@@ -1,0 +1,57 @@
+# @package _global_
+
+defaults:
+- /engine: debug_offline
+- /scene: liver
+- /model: ours_us_focus
+- /loss: default
+- /metric: default
+- /system: default
+- _self_
+
+system:
+  exp_tag: ours_us_focus_frequency_edge_l1_ssim_scale_wall_highpass_1m_10k_dc
+scene:
+  loading:
+    test_mode: holdout_interval
+  sampler:
+    num_init: 1000000
+engine:
+  state: OursOfflineState
+  iterations: 10000
+  needed_callbacks:
+  - OursOfflineSetupCallback
+  - OursOfflineTrainCallback
+  - OursOfflineTestCallback
+  - OursOfflineSaveCallback
+  - OursOfflineFinishCallback
+  interval:
+    train:
+      step: 10
+      print: 100
+    test: 2500
+    save: 5000
+loss:
+  needed_losses:
+  - l1
+  - ssim
+  - scale_wall
+  - highpass_l1
+  lambdas:
+    l1: 0.65
+    ssim: 0.35
+    scale_wall: 50.0
+    highpass_l1: 0.01
+  highpass_l1_cfg:
+    kernel_size: 9
+    sigma: 2.0
+metric:
+  needed_metrics:
+  - psnr
+  - l1
+  - ssim
+  - lpips
+experiment:
+  family: preproduction/ideas/ours/frequency_edge
+  name: frequency_edge
+  description: Frequency-edge 10k candidate with high-pass residual L1 regularization.

@@ -1,0 +1,87 @@
+# @package _global_
+
+model:
+  name: fima
+  fima_component: pem
+  pem:
+    input_mode: multiframe
+    train_protocol: standard
+    phase_a_local_window: 8
+    phase_a_local_stride: 4
+    phase_a_windows_per_batch: 4
+    phase_a_max_pair_forward: 56
+    window_size: 16
+    pem_output_layout: last_frame_rel0
+    d_model: 128
+    num_mixer_layers: 4
+    stem_channels:
+    - 32
+    - 64
+    - 128
+    input_downsample_stride: 1
+    input_downsample_channels: 32
+    dropout: 0.0
+    prefer_mamba: true
+    require_mamba: false
+    mamba_d_state: 16
+    mamba_d_conv: 4
+    mamba_expand: 2
+    lr: 0.0001
+    weight_decay: 0.01
+    lr_decay_steps: 0
+    lr_decay_gamma: 0.5
+    batch_size: 4
+    gs_occ_cache_dir: ''
+    occ_always_two_channels: false
+    occ_fusion_mode: concat
+    occ_weight_scale: 0.6
+    occ_weight_clamp_lo: 0.35
+    occ_weight_clamp_hi: 1.35
+    predict_uncertainty: false
+    uncertainty_logvar_min: -8.0
+    uncertainty_logvar_max: 4.0
+  pem_loss:
+    use_l1: true
+    use_mse: false
+    use_pearson: true
+    lambda_l1: 1.0
+    lambda_mse: 1.0
+    lambda_pearson: 0.1
+    pearson_mode: per_channel
+    standardize_targets: false
+    target_std_min: 1.0e-06
+    target_std_min_trans: 0.01
+    target_std_min_rot: 0.0001
+    use_heteroscedastic_nll: false
+    lambda_heteroscedastic: 1.0
+  sequence:
+    val_ratio: 0.1
+    split_seed: 42
+    pad_mode: repeat_edge
+    split_protocol: auto
+    respect_scene_holdout: true
+    block_holdout_num_samples: 20
+    block_holdout_block_size: 5
+    block_holdout_trim_each: 10
+  pose_refiner:
+    pose_dim: 16
+    num_frequencies: 6
+    encoder_hidden_dim: 256
+    encoder_layers: 2
+    bottleneck_dim: 128
+    decoder_hidden_dim: 256
+    decoder_layers: 2
+    lr: 0.0001
+    max_delta_rot_deg: 0.3
+    max_delta_trans_mm: 0.05
+  pose_wash:
+    enable: true
+    min_improve: 0.0
+    use_abs_improve: false
+    rollback_model_on_reject: true
+    num_pose_wash_steps: 4
+  pose_gt_delta:
+    rot_weight: 1.0
+    trans_weight: 1.0
+  pem_checkpoint_path: ''
+  refiner_checkpoint_path: ''

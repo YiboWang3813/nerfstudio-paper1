@@ -1,0 +1,36 @@
+# @package _global_
+
+defaults:
+- /experiment/preproduction/baseline_reproduction/ultrags_baseline/main_10k_synthetic_liver
+- _self_
+
+system:
+  exp_tag: ultrags_baseline_main_10k_synthetic_liver_1m_tuned_dc
+
+model:
+  gauss_container:
+    lr:
+      scales_2d: 0.001
+  offline:
+    density_control:
+      enable:
+        densify: true
+        prune: true
+        opacity_reset: false
+      timing:
+        start_iter: 500
+        end_iter: 8000
+        densification_interval: 1000
+        opacity_reset_interval: 3000
+      thresholds:
+        densify_grad: 0.0002
+        opacity_cull: 0.005
+        percent_dense: 0.01
+        n_max: 1000000
+        min_scale_2d: 0.03
+        max_scale_2d: 3.0
+
+experiment:
+  family: preproduction/baseline_reproduction/ultrags_baseline
+  name: main_10k_synthetic_liver_tuned_dc
+  description: UltraGS baseline 10k synthetic_liver production-preflight with 1M initialization, conservative opacity pruning, and scale bounds.

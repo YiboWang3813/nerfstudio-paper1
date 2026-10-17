@@ -1,0 +1,31 @@
+# @package _global_
+
+defaults:
+- /experiment/preproduction/baseline_reproduction/ultrags_baseline/main_10k_synthetic_liver_tuned_dc
+- _self_
+
+system:
+  exp_tag: ultrags_baseline_main_10k_synthetic_liver_300k_opacity_cap_dc
+
+scene:
+  sampler:
+    num_init: 300000
+
+model:
+  gauss_container:
+    init_val:
+      opacity: 0.05
+    lr:
+      opacities: 0.03
+    constraints:
+      opacity_max: 0.2
+  offline:
+    density_control:
+      thresholds:
+        opacity_cull: 0.002
+        n_max: 300000
+
+experiment:
+  family: preproduction/baseline_reproduction/ultrags_baseline
+  name: main_10k_synthetic_liver_300k_opacity_cap_dc
+  description: UltraGS baseline 10k synthetic_liver production-preflight with 300k initialization and bounded opacity.

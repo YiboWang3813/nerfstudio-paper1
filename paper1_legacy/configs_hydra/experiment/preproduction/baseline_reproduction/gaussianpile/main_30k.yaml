@@ -1,0 +1,72 @@
+# @package _global_
+
+defaults:
+- /engine: debug_offline
+- /scene: liver
+- /model: gaussianpile
+- /loss: default
+- /metric: default
+- /system: default
+- _self_
+system:
+  exp_tag: gaussianpile_liver_1m_30000_dc
+scene:
+  loading:
+    test_mode: holdout_interval
+engine:
+  state: GaussianPileOfflineState
+  iterations: 30000
+  needed_callbacks:
+  - GaussianPileOfflineSetupCallback
+  - GaussianPileOfflineTrainCallback
+  - GaussianPileOfflineTestCallback
+  - GaussianPileOfflineSaveCallback
+  - GaussianPileOfflineFinishCallback
+  interval:
+    train:
+      step: 100
+      print: 500
+    test: 5000
+    save: 10000
+model:
+  gauss_init:
+    num_points: 1000000
+  slice_render:
+    radius_sigma: 3.0
+    prefilter_elevational_radius_mm: 0.0
+    opacity_cull_threshold: 1.0e-06
+  offline:
+    density_control:
+      enable:
+        densify: true
+        prune: true
+      timing:
+        start_iter: 500
+        end_iter: 25000
+        freq: 500
+        grad_accum_interval: 1
+      thresholds:
+        densify_grad: 5.0e-05
+        split_scale: 0.6
+        min_scale_mm: 0.01
+        prune_opacity: 0.02
+        max_prune_fraction_per_step: 0.0
+        min_keep_ratio: 0.0
+      n_max: 2000000
+loss:
+  needed_losses:
+  - l1
+  - ssim
+  lambdas:
+    l1: 1.0
+    ssim: 0.2
+metric:
+  needed_metrics:
+  - psnr
+  - l1
+  - ssim
+  - lpips
+experiment:
+  family: preproduction/baseline_reproduction/gaussianpile
+  name: main_30k
+  description: GaussianPile production 30k synthetic_liver density-control template for comparison baselines.

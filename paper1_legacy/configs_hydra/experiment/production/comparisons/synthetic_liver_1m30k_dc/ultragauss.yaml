@@ -1,0 +1,10 @@
+# @package _global_
+
+defaults:
+- /experiment/preproduction/baseline_reproduction/ultragauss/main_10k
+- _self_
+
+experiment:
+  family: production/comparisons/synthetic_liver_1m30k_dc
+  name: ultragauss
+  description: Production comparison alias for UltraGauss in synthetic liver 1M 30k density-control comparison.

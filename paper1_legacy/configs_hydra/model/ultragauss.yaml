@@ -1,0 +1,42 @@
+# @package _global_
+
+model:
+  name: ultragauss
+  render:
+    chi2_threshold: 7.815
+    mapper_sort_by_depth: true
+    fixed_bg_alpha: 0.0
+    fixed_bg_intensity: 0.0
+    diag_beta: 0.0001
+    jitter_radius_ratio: 0.25
+    enable_shadow: true
+    shadow_delta: 0.0
+  gauss_container:
+    lr:
+      means: 0.00016
+      precision_tril: 0.05
+      opacities: 0.05
+      intensities: 0.05
+    init_val:
+      opacity: 0.731
+      intensity: 0.5
+      diag_raw_min: 4.0
+      diag_raw_max: 5.0
+      offdiag_std: 0.01
+  offline:
+    density_control:
+      enable:
+        densify: true
+        prune: true
+      timing:
+        start_iter: 1000
+        end_iter: 25000
+        freq: 2000
+      thresholds:
+        densify_grad: 1.0e-05
+        split_scale_mm: 0.6
+        min_scale_mm: 5.0e-05
+        max_scale_mm: 5.0
+        prune_opacity: 0.01
+        prune_intensity: 0.01
+      n_max: 2000000

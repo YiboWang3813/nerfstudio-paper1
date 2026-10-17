@@ -1,0 +1,23 @@
+# @package _global_
+
+defaults:
+- /experiment/preproduction/ideas/ours/local_global_renderer/tus_rec_2024_qc_validation_2k
+- _self_
+
+system:
+  exp_tag: ours_us_focus_tus_rec_2024_qc_local_global_ray_tile_2k
+
+model:
+  slice_render:
+    ray_attenuation_enabled: true
+    ray_attenuation_source: opacity
+    ray_attenuation_beta: 0.10
+    ray_attenuation_strength: 0.05
+    ray_attenuation_min_transmission: 0.85
+    ray_attenuation_weight_min: 1.0e-04
+    ray_attenuation_axial_margin_mm: 0.0
+
+experiment:
+  family: preproduction/ideas/ours/local_global_renderer
+  name: tus_rec_2024_qc_local_global_ray_tile_2k
+  description: Stage-A local tile response plus bounded global ray attenuation modifier.

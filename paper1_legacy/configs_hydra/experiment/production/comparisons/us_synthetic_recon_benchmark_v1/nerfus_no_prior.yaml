@@ -1,0 +1,10 @@
+# @package _global_
+
+defaults:
+- /experiment/preproduction/baseline_reproduction/nerfus/fullres_30k_ultranerf_matched
+- _self_
+
+experiment:
+  family: production/comparisons/us_synthetic_recon_benchmark_v1
+  name: nerfus_no_prior
+  description: Production benchmark alias for NeRF-US without pose prior in US synthetic reconstruction benchmark v1.

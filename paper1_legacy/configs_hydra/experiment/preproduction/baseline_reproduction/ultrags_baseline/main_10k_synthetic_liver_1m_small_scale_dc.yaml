@@ -1,0 +1,35 @@
+# @package _global_
+
+defaults:
+- /experiment/preproduction/baseline_reproduction/ultrags_baseline/main_10k_synthetic_liver_tuned_dc
+- _self_
+
+system:
+  exp_tag: ultrags_baseline_main_10k_synthetic_liver_1m_small_scale_dc
+
+scene:
+  sampler:
+    scales_init:
+    - 0.1
+    - 0.1
+    - 0.1
+
+model:
+  gauss_container:
+    init_val:
+      opacity: 0.05
+      scale_2d:
+      - 0.1
+      - 0.1
+    lr:
+      opacities: 0.03
+  offline:
+    density_control:
+      thresholds:
+        opacity_cull: 0.002
+        min_scale_2d: 0.01
+
+experiment:
+  family: preproduction/baseline_reproduction/ultrags_baseline
+  name: main_10k_synthetic_liver_1m_small_scale_dc
+  description: UltraGS baseline 10k synthetic_liver production-preflight with 1M initialization and smaller 2D Gaussian scales.

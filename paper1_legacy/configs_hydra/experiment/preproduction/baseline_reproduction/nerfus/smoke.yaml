@@ -1,0 +1,53 @@
+# @package _global_
+
+defaults:
+- /engine: debug_offline
+- /scene: liver
+- /model: nerfus
+- /loss: default
+- /metric: default
+- /system: default
+- _self_
+
+system:
+  exp_tag: nerfus_no_prior_liver_l1_smoke
+scene:
+  loading:
+    sweep_name: l1
+    test_mode: holdout_interval
+    holdout_trim_each: 10
+    holdout_num_samples: 40
+engine:
+  state: NerfusOfflineState
+  iterations: 500
+  needed_callbacks:
+  - NerfusOfflineSetupCallback
+  - NerfusOfflineTrainCallback
+  - NerfusOfflineTestCallback
+  - NerfusOfflineSaveCallback
+  - NerfusOfflineFinishCallback
+  interval:
+    train:
+      step: 10
+      print: 50
+    test: 250
+    save: 500
+model:
+  ray:
+    train_patch_height: 128
+    train_patch_width: 128
+loss:
+  needed_losses:
+  - mse
+  lambdas:
+    mse: 1.0
+metric:
+  needed_metrics:
+  - psnr
+  - l1
+  - ssim
+  - lpips
+experiment:
+  family: preproduction/baseline_reproduction/nerfus
+  name: smoke
+  description: NeRF-US no-prior synthetic_liver l1 smoke baseline.

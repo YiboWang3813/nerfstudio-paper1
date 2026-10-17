@@ -1,0 +1,18 @@
+# @package _global_
+
+defaults:
+- /experiment/preproduction/baseline_reproduction/ultrags_baseline/main_10k_synthetic_liver_300k_low_opacity_dc
+- _self_
+
+system:
+  exp_tag: ultrags_baseline_main_10k_synthetic_liver_300k_physical_camera_dc
+
+model:
+  render:
+    camera_mode: slice_plane_physical
+    physical_camera_distance_mm: 200.0
+
+experiment:
+  family: preproduction/baseline_reproduction/ultrags_baseline
+  name: main_10k_synthetic_liver_300k_physical_camera_dc
+  description: UltraGS baseline 10k synthetic_liver production-preflight with 300k low-opacity initialization and slice-plane physical virtual camera.

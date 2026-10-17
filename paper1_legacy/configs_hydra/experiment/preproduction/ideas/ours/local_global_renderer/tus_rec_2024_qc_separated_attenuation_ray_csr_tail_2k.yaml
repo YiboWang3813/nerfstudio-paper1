@@ -1,0 +1,17 @@
+# @package _global_
+
+defaults:
+- /experiment/preproduction/ideas/ours/local_global_renderer/tus_rec_2024_qc_separated_attenuation_strong_tail_2k
+- _self_
+
+system:
+  exp_tag: ours_us_focus_tus_rec_2024_qc_separated_attenuation_ray_csr_tail_2k
+
+model:
+  slice_render:
+    ray_attenuation_mapper_kind: ray_csr
+
+experiment:
+  family: preproduction/ideas/ours/local_global_renderer
+  name: tus_rec_2024_qc_separated_attenuation_ray_csr_tail_2k
+  description: Separated attenuation with ray-CSR global attenuation candidate mapping.

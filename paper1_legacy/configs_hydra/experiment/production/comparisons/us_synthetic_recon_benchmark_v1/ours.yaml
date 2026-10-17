@@ -1,0 +1,10 @@
+# @package _global_
+
+defaults:
+- /experiment/preproduction/ideas/ours/pose_uncertainty_prior/pose_prior
+- _self_
+
+experiment:
+  family: production/comparisons/us_synthetic_recon_benchmark_v1
+  name: ours
+  description: Production benchmark alias for ours in US synthetic reconstruction benchmark v1.

@@ -1,0 +1,10 @@
+# @package _global_
+
+defaults:
+- /experiment/preproduction/baseline_reproduction/ultranerf/fullres_30k_mc_eval
+- _self_
+
+experiment:
+  family: production/comparisons/us_synthetic_recon_benchmark_v1
+  name: ultranerf
+  description: Production benchmark alias for UltraNeRF in US synthetic reconstruction benchmark v1.

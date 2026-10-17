@@ -1,0 +1,10 @@
+# @package _global_
+
+defaults:
+- /experiment/preproduction/baseline_reproduction/nerfus/fullres_30k_ultranerf_matched
+- _self_
+
+experiment:
+  family: production/comparisons/us_recon_four_dataset_p100k_v1
+  name: nerfus_no_prior
+  description: Method-locked NeRF-US without prior production alias for the four-dataset p100k reconstruction benchmark.

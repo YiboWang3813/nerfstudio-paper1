@@ -1,0 +1,84 @@
+# @package _global_
+
+defaults:
+- /engine: debug_offline
+- /scene: liver
+- /model: ours_us_focus
+- /loss: default
+- /metric: default
+- /system: default
+- _self_
+
+system:
+  exp_tag: local_global_renderer_four_dataset_30k
+
+scene:
+  loading:
+    test_mode: holdout_interval
+    holdout_trim_each: 10
+    holdout_num_samples: 40
+    image_downsample_factor: 1
+    axial_downsample_factor: 1
+  sampler:
+    num_init: 1000000
+    num_new: 1000
+
+engine:
+  state: OursOfflineState
+  iterations: 30000
+  needed_callbacks:
+  - OursOfflineSetupCallback
+  - OursOfflineTrainCallback
+  - OursOfflineTestCallback
+  - OursOfflineSaveCallback
+  - OursOfflineFinishCallback
+  interval:
+    train:
+      step: 10
+      print: 500
+    test: 5000
+    save: 5000
+
+model:
+  gauss_init:
+    num_points: 1000000
+  slice_render:
+    elev_corridor_half_mm: 0.395
+    slab_half_thickness_mm: 0.0
+    ray_attenuation_enabled: true
+    ray_attenuation_source: attenuation
+    ray_attenuation_mapper_kind: ray_csr
+    ray_attenuation_formula: slice_depth
+    ray_attenuation_candidate_k_sigma: 2.0
+    ray_attenuation_beta: 0.60
+    ray_attenuation_strength: 0.30
+    ray_attenuation_min_transmission: 0.55
+    ray_attenuation_quadrature_points: 1
+  offline:
+    density_control:
+      timing:
+        start_iter: 1000
+        end_iter: 25000
+        freq: 2000
+
+loss:
+  needed_losses:
+  - l1
+  - ssim
+  - scale_wall
+  lambdas:
+    l1: 0.65
+    ssim: 0.35
+    scale_wall: 50.0
+
+metric:
+  needed_metrics:
+  - psnr
+  - l1
+  - ssim
+  - lpips
+
+experiment:
+  family: preproduction/ideas/ours/local_global_renderer
+  name: four_dataset_local_global_30k
+  description: Local/global renderer 30k validation wrapper; scripts provide dataset-specific overrides.

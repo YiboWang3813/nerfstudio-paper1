@@ -1,0 +1,51 @@
+# @package _global_
+
+defaults:
+- /engine: debug_offline
+- /scene: liver
+- /model: ours_us_focus
+- /loss: default
+- /metric: default
+- /system: default
+- _self_
+system:
+  exp_tag: ours_us_focus_fast_fidelity_l1_ssim_scale_wall_1m_10000_dc
+scene:
+  loading:
+    test_mode: holdout_interval
+  sampler:
+    num_init: 1000000
+engine:
+  state: OursOfflineState
+  iterations: 10000
+  needed_callbacks:
+  - OursOfflineSetupCallback
+  - OursOfflineTrainCallback
+  - OursOfflineTestCallback
+  - OursOfflineSaveCallback
+  - OursOfflineFinishCallback
+  interval:
+    train:
+      step: 10
+      print: 100
+    test: 2500
+    save: 5000
+loss:
+  needed_losses:
+  - l1
+  - ssim
+  - scale_wall
+  lambdas:
+    l1: 0.65
+    ssim: 0.35
+    scale_wall: 50.0
+metric:
+  needed_metrics:
+  - psnr
+  - l1
+  - ssim
+  - lpips
+experiment:
+  family: preproduction/ideas/ours/renderer_baseline
+  name: fast_fidelity
+  description: Legacy alias for the production us_focus 10k configuration.

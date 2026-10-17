@@ -1,0 +1,28 @@
+# @package _global_
+
+defaults:
+- /experiment/preproduction/baseline_reproduction/ultrags_baseline/smoke
+- _self_
+
+system:
+  exp_tag: ultrags_baseline_liver_paper_5k
+
+scene:
+  loading:
+    holdout_num_samples: 64
+  sampler:
+    num_init: 100000
+
+engine:
+  iterations: 5000
+  interval:
+    train:
+      step: 50
+      print: 250
+    test: 1000
+    save: 5000
+
+experiment:
+  family: preproduction/baseline_reproduction/ultrags_baseline
+  name: paper_5k_synthetic_liver
+  description: UltraGS baseline 5k synthetic_liver pre-production reproduction.

@@ -1,0 +1,41 @@
+# @package _global_
+
+model:
+  name: ultragray
+  render:
+    k_sigma: 3.0
+    elev_cutoff_margin_mm: 0.0
+    ops_max_offset_mm: 2.0
+    ops_train_only: true
+    quadrature_window_radius_mm: 2.0
+    local_transmission_window_only: false
+    local_transmission_max_window_mm: 17.0
+    elev_beam_width_mm: 2.0
+  gauss_container:
+    lr:
+      means: 0.0001
+      scales: 0.005
+      quats: 0.005
+      attenuations: 0.0005
+      sh_dc: 0.005
+      sh_rest: 1.0e-05
+    init_val:
+      tau: 0.99
+      scale_mm: 0.5
+      sh_dc: 0.1
+  offline:
+    sh_degree1_start_iter: 1000
+    density_control:
+      enable:
+        densify: true
+        prune: true
+      timing:
+        start_iter: 1000
+        end_iter: 20000
+        freq: 2500
+      thresholds:
+        densify_grad: 1.0e-05
+        split_scale_mm: 0.5
+        min_scale_mm: 5.0e-05
+        max_scale_mm: 5.0
+      n_max: 500000

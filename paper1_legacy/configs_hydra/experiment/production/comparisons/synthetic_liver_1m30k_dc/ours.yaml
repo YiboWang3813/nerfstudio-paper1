@@ -1,0 +1,10 @@
+# @package _global_
+
+defaults:
+- /experiment/preproduction/ideas/ours/pose_uncertainty_prior/pose_prior
+- _self_
+
+experiment:
+  family: production/comparisons/synthetic_liver_1m30k_dc
+  name: ours
+  description: Production comparison alias for ours in synthetic liver 1M 30k density-control comparison.

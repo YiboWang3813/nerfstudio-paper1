@@ -14,6 +14,7 @@ import sys
 def main():
     fork = Path(__file__).resolve().parents[2]
     workspace = Path(os.environ.get('PAPER1_WORKSPACE', str(fork.parent))).resolve()
+    os.environ.setdefault('TORCH_HOME', str(workspace/'checkpoints/pretrained/torch'))
     legacy = fork/'paper1_legacy'
     if not (legacy/'run.py').is_file():
         raise RuntimeError('Missing preserved Paper1 legacy source: '+str(legacy))

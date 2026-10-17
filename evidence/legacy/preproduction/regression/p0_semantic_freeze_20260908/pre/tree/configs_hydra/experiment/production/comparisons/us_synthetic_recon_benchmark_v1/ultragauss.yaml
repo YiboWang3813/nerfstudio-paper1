@@ -1,0 +1,10 @@
+# @package _global_
+
+defaults:
+- /experiment/preproduction/baseline_reproduction/ultragauss/main_10k
+- _self_
+
+experiment:
+  family: production/comparisons/us_synthetic_recon_benchmark_v1
+  name: ultragauss
+  description: Production benchmark alias for UltraGauss in US synthetic reconstruction benchmark v1.

@@ -1,0 +1,129 @@
+# @package _global_
+
+# Generic ours defaults shared by legacy/probe3d-style experiments.
+# Production us_focus defaults live in model/ours_us_focus.yaml.
+
+model:
+  name: ours
+  render:
+    enable_input_checks: false
+  gauss_init:
+    num_points: 1000000
+  scene_norm:
+    margin: 1.15
+  slice_render:
+    tile_size_px: 16
+    num_slices_elevational: 2
+    slab_half_thickness_mm: 0.0
+    k_sigma: 2.0
+    mapper_kind: tile
+    num_pixels_lateral: 5
+    num_pixels_axial: 5
+    mapper_sort_by_v: true
+    compositing_mode: alpha
+    fixed_bg_color: 0.0
+    shader_weight_mode: probe3d
+    us_focus_sigma_ele_0: 1.0
+    us_focus_sigma_ele_1: 0.0
+    us_focus_sigma_ele_min: 0.5
+    us_focus_sigma_ele_max: 8.0
+    us_focus_sigma_lat_0: 1.0
+    us_focus_sigma_lat_1: 0.0
+    us_focus_sigma_lat_min: 0.5
+    us_focus_sigma_lat_max: 8.0
+    us_focus_det_gamma: 0.25
+    us_focus_det_eps: 1.0e-06
+    us_focus_weight_min: 1.0e-06
+    us_focus_use_lateral_focus: false
+    us_focus_inflate_lat_mm: 0.0
+    us_focus_inflate_ax_mm: 0.0
+    ray_attenuation_enabled: false
+    ray_attenuation_source: opacity
+    ray_attenuation_beta: 0.0
+    ray_attenuation_strength: 0.0
+    ray_attenuation_min_transmission: 0.75
+    ray_attenuation_weight_min: 1.0e-04
+    ray_attenuation_axial_margin_mm: 0.0
+    ray_attenuation_quadrature_window_mm: 2.0
+    ray_attenuation_quadrature_points: 3
+    ray_attenuation_mapper_kind: tile_prefix
+    ray_attenuation_formula: integral
+    ray_attenuation_candidate_k_sigma: -1.0
+    render_chunk_size: 256
+  gauss_container:
+    lr:
+      means: 0.00016
+      scales: 0.005
+      quats: 0.001
+      opacities: 0.05
+      intensities: 0.001
+      attenuations: 0.01
+    init_val:
+      opacities: 0.1
+      intensities: 0.1
+      attenuations: 0.02
+    constraints:
+      scale_activation: exp
+      scale_min_mm: 0.05
+      scale_max_mm: 3.0
+      opacity_max: 1.0
+      intensity_max: 1.0
+      attenuation_max: 1.0
+  offline:
+    density_control:
+      strategy: gradient
+      enable:
+        densify: true
+        prune: true
+      timing:
+        start_iter: 500
+        end_iter: 7500
+        freq: 500
+      thresholds:
+        densify_grad: 6.0e-06
+        split_scale: 0.6
+        prune_opacity: 0.005
+        prune_intensity: 0.01
+      responsibility:
+        enabled: false
+        high_residual_quantile: 0.9
+        score_quantile: 0.98
+        min_score: 1.0e-06
+        max_fraction: 0.05
+        mix_mode: responsibility
+        union_gradient_fraction: 0.5
+        union_gradient_min_factor: 0.25
+        structure_weight_enabled: false
+        structure_boundary_weight: 0.5
+        structure_highpass_weight: 0.5
+        structure_speckle_weight: 0.25
+        structure_max_weight: 2.5
+        low_contribution_quantile: 0.1
+        protect_attenuation_enabled: true
+        protect_attenuation_quantile: 0.9
+  pose_optimization:
+    enabled: false
+    prior_poses_abspath: ''
+    noise_enabled: false
+    noise_rot_deg: 0.0
+    noise_trans_mm: 0.0
+    noise_seed: 20260526
+    trainable: false
+    start_iter: 0
+    end_iter: -1
+    lr: 3.0e-05
+    lr_rot: null
+    lr_trans: null
+    optimize_rotation: true
+    optimize_translation: true
+    lambda_prior: 0.0
+    lambda_prior_rot: null
+    lambda_prior_trans: null
+    lambda_smooth_rot: 0.0
+    lambda_smooth_trans: 0.0
+    residual_bound_rot_deg: 0.0
+    residual_bound_trans_mm: 0.0
+    pose_only_start_iter: -1
+    pose_only_end_iter: -1
+    log_interval: 500
+    eval_train_count: 64

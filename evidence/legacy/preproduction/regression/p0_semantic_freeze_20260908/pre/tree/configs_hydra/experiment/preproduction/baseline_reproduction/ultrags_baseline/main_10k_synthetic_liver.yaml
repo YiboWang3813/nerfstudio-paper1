@@ -1,0 +1,89 @@
+# @package _global_
+
+defaults:
+- /engine: debug_offline
+- /scene: liver
+- /model: ultrags_baseline
+- /loss: default
+- /metric: default
+- /system: default
+- _self_
+
+system:
+  exp_tag: ultrags_baseline_main_10k_synthetic_liver_1m_dc
+
+scene:
+  loading:
+    sweep_name: l1
+    pose_type: relative
+    test_mode: holdout_interval
+    holdout_trim_each: 0
+    holdout_num_samples: 16
+  sampler:
+    num_init: 1000000
+    uniform_ratio: 0.3
+    intensity_threshold: 0.05
+    jitter_radius: 0.2
+    scales_init:
+    - 0.3
+    - 0.3
+    - 0.3
+
+engine:
+  state: UltraGSBaselineOfflineState
+  iterations: 10000
+  needed_callbacks:
+  - UltraGSBaselineOfflineSetupCallback
+  - UltraGSBaselineOfflineTrainCallback
+  - UltraGSBaselineOfflineTestCallback
+  - UltraGSBaselineOfflineSaveCallback
+  - UltraGSBaselineOfflineFinishCallback
+  interval:
+    train:
+      step: 10
+      print: 100
+    test: 2500
+    save: 5000
+
+model:
+  render:
+    dar_mode: released_disabled
+    sh_degree: 2
+    active_sh_degree_start: 0
+    sh_degree_step_iter: 1000
+  offline:
+    density_control:
+      enable:
+        densify: true
+        prune: true
+        opacity_reset: true
+      timing:
+        start_iter: 500
+        end_iter: 8000
+        densification_interval: 1000
+        opacity_reset_interval: 3000
+      thresholds:
+        densify_grad: 0.0002
+        opacity_cull: 0.05
+        percent_dense: 0.01
+        n_max: 1000000
+
+loss:
+  needed_losses:
+  - l1
+  - ssim
+  lambdas:
+    l1: 0.8
+    ssim: 0.2
+
+metric:
+  needed_metrics:
+  - psnr
+  - l1
+  - ssim
+  - lpips
+
+experiment:
+  family: preproduction/baseline_reproduction/ultrags_baseline
+  name: main_10k_synthetic_liver
+  description: UltraGS baseline 10k synthetic_liver production-preflight with 1M initialization and density control.

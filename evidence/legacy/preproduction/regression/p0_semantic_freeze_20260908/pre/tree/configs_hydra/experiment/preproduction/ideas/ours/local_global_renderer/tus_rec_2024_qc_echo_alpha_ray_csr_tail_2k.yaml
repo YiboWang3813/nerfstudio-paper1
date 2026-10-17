@@ -1,0 +1,25 @@
+# @package _global_
+
+defaults:
+- /experiment/preproduction/ideas/ours/local_global_renderer/tus_rec_2024_qc_separated_attenuation_ray_csr_tail_2k
+- _self_
+
+system:
+  exp_tag: ours_us_focus_tus_rec_2024_qc_echo_alpha_ray_csr_tail_2k
+
+model:
+  gauss_container:
+    lr:
+      echo_alphas: 0.08
+      attenuations: 0.01
+    init_val:
+      echo_alphas: 0.1
+      attenuations: 0.02
+    constraints:
+      echo_alpha_max: 0.2
+      attenuation_max: 1.0
+
+experiment:
+  family: preproduction/ideas/ours/local_global_renderer
+  name: tus_rec_2024_qc_echo_alpha_ray_csr_tail_2k
+  description: Echo-alpha local branch plus ray-CSR attenuation with attenuation-to-mean gradients.

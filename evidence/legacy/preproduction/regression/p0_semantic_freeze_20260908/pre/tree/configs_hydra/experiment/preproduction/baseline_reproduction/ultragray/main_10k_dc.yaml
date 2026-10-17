@@ -1,0 +1,80 @@
+# @package _global_
+
+defaults:
+- /engine: debug_offline
+- /scene: liver
+- /model: ultragray
+- /loss: default
+- /metric: default
+- /system: default
+- _self_
+system:
+  exp_tag: ultragray_liver_1m_10k_dc
+scene:
+  loading:
+    test_mode: holdout_interval
+  sampler:
+    num_init: 1000000
+    scales_init:
+    - 0.5
+    - 0.5
+    - 0.5
+engine:
+  state: UltraGrayOfflineState
+  iterations: 10000
+  needed_callbacks:
+  - UltraGrayOfflineSetupCallback
+  - UltraGrayOfflineTrainCallback
+  - UltraGrayOfflineTestCallback
+  - UltraGrayOfflineSaveCallback
+  - UltraGrayOfflineFinishCallback
+  interval:
+    train:
+      step: 10
+      print: 100
+    test: 2500
+    save: 5000
+model:
+  render:
+    k_sigma: 3.0
+    elev_cutoff_margin_mm: 0.0
+    ops_max_offset_mm: 2.0
+    ops_train_only: true
+    quadrature_window_radius_mm: 2.0
+  offline:
+    density_control:
+      enable:
+        densify: true
+        prune: true
+      timing:
+        start_iter: 1000
+        end_iter: 8000
+        freq: 1000
+      thresholds:
+        densify_grad: 1.0e-05
+        split_scale_mm: 0.5
+        min_scale_mm: 5.0e-05
+        max_scale_mm: 5.0
+      n_max: 500000
+loss:
+  needed_losses:
+  - l1
+  - ssim
+  - scale_wall
+  lambdas:
+    l1: 0.5
+    ssim: 0.5
+    scale_wall: 0.001
+  scale_wall_cfg:
+    min_scales_mm: 5.0e-05
+    max_scales_mm: 5.0
+metric:
+  needed_metrics:
+  - psnr
+  - l1
+  - ssim
+  - lpips
+experiment:
+  family: preproduction/baseline_reproduction/ultragray
+  name: main_10k_dc
+  description: UltraGray 1M/10k density-control template.

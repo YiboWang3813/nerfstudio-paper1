@@ -1,0 +1,10 @@
+# @package _global_
+
+defaults:
+- /experiment/preproduction/baseline_reproduction/ultragray/main_10k_fast
+- _self_
+
+experiment:
+  family: production/comparisons/synthetic_liver_1m30k_dc
+  name: ultragray
+  description: Production comparison alias for UltraGray in synthetic liver 1M 30k density-control comparison.

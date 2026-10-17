@@ -1,0 +1,4 @@
+- experiment=preproduction/ideas/ours/local_global_renderer/four_dataset_local_global_30k
+- task=dry_run
+- system.device=cpu
+- engine.iterations=1

@@ -1,0 +1,77 @@
+# @package _global_
+
+defaults:
+- /engine: debug_offline
+- /scene: liver
+- /model: ultrags_baseline
+- /loss: default
+- /metric: default
+- /system: default
+- _self_
+
+system:
+  exp_tag: ultrags_baseline_liver_smoke
+
+scene:
+  loading:
+    sweep_name: l1
+    pose_type: relative
+    test_mode: holdout_interval
+    holdout_trim_each: 0
+    holdout_num_samples: 16
+  sampler:
+    num_init: 50000
+    uniform_ratio: 0.3
+    intensity_threshold: 0.05
+    jitter_radius: 0.2
+    scales_init:
+    - 0.3
+    - 0.3
+    - 0.3
+
+engine:
+  state: UltraGSBaselineOfflineState
+  iterations: 500
+  needed_callbacks:
+  - UltraGSBaselineOfflineSetupCallback
+  - UltraGSBaselineOfflineTrainCallback
+  - UltraGSBaselineOfflineTestCallback
+  - UltraGSBaselineOfflineSaveCallback
+  - UltraGSBaselineOfflineFinishCallback
+  interval:
+    train:
+      step: 10
+      print: 100
+    test: 500
+    save: 0
+
+model:
+  render:
+    dar_mode: released_disabled
+    sh_degree: 2
+    active_sh_degree_start: 0
+    sh_degree_step_iter: 1000
+  offline:
+    density_control:
+      enable:
+        densify: false
+        prune: false
+        opacity_reset: false
+
+loss:
+  needed_losses:
+  - l1
+  - ssim
+  lambdas:
+    l1: 0.8
+    ssim: 0.2
+
+metric:
+  needed_metrics:
+  - psnr
+  - l1
+
+experiment:
+  family: preproduction/baseline_reproduction/ultrags_baseline
+  name: smoke
+  description: UltraGS baseline released-code parity smoke on synthetic_liver.

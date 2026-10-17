@@ -1,0 +1,71 @@
+# @package _global_
+
+defaults:
+- /engine: debug_offline
+- /scene: liver
+- /model: slice_adapted_3dgs
+- /loss: default
+- /metric: default
+- /system: default
+- _self_
+
+system:
+  exp_tag: slice_adapted_3dgs_liver_smoke
+
+scene:
+  loading:
+    sweep_name: l1
+    pose_type: relative
+    test_mode: holdout_interval
+    holdout_trim_each: 0
+    holdout_num_samples: 4
+  sampler:
+    num_init: 256
+    uniform_ratio: 0.3
+    intensity_threshold: 0.05
+    jitter_radius: 0.2
+    scales_init:
+    - 0.3
+    - 0.3
+    - 0.3
+
+engine:
+  state: SliceAdapted3DGSOfflineState
+  iterations: 20
+  needed_callbacks:
+  - SliceAdapted3DGSOfflineSetupCallback
+  - SliceAdapted3DGSOfflineTrainCallback
+  - SliceAdapted3DGSOfflineTestCallback
+  - SliceAdapted3DGSOfflineSaveCallback
+  - SliceAdapted3DGSOfflineFinishCallback
+  interval:
+    train:
+      step: 5
+      print: 20
+    test: 20
+    save: 0
+
+model:
+  render:
+    backend: cuda
+    camera_mode: slice_plane_physical
+    max_points_per_chunk: 128
+    max_pixels_per_chunk: 2048
+
+loss:
+  needed_losses:
+  - l1
+  - ssim
+  lambdas:
+    l1: 0.8
+    ssim: 0.2
+
+metric:
+  needed_metrics:
+  - psnr
+  - l1
+
+experiment:
+  family: preproduction/baseline_reproduction/slice_adapted_3dgs
+  name: smoke
+  description: Slice-adapted 3DGS finite-thickness additive renderer smoke on synthetic_liver.

@@ -1,0 +1,13 @@
+defaults:
+- experiment: preproduction/ideas/ours/renderer_baseline/main_10k
+- _self_
+task: train
+hydra:
+  job:
+    chdir: false
+  run:
+    dir: ${system.output_root}/${now:%Y-%m-%d}/${now:%H-%M-%S}_${slug:${experiment.family}}-${slug:${experiment.name}}_${slug:${model.name}}_${short_run_id:}
+  sweep:
+    dir: ${system.output_root}/multirun/${now:%Y-%m-%d}/${now:%H-%M-%S}
+    subdir: ${hydra.job.num}_${slug:${experiment.family}}-${slug:${experiment.name}}_${slug:${model.name}}_${short_run_id:}
+  output_subdir: .hydra

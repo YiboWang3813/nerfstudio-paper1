@@ -1,0 +1,101 @@
+# @package _global_
+
+defaults:
+- /engine: debug_offline
+- /scene: liver_x2
+- /model: ours
+- /loss: default
+- /metric: default
+- /system: default
+- _self_
+system:
+  exp_tag: ours_us_focus_fast_liver_p100k_750k_10000_dc
+scene:
+  loading:
+    test_mode: holdout_interval
+engine:
+  state: OursOfflineState
+  iterations: 10000
+  needed_callbacks:
+  - OursOfflineSetupCallback
+  - OursOfflineTrainCallback
+  - OursOfflineTestCallback
+  - OursOfflineSaveCallback
+  - OursOfflineFinishCallback
+  interval:
+    train:
+      step: 10
+      print: 100
+    test: 2500
+    save: 5000
+model:
+  gauss_init:
+    num_points: 750000
+  gauss_container:
+    lr:
+      opacities: 0.08
+      intensities: 0.002
+    init_val:
+      opacities: 0.1
+      intensities: 0.1
+    constraints:
+      scale_activation: bounded_sigmoid
+      scale_min_mm: 0.05
+      scale_max_mm: 3.0
+      opacity_max: 0.2
+      intensity_max: 1.0
+  slice_render:
+    mapper_kind: tile
+    tile_size_px: 8
+    compositing_mode: additive
+    shader_weight_mode: us_focus
+    k_sigma: 2.5
+    mapper_sort_by_v: false
+    fixed_bg_color: 0.0
+    elev_corridor_half_mm: 0.228225
+    slab_half_thickness_mm: 0.0
+    us_focus_sigma_ele_0: 1.0
+    us_focus_sigma_ele_1: 0.01
+    us_focus_sigma_ele_min: 0.8
+    us_focus_sigma_ele_max: 5.0
+    us_focus_sigma_lat_0: 0.8
+    us_focus_sigma_lat_1: 0.002
+    us_focus_sigma_lat_min: 0.4
+    us_focus_sigma_lat_max: 3.0
+    us_focus_det_gamma: 0.25
+    us_focus_det_eps: 1.0e-06
+    us_focus_weight_min: 1.0e-06
+    us_focus_use_lateral_focus: false
+  offline:
+    density_control:
+      enable:
+        densify: true
+        prune: true
+      timing:
+        start_iter: 1000
+        end_iter: 8000
+        freq: 1000
+      thresholds:
+        densify_grad: 1.5e-05
+        split_scale: 0.6
+        prune_opacity: 0.015
+        prune_intensity: 0.015
+loss:
+  needed_losses:
+  - l1
+  - ssim
+  - scale_wall
+  lambdas:
+    l1: 0.5
+    ssim: 0.5
+    scale_wall: 50.0
+metric:
+  needed_metrics:
+  - psnr
+  - l1
+  - ssim
+  - lpips
+experiment:
+  family: preproduction/ideas/ours/renderer_baseline
+  name: x2_fast
+  description: Legacy fast template now using the p100k synthetic liver compatibility scene.

@@ -1,0 +1,66 @@
+# @package _global_
+
+defaults:
+- /engine: debug_offline_fima
+- /scene: liver_x2
+- /model: fima
+- /loss: default
+- /metric: default
+- /system: default
+- _self_
+system:
+  exp_tag: fima_paper_image_only_edges_placeholder
+scene:
+  dataset_name: synthetic_liver
+  loading:
+    images_name: images.npy
+    test_mode: holdout_interval
+    holdout_trim_each: 10
+    holdout_num_samples: 40
+    test_images_name: test_images.npy
+    test_poses_name: test_poses.npy
+engine:
+  iterations: 40000
+  interval:
+    train:
+      step: 20
+      print: 200
+    test: 2000
+    save: 5000
+model:
+  pem:
+    input_mode: multiframe
+    train_protocol: standard
+    window_size: 32
+    pem_output_layout: window_edges
+    batch_size: 1
+    d_model: 160
+    num_mixer_layers: 6
+    stem_channels:
+    - 32
+    - 64
+    - 128
+    prefer_mamba: true
+    require_mamba: true
+    lr: 0.0002
+    weight_decay: 0.0001
+    lr_decay_steps: 6000
+    lr_decay_gamma: 0.5
+  pem_loss:
+    use_l1: true
+    use_mse: false
+    use_pearson: true
+    lambda_l1: 1.0
+    lambda_pearson: 1.0
+    pearson_mode: per_channel
+    standardize_targets: true
+    target_std_min: 1.0e-06
+    target_std_min_trans: 0.01
+    target_std_min_rot: 0.0001
+  sequence:
+    val_ratio: 0.0
+    respect_scene_holdout: false
+experiment:
+  family: preproduction/baseline_reproduction/fima
+  name: paper_edges
+  description: FiMA paper-style image-only edge-prediction template.

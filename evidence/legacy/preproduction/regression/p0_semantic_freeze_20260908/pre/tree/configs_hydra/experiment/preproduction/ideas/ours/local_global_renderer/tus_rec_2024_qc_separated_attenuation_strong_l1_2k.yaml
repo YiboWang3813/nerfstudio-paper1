@@ -1,0 +1,29 @@
+# @package _global_
+
+defaults:
+- /experiment/preproduction/ideas/ours/local_global_renderer/tus_rec_2024_qc_separated_attenuation_2k
+- _self_
+
+system:
+  exp_tag: ours_us_focus_tus_rec_2024_qc_separated_attenuation_strong_l1_2k
+
+model:
+  slice_render:
+    ray_attenuation_beta: 0.20
+    ray_attenuation_strength: 0.08
+    ray_attenuation_min_transmission: 0.80
+
+loss:
+  needed_losses:
+  - l1
+  - ssim
+  - scale_wall
+  - attenuation_l1
+  lambdas:
+    attenuation_l1: 0.2
+
+experiment:
+  family: preproduction/ideas/ours/local_global_renderer
+  name: tus_rec_2024_qc_separated_attenuation_strong_l1_2k
+  description: Strong separated attenuation with L1 attenuation regularization for stability validation.
+

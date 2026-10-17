@@ -1,0 +1,53 @@
+# @package _global_
+
+defaults:
+- /engine: debug_offline
+- /scene: liver
+- /model: nerfus
+- /loss: default
+- /metric: default
+- /system: default
+- _self_
+
+system:
+  exp_tag: nerfus_no_prior_liver_l1_fullres_30k
+scene:
+  loading:
+    sweep_name: l1
+    test_mode: holdout_interval
+    holdout_trim_each: 10
+    holdout_num_samples: 40
+engine:
+  state: NerfusOfflineState
+  iterations: 30000
+  needed_callbacks:
+  - NerfusOfflineSetupCallback
+  - NerfusOfflineTrainCallback
+  - NerfusOfflineTestCallback
+  - NerfusOfflineSaveCallback
+  - NerfusOfflineFinishCallback
+  interval:
+    train:
+      step: 100
+      print: 500
+    test: 5000
+    save: 5000
+model:
+  ray:
+    train_patch_height: 512
+    train_patch_width: 256
+loss:
+  needed_losses:
+  - mse
+  lambdas:
+    mse: 1.0
+metric:
+  needed_metrics:
+  - psnr
+  - l1
+  - ssim
+  - lpips
+experiment:
+  family: preproduction/baseline_reproduction/nerfus
+  name: fullres_30k_no_prior
+  description: NeRF-US no-prior synthetic_liver l1 full-resolution 30k baseline.

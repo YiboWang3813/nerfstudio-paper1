@@ -1,0 +1,10 @@
+# @package _global_
+
+defaults:
+- /experiment/preproduction/baseline_reproduction/ultrags_baseline/main_10k_synthetic_liver_1m_physical_camera_dc
+- _self_
+
+experiment:
+  family: production/comparisons/us_synthetic_recon_benchmark_v1
+  name: ultrags_baseline
+  description: Production benchmark alias for UltraGS baseline in US synthetic reconstruction benchmark v1.

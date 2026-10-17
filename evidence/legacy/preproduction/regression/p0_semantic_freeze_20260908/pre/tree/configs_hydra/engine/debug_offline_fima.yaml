@@ -1,0 +1,23 @@
+# @package _global_
+
+engine:
+  name: default_engine
+  state: FiMAOfflineState
+  task: train
+  stream: offline
+  iterations: 2500
+  accum_steps: 1
+  resume: ''
+  needed_callbacks:
+  - FiMAOfflineSetupCallback
+  - FiMAOfflineTrainCallback
+  - FiMAOfflineTestCallback
+  - FiMAOfflineSaveCallback
+  - FiMAOfflineFinishCallback
+  interval:
+    train:
+      step: 10
+      print: 100
+    debug: 1000
+    test: 500
+    save: 100000

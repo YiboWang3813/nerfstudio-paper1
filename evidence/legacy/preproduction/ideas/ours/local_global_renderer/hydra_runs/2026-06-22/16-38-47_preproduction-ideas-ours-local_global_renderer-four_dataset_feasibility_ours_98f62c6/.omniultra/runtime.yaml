@@ -1,0 +1,4 @@
+created_at: '2026-06-22T16:38:48'
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/2026-06-22/16-38-47_preproduction-ideas-ours-local_global_renderer-four_dataset_feasibility_ours_98f62c6
+hydra_output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/2026-06-22/16-38-47_preproduction-ideas-ours-local_global_renderer-four_dataset_feasibility_ours_98f62c6
+config_path: hydra:experiment=preproduction/ideas/ours/local_global_renderer/four_dataset_feasibility

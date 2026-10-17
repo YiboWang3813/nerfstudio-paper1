@@ -1,0 +1,5 @@
+overrides:
+- experiment=preproduction/ideas/ours/responsibility_density_control/fixed_protocol_main_30k
+- task=dry_run
+- system.device=cpu
+- engine.iterations=1

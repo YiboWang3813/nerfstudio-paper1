@@ -1,0 +1,21 @@
+run_id: 3dace1d
+run_name: production-ablations-ours_base_1m30k_ours_3dace1d
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/2026-06-22/19-14-58_production-ablations-ours-base_1m30k_ours_3dace1d
+hydra_output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/2026-06-22/19-14-58_production-ablations-ours-base_1m30k_ours_3dace1d
+config_path: hydra:experiment=production/ablations/ours/base_1m30k
+overrides:
+- experiment=production/ablations/ours/base_1m30k
+- task=dry_run
+- system.device=cpu
+- engine.iterations=1
+git_commit: 7510133606b0660894261f17dfd51b28bc10abac
+git_dirty: true
+dataset: synthetic_liver
+model: ours
+exp_tag: ours_ablation_base_1m30k
+seed: 42
+wandb:
+  enabled: false
+  project: omniultra
+  mode: online
+  run_id: ''

@@ -1,0 +1,10 @@
+# @package _global_
+
+defaults:
+- /experiment/preproduction/baseline_reproduction/ultragray/main_10k_fast
+- _self_
+
+experiment:
+  family: production/comparisons/us_synthetic_recon_benchmark_v1
+  name: ultragray
+  description: Production benchmark alias for UltraGray in US synthetic reconstruction benchmark v1.

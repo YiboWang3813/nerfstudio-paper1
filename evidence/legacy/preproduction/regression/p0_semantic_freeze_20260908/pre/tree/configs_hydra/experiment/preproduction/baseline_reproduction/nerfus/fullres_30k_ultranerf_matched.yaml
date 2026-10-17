@@ -1,0 +1,68 @@
+# @package _global_
+
+defaults:
+- /engine: debug_offline
+- /scene: liver
+- /model: nerfus
+- /loss: default
+- /metric: default
+- /system: default
+- _self_
+
+system:
+  exp_tag: nerfus_no_prior_liver_l1_fullres_30k_ultranerf_matched
+scene:
+  loading:
+    sweep_name: l1
+    test_mode: holdout_interval
+    holdout_trim_each: 10
+    holdout_num_samples: 40
+engine:
+  state: NerfusOfflineState
+  iterations: 30000
+  needed_callbacks:
+  - NerfusOfflineSetupCallback
+  - NerfusOfflineTrainCallback
+  - NerfusOfflineTestCallback
+  - NerfusOfflineSaveCallback
+  - NerfusOfflineFinishCallback
+  interval:
+    train:
+      step: 20
+      print: 100
+    test: 2500
+    save: 5000
+model:
+  field:
+    width: 128
+  ray:
+    train_patch_height: 512
+    train_patch_width: 256
+  render:
+    boundary_sampling_mode: bernoulli
+    scatter_sampling_mode: bernoulli
+    eval_render_mode: mc_average
+    eval_mc_samples: 4
+    eval_seed: 20260530
+  solver:
+    optimizer: adam
+    lr: 0.0001
+    lr_final: 0.00001
+    lr_decay_steps: 250000
+loss:
+  needed_losses:
+  - mse
+  - ssim
+  lambdas:
+    mse: 0.1
+    ssim: 0.9
+metric:
+  needed_metrics:
+  - psnr
+  - l1
+  - ssim
+  - lpips
+experiment:
+  family: preproduction/baseline_reproduction/nerfus
+  name: fullres_30k_ultranerf_matched
+  description: NeRF-US no-prior synthetic_liver l1 30k control matched to UltraNeRF training protocol.

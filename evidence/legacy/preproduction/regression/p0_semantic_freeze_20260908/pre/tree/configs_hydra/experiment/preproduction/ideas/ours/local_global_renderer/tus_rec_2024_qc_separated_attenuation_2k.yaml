@@ -1,0 +1,30 @@
+# @package _global_
+
+defaults:
+- /experiment/preproduction/ideas/ours/local_global_renderer/tus_rec_2024_qc_validation_2k
+- _self_
+
+system:
+  exp_tag: ours_us_focus_tus_rec_2024_qc_separated_attenuation_2k
+
+model:
+  slice_render:
+    ray_attenuation_enabled: true
+    ray_attenuation_source: attenuation
+    ray_attenuation_beta: 0.05
+    ray_attenuation_strength: 0.03
+    ray_attenuation_min_transmission: 0.90
+    ray_attenuation_weight_min: 1.0e-04
+    ray_attenuation_axial_margin_mm: 0.0
+  gauss_container:
+    lr:
+      attenuations: 0.01
+    init_val:
+      attenuations: 0.02
+    constraints:
+      attenuation_max: 1.0
+
+experiment:
+  family: preproduction/ideas/ours/local_global_renderer
+  name: tus_rec_2024_qc_separated_attenuation_2k
+  description: Stage-B local tile response plus trainable separated global attenuation attribute.

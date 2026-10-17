@@ -1,0 +1,10 @@
+# @package _global_
+
+defaults:
+- /experiment/preproduction/baseline_reproduction/ultragauss/main_10k
+- _self_
+
+experiment:
+  family: production/comparisons/us_recon_four_dataset_p100k_v1
+  name: ultragauss
+  description: Method-locked UltraGauss production alias for the four-dataset p100k reconstruction benchmark.

@@ -1,0 +1,10 @@
+# @package _global_
+
+defaults:
+- /experiment/preproduction/baseline_reproduction/ultrags_baseline/main_10k_synthetic_liver_1m_physical_camera_dc
+- _self_
+
+experiment:
+  family: production/comparisons/us_recon_four_dataset_p100k_v1
+  name: ultrags_baseline
+  description: Method-locked UltraGS baseline physical-camera production alias for the four-dataset p100k reconstruction benchmark.

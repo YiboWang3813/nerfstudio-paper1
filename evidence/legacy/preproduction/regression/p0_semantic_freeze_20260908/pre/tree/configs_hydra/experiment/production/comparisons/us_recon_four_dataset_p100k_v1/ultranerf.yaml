@@ -1,0 +1,10 @@
+# @package _global_
+
+defaults:
+- /experiment/preproduction/baseline_reproduction/ultranerf/fullres_30k_mc_eval
+- _self_
+
+experiment:
+  family: production/comparisons/us_recon_four_dataset_p100k_v1
+  name: ultranerf
+  description: Method-locked UltraNeRF production alias for the four-dataset p100k reconstruction benchmark.

@@ -1,0 +1,21 @@
+run_id: a59f27d
+run_name: preproduction-ideas-ours-responsibility_density_control_fixed_protocol_main_30k_ours_a59f27d
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/2026-06-22/16-38-47_preproduction-ideas-ours-responsibility_density_control-fixed_protocol_main_30k_ours_a59f27d
+hydra_output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/2026-06-22/16-38-47_preproduction-ideas-ours-responsibility_density_control-fixed_protocol_main_30k_ours_a59f27d
+config_path: hydra:experiment=preproduction/ideas/ours/responsibility_density_control/fixed_protocol_main_30k
+overrides:
+- experiment=preproduction/ideas/ours/responsibility_density_control/fixed_protocol_main_30k
+- task=dry_run
+- system.device=cpu
+- engine.iterations=1
+git_commit: 0d56e8468232fbf18eadadd7b9c33bc8fb726bd7
+git_dirty: true
+dataset: synthetic_liver
+model: ours
+exp_tag: responsibility_density_control_fixed_protocol_30k
+seed: 42
+wandb:
+  enabled: false
+  project: omniultra
+  mode: online
+  run_id: ''

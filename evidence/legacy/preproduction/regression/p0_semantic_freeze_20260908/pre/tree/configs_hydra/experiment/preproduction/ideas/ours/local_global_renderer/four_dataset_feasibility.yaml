@@ -1,0 +1,75 @@
+# @package _global_
+
+defaults:
+- /engine: debug_offline
+- /scene: liver
+- /model: ours_us_focus
+- /loss: default
+- /metric: default
+- /system: default
+- _self_
+
+system:
+  exp_tag: local_global_renderer_four_dataset_feasibility
+
+scene:
+  loading:
+    test_mode: holdout_interval
+    holdout_trim_each: 10
+    holdout_num_samples: 40
+    image_downsample_factor: 1
+    axial_downsample_factor: 1
+  sampler:
+    num_init: 300000
+    num_new: 1000
+
+engine:
+  state: OursOfflineState
+  iterations: 10000
+  needed_callbacks:
+  - OursOfflineSetupCallback
+  - OursOfflineTrainCallback
+  - OursOfflineTestCallback
+  - OursOfflineSaveCallback
+  - OursOfflineFinishCallback
+  interval:
+    train:
+      step: 10
+      print: 100
+    test: 2500
+    save: 5000
+
+model:
+  gauss_init:
+    num_points: 300000
+  slice_render:
+    elev_corridor_half_mm: 0.395
+    slab_half_thickness_mm: 0.0
+  offline:
+    density_control:
+      timing:
+        start_iter: 1000
+        end_iter: 8000
+        freq: 1000
+
+loss:
+  needed_losses:
+  - l1
+  - ssim
+  - scale_wall
+  lambdas:
+    l1: 0.65
+    ssim: 0.35
+    scale_wall: 50.0
+
+metric:
+  needed_metrics:
+  - psnr
+  - l1
+  - ssim
+  - lpips
+
+experiment:
+  family: preproduction/ideas/ours/local_global_renderer
+  name: four_dataset_feasibility
+  description: Local/global renderer feasibility wrapper for four-dataset sweeps; scripts provide dataset and renderer overrides.

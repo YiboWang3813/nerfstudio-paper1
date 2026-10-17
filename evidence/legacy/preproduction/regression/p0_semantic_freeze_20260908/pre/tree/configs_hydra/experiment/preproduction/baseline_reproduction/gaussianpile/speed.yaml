@@ -1,0 +1,53 @@
+# @package _global_
+
+defaults:
+- /engine: debug_offline
+- /scene: liver
+- /model: gaussianpile
+- /loss: default
+- /metric: default
+- /system: default
+- _self_
+system:
+  exp_tag: gaussianpile_liver_1m_300_speed
+scene:
+  loading:
+    test_mode: holdout_interval
+engine:
+  state: GaussianPileOfflineState
+  iterations: 300
+  needed_callbacks:
+  - GaussianPileOfflineSetupCallback
+  - GaussianPileOfflineTrainCallback
+  - GaussianPileOfflineFinishCallback
+  interval:
+    train:
+      step: 300
+      print: 300
+    test: 0
+    save: 0
+model:
+  gauss_init:
+    num_points: 1000000
+  slice_render:
+    backend: ours_focus
+    radius_sigma: 0.5
+    prefilter_elevational_radius_mm: 2.0
+    opacity_cull_threshold: 0.001
+  offline:
+    density_control:
+      enable:
+        densify: false
+        prune: false
+loss:
+  needed_losses:
+  - l1
+  lambdas:
+    l1: 1.0
+    ssim: 0.0
+metric:
+  needed_metrics: []
+experiment:
+  family: preproduction/baseline_reproduction/gaussianpile
+  name: speed
+  description: GaussianPile speed template.

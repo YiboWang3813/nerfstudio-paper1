@@ -1,0 +1,10 @@
+# @package _global_
+
+defaults:
+- /experiment/preproduction/baseline_reproduction/slice_adapted_3dgs/main_30k
+- _self_
+
+experiment:
+  family: production/comparisons/us_recon_four_dataset_p100k_v1
+  name: slice_adapted_3dgs
+  description: Method-locked slice-adapted 3DGS production alias for the four-dataset p100k reconstruction benchmark.

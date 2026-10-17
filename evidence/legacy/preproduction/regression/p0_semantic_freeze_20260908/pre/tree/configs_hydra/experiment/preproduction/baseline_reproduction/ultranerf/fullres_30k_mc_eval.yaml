@@ -1,0 +1,53 @@
+# @package _global_
+
+defaults:
+- /engine: debug_offline
+- /scene: liver
+- /model: ultranerf
+- /loss: default
+- /metric: default
+- /system: default
+- _self_
+system:
+  exp_tag: ultranerf_liver_fullres_30k_holdout_paper_bernoulli_fullimage_mc_eval4
+scene:
+  loading:
+    test_mode: holdout_interval
+    holdout_trim_each: 10
+    holdout_num_samples: 40
+engine:
+  state: UltraNeRFOfflineState
+  iterations: 30000
+  needed_callbacks:
+  - UltraNeRFOfflineSetupCallback
+  - UltraNeRFOfflineTrainCallback
+  - UltraNeRFOfflineTestCallback
+  - UltraNeRFOfflineSaveCallback
+  - UltraNeRFOfflineFinishCallback
+  interval:
+    train:
+      step: 20
+      print: 100
+    test: 2500
+    save: 5000
+model:
+  ray:
+    train_patch_height: 512
+    train_patch_width: 256
+loss:
+  needed_losses:
+  - mse
+  - ssim
+  lambdas:
+    mse: 0.1
+    ssim: 0.9
+metric:
+  needed_metrics:
+  - psnr
+  - l1
+  - ssim
+  - lpips
+experiment:
+  family: preproduction/baseline_reproduction/ultranerf
+  name: fullres_30k_mc_eval
+  description: UltraNeRF full-resolution 30k MC-eval template.

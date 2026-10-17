@@ -1,0 +1,21 @@
+run_id: 98f62c6
+run_name: preproduction-ideas-ours-local_global_renderer_four_dataset_feasibility_ours_98f62c6
+output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/2026-06-22/16-38-47_preproduction-ideas-ours-local_global_renderer-four_dataset_feasibility_ours_98f62c6
+hydra_output_dir: /home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/2026-06-22/16-38-47_preproduction-ideas-ours-local_global_renderer-four_dataset_feasibility_ours_98f62c6
+config_path: hydra:experiment=preproduction/ideas/ours/local_global_renderer/four_dataset_feasibility
+overrides:
+- experiment=preproduction/ideas/ours/local_global_renderer/four_dataset_feasibility
+- task=dry_run
+- system.device=cpu
+- engine.iterations=1
+git_commit: 0d56e8468232fbf18eadadd7b9c33bc8fb726bd7
+git_dirty: true
+dataset: synthetic_liver
+model: ours
+exp_tag: local_global_renderer_four_dataset_feasibility
+seed: 42
+wandb:
+  enabled: false
+  project: omniultra
+  mode: online
+  run_id: ''

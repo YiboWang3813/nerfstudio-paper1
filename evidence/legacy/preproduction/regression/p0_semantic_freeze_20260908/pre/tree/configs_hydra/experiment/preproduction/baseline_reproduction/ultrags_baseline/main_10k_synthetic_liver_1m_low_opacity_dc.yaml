@@ -1,0 +1,24 @@
+# @package _global_
+
+defaults:
+- /experiment/preproduction/baseline_reproduction/ultrags_baseline/main_10k_synthetic_liver_tuned_dc
+- _self_
+
+system:
+  exp_tag: ultrags_baseline_main_10k_synthetic_liver_1m_low_opacity_dc
+
+model:
+  gauss_container:
+    lr:
+      opacities: 0.02
+    init_val:
+      opacity: 0.01
+  offline:
+    density_control:
+      thresholds:
+        opacity_cull: 0.001
+
+experiment:
+  family: preproduction/baseline_reproduction/ultrags_baseline
+  name: main_10k_synthetic_liver_1m_low_opacity_dc
+  description: UltraGS baseline 10k synthetic_liver production-preflight with 1M initialization and lower opacity for dense initialization.

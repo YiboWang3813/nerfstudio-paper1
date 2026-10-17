@@ -1,0 +1,10 @@
+# @package _global_
+
+defaults:
+- /experiment/preproduction/baseline_reproduction/ultragray/main_10k_fast
+- _self_
+
+experiment:
+  family: production/comparisons/us_recon_four_dataset_p100k_v1
+  name: ultragray
+  description: Method-locked UltraGray production alias for the four-dataset p100k reconstruction benchmark.

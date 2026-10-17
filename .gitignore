@@ -191,3 +191,11 @@ camera_paths/
 # pixi environments
 .pixi
 /third_party
+# Paper1 runtime compatibility links; actual artifacts live outside this fork.
+/paper1_legacy/ops
+/paper1_legacy/docs
+/paper1_legacy/outputs
+/paper1_legacy/logs
+/paper1_legacy/wandb
+/paper1_legacy/artifacts
+/paper1_legacy/workspace

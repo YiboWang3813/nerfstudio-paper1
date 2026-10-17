@@ -1,0 +1,51 @@
+[
+  {
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/docs/production/final_hyperparameter_figures_20260916/H1_AFGM/H1_candidate_A",
+    "width_in": 3.5,
+    "height_in": 2.25,
+    "png_dpi": 400,
+    "outside_canvas_text": []
+  },
+  {
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/docs/production/final_hyperparameter_figures_20260916/H1_AFGM/H1",
+    "width_in": 3.5,
+    "height_in": 2.25,
+    "png_dpi": 400,
+    "outside_canvas_text": []
+  },
+  {
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/docs/production/final_hyperparameter_figures_20260916/H1_AFGM/H1_candidate_B",
+    "width_in": 3.5,
+    "height_in": 2.65,
+    "png_dpi": 400,
+    "outside_canvas_text": []
+  },
+  {
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/docs/production/final_hyperparameter_figures_20260916/H2_PLGR/H2",
+    "width_in": 3.5,
+    "height_in": 6.8,
+    "png_dpi": 400,
+    "outside_canvas_text": []
+  },
+  {
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/docs/production/final_hyperparameter_figures_20260916/H2_PLGR/H2_lpips_review",
+    "width_in": 3.5,
+    "height_in": 6.8,
+    "png_dpi": 400,
+    "outside_canvas_text": []
+  },
+  {
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/docs/production/final_hyperparameter_figures_20260916/H3_CGAS/H3",
+    "width_in": 3.5,
+    "height_in": 5.65,
+    "png_dpi": 400,
+    "outside_canvas_text": []
+  },
+  {
+    "path": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/docs/production/final_hyperparameter_figures_20260916/H4_CGAS_population/H4",
+    "width_in": 3.5,
+    "height_in": 3.8,
+    "png_dpi": 400,
+    "outside_canvas_text": []
+  }
+]

@@ -1,0 +1,19 @@
+% Seven columns; two panels in one table.
+\multicolumn{7}{l}{(a) Representative diagnostic comparison} \\
+% Evidence fragment only. Columns: variant, Liver_PSNR, Liver_SSIM, Liver_LPIPS, Arm_PSNR, Arm_SSIM, Arm_LPIPS
+% Quality: bold = raw-value best; underline = raw-value second-best. Display precision follows the existing manuscript: 3 decimals for quality; integer thousands for population. Ranking is descriptive, not significance. Population is unranked.
+MP & 29.452 & 0.660 & \textbf{0.157} & 32.817 & 0.866 & 0.112 \\
+PP-S & 29.641 & 0.667 & \underline{0.182} & \underline{33.033} & \underline{0.869} & \underline{0.110} \\
+PP-A & \textbf{29.680} & \textbf{0.669} & 0.185 & 32.779 & 0.865 & 0.126 \\
+AFGM & \underline{29.648} & \underline{0.667} & 0.182 & \textbf{33.271} & \textbf{0.872} & \textbf{0.108} \\
+
+\hline
+\multicolumn{7}{l}{(b) Multi-sweep MP versus AFGM} \\
+% Dataset & Variant & n & PSNR mean+-std (2 cols) & SSIM mean+-std (2 cols)
+Dataset & Geometry & $n$ & \multicolumn{2}{c}{PSNR$\uparrow$} & \multicolumn{2}{c}{SSIM$\uparrow$} \\
+Liver & MP & 6 & \multicolumn{2}{c}{$29.025 \pm 0.484$} & \multicolumn{2}{c}{$0.635 \pm 0.024$} \\
+Liver & AFGM & 6 & \multicolumn{2}{c}{$29.196 \pm 0.485$} & \multicolumn{2}{c}{$0.640 \pm 0.026$} \\
+Arm & MP & 5 & \multicolumn{2}{c}{$34.125 \pm 0.873$} & \multicolumn{2}{c}{$0.888 \pm 0.015$} \\
+Arm & AFGM & 5 & \multicolumn{2}{c}{$34.638 \pm 0.960$} & \multicolumn{2}{c}{$0.893 \pm 0.015$} \\
+Breast & MP & 5 & \multicolumn{2}{c}{$29.209 \pm 1.127$} & \multicolumn{2}{c}{$0.812 \pm 0.036$} \\
+Breast & AFGM & 5 & \multicolumn{2}{c}{$29.212 \pm 1.130$} & \multicolumn{2}{c}{$0.812 \pm 0.036$} \\

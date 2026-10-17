@@ -1,0 +1,51 @@
+% Evidence-only table bodies; not an edit of any manuscript.
+% Columns: method + six quality metrics + dataset time(s) + dataset FPS.
+% Bold = raw-value best; underline = raw-value second-best. NA is unavailable, never zero.
+% Liver (n=6)
+\multicolumn{9}{l}{Liver ($n=6$)} \\
+% Method & PSNR & L1 & SSIM & LPIPS & DISTS & GMSD & Time(s) & FPS
+UltraNeRF & 21.6785 & 0.0639 & 0.5648 & 0.4529 & 0.2828 & 0.1163 & 546.83 & -- \\
+NeRF-US & 22.0717 & 0.0416 & \underline{0.5971} & 0.7246 & 0.4870 & 0.2075 & 245.83 & -- \\
+UltraGauss & 27.5600 & 0.0299 & 0.5670 & 0.1710 & 0.1418 & 0.1125 & 167.67 & -- \\
+UltraGRay & 27.6580 & 0.0294 & 0.5635 & \textbf{0.1536} & \textbf{0.1256} & 0.1086 & 247.00 & -- \\
+UltraGS & \underline{28.0158} & \underline{0.0292} & 0.5937 & 0.2379 & 0.2009 & \underline{0.1020} & 456.50 & -- \\
+3DGS & 26.7288 & 0.0319 & 0.5725 & 0.2786 & 0.2024 & 0.1277 & 475.33 & -- \\
+GaussianPile & 25.2303 & 0.0390 & 0.4684 & 0.3311 & 0.2293 & 0.1653 & 448.00 & -- \\
+ULGSplat & \textbf{29.0251} & \textbf{0.0250} & \textbf{0.6355} & \underline{0.1567} & \underline{0.1388} & \textbf{0.0987} & 517.41 & 208.56 \\
+\hline
+% Spine (n=9)
+\multicolumn{9}{l}{Spine ($n=9$)} \\
+% Method & PSNR & L1 & SSIM & LPIPS & DISTS & GMSD & Time(s) & FPS
+UltraNeRF & 27.1349 & 0.0195 & 0.6845 & 0.5103 & 0.3316 & 0.2241 & 403.33 & -- \\
+NeRF-US & 27.4567 & 0.0190 & 0.6921 & 0.5551 & 0.3587 & 0.2268 & 422.44 & -- \\
+UltraGauss & 28.2479 & 0.0210 & 0.6264 & 0.2272 & 0.1984 & 0.1485 & 172.56 & -- \\
+UltraGRay & \underline{30.6262} & 0.0157 & \underline{0.7551} & \underline{0.1315} & \textbf{0.1301} & \underline{0.1086} & 160.44 & -- \\
+UltraGS & 30.4708 & \underline{0.0156} & 0.7370 & 0.1868 & 0.2331 & 0.1195 & 340.11 & -- \\
+3DGS & 27.5968 & 0.0215 & 0.7130 & 0.2672 & 0.2555 & 0.1629 & 372.22 & -- \\
+GaussianPile & 28.2243 & 0.0197 & 0.7168 & 0.1789 & 0.2153 & 0.1286 & 384.33 & -- \\
+ULGSplat & \textbf{31.0426} & \textbf{0.0141} & \textbf{0.7969} & \textbf{0.1305} & \underline{0.1568} & \textbf{0.0984} & 509.29 & 201.32 \\
+\hline
+% Arm (n=33)
+\multicolumn{9}{l}{Arm ($n=33$)} \\
+% Method & PSNR & L1 & SSIM & LPIPS & DISTS & GMSD & Time(s) & FPS
+UltraNeRF & 26.3681 & 0.0251 & 0.7954 & 0.2739 & 0.2489 & 0.1018 & 453.79 & -- \\
+NeRF-US & 29.4267 & 0.0168 & 0.8361 & 0.3476 & 0.2885 & 0.0848 & 477.06 & -- \\
+UltraGauss & 31.8598 & 0.0152 & 0.8022 & 0.2010 & 0.1906 & 0.0676 & 175.58 & -- \\
+UltraGRay & 33.8162 & 0.0130 & 0.8324 & 0.1321 & 0.1387 & 0.0576 & 218.09 & -- \\
+UltraGS & 31.4713 & 0.0197 & 0.7955 & 0.1994 & 0.1831 & 0.0731 & 455.64 & -- \\
+3DGS & \underline{33.9551} & \underline{0.0115} & \textbf{0.8894} & \underline{0.1090} & \underline{0.1352} & \underline{0.0454} & 470.39 & -- \\
+GaussianPile & 32.6258 & 0.0139 & 0.8533 & 0.1530 & 0.1421 & 0.0615 & 468.64 & -- \\
+ULGSplat & \textbf{34.1123} & \textbf{0.0111} & \underline{0.8869} & \textbf{0.0998} & \textbf{0.1257} & \textbf{0.0446} & 459.98 & 262.77 \\
+\hline
+% Breast (n=30)
+\multicolumn{9}{l}{Breast ($n=30$)} \\
+% Method & PSNR & L1 & SSIM & LPIPS & DISTS & GMSD & Time(s) & FPS
+UltraNeRF & 19.4499 & 0.0758 & 0.5687 & 0.5692 & 0.2900 & 0.1620 & 447.63 & -- \\
+NeRF-US & 22.0047 & 0.0471 & 0.6503 & 0.5630 & 0.2762 & 0.1529 & 471.17 & -- \\
+UltraGauss & \underline{27.7615} & \underline{0.0252} & 0.7816 & \underline{0.1903} & \underline{0.1802} & 0.0764 & 166.97 & -- \\
+UltraGRay & 27.1599 & 0.0307 & 0.7344 & 0.2723 & 0.2106 & 0.1035 & 163.20 & -- \\
+UltraGS & 26.2911 & 0.0333 & 0.7203 & 0.3513 & 0.2378 & 0.1031 & 425.07 & -- \\
+3DGS & 27.0838 & 0.0274 & \underline{0.7926} & 0.2414 & 0.1995 & \underline{0.0742} & 448.80 & -- \\
+GaussianPile & 26.8541 & 0.0295 & 0.7486 & 0.3262 & 0.2157 & 0.1029 & -- & -- \\
+ULGSplat & \textbf{28.9908} & \textbf{0.0231} & \textbf{0.8085} & \textbf{0.1745} & \textbf{0.1593} & \textbf{0.0647} & 378.76 & 307.43 \\
+\hline

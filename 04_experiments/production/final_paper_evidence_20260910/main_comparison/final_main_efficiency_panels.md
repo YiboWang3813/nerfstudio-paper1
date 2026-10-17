@@ -1,0 +1,18 @@
+| panel | method | training_seconds | fps | precision |
+| --- | --- | --- | --- | --- |
+| synthetic_phantom | UltraNeRF | 475.1 | 315.2 | frozen historical display precision |
+| synthetic_phantom | NeRF-US | 334.1 | 344.9 | frozen historical display precision |
+| synthetic_phantom | UltraGauss | 170.6 | 1269.4 | frozen historical display precision |
+| synthetic_phantom | UltraGRay | 195.1 | 940.4 | frozen historical display precision |
+| synthetic_phantom | UltraGS | 386.7 | 417.5 | frozen historical display precision |
+| synthetic_phantom | 3DGS | 413.5 | 291.4 | frozen historical display precision |
+| synthetic_phantom | GaussianPile | 409.8 | 265.0 | frozen historical display precision |
+| synthetic_phantom | ULGSplat | 513.3454055388769 | 204.9395277003294 | raw stored mean |
+| real | UltraNeRF | 450.7 | 314.7 | frozen historical display precision |
+| real | NeRF-US | 474.2 | 327.1 | frozen historical display precision |
+| real | UltraGauss | 171.5 | 1321.0 | frozen historical display precision |
+| real | UltraGRay | 192.0 | 1190.3 | frozen historical display precision |
+| real | UltraGS | 441.1 | 403.1 | frozen historical display precision |
+| real | 3DGS | 460.1 | 307.4 | frozen historical display precision |
+| real | GaussianPile | 438.2 | 252.7 | frozen historical display precision |
+| real | ULGSplat | 419.371313116406 | 285.0982941747502 | raw stored mean |

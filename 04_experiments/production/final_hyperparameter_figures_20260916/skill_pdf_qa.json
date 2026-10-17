@@ -1,0 +1,38 @@
+[
+  {
+    "figure": "H1_AFGM/H1",
+    "font_exit": 0,
+    "collision_exit": 0,
+    "collision_summary": "Nature Figure Rendered Collision Audit\npdf: /home/boywang25/ultrasound-scene-reconstruction/omniultra/docs/production/final_hyperparameter_figures_20260916/H1_AFGM/H1.pdf\npages: 1\nvisible text boxes: 13\nstroke paths: 40\n\n\nsummary: 0 fail, 0 warn, 0 contained fill overlays, 0 contained image overlays\nverdict: PASS\nnote: contained overlays can be intentional; WARN findings need final-size visual review\n"
+  },
+  {
+    "figure": "H1_AFGM/H1_candidate_B",
+    "font_exit": 0,
+    "collision_exit": 0,
+    "collision_summary": "Nature Figure Rendered Collision Audit\npdf: /home/boywang25/ultrasound-scene-reconstruction/omniultra/docs/production/final_hyperparameter_figures_20260916/H1_AFGM/H1_candidate_B.pdf\npages: 1\nvisible text boxes: 20\nstroke paths: 38\n\n\nsummary: 0 fail, 0 warn, 0 contained fill overlays, 0 contained image overlays\nverdict: PASS\nnote: contained overlays can be intentional; WARN findings need final-size visual review\n"
+  },
+  {
+    "figure": "H2_PLGR/H2",
+    "font_exit": 0,
+    "collision_exit": 0,
+    "collision_summary": "Nature Figure Rendered Collision Audit\npdf: /home/boywang25/ultrasound-scene-reconstruction/omniultra/docs/production/final_hyperparameter_figures_20260916/H2_PLGR/H2.pdf\npages: 1\nvisible text boxes: 56\nstroke paths: 146\n\n\nsummary: 0 fail, 0 warn, 0 contained fill overlays, 0 contained image overlays\nverdict: PASS\nnote: contained overlays can be intentional; WARN findings need final-size visual review\n"
+  },
+  {
+    "figure": "H2_PLGR/H2_lpips_review",
+    "font_exit": 0,
+    "collision_exit": 0,
+    "collision_summary": "Nature Figure Rendered Collision Audit\npdf: /home/boywang25/ultrasound-scene-reconstruction/omniultra/docs/production/final_hyperparameter_figures_20260916/H2_PLGR/H2_lpips_review.pdf\npages: 1\nvisible text boxes: 55\nstroke paths: 144\n\n\nsummary: 0 fail, 0 warn, 0 contained fill overlays, 0 contained image overlays\nverdict: PASS\nnote: contained overlays can be intentional; WARN findings need final-size visual review\n"
+  },
+  {
+    "figure": "H3_CGAS/H3",
+    "font_exit": 0,
+    "collision_exit": 0,
+    "collision_summary": "Nature Figure Rendered Collision Audit\npdf: /home/boywang25/ultrasound-scene-reconstruction/omniultra/docs/production/final_hyperparameter_figures_20260916/H3_CGAS/H3.pdf\npages: 1\nvisible text boxes: 69\nstroke paths: 79\n\n[WARN] page 1 text-fill-edge: Text partially overlaps the edge of 3 filled region(s) \u2014 '+.004\u2212.002\u2212.011'\n  text bbox: (54.80125045776367, 66.63130950927734, 126.65086364746094, 73.63130950927734)\n[WARN] page 1 text-fill-edge: Text partially overlaps the edge of 3 filled region(s) \u2014 '\u2212.004\u2212.008\u2212.006'\n  text bbox: (54.80125045776367, 189.69390869140625, 126.65086364746094, 196.69390869140625)\n[WARN] page 1 text-fill-edge: Text partially overlaps the edge of 3 filled region(s) \u2014 '\u2212.008\u2212.007+.005'\n  text bbox: (54.80125045776367, 234.88433837890625, 126.65086364746094, 241.88433837890625)\n[WARN] page 1 text-fill-edge: Text partially overlaps the edge of 2 filled region(s) \u2014 '\u2212.002+.002'\n  text bbox: (80.00125122070312, 111.82173919677734, 126.65086364746094, 118.82173919677734)\n[WARN] page 1 text-fill-edge: Text partially overlaps the edge of 3 filled region(s) \u2014 '\u2212.002\u2212.004\u2212.005'\n  text bbox: (171.9812469482422, 66.63130950927734, 243.83087158203125, 73.63130950927734)\n[WARN] page 1 text-fill-edge: Text partially overlaps the edge of 2 filled region(s) \u2014 '\u2212.006\u2212.002'\n  text bbox: (171.9812469482422, 89.22652435302734, 218.630859375, 96.22652435302734)\n[WARN] page 1 text-fill-edge: Text partially overlaps the edge of 3 filled region(s) \u2014 '\u2212.003+.007+.006'\n  text bbox: (171.9812469482422, 111.82173919677734, 243.83087158203125, 118.82173919677734)\n[WARN] page 1 text-fill-edge: Text partially overlaps the edge of 3 filled region(s) \u2014 '+.003\u2212.001+.007'\n  text bbox: (171.9812469482422, 189.69390869140625, 243.83087158203125, 196.69390869140625)\n[WARN] page 1 text-fill-edge: Text partially overlaps the edge of 3 filled region(s) \u2014 '+.005+.006+.001'\n  text bbox: (171.9812469482422, 234.88433837890625, 243.83087158203125, 241.88433837890625)\n\nsummary: 0 fail, 9 warn, 31 contained fill overlays, 0 contained image overlays\nverdict: REVIEW REQUIRED\nnote: contained overlays can be intentional; WARN findings need final-size visual review\n"
+  },
+  {
+    "figure": "H4_CGAS_population/H4",
+    "font_exit": 0,
+    "collision_exit": 0,
+    "collision_summary": "Nature Figure Rendered Collision Audit\npdf: /home/boywang25/ultrasound-scene-reconstruction/omniultra/docs/production/final_hyperparameter_figures_20260916/H4_CGAS_population/H4.pdf\npages: 1\nvisible text boxes: 19\nstroke paths: 71\n\n\nsummary: 0 fail, 0 warn, 0 contained fill overlays, 0 contained image overlays\nverdict: PASS\nnote: contained overlays can be intentional; WARN findings need final-size visual review\n"
+  }
+]

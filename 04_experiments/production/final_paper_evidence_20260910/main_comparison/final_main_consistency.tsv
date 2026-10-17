@@ -1,0 +1,43 @@
+category	baseline	metric	wins	ties	losses	consistent_all_four
+NeRF-based	UltraNeRF	psnr	4	0	0	True
+NeRF-based	UltraNeRF	l1	4	0	0	True
+NeRF-based	UltraNeRF	ssim	4	0	0	True
+NeRF-based	UltraNeRF	lpips	4	0	0	True
+NeRF-based	UltraNeRF	dists	4	0	0	True
+NeRF-based	UltraNeRF	gmsd	4	0	0	True
+NeRF-based	NeRF-US	psnr	4	0	0	True
+NeRF-based	NeRF-US	l1	4	0	0	True
+NeRF-based	NeRF-US	ssim	4	0	0	True
+NeRF-based	NeRF-US	lpips	4	0	0	True
+NeRF-based	NeRF-US	dists	4	0	0	True
+NeRF-based	NeRF-US	gmsd	4	0	0	True
+Ultrasound Gaussian	UltraGauss	psnr	4	0	0	True
+Ultrasound Gaussian	UltraGauss	l1	4	0	0	True
+Ultrasound Gaussian	UltraGauss	ssim	4	0	0	True
+Ultrasound Gaussian	UltraGauss	lpips	4	0	0	True
+Ultrasound Gaussian	UltraGauss	dists	4	0	0	True
+Ultrasound Gaussian	UltraGauss	gmsd	4	0	0	True
+Ultrasound Gaussian	UltraGRay	psnr	4	0	0	True
+Ultrasound Gaussian	UltraGRay	l1	4	0	0	True
+Ultrasound Gaussian	UltraGRay	ssim	4	0	0	True
+Ultrasound Gaussian	UltraGRay	lpips	3	0	1	False
+Ultrasound Gaussian	UltraGRay	dists	2	0	2	False
+Ultrasound Gaussian	UltraGRay	gmsd	4	0	0	True
+Ultrasound Gaussian	UltraGS	psnr	4	0	0	True
+Ultrasound Gaussian	UltraGS	l1	4	0	0	True
+Ultrasound Gaussian	UltraGS	ssim	4	0	0	True
+Ultrasound Gaussian	UltraGS	lpips	4	0	0	True
+Ultrasound Gaussian	UltraGS	dists	4	0	0	True
+Ultrasound Gaussian	UltraGS	gmsd	4	0	0	True
+Adapted Gaussian	3DGS	psnr	4	0	0	True
+Adapted Gaussian	3DGS	l1	4	0	0	True
+Adapted Gaussian	3DGS	ssim	3	0	1	False
+Adapted Gaussian	3DGS	lpips	4	0	0	True
+Adapted Gaussian	3DGS	dists	4	0	0	True
+Adapted Gaussian	3DGS	gmsd	4	0	0	True
+Adapted Gaussian	GaussianPile	psnr	4	0	0	True
+Adapted Gaussian	GaussianPile	l1	4	0	0	True
+Adapted Gaussian	GaussianPile	ssim	4	0	0	True
+Adapted Gaussian	GaussianPile	lpips	4	0	0	True
+Adapted Gaussian	GaussianPile	dists	4	0	0	True
+Adapted Gaussian	GaussianPile	gmsd	4	0	0	True

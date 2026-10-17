@@ -1,0 +1,256 @@
+{
+  "pdf": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/docs/production/final_hyperparameter_figures_20260916/H3_CGAS/H3.pdf",
+  "auditable": true,
+  "verdict": "REVIEW REQUIRED",
+  "page_count": 1,
+  "visible_text_box_count": 69,
+  "text_trace_count": 99,
+  "stroke_path_count": 79,
+  "filled_region_count": 347,
+  "image_region_count": 0,
+  "summary": {
+    "fail": 0,
+    "warn": 9,
+    "contained_fill_overlays": 31,
+    "contained_image_overlays": 0
+  },
+  "thresholds": {
+    "text_inset_pt": 0.6,
+    "min_overlap_ratio": 0.05,
+    "clipping_tolerance_pt": 0.5
+  },
+  "findings": [
+    {
+      "severity": "WARN",
+      "kind": "text-fill-edge",
+      "page": 1,
+      "message": "Text partially overlaps the edge of 3 filled region(s)",
+      "text": "+.004−.002−.011",
+      "text_bbox": [
+        54.80125045776367,
+        66.63130950927734,
+        126.65086364746094,
+        73.63130950927734
+      ],
+      "other_text": null,
+      "other_bbox": [
+        52.91999816894531,
+        58.985992431640625,
+        128.52000427246094,
+        81.58120727539062
+      ],
+      "object_count": 3,
+      "object_indexes": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "severity": "WARN",
+      "kind": "text-fill-edge",
+      "page": 1,
+      "message": "Text partially overlaps the edge of 3 filled region(s)",
+      "text": "−.004−.008−.006",
+      "text_bbox": [
+        54.80125045776367,
+        189.69390869140625,
+        126.65086364746094,
+        196.69390869140625
+      ],
+      "other_text": null,
+      "other_bbox": [
+        52.91999816894531,
+        182.048583984375,
+        128.52000427246094,
+        204.643798828125
+      ],
+      "object_count": 3,
+      "object_indexes": [
+        44,
+        45,
+        46
+      ]
+    },
+    {
+      "severity": "WARN",
+      "kind": "text-fill-edge",
+      "page": 1,
+      "message": "Text partially overlaps the edge of 3 filled region(s)",
+      "text": "−.008−.007+.005",
+      "text_bbox": [
+        54.80125045776367,
+        234.88433837890625,
+        126.65086364746094,
+        241.88433837890625
+      ],
+      "other_text": null,
+      "other_bbox": [
+        52.91999816894531,
+        227.239013671875,
+        128.52000427246094,
+        249.83424377441406
+      ],
+      "object_count": 3,
+      "object_indexes": [
+        50,
+        51,
+        52
+      ]
+    },
+    {
+      "severity": "WARN",
+      "kind": "text-fill-edge",
+      "page": 1,
+      "message": "Text partially overlaps the edge of 2 filled region(s)",
+      "text": "−.002+.002",
+      "text_bbox": [
+        80.00125122070312,
+        111.82173919677734,
+        126.65086364746094,
+        118.82173919677734
+      ],
+      "other_text": null,
+      "other_bbox": [
+        78.12000274658203,
+        104.17642211914062,
+        128.52000427246094,
+        126.77163696289062
+      ],
+      "object_count": 2,
+      "object_indexes": [
+        9,
+        10
+      ]
+    },
+    {
+      "severity": "WARN",
+      "kind": "text-fill-edge",
+      "page": 1,
+      "message": "Text partially overlaps the edge of 3 filled region(s)",
+      "text": "−.002−.004−.005",
+      "text_bbox": [
+        171.9812469482422,
+        66.63130950927734,
+        243.83087158203125,
+        73.63130950927734
+      ],
+      "other_text": null,
+      "other_bbox": [
+        170.10000610351562,
+        58.985992431640625,
+        245.6999969482422,
+        81.58120727539062
+      ],
+      "object_count": 3,
+      "object_indexes": [
+        23,
+        24,
+        25
+      ]
+    },
+    {
+      "severity": "WARN",
+      "kind": "text-fill-edge",
+      "page": 1,
+      "message": "Text partially overlaps the edge of 2 filled region(s)",
+      "text": "−.006−.002",
+      "text_bbox": [
+        171.9812469482422,
+        89.22652435302734,
+        218.630859375,
+        96.22652435302734
+      ],
+      "other_text": null,
+      "other_bbox": [
+        170.10000610351562,
+        81.58120727539062,
+        220.5,
+        104.17642211914062
+      ],
+      "object_count": 2,
+      "object_indexes": [
+        26,
+        27
+      ]
+    },
+    {
+      "severity": "WARN",
+      "kind": "text-fill-edge",
+      "page": 1,
+      "message": "Text partially overlaps the edge of 3 filled region(s)",
+      "text": "−.003+.007+.006",
+      "text_bbox": [
+        171.9812469482422,
+        111.82173919677734,
+        243.83087158203125,
+        118.82173919677734
+      ],
+      "other_text": null,
+      "other_bbox": [
+        170.10000610351562,
+        104.17642211914062,
+        245.6999969482422,
+        126.77163696289062
+      ],
+      "object_count": 3,
+      "object_indexes": [
+        29,
+        30,
+        31
+      ]
+    },
+    {
+      "severity": "WARN",
+      "kind": "text-fill-edge",
+      "page": 1,
+      "message": "Text partially overlaps the edge of 3 filled region(s)",
+      "text": "+.003−.001+.007",
+      "text_bbox": [
+        171.9812469482422,
+        189.69390869140625,
+        243.83087158203125,
+        196.69390869140625
+      ],
+      "other_text": null,
+      "other_bbox": [
+        170.10000610351562,
+        182.048583984375,
+        245.6999969482422,
+        204.643798828125
+      ],
+      "object_count": 3,
+      "object_indexes": [
+        65,
+        66,
+        67
+      ]
+    },
+    {
+      "severity": "WARN",
+      "kind": "text-fill-edge",
+      "page": 1,
+      "message": "Text partially overlaps the edge of 3 filled region(s)",
+      "text": "+.005+.006+.001",
+      "text_bbox": [
+        171.9812469482422,
+        234.88433837890625,
+        243.83087158203125,
+        241.88433837890625
+      ],
+      "other_text": null,
+      "other_bbox": [
+        170.10000610351562,
+        227.239013671875,
+        245.6999969482422,
+        249.83424377441406
+      ],
+      "object_count": 3,
+      "object_indexes": [
+        71,
+        72,
+        73
+      ]
+    }
+  ]
+}

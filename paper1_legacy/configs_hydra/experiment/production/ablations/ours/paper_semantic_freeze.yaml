@@ -1,0 +1,17 @@
+# @package _global_
+defaults:
+  - /experiment/production/sensorless/ours_canonical
+  - _self_
+
+experiment:
+  name: paper_semantic_freeze
+  description: P2 Fixed+Full paper-final anchor; formal runs require a separately approved matrix.
+model:
+  slice_render:
+    local_conditioning_mode: fixed
+  offline:
+    density_control:
+      densification_policy: residual_guided
+      pruning_policy: path_aware
+      responsibility:
+        protect_attenuation_mode: path_contribution

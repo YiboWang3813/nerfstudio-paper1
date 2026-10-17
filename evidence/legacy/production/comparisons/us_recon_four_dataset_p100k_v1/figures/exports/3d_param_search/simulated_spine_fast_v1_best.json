@@ -1,0 +1,14 @@
+{
+  "rank_input": 19,
+  "score": 0.8544192292126088,
+  "ncc": 0.8602803999386159,
+  "ssim_like": 0.84353419786431,
+  "max_gaussian_points": 120000,
+  "max_gt_points": 180000,
+  "visible_percentile": 0.0,
+  "gt_visible_percentile": 30.0,
+  "brightness": 1.18,
+  "alpha_gamma": 0.52,
+  "panel_size": 220,
+  "seed": 42
+}

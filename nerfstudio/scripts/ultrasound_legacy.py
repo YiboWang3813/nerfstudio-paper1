@@ -11,13 +11,26 @@ import runpy
 import sys
 
 
-def main():
-    fork = Path(__file__).resolve().parents[2]
-    workspace = Path(os.environ.get('PAPER1_WORKSPACE', str(fork.parent))).resolve()
+def configure_workspace(fork, workspace):
     os.environ.setdefault('TORCH_HOME', str(workspace/'checkpoints/pretrained/torch'))
     legacy = fork/'paper1_legacy'
     if not (legacy/'run.py').is_file():
         raise RuntimeError('Missing preserved Paper1 legacy source: '+str(legacy))
+    ops = workspace/'gsplat/ultrasound_ops'
+    backend_dirs = [p for p in ops.iterdir() if p.is_dir()] if ops.is_dir() else []
+    historical = ops/'old'
+    if historical.is_dir():
+        backend_dirs += [p for p in historical.iterdir() if p.is_dir()]
+    for backend in sorted(backend_dirs):
+        sys.path.insert(0, str(backend))
+    sys.path.insert(0, str(legacy))
+    return legacy
+
+
+def main():
+    fork = Path(__file__).resolve().parents[2]
+    workspace = Path(os.environ.get('PAPER1_WORKSPACE', str(fork.parent))).resolve()
+    legacy = configure_workspace(fork, workspace)
     args = list(sys.argv[1:])
     keys = {arg.lstrip('+').split('=', 1)[0] for arg in args if '=' in arg}
     defaults = {
@@ -29,15 +42,6 @@ def main():
         if key not in keys:
             args.append('{}={}'.format(key, value))
     # Keep arbitrary caller-provided Hydra overrides; do not rewrite old aliases.
-    ops = workspace/'gsplat/ultrasound_ops'
-    backend_dirs = [p for p in ops.iterdir() if p.is_dir()] if ops.is_dir() else []
-    historical = ops/'old'
-    if historical.is_dir():
-        backend_dirs += [p for p in historical.iterdir() if p.is_dir()]
-    # Prefer the migrated source over editable-install links to the old tree.
-    for backend in sorted(backend_dirs):
-        sys.path.insert(0, str(backend))
-    sys.path.insert(0, str(legacy))
     sys.argv = [str(legacy/'run.py')] + args
     os.chdir(str(legacy))
     runpy.run_path(str(legacy/'run.py'), run_name='__main__')

@@ -42,7 +42,15 @@ def dispatch():
         import pytest
 
         raise SystemExit(
-            pytest.main(["-o", "addopts=", str(Path(__file__).resolve().parents[2] / "tests/ultrasound"), *remaining])
+            pytest.main(
+                [
+                    "-o",
+                    "addopts=",
+                    str(Path(__file__).resolve().parents[2] / "tests/ultrasound"),
+                    str(Path(__file__).resolve().parents[3] / "gsplat/tests/test_ultrasound.py"),
+                    *remaining,
+                ]
+            )
         )
     if args.command in ("prepare", "preflight"):
         from nerfstudio.scripts import ultrasound_prepare

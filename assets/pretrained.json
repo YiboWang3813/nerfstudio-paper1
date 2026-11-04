@@ -1,0 +1,26 @@
+[
+  {
+    "path": "pretrained/torch/hub/checkpoints/DISTS_weights-f5e65c96.pth",
+    "size_bytes": 12288,
+    "sha256": "f5e65c96230b7f6ca995691647d482237e4cab8a50c5c4a5784f219ef0748218",
+    "source": "/home/boywang25/.cache/torch/hub/checkpoints/DISTS_weights-f5e65c96.pth"
+  },
+  {
+    "path": "pretrained/torch/hub/checkpoints/LPIPS_v0.1_alex-df73285e.pth",
+    "size_bytes": 6009,
+    "sha256": "df73285e35b22355a2df87cdb6b70b343713b667eddbda73e1977e0c860835c0",
+    "source": "/home/boywang25/.cache/torch/hub/checkpoints/LPIPS_v0.1_alex-df73285e.pth"
+  },
+  {
+    "path": "pretrained/torch/hub/checkpoints/alexnet-owt-7be5be79.pth",
+    "size_bytes": 244408911,
+    "sha256": "7be5be791159472b1fbf3c69796f7cb30dca7ad8466c2df70058c37116cdee02",
+    "source": "/home/boywang25/.cache/torch/hub/checkpoints/alexnet-owt-7be5be79.pth"
+  },
+  {
+    "path": "pretrained/torch/hub/checkpoints/vgg16-397923af.pth",
+    "size_bytes": 553433881,
+    "sha256": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0",
+    "source": "/home/boywang25/.cache/torch/hub/checkpoints/vgg16-397923af.pth"
+  }
+]

@@ -1,14 +1,12 @@
 """Contract tests: geometry, split leakage, payload identity and sampler resume."""
 
-import hashlib
 import json
 
-import numpy as np
 import pytest
 import torch
 
-from nerfstudio.data.dataparsers.ultrasound_dataparser import UltrasoundDataParserConfig
 from nerfstudio.data.datamanagers.ultrasound_datamanager import UltrasoundDataManagerConfig
+from nerfstudio.data.dataparsers.ultrasound_dataparser import UltrasoundDataParserConfig
 
 
 def test_geometry_and_values(manifest):

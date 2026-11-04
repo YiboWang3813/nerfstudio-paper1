@@ -10,7 +10,9 @@
 - Use ../bin/paper1 to enforce project source routing and the selected toolchain.
 - Use the shared Python/Torch stack through ../.venv. No duplicated Torch/CUDA.
 - Local GPU tests use an available RTX4090 directly; Slurm applies only on eehpc.
-- Weights, historical manuscripts and figures are deferred by the user.
+- Historical checkpoints are deferred pending controlled probes and selection.
+- Historical docs/results may be curated; preserve their original experiment identities.
+- Protocol assets belong in this repository, not a sibling protocol project.
 - The ultrasound-dev method is an engineering preset, not an accepted paper run.
 
 Development branch: `paper1/main`; upstream base: `v1.1.5`.

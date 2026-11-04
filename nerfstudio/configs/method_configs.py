@@ -18,15 +18,19 @@ Put all the method implementations in one location.
 
 from __future__ import annotations
 
+import json
 from collections import OrderedDict
+from pathlib import Path
 from typing import Dict, Union
 
 import tyro
 
 from nerfstudio.cameras.camera_optimizers import CameraOptimizerConfig
 from nerfstudio.configs.base_config import ViewerConfig
-from nerfstudio.configs.ultrasound import ultrasound_config
 from nerfstudio.configs.external_methods import ExternalMethodDummyTrainerConfig, get_external_methods
+from nerfstudio.configs.ultrasound import ultrasound_config
+from nerfstudio.configs.ultrasound_baselines import GAUSSIAN_METHODS, baseline_config, field_config
+from nerfstudio.configs.ultrasound_protocol import ours_config
 from nerfstudio.data.datamanagers.base_datamanager import VanillaDataManager, VanillaDataManagerConfig
 from nerfstudio.data.datamanagers.full_images_datamanager import FullImageDatamanagerConfig
 from nerfstudio.data.datamanagers.parallel_datamanager import ParallelDataManagerConfig
@@ -67,6 +71,11 @@ from nerfstudio.plugins.registry import discover_methods
 
 method_configs: Dict[str, Union[TrainerConfig, ExternalMethodDummyTrainerConfig]] = {}
 method_configs["ultrasound-dev"] = ultrasound_config()
+method_configs['ultrasound-ours']=ours_config(json.loads((Path(__file__).parent/'ultrasound_protocols/ours.json').read_text())['model'])
+for _method in GAUSSIAN_METHODS:
+    method_configs['ultrasound-'+_method]=baseline_config(_method)
+for _method in ('nerfus','ultranerf'):
+    method_configs['ultrasound-'+_method]=field_config(_method)
 descriptions = {
     "nerfacto": "Recommended real-time model tuned for real captures. This model will be continually updated.",
     "nerfacto-huge": "Larger version of Nerfacto with higher quality.",

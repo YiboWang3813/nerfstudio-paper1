@@ -25,6 +25,7 @@ class UltrasoundDataParserConfig(DataParserConfig):
     canonical_spacing_mm: float = 0.0
     canonical_axis: Literal["x", "y", "z"] = "z"
     canonical_reference_frame_id: int = 0
+    pose_validation: Literal["rigid", "preserve_source_affine"] = "rigid"
 
 
 class UltrasoundDataParser(DataParser):
@@ -32,6 +33,8 @@ class UltrasoundDataParser(DataParser):
 
     def _generate_dataparser_outputs(self, split="train"):
         path = self.config.data.resolve()
+        if self.config.pose_validation not in ('rigid','preserve_source_affine'):
+            raise ValueError('Unknown pose validation mode')
         manifest = json.loads(path.read_text())
         if manifest.get("schema_version") != 1 or manifest.get("pose_convention") != "probe_to_world_mm":
             raise ValueError("Expected schema_version=1 and pose_convention=probe_to_world_mm.")
@@ -94,10 +97,11 @@ class UltrasoundDataParser(DataParser):
         if (
             not torch.isfinite(probe_poses).all()
             or not torch.allclose(probe_poses[:, 3], torch.tensor([0.0, 0.0, 0.0, 1.0]).expand(len(indices), 4))
-            or not torch.allclose(
+            or (self.config.pose_validation == 'rigid' and not torch.allclose(
                 rotation.transpose(-1, -2) @ rotation, torch.eye(3).expand(len(indices), 3, 3), atol=1e-4
-            )
-            or not torch.allclose(torch.linalg.det(rotation), torch.ones(len(indices)), atol=1e-4)
+            ))
+            or (self.config.pose_validation == 'rigid' and not torch.allclose(torch.linalg.det(rotation), torch.ones(len(indices)), atol=1e-4))
+            or torch.any(torch.linalg.det(rotation) <= 1e-6)
         ):
             raise ValueError("Poses must be finite rigid homogeneous probe-to-world transforms.")
         # Camera axes right/up/back correspond to probe lateral/-axial/-elevational.
@@ -128,6 +132,10 @@ class UltrasoundDataParser(DataParser):
         low, high = world.amin((0, 1)), world.amax((0, 1))
         padding = max(float(geometry["elevational_spacing_mm"]), 1e-3)
         metadata = {
+            "probe_poses": probe_poses,
+            "pose_validation": self.config.pose_validation,
+            "source_rotation_orthogonality_max_error": float((rotation.transpose(-1,-2)@rotation-torch.eye(3)).abs().max()),
+            "scene_radius_mm": float(((torch.ceil((high+(high-low)*.05)/4)*4)-(torch.floor((low-(high-low)*.05)/4)*4)).norm()/2),
             "geometry": geometry,
             "images_path": str((root / selected["images"]["path"]).resolve()),
             "array_indices": indices.tolist(),
@@ -142,6 +150,7 @@ class UltrasoundDataParser(DataParser):
             "canonical_spacing_mm": self.config.canonical_spacing_mm,
             "canonical_axis": self.config.canonical_axis,
             "canonical_reference_frame_id": self.config.canonical_reference_frame_id,
+            "pose_validation": self.config.pose_validation,
         }
         metadata["parser_identity_sha256"] = hashlib.sha256(
             json.dumps(parser_identity, sort_keys=True).encode()

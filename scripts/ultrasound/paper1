@@ -6,9 +6,14 @@ export PATH="$paper1_root/.venv/bin:/home/yibo/shared/envs/torch251-cu124-py311/
 export CC=/usr/bin/gcc CXX=/usr/bin/g++
 export TORCH_CUDA_ARCH_LIST=8.9
 export MAX_JOBS="${MAX_JOBS:-2}"
+export OMP_NUM_THREADS="${OMP_NUM_THREADS:-4}"
+export MKL_NUM_THREADS="${MKL_NUM_THREADS:-4}"
+export TORCHINDUCTOR_COMPILE_THREADS=1
+export TORCHINDUCTOR_CACHE_DIR=/home/yibo/shared/cache/torchinductor/paper1
 export TORCH_EXTENSIONS_DIR=/home/yibo/shared/cache/torch_extensions/paper1
 export UV_CACHE_DIR=/home/yibo/shared/cache/uv
 export HF_HOME=/home/yibo/shared/cache/huggingface
+export TORCH_HOME=/home/yibo/shared/models/torchvision
 export MPLCONFIGDIR=/home/yibo/shared/cache/matplotlib
 export PYTHONNOUSERSITE=1
 unset PYTHONPATH

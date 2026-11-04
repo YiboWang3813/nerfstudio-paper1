@@ -1,0 +1,76 @@
+"""Serializable native method dataclasses; physical values retain source units."""
+
+from dataclasses import dataclass, field as dc_field
+
+
+@dataclass
+class FieldConfig:
+    depth: int = 8
+    width: int = 128
+    pe_num_freqs: int = 10
+    include_input: bool = True
+    skip_layer: int = 4
+    use_viewdirs: bool = False
+    alpha_activation: str = "abs"
+    alpha_bias_init: float = 0.0
+
+
+@dataclass
+class RayConfig:
+    coordinate_unit: str = "mm"
+    coordinate_scale: float = 100.0
+    train_patch_height: int = 128
+    train_patch_width: int = 128
+    eval_chunk_size: int = 65536
+
+
+@dataclass
+class RenderConfig:
+    boundary_sampling_mode: str = "bernoulli"
+    scatter_sampling_mode: str = "bernoulli"
+    eval_render_mode: str = "mc_average"
+    eval_mc_samples: int = 4
+    eval_seed: int = 20260530
+    eval_save_stochastic: bool = True
+    enable_psf: bool = True
+    psf_kernel_size: int = 7
+    psf_sigma_lateral: float = 2.0
+    psf_sigma_axial: float = 1.0
+    attenuation_scale: float = 0.01
+    alpha_max: float = 0.0
+    boundary_attenuation_scale: float = 1.0
+    reflection_gain: float = 1.0
+    eps: float = 1e-06
+    output_mode: str = "clamp"
+    output_gain: float = 1.0
+    relaxed_temperature: float = 0.1
+
+
+@dataclass
+class SolverConfig:
+    optimizer: str = "adam"
+    lr: float = 0.0001
+    lr_decay_steps: int = 250000
+    lr_decay_rate: float = 0.1
+
+
+@dataclass
+class OfflineConfig_DiagnosticsConfig:
+    enable_render_stats: bool = True
+    train_step: int = 100
+    save_debug_maps: bool = True
+
+
+@dataclass
+class OfflineConfig:
+    diagnostics: OfflineConfig_DiagnosticsConfig = dc_field(default_factory=OfflineConfig_DiagnosticsConfig)
+
+
+@dataclass
+class ModelConfig:
+    name: str = "ultranerf"
+    field: FieldConfig = dc_field(default_factory=FieldConfig)
+    ray: RayConfig = dc_field(default_factory=RayConfig)
+    render: RenderConfig = dc_field(default_factory=RenderConfig)
+    solver: SolverConfig = dc_field(default_factory=SolverConfig)
+    offline: OfflineConfig = dc_field(default_factory=OfflineConfig)

@@ -82,9 +82,11 @@ def prepare(sweep: Path, dataset: str, version: str, source_manifest: Path, *, t
     if output.exists() and json.loads(output.read_text()) != value:
         raise ValueError("Refusing to overwrite an existing different dataset manifest; create a new version.")
     output.write_text(json.dumps(value, indent=2) + "\n")
-    (sweep / "publication.json").write_text(
-        json.dumps({"status": "unpublished_local_working_copy", "disposable": False, "r2_requests": 0}, indent=2) + "\n"
-    )
+    if not (sweep / "publication.json").exists():
+        (sweep / "publication.json").write_text(
+            json.dumps({"status": "unpublished_local_working_copy", "disposable": False, "r2_requests": 0}, indent=2)
+            + "\n"
+        )
     return output
 
 
@@ -94,5 +96,6 @@ if __name__ == "__main__":
     parser.add_argument("--dataset", choices=GEOMETRY, required=True)
     parser.add_argument("--version", required=True)
     parser.add_argument("--source-manifest", type=Path, required=True)
+    parser.add_argument("--trim", type=int, default=10)
     args = parser.parse_args()
-    print(prepare(args.sweep.resolve(), args.dataset, args.version, args.source_manifest.resolve()))
+    print(prepare(args.sweep.resolve(), args.dataset, args.version, args.source_manifest.resolve(), trim=args.trim))

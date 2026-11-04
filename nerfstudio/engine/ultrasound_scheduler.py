@@ -14,6 +14,8 @@ class UltrasoundExponentialSchedulerConfig(SchedulerConfig):
     _target: Type = field(default_factory=lambda: UltrasoundExponentialScheduler)
     final_factor: float = 0.1
     max_steps: int = 30000
+    first_update: int = 1
+    clamp_at_final: bool = True
 
 
 class UltrasoundExponentialScheduler(Scheduler):
@@ -23,7 +25,8 @@ class UltrasoundExponentialScheduler(Scheduler):
             raise ValueError("Invalid ultrasound exponential schedule.")
 
         def factor(step):
-            t = np.clip((step + 1) / cfg.max_steps, 0, 1)
+            t = (step+cfg.first_update)/cfg.max_steps
+            if cfg.clamp_at_final:t=np.clip(t,0,1)
             return float(np.exp(np.log(lr_init) * (1 - t) + np.log(lr_init * cfg.final_factor) * t) / lr_init)
 
         return LambdaLR(optimizer, factor)

@@ -27,6 +27,7 @@ def main():
             subprocess.run([str(shared / "bin/python"), "-m", "venv", "--without-pip", str(local)], check=True)
         site = local / "lib/python3.11/site-packages"
         (site / "readonly-shared-runtime.pth").write_text(
+            'import site; site.addsitedir("/home/yibo/shared/envs/overlays/iqa017-torch251")\n'
             f'import site; site.addsitedir("{shared}/lib/python3.11/site-packages")\n'
         )
         environment = dict(os.environ, BUILD_NO_CUDA="1", UV_CACHE_DIR="/home/yibo/shared/cache/uv")

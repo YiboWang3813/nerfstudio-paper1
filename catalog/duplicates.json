@@ -1,0 +1,3202 @@
+[
+  {
+    "sha256": "2d67bfe0f0d1402eb944357e4edcfd24ec5d22e2c28cd79d69df9d35cd488928",
+    "paths": [
+      "archive/eehpc-20261017/01_problem_and_methods/ours/introductions.md",
+      "archive/eehpc-20261017/05_manuscript/legacy_writing/methods_writing_package/source_snapshot/docs/methods/ours/introductions.md"
+    ]
+  },
+  {
+    "sha256": "8d58fbc4d10051295542b762a2b107797529d4773b1e081b2ca08ef7cbefd974",
+    "paths": [
+      "archive/eehpc-20261017/01_problem_and_methods/ours/methods.md",
+      "archive/eehpc-20261017/05_manuscript/legacy_writing/methods_writing_package/source_snapshot/docs/methods/ours/methods.md"
+    ]
+  },
+  {
+    "sha256": "bc132bd074c7ea7988fca21bc9639b02b577398ed1c4fd005433f70f5e388661",
+    "paths": [
+      "archive/eehpc-20261017/01_problem_and_methods/ours/validated_paper_innovations.md",
+      "archive/eehpc-20261017/05_manuscript/legacy_writing/methods_writing_package/source_snapshot/docs/methods/ours/validated_paper_innovations.md"
+    ]
+  },
+  {
+    "sha256": "f35ca35dd8c52f7771cf9f0d853ea37c6d96497fb66a6c92bdfdda5254c06ee9",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/ablation_final_outputs/2d_ablation_figure_config.md",
+      "archive/eehpc-20261017/05_manuscript/legacy_writing/methods_writing_package/source_snapshot/docs/production/ablation_final_outputs/2d_ablation_figure_config.md"
+    ]
+  },
+  {
+    "sha256": "86c7cef505e9da66efa44f48e9b23531ca772eae4d690979437e67304f679eca",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/ablation_final_outputs/figures/paper_ablation_internal_visual.png",
+      "archive/eehpc-20261017/05_manuscript/legacy_writing/methods_writing_package/paper_assets/paper_ablation_internal_visual.png"
+    ]
+  },
+  {
+    "sha256": "9bba8df9ff59431a59482851e660f6576cbc86b5c9db4c49f737f94048a9fe39",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/ablation_final_outputs/figures/paper_ablation_joint_visual.png",
+      "archive/eehpc-20261017/05_manuscript/legacy_writing/methods_writing_package/paper_assets/paper_ablation_joint_visual.png"
+    ]
+  },
+  {
+    "sha256": "144458d9b37d8757c886e7ea42b62398c895869be6e21e13db3763ff716b573c",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/ablation_final_outputs/figures/paper_dc_parameter_sensitivity.png",
+      "archive/eehpc-20261017/05_manuscript/legacy_writing/methods_writing_package/paper_assets/paper_dc_parameter_sensitivity.png"
+    ]
+  },
+  {
+    "sha256": "94e686af116e4c0da83297f8686174fbc6ed2d317db07f68a81b9a6d66172cfa",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/ablation_final_outputs/figures/paper_easy_pose_rho_sensitivity.png",
+      "archive/eehpc-20261017/05_manuscript/legacy_writing/methods_writing_package/paper_assets/paper_easy_pose_rho_sensitivity.png"
+    ]
+  },
+  {
+    "sha256": "040659759cf70cbcd52f7af6a26c8dcf3aea330f6eec4a36cb6b112e58c98e80",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/ablation_final_outputs/figures/paper_renderer_parameter_sensitivity.png",
+      "archive/eehpc-20261017/05_manuscript/legacy_writing/methods_writing_package/paper_assets/paper_renderer_parameter_sensitivity.png"
+    ]
+  },
+  {
+    "sha256": "9923d065469d60e94f4eda2a87ae554288059c8cc1eb52150764a883389e724b",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/ablation_final_outputs/manifests/paper_ablation_internal_visual_manifest.json",
+      "archive/eehpc-20261017/05_manuscript/legacy_writing/methods_writing_package/source_snapshot/docs/production/ablation_final_outputs/manifests/paper_ablation_internal_visual_manifest.json"
+    ]
+  },
+  {
+    "sha256": "4e8be2dce7aa0c58e66af2fd148f5ae943155f2dc4278e267ed3db4edbc3d4dd",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/ablation_final_outputs/manifests/paper_ablation_joint_visual_manifest.json",
+      "archive/eehpc-20261017/05_manuscript/legacy_writing/methods_writing_package/source_snapshot/docs/production/ablation_final_outputs/manifests/paper_ablation_joint_visual_manifest.json"
+    ]
+  },
+  {
+    "sha256": "3bbde4090271419a759b28298d10ae9be3f35812a7e62fddbaed3972646bfb27",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/ablation_final_outputs/manifests/paper_dc_parameter_sensitivity_manifest.json",
+      "archive/eehpc-20261017/05_manuscript/legacy_writing/methods_writing_package/source_snapshot/docs/production/ablation_final_outputs/manifests/paper_dc_parameter_sensitivity_manifest.json"
+    ]
+  },
+  {
+    "sha256": "9c0078217310461f5a033fd72fca0f1c1c21844d62a1b383897c538282e81a78",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/ablation_final_outputs/manifests/paper_easy_pose_rho_sensitivity_manifest.json",
+      "archive/eehpc-20261017/05_manuscript/legacy_writing/methods_writing_package/source_snapshot/docs/production/ablation_final_outputs/manifests/paper_easy_pose_rho_sensitivity_manifest.json"
+    ]
+  },
+  {
+    "sha256": "7b5f8ac3a31029fab86d24f111ee3cdce7706d047748f89a2f637e3c3f91e6a8",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/ablation_final_outputs/manifests/paper_renderer_parameter_sensitivity_manifest.json",
+      "archive/eehpc-20261017/05_manuscript/legacy_writing/methods_writing_package/source_snapshot/docs/production/ablation_final_outputs/manifests/paper_renderer_parameter_sensitivity_manifest.json"
+    ]
+  },
+  {
+    "sha256": "0af96a2ebcf1c1de9af5600a001b3c83575797290d47aeb0573bb14518f8e893",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/comparison_final_outputs/2d_rendering_figure_config.md",
+      "archive/eehpc-20261017/05_manuscript/legacy_writing/methods_writing_package/source_snapshot/docs/production/comparison_final_outputs/2d_rendering_figure_config.md"
+    ]
+  },
+  {
+    "sha256": "adcd674722f9e6d8ca1cf6a40069d49c9b1b6f4a97304f93f7851eafb868cdc8",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/comparison_final_outputs/3d_visualization_ablation_notes.md",
+      "archive/eehpc-20261017/05_manuscript/legacy_writing/methods_writing_package/source_snapshot/docs/production/comparison_final_outputs/3d_visualization_ablation_notes.md"
+    ]
+  },
+  {
+    "sha256": "9a489b5df514648f873d78b75a30d0c6c570ae1da53c3fc5cb294cc971cf8934",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/comparison_final_outputs/figures/paper_real_2d_rendering.png",
+      "archive/eehpc-20261017/05_manuscript/legacy_writing/methods_writing_package/paper_assets/paper_real_2d_rendering.png"
+    ]
+  },
+  {
+    "sha256": "c9df035c1b4a5197040fdeebc8299eb1ebb6aabe544ca116255df13e486a0f82",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/comparison_final_outputs/figures/paper_simulated_2d_rendering.png",
+      "archive/eehpc-20261017/05_manuscript/legacy_writing/methods_writing_package/paper_assets/paper_simulated_2d_rendering.png"
+    ]
+  },
+  {
+    "sha256": "6b1e0ce15a2ca3f47b408936e07322d391e98744390675479ed30272062eb9f6",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/comparison_final_outputs/manifests/paper_real_2d_rendering_manifest.json",
+      "archive/eehpc-20261017/05_manuscript/legacy_writing/methods_writing_package/source_snapshot/docs/production/comparison_final_outputs/manifests/paper_real_2d_rendering_manifest.json"
+    ]
+  },
+  {
+    "sha256": "28518522669bb42b34b336b14a20edacde419119a7e4679708473066f8dbd386",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/comparison_final_outputs/manifests/paper_simulated_2d_rendering_manifest.json",
+      "archive/eehpc-20261017/05_manuscript/legacy_writing/methods_writing_package/source_snapshot/docs/production/comparison_final_outputs/manifests/paper_simulated_2d_rendering_manifest.json"
+    ]
+  },
+  {
+    "sha256": "882d01c4f5729b34537a555772e6ea20c4eabfd645f94d6ccd569b644d7557c4",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/comparison_final_outputs/quantitative_tabs.md",
+      "archive/eehpc-20261017/05_manuscript/legacy_writing/methods_writing_package/source_snapshot/docs/production/comparison_final_outputs/quantitative_tabs.md"
+    ]
+  },
+  {
+    "sha256": "7da56ef9e7af67af1bff105dd8086c36dd45ab4de42384277379f53f632c5dff",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/final_hyperparameter_figures_20260916/H1_AFGM/H1.pdf",
+      "archive/eehpc-20261017/04_experiments/production/final_hyperparameter_figures_20260916/H1_AFGM/H1_candidate_A.pdf"
+    ]
+  },
+  {
+    "sha256": "24c99a4d7b50348a42253140626d4b127fc190bd062755fd262b1a916eda074b",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/final_hyperparameter_figures_20260916/H1_AFGM/H1.png",
+      "archive/eehpc-20261017/04_experiments/production/final_hyperparameter_figures_20260916/H1_AFGM/H1_candidate_A.png"
+    ]
+  },
+  {
+    "sha256": "70ac66908c06c813f8ad584d426456e4cb366a0b5c317c93f4502f7029d3ed19",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/final_hyperparameter_figures_20260916/H1_AFGM/H1_candidate_A_size_review.png",
+      "archive/eehpc-20261017/04_experiments/production/final_hyperparameter_figures_20260916/H1_AFGM/H1_size_review.png"
+    ]
+  },
+  {
+    "sha256": "916fb568645409a6f38b3bbd50f92e848ffbac322efcb08093a23cbcb45ce5a2",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/final_hyperparameter_figures_20260916/H2_PLGR/H2.alignment.json",
+      "archive/eehpc-20261017/04_experiments/production/final_hyperparameter_figures_20260916/H2_PLGR/H2_lpips_review.alignment.json"
+    ]
+  },
+  {
+    "sha256": "57f40a8f734e07f0201adcd665050378cb2e9cb31a9f74b11e5273c20b7a8084",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/final_hyperparameter_figures_20260916/H2_PLGR/H2.alignment.svg",
+      "archive/eehpc-20261017/04_experiments/production/final_hyperparameter_figures_20260916/H2_PLGR/H2_lpips_review.alignment.svg"
+    ]
+  },
+  {
+    "sha256": "5d6235ed0a81d0466dd94fd0912e84111185a1b6e2b7db009cc8c0c5b11fd807",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/final_hyperparameter_figures_20260916/H3_CGAS/selection_behavior_audit.tsv",
+      "archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/cga/selection_behavior_summary.tsv"
+    ]
+  },
+  {
+    "sha256": "3d627feca6689236644f166d41a07b6981b87be7c3dcc32ddf3fc5de0ef165a9",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/final_hyperparameter_figures_20260916/ieee_tmi_endo_style/H1_AFGM_plotted_data.tsv",
+      "archive/eehpc-20261017/04_experiments/production/final_hyperparameter_figures_20260916/ieee_tmi_final/H1_AFGM_plotted_data.tsv"
+    ]
+  },
+  {
+    "sha256": "c488bfd92bf4b7209f8623722be3e32bb408df43ed4155d463c98bb23f7a1bda",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/final_hyperparameter_figures_20260916/ieee_tmi_endo_style/H2_PLGR_plotted_data.tsv",
+      "archive/eehpc-20261017/04_experiments/production/final_hyperparameter_figures_20260916/ieee_tmi_final/H2_PLGR_plotted_data.tsv"
+    ]
+  },
+  {
+    "sha256": "5348f3af07fc466f1ee0fb1637673482e3a69d0fdb8b0871341c856a31de9de2",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/final_hyperparameter_figures_20260916/ieee_tmi_endo_style/H3_CGAS_plotted_data.tsv",
+      "archive/eehpc-20261017/04_experiments/production/final_hyperparameter_figures_20260916/ieee_tmi_final/H3_CGAS_plotted_data.tsv"
+    ]
+  },
+  {
+    "sha256": "c2bf6884eae68271ed65bd9b44cf0da2bbb51cd10ac43ae945cf6ef4263ed923",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/baseline_sources.json",
+      "archive/eehpc-20261017/04_experiments/production/p1_paper_protocol_freeze/legacy_main_selected_rows.json"
+    ]
+  },
+  {
+    "sha256": "b8d57540c536e1b093ba49db83cba9b0b2fd44e59d28ed06ccdc424779faf26d",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/batch2_exact_matrix.json",
+      "archive/eehpc-20261017/04_experiments/production/p2_batch2_final/batch2_exact_matrix.json"
+    ]
+  },
+  {
+    "sha256": "4d6e6ecd200a34999dcbba74a3665428eb0b980d80a99c8559c538166b6768a6",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/final_refresh_matrix.json",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/final_refresh_matrix.json"
+    ]
+  },
+  {
+    "sha256": "7b64dfc47e16970aba594d560ab9d5a2749878dc9b0f50a5225662d3bf38e2f0",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/paper_final_dataset_protocol.tsv",
+      "archive/eehpc-20261017/04_experiments/production/p1_paper_protocol_freeze/paper_final_dataset_protocol.tsv"
+    ]
+  },
+  {
+    "sha256": "52e5f3b3eb7bc87ea3efc6d9000ea30521e9b2e24d85564e5112b9ffcfef2196",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/paper_final_metric_protocol.md",
+      "archive/eehpc-20261017/04_experiments/production/p1_paper_protocol_freeze/paper_final_metric_protocol.md"
+    ]
+  },
+  {
+    "sha256": "b34d16d2c0462c4550b9a888eb6a50e7a1f2225cb3adcbc165de241918b006f8",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/hyperparameter_h2_001.yaml",
+      "archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_009.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fps_rebuild/exact_configs/fr_002.yaml"
+    ]
+  },
+  {
+    "sha256": "9f2707b5ac5a7e16307a775ee3bc2dcd956527d3c0cca7dfeeafcab23a191c70",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/hyperparameter_h2_035.yaml",
+      "archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_048.yaml"
+    ]
+  },
+  {
+    "sha256": "8ccb5901a449037c04e503045dc24a5c3934d4dd955badfeef663833f638ee95",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_001.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fps_rebuild/exact_configs/fr_000.yaml"
+    ]
+  },
+  {
+    "sha256": "8d095c45b764efb98f9c74d2c28ee0909a0948243362afe5627fb107157875b6",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_004.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fps_rebuild/exact_configs/fr_001.yaml"
+    ]
+  },
+  {
+    "sha256": "f5c3b164c50dfdf436208d446bad5759cc7bcb135a0ffb6aa1b0fa7f70e3f061",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_011.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fps_rebuild/exact_configs/fr_003.yaml"
+    ]
+  },
+  {
+    "sha256": "f1c0918bdcadfaeed907fd52c32b07d1b7c56384a2e4858cf36d0608f191fdb3",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_016.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fps_rebuild/exact_configs/fr_004.yaml"
+    ]
+  },
+  {
+    "sha256": "d5efbb238fee17cedeff3e5d2335b9a2634111edf8692f690c016183b53213bb",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_031.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fps_rebuild/exact_configs/fr_005.yaml"
+    ]
+  },
+  {
+    "sha256": "289db5e3206b5ccd06de809c4804315e26f2febf63292415b494856fc4cc0f67",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_056.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fps_rebuild/exact_configs/fr_006.yaml"
+    ]
+  },
+  {
+    "sha256": "45ec131d1631570a09d5cbd2eecb288b69c6b53997af4aa2dd89b90cdbf6b963",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_062.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fps_rebuild/exact_configs/fr_007.yaml"
+    ]
+  },
+  {
+    "sha256": "5b174768a07d92d7d437091e64fb00ef9f7f37d1d8bf86f15862e7337e4f51cc",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/main/final_fps.tsv",
+      "archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/main/final_main_fixed_efficiency_datasets.tsv"
+    ]
+  },
+  {
+    "sha256": "9fa7674f54a3a5c99d74d93d77412a1fc5fd325837e8bf27e97cc6f26d4f08a2",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/qualitative/contact_sheet_manifest.json",
+      "archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/qualitative/contact_sheets/manifest.json"
+    ]
+  },
+  {
+    "sha256": "480a8a37d8f229c4ea53f1c4e2014fb4189353967c16141b0936fcde867fa5a1",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/qualitative/qualitative_integrity_checks.json",
+      "archive/eehpc-20261017/04_experiments/production/p2_batch2_final/qualitative_integrity_checks.json"
+    ]
+  },
+  {
+    "sha256": "ef8d6bdc8136ab3d43ba5c020df9c619113a7255eaf583705eac26fb5299111b",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/multi_comparisons.md",
+      "archive/eehpc-20261017/05_manuscript/legacy_writing/methods_writing_package/source_snapshot/docs/production/multi_comparisons.md"
+    ]
+  },
+  {
+    "sha256": "87ec8654ce1f4f942f47fb2084c650786f854935d0c41a0d652542ed940e6380",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/ours_ablations.md",
+      "archive/eehpc-20261017/05_manuscript/legacy_writing/methods_writing_package/source_snapshot/docs/production/ours_ablations.md"
+    ]
+  },
+  {
+    "sha256": "9d5f80c04da298c393f6b61f300a1ac50de118db88b13d18c9d9bb50c935273b",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_000.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_000.yaml"
+    ]
+  },
+  {
+    "sha256": "f6296744bc136f4273608ee47faf7270762b310114a74a261f94c007247633b4",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_001.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_001.yaml"
+    ]
+  },
+  {
+    "sha256": "b2639b8a186b71492c5f663e57483cb091a00835a644a062be1dc882fb6f8070",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_002.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_002.yaml"
+    ]
+  },
+  {
+    "sha256": "54269f19adbfc5f980459fc7b368a342e83e355e07549b921db0179f46af2a65",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_003.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_003.yaml"
+    ]
+  },
+  {
+    "sha256": "5756f450c0258aaa867bde52d7c22d946c8fff700863c5ffb1d8bde9ac913b90",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_004.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_004.yaml"
+    ]
+  },
+  {
+    "sha256": "a55ba743cfdef6b5f03c2eaee9e3854146f9ce276cdbfaf419ce6ad55f88007a",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_005.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_005.yaml"
+    ]
+  },
+  {
+    "sha256": "b5f32e993379d0a14b16a2a6d7628fed46310fd7c519ca6d8b5be6b850ed6bc7",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_006.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_006.yaml"
+    ]
+  },
+  {
+    "sha256": "79d8b9e0ff3c578f63da4d01950f1335ed6dd970fea1c7e1ad451fc8e3238364",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_007.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_007.yaml"
+    ]
+  },
+  {
+    "sha256": "82e3e057ecb6d6a72ea6e1b1183e7ad15460c37a7d016942c8d63266b6aa55ae",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_008.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_008.yaml"
+    ]
+  },
+  {
+    "sha256": "bfb24f1d730e7bbc3b20ca4e60fad1807765af1db45bfdab1c10e5b9cd16acc0",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_009.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_interaction/exact_configs/li_002.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_009.yaml"
+    ]
+  },
+  {
+    "sha256": "c9097fab9341b0a185e5d4573b4ea631251f58f4ee46aa7b39698190ae608d61",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_010.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_interaction/exact_configs/li_008.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_010.yaml"
+    ]
+  },
+  {
+    "sha256": "496af0bc889ffb816a83d0b1c4762a1b46c09a3eab32b0aac08fe494e51517e4",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_011.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_interaction/exact_configs/li_014.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_011.yaml"
+    ]
+  },
+  {
+    "sha256": "01e6d6824c2611f4bd06fe5ddf5db3d46e6619fed5670076e23a4d79a1ba633b",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_012.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_interaction/exact_configs/li_020.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_012.yaml"
+    ]
+  },
+  {
+    "sha256": "39bcd9e0f778618fe999474c73dbb8052ef21ab1fb75ea5584fb1b766b7e1f3b",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_013.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_interaction/exact_configs/li_026.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_013.yaml"
+    ]
+  },
+  {
+    "sha256": "16138e51812db48f2f5ae816f5106250eeba3801792f2de483a4ad1c55209d63",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_014.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_interaction/exact_configs/li_032.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_014.yaml"
+    ]
+  },
+  {
+    "sha256": "d2d02020dd38e278a1f4d56dd8755aa6627285dfff645299caca638433a7c926",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_015.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_015.yaml"
+    ]
+  },
+  {
+    "sha256": "faaa6dd19a9553e2b7bac62b4f73c8e7ed2b32e347a08f47b0409882aececb6f",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_016.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_016.yaml"
+    ]
+  },
+  {
+    "sha256": "4d43766541849e8fb84def57d0e9445d7d285f18dcc8401fe1298e3c19dc1712",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_017.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_017.yaml"
+    ]
+  },
+  {
+    "sha256": "b932b388cad96617bf0a4ea35440bd642dafac5da65a4f443d66e1a3dc493a15",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_018.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_018.yaml"
+    ]
+  },
+  {
+    "sha256": "366f5226a9d2b226238d3bbdcc0ca6f22f9a5f3816b6a9df7edf492103a45362",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_019.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_019.yaml"
+    ]
+  },
+  {
+    "sha256": "95ba2c3450790ce6e774a142f16d104b1a756349f8d4b02bcd603a0fb33019ad",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_020.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_020.yaml"
+    ]
+  },
+  {
+    "sha256": "a89b7669345472a881814cc9699dc0dc3c19350d8570c593954d02ba98ffa5a1",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_021.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_021.yaml"
+    ]
+  },
+  {
+    "sha256": "bdeeac09778bb3391472e89943686c477de45e418402d73c8870b1eb3115f3db",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_022.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_022.yaml"
+    ]
+  },
+  {
+    "sha256": "a9eb61465c3c78f496c970a1827366237d134f70916eff8262e9fb386532dab5",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_023.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_023.yaml"
+    ]
+  },
+  {
+    "sha256": "8327ba000fed2b0ae77c456855d22d5e4171357e7187f57629c2cc439cd385fe",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_024.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_024.yaml"
+    ]
+  },
+  {
+    "sha256": "53a2a73a33bef3ba267a3b3dbf2ce8b73d87fff28efa667a502ad039537ea959",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_025.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_025.yaml"
+    ]
+  },
+  {
+    "sha256": "31302a112f33df18acf2d2fd878a4213a625100d38b434d7d1a7c3e05bc1bdb4",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_026.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_026.yaml"
+    ]
+  },
+  {
+    "sha256": "6a5ab7aa7da61e3ea4d45bb40b5b94f4efb0a7f4d01a6c8b0c606463e88a97a0",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_027.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_027.yaml"
+    ]
+  },
+  {
+    "sha256": "9cd1926e932c578aea4dd36de751cc6251077f30ef0c8b38ae3fc922346d89a1",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_028.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_028.yaml"
+    ]
+  },
+  {
+    "sha256": "7ed65db4320c84f1b5c7d7f82db529f181870ba94def485eb088fc599978bba2",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_029.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_029.yaml"
+    ]
+  },
+  {
+    "sha256": "3ebf3d02fb6515bff00587846855f653c551391296089ba1039461e117bd9448",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_030.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_030.yaml"
+    ]
+  },
+  {
+    "sha256": "d65fa39af4112b8c9e7195bb3a6a42ef171151232c0e43bf1d601994e466980e",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_031.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_031.yaml"
+    ]
+  },
+  {
+    "sha256": "4961b2cecc3a3c81a80183391a558d9d3292408a49f6c3c01dc75645ffa88bf6",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_032.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_032.yaml"
+    ]
+  },
+  {
+    "sha256": "8dc8dd951cd94ccf024264549c01be2578a99cda2894fd8e6575bb7c57f5b523",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_033.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_033.yaml"
+    ]
+  },
+  {
+    "sha256": "464ed692aee7288246ccec594f0b5cfe498ce5257d12b6994ed8dc84234d6faf",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_034.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_034.yaml"
+    ]
+  },
+  {
+    "sha256": "829571dc038a3e88ff85d8a4004ec819bec50a21eb67fe88f21c86113639e2ed",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_035.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_035.yaml"
+    ]
+  },
+  {
+    "sha256": "25323c5af168a76b6d4e1f3b23b97926ba99db67a3bdd1c2eb2f9e7d2d6c0976",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_036.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_036.yaml"
+    ]
+  },
+  {
+    "sha256": "e7d24d69813ff1448fdce6bda441e6ab669da4a0229216557b511edf629529eb",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_037.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_037.yaml"
+    ]
+  },
+  {
+    "sha256": "b1162e986a556ffe225ed4e167772d07d71cdf312ebe49981fbc2a4579d2e9c2",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_038.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_038.yaml"
+    ]
+  },
+  {
+    "sha256": "0ea11e59cd9e5e371fefe7ce3beaa4c8c9c58735d57794a9bf7248e7148dffa0",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_039.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_039.yaml"
+    ]
+  },
+  {
+    "sha256": "e2a80d0f6bfce9013930ed747b958b8b4cc948d57bfe90203bd553a5760427bc",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_040.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_040.yaml"
+    ]
+  },
+  {
+    "sha256": "5fe103a851d6d8f6d04c494f1b69c2790f0bca6ab4a8efdf9ab25e805ddb1dba",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_041.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_041.yaml"
+    ]
+  },
+  {
+    "sha256": "10c0f4cd191e2579b838d9a5018d8025a8e9e61eb14ef8d122b0821c2bb1afb6",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_042.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_042.yaml"
+    ]
+  },
+  {
+    "sha256": "9e438d7818112f434303b8a1c4cae3d7727d9de0c1a39dc6060b5caec667b346",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_043.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_043.yaml"
+    ]
+  },
+  {
+    "sha256": "e5409bcda284dd4c557da33d0237bf38ca839696befe78aedc2fb1413d1ac653",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_044.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_044.yaml"
+    ]
+  },
+  {
+    "sha256": "4b11f93d3c9d24c1132c8a03c9e1fa7166ffa7a279a5ba9c217149ba5a8b4923",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_045.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_045.yaml"
+    ]
+  },
+  {
+    "sha256": "d176a141365247ef59500a0fb996a341b3bda43ce2dfd04068697c49126b4b2c",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_046.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_interaction/exact_configs/li_038.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_046.yaml"
+    ]
+  },
+  {
+    "sha256": "8319c92ff60119cdd5cf4691d38891718032f3e27dfbc84512dd498628549c3b",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_047.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_047.yaml"
+    ]
+  },
+  {
+    "sha256": "e2bb4eea6bd106c9913c8aa6d33ee100b9235d30a1334d92c049f2c040c675d1",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_048.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_interaction/exact_configs/li_044.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_048.yaml"
+    ]
+  },
+  {
+    "sha256": "2563250c7ef4d23245a876e55035981423dc51d3d225d7ea054ee7b6d60719bd",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_049.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_049.yaml"
+    ]
+  },
+  {
+    "sha256": "55f90d276cc6c70ef2b114cec1c9e2f5342b009a8ca57f1547ec16b0a92a9a67",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_050.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_050.yaml"
+    ]
+  },
+  {
+    "sha256": "9c833d235342aaaa769645f7a367db45e1ef98c8ab3d112dd73a527a87d75cb8",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_051.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_051.yaml"
+    ]
+  },
+  {
+    "sha256": "1ef010eb0f2b578260e68efa6529f953f867d84b75e2bc92f5865872638ac3ba",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_052.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_052.yaml"
+    ]
+  },
+  {
+    "sha256": "360cc399db3d9a5ce37ca61fbe1447be72c0ac755094dca42ef5b8860cf33329",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_053.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_053.yaml"
+    ]
+  },
+  {
+    "sha256": "cc3d90a6501db727f9c7b64224d6799d9327a0edba1905b939b01f9ca1c88e9b",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_054.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_054.yaml"
+    ]
+  },
+  {
+    "sha256": "5618851f3126bf185d5c481c32efbfcc165d67625efa246a73937bce1c96f91d",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_055.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_055.yaml"
+    ]
+  },
+  {
+    "sha256": "f38a4eab279cb718ea1230533fada0c4456fb113a267bba9bdaff24671c43894",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_056.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_056.yaml"
+    ]
+  },
+  {
+    "sha256": "cb9b88fa47269c2001144309269195813acbb9d111dc8eedbb0da63b069195de",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_057.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_interaction/exact_configs/li_050.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_057.yaml"
+    ]
+  },
+  {
+    "sha256": "0df842505bfff71dedf25eade36b75d3e799ef7523cfb51dd43808ff46cbbe23",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_058.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_058.yaml"
+    ]
+  },
+  {
+    "sha256": "07ba2abd4f93bc4b9946c1bc29884046ff825c3b326cc8b5456118229f116d96",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_059.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_059.yaml"
+    ]
+  },
+  {
+    "sha256": "7e7b6a19cbed5c62d8dfd344f43a32ceeb7d2cb42f0aa87eb53cb105b8ca4a8f",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_060.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_060.yaml"
+    ]
+  },
+  {
+    "sha256": "4cc5859646ff24abb4fd75134a1b4c574a5fcb602ad1baf9258fcd0ca94e66b4",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_061.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_061.yaml"
+    ]
+  },
+  {
+    "sha256": "cfdf0df4903ad23664cc56127c3187ad17dc41b84dd7d093373a8d5df37de439",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_062.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_062.yaml"
+    ]
+  },
+  {
+    "sha256": "05a7dd8593e4a618326331349f27e7855173d8e9cb8f9c1d8a706f0b3553c3c1",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_063.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_063.yaml"
+    ]
+  },
+  {
+    "sha256": "54f19d079c46931e0d2be9e703dc59724c16887286d7380591b3812022872b1e",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_064.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_064.yaml"
+    ]
+  },
+  {
+    "sha256": "7fad4b86230121a69da614f6a9a3afc155e270641f20cb6f43f5c1d3806d135b",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_065.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_065.yaml"
+    ]
+  },
+  {
+    "sha256": "997427c2cd3f0bcef7528323c3a3ba48008428346624962b0d7028b0e1f88f79",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_066.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_066.yaml"
+    ]
+  },
+  {
+    "sha256": "0a410a6180c641a5f4f0178b44bee8bff8dbde32e65df84a5fa73310c4ca5503",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_067.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_067.yaml"
+    ]
+  },
+  {
+    "sha256": "41143a97adba6a8621cdc21741e18086c277df3334dad04d3d315e9e3b895ea9",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_068.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_068.yaml"
+    ]
+  },
+  {
+    "sha256": "76d3680d25a18eb3c95c10bb62ab103ad3c4cd5bfd65a418e922d9bcac475e58",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_069.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_069.yaml"
+    ]
+  },
+  {
+    "sha256": "d568b17cd8a5795b83c2948a6c560fb4a4861113b50dfd956199f7f0a32c27d5",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_070.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_interaction/exact_configs/li_056.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_070.yaml"
+    ]
+  },
+  {
+    "sha256": "07dc8273f997610bf00a5b98ccdbdbb14675002054cf38c2ad331ba816a5dd98",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_071.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_071.yaml"
+    ]
+  },
+  {
+    "sha256": "3df07bbaa96250984150292e6a423888b22d48d0501d294f883ba6cf5bee6754",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_072.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_072.yaml"
+    ]
+  },
+  {
+    "sha256": "e62eefdc099ffaca4020323a3a139f318f917864f6fea5916d621a8428dcb1eb",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_073.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_073.yaml"
+    ]
+  },
+  {
+    "sha256": "559ba1af36b9e9d098b8c582a3ab1e7bf7324f6451e8c24c69e8d82c58493538",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_074.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_interaction/exact_configs/li_062.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_074.yaml"
+    ]
+  },
+  {
+    "sha256": "dbea296f2e08942f581cbc7652527afa40abfbe0f18548b334f0ce8911b05b14",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_075.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_075.yaml"
+    ]
+  },
+  {
+    "sha256": "3828c08cdd03a87a27c47e46543889dde1d49b55cb350cb69c4b972c85f6b335",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_076.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_076.yaml"
+    ]
+  },
+  {
+    "sha256": "3d0eeafe5f492919b27cb4ef03e4af6ea40c1cb0ae9e312af965f36003c87945",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_fixed_main_candidate/exact_configs/fc_077.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_077.yaml"
+    ]
+  },
+  {
+    "sha256": "da7453e2d072323ea301998fc9fbf039ba3c5055317e59490d9775689589ac5d",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_confirmation/exact_configs/lc_000.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_paper_protocol_freeze/exact_configs/b1_096.yaml"
+    ]
+  },
+  {
+    "sha256": "f0fb2962f826cc00fde6d747aa3079d0bbafc5cd602fb7e830b7ff2a8f3617fc",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_confirmation/exact_configs/lc_001.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_interaction/exact_configs/li_000.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_paper_protocol_freeze/exact_configs/b1_098.yaml"
+    ]
+  },
+  {
+    "sha256": "96490d0db914df0d31799c551d60fe3f117d2638907f5a37e19992abf4026e12",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_confirmation/exact_configs/lc_002.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_interaction/exact_configs/li_003.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_paper_protocol_freeze/exact_configs/b1_080.yaml"
+    ]
+  },
+  {
+    "sha256": "f3b8aa08daaec0638afc619e5994234e3c7f43582622af361bb4bdc389a48f36",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_confirmation/exact_configs/lc_003.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_interaction/exact_configs/li_004.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_paper_protocol_freeze/exact_configs/b1_100.yaml"
+    ]
+  },
+  {
+    "sha256": "d4bf7cdf3108a783e253d310331c3f1e48884739ffa8be30d21c72bf66877fa0",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_confirmation/exact_configs/lc_004.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_interaction/exact_configs/li_005.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_paper_protocol_freeze/exact_configs/b1_009.yaml"
+    ]
+  },
+  {
+    "sha256": "94f5b58fcb753bda1541671bb18317825646c33cdd2dead6296007f0263e5be2",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_confirmation/exact_configs/lc_006.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_interaction/exact_configs/li_006.yaml"
+    ]
+  },
+  {
+    "sha256": "04458c12107010da97b6efeab6f8fbd7214eebb11903ee829876b25568eb11c2",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_confirmation/exact_configs/lc_007.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_interaction/exact_configs/li_009.yaml"
+    ]
+  },
+  {
+    "sha256": "f72e399743b91ba2cc667df86a11fd06fa7ddb94eff7847ecbfae1325f5256b9",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_confirmation/exact_configs/lc_008.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_interaction/exact_configs/li_010.yaml"
+    ]
+  },
+  {
+    "sha256": "2e3c198f27bb31cf2c76a8aff1c5e98295d02b6d741fd4ac9e0f89ede079e5b9",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_confirmation/exact_configs/lc_009.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_interaction/exact_configs/li_011.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_paper_protocol_freeze/exact_configs/b1_010.yaml"
+    ]
+  },
+  {
+    "sha256": "c507da953ae01448f05109e2ad348ab689053a0a07fa420dceed91270dc3e529",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_confirmation/exact_configs/lc_011.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_interaction/exact_configs/li_012.yaml"
+    ]
+  },
+  {
+    "sha256": "1f77c8af104466a8f43d46a9ab8dd1131c7670bf1857e9032f33ddabe1673b2e",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_confirmation/exact_configs/lc_012.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_interaction/exact_configs/li_015.yaml"
+    ]
+  },
+  {
+    "sha256": "01708aa0216e303cd838947e750c98c25bbe16869cb8be38eda861d79d37319c",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_confirmation/exact_configs/lc_013.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_interaction/exact_configs/li_016.yaml"
+    ]
+  },
+  {
+    "sha256": "76267792745f03e0d13010bf57cdb35ff6334618c6387365ddfdff9ac8bb937c",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_confirmation/exact_configs/lc_014.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_interaction/exact_configs/li_017.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_paper_protocol_freeze/exact_configs/b1_011.yaml"
+    ]
+  },
+  {
+    "sha256": "07a820be82bb9dc3533bbc8e8ba1539114ae0a1f8e61b7eff441013b8f7247f9",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_confirmation/exact_configs/lc_016.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_interaction/exact_configs/li_018.yaml"
+    ]
+  },
+  {
+    "sha256": "3c41934a63a038c0bf79af438c273960e181bd0494a7cd912c21181f6195dd12",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_confirmation/exact_configs/lc_017.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_interaction/exact_configs/li_021.yaml"
+    ]
+  },
+  {
+    "sha256": "7e9a004b686f43dd08a195151553cf02d3e7f12f2edd6e4cd154ee59136963c1",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_confirmation/exact_configs/lc_018.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_interaction/exact_configs/li_022.yaml"
+    ]
+  },
+  {
+    "sha256": "75a511c87516c98f0b24dc4cbc1dbaa0edc086165f6e337087337bd5d2a50940",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_confirmation/exact_configs/lc_019.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_interaction/exact_configs/li_023.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_paper_protocol_freeze/exact_configs/b1_012.yaml"
+    ]
+  },
+  {
+    "sha256": "97a3bdb53872c9a44395d021940601cd0b715fc1f3703712d260da2a9b8ed57b",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_confirmation/exact_configs/lc_021.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_interaction/exact_configs/li_024.yaml"
+    ]
+  },
+  {
+    "sha256": "3304786afbcb53b347149d985e391afc1c4d3c7c815d1a9987eead7a9b355e89",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_confirmation/exact_configs/lc_022.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_interaction/exact_configs/li_027.yaml"
+    ]
+  },
+  {
+    "sha256": "d8ee6818a5574285453ec06ed8b06bf2079be118e44cae8d176b6997f6a0bc8d",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_confirmation/exact_configs/lc_023.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_interaction/exact_configs/li_028.yaml"
+    ]
+  },
+  {
+    "sha256": "53acbb98a180f1f1f92df5d4f3a1c0aea3e37618de50da03ae4694daed6b5aa0",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_confirmation/exact_configs/lc_024.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_interaction/exact_configs/li_029.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_paper_protocol_freeze/exact_configs/b1_013.yaml"
+    ]
+  },
+  {
+    "sha256": "970e55b542de3af54d76aa6ac89dd184cb8b2472ab39e509703df2533c7c420b",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_confirmation/exact_configs/lc_026.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_interaction/exact_configs/li_030.yaml"
+    ]
+  },
+  {
+    "sha256": "3f3342ba767bb22b063ee96085299e9aa9ea19ca5e89c85633d639c9d61baf26",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_confirmation/exact_configs/lc_027.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_interaction/exact_configs/li_033.yaml"
+    ]
+  },
+  {
+    "sha256": "0fc3b17c51474f75735a02f97f5a92aa0d35421950591a9003b3c3e2242061c3",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_confirmation/exact_configs/lc_028.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_interaction/exact_configs/li_034.yaml"
+    ]
+  },
+  {
+    "sha256": "157d0ab9d297d7e9520f5f1b5d78ce4aa2447f48f1c9630236d359b68f2b9962",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_confirmation/exact_configs/lc_029.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_interaction/exact_configs/li_035.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_paper_protocol_freeze/exact_configs/b1_014.yaml"
+    ]
+  },
+  {
+    "sha256": "b615fbe814be28b46ef66643a42987a831ae5c7f05e5887e8bbb650fab3188e9",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_confirmation/exact_configs/lc_031.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_interaction/exact_configs/li_036.yaml"
+    ]
+  },
+  {
+    "sha256": "429c33fbd4a0f3dbbf7c55e399f1ca7642830686c5e3f0db64b02f704cbb5d65",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_confirmation/exact_configs/lc_032.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_interaction/exact_configs/li_039.yaml"
+    ]
+  },
+  {
+    "sha256": "d7a1fd3075dd81b7f27867faf19c839e8bdeac425b5e28d1a363f52a6878f6af",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_confirmation/exact_configs/lc_033.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_interaction/exact_configs/li_040.yaml"
+    ]
+  },
+  {
+    "sha256": "9cf59b8841921f7b0e9bf406b642912184efcb317fb02e1db94b6758289a95f1",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_confirmation/exact_configs/lc_034.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_interaction/exact_configs/li_041.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_paper_protocol_freeze/exact_configs/b1_046.yaml"
+    ]
+  },
+  {
+    "sha256": "60a4c2ee571657a3a2ebd811c276f5d107c4566b0d31eef1d947a5825acbc8b8",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_confirmation/exact_configs/lc_035.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_paper_protocol_freeze/exact_configs/b1_097.yaml"
+    ]
+  },
+  {
+    "sha256": "3f9ae192434cc19b14f6b96255e22a8f1ef67f5e13be2d46c34d640eba1e2c5b",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_confirmation/exact_configs/lc_036.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_interaction/exact_configs/li_042.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_paper_protocol_freeze/exact_configs/b1_099.yaml"
+    ]
+  },
+  {
+    "sha256": "8409a19f8f5d73d774edd4dcefd7eda441a9c05e066f43661f812c072e77fce8",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_confirmation/exact_configs/lc_037.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_interaction/exact_configs/li_045.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_paper_protocol_freeze/exact_configs/b1_081.yaml"
+    ]
+  },
+  {
+    "sha256": "697e966fc5c70d11de355ea8e4c4e330376e142323a8cfed5490941d7b42aacd",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_confirmation/exact_configs/lc_038.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_interaction/exact_configs/li_046.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_paper_protocol_freeze/exact_configs/b1_101.yaml"
+    ]
+  },
+  {
+    "sha256": "687648916bfe3e8644b2ed7f1f3a55ac8602250b53cb88d0e5cf2d3eee5e2042",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_confirmation/exact_configs/lc_039.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_interaction/exact_configs/li_047.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_paper_protocol_freeze/exact_configs/b1_048.yaml"
+    ]
+  },
+  {
+    "sha256": "9f77b7a637adbcc676479a18791b870609cc4ab289c46c54717e487baa2f27fd",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_confirmation/exact_configs/lc_041.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_interaction/exact_configs/li_048.yaml"
+    ]
+  },
+  {
+    "sha256": "d86478f73e65a5b32caf9cf16a37610ef1887b44c63f97f1515f6a545d42b9ce",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_confirmation/exact_configs/lc_042.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_interaction/exact_configs/li_051.yaml"
+    ]
+  },
+  {
+    "sha256": "66d7638de4590c3e81950766b654c79e91ef352ff6a77f3cdfed2956b55a00b7",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_confirmation/exact_configs/lc_043.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_interaction/exact_configs/li_052.yaml"
+    ]
+  },
+  {
+    "sha256": "c0481a10ac8922536fe65a29c48c78e98ec18f6a3c9860854219d25f1a414bba",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_confirmation/exact_configs/lc_044.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_interaction/exact_configs/li_053.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_paper_protocol_freeze/exact_configs/b1_057.yaml"
+    ]
+  },
+  {
+    "sha256": "fd9f42d1446d5611070c446836ec351c49d316433b54f3b0bb9a35c633667d72",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_confirmation/exact_configs/lc_046.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_interaction/exact_configs/li_054.yaml"
+    ]
+  },
+  {
+    "sha256": "395e71d5c93e77f1243e3aef4f757d539de42394019890fdc5b9775e771d2967",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_confirmation/exact_configs/lc_047.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_interaction/exact_configs/li_057.yaml"
+    ]
+  },
+  {
+    "sha256": "e3b336ec81e6211a649540a2482155595312dbc99f4d5d0a528b8c5c9cec74d6",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_confirmation/exact_configs/lc_048.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_interaction/exact_configs/li_058.yaml"
+    ]
+  },
+  {
+    "sha256": "4618ec41ac42767ab07818bb3b33c9807899dd2dea45976e8d51888b17a1600a",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_confirmation/exact_configs/lc_049.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_interaction/exact_configs/li_059.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_paper_protocol_freeze/exact_configs/b1_070.yaml"
+    ]
+  },
+  {
+    "sha256": "0816123597cea18e7b7be0a1f7c9106dec8cd33dfa6fe53288f132dd65ccd82f",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_confirmation/exact_configs/lc_051.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_interaction/exact_configs/li_060.yaml"
+    ]
+  },
+  {
+    "sha256": "58d521bf6badb2283a4b412d8dc7b0e287b8a0590830d467be4ba7044d3b01d9",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_confirmation/exact_configs/lc_052.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_interaction/exact_configs/li_063.yaml"
+    ]
+  },
+  {
+    "sha256": "5937ebd79a1db3d6615d347ef614ad0e1e445162595c27fe39114a36f54742a6",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_confirmation/exact_configs/lc_053.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_interaction/exact_configs/li_064.yaml"
+    ]
+  },
+  {
+    "sha256": "6d5b3d763b620edcf6fe48d241d86c013b5f42589b9848c4aeb9cedfe3f91813",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_confirmation/exact_configs/lc_054.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_interaction/exact_configs/li_065.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p1_paper_protocol_freeze/exact_configs/b1_074.yaml"
+    ]
+  },
+  {
+    "sha256": "9eba2dfe0c4d049b5378e5bd8ec62581b224cd17ea4ddaee18b6a11de4cae6f1",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_interaction/exact_configs/li_001.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_130.yaml"
+    ]
+  },
+  {
+    "sha256": "422f3195154cb699f265ed4b6b97bef2e43d25ba42b83befb680e01dead0c511",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_interaction/exact_configs/li_007.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_134.yaml"
+    ]
+  },
+  {
+    "sha256": "f1db5b7cf7a14df815261bb7011958a1bc385c1c3a6a9c049cab80e400a8b59c",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_interaction/exact_configs/li_013.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_138.yaml"
+    ]
+  },
+  {
+    "sha256": "78da6add7c4505bc98ff8d3ea7bca572f60ada50edcb81b95df435952ef7dfe5",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_interaction/exact_configs/li_019.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_142.yaml"
+    ]
+  },
+  {
+    "sha256": "52c1005595329dd7fb81dd9056453ed70abec4853bf5bf20ea12a39726bfb63e",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_interaction/exact_configs/li_025.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_146.yaml"
+    ]
+  },
+  {
+    "sha256": "5640e47fcf8cd7ccb0c0fb0bd891f4613a53a424f296cc03c48779cfdec11613",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_interaction/exact_configs/li_031.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_150.yaml"
+    ]
+  },
+  {
+    "sha256": "87d289ef203a66de7994be0789e5f6dc2f1689fbcd7ed36d06d91340a43bc88a",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_interaction/exact_configs/li_037.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_154.yaml"
+    ]
+  },
+  {
+    "sha256": "dd7fbb7d62b6cafceaaef1b955f6925a39f957975d4855e9faa36f6e24863304",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_interaction/exact_configs/li_043.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_157.yaml"
+    ]
+  },
+  {
+    "sha256": "6c6ed2ea5e3188a93fbad1ebe95e3a77e47df8685c527d2860ddb38ff2f1feed",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_interaction/exact_configs/li_049.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_161.yaml"
+    ]
+  },
+  {
+    "sha256": "0da4e80eba0e82b9a8ea79719912fcf784fcad1904e1d577d875f037253c9ae4",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_interaction/exact_configs/li_055.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_165.yaml"
+    ]
+  },
+  {
+    "sha256": "44ff4070dc45c38501d5a3a15df04946a3ec42bd1f802c153edf570bc47cad13",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p1_lgr_interaction/exact_configs/li_061.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/exact_configs/p2_169.yaml"
+    ]
+  },
+  {
+    "sha256": "03fbe8892425031067680fb99e84147d438631a94245e75f6b90bbeb82c00880",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p2_batch2_final/exact_configs/h2_001.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/batch2_proposal/exact_configs/b2_001.yaml"
+    ]
+  },
+  {
+    "sha256": "e1f99b603d19e6a2a20360c2ac5202aa803145345c7c0d37ba19b108468ea4e2",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p2_batch2_final/exact_configs/h2_004.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/batch2_proposal/exact_configs/b2_000.yaml"
+    ]
+  },
+  {
+    "sha256": "a867b9eaec3edb4e8ea5ae7215df527e71135299d8ebec274e1dc0df940dbcb9",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p2_batch2_final/exact_configs/h2_006.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/batch2_proposal/exact_configs/b2_002.yaml"
+    ]
+  },
+  {
+    "sha256": "40786603eaab17fb031ff1f2a02d6317330a3cd66ebb8e8d0812aae4fe556882",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p2_batch2_final/exact_configs/h2_007.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/batch2_proposal/exact_configs/b2_003.yaml"
+    ]
+  },
+  {
+    "sha256": "8ae3c285d60bb98fdb8005f3cb5abb3f9432da97db3e6b9cf9f50a619848e46c",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p2_batch2_final/exact_configs/h2_010.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/batch2_proposal/exact_configs/b2_004.yaml"
+    ]
+  },
+  {
+    "sha256": "18f6f2d7b3c104769f66cd2ead33a72a27b91171232e7254aff9e089cef147d4",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p2_batch2_final/exact_configs/h2_011.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/batch2_proposal/exact_configs/b2_005.yaml"
+    ]
+  },
+  {
+    "sha256": "933405b1d45dda0ce952ae7f6dbc4101ca9a4528cb7566de0c5237914db9c0a4",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p2_batch2_final/exact_configs/h2_012.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/batch2_proposal/exact_configs/b2_006.yaml"
+    ]
+  },
+  {
+    "sha256": "c11d1a611cacdd9725b7b2978cabf96c6b1f9af50da87332df8215d1fd697c09",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p2_batch2_final/exact_configs/h2_013.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/batch2_proposal/exact_configs/b2_007.yaml"
+    ]
+  },
+  {
+    "sha256": "76713c1a54f6f69578632a1d686d3c0de4d668a3467619055d098edbc1501097",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p2_batch2_final/exact_configs/h2_015.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/batch2_proposal/exact_configs/b2_008.yaml"
+    ]
+  },
+  {
+    "sha256": "52d0ad14147f68f05bb56ff38b665696856fdb871d1b89aa813b2eaa71a6f68a",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p2_batch2_final/exact_configs/h2_019.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/batch2_proposal/exact_configs/b2_012.yaml"
+    ]
+  },
+  {
+    "sha256": "140f487abd789b5d1cad657a7ea94bda9c4f19de7c1ed5fd1164b29421ea40ed",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p2_batch2_final/exact_configs/h2_020.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/batch2_proposal/exact_configs/b2_013.yaml"
+    ]
+  },
+  {
+    "sha256": "40e367c002992f0b2611ea8c9e659fa610d5fc85672f9cbd15e513e47271f63e",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p2_batch2_final/exact_configs/h2_021.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/batch2_proposal/exact_configs/b2_014.yaml"
+    ]
+  },
+  {
+    "sha256": "fe356b6e8be4c7066d72e38eb3cb52cce97b57defe604e744e57c9bfb26552e8",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p2_batch2_final/exact_configs/h2_022.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/batch2_proposal/exact_configs/b2_015.yaml"
+    ]
+  },
+  {
+    "sha256": "09efb99e70b84a54baf198b12ceb1fb4c095a5170ea2b32159dc8402d56f6589",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p2_batch2_final/exact_configs/h2_023.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/batch2_proposal/exact_configs/b2_016.yaml"
+    ]
+  },
+  {
+    "sha256": "ae64a44d37e4c6bff2489b8bbd0f777ed2904b57b6c6697b04d41954fc123f0d",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p2_batch2_final/exact_configs/h2_025.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/batch2_proposal/exact_configs/b2_018.yaml"
+    ]
+  },
+  {
+    "sha256": "939317cf3df51ac78080e9d4cc8b4a43974c6da0195058eb357c9dbd95268203",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p2_batch2_final/exact_configs/h2_026.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/batch2_proposal/exact_configs/b2_019.yaml"
+    ]
+  },
+  {
+    "sha256": "1fec176bd346eabd0c70eef85cd76cdc2ec8c381d15e5495ebcd6750de36d2b1",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p2_batch2_final/exact_configs/h2_028.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/batch2_proposal/exact_configs/b2_021.yaml"
+    ]
+  },
+  {
+    "sha256": "1fe0b50900f20aa2c95ca8b711a15c94e38f4c12af10af7d34ffa697a3e35d38",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p2_batch2_final/exact_configs/h2_035.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/batch2_proposal/exact_configs/b2_028.yaml"
+    ]
+  },
+  {
+    "sha256": "8209668b42b7347ed040ab85ac5037ae2cd40844a44fc0ad1d2927c7bd669d9c",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p2_batch2_final/exact_configs/h2_038.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/batch2_proposal/exact_configs/b2_027.yaml"
+    ]
+  },
+  {
+    "sha256": "688eaca5c9756c77fc9573b5775cf3ca6502131b6ca14abb28db30c6f670e499",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p2_batch2_final/exact_configs/h2_040.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/batch2_proposal/exact_configs/b2_029.yaml"
+    ]
+  },
+  {
+    "sha256": "ed7e94453631ffcc6b9e4a82a508528864441250188d027b1cd48eca075ba9fb",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p2_batch2_final/exact_configs/h2_041.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/batch2_proposal/exact_configs/b2_030.yaml"
+    ]
+  },
+  {
+    "sha256": "4b4be9f345ebaecbb8bfae247bd272a665ffaad20583a7c7c0758824a988d8e4",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p2_batch2_final/exact_configs/h2_044.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/batch2_proposal/exact_configs/b2_031.yaml"
+    ]
+  },
+  {
+    "sha256": "819f5fc6d26f6285ed89cd13b4013f8b4a10644e714cc1bcd88c857a1718d019",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p2_batch2_final/exact_configs/h2_045.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/batch2_proposal/exact_configs/b2_032.yaml"
+    ]
+  },
+  {
+    "sha256": "bef79402c60157667aa33dbd0572aebd2cc6c796021ea0ff31a7ed7868cc49e6",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p2_batch2_final/exact_configs/h2_046.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/batch2_proposal/exact_configs/b2_033.yaml"
+    ]
+  },
+  {
+    "sha256": "8e443338867d5548317120fa93306193d1a46498cf538fea8f85a92d7b611f8a",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p2_batch2_final/exact_configs/h2_047.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/batch2_proposal/exact_configs/b2_034.yaml"
+    ]
+  },
+  {
+    "sha256": "9b41fe0b447bcad5e203418457c093ac59ccbcf1c35a5759e0200773e9b738d9",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p2_batch2_final/exact_configs/h2_049.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/batch2_proposal/exact_configs/b2_035.yaml"
+    ]
+  },
+  {
+    "sha256": "cecf631c508e0df0b1f0c5b96973042a7a7cc8d5969f6526a3b01f6787fcd662",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p2_batch2_final/exact_configs/h2_053.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/batch2_proposal/exact_configs/b2_039.yaml"
+    ]
+  },
+  {
+    "sha256": "37afae634aa62a60fdbec3c4d45c16307f3e7390a1f8a0d5ba612415e8d0c6a5",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p2_batch2_final/exact_configs/h2_054.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/batch2_proposal/exact_configs/b2_040.yaml"
+    ]
+  },
+  {
+    "sha256": "7fb2f1eab98be10be65f358d776ac03197b0416833f7ae2d6640845128b70c8a",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p2_batch2_final/exact_configs/h2_055.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/batch2_proposal/exact_configs/b2_041.yaml"
+    ]
+  },
+  {
+    "sha256": "09dd3987b1f7b732619bebb1c4bc56a48ce66fd188d9e9ea79d19f7ce7fe9e1b",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p2_batch2_final/exact_configs/h2_056.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/batch2_proposal/exact_configs/b2_042.yaml"
+    ]
+  },
+  {
+    "sha256": "fbb763871c8a4bb79eb79daecf49a2430949816e803a5a8c0f0e2c736239e28f",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p2_batch2_final/exact_configs/h2_057.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/batch2_proposal/exact_configs/b2_043.yaml"
+    ]
+  },
+  {
+    "sha256": "98f38697374e5654a42371672745c568d27b267367987ddaa5cf9fdd2173717b",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p2_batch2_final/exact_configs/h2_059.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/batch2_proposal/exact_configs/b2_045.yaml"
+    ]
+  },
+  {
+    "sha256": "80a08158e2c0abc7cea303aa55e129c9fb093d5ffa9f81d2f1b179e0e2e1577e",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p2_batch2_final/exact_configs/h2_060.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/batch2_proposal/exact_configs/b2_046.yaml"
+    ]
+  },
+  {
+    "sha256": "488adecfb189cb4a5adb09b9aaa57c4be6cc834938f335ba8371dc56f157911d",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p2_batch2_final/exact_configs/h2_062.yaml",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/batch2_proposal/exact_configs/b2_048.yaml"
+    ]
+  },
+  {
+    "sha256": "ae0a748fff56578cdf7a3803fe9fab221bf89c584656a0ff4b43a6246c76fad4",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/p2_batch2_final/freeze.json",
+      "archive/eehpc-20261017/04_experiments/production/p2_fixed_final/freeze.json"
+    ]
+  },
+  {
+    "sha256": "c280099e8e3393107852bddfed5e810d1a9bc47efa17b1527a5ffeeb2bdb73a9",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/spine_phantom__left1/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__spine_phantom__left1__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "80c4da707f4cf367e579cc4986a8b047c4098c92164d120cdb983da5be0924c6",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/spine_phantom__left1/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__spine_phantom__left1__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "5a2d0492a9b08c6ab6971a7be9b5ea7e1f0c01dac88a1778e6b7aebd2580bd08",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/spine_phantom__left1/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__spine_phantom__left1__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "cf6902934df166e35fb0065dcea6268805a4ce1264977d7d7043db157e14b8b0",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/spine_phantom__left1_1/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__spine_phantom__left1_1__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "93149848dadb6ccb6faf2ac4200a7d0aeea162224a8023ea1f841805e66831cd",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/spine_phantom__left1_1/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__spine_phantom__left1_1__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "0d14b9e9e7b035186336acc8d4edfee83658776df14472bb6fb40d823ae1c4e7",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/spine_phantom__left1_1/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__spine_phantom__left1_1__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "bd0303a0cb8ab74802deb4da6037b3e73ca99d97fc677b1ccaccd7d649f5d79a",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/spine_phantom__left2/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__spine_phantom__left2__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "6a189645c1cfb20643c42f0f5e01d61af9f521bab2380930eef84dbc2b5741ca",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/spine_phantom__left2/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__spine_phantom__left2__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "6d02fa1b089f75e6c89cb2d04d7d831b3e26c556a861e4c325ad31dcf6886b50",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/spine_phantom__left2/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__spine_phantom__left2__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "2a46ae6b606a5ba0b7d122a26617d32562fccc7577d5a0d90dad2d3fb1e7ba21",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/spine_phantom__left3/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__spine_phantom__left3__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "c535073593b6cef3e4b6707cc0ff01b1eaf58e6a67421427deee4ddc5a65dfac",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/spine_phantom__left3/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__spine_phantom__left3__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "a5d1ba845c9659cd2673ceff5e12c9c0a9f82189ae77f9bca27f2b924a1abe2a",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/spine_phantom__left3/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__spine_phantom__left3__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "59f4ef9d46fe9454b3b3587d9efa56d5a77710b04957b1ca12f281078560934d",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/spine_phantom__left3_2/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__spine_phantom__left3_2__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "eeaed9ce7b116f426f62db97a0c6fb131662e64233064aaaa58cbc90205dff0c",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/spine_phantom__left3_2/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__spine_phantom__left3_2__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "1ab5e76ac5a7ab931b617e125e35ec8ecabaad8661fdd2c99db8f711c9f00f16",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/spine_phantom__left3_2/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__spine_phantom__left3_2__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "97e0105b8b3fee17398613b03efb3f508243e47173a6140f4d817f1bb2f705ef",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/spine_phantom__right1/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__spine_phantom__right1__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "833be82b0d43bf14bfd6fa0bd6175d7ca86ab2b82ce9e0792a0b2cb3e258ee1d",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/spine_phantom__right1/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__spine_phantom__right1__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "5e2843038069ec4b9ab0cfb4062a33c41731744b38903a1af5f77a0cbc8dd798",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/spine_phantom__right1/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__spine_phantom__right1__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "b111c2dd9737638cdfbaa434b40680e0e43914a387b515fcff756fa2f2765a02",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/spine_phantom__right1_1/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__spine_phantom__right1_1__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "4875d8e842cdc2252359525fe1dc81dbdd8fa411fe6f38d4aec1411218ff6c7f",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/spine_phantom__right1_1/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__spine_phantom__right1_1__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "470128dbe804a064fff8bee68628056d98e632ff8856e89c54e3c5c444b339dd",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/spine_phantom__right1_1/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__spine_phantom__right1_1__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "c239d59a4eb1ea447beaea8bcf0971580d27f81de2cee645d8ec04f1d55fb7a5",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/spine_phantom__right3/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__spine_phantom__right3__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "6cf46a063d68a206a9ddce67f75446465182924bdc996555ecde3fdedd911242",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/spine_phantom__right3/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__spine_phantom__right3__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "aa5b06b7998ec2a2b2d6de1fb3985c7b8dfb0c8008a8726264cb2e4bb7f31984",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/spine_phantom__right3/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__spine_phantom__right3__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "c0ff0062f282946f8d8a848145cfc2028231dd1534f6604c143cc78ca28c5d74",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/spine_phantom__right3_2/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__spine_phantom__right3_2__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "9dcc88d86cd35a91ad6c2da419118549489abee13cd8d6ff8d1f9c997e364111",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/spine_phantom__right3_2/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__spine_phantom__right3_2__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "89c4a02767c9ee9f7da98f139cfb0b4faf628426890bbab5a4da33052123afe5",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/spine_phantom__right3_2/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__spine_phantom__right3_2__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "b27514dc938c840d30bdc2b4b1a752acceed6b574e976634189769233d051268",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/synthetic_liver__l1/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__synthetic_liver__l1__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "94155e18b0f2c8cdfc1f424469202180ac75df4e7325d0fe856fb6191cb9cc26",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/synthetic_liver__l1/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__synthetic_liver__l1__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "5f1c4313971d748d193592752124f2221d828dfb339d14b19dfec0aa4b2483e8",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/synthetic_liver__l1/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__synthetic_liver__l1__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "bf41a8eb04fcca408d3adfb5f70a85c3536e4650273b4ba4f38e7138a934a2ac",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/synthetic_liver__l2/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__synthetic_liver__l2__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "a1d373b12e814be766eb87e9245d9cfc0502236e6d45d88b3d122aa147b7c1cd",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/synthetic_liver__l2/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__synthetic_liver__l2__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "fe1de0eef1930a5edcb207a22263de73d695f216f520678cb623de502aaa8ca0",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/synthetic_liver__l2/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__synthetic_liver__l2__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "8db9dd567b936ad9ec8a87a145cf885ab941f1074523a2874e5d53ce0fb5d6ae",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/synthetic_liver__l3/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__synthetic_liver__l3__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "be9f7cce97aa18fb6a2837f89a53a49052a54fc1714bc8584a18bd7f1fbe40c7",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/synthetic_liver__l3/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__synthetic_liver__l3__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "ff1eccddfd9940115c7d9972ab56c3021e1355ae6eec29fdd0d61f33b9a02478",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/synthetic_liver__l3/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__synthetic_liver__l3__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "7d953b7f842790c5fefc114a31880cfd0fae2b9926fbd869ff8fc6e82c62b1ea",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/synthetic_liver__r1/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__synthetic_liver__r1__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "be89dd6b0651e5e8f00aee6723736378cba81dac288ebca8ac53a97cec9c1fcd",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/synthetic_liver__r1/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__synthetic_liver__r1__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "60214cef0fe373e1f2b7ce71b6dd932572a7d9ebb59a9d0b87b5ceb5f7e1e599",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/synthetic_liver__r1/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__synthetic_liver__r1__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "701c48076b330f06b68cbf3c45273e29e5af81c7921fda95b45a35e2bd2ca61d",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/synthetic_liver__r2/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__synthetic_liver__r2__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "c237a6fc9311e3fa63bed0f9d5dc9720b06ec3a7fe04c975abf5e0db221c9f0d",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/synthetic_liver__r2/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__synthetic_liver__r2__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "1ee5cea1688dd56c5f3a88e862c6f312457296b75ef733627ec06945d6e23952",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/synthetic_liver__r2/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__synthetic_liver__r2__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "b64510ca5ee61c10545a555cac06f0e47ebd4d26be4105c4520843ac26ce4be0",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/synthetic_liver__r3/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__synthetic_liver__r3__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "b489d231dbf20a9ddabe9042aca039afa2ae112dd88f6c337f9456799865c0a6",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/synthetic_liver__r3/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__synthetic_liver__r3__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "4c7abf80e815a84412a7ed18c5646e7a3b7ce2ce347972e516c61f1baec9679d",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/synthetic_liver__r3/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__synthetic_liver__r3__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "25fffec24cc36a3056925687dc3dff8a2f1ea74853ab0d43dc3e31e56f2d4bd8",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_100/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_100__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "9670ab35f780039083a8f27b6c1e6a9974fb9ea9495d4b0313ed3527813d3f74",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_100/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_100__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "c8a97e07ce4b77b520320c8b66d79d2ffd5c6082d591a2198359e2dfabf02d29",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_100/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_100__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "6689ae9a456a48476eae48804c1a81ac88d4900507b8821d387c7035115bd149",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_101/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_101__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "bf269a5a31f90261621666572ebbf275b77c5ef98e748dc5b6d2bf750fb81acc",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_101/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_101__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "4597cda58ee7d2366e1ed664110e741391cac3d4c330c12b1ca6a766fda840b1",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_101/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_101__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "8f78365cb32f8833490d3146d02fdd79d84944434cda3c723b885f9916522112",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_102/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_102__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "041d4d9116ccade1d0a2a047ed4c2170feecff9e045ab69f0078d767317564c1",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_102/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_102__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "b42707eda55f018f225627ba4943695717c202f782a6d258c6a7806973cfd09a",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_102/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_102__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "e3b847490cf929ac05ddb842684e142a7a5d55ac8528b0b1a18645381da04cb9",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_103/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_103__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "28ad9c572b9e7118c2c115af7824e4a21491e46e91678ddaa5ed1b3e4842baed",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_103/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_103__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "74a30da59fe08ea2d2ed1691ca899589c954c75c3b29452aba0c5b54fabf98fc",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_103/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_103__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "0e876e4e5c792b9ff7dbca9d8bf0739c8b6a98adc693b5b463fe1c7fa7cb0cfe",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_104/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_104__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "884470da2da5938877665b59c32585e8c7a67962960d79c181dc471aac053133",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_104/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_104__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "56c2889cfbd124045afdc1582504e3601148449ff285bee7a0aef4899b8b60e7",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_104/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_104__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "fed8d74dfa7566e0d45555d2f11cf60112ba5fba90b2630448cc3076329535c2",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_105/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_105__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "bace9e8d1caf396f03f04fcd82b8e285d3310e9b4af57d4acad93103e026fd6e",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_105/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_105__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "2f3250f3143b9c049d5a7e01b9593b08d590f903c9f24395de42fba4e4ae1a77",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_105/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_105__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "90633122795d5e002ee9d1784ab60343335915c19579dc559a7784a6a63336d5",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_106/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_106__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "f3743f32d1a91b0c50c51c6a7958c3296dd7efc07cee6a4efa175f05a5fa3c34",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_106/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_106__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "13d932d06f4302bdd439663d3d30df390ddde2bf980437a6f0643bd2e666adae",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_106/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_106__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "6734907ab5dc805e05362d07a08f5e6e46193e8c6b165244f67c7470feecbbd0",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_107/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_107__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "049514d630050f698f7ed593796682400fc79165a7d6f6386d9dad218e3c4aa8",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_107/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_107__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "2bbe81f67a4ccec45ce370c7b2522f6087879a8b1b0952954a2bf5873675240d",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_107/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_107__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "f7715dfc2f56c07ce8a8b49f3756d0f4da3f0233e7ebec63b6f12f56d58ac624",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_108/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_108__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "7b92e970c96fce5124a874833c2871683e04c81aa42e10da82b4aa790914a279",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_108/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_108__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "bc0c422f998029ffacd11b818368a51d455043c8c9697a18116bf3fb27aa18d8",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_108/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_108__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "44768b489a00a0f537c94575367e17d2c96c6f16ffaa7fda96d5f23ebabc3c31",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_109/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_109__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "2d37fdbf4875bd9d0e1dd3a75bdce0c944635d962f675ad4904d9017374f5b23",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_109/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_109__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "4d7fcb49d482dd3b6ca22c910d85c1f50a795a71b7cb9f277c309f8c1f385b3b",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_109/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_109__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "ca80199c8cb3ed5b9971cd4357f0ad86d8776249f3d066b2cfa8d0c761681b90",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_110/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_110__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "d9b4d44c56bfa29b8fa67960c871a701b7fee18935d851d9672c3314f0a0c71e",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_110/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_110__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "c9154966177c8692a39b71a71d664baf700e395ac5b189081bf9d4e31a66e264",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_110/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_110__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "b7062d6a6ac3d089d4772349eaac5ab85130f6ca0382792d2a5ab28f800797dd",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_111/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_111__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "6c62cf436084642d1b64ab7ce1872cfbf4891d7a9d9a27c5a318228d587b7e18",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_111/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_111__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "412f029af6857b110f4b1f7832af872701829c80afc8acc48beb9858662b57ee",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_111/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_111__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "cea36a45bc31d970519cdb52a5ecf96811cb7e5cefbeb924469678cddf108fa0",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_112/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_112__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "92c980f5c7e0642ec3957c52613c86217d43aa4444344cb85ea6ea1df6bfcee9",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_112/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_112__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "bd54f4694db63217e8a1b2a415990c9e056db5c141c6d01776a1bc8d4b35b3cc",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_112/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_112__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "6b29d072902416626e6e15f447d45e0b88ab9426abc57f2f6f60af4b09e7bc10",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_113/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_113__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "20cc355d242f17e4b76daf7679a68eef789024c4182a625241f6edec9e797160",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_113/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_113__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "4a5c52023c63796df1a344ff1b284d59057c0007f275129020757506cbf5970b",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_113/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_113__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "7681616bbb1f6ea1690c17cf203ca0ad53be38c433856a29649be999620dbc1b",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_114/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_114__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "c589e99894c9b42937c253b7c156a7229f7baf75f8ee89410aa5a896992babdb",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_114/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_114__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "f19091597d25f48086821805857cf01868f69df734f9acc289397625277c32b8",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_114/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_114__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "51a2aeb89427531c4ef30790820740d9436f778532d446206e8633763868539b",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_115/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_115__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "5ec7a7c6ec9bfc99d66cb0953a1a30dd73f10b76cb7df4074ea20879f4fe139c",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_115/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_115__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "5936f5af0336c407dfddcfce13cc4b36f2cf074acbdf95abb6f34c86cf8c6732",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_115/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_115__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "079d2a98b1bcecffa903754cdbe2d87ba2c6b71b46c6c982e8a0b559efcc669a",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_116/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_116__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "2fc93948a88b81085201eb28b79b832ebf7f951c0b2a8d024b0ede85967da010",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_116/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_116__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "529b9908d69bbc4037b80c1411855a3619afb67e61aaa0edaf21218738b062b9",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_116/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_116__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "b2dcdba93da810004ec0f7e8202b89c60f7743ac3367ddc26bb80f71202bc189",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_117/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_117__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "321d94e527120393fe63f1ef0ec32fa69fec9f7dd5b26870dcab975f5ba9017b",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_117/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_117__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "89e131384d217021500ae174462e961fcb94ff7e89177ab8d2d955abe5fb4bf7",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_117/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_117__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "0d9aa278b6a707dee5483801faa9c3159d9234f1eb25a768f3154941f67949a6",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_118/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_118__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "05ca5fde030ebe59e26a69a05720a8dcc989ff60d9514edecec9fb137316ebe2",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_118/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_118__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "1e3609e8dc08e1eb71e6411c545198b3320baebb104e0b85ac8c79adc4ca11f3",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_118/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_118__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "d438828d4b66a02c9d6df91848d582fc761b84a58329611710fe0d83ac2fb6ea",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_119/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_119__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "ef0d12e199711e57269e18d2f7bacee1c038b5507109fbe77c83b0f76cf7e67d",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_119/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_119__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "6523686a0c78d0db7b6e04cc3d407e002894b0f70a342296b75c5811fb2638be",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_119/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_119__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "ba2e05ac582832ef8d901d7243b41af95f341c8e730d6fe4f2c1a0d99b7cccfa",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_120/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_120__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "49c4cb374cbc4291a1a25daee0ba900da3c53adac5565ffb97ee577c58bb091d",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_120/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_120__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "002d7b0cb8029b3af4b799147e59ba0f114cabd9a1bc0380b20a2c4eeb9f151a",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_120/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_120__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "f26689a53fe060fb1c7002256bec9d9d43755909caea4bf7846908146f30977e",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_121/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_121__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "70b7b4f3b8a7e0a61be1f1b6ee57117573ee5e6e13b6953391eaeb72670d77fe",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_121/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_121__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "c9990aceb50508fdad564a51e9118f7b40b814ff39b2f10a43952bd0e540f10e",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_121/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_121__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "2dfd656ded6c6fef25ea3f56d83d116d9b4d426893b607fc2bcddf9ba3e7327c",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_122/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_122__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "9054bd70e3bd96921e20b84fa20a3aafc05a6bf43f845bcb01502380529dcf12",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_122/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_122__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "0b0076bc14e57011681421a953e54e1157191d19dd0e2572da4c22a9c1569149",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_122/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_122__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "5090c3039ec6a1a820cfdf5ccc47dc141addd70f129fddcf34287019f43ba901",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_123/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_123__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "376279a97d925f407c7ce31465f92fa3e1a0b54da08339ead08af2b5b2c0019a",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_123/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_123__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "84c3afcc72dd48086adff1b348869d9e222dba89bd6feffeb5b1243f704ae09d",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_123/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_123__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "150db9037a300386901b2e7283033afa5629b02c068ead85d48c7805ecb9a656",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_124/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_124__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "0a4655111c0f967c35a85ccf4845e99b0ba05280dc5db17a96daa69a6a3c52da",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_124/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_124__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "e9341a78af1e7c38e6388418d061069cdf10fe97800c999299a706e7965d0f95",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_124/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_124__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "68dbaa69bc9e81e387e45e9738f4b9432393ad9d87bb410bdefaea84063a3d18",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_125/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_125__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "05678987890f5bc743254bb95145ac823437e2c394a809ac4a157e93d8d2b25c",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_125/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_125__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "02c18046bfc245de57245ebda8dcf984f945ed4adeffe88511e8aa7f17ce6e36",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_125/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_125__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "d958d4e7e072902d96e816d816acd4034ac635980f590699ef52b9fddb0df28f",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_126/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_126__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "42d84d3fcb0154723cf7c3b281ff4b49954493e65249ed19321dc6a75a36c16f",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_126/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_126__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "35565e86ab4dd3a5a8cee41cbc5f20d844c89e7cc684bb01e604466afe169d4f",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_126/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_126__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "17e01cd1018a1ded6b69806bdf81fa2d1849bd17207fbc58b7bb82342b836bdb",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_127/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_127__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "dd0d1458174d0ca06a1f86f15a37dfdd2c060a2574b916b8b4b831daa4b309b6",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_127/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_127__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "868565326855932e28bf8b99c830afd21d4c633bd2d1e7e117f241250e8229cf",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_127/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_127__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "32478f2a90da571c3ab1a55e59d5c09182073e7af18def4827785efb53ae6764",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_128/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_128__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "cb1ef9e779fd1f1699c1e244e7fc39933999c48aaef84ceab471dc82f2eb162a",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_128/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_128__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "dc0e8e4884c4d890dcacefd4afe86f7492bb38bec0ecb85af0c9e64a637c168d",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_128/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_128__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "6ffc8dd5a6d29f4f757bb1a08a9c2363ee69e85ffb87a765013354bb486c7e1b",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_129/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_129__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "b87009da870a6a7d5a2fcba978f30e03479532bda886dd9a19034775940c2979",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_129/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_129__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "0bacf4439e4c03c89eb65750239b50644475c369e615a04eace8021d079e49d0",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tdsc_abus_2023__validation_129/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tdsc_abus_2023__validation_129__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "3f86044c1f79545e777ce5bfdc803139fdc43f900a6babadd3a71f4124fada6c",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__010_LH_Par_C_DtP_qc_0008_0107/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__010_LH_Par_C_DtP_qc_0008_0107__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "8de48d51dc13e6286a471e3bf20b190f5c56162d838457843ea237577ed192b2",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__010_LH_Par_C_DtP_qc_0008_0107/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__010_LH_Par_C_DtP_qc_0008_0107__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "31f417311386034bf9083e3a13e60a90d40f005ded5a7502ccfbbcf6c847a3f5",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__010_LH_Par_C_DtP_qc_0008_0107/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__010_LH_Par_C_DtP_qc_0008_0107__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "b2267975bd32fa148b996d4763d869027ef94b5567a5eda4208ce6be03fdb665",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__010_LH_Per_C_DtP_qc_0140_0514/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__010_LH_Per_C_DtP_qc_0140_0514__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "39da38517bdd52bf619c5e198a41d99e75788feee715459e7b80b0658fc3f6c6",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__010_LH_Per_C_DtP_qc_0140_0514/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__010_LH_Per_C_DtP_qc_0140_0514__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "9696c84b9f1abc815f92fe6b26b2ec2ccbcdf84e0aed03b322f438c604f5115b",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__010_LH_Per_C_DtP_qc_0140_0514/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__010_LH_Per_C_DtP_qc_0140_0514__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "febe7078c9e833f2da8d2f5a9e99be65ae02a65517eb115e27cff3308ca7cb08",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__010_LH_Per_C_PtD_qc_0007_0470/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__010_LH_Per_C_PtD_qc_0007_0470__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "49edf76f0953902f60d309e9a3771e6688e78eed42fa6dfe4929ec8737a80a61",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__010_LH_Per_C_PtD_qc_0007_0470/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__010_LH_Per_C_PtD_qc_0007_0470__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "9189e88f2762ed526c4f8ad85e1066ca33918eb046dbc561f0fb3c58cb4d2258",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__010_LH_Per_C_PtD_qc_0007_0470/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__010_LH_Per_C_PtD_qc_0007_0470__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "1bf91f77b198c016dacc0bc1f5b52ca3b83860eab6fde8787eb1eba361487411",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__010_LH_Per_L_DtP_qc_0005_0370/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__010_LH_Per_L_DtP_qc_0005_0370__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "9aae4b4aeb243ee8a9502e83f641b74ca327c2fc046233db0c2f7bdce488ded9",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__010_LH_Per_L_DtP_qc_0005_0370/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__010_LH_Per_L_DtP_qc_0005_0370__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "a74101e5dc0b4fc5d9a582a97f6877ffbf60e4474780b4b6068b49858ea4fa76",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__010_LH_Per_L_DtP_qc_0005_0370/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__010_LH_Per_L_DtP_qc_0005_0370__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "c7a2c55f427997f087ae5c4d873fbb5708697c19710a25a28045c3e201ce0a9a",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__010_LH_Per_L_PtD_qc_0020_0222_s01/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__010_LH_Per_L_PtD_qc_0020_0222_s01__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "3b90f774bb49f5d67295ddaf0a510faa20b5453a8dfd56c7c0f73a3d3656dd6e",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__010_LH_Per_L_PtD_qc_0020_0222_s01/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__010_LH_Per_L_PtD_qc_0020_0222_s01__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "8edcd0f8847291616ce789df3879a6b73fa02c621e0f75251466e935e21d35df",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__010_LH_Per_L_PtD_qc_0020_0222_s01/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__010_LH_Per_L_PtD_qc_0020_0222_s01__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "e5c45659412109c6fe3e93554ccdaaa68aa62cdb0a3e826b6872c3fe7fe5ba07",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__010_LH_Per_L_PtD_qc_0238_0488_s02/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__010_LH_Per_L_PtD_qc_0238_0488_s02__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "6730825a32c4f93bc229085f3921eb31bff6dbbae50c5e1d1439d9dd90c1e72c",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__010_LH_Per_L_PtD_qc_0238_0488_s02/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__010_LH_Per_L_PtD_qc_0238_0488_s02__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "fa5c7f8462c3ee68d8cf54eec23b018f1bb6d893983b5d61d967fcfa3d8f53b9",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__010_LH_Per_L_PtD_qc_0238_0488_s02/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__010_LH_Per_L_PtD_qc_0238_0488_s02__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "34eb838dca72156e9fa2bb8c20c95288c3ccbb612818ab48b51985b2737c3674",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__010_LH_Per_S_DtP_qc_0085_0442_s01/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__010_LH_Per_S_DtP_qc_0085_0442_s01__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "6dc9ff241c508293293d3b8d852c14fc823835889b4a87f953527b1c7837c641",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__010_LH_Per_S_DtP_qc_0085_0442_s01/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__010_LH_Per_S_DtP_qc_0085_0442_s01__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "1204cf45be85f5ed435ebc6368b1766bffaf48748e3f0fb88e6bc6d636e96dee",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__010_LH_Per_S_DtP_qc_0085_0442_s01/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__010_LH_Per_S_DtP_qc_0085_0442_s01__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "5e443d77c5ba9f4c67be5b155e5c1d3d9bc6fc9be4fa1c778d982cad5936141a",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__010_LH_Per_S_DtP_qc_0460_0586_s02/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__010_LH_Per_S_DtP_qc_0460_0586_s02__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "c90ad9ab2017c7e2cd8c5645723dc61576f9c86395bcd0d7e290072ad5771412",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__010_LH_Per_S_DtP_qc_0460_0586_s02/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__010_LH_Per_S_DtP_qc_0460_0586_s02__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "8fb540db8087a4591157450a96a40449c3e0471b044c1136aabeb5acbd594b76",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__010_LH_Per_S_DtP_qc_0460_0586_s02/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__010_LH_Per_S_DtP_qc_0460_0586_s02__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "9e3edd3cdedbdcef2f2d0ce455796d59e5af2b2d0fba1c0cf55c32f265a1699d",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__010_LH_Per_S_PtD_qc_0078_0394/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__010_LH_Per_S_PtD_qc_0078_0394__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "4fbc19ff1dc996068ec52b33cdfe1f4ee0975435c5ca66b1bf86a27143e87d37",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__010_LH_Per_S_PtD_qc_0078_0394/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__010_LH_Per_S_PtD_qc_0078_0394__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "57899460d3a4bd9d74eb742cb8bbc1e514f4c1bd1d4e1bd681a0f9d1ad3e9cb0",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__010_LH_Per_S_PtD_qc_0078_0394/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__010_LH_Per_S_PtD_qc_0078_0394__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "1f8dcd1ec46be61f94e12baed459ea3ed6a9303fad98e57731776ab4f9f1824a",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__010_RH_Par_S_DtP_qc_0005_0091/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__010_RH_Par_S_DtP_qc_0005_0091__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "54c65dd1ff9d81075e81dc22f38ce8d11b9062bd66e718ddfef49361cb204662",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__010_RH_Par_S_DtP_qc_0005_0091/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__010_RH_Par_S_DtP_qc_0005_0091__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "1a1590eb8b66d9eab26c5f726c130c70e699f05b1fb04811a0d852e20214ea71",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__010_RH_Par_S_DtP_qc_0005_0091/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__010_RH_Par_S_DtP_qc_0005_0091__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "ebfb140d09bfe0f6d01216e5e92a67b02e62e07b178562c3cc36fe480c91779c",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__010_RH_Per_C_DtP_qc_0269_0627/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__010_RH_Per_C_DtP_qc_0269_0627__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "19546c1f3eeb75ef0d09c8c3d1b9f06aa730f553c1aa041b3b307ef952453578",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__010_RH_Per_C_DtP_qc_0269_0627/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__010_RH_Per_C_DtP_qc_0269_0627__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "82feb630c33688d69909182c3d6f474dbc24a8dcb7be1f382c0ec9896f17f4b2",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__010_RH_Per_C_DtP_qc_0269_0627/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__010_RH_Per_C_DtP_qc_0269_0627__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "2ee9d163add1b32dd798184816008baeac420c32f127bf361ac9b1c2d52a746b",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__010_RH_Per_C_PtD_qc_0006_0427/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__010_RH_Per_C_PtD_qc_0006_0427__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "a98dc24447fd239bf099995ae52bf2215ab4313c0e7de774c074f3fbb3890e09",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__010_RH_Per_C_PtD_qc_0006_0427/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__010_RH_Per_C_PtD_qc_0006_0427__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "87277ac63944a480b3c6d5da070fbfe6b5d2626bafd87190468b3138a950bb4e",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__010_RH_Per_C_PtD_qc_0006_0427/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__010_RH_Per_C_PtD_qc_0006_0427__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "8652de1c8720fe26167046b4fc824f2efe78c315d4223ae0965a5877ae95f26b",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__010_RH_Per_L_DtP_qc_0005_0574/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__010_RH_Per_L_DtP_qc_0005_0574__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "09b9f67c765e9b866e3303310c774933701d60b27b3bc736c95120b3afc2005e",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__010_RH_Per_L_DtP_qc_0005_0574/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__010_RH_Per_L_DtP_qc_0005_0574__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "83b6877ee2587e1ce5fdca048fbdad27bb2c3f68f1c34f4f90f4f87c4ce7cbeb",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__010_RH_Per_L_DtP_qc_0005_0574/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__010_RH_Per_L_DtP_qc_0005_0574__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "dd1ac09eb01872be7062e4574bc4f6d342b580112fb9f52a693914a7600d5cc8",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__010_RH_Per_L_PtD_qc_0006_0546/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__010_RH_Per_L_PtD_qc_0006_0546__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "86dd48bd1e5c0872dcdbcccaa90baf43ebe39cb89bbba1379aa309416f87b476",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__010_RH_Per_L_PtD_qc_0006_0546/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__010_RH_Per_L_PtD_qc_0006_0546__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "ced594e9a3525869e15d8d0d02e61d5d8d94e34a3e5237c18837e535a8db418b",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__010_RH_Per_L_PtD_qc_0006_0546/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__010_RH_Per_L_PtD_qc_0006_0546__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "68d31c20932a43f87606b3f7ea396039437ad8a0ec66143e922ff8bbe7f5397d",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__010_RH_Per_S_DtP_qc_0096_0411_s01/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__010_RH_Per_S_DtP_qc_0096_0411_s01__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "777fc283d476974da25e9966c70cc33d93a3b3f0a7bd046639592e33fc5344ee",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__010_RH_Per_S_DtP_qc_0096_0411_s01/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__010_RH_Per_S_DtP_qc_0096_0411_s01__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "7e242b847dfbe2b15dabb36334b53dc4f4a8076a255743873125be90196c59e5",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__010_RH_Per_S_DtP_qc_0096_0411_s01/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__010_RH_Per_S_DtP_qc_0096_0411_s01__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "f46942e93648ca5d01a75ec2772a093610f6acf78cfc7e1db2d9e647c176a656",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__010_RH_Per_S_DtP_qc_0426_0538_s02/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__010_RH_Per_S_DtP_qc_0426_0538_s02__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "2366d05dfc3d8efd5b22e7af32fd859b479675e2924e538790335bbb226a618c",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__010_RH_Per_S_DtP_qc_0426_0538_s02/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__010_RH_Per_S_DtP_qc_0426_0538_s02__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "c3d79d4568c34d81108fc086140e65986cad6fd71ebd89e8369bd52f3328fca4",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__010_RH_Per_S_DtP_qc_0426_0538_s02/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__010_RH_Per_S_DtP_qc_0426_0538_s02__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "3acc8134eb3e0edb289a8c951281353786f682c346a7b5dbc50ac3e3a7eb7361",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__010_RH_Per_S_PtD_qc_0062_0150_s01/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__010_RH_Per_S_PtD_qc_0062_0150_s01__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "d253acea8dc753cb430bd9a20faa52ee5035849034180c10fe5847886c1c489c",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__010_RH_Per_S_PtD_qc_0062_0150_s01/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__010_RH_Per_S_PtD_qc_0062_0150_s01__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "97a950ca303a770b3d803a7e549a4c6035a03aeea38d9f590eebde0ea0671d7c",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__010_RH_Per_S_PtD_qc_0062_0150_s01/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__010_RH_Per_S_PtD_qc_0062_0150_s01__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "7219c064edaf460b9bf57cb7441585af0c96af18d88aed7ddcf5426d06c89d9c",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__010_RH_Per_S_PtD_qc_0165_0364_s02/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__010_RH_Per_S_PtD_qc_0165_0364_s02__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "7154dcb4515a1a0742f54b5ba6da00c1203390a54b0abc474d1b37d51c1689d9",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__010_RH_Per_S_PtD_qc_0165_0364_s02/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__010_RH_Per_S_PtD_qc_0165_0364_s02__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "84f5475965ba6103c6b294ead00730a1105db8b90f65598f0b551a38a056203f",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__010_RH_Per_S_PtD_qc_0165_0364_s02/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__010_RH_Per_S_PtD_qc_0165_0364_s02__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "5eff06a0257f03f03c668aee283e84176d7f2496bfbb43ad488a3ff4dab2333e",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__011_LH_Par_S_DtP_qc_0155_0249/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__011_LH_Par_S_DtP_qc_0155_0249__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "64956e1c9efd023a38ded2eccfdffe610e57eabafe9ffa512653f7b3c8176df7",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__011_LH_Par_S_DtP_qc_0155_0249/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__011_LH_Par_S_DtP_qc_0155_0249__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "a0a4c95f26508def7797d604adfb13186e2b89dcea3e2ffb26e63f33b3951158",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__011_LH_Par_S_DtP_qc_0155_0249/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__011_LH_Par_S_DtP_qc_0155_0249__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "c1ff710526f1e08971a91b5cbaa96ec1b93f749c85b4f992250118331c574869",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__011_LH_Par_S_PtD_qc_0112_0224/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__011_LH_Par_S_PtD_qc_0112_0224__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "65e4855527f9496d62a4a07d7dcfb2b89421ff31803453791a96c4087e5ea1ad",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__011_LH_Par_S_PtD_qc_0112_0224/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__011_LH_Par_S_PtD_qc_0112_0224__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "7b00286330839d5fd2bb79ef97d8fe11c48123ce463e0e6c0cfbb1f14cd068e7",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__011_LH_Par_S_PtD_qc_0112_0224/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__011_LH_Par_S_PtD_qc_0112_0224__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "da76b93aa06908a3c817d79db25842fa24341d875269face9b5876f4b0e60286",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__011_LH_Per_C_DtP_qc_0115_0556/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__011_LH_Per_C_DtP_qc_0115_0556__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "42e952781e0b95a22ab109caa6ecbd11b472e10dee62ad61441692394e73dd58",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__011_LH_Per_C_DtP_qc_0115_0556/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__011_LH_Per_C_DtP_qc_0115_0556__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "55a68570b5d73c3949479d15490c50dcb427efefa5bb66ad3db1691f00df4eb4",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__011_LH_Per_C_DtP_qc_0115_0556/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__011_LH_Per_C_DtP_qc_0115_0556__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "fd2b36e8351389c4d1d37d4336821019b559e680f5df2cc4f911af1be03a8b5d",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__011_LH_Per_C_PtD_qc_0006_0568/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__011_LH_Per_C_PtD_qc_0006_0568__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "2253ce5441473eea12992cb668c3a40ba0cbccdf023fd330daef073d8f7fb4ae",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__011_LH_Per_C_PtD_qc_0006_0568/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__011_LH_Per_C_PtD_qc_0006_0568__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "81cb1c4b4529082fcdbc0eef42a915bb7a2d1bc22f6ae47f48005814be81192d",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__011_LH_Per_C_PtD_qc_0006_0568/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__011_LH_Per_C_PtD_qc_0006_0568__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "4d604bb3548b9dd840a39e9ca12d7996c0a98e0bbd330e0e8d2083de83ff4d77",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__011_LH_Per_L_DtP_qc_0005_0594/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__011_LH_Per_L_DtP_qc_0005_0594__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "e3e09be4a8c7c3920a0faeb3747fce8bb5bdeb7db026562e84116e6e7bf1bd56",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__011_LH_Per_L_DtP_qc_0005_0594/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__011_LH_Per_L_DtP_qc_0005_0594__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "e86ceff822779ff95b353b3955fdbf9f087a4a6ca323f81afd5b09188de68187",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__011_LH_Per_L_DtP_qc_0005_0594/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__011_LH_Per_L_DtP_qc_0005_0594__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "ae79922de0fdb5660824105ae640d228665e1a284eb9e0f98179a114c7eb624b",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__011_LH_Per_L_PtD_qc_0006_0690/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__011_LH_Per_L_PtD_qc_0006_0690__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "9335f54b9da838caf6315e24f086569c40d14efab7c650a24da789901245b5cc",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__011_LH_Per_L_PtD_qc_0006_0690/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__011_LH_Per_L_PtD_qc_0006_0690__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "9bbaf396d47fb02666748774098f593f127b8d46c4b7e400e9835d5056fa61f9",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__011_LH_Per_L_PtD_qc_0006_0690/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__011_LH_Per_L_PtD_qc_0006_0690__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "7e9496bd9bca01c2a393878efdf785e3733f837074f48ac20266dfa9984fcbb0",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__011_LH_Per_S_DtP_qc_0118_0529/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__011_LH_Per_S_DtP_qc_0118_0529__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "ef8ac66d1387fa061393065a1cb6ef9a0ea9588fe53d39957c725843d267aff1",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__011_LH_Per_S_DtP_qc_0118_0529/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__011_LH_Per_S_DtP_qc_0118_0529__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "7549ed365a28af0ac8e408d078723d9c640f6b1d22c1eae3bfd54f700c741880",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__011_LH_Per_S_DtP_qc_0118_0529/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__011_LH_Per_S_DtP_qc_0118_0529__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "3590f685dedc3f7c1733577377d801673ed9f5c7aab7b35181f745edc9232320",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__011_LH_Per_S_PtD_qc_0008_0447/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__011_LH_Per_S_PtD_qc_0008_0447__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "ae1040ccb66075fe829270e544d542df655095721691fd855fffdb3703e1b61c",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__011_LH_Per_S_PtD_qc_0008_0447/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__011_LH_Per_S_PtD_qc_0008_0447__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "7fd48b10ff4928b92f91a8a32f6515118493f105e0548eb7d847f516f83d9bc2",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__011_LH_Per_S_PtD_qc_0008_0447/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__011_LH_Per_S_PtD_qc_0008_0447__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "7a4cdda809f7284e35badc2211d01ed17988f607ec06c1f210c99a77795e4e1e",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__011_RH_Per_C_DtP_qc_0137_0372/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__011_RH_Per_C_DtP_qc_0137_0372__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "ee1593016f443576c2ad650cdbe7fda28458b2ba9bd501fb452f88b0b76c91d4",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__011_RH_Per_C_DtP_qc_0137_0372/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__011_RH_Per_C_DtP_qc_0137_0372__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "9f607f8c7c86aa47f309b3d5fd09f59322b009f85f2e05c2a1f3edaa7b5c59ab",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__011_RH_Per_C_DtP_qc_0137_0372/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__011_RH_Per_C_DtP_qc_0137_0372__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "a3286397b7d8b6eb2a048d5d81fa6eadb1165438138e429788372f1e5ab30926",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__011_RH_Per_C_PtD_qc_0006_0170_s01/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__011_RH_Per_C_PtD_qc_0006_0170_s01__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "287d919a47fbbb95f4a36d68340533d5cc4fa78db980519d5e8c96f466c56a6a",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__011_RH_Per_C_PtD_qc_0006_0170_s01/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__011_RH_Per_C_PtD_qc_0006_0170_s01__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "f79f4d3c8ed3eb683d9256d90ac2993dd100cfd7cf0919db58e6ac20553331e8",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__011_RH_Per_C_PtD_qc_0006_0170_s01/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__011_RH_Per_C_PtD_qc_0006_0170_s01__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "87371c848ceef522c9cd8a1333e3543521c43cf831ea2c7d1f75a9f68d4656ef",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__011_RH_Per_C_PtD_qc_0186_0557_s02/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__011_RH_Per_C_PtD_qc_0186_0557_s02__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "d0923e7eb070653508d3961f8e7ede392b3ddd716e01e5a0347a5857aef317d2",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__011_RH_Per_C_PtD_qc_0186_0557_s02/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__011_RH_Per_C_PtD_qc_0186_0557_s02__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "4fb2d9a3d5915422b55de962a379dcbda0f2bfc23b76b3fa1cd6698f7586ac78",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__011_RH_Per_C_PtD_qc_0186_0557_s02/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__011_RH_Per_C_PtD_qc_0186_0557_s02__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "e54adc2647cf281ede0b70d0d6ab9f462de7e623a8ef5c3e502926d758de3bb1",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__011_RH_Per_L_DtP_qc_0007_0584/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__011_RH_Per_L_DtP_qc_0007_0584__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "f157a053a055ca5ab41ef159befaf7c200670bd06d58311e831bd73ed57344ca",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__011_RH_Per_L_DtP_qc_0007_0584/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__011_RH_Per_L_DtP_qc_0007_0584__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "1d2efcf127498651442db34deb9c9fd943628be8d32362792cb195572d208752",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__011_RH_Per_L_DtP_qc_0007_0584/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__011_RH_Per_L_DtP_qc_0007_0584__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "861e4ed1b039e61cff629b5cd1f044825e7caaf064ea807e740f263d68c5710d",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__011_RH_Per_L_PtD_qc_0006_0459/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__011_RH_Per_L_PtD_qc_0006_0459__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "7c409b139f57536d7db0bf0404f81f45163b2d499f529217a28f8274c4db8b0f",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__011_RH_Per_L_PtD_qc_0006_0459/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__011_RH_Per_L_PtD_qc_0006_0459__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "8bb54b38a03050d3057f09eb5487d9c7bbdd79b7f871b69ac1370e1ada9796d3",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__011_RH_Per_L_PtD_qc_0006_0459/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__011_RH_Per_L_PtD_qc_0006_0459__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "a45bb1c7b145a0666a61b93931608c66c668302f9b06f39ec375b6a308943e80",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__011_RH_Per_S_DtP_qc_0166_0553/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__011_RH_Per_S_DtP_qc_0166_0553__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "16b11dfe9f40388ac4532e557af0474a55dcda26b8cabf6448c79d54a3672eaa",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__011_RH_Per_S_DtP_qc_0166_0553/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__011_RH_Per_S_DtP_qc_0166_0553__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "8f17b31f9a5cb893849413c23445f79c7b51f68cff59df0fe286d69bdf61322e",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__011_RH_Per_S_DtP_qc_0166_0553/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__011_RH_Per_S_DtP_qc_0166_0553__p3_canonical/run_manifest.yaml"
+    ]
+  },
+  {
+    "sha256": "16a0dd5db5a407a3db0f20a74f6bc5ea4520222334151c1a934398d3f25c419b",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__011_RH_Per_S_PtD_qc_0028_0185/overrides.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__011_RH_Per_S_PtD_qc_0028_0185__p3_canonical/overrides.yaml"
+    ]
+  },
+  {
+    "sha256": "db03e9b28c88c9ad792b2b0b404ba21acd62eebac3c0b0263a47603723696bbc",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__011_RH_Per_S_PtD_qc_0028_0185/resolved_config.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__011_RH_Per_S_PtD_qc_0028_0185__p3_canonical/resolved_config.yaml"
+    ]
+  },
+  {
+    "sha256": "b82cf0b1a6a069be420b7414f1d502c9fb5cf5f78a89bea74b51b45ca5a5cbaa",
+    "paths": [
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/final_p3_resolved/tus_rec_2024_qc__011_RH_Per_S_PtD_qc_0028_0185/run_manifest.yaml",
+      "archive/eehpc-20261017/04_experiments/production/questions/server_codex_package/configs/resolved_by_experiment/overnight_202runs__final_p3__tus_rec_2024_qc__011_RH_Per_S_PtD_qc_0028_0185__p3_canonical/run_manifest.yaml"
+    ]
+  }
+]

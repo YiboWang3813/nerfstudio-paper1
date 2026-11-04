@@ -1,7 +1,7 @@
 """Bounded native acceptance: 256 points / 3 updates, never the formal budget."""
 
-import copy
 import argparse
+import copy
 import gc
 import json
 import time

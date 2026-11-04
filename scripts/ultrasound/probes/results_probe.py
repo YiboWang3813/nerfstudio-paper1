@@ -123,7 +123,7 @@ def main():
                     "iterations": old_config["engine"]["iterations"],
                     "num_init": old_config["scene"]["sampler"]["num_init"],
                 },
-                "limits": "Gaussian references are older stage1 parameter variants; native uses current frozen presets. This is a 5k prefix, not a full-budget result.",
+                "limits": "Historical references include older parameter variants; parameter_variant and native_config identify the actual native settings. This is a 5k prefix, not a full-budget result.",
             }
             receipt.write_text(json.dumps(record, indent=2) + "\n")
             start = time.monotonic()

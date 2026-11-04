@@ -9,6 +9,7 @@
 | 配置转换来源 | `scripts/ultrasound/convert_protocols.py` |
 | 数据准备与包校验 | `scripts/ultrasound/{prepare_manifest,freeze_datasets,package_dataset,publish_dataset}.py` |
 | 原生工程短程验证 | `scripts/ultrasound/smoke_matrix.py` |
+| 代表 sweep 的实际指标对照 | [八方法结果](../../../results/probes/native-5k-liver-l1/README.md) |
 | 历史指标参照探针 | `scripts/ultrasound/probes/results_probe.py` |
 | 工程验收证据 | `../../../migration/preformal-acceptance.json` |
 | 当前研究说明 | `../../../docs/current/README.md` |
@@ -27,3 +28,7 @@
 源端独立 protocol 仓库的冻结快照收入 [provenance/eehpc-20261017](provenance/eehpc-20261017/README.md)，来源提交 `042cc1baa39fedde52130029e61ff6c00f3d1148`，通过 Git subtree 保留来源。这里的旧 workspace lock、Slurm 工具、checkpoint 清单与绝对路径是历史实验的来源记录，不是本机环境声明，也不表示清单中的权重已迁入。
 
 原生配置快照承接有效算法参数；当前实际运行工具在 `scripts/ultrasound`。源端 protocol 的工具和规则保留在历史快照中供审计，不能直接运行旧 Slurm 命令。本机操作以 `/home/yibo/AGENTS.md`、`/home/yibo/paper1/AGENTS.md` 为准。不建立独立的 `/home/yibo/paper1/protocol` 一级项目。
+
+## 代表 sweep 对照结果
+
+八个方法已用新代码完成 synthetic_liver/l1 的 5k 指标参照。七个当前参数结果接近或优于历史参照；UltraGS 当前参数 PSNR 提升但 SSIM 下降较多。仅用新代码按历史参数复跑后，PSNR 差约 −0.005 dB、SSIM 差约 −0.001，支持参数版本变化是首轮差异的主要来源。当前默认参数没有因此被改写，完整两组结果均保留。

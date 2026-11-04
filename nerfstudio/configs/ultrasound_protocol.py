@@ -172,7 +172,10 @@ def production_config(method, manifest: Path, output: Path):
     cfg.set_timestamp()
     cfg.max_num_iterations = source["iterations"]
     cfg.steps_per_eval_batch = cfg.steps_per_eval_image = 0
-    cfg.steps_per_eval_all_images = cfg.steps_per_save = source["iterations"]
+    # Native Trainer iterates 0..N-1 and step_check tests step % interval.
+    # Evaluate after the Nth optimizer update, before its automatic final save.
+    cfg.steps_per_eval_all_images = source["iterations"] - 1
+    cfg.steps_per_save = source["iterations"]
     cfg.save_only_latest_checkpoint = True
     cfg.pipeline.evaluation_output = cfg.get_base_dir() / "evaluation"
     cfg.pipeline.model.full_metrics = True

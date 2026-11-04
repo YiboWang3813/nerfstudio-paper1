@@ -17,6 +17,8 @@
 `prepare` 只生成官方 Nerfstudio 配置和检查回执，不启动训练。正式预算为
 Gaussian 方法 1,000,000 个初始点、30,000 次更新；历史 `p100k` 协议名不代表
 当前点数。生成的配置可由官方 Trainer 的 `--load-config` 加载。
+Nerfstudio 的 step 从 0 开始，因此第 30,000 次更新的最终评估在 step=29,999
+触发；不把旧引擎的一基计数直接当成原生评估间隔。
 本次迁移验收到正式实验之前停止，不运行正式配置。
 
 当前比较方法为 Ours、UltraGauss、UltraGray、GaussianPile、Slice-adapted

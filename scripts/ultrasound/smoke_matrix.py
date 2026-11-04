@@ -56,7 +56,7 @@ def main():
                 # frozen split unchanged. This is an engineering test, not NVS acceptance.
                 batch = trainer.pipeline.datamanager.next_eval_image(3)
                 trainer.pipeline.datamanager.fixed_indices_eval_dataloader = [batch]
-                metrics = trainer.pipeline.get_average_eval_image_metrics(step=3)
+                metrics = trainer.pipeline.get_average_eval_image_metrics(step=2)
                 if not all(
                     torch.isfinite(torch.tensor(metrics[name]))
                     for name in ("psnr", "l1", "ssim", "lpips", "dists", "gmsd")

@@ -38,6 +38,9 @@ def test_frozen_protocol_and_native_serialization(method, manifest, tmp_path):
     restored = yaml.load(yaml.dump(cfg), Loader=yaml.Loader)
     assert restored.pipeline.model._target is cfg.pipeline.model._target
     assert cfg.max_num_iterations == 30000
+    from nerfstudio.utils.misc import step_check
+
+    assert [step for step in range(30000) if step_check(step, cfg.steps_per_eval_all_images)] == [29999]
     assert cfg.pipeline.model.full_metrics
     if method in ("nerfus", "ultranerf"):
         assert cfg.pipeline.model.mse_weight == 0.1 and cfg.pipeline.model.ssim_weight == 0.9

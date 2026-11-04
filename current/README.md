@@ -1,6 +1,6 @@
 # 当前研究导航
 
-原生 Nerfstudio 和 gsplat 接入已完成工程测试；逐方法历史指标参照探针仍是正式实验前的独立验收项。历史图表可供追溯，不能替代新代码的结果。
+原生 Nerfstudio 和 gsplat 接入已完成工程测试；八个方法在 synthetic_liver/l1 上的 5k 历史指标参照探针已完成；UltraGS 当前参数与旧参照有 SSIM 差异，按历史参数复跑后接近。历史图表可供追溯，不能替代新代码的结果。
 
 ## 保留的方法
 
@@ -25,6 +25,7 @@
 
 ## 证据和文稿
 
+- [八方法代表 sweep 指标对照](../../results/probes/native-5k-liver-l1/README.md)：六项指标、逐帧结果及重建图，停在正式 1M/30k 之前。
 - [当前工程验收记录](../../migration/preformal-acceptance.json)：34 项测试及 32 组真实数据短程案例，不等于新旧效果等价。
 - [结果仓库](../../results/README.md)：历史数值、图表输入与来源清单。
 - [历史文稿](../archive/eehpc-20261017/05_manuscript/)：保留原样，待原生代码正式复现后再更新论文结论与图表。

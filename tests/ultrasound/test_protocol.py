@@ -77,6 +77,32 @@ def test_uncertainty_mapping_and_invalid_inputs(tmp_path):
         frame_weights(cfg, [10, 20])
 
 
+@pytest.mark.parametrize("method", ["nerfus", "ultranerf"])
+def test_fields_obey_native_ray_samples_and_physical_units(method):
+    import importlib
+
+    from nerfstudio.cameras.rays import Frustums, RaySamples
+    from nerfstudio.field_components.field_heads import FieldHeadNames
+
+    module = importlib.import_module("nerfstudio.model_components.ultrasound_baselines." + method + ".field")
+    field = getattr(module, "NerfusField" if method == "nerfus" else "UltraNeRFField")(coordinate_scale_mm=1000.0)
+    samples = RaySamples(
+        frustums=Frustums(
+            origins=torch.tensor([[10.0, 20.0, 30.0]]),
+            directions=torch.tensor([[0.0, 1.0, 0.0]]),
+            starts=torch.zeros(1, 1),
+            ends=torch.ones(1, 1) * 2,
+            pixel_area=torch.ones(1, 1),
+        )
+    )
+    expected = field.query_normalized(samples.frustums.get_positions() / 1000.0)
+    outputs = field(samples, compute_normals=True)
+    torch.testing.assert_close(outputs[FieldHeadNames.DENSITY], expected["alpha"][..., None])
+    for name in ("beta", "rho_b", "rho_s", "phi"):
+        torch.testing.assert_close(outputs[name], expected[name])
+    assert torch.isfinite(outputs[FieldHeadNames.NORMALS]).all()
+
+
 @pytest.mark.skipif(not torch.cuda.is_available(), reason="Actual perceptual GPU execution required")
 def test_full_metric_protocol_is_separate_from_train_modules():
     from nerfstudio.model_components.ultrasound_metrics import evaluator, full_reference_metrics

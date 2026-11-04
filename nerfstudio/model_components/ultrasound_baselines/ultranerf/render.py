@@ -102,7 +102,7 @@ def _query_field_chunked(
     flat = points_mm.reshape(-1, 3) / float(coordinate_scale)
     chunks = []
     for start in range(0, flat.shape[0], int(chunk_size)):
-        chunks.append(field(flat[start : start + int(chunk_size)]))
+        chunks.append(field.query_normalized(flat[start : start + int(chunk_size)]))
     keys = [k for k in chunks[0].keys() if k != "raw"]
     out = {k: torch.cat([c[k] for c in chunks], dim=0).view(h, w) for k in keys}
     out["raw"] = torch.cat([c["raw"] for c in chunks], dim=0).view(h, w, 5)

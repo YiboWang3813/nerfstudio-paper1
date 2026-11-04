@@ -37,7 +37,7 @@ class UltrasoundFieldModel(AcousticSliceModel):
         base = "nerfstudio.model_components.ultrasound_baselines." + self.algorithm.name
         module = importlib.import_module(base + ".field")
         self.field = getattr(module, "NerfusField" if self.algorithm.name == "nerfus" else "UltraNeRFField")(
-            self.algorithm.field
+            self.algorithm.field, coordinate_scale_mm=self.algorithm.ray.coordinate_scale
         )
         self.ssim = UltrasoundSSIM()
         self._step = 0

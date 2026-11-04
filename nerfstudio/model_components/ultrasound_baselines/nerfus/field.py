@@ -32,9 +32,12 @@ class PositionalEncoding(nn.Module):
 class NerfusField(Field):
     """No-prior NeRF-US field: 3D point -> alpha, beta, rho_b, rho_s, phi."""
 
-    def __init__(self, cfg: Optional[FieldConfig] = None):
+    def __init__(self, cfg: Optional[FieldConfig] = None, coordinate_scale_mm: float = 1000.0):
         super().__init__()
         self.cfg = cfg or FieldConfig()
+        if coordinate_scale_mm <= 0:
+            raise ValueError("coordinate_scale_mm must be positive")
+        self.coordinate_scale_mm = coordinate_scale_mm
         if bool(self.cfg.use_viewdirs):
             raise ValueError(
                 "NerfusField currently implements the paper's isotropic field; use_viewdirs must be false."
@@ -74,8 +77,11 @@ class NerfusField(Field):
             h = F.relu(layer(h), inplace=False)
         return self.output(h)
 
-    def forward(self, points: torch.Tensor) -> Dict[str, torch.Tensor]:
-        raw = self.forward_raw(points)
+    def query_normalized(self, points: torch.Tensor) -> Dict[str, torch.Tensor]:
+        """Query normalized coordinates for the acoustic integration renderer."""
+        return self._activate(self.forward_raw(points))
+
+    def _activate(self, raw: torch.Tensor) -> Dict[str, torch.Tensor]:
         mode = str(self.cfg.alpha_activation).lower()
         if mode == "abs":
             alpha = torch.abs(raw[..., 0])
@@ -94,8 +100,15 @@ class NerfusField(Field):
         }
 
     def get_density(self, ray_samples):
-        parameters = self(ray_samples.frustums.get_positions())
-        return parameters["alpha"][..., None], None
+        positions_mm = ray_samples.frustums.get_positions()
+        positions_mm.requires_grad_(True)
+        self._sample_locations = positions_mm
+        raw = self.forward_raw(positions_mm / self.coordinate_scale_mm)
+        self._density_before_activation = raw[..., :1]
+        return self._activate(raw)["alpha"][..., None], raw
 
     def get_outputs(self, ray_samples, density_embedding=None):
-        return self(ray_samples.frustums.get_positions())
+        raw = density_embedding
+        if raw is None:
+            raw = self.forward_raw(ray_samples.frustums.get_positions() / self.coordinate_scale_mm)
+        return self._activate(raw)

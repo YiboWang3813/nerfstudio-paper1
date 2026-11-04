@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "task": "paper1-native-ultrasound-refactor",
+  "status": "in_progress",
+  "source_commits": {
+    "nerfstudio": "fa2006d8ad82149bb89ea50f554e8b49edfe77bb",
+    "gsplat": "a2c4c9b86ccbf0e0bc2a6cbca66be07f1af1e66f"
+  },
+  "constraints": {
+    "weights": "deferred; use newly trained results",
+    "historical_docs_figures": "deferred until reproduction",
+    "data": "shared datasets; controlled versioned publication only",
+    "environment": "reuse paper2 shared stack"
+  },
+  "stage": {
+    "code_transfer": "complete; both fork histories retained; git connectivity and tracked transfer identity checked",
+    "runtime_isolation": "validated; independent Nerfstudio/gsplat sources and a single shared Torch stack",
+    "cuda_backend": "ours native kernel integrated and compiled; forward/backward/global path/pose checks passed",
+    "native_ours": "native core validated; production preset, full metrics and full-budget acceptance pending",
+    "native_baselines": "pending; historical code transferred but not native-adapted",
+    "dataset_publication": "four representative sweeps verified locally and packaged; zero R2 requests; no pointers published",
+    "end_to_end_validation": "engineering smoke passed for four datasets; formal reproduction pending"
+  },
+  "remaining": [
+    "production configuration conversion and fail-closed option coverage",
+    "complete six-metric evaluation and per-frame provenance",
+    "pose refinement, uncertainty and full ablation coverage",
+    "native baseline model/backend ports",
+    "remaining dataset packages and controlled R2 publication after shared usage verification",
+    "formal 1M/30k experiment validation; manuscripts and figures remain deferred"
+  ],
+  "acceptance": {
+    "core": "native interfaces and kernel execution; no legacy runtime imports",
+    "scientific": "full method/config/metric coverage plus frozen full-budget experiments; not yet achieved"
+  },
+  "validation_artifacts": [
+    "/home/yibo/paper1/migration/native-final-tests.log",
+    "/home/yibo/paper1/migration/four-dataset-native-smoke.json",
+    "/home/yibo/paper1/migration/liver-global-native-smoke.log",
+    "/home/yibo/paper1/migration/cuda-build-final.log"
+  ],
+  "cloud": {
+    "r2_requests_by_this_task": 0,
+    "uploads": 0,
+    "current_pointer_writes": 0,
+    "published": false
+  },
+  "validation_result": "13 native tests passed; four engineering train/eval pairs and one global/density smoke passed",
+  "execution_provenance_note": "Executed from the uncommitted native working tree; delivery commits do not replace historical execution identities."
+}

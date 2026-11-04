@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+set -euo pipefail
+paper1_root="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/../../.." && pwd)"
+export CUDA_HOME=/usr/local/cuda-12.4
+export PATH="$paper1_root/.venv/bin:/home/yibo/shared/envs/torch251-cu124-py311/bin:$CUDA_HOME/bin:/usr/bin:/bin"
+export CC=/usr/bin/gcc CXX=/usr/bin/g++
+export TORCH_CUDA_ARCH_LIST=8.9
+export MAX_JOBS="${MAX_JOBS:-2}"
+export TORCH_EXTENSIONS_DIR=/home/yibo/shared/cache/torch_extensions/paper1
+export UV_CACHE_DIR=/home/yibo/shared/cache/uv
+export HF_HOME=/home/yibo/shared/cache/huggingface
+export MPLCONFIGDIR=/home/yibo/shared/cache/matplotlib
+export PYTHONNOUSERSITE=1
+unset PYTHONPATH
+exec "$paper1_root/.venv/bin/python" -P -m nerfstudio.scripts.ultrasound "$@"

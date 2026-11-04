@@ -25,6 +25,7 @@ import tyro
 
 from nerfstudio.cameras.camera_optimizers import CameraOptimizerConfig
 from nerfstudio.configs.base_config import ViewerConfig
+from nerfstudio.configs.ultrasound import ultrasound_config
 from nerfstudio.configs.external_methods import ExternalMethodDummyTrainerConfig, get_external_methods
 from nerfstudio.data.datamanagers.base_datamanager import VanillaDataManager, VanillaDataManagerConfig
 from nerfstudio.data.datamanagers.full_images_datamanager import FullImageDatamanagerConfig
@@ -65,6 +66,7 @@ from nerfstudio.pipelines.dynamic_batch import DynamicBatchPipelineConfig
 from nerfstudio.plugins.registry import discover_methods
 
 method_configs: Dict[str, Union[TrainerConfig, ExternalMethodDummyTrainerConfig]] = {}
+method_configs["ultrasound-dev"] = ultrasound_config()
 descriptions = {
     "nerfacto": "Recommended real-time model tuned for real captures. This model will be continually updated.",
     "nerfacto-huge": "Larger version of Nerfacto with higher quality.",

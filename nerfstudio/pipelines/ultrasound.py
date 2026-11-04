@@ -32,7 +32,11 @@ class UltrasoundPipeline(VanillaPipeline):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         if hasattr(self.model, "camera_optimizer") and self.model.config.pose.enabled:
-            poses = self.model.camera_optimizer.prior_poses[:, :3].clone()
+            indices = [
+                self.model.camera_optimizer.indices[frame]
+                for frame in self.datamanager.train_dataset.metadata["frame_ids"]
+            ]
+            poses = self.model.camera_optimizer.prior_poses[indices, :3].clone()
             poses[:, :, 1:3] *= -1
             self.datamanager.train_dataset.cameras.camera_to_worlds = poses
         self.initialize_gaussians()

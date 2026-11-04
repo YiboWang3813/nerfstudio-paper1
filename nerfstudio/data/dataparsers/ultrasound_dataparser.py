@@ -33,8 +33,8 @@ class UltrasoundDataParser(DataParser):
 
     def _generate_dataparser_outputs(self, split="train"):
         path = self.config.data.resolve()
-        if self.config.pose_validation not in ('rigid','preserve_source_affine'):
-            raise ValueError('Unknown pose validation mode')
+        if self.config.pose_validation not in ("rigid", "preserve_source_affine"):
+            raise ValueError("Unknown pose validation mode")
         manifest = json.loads(path.read_text())
         if manifest.get("schema_version") != 1 or manifest.get("pose_convention") != "probe_to_world_mm":
             raise ValueError("Expected schema_version=1 and pose_convention=probe_to_world_mm.")
@@ -84,6 +84,20 @@ class UltrasoundDataParser(DataParser):
             if set(train["indices"]) & set(test["indices"]):
                 raise ValueError("Train/test split leakage.")
         probe_poses = torch.from_numpy(np.array(poses[indices], dtype=np.float32))
+        # Pose residual smoothness and uncertainty priors operate on the entire
+        # temporal sweep, including held-out frames, as in the frozen protocol.
+        # Image losses still see only the selected train split.
+        domain_ids = {}
+        same_source = all(train[name]["sha256"] == test[name]["sha256"] for name in ("images", "poses"))
+        if same_source:
+            for subset in (train, test):
+                for index, frame_id in zip(subset["indices"], subset["frame_ids"]):
+                    if index in domain_ids and domain_ids[index] != frame_id:
+                        raise ValueError("Inconsistent source frame identity")
+                    domain_ids[index] = frame_id
+        complete_domain = same_source and set(domain_ids) == set(range(len(poses)))
+        pose_frame_ids = [domain_ids[index] for index in range(len(poses))] if complete_domain else frame_ids.tolist()
+        domain_poses = torch.from_numpy(np.array(poses, dtype=np.float32)) if complete_domain else probe_poses.clone()
         if self.config.pose_mode == "canonical":
             if self.config.canonical_spacing_mm <= 0:
                 raise ValueError("Canonical sweeps require explicit positive calibrated spacing in mm.")
@@ -93,14 +107,24 @@ class UltrasoundDataParser(DataParser):
                 torch.from_numpy(frame_ids - self.config.canonical_reference_frame_id)
                 * self.config.canonical_spacing_mm
             )
+            domain_poses = torch.eye(4).repeat(len(pose_frame_ids), 1, 1)
+            domain_poses[:, axis, 3] = (
+                torch.tensor(pose_frame_ids) - self.config.canonical_reference_frame_id
+            ) * self.config.canonical_spacing_mm
         rotation = probe_poses[:, :3, :3]
         if (
             not torch.isfinite(probe_poses).all()
             or not torch.allclose(probe_poses[:, 3], torch.tensor([0.0, 0.0, 0.0, 1.0]).expand(len(indices), 4))
-            or (self.config.pose_validation == 'rigid' and not torch.allclose(
-                rotation.transpose(-1, -2) @ rotation, torch.eye(3).expand(len(indices), 3, 3), atol=1e-4
-            ))
-            or (self.config.pose_validation == 'rigid' and not torch.allclose(torch.linalg.det(rotation), torch.ones(len(indices)), atol=1e-4))
+            or (
+                self.config.pose_validation == "rigid"
+                and not torch.allclose(
+                    rotation.transpose(-1, -2) @ rotation, torch.eye(3).expand(len(indices), 3, 3), atol=1e-4
+                )
+            )
+            or (
+                self.config.pose_validation == "rigid"
+                and not torch.allclose(torch.linalg.det(rotation), torch.ones(len(indices)), atol=1e-4)
+            )
             or torch.any(torch.linalg.det(rotation) <= 1e-6)
         ):
             raise ValueError("Poses must be finite rigid homogeneous probe-to-world transforms.")
@@ -133,9 +157,20 @@ class UltrasoundDataParser(DataParser):
         padding = max(float(geometry["elevational_spacing_mm"]), 1e-3)
         metadata = {
             "probe_poses": probe_poses,
+            "pose_domain_frame_ids": pose_frame_ids,
+            "pose_domain_probe_poses": domain_poses,
+            "pose_domain_complete": complete_domain,
             "pose_validation": self.config.pose_validation,
-            "source_rotation_orthogonality_max_error": float((rotation.transpose(-1,-2)@rotation-torch.eye(3)).abs().max()),
-            "scene_radius_mm": float(((torch.ceil((high+(high-low)*.05)/4)*4)-(torch.floor((low-(high-low)*.05)/4)*4)).norm()/2),
+            "source_rotation_orthogonality_max_error": float(
+                (rotation.transpose(-1, -2) @ rotation - torch.eye(3)).abs().max()
+            ),
+            "scene_radius_mm": float(
+                (
+                    (torch.ceil((high + (high - low) * 0.05) / 4) * 4)
+                    - (torch.floor((low - (high - low) * 0.05) / 4) * 4)
+                ).norm()
+                / 2
+            ),
             "geometry": geometry,
             "images_path": str((root / selected["images"]["path"]).resolve()),
             "array_indices": indices.tolist(),

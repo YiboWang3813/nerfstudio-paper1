@@ -97,7 +97,8 @@ class UltrasoundCameraOptimizer(CameraOptimizer):
 
     Unlike stock world-space SO3xR3, this protocol right-multiplies probe-local
     Euler XYZ residuals. Keeping that convention preserves the source method.
-    Held-out/viewer cameras receive no learned frame-wise residual.
+    The complete frozen temporal domain includes held-out frames so smoothness
+    and prior losses preserve the source protocol. Viewer poses remain external.
     """
 
     def __init__(self, config, frame_ids, poses):
@@ -109,7 +110,7 @@ class UltrasoundCameraOptimizer(CameraOptimizer):
             path = Path(config.prior_poses_abspath)
             array = np.load(path, allow_pickle=False)
             if array.shape != tuple(poses.shape):
-                raise ValueError("Pose prior must match ordered train split")
+                raise ValueError("Pose prior must match the complete ordered temporal sweep")
             prior = torch.as_tensor(array, dtype=poses.dtype, device=poses.device)
         if not torch.isfinite(prior).all():
             raise ValueError("Nonfinite pose prior")
@@ -123,12 +124,15 @@ class UltrasoundCameraOptimizer(CameraOptimizer):
             prior = prior @ _euler_xyz_to_matrix(noise)
         self.register_buffer("prior_poses", prior)
         trainable = config.enabled and config.trainable
-        self.pose_delta_rot = nn.Parameter(
-            torch.zeros(len(poses), 3), requires_grad=trainable and config.optimize_rotation
-        )
-        self.pose_delta_trans = nn.Parameter(
-            torch.zeros(len(poses), 3), requires_grad=trainable and config.optimize_translation
-        )
+        for name, enabled in [
+            ("pose_delta_rot", config.optimize_rotation),
+            ("pose_delta_trans", config.optimize_translation),
+        ]:
+            value = torch.zeros(len(poses), 3)
+            if trainable:
+                self.register_parameter(name, nn.Parameter(value, requires_grad=enabled))
+            else:
+                self.register_buffer(name, value)
         self.step = 0
 
     def is_optimizing(self):
@@ -207,7 +211,7 @@ def frame_weights(config, frame_ids):
         return torch.ones(len(frame_ids))
     values = torch.from_numpy(np.load(config.uncertainty_abspath, allow_pickle=False).astype(np.float32))
     if values.shape != (len(frame_ids),) or not torch.isfinite(values).all():
-        raise ValueError("Uncertainty weights must match ordered train frames and be finite")
+        raise ValueError("Uncertainty weights must match the complete ordered temporal sweep and be finite")
     if not 0 < config.min_weight <= config.max_weight:
         raise ValueError("Invalid uncertainty bounds")
     if config.weight_mode == "exp":

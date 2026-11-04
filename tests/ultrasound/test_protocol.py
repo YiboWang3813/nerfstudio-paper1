@@ -131,7 +131,7 @@ def test_native_pose_uncertainty_and_mc_training(manifest, tmp_path):
     pose.lambda_prior = 0.01
     u = cfg.pipeline.model.uncertainty
     weights = tmp_path / "weights.npy"
-    np.save(weights, np.full(4, 0.4, dtype=np.float32))
+    np.save(weights, np.full(6, 0.4, dtype=np.float32))
     u.enabled = True
     u.uncertainty_abspath = str(weights)
     u.mc_enabled = True
@@ -151,6 +151,7 @@ def test_native_pose_uncertainty_and_mc_training(manifest, tmp_path):
     trainer.setup()
     trainer.train()
     component = trainer.pipeline.model.camera_optimizer
+    assert set(component.indices) == set(range(100, 106))
     assert torch.isfinite(component.pose_delta_trans).all()
     assert component.pose_delta_trans.abs().max() > 0
     state = trainer.pipeline.model.state_dict()

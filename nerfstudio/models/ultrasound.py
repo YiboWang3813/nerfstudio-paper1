@@ -124,8 +124,14 @@ class UltrasoundModel(AcousticSliceModel):
                 with asset.open("rb") as stream:
                     digest = hashlib.file_digest(stream, "sha256").hexdigest()
                 self.input_assets[name] = {"path": str(asset), "sha256": digest}
-        self.camera_optimizer = UltrasoundCameraOptimizer(cfg.pose, metadata["frame_ids"], metadata["probe_poses"])
-        self.register_buffer("uncertainty_weights", frame_weights(cfg.uncertainty, metadata["frame_ids"]))
+        if (cfg.pose.enabled or cfg.uncertainty.enabled) and not metadata["pose_domain_complete"]:
+            raise ValueError(
+                "Pose priors require a complete frozen temporal domain with shared train/test source arrays"
+            )
+        self.camera_optimizer = UltrasoundCameraOptimizer(
+            cfg.pose, metadata["pose_domain_frame_ids"], metadata["pose_domain_probe_poses"]
+        )
+        self.register_buffer("uncertainty_weights", frame_weights(cfg.uncertainty, metadata["pose_domain_frame_ids"]))
         g = self.geometry
         self.render_config = replace(
             cfg.renderer,

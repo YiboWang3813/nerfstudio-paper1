@@ -3,6 +3,7 @@
 import fcntl
 import hashlib
 import json
+import os
 import shutil
 import zipfile
 from functools import lru_cache
@@ -11,9 +12,20 @@ from pathlib import Path
 WORKSPACE = Path(__file__).resolve().parents[3]
 RUNS = WORKSPACE / "outputs/paper-images"
 REGISTRY = WORKSPACE / "nerfstudio/experiments/paper1/artifacts.json"
-DOCS = WORKSPACE / "docs"
+DOCS = Path(os.environ.get("PAPER1_DOCS_ROOT", str(WORKSPACE.parent / "docs-paper1"))).resolve()
 VIEW = WORKSPACE.parent / "shared/cache/paper1-artifacts/path-view"
 _OBJECT_ALIASES = {}
+
+
+def workspace_path(value):
+    """Resolve retained docs-prefixed config paths in the independent docs clone."""
+    value = Path(value)
+    if not value.is_absolute() and value.parts and value.parts[0] == "docs":
+        return DOCS.joinpath(*value.parts[1:])
+    legacy_docs = WORKSPACE / "docs"
+    if value.is_absolute() and value.is_relative_to(legacy_docs):
+        return DOCS / value.relative_to(legacy_docs)
+    return WORKSPACE / value
 
 
 @lru_cache(maxsize=1)
@@ -44,12 +56,16 @@ def evidence_root(archive_path="outputs/paper-evidence/inputs-v1.zip"):
 def load_artifact_config(object_id=None, config_path=None):
     """Resolve a versioned figure/table project from docs or an explicit config."""
     if config_path is not None:
-        path = Path(config_path).resolve()
+        requested = Path(config_path)
+        if (requested.parts and requested.parts[0] == "docs") or requested.is_relative_to(WORKSPACE / "docs"):
+            path = workspace_path(requested)
+        else:
+            path = requested.resolve()
     elif object_id:
         registry = json.loads(REGISTRY.read_text())
         if object_id not in registry:
             raise ValueError(f"Unknown artifact object: {object_id}")
-        path = WORKSPACE / registry[object_id]
+        path = workspace_path(registry[object_id])
     else:
         return {}, None
     return json.loads(path.read_text()), path
@@ -57,7 +73,7 @@ def load_artifact_config(object_id=None, config_path=None):
 
 def configure_object(definition):
     global _OBJECT_ALIASES
-    _OBJECT_ALIASES = {key: WORKSPACE / value for key, value in definition.get("input_aliases", {}).items()}
+    _OBJECT_ALIASES = {key: workspace_path(value) for key, value in definition.get("input_aliases", {}).items()}
 
 
 def mapped_path(value=".", *parts):
@@ -70,6 +86,8 @@ def mapped_path(value=".", *parts):
         suffix = value.split(marker, 1)[1].lstrip("/")
         return evidence_root().joinpath(suffix, *parts)
     roots = {
+        str(WORKSPACE / "docs"): DOCS,
+        "docs": DOCS,
         "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs": RUNS,
         "/home/boywang25/ultrasound-scene-reconstruction/omniultra": VIEW,
         "/home/boywang25/paper1/results/legacy/outputs": RUNS,

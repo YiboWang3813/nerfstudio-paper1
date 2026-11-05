@@ -1,0 +1,16 @@
+{
+  "source_data_path": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/docs/production/final_paper_evidence_20260910/cga/hyperparameter_data.tsv",
+  "source_data_sha256": "ba9e35d443ca698cae70aafd75113b9df8a46782de6f645d8f77128d3cf0cc01",
+  "P2_source_sha256": "f0ef8b8a16f36c57cd30e43c50f86b0262c18f8f65b8d7d33babb5bd67534a27",
+  "font_requested": "Times New Roman",
+  "font_embedded": "Times New Roman",
+  "size_inches": [
+    3.5,
+    2.0
+  ],
+  "color_scale_delta_psnr_dB": [
+    -0.02,
+    0.02
+  ],
+  "no_training": true
+}

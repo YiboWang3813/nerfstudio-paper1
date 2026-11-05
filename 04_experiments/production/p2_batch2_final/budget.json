@@ -1,0 +1,8 @@
+{
+  "new_runs": 66,
+  "reused_unique": 2,
+  "logical_slots": 82,
+  "worker_hours": 8.496235595718026,
+  "four_worker_hours": 2.1541392489274345,
+  "headroom_fraction": 0.3
+}

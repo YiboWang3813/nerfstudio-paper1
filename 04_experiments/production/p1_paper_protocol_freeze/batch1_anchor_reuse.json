@@ -1,0 +1,12 @@
+{
+  "b1_009": {
+    "semantic_differences": {},
+    "metric_equal": true,
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/regression/p05_corrected_covariance_20260908/anchors/liver"
+  },
+  "b1_048": {
+    "semantic_differences": {},
+    "metric_equal": true,
+    "source": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/preproduction/regression/p05_corrected_covariance_20260908/anchors/arm"
+  }
+}

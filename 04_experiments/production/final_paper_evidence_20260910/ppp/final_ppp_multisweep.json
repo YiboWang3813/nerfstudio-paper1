@@ -1,0 +1,56 @@
+[
+  {
+    "dataset": "synthetic_liver",
+    "label": "MP",
+    "n": 6.0,
+    "PSNR_mean": 29.02507005,
+    "PSNR_std": 0.48366511941428564,
+    "SSIM_mean": 0.6354632843333333,
+    "SSIM_std": 0.024416694063533726
+  },
+  {
+    "dataset": "synthetic_liver",
+    "label": "PPP",
+    "n": 6.0,
+    "PSNR_mean": 29.19634835,
+    "PSNR_std": 0.4851632201043228,
+    "SSIM_mean": 0.6398729495,
+    "SSIM_std": 0.026321443764360842
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "label": "MP",
+    "n": 5.0,
+    "PSNR_mean": 29.20886226,
+    "PSNR_std": 1.1267101228488579,
+    "SSIM_mean": 0.8120516528,
+    "SSIM_std": 0.03581891646421535
+  },
+  {
+    "dataset": "tdsc_abus_2023",
+    "label": "PPP",
+    "n": 5.0,
+    "PSNR_mean": 29.21194382,
+    "PSNR_std": 1.1296894938584092,
+    "SSIM_mean": 0.8121047612,
+    "SSIM_std": 0.03581031541272626
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "label": "MP",
+    "n": 5.0,
+    "PSNR_mean": 34.12498686,
+    "PSNR_std": 0.873083646460606,
+    "SSIM_mean": 0.8876789310000001,
+    "SSIM_std": 0.01497227309496464
+  },
+  {
+    "dataset": "tus_rec_2024_qc",
+    "label": "PPP",
+    "n": 5.0,
+    "PSNR_mean": 34.63814676,
+    "PSNR_std": 0.9595937251649861,
+    "SSIM_mean": 0.8928549324,
+    "SSIM_std": 0.015131300922868447
+  }
+]

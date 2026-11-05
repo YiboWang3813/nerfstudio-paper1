@@ -1,0 +1,47 @@
+[
+  {
+    "variant": "GD",
+    "Liver_PSNR": 29.4487793,
+    "Liver_LPIPS": 0.158421506,
+    "Liver_G_k": 628.109,
+    "Arm_PSNR": 32.7850315,
+    "Arm_LPIPS": 0.111759243,
+    "Arm_G_k": 679.542
+  },
+  {
+    "variant": "RGD",
+    "Liver_PSNR": 29.434385,
+    "Liver_LPIPS": 0.156809623,
+    "Liver_G_k": 1050.672,
+    "Arm_PSNR": 32.7085032,
+    "Arm_LPIPS": 0.112262178,
+    "Arm_G_k": 1022.586
+  },
+  {
+    "variant": "RGD+OP",
+    "Liver_PSNR": 29.4431807,
+    "Liver_LPIPS": 0.158375026,
+    "Liver_G_k": 643.294,
+    "Arm_PSNR": 32.7730401,
+    "Arm_LPIPS": 0.112035329,
+    "Arm_G_k": 689.866
+  },
+  {
+    "variant": "RGD+LP",
+    "Liver_PSNR": 29.4540513,
+    "Liver_LPIPS": 0.157541618,
+    "Liver_G_k": 644.939,
+    "Arm_PSNR": 32.7780665,
+    "Arm_LPIPS": 0.11133822,
+    "Arm_G_k": 690.845
+  },
+  {
+    "variant": "Full",
+    "Liver_PSNR": 29.4522019,
+    "Liver_LPIPS": 0.157043992,
+    "Liver_G_k": 688.611,
+    "Arm_PSNR": 32.8167049,
+    "Arm_LPIPS": 0.112039711,
+    "Arm_G_k": 713.263
+  }
+]

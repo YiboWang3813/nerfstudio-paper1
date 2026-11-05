@@ -1,0 +1,58 @@
+[
+  {
+    "dataset": "Liver",
+    "transition": "Plane -> Fixed",
+    "delta_psnr": 4.069039750000002,
+    "delta_ssim": 0.04312900200000003,
+    "delta_lpips": -0.2580339538333333
+  },
+  {
+    "dataset": "Liver",
+    "transition": "Fixed -> Adaptive",
+    "delta_psnr": 0.17794901666666618,
+    "delta_ssim": 0.010262227666666623,
+    "delta_lpips": 0.026128549666666667
+  },
+  {
+    "dataset": "Liver",
+    "transition": "Fixed -> Fixed+Simple",
+    "delta_psnr": -0.10344161666666807,
+    "delta_ssim": -0.0071375355000000695,
+    "delta_lpips": -0.012692734000000011
+  },
+  {
+    "dataset": "Liver",
+    "transition": "Fixed+Simple -> Fixed+Full",
+    "delta_psnr": -0.032116349999999017,
+    "delta_ssim": -0.00016848433333327417,
+    "delta_lpips": 0.00019973566666667275
+  },
+  {
+    "dataset": "Arm",
+    "transition": "Plane -> Fixed",
+    "delta_psnr": 12.236155299999997,
+    "delta_ssim": 0.20796317200000003,
+    "delta_lpips": -0.21819586940000002
+  },
+  {
+    "dataset": "Arm",
+    "transition": "Fixed -> Adaptive",
+    "delta_psnr": -0.2625578799999957,
+    "delta_ssim": -0.004739112200000117,
+    "delta_lpips": 0.010795760200000004
+  },
+  {
+    "dataset": "Arm",
+    "transition": "Fixed -> Fixed+Simple",
+    "delta_psnr": 0.3499723200000062,
+    "delta_ssim": 0.0028001343999999317,
+    "delta_lpips": -0.012573720200000013
+  },
+  {
+    "dataset": "Arm",
+    "transition": "Fixed+Simple -> Fixed+Full",
+    "delta_psnr": 0.10126653999999746,
+    "delta_ssim": 0.0005709808000000649,
+    "delta_lpips": -0.0005127407999999944
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "LGR": 0,
+    "CGA": 0,
+    "PPP": 0,
+    "variant": "L0C0P0",
+    "Liver_PSNR": 25.7466623,
+    "Liver_SSIM": 0.616473706,
+    "Liver_LPIPS": 0.399011365,
+    "Arm_PSNR": 21.092046,
+    "Arm_SSIM": 0.643446308,
+    "Arm_LPIPS": 0.349697979
+  },
+  {
+    "LGR": 0,
+    "CGA": 0,
+    "PPP": 1,
+    "variant": "L0C0P1",
+    "Liver_PSNR": 25.607612,
+    "Liver_SSIM": 0.617297357,
+    "Liver_LPIPS": 0.56542061,
+    "Arm_PSNR": 24.1361587,
+    "Arm_SSIM": 0.760127146,
+    "Arm_LPIPS": 0.321959781
+  },
+  {
+    "LGR": 0,
+    "CGA": 1,
+    "PPP": 0,
+    "variant": "L0C1P0",
+    "Liver_PSNR": 25.7948984,
+    "Liver_SSIM": 0.615746962,
+    "Liver_LPIPS": 0.387235995,
+    "Arm_PSNR": 21.3977691,
+    "Arm_SSIM": 0.649531755,
+    "Arm_LPIPS": 0.339870308
+  },
+  {
+    "LGR": 0,
+    "CGA": 1,
+    "PPP": 1,
+    "variant": "L0C1P1",
+    "Liver_PSNR": 25.5953509,
+    "Liver_SSIM": 0.616877037,
+    "Liver_LPIPS": 0.573076981,
+    "Arm_PSNR": 24.1531953,
+    "Arm_SSIM": 0.760131375,
+    "Arm_LPIPS": 0.321697026
+  },
+  {
+    "LGR": 1,
+    "CGA": 0,
+    "PPP": 0,
+    "variant": "L1C0P0",
+    "Liver_PSNR": 29.4487793,
+    "Liver_SSIM": 0.660492279,
+    "Liver_LPIPS": 0.158421506,
+    "Arm_PSNR": 32.7850315,
+    "Arm_SSIM": 0.865409879,
+    "Arm_LPIPS": 0.111759243
+  },
+  {
+    "LGR": 1,
+    "CGA": 0,
+    "PPP": 1,
+    "variant": "L1C0P1",
+    "Liver_PSNR": 29.6482905,
+    "Liver_SSIM": 0.667251019,
+    "Liver_LPIPS": 0.18267713,
+    "Arm_PSNR": 33.2627603,
+    "Arm_SSIM": 0.87150749,
+    "Arm_LPIPS": 0.108040046
+  },
+  {
+    "LGR": 1,
+    "CGA": 1,
+    "PPP": 0,
+    "variant": "L1C1P0",
+    "Liver_PSNR": 29.4522019,
+    "Liver_SSIM": 0.660274857,
+    "Liver_LPIPS": 0.157043992,
+    "Arm_PSNR": 32.8167049,
+    "Arm_SSIM": 0.865764395,
+    "Arm_LPIPS": 0.112039711
+  },
+  {
+    "LGR": 1,
+    "CGA": 1,
+    "PPP": 1,
+    "variant": "L1C1P1",
+    "Liver_PSNR": 29.6484486,
+    "Liver_SSIM": 0.667443721,
+    "Liver_LPIPS": 0.182352949,
+    "Arm_PSNR": 33.2709169,
+    "Arm_SSIM": 0.871552997,
+    "Arm_LPIPS": 0.108021367
+  }
+]

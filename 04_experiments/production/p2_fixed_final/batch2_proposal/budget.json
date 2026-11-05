@@ -1,0 +1,12 @@
+{
+  "execution_authorized": false,
+  "new_runs": 52,
+  "unique_physical_configs": 54,
+  "reused_default_runs": 2,
+  "panel_slots": 66,
+  "estimated_worker_hours": 6.69400380268693,
+  "estimated_four_worker_hours": 1.6735009506717324,
+  "headroom_fraction": 0.25,
+  "quality_population_new_runs": 0,
+  "optional_split_sweep_additional_runs": 4
+}

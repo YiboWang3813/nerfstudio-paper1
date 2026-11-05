@@ -1,0 +1,330 @@
+[
+  {
+    "Group": "densify",
+    "Setting": "score=0.94, max_fraction=0.02",
+    "Syn PSNR": "29.750",
+    "Syn dPSNR": "0.004",
+    "Real PSNR": "32.745",
+    "Real dPSNR": "-0.019"
+  },
+  {
+    "Group": "densify",
+    "Setting": "score=0.94, max_fraction=0.05",
+    "Syn PSNR": "29.749",
+    "Syn dPSNR": "0.003",
+    "Real PSNR": "32.758",
+    "Real dPSNR": "-0.006"
+  },
+  {
+    "Group": "densify",
+    "Setting": "score=0.94, max_fraction=0.08",
+    "Syn PSNR": "29.747",
+    "Syn dPSNR": "0.001",
+    "Real PSNR": "32.759",
+    "Real dPSNR": "-0.005"
+  },
+  {
+    "Group": "densify",
+    "Setting": "score=0.94, max_fraction=0.12",
+    "Syn PSNR": "29.751",
+    "Syn dPSNR": "0.006",
+    "Real PSNR": "32.750",
+    "Real dPSNR": "-0.014"
+  },
+  {
+    "Group": "densify",
+    "Setting": "score=0.96, max_fraction=0.02",
+    "Syn PSNR": "29.747",
+    "Syn dPSNR": "0.002",
+    "Real PSNR": "32.750",
+    "Real dPSNR": "-0.014"
+  },
+  {
+    "Group": "densify",
+    "Setting": "score=0.96, max_fraction=0.05",
+    "Syn PSNR": "29.748",
+    "Syn dPSNR": "0.002",
+    "Real PSNR": "32.756",
+    "Real dPSNR": "-0.008"
+  },
+  {
+    "Group": "densify",
+    "Setting": "score=0.96, max_fraction=0.08",
+    "Syn PSNR": "29.748",
+    "Syn dPSNR": "0.003",
+    "Real PSNR": "32.755",
+    "Real dPSNR": "-0.009"
+  },
+  {
+    "Group": "densify",
+    "Setting": "score=0.96, max_fraction=0.12",
+    "Syn PSNR": "29.754",
+    "Syn dPSNR": "0.008",
+    "Real PSNR": "32.759",
+    "Real dPSNR": "-0.005"
+  },
+  {
+    "Group": "densify",
+    "Setting": "score=0.98, max_fraction=0.02",
+    "Syn PSNR": "29.749",
+    "Syn dPSNR": "0.004",
+    "Real PSNR": "32.752",
+    "Real dPSNR": "-0.012"
+  },
+  {
+    "Group": "densify",
+    "Setting": "score=0.98, max_fraction=0.05",
+    "Syn PSNR": "29.746",
+    "Syn dPSNR": "0.000",
+    "Real PSNR": "32.764",
+    "Real dPSNR": "0.000"
+  },
+  {
+    "Group": "densify",
+    "Setting": "score=0.98, max_fraction=0.08",
+    "Syn PSNR": "29.743",
+    "Syn dPSNR": "-0.002",
+    "Real PSNR": "32.749",
+    "Real dPSNR": "-0.015"
+  },
+  {
+    "Group": "densify",
+    "Setting": "score=0.98, max_fraction=0.12",
+    "Syn PSNR": "29.742",
+    "Syn dPSNR": "-0.004",
+    "Real PSNR": "32.744",
+    "Real dPSNR": "-0.020"
+  },
+  {
+    "Group": "densify",
+    "Setting": "score=0.99, max_fraction=0.02",
+    "Syn PSNR": "29.741",
+    "Syn dPSNR": "-0.005",
+    "Real PSNR": "32.755",
+    "Real dPSNR": "-0.009"
+  },
+  {
+    "Group": "densify",
+    "Setting": "score=0.99, max_fraction=0.05",
+    "Syn PSNR": "29.739",
+    "Syn dPSNR": "-0.006",
+    "Real PSNR": "32.756",
+    "Real dPSNR": "-0.008"
+  },
+  {
+    "Group": "densify",
+    "Setting": "score=0.99, max_fraction=0.08",
+    "Syn PSNR": "29.741",
+    "Syn dPSNR": "-0.005",
+    "Real PSNR": "32.746",
+    "Real dPSNR": "-0.019"
+  },
+  {
+    "Group": "densify",
+    "Setting": "score=0.99, max_fraction=0.12",
+    "Syn PSNR": "29.745",
+    "Syn dPSNR": "-0.000",
+    "Real PSNR": "32.758",
+    "Real dPSNR": "-0.006"
+  },
+  {
+    "Group": "prune_protect",
+    "Setting": "low_q=0.02, protect_q=0.60",
+    "Syn PSNR": "29.743",
+    "Syn dPSNR": "-0.003",
+    "Real PSNR": "32.754",
+    "Real dPSNR": "-0.010"
+  },
+  {
+    "Group": "prune_protect",
+    "Setting": "low_q=0.02, protect_q=0.70",
+    "Syn PSNR": "29.747",
+    "Syn dPSNR": "0.002",
+    "Real PSNR": "32.755",
+    "Real dPSNR": "-0.009"
+  },
+  {
+    "Group": "prune_protect",
+    "Setting": "low_q=0.02, protect_q=0.80",
+    "Syn PSNR": "29.743",
+    "Syn dPSNR": "-0.003",
+    "Real PSNR": "32.753",
+    "Real dPSNR": "-0.011"
+  },
+  {
+    "Group": "prune_protect",
+    "Setting": "low_q=0.02, protect_q=0.90",
+    "Syn PSNR": "29.756",
+    "Syn dPSNR": "0.011",
+    "Real PSNR": "32.759",
+    "Real dPSNR": "-0.006"
+  },
+  {
+    "Group": "prune_protect",
+    "Setting": "low_q=0.05, protect_q=0.60",
+    "Syn PSNR": "29.754",
+    "Syn dPSNR": "0.009",
+    "Real PSNR": "32.756",
+    "Real dPSNR": "-0.008"
+  },
+  {
+    "Group": "prune_protect",
+    "Setting": "low_q=0.05, protect_q=0.70",
+    "Syn PSNR": "29.748",
+    "Syn dPSNR": "0.002",
+    "Real PSNR": "32.753",
+    "Real dPSNR": "-0.012"
+  },
+  {
+    "Group": "prune_protect",
+    "Setting": "low_q=0.05, protect_q=0.80",
+    "Syn PSNR": "29.751",
+    "Syn dPSNR": "0.006",
+    "Real PSNR": "32.754",
+    "Real dPSNR": "-0.010"
+  },
+  {
+    "Group": "prune_protect",
+    "Setting": "low_q=0.05, protect_q=0.90",
+    "Syn PSNR": "29.751",
+    "Syn dPSNR": "0.006",
+    "Real PSNR": "32.761",
+    "Real dPSNR": "-0.003"
+  },
+  {
+    "Group": "prune_protect",
+    "Setting": "low_q=0.10, protect_q=0.60",
+    "Syn PSNR": "29.744",
+    "Syn dPSNR": "-0.002",
+    "Real PSNR": "32.741",
+    "Real dPSNR": "-0.023"
+  },
+  {
+    "Group": "prune_protect",
+    "Setting": "low_q=0.10, protect_q=0.70",
+    "Syn PSNR": "29.746",
+    "Syn dPSNR": "0.000",
+    "Real PSNR": "32.755",
+    "Real dPSNR": "-0.009"
+  },
+  {
+    "Group": "prune_protect",
+    "Setting": "low_q=0.10, protect_q=0.80",
+    "Syn PSNR": "29.746",
+    "Syn dPSNR": "0.000",
+    "Real PSNR": "32.764",
+    "Real dPSNR": "0.000"
+  },
+  {
+    "Group": "prune_protect",
+    "Setting": "low_q=0.10, protect_q=0.90",
+    "Syn PSNR": "29.746",
+    "Syn dPSNR": "0.000",
+    "Real PSNR": "32.749",
+    "Real dPSNR": "-0.015"
+  },
+  {
+    "Group": "prune_protect",
+    "Setting": "low_q=0.15, protect_q=0.60",
+    "Syn PSNR": "29.744",
+    "Syn dPSNR": "-0.001",
+    "Real PSNR": "32.754",
+    "Real dPSNR": "-0.010"
+  },
+  {
+    "Group": "prune_protect",
+    "Setting": "low_q=0.15, protect_q=0.70",
+    "Syn PSNR": "29.756",
+    "Syn dPSNR": "0.010",
+    "Real PSNR": "32.756",
+    "Real dPSNR": "-0.008"
+  },
+  {
+    "Group": "prune_protect",
+    "Setting": "low_q=0.15, protect_q=0.80",
+    "Syn PSNR": "29.753",
+    "Syn dPSNR": "0.007",
+    "Real PSNR": "32.743",
+    "Real dPSNR": "-0.021"
+  },
+  {
+    "Group": "prune_protect",
+    "Setting": "low_q=0.15, protect_q=0.90",
+    "Syn PSNR": "29.748",
+    "Syn dPSNR": "0.002",
+    "Real PSNR": "32.757",
+    "Real dPSNR": "-0.007"
+  },
+  {
+    "Group": "prune_protect",
+    "Setting": "low_q=0.20, protect_q=0.60",
+    "Syn PSNR": "29.747",
+    "Syn dPSNR": "0.001",
+    "Real PSNR": "32.752",
+    "Real dPSNR": "-0.012"
+  },
+  {
+    "Group": "prune_protect",
+    "Setting": "low_q=0.20, protect_q=0.70",
+    "Syn PSNR": "29.746",
+    "Syn dPSNR": "0.000",
+    "Real PSNR": "32.750",
+    "Real dPSNR": "-0.014"
+  },
+  {
+    "Group": "prune_protect",
+    "Setting": "low_q=0.20, protect_q=0.80",
+    "Syn PSNR": "29.744",
+    "Syn dPSNR": "-0.002",
+    "Real PSNR": "32.756",
+    "Real dPSNR": "-0.008"
+  },
+  {
+    "Group": "prune_protect",
+    "Setting": "low_q=0.20, protect_q=0.90",
+    "Syn PSNR": "29.748",
+    "Syn dPSNR": "0.003",
+    "Real PSNR": "32.756",
+    "Real dPSNR": "-0.008"
+  },
+  {
+    "Group": "prune_opacity",
+    "Setting": "0.00001",
+    "Syn PSNR": "29.755",
+    "Syn dPSNR": "0.009",
+    "Real PSNR": "32.743",
+    "Real dPSNR": "-0.022"
+  },
+  {
+    "Group": "prune_opacity",
+    "Setting": "0.00005",
+    "Syn PSNR": "29.743",
+    "Syn dPSNR": "-0.003",
+    "Real PSNR": "32.748",
+    "Real dPSNR": "-0.016"
+  },
+  {
+    "Group": "prune_opacity",
+    "Setting": "0.0001",
+    "Syn PSNR": "29.746",
+    "Syn dPSNR": "0.000",
+    "Real PSNR": "32.764",
+    "Real dPSNR": "0.000"
+  },
+  {
+    "Group": "prune_opacity",
+    "Setting": "0.0005",
+    "Syn PSNR": "29.742",
+    "Syn dPSNR": "-0.003",
+    "Real PSNR": "32.760",
+    "Real dPSNR": "-0.004"
+  },
+  {
+    "Group": "prune_opacity",
+    "Setting": "0.001",
+    "Syn PSNR": "29.744",
+    "Syn dPSNR": "-0.002",
+    "Real PSNR": "32.749",
+    "Real dPSNR": "-0.015"
+  }
+]

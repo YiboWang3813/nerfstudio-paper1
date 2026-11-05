@@ -1,0 +1,28 @@
+method: ours_sensorless_final
+pose:
+  pose_mode: canonical_sweep
+  canonical_sweep_spacing_mode: uniform
+  canonical_sweep_delta_scale: 1.0
+  canonical_sweep_ref_frame: 0
+  canonical_sweep_axis: z
+  pose_optimization_enabled: false
+  sensorless_required: true
+renderer:
+  ray_attenuation_enabled: true
+  ray_attenuation_formula: integral
+  ray_attenuation_beta: 0.8
+  ray_attenuation_strength: 0.55
+  ray_attenuation_min_transmission: 0.35
+  ray_attenuation_quadrature_points: 3
+density_control:
+  densify: true
+  prune: true
+  strategy: contribution_residual
+  contribution_score: residual_weighted_contribution_times_log1p_support
+  protect_attenuation_enabled: true
+  protect_attenuation_mode: path_effect
+  protect_attenuation_quantile: 0.8
+reporting:
+  file_pose_rows_label: tracked_pose_upper_bound
+  scope: regular_single_sweep_translation_dominant
+  do_not_claim: arbitrary_freehand_6dof

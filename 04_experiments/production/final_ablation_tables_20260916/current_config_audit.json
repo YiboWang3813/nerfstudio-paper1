@@ -1,0 +1,28 @@
+[
+  {
+    "row_id": "p2_009",
+    "fields": [
+      "model",
+      "scene",
+      "loss",
+      "engine",
+      "metric",
+      "system.seed"
+    ],
+    "status": "EXACT MATCH",
+    "production_config": "configs_hydra/experiment/production/ablations/ours/paper_semantic_freeze.yaml"
+  },
+  {
+    "row_id": "p2_048",
+    "fields": [
+      "model",
+      "scene",
+      "loss",
+      "engine",
+      "metric",
+      "system.seed"
+    ],
+    "status": "EXACT MATCH",
+    "production_config": "configs_hydra/experiment/production/ablations/ours/paper_semantic_freeze.yaml"
+  }
+]

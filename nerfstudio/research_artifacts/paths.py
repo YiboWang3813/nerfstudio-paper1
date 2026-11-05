@@ -12,7 +12,7 @@ from pathlib import Path
 WORKSPACE = Path(__file__).resolve().parents[3]
 RUNS = WORKSPACE / "outputs/paper-images"
 REGISTRY = WORKSPACE / "nerfstudio/experiments/paper1/artifacts.json"
-DOCS = Path(os.environ.get("PAPER1_DOCS_ROOT", str(WORKSPACE.parent / "docs-paper1"))).resolve()
+DOCS = Path(os.environ.get("PAPER1_DOCS_ROOT", str(WORKSPACE / "docs"))).resolve()
 VIEW = WORKSPACE.parent / "shared/cache/paper1-artifacts/path-view"
 _OBJECT_ALIASES = {}
 

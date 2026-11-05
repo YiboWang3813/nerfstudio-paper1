@@ -1,6 +1,6 @@
 [
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_000.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_000.yaml",
     "source_sha256": "0cfb44e698a32ebcadea69f6f23accba08e1adbabf0d0011c6c505a3622b6f77",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ea55c0a75b774fa7bde7efccc0cc867b342d9befb4bc28d876acccaa9392f7ec",
@@ -14,7 +14,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_001.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_001.yaml",
     "source_sha256": "b34d16d2c0462c4550b9a888eb6a50e7a1f2225cb3adcbc165de241918b006f8",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ea55c0a75b774fa7bde7efccc0cc867b342d9befb4bc28d876acccaa9392f7ec",
@@ -28,7 +28,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_002.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_002.yaml",
     "source_sha256": "10edfb5007fd75aedbe19c5f2afda0a52535cb3172c8341ece5000e4b5e4f595",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ea55c0a75b774fa7bde7efccc0cc867b342d9befb4bc28d876acccaa9392f7ec",
@@ -42,7 +42,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_003.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_003.yaml",
     "source_sha256": "6cbf2171ef17adc36b787caf303c50e27ca0c99fcf99e137e55129e626f8afa4",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ea55c0a75b774fa7bde7efccc0cc867b342d9befb4bc28d876acccaa9392f7ec",
@@ -56,7 +56,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_004.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_004.yaml",
     "source_sha256": "780710301f6cba9e9a4724ed02455b236389932d565aa9214ad04391e66a957a",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ea55c0a75b774fa7bde7efccc0cc867b342d9befb4bc28d876acccaa9392f7ec",
@@ -70,7 +70,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_005.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_005.yaml",
     "source_sha256": "f0c63a59ca7570c6b93c92483b1029c3645bdcd2275f26d7c5c6b16b2dd9107b",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ea55c0a75b774fa7bde7efccc0cc867b342d9befb4bc28d876acccaa9392f7ec",
@@ -84,7 +84,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_006.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_006.yaml",
     "source_sha256": "5bfa8db2bebdfd6d76d5dc11e5df4904e05e1d683b5a8896e4c2555884a48668",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ea55c0a75b774fa7bde7efccc0cc867b342d9befb4bc28d876acccaa9392f7ec",
@@ -98,7 +98,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_007.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_007.yaml",
     "source_sha256": "57a8c4831ca7596207c8ca4f706083980ac050b87e4ecf01aea99291404214b0",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ea55c0a75b774fa7bde7efccc0cc867b342d9befb4bc28d876acccaa9392f7ec",
@@ -112,7 +112,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_008.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_008.yaml",
     "source_sha256": "92daf1590b5c1b43fca5158054859a88f4be22678c7093023b5c2da6b7e1636e",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ea55c0a75b774fa7bde7efccc0cc867b342d9befb4bc28d876acccaa9392f7ec",
@@ -126,7 +126,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_009.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_009.yaml",
     "source_sha256": "90b82be01fafb26d304a6455c75e07f2e275b476fe940e2ddee581779628f022",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ea55c0a75b774fa7bde7efccc0cc867b342d9befb4bc28d876acccaa9392f7ec",
@@ -140,7 +140,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_010.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_010.yaml",
     "source_sha256": "bc23b735dac5090d1b6bbd06fd5cb60fd98a5b543e607a7195a48b3ab0a7de5f",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ea55c0a75b774fa7bde7efccc0cc867b342d9befb4bc28d876acccaa9392f7ec",
@@ -154,7 +154,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_011.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_011.yaml",
     "source_sha256": "bd5229c7b347e20ee96d26f03a2955790d29eddd2b74804049a3327036b08e99",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ea55c0a75b774fa7bde7efccc0cc867b342d9befb4bc28d876acccaa9392f7ec",
@@ -168,7 +168,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_012.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_012.yaml",
     "source_sha256": "cbe04332eaebd94d106df485f23471428f882c78ad7d63536fa10c7da4cd23c0",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ea55c0a75b774fa7bde7efccc0cc867b342d9befb4bc28d876acccaa9392f7ec",
@@ -182,7 +182,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_013.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_013.yaml",
     "source_sha256": "4bf7a19ebaaabd1f57d14c34eaaf329208256fa8411da80d578e0b13dc6c1a4d",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ea55c0a75b774fa7bde7efccc0cc867b342d9befb4bc28d876acccaa9392f7ec",
@@ -196,7 +196,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_014.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_014.yaml",
     "source_sha256": "1e79ea01348f94f75ebda5648a043d1b19fbf0072cbf99fc31559eca34ba78cc",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ea55c0a75b774fa7bde7efccc0cc867b342d9befb4bc28d876acccaa9392f7ec",
@@ -210,7 +210,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_015.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_015.yaml",
     "source_sha256": "06e074cf5b19bdbea1d54bbdd300d0c6d85ae0876934fd3b8c7529cefe2f6553",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ea55c0a75b774fa7bde7efccc0cc867b342d9befb4bc28d876acccaa9392f7ec",
@@ -224,7 +224,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_016.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_016.yaml",
     "source_sha256": "2a6ec008e33401c17f118863da083dae8082943cf0fbb0373ea9984f13095674",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ea55c0a75b774fa7bde7efccc0cc867b342d9befb4bc28d876acccaa9392f7ec",
@@ -238,7 +238,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_017.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_017.yaml",
     "source_sha256": "e1303933bf9110e2e6112a6c8662d5b860c232c6970680918647a9d03f7bb88f",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ea55c0a75b774fa7bde7efccc0cc867b342d9befb4bc28d876acccaa9392f7ec",
@@ -252,7 +252,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_018.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_018.yaml",
     "source_sha256": "43cb353c33cfd8545d1eaea67a872427c7ebcd081dc28b80baf87ab11ac2392c",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ea55c0a75b774fa7bde7efccc0cc867b342d9befb4bc28d876acccaa9392f7ec",
@@ -266,7 +266,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_019.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_019.yaml",
     "source_sha256": "8cd23e0618d9be826f131897ae5478725f683ae1b78a2449df6109c7ff768c3d",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ea55c0a75b774fa7bde7efccc0cc867b342d9befb4bc28d876acccaa9392f7ec",
@@ -280,7 +280,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_020.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_020.yaml",
     "source_sha256": "e1a35f6f69803da9092904b195d485c026bfd02ed6852e8244218a6205fc3500",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ea55c0a75b774fa7bde7efccc0cc867b342d9befb4bc28d876acccaa9392f7ec",
@@ -294,7 +294,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_021.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_021.yaml",
     "source_sha256": "21484c554cd243144739c6c572e8b2ea85c42355c1e5dddefea8aa5c1f3fb3a9",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ea55c0a75b774fa7bde7efccc0cc867b342d9befb4bc28d876acccaa9392f7ec",
@@ -308,7 +308,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_022.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_022.yaml",
     "source_sha256": "4717e713afe7de3bf8f8b2eb649b5ac323c4cb3dceceacd1444d9ace44d89320",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ea55c0a75b774fa7bde7efccc0cc867b342d9befb4bc28d876acccaa9392f7ec",
@@ -322,7 +322,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_023.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_023.yaml",
     "source_sha256": "079156815431fbfa0ae5320a935097167930d9e23ec208c2a455cf569741953f",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ea55c0a75b774fa7bde7efccc0cc867b342d9befb4bc28d876acccaa9392f7ec",
@@ -336,7 +336,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_024.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_024.yaml",
     "source_sha256": "8e8fa827ee5610191864f4146e98a970ca807820c5e4bf1a7ce2efcdd3454065",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ea55c0a75b774fa7bde7efccc0cc867b342d9befb4bc28d876acccaa9392f7ec",
@@ -350,7 +350,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_025.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_025.yaml",
     "source_sha256": "a19c74a7da8df69cf80a2457234df89aa649b3731c401843824156ba16705c86",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ea55c0a75b774fa7bde7efccc0cc867b342d9befb4bc28d876acccaa9392f7ec",
@@ -364,7 +364,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_026.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_026.yaml",
     "source_sha256": "18c8f244b6df422e234551dd570d3cc4432ea6a3ad0a07ad9e23d0862e16cbdc",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ea55c0a75b774fa7bde7efccc0cc867b342d9befb4bc28d876acccaa9392f7ec",
@@ -378,7 +378,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_027.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_027.yaml",
     "source_sha256": "41fd029e58e1a764f1776880a58ebf584dcbbd694b759275c160f4fd285f9b93",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ea55c0a75b774fa7bde7efccc0cc867b342d9befb4bc28d876acccaa9392f7ec",
@@ -392,7 +392,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_028.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_028.yaml",
     "source_sha256": "90d13bbdbe9ab723514e1324f925cfa8480783dd8bdbe815f91930e62afaa289",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ea55c0a75b774fa7bde7efccc0cc867b342d9befb4bc28d876acccaa9392f7ec",
@@ -406,7 +406,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_029.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_029.yaml",
     "source_sha256": "90dc9c99e2e02abb0da15c6b704711e1305a30e72bf0b0c64c73830d252cbdea",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ea55c0a75b774fa7bde7efccc0cc867b342d9befb4bc28d876acccaa9392f7ec",
@@ -420,7 +420,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_030.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_030.yaml",
     "source_sha256": "0700d75f1b6d7843ee92ccf5d157f6ddedfac73b3f66a5172b6bc030296eb862",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ea55c0a75b774fa7bde7efccc0cc867b342d9befb4bc28d876acccaa9392f7ec",
@@ -434,7 +434,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_031.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_031.yaml",
     "source_sha256": "9ec781fcb131d63bdcd9a0594c76ccf4b4d7dd63df9718da6be065bb0a905b2f",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ea55c0a75b774fa7bde7efccc0cc867b342d9befb4bc28d876acccaa9392f7ec",
@@ -448,7 +448,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_032.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_032.yaml",
     "source_sha256": "305ecd70c0fc8eb043244431ce48c2c35676969d5c9ff63f640eb523ba8fcc04",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ea55c0a75b774fa7bde7efccc0cc867b342d9befb4bc28d876acccaa9392f7ec",
@@ -462,7 +462,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_033.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_033.yaml",
     "source_sha256": "bf29efb7a328d1f7af9d479da275dfe32928295c66ac27ad687948a496803141",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ea55c0a75b774fa7bde7efccc0cc867b342d9befb4bc28d876acccaa9392f7ec",
@@ -476,7 +476,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_034.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_034.yaml",
     "source_sha256": "3918735aa3377265e06024def7ad7f61112358f15f3d237846edcc8e98b53fdf",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ef81c5a24b7b0691173bd6f5c74487eb850319e7cb4a38b91be367206165c112",
@@ -490,7 +490,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_035.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_035.yaml",
     "source_sha256": "9f2707b5ac5a7e16307a775ee3bc2dcd956527d3c0cca7dfeeafcab23a191c70",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ef81c5a24b7b0691173bd6f5c74487eb850319e7cb4a38b91be367206165c112",
@@ -504,7 +504,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_036.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_036.yaml",
     "source_sha256": "e3c2683520fc76a4382a97ccfced45c5b6fc71a8daa1cae23ba7dfce75e17349",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ef81c5a24b7b0691173bd6f5c74487eb850319e7cb4a38b91be367206165c112",
@@ -518,7 +518,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_037.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_037.yaml",
     "source_sha256": "855b32071189b38c0933d17dfc50b33ccf1a8ccb83503faf300fda5becb30dfa",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ef81c5a24b7b0691173bd6f5c74487eb850319e7cb4a38b91be367206165c112",
@@ -532,7 +532,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_038.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_038.yaml",
     "source_sha256": "755dde287be393fe09b4bdfcbcd2fb0524ce4c9f6363a547516997fd981a3730",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ef81c5a24b7b0691173bd6f5c74487eb850319e7cb4a38b91be367206165c112",
@@ -546,7 +546,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_039.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_039.yaml",
     "source_sha256": "2ba16e640aaf757a7fe20edff86bc2d4f023f80037871d3fbe10134d765c65ef",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ef81c5a24b7b0691173bd6f5c74487eb850319e7cb4a38b91be367206165c112",
@@ -560,7 +560,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_040.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_040.yaml",
     "source_sha256": "8489b567e4b4a3fde4f6804e08d8becd24fa566a8bfd7470178fa488a0302316",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ef81c5a24b7b0691173bd6f5c74487eb850319e7cb4a38b91be367206165c112",
@@ -574,7 +574,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_041.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_041.yaml",
     "source_sha256": "bee30b89bf7f1763464f8ff6e309bbc3eaac63ba0caf72915bf997e313eb946a",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ef81c5a24b7b0691173bd6f5c74487eb850319e7cb4a38b91be367206165c112",
@@ -588,7 +588,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_042.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_042.yaml",
     "source_sha256": "e86bd32eff180bd682c0541312940273f87390147af6027ceb7d6e88c828b612",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ef81c5a24b7b0691173bd6f5c74487eb850319e7cb4a38b91be367206165c112",
@@ -602,7 +602,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_043.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_043.yaml",
     "source_sha256": "eb6e1b2adb346696e5ea68e074cfaded4b75e848147996f395d1b8e378487c87",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ef81c5a24b7b0691173bd6f5c74487eb850319e7cb4a38b91be367206165c112",
@@ -616,7 +616,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_044.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_044.yaml",
     "source_sha256": "c457525050ca2166901df95ae059a84e4341d5c5f6e5ca9359d4a9158d8bf6fd",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ef81c5a24b7b0691173bd6f5c74487eb850319e7cb4a38b91be367206165c112",
@@ -630,7 +630,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_045.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_045.yaml",
     "source_sha256": "ef62dc8920d9bcdd0c7718fd40fedf4d1b2685ab984b57cb54492f0e4061df9b",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ef81c5a24b7b0691173bd6f5c74487eb850319e7cb4a38b91be367206165c112",
@@ -644,7 +644,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_046.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_046.yaml",
     "source_sha256": "5d313133b4d389ce461da94c9e0f488cd0b20411ac60d38fcd713bd7eb9747b3",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ef81c5a24b7b0691173bd6f5c74487eb850319e7cb4a38b91be367206165c112",
@@ -658,7 +658,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_047.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_047.yaml",
     "source_sha256": "f06420074e5c1487350e86796be07a5db68a753a5f5e4b14d4178a843a8713df",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ef81c5a24b7b0691173bd6f5c74487eb850319e7cb4a38b91be367206165c112",
@@ -672,7 +672,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_048.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_048.yaml",
     "source_sha256": "80a1438ff9a62c817c99ae4b7eff65bf78371d0ab9d669efa004ba780f29fe3b",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ef81c5a24b7b0691173bd6f5c74487eb850319e7cb4a38b91be367206165c112",
@@ -686,7 +686,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_049.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_049.yaml",
     "source_sha256": "2159e21d73ab4c551ba69ff071580b5ffa657ac765e7eca8565265c1054029ac",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ef81c5a24b7b0691173bd6f5c74487eb850319e7cb4a38b91be367206165c112",
@@ -700,7 +700,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_050.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_050.yaml",
     "source_sha256": "10dba8109ec21efeace5fdc8e86fae53a385d149d86b390d2b3ee5d02e63a22c",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ef81c5a24b7b0691173bd6f5c74487eb850319e7cb4a38b91be367206165c112",
@@ -714,7 +714,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_051.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_051.yaml",
     "source_sha256": "45246e4e13c29b675690e1bc65c70a2c806e3dfe24652875005bf7911a6abbf4",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ef81c5a24b7b0691173bd6f5c74487eb850319e7cb4a38b91be367206165c112",
@@ -728,7 +728,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_052.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_052.yaml",
     "source_sha256": "fc2018c23e68b4eafce1504c3079f56c2a9934a12d59fdb77ffe97a8b9f692ca",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ef81c5a24b7b0691173bd6f5c74487eb850319e7cb4a38b91be367206165c112",
@@ -742,7 +742,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_053.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_053.yaml",
     "source_sha256": "7d39bf957411d40cccf0530746c52c77cd6242623839e3e05c3b02cb9f52101c",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ef81c5a24b7b0691173bd6f5c74487eb850319e7cb4a38b91be367206165c112",
@@ -756,7 +756,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_054.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_054.yaml",
     "source_sha256": "d78fa0177fb92ee03bf9e8363f56b9066f00aab87440c9b407defac209942cdb",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ef81c5a24b7b0691173bd6f5c74487eb850319e7cb4a38b91be367206165c112",
@@ -770,7 +770,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_055.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_055.yaml",
     "source_sha256": "ef02045153f7b4729a180e1c62de18acce88842d31f44d69df5c370ca8aa854a",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ef81c5a24b7b0691173bd6f5c74487eb850319e7cb4a38b91be367206165c112",
@@ -784,7 +784,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_056.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_056.yaml",
     "source_sha256": "765cdd84029358723163496ec773cc46ffc8c687d352b4094a785f7b3b0f0e7d",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ef81c5a24b7b0691173bd6f5c74487eb850319e7cb4a38b91be367206165c112",
@@ -798,7 +798,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_057.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_057.yaml",
     "source_sha256": "aabcf26878b42a8ce3aa0c3bfff3ec53268cb7de295166b6ba370a7c0e0b39a8",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ef81c5a24b7b0691173bd6f5c74487eb850319e7cb4a38b91be367206165c112",
@@ -812,7 +812,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_058.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_058.yaml",
     "source_sha256": "a186cc2f4d4084a53cbb7d4ee0639867f15ca0f96d84f07e1fa512dc7e339437",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ef81c5a24b7b0691173bd6f5c74487eb850319e7cb4a38b91be367206165c112",
@@ -826,7 +826,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_059.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_059.yaml",
     "source_sha256": "eb635906bc146fc26a09b289e399bcfd6db9e5ed66c0562c91c37c8df2d87490",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ef81c5a24b7b0691173bd6f5c74487eb850319e7cb4a38b91be367206165c112",
@@ -840,7 +840,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_060.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_060.yaml",
     "source_sha256": "89364b5268abea0d31b1636c0d7748744b27678cd241e88a363dc830bec67aa9",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ef81c5a24b7b0691173bd6f5c74487eb850319e7cb4a38b91be367206165c112",
@@ -854,7 +854,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_061.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_061.yaml",
     "source_sha256": "ce8049575e034007bd77fae4a9e101504eeacec9c3d74462446a8d1a1d935090",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ef81c5a24b7b0691173bd6f5c74487eb850319e7cb4a38b91be367206165c112",
@@ -868,7 +868,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_062.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_062.yaml",
     "source_sha256": "97f46c4d1dfd9b9a38cd00caac2b601cb6f67d929079861948b83d403b6bd861",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ef81c5a24b7b0691173bd6f5c74487eb850319e7cb4a38b91be367206165c112",
@@ -882,7 +882,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_063.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_063.yaml",
     "source_sha256": "ef9e44f62745a5b5caf47c1201c6c95f28907a7cc96fa66b66c8f500b3aaf702",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ef81c5a24b7b0691173bd6f5c74487eb850319e7cb4a38b91be367206165c112",
@@ -896,7 +896,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_064.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_064.yaml",
     "source_sha256": "6784962f027c7994430f8d582fd10bfab23daa169e148e9b4d33539573c029f4",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ef81c5a24b7b0691173bd6f5c74487eb850319e7cb4a38b91be367206165c112",
@@ -910,7 +910,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_065.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_065.yaml",
     "source_sha256": "fbc11601adf3496b4514f95c005f3dfa196ee6e49b366a23257d8d62722c5061",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ef81c5a24b7b0691173bd6f5c74487eb850319e7cb4a38b91be367206165c112",
@@ -924,7 +924,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_066.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_066.yaml",
     "source_sha256": "e7b0fa5dcbfe73103459915003720d30d9a923c03c4f069a7ffe2ee08badd190",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ef81c5a24b7b0691173bd6f5c74487eb850319e7cb4a38b91be367206165c112",
@@ -938,7 +938,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_067.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/hyperparameter_h2_067.yaml",
     "source_sha256": "8c5f59256cd91df2aae5c1014964d811483fc021898598f9eaea483a973c5026",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ef81c5a24b7b0691173bd6f5c74487eb850319e7cb4a38b91be367206165c112",
@@ -952,7 +952,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_000.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_000.yaml",
     "source_sha256": "86699bc1fca71289264ccf4850c57e16612f859405b42d24d085ebd6f002791e",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "cb1517ddf16b428ec3a0fd1ad8014533324ebb1dd5dfef84e9a864fa09eda37b",
@@ -966,7 +966,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_001.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_001.yaml",
     "source_sha256": "8ccb5901a449037c04e503045dc24a5c3934d4dd955badfeef663833f638ee95",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "43d4b99a5a2dc9072322a12c1478b91961bad216c9a30ddd683c4b4c1807477e",
@@ -980,7 +980,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_002.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_002.yaml",
     "source_sha256": "999f5535f1b2d5f0b60e595ef52e98ffb83720ef574fe0e5ae505120205f6e95",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "bfd9064ec2f9e397344f8003318c1c58719cba41b35cfe0b49b547a02a806b02",
@@ -994,7 +994,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_003.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_003.yaml",
     "source_sha256": "b73649514c5c6dc76c777876d28915ea462ba7564c5adfc61b9f24aec7496468",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "9493cf81e4e50d7d6310856df32d95b4715505b30be95cbe9b0d281c472bda1b",
@@ -1008,7 +1008,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_004.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_004.yaml",
     "source_sha256": "8d095c45b764efb98f9c74d2c28ee0909a0948243362afe5627fb107157875b6",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "7a9918497be6a6104d94a7f1e17b04336141c647d9d99b0f34e88079cc4bd0e6",
@@ -1022,7 +1022,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_005.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_005.yaml",
     "source_sha256": "52db8eb9bbc3355ff88a4ee38deda7b2f3d01b749f1c3e0ab5a4bef736952a86",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "71c839f887965ab839f51d48a00fa6179ba0001a1c94339172c72fb6b00050b0",
@@ -1036,7 +1036,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_006.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_006.yaml",
     "source_sha256": "1db674f959a546e015256eae4924228c6e3ef64670da020492a8b14fef230429",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "56682a97e8742f6c47cf7278a4ea39e596a07dcde96ccfb650c5205b0b0abeb1",
@@ -1050,7 +1050,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_007.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_007.yaml",
     "source_sha256": "0574df689afe31bf594fe05cf32cb42a78f95c0a70f9c690de16c289b20a3c66",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "337627647814ebba779fb818b6c9e9f0d5a4d23325c59b3288e58888bcbdd2d0",
@@ -1064,7 +1064,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_008.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_008.yaml",
     "source_sha256": "c696f5708b85046ed55813665b3fadc2cb1db3aa0b8b82eaeb887ec298035bcc",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "c23512c4adf36406255897ef505c98a074dc150a38b6643b7dcf2c80ab11f706",
@@ -1078,7 +1078,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_009.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_009.yaml",
     "source_sha256": "b34d16d2c0462c4550b9a888eb6a50e7a1f2225cb3adcbc165de241918b006f8",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ea55c0a75b774fa7bde7efccc0cc867b342d9befb4bc28d876acccaa9392f7ec",
@@ -1092,7 +1092,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_010.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_010.yaml",
     "source_sha256": "bf56d12468f51b9f5af8aa5c923ab12b33492235afa8a55425beccb8d6df8675",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "58955b3476dc110569989f9f6d9135dc59af23798cb7d36a0f6511ef4d31d171",
@@ -1106,7 +1106,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_011.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_011.yaml",
     "source_sha256": "f5c3b164c50dfdf436208d446bad5759cc7bcb135a0ffb6aa1b0fa7f70e3f061",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "56c4ea1b806de8b860340d52cd210ac1b0258560b5847726a227fec1b0fe9406",
@@ -1120,7 +1120,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_012.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_012.yaml",
     "source_sha256": "a4cab67895ab6a90ee0e704de8b94e68e45d61d5e39467bd04307a2a627851e8",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "fa1d1b243727d57240e3f592e2bf7b1763d5dc805da56cb90a57e87d0fa55811",
@@ -1134,7 +1134,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_013.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_013.yaml",
     "source_sha256": "3e2126632400e4cd4b265aa38b995543b4f1b58acd62b3b56b53f6b3b86efd33",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "a37c4ffcd550bc918ac37c882b1184e5177248f83365f0b3e222fdd8946ceab2",
@@ -1148,7 +1148,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_014.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_014.yaml",
     "source_sha256": "d7e8bee505960789e891b1d5f513f1e4066b7cf67f196a3ab840f2cdebeb26ca",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "40496aa0415b309639244d6a4071b224294c3f016da79e0c50d5eb00d4e24824",
@@ -1162,7 +1162,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_015.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_015.yaml",
     "source_sha256": "baa31b1229b09009aa8d4ffda3ac7744e67506808f7abe0a68e1e36df90dee5b",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "2943fb61cfd42a5a5a0ac7f7e2a0b7e1fa4b7c6cb5885fc8efd5b5ded6ee348b",
@@ -1176,7 +1176,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_016.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_016.yaml",
     "source_sha256": "f1c0918bdcadfaeed907fd52c32b07d1b7c56384a2e4858cf36d0608f191fdb3",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "197c5ee62bf9ef3a5889e93540bbff0dfe3f44e7d397535bda5af914297ac2ad",
@@ -1190,7 +1190,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_017.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_017.yaml",
     "source_sha256": "e5bcce5df94bdc2631f956af1645d8c5471a8acdd55d2a844068c867fa5b57bd",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "bcd49c870d60f19f9b40c7b8c6c50fc11d6cfac2b1dad302d9d416e1cdf4e3a8",
@@ -1204,7 +1204,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_018.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_018.yaml",
     "source_sha256": "b2ade3215abf658b0c7efca57bae867cc1869c721590a4326c2b46c10e4388c6",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "34320bb5a8ca66b9e88427ee5ecb8e7d6c68d36b0dbc85fd3c5f6123fd66d02e",
@@ -1218,7 +1218,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_019.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_019.yaml",
     "source_sha256": "6bc22a9dad835ddca810fc31dcb6f2c51c53a5a909965dd048639908e90b9707",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "3bf4de781cd6f6bb3e453612e19ea95af80293771c8febc1903fbd131157bf69",
@@ -1232,7 +1232,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_020.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_020.yaml",
     "source_sha256": "6866ce8bdc7c9b5435d9ede27984df98f4ebe9311d8475e4a486782c04bf50cd",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "2c397c8bfee2e4112850c041ae28879e1fbc4496eb37242e4345044b9117aaf0",
@@ -1246,7 +1246,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_021.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_021.yaml",
     "source_sha256": "6545574ad1fe91c6b95cf3a130aef3a40e75a52c572522bc34ac4dbb4fcc18cb",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "9dcfae0db32f6ca7e835ccf1f80020e664bc1ec8419a7b821762ddd3022c8088",
@@ -1260,7 +1260,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_022.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_022.yaml",
     "source_sha256": "a56953c3e91dd3e905aced4ca3209b8fdb0000caa3813172d655a0a1af908b6e",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "52a8d9cae337a38230d07b126058472e6b6f221fb841289f1a181ca931c715c6",
@@ -1274,7 +1274,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_023.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_023.yaml",
     "source_sha256": "c0d64b9dca2e9f306aa4d898de89c0f59f82dd63b5361dbd8c27759ef3c5799d",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "2042275e4b6543536bcc7ecd102e6c46c33ba907e2e39d30cbee914cd03b9183",
@@ -1288,7 +1288,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_024.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_024.yaml",
     "source_sha256": "b85e41e2438ebcafebf4b0b3d15bc4f802e4288407bf4addbb4eb2a357cd71cb",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "88475ea22df73d6d9fac7907c03d70b311ec38022dfe44f31c8bcc10b9547fb2",
@@ -1302,7 +1302,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_025.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_025.yaml",
     "source_sha256": "f315b288f22352677432ddfced81e5df6b58ae9fea24aac40dcca33539fdaccc",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "f1d75b1e262dda3afbb9cc82401536573ef75e201f866bb1112faffc18404a87",
@@ -1316,7 +1316,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_026.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_026.yaml",
     "source_sha256": "8dbe173aaa3529bbfdebdc8fde88afc443684ae0f2322d589fba370a84bea867",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "0e251e3f40e5fcd7112f9c6eb8056146e61edb61d6bea76d90492baf6a13bea9",
@@ -1330,7 +1330,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_027.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_027.yaml",
     "source_sha256": "d4395360751c672f120ec10ea7c89ee672f2c262fe6dcdf4da1b9584cbad78cc",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "6b2c406a2e4960bfc159375aff6fc9b41d0ccd60f31addfeec530d72bfe72f79",
@@ -1344,7 +1344,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_028.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_028.yaml",
     "source_sha256": "b9945bce10bccfa7fef67d4bdffc4202c27ca8590fa47649b2d1439c3305b372",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "85059ecaed9f8ad13fc782d663b36a1637e8790fba12f7f080ac365ab5d87124",
@@ -1358,7 +1358,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_029.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_029.yaml",
     "source_sha256": "c0db3473f49edae800c83c51651af97365e8a64cace5fe7f45e090509d1569ab",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "2910feec1dbc874f1d93eebcd3616103ea7b97c8d1a3b5d7036f54ab132b12ad",
@@ -1372,7 +1372,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_030.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_030.yaml",
     "source_sha256": "46230f2395082f2ab18d9a05406a6120c613607ccc84d04625f5e0f0d750ac39",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "d91f78c7680ec6f4ca878bb2ba3a588c91d4243de1d4221840ecb1992bd0282b",
@@ -1386,7 +1386,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_031.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_031.yaml",
     "source_sha256": "d5efbb238fee17cedeff3e5d2335b9a2634111edf8692f690c016183b53213bb",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "9a7caf5a1d4b296408d29e082812b5a224d52e011d32e17d52668cba384296ae",
@@ -1400,7 +1400,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_032.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_032.yaml",
     "source_sha256": "28155591301e0474390bc7908592b3546c2ea73366c2534a8b1217a2a8d88f8d",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "5c0c918453cd749f96af17d4267acb7db5fb53e2e66e74d3b22504d97ad53ea0",
@@ -1414,7 +1414,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_033.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_033.yaml",
     "source_sha256": "772b4962e6d7b1a96a49d59341ea9466308217937d7c7afc509dcaabc5182c3f",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "553182a409c6983f1a743a95cd3907ab65e6423ec627a86a8035f5236c44f99b",
@@ -1428,7 +1428,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_034.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_034.yaml",
     "source_sha256": "9b17f5d02139d18997f7dfcee5988dc57fd5ab4037c95f89d1eb173f48979a61",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "624d7de7cb5b7973139de464927ef582bfed18b129c920d2b4656b2bdbc1a408",
@@ -1442,7 +1442,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_035.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_035.yaml",
     "source_sha256": "526db63a625d0d77e1d7b5c665a129ff815c64bcbabfb7fadf1c839cc2ba142c",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "fc2b81b91043076f465e0d97b97211097b2928f94e792897e6d92127d35e6b6d",
@@ -1456,7 +1456,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_036.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_036.yaml",
     "source_sha256": "556341bc39c521c12972c56dd7aadd6f5366f67f472b596b0be5c12ee8091beb",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "cc819b9ada5f80c9dc89e325dd48e8d1a00cd72e228a30638ac7d4cc123010f2",
@@ -1470,7 +1470,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_037.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_037.yaml",
     "source_sha256": "d89e4e8a341da5cb3375bbc67697dd401aeabe2389b23bc03730cd3ac68be36e",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "a61372ca7e1547da83ecd7669f9721357952380cb262bfaf6c84be3fafdba50f",
@@ -1484,7 +1484,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_038.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_038.yaml",
     "source_sha256": "6e65793ff054032e3ff437017905e5fd42d98a49106efb491ce68dbc9fbdb3f1",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "7cef0554fb6736da6d123406284654e89462c00f3d06c1e59853769a52dabe48",
@@ -1498,7 +1498,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_039.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_039.yaml",
     "source_sha256": "89cc7f7a45e949a688c388566fe4132b5f6608a614a4157ccf55686eed044d90",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "964a9b3da7b5b2095b411576c25c1265a8e5dfe1c49bf96cd68e20749c3361cd",
@@ -1512,7 +1512,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_040.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_040.yaml",
     "source_sha256": "cd0cc402d25eef0ebb43404fda9779ef9b2e32dcecee1a30f36fea2405da88eb",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "2dfbdaf1290d11a353d193e49686cb1a74398286d744e59d333eee6049f6e734",
@@ -1526,7 +1526,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_041.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_041.yaml",
     "source_sha256": "b0d398a622fe31fa47e307f2e35121469677e8cc73f1e6f3e3939b6f8c9610bf",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "0ecc3b71530d8252938400d636bcf16f1759b9fda8991a5da5c8fb646e26dc78",
@@ -1540,7 +1540,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_042.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_042.yaml",
     "source_sha256": "8c2012912a3fdccdebca0dca616ffc1a123f4ed864c319717e14f48b08d72ef5",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "d32bc3b94b7666133257181edef322dcb7d5f05df65882286ed45e73a616557c",
@@ -1554,7 +1554,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_043.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_043.yaml",
     "source_sha256": "6676a6b4f47f2603f7980c6fa283e34b0e60385419a3695d5012dea6703b76e1",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "26d4fe324fa6ef88fe3b0b4ee7d9b270a2c30638043bdcfc72f05ac64e7a6066",
@@ -1568,7 +1568,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_044.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_044.yaml",
     "source_sha256": "78f4a9227efc5cddaf076f9c350d6f5286e2722ce77f235b0dd6f257afbcdedb",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "13e5207e6c25915afad52e0927f205c659b1336231a622d5af2b7ef19fed3080",
@@ -1582,7 +1582,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_045.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_045.yaml",
     "source_sha256": "4f86bbcd0318a3b38aa68011d2c3a8efb1d1c5809d931ea7d0152ab63ba0d878",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "408ea0bfa5f31f243db5ea48cd3731b4e1f71a472bed518831e3fb8f44f0e50d",
@@ -1596,7 +1596,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_046.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_046.yaml",
     "source_sha256": "8ff00dca4bf7a508fa5dccf66457ccbe94a36ffbb97adbfd3597871a6ec03647",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "dd56d4da49c6f10bbe82054fd990d9e8229f4e7bdfc024f67539c1425e4533c7",
@@ -1610,7 +1610,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_047.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_047.yaml",
     "source_sha256": "fa6d7fef821076b8050aa968ce15137f7a5590d397a6917e2e53b7431b0f4a89",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "1064eb510e920ed2d17ddd9c3dcdbe5084dcc8b52f03dd88020a446596b1afaf",
@@ -1624,7 +1624,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_048.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_048.yaml",
     "source_sha256": "9f2707b5ac5a7e16307a775ee3bc2dcd956527d3c0cca7dfeeafcab23a191c70",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ef81c5a24b7b0691173bd6f5c74487eb850319e7cb4a38b91be367206165c112",
@@ -1638,7 +1638,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_049.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_049.yaml",
     "source_sha256": "79fb98ad966d375cbccca0f8588c9bd56658e01309ff00191f0f3a4a74a85ba7",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "b624b196b9c186af3ceb6369a596beb4dac882085521b0fb02193938324cb8c1",
@@ -1652,7 +1652,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_050.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_050.yaml",
     "source_sha256": "04e7f967fe518b85be9b566823a14b87f14a1391855cfe8a988e078dbdfa2979",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "d82129b5b5aead0cf907b4710ee02d3d3b4da6d521ad8f33a2e32245cbccc874",
@@ -1666,7 +1666,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_051.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_051.yaml",
     "source_sha256": "ecea17a0517aafb4c11f687bb7d1b327a40bd4dd04f40926f6be354fc00f87d4",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "d15f36c2f44efa30fc8ed7ac4112bc9f7b8f8248cb2ae59585bbf66049f20224",
@@ -1680,7 +1680,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_052.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_052.yaml",
     "source_sha256": "6bdf7f195ee253e1ffa0748ec2e7008b7bdfc4da2181ebbb8a1771c65c92fe12",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "107ac37ba4ac2d07b7194c4c5100ad3a31ab72003ccec3f27be8aaa5fc675006",
@@ -1694,7 +1694,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_053.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_053.yaml",
     "source_sha256": "fb0ff5037c9bcfa574b2d2ae43245801ec960df8ce7b898053fdebf5032a3ede",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "6ee3a77c6105eb3120ef9279900964b0cc7660bd768c2c1ad0baf2129955943f",
@@ -1708,7 +1708,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_054.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_054.yaml",
     "source_sha256": "e0d94a9758957cfaafb70c05901c4a094e3d4f57c8716c48eb3cad7b71d7d0b0",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "15ee14f1c603930b552d6c42750d8467670529274efb83c6144fab0316775065",
@@ -1722,7 +1722,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_055.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_055.yaml",
     "source_sha256": "c866fdce74c37bd896137f7d86ad54f4a0b38b4f5e80479009a395441d171ce3",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "82a89710c738bd6784ea1ebb7195bdece254ad2c6b47492c90fd9d394e622ffc",
@@ -1736,7 +1736,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_056.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_056.yaml",
     "source_sha256": "289db5e3206b5ccd06de809c4804315e26f2febf63292415b494856fc4cc0f67",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ffb6a999376938a923817df163ac4cdf197fdf3b01b46bef58a45c3344f32b03",
@@ -1750,7 +1750,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_057.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_057.yaml",
     "source_sha256": "8d91615ab497147e2de7615869f171164d5ce863196f1a08716c3ed8ee912259",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "f2a2b3db71e23be5faeb6b09b293cde4163d7388f3682da63d48123a4784936b",
@@ -1764,7 +1764,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_058.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_058.yaml",
     "source_sha256": "c07377c38a4589370731e0f1759e28a946eb8cba069ef1f25cdcb79bb9395a4a",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "1f739fed20a81733ad806c0c28ffc77dbbba55c39cf0520c26f85d6a54dffa50",
@@ -1778,7 +1778,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_059.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_059.yaml",
     "source_sha256": "ba445897a2d551d1afffaa97e445824f294788eac8c166ade007a3480b641a44",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "7e3784d13f379855e7bab983d5713c646d664b6e68022492aac97a794cc9a6a8",
@@ -1792,7 +1792,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_060.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_060.yaml",
     "source_sha256": "cff16b098463b3b50d18d77b1a86b62f4b2f5c2639ae81366028d652d4dbd3f9",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "9d627548dc039446bc0ff9aa6ac343d4dbed5f57c2fb8aeb695fbb94981c2347",
@@ -1806,7 +1806,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_061.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_061.yaml",
     "source_sha256": "08b9ea7a92f48a9257c4fbf1a8df8a8a2012ae37b989cff25c0849418b270687",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ee35ff0b0dae80bea5418571d3b154f265bb95ce3607f4ac5f77c65b41257977",
@@ -1820,7 +1820,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_062.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_062.yaml",
     "source_sha256": "45ec131d1631570a09d5cbd2eecb288b69c6b53997af4aa2dd89b90cdbf6b963",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "e0622644e654c866985eb7c67207fb065ad5a2f4ff92bf957c86cde46fbe480e",
@@ -1834,7 +1834,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_063.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_063.yaml",
     "source_sha256": "fbf783b8d3279e5d3e9baeb1dce610d30215f6164a4fac4044ff861503a10aaf",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "d8185708fa732aec706af2a8849047dae491eb22c3d34f08bc8601ce99bf0601",
@@ -1848,7 +1848,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_064.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_064.yaml",
     "source_sha256": "47870105944731c50b699b3572ab8f4c8fec4dd3a076c655c687818f01a1482a",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "f0ce69dcf369247f6ba0e9119281d6e24fa66f43716fceb8d592ab99860d08e7",
@@ -1862,7 +1862,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_065.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_065.yaml",
     "source_sha256": "a7dfb91974ef4332b8d58aa9eb57b330066891980abe2e7f92398523e473d209",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "358b69387fa37713255fd9845df8d977ce3ebe6b17bbe9ef6857d154ed5e60b5",
@@ -1876,7 +1876,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_066.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_066.yaml",
     "source_sha256": "0ed9fbd79a87e7d2bf93dd0a9557a737c9c70b0d8c4affdc2b6c34547d49359c",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "2dc68fbef87448dfd88f1d8a5f7afca00aee1b76697ccd7b5163982e49b1c760",
@@ -1890,7 +1890,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_067.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_067.yaml",
     "source_sha256": "8e099557e34232e06dbfdc2aaf595a288e1366b8a0cb8a8653fec685aa931717",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "52d56224f7ee99d04c9672e93b407323aa8c512e3d98ae4af894b0504a6daa1b",
@@ -1904,7 +1904,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_068.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_068.yaml",
     "source_sha256": "7c1cc424fbca2536ba43ca1048a780e345d0c0efa273e78aa63a47de69a9d4b2",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "10e026cb16b05187ed0cc6ad9e3d07091db99628122fa8a9e2e176eb73cf0b8c",
@@ -1918,7 +1918,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_069.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_069.yaml",
     "source_sha256": "3d11bf1589d6bb4be6e24fbe683144fc8b5728462bea58a7e5b25cced71ae5e6",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "a8945e0ba9ce5b0a1015ac92a3dd879b978d21123ce33dbba9390561da87911a",
@@ -1932,7 +1932,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_070.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_070.yaml",
     "source_sha256": "32b2a69258aa200ae14b196759e93a1432f59802747c259f26f2ccdf3bf4351f",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "26a388bca6db8e75d0861336f5c6a9f863c3bc561e0fdeb4d788b2256c17d4ce",
@@ -1946,7 +1946,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_071.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_071.yaml",
     "source_sha256": "5e8d53a0b1d6e7f82a32f286a1ec7fd0116f77fa560d7454f83c62832cc15958",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "c8a0ba2f370307acb2491c03f5c43d270eab4b5e7bc554066b964637eab5b253",
@@ -1960,7 +1960,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_072.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_072.yaml",
     "source_sha256": "34dab5f787f383a52b6e33a05b7980f376149a3cf5cbaa833bcc4c20ccbfe088",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "aafc3ab74c2d538bb08460f3334176d52dbea0c73286468fc65c300dfdd2d44f",
@@ -1974,7 +1974,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_073.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_073.yaml",
     "source_sha256": "3d7729dffaeab568babf513cb33a811e1c8d8b0b53a1fad346fa6b1c2d3e69ef",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "c885a9d8bc76e315245aeccaa5cca2f1aa6393b27756180f6fa124e533dd293e",
@@ -1988,7 +1988,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_074.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_074.yaml",
     "source_sha256": "30755b4ff81288a53af36cca59be5ffba2fde121ff22160367ef39fbc624fe69",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "21d9078cf0fa74bf7660ecb2681f652a1e54af9c620d795bfd3bb7d6a9e7442c",
@@ -2002,7 +2002,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_075.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_075.yaml",
     "source_sha256": "448fda9c24f9ce5cce9d6fd8f0156b886a202d5f2755046995f09a85846115df",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "592d119c2eaeb81b6e0f19de9f5ec51489273888ae83f1bdc8d3840aeed6e39e",
@@ -2016,7 +2016,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_076.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_076.yaml",
     "source_sha256": "df9e578b91eb26ae218e28bf944821a94cc29e41cac799519ef00c3b0b7aa04c",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "2075a742f15c3da63858323a218c241f2f565e882a8c1880f109ce402973ac46",
@@ -2030,7 +2030,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_077.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_077.yaml",
     "source_sha256": "ea77e15260c75e6ad1c1cb20c043779f52b44e4eaca7f4aca97a030ea863d968",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "50a956770b6c864359baa9b70b6bc13e29e9aa3c201a2b78337a9d8405bd24d5",
@@ -2044,7 +2044,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_078.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_078.yaml",
     "source_sha256": "49cdc50e76220ff9e4201b5980d56d80dd20f375d86760ed4f40078906ab2bef",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ea55c0a75b774fa7bde7efccc0cc867b342d9befb4bc28d876acccaa9392f7ec",
@@ -2058,7 +2058,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_079.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_079.yaml",
     "source_sha256": "6217e5f0a8c7d4faa83a373eb4dcfdbce3e993fdab38e41f7f93440f43949892",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ea55c0a75b774fa7bde7efccc0cc867b342d9befb4bc28d876acccaa9392f7ec",
@@ -2072,7 +2072,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_080.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_080.yaml",
     "source_sha256": "56b4d1237d569416d1516f3931ba728627b988975054aca8eb1db573f627a7b5",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ea55c0a75b774fa7bde7efccc0cc867b342d9befb4bc28d876acccaa9392f7ec",
@@ -2086,7 +2086,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_081.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_081.yaml",
     "source_sha256": "5f1f3d01166aeff73ccb62dbbf0dc35c0158b38a27ff6e5654773aeb7cf069db",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ea55c0a75b774fa7bde7efccc0cc867b342d9befb4bc28d876acccaa9392f7ec",
@@ -2100,7 +2100,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_082.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_082.yaml",
     "source_sha256": "26c7ddfd8164a459a5ac7b16ef4702269f7cd646bff6eed607b07ff81e24429b",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ea55c0a75b774fa7bde7efccc0cc867b342d9befb4bc28d876acccaa9392f7ec",
@@ -2114,7 +2114,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_083.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_083.yaml",
     "source_sha256": "1bde5bf8d501ef600f5507ad92dfdebbb4dfb0b3e520c6bdaa287e6b8282f974",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ea55c0a75b774fa7bde7efccc0cc867b342d9befb4bc28d876acccaa9392f7ec",
@@ -2128,7 +2128,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_084.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_084.yaml",
     "source_sha256": "e9ee0b8873b36ce8cfc117a124f47084e091088b9cd3eaa61707f01f7611be68",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ea55c0a75b774fa7bde7efccc0cc867b342d9befb4bc28d876acccaa9392f7ec",
@@ -2142,7 +2142,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_085.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_085.yaml",
     "source_sha256": "c095b30562bdb460d6a19a35d9d483edf9f3aeef80795ca86d4ac645020f51c1",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ea55c0a75b774fa7bde7efccc0cc867b342d9befb4bc28d876acccaa9392f7ec",
@@ -2156,7 +2156,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_086.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_086.yaml",
     "source_sha256": "ecaa482a6c80fb4f2b2c8dfa1e37f4f10f23126ca462c29a86f3984921df80f4",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ea55c0a75b774fa7bde7efccc0cc867b342d9befb4bc28d876acccaa9392f7ec",
@@ -2170,7 +2170,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_087.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_087.yaml",
     "source_sha256": "ede57dd04d2bfda92c76bd98d28fa1c7b21614ea92ebd016a38b9cb4f7797dda",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ef81c5a24b7b0691173bd6f5c74487eb850319e7cb4a38b91be367206165c112",
@@ -2184,7 +2184,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_088.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_088.yaml",
     "source_sha256": "ca6ad78c167c7b97879c3e450aeca734b4dab3798653f797feb49883a9fefc5b",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ef81c5a24b7b0691173bd6f5c74487eb850319e7cb4a38b91be367206165c112",
@@ -2198,7 +2198,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_089.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_089.yaml",
     "source_sha256": "68283bf92e7d46c96168006ee2b5565815f2a8a2dcede7295d7998c769a56072",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ef81c5a24b7b0691173bd6f5c74487eb850319e7cb4a38b91be367206165c112",
@@ -2212,7 +2212,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_090.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_090.yaml",
     "source_sha256": "7e770f48b8a7e86c8ee70b303eeafb8fae2cb4f5e8c0dde0f9a3539c4b0cb1a8",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ef81c5a24b7b0691173bd6f5c74487eb850319e7cb4a38b91be367206165c112",
@@ -2226,7 +2226,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_091.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_091.yaml",
     "source_sha256": "83258aad9148e4203c57607a70a86f246aec9847bb33a4076cea8fe9894d5434",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ef81c5a24b7b0691173bd6f5c74487eb850319e7cb4a38b91be367206165c112",
@@ -2240,7 +2240,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_092.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_092.yaml",
     "source_sha256": "1acadf3b4bae121e6accf1122018e4061d7c16db40f8d2a7bfc4d9b1147d0168",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ef81c5a24b7b0691173bd6f5c74487eb850319e7cb4a38b91be367206165c112",
@@ -2254,7 +2254,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_093.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_093.yaml",
     "source_sha256": "6b57fa947c097575f796c0c411d78cdd3a613cb50dfc2636c173b32b238ee6fe",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ef81c5a24b7b0691173bd6f5c74487eb850319e7cb4a38b91be367206165c112",
@@ -2268,7 +2268,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_094.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_094.yaml",
     "source_sha256": "08318d36a3f34620cf366985e7dfb31b4e717c32fe4652f8c8c99783123f88a6",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ef81c5a24b7b0691173bd6f5c74487eb850319e7cb4a38b91be367206165c112",
@@ -2282,7 +2282,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_095.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_095.yaml",
     "source_sha256": "b5e57ef715ef097569d1b7f4833ba68375461424294dfaef2bd295dbb7137425",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ef81c5a24b7b0691173bd6f5c74487eb850319e7cb4a38b91be367206165c112",
@@ -2296,7 +2296,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_096.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_096.yaml",
     "source_sha256": "e5609b21c5e477cf49a28386563075aedb5b4debab19675a64d0feb74fd77c34",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "58955b3476dc110569989f9f6d9135dc59af23798cb7d36a0f6511ef4d31d171",
@@ -2310,7 +2310,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_097.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_097.yaml",
     "source_sha256": "f8bf344f2a1c34f07dd069bc2bf35d15aad2ba39488fef3fc22f726590e0fd46",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "56c4ea1b806de8b860340d52cd210ac1b0258560b5847726a227fec1b0fe9406",
@@ -2324,7 +2324,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_098.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_098.yaml",
     "source_sha256": "f5f347294a23a02671128fda296e504214506716b970ab8448717195f0e68401",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "fa1d1b243727d57240e3f592e2bf7b1763d5dc805da56cb90a57e87d0fa55811",
@@ -2338,7 +2338,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_099.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_099.yaml",
     "source_sha256": "684843fde0fd9c7bb6d80f53e67d8899fdae447efd142f011b2279ba428c2ddd",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "a37c4ffcd550bc918ac37c882b1184e5177248f83365f0b3e222fdd8946ceab2",
@@ -2352,7 +2352,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_100.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_100.yaml",
     "source_sha256": "6fb4075e75735c9409870768a57f832928cf9fd8a26008503361e6ae4f21ca30",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "40496aa0415b309639244d6a4071b224294c3f016da79e0c50d5eb00d4e24824",
@@ -2366,7 +2366,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_101.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_101.yaml",
     "source_sha256": "96d25065c1971320994212e8bd8cfb1a75bea4f2bfb1e6f5293823ba47604543",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "2943fb61cfd42a5a5a0ac7f7e2a0b7e1fa4b7c6cb5885fc8efd5b5ded6ee348b",
@@ -2380,7 +2380,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_102.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_102.yaml",
     "source_sha256": "6fab5c0ce075b2edc1021b07aa652e10b10ee5b8e0f581a8ea7d210d3cd22970",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "197c5ee62bf9ef3a5889e93540bbff0dfe3f44e7d397535bda5af914297ac2ad",
@@ -2394,7 +2394,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_103.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_103.yaml",
     "source_sha256": "7510b8099498fbc83ac98fef85cf24e854b691339ee513a0d2b3eaa975283533",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "bcd49c870d60f19f9b40c7b8c6c50fc11d6cfac2b1dad302d9d416e1cdf4e3a8",
@@ -2408,7 +2408,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_104.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_104.yaml",
     "source_sha256": "48aafcd63699dfb956738850796c4ea2a4e5a028641c7b4b1d727d6b1698a90f",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "34320bb5a8ca66b9e88427ee5ecb8e7d6c68d36b0dbc85fd3c5f6123fd66d02e",
@@ -2422,7 +2422,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_105.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_105.yaml",
     "source_sha256": "2ccf1525de68d89faff90abce29ad968e94ad824368612d3d85e9c2e9cebd18c",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "3bf4de781cd6f6bb3e453612e19ea95af80293771c8febc1903fbd131157bf69",
@@ -2436,7 +2436,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_106.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_106.yaml",
     "source_sha256": "b0609bbafc691c62fe51104b2ceb55df0b904c8d4b71f31bb176a7660df4c448",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "dd56d4da49c6f10bbe82054fd990d9e8229f4e7bdfc024f67539c1425e4533c7",
@@ -2450,7 +2450,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_107.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_107.yaml",
     "source_sha256": "5679edbb7a1dd891909bc0885a95432f1b99a2927093478e4b410c4e396f9be8",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "f2a2b3db71e23be5faeb6b09b293cde4163d7388f3682da63d48123a4784936b",
@@ -2464,7 +2464,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_108.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_108.yaml",
     "source_sha256": "fc5550f9d567186a4be1f966547ccc3b7cb3c060fc5a6ca6fa67b2140ce71a46",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "26a388bca6db8e75d0861336f5c6a9f863c3bc561e0fdeb4d788b2256c17d4ce",
@@ -2478,7 +2478,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_109.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_109.yaml",
     "source_sha256": "672af771f0fa2a6073f132494b3e6139734ed7cd998f20aef8ef9540c7a55eb5",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "21d9078cf0fa74bf7660ecb2681f652a1e54af9c620d795bfd3bb7d6a9e7442c",
@@ -2492,7 +2492,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_110.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_110.yaml",
     "source_sha256": "f97857ed42ebdbecb321fc671cedd4f055f5e6bc03b7af9a8610afba49f74ac0",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ea55c0a75b774fa7bde7efccc0cc867b342d9befb4bc28d876acccaa9392f7ec",
@@ -2506,7 +2506,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_111.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_111.yaml",
     "source_sha256": "ced940f3a8edd817d826249371d3bae207260845299df944c5ab8f8f2fd9a34f",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ea55c0a75b774fa7bde7efccc0cc867b342d9befb4bc28d876acccaa9392f7ec",
@@ -2520,7 +2520,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_112.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_112.yaml",
     "source_sha256": "ad9fa7a686013fe23a9eeedac211e8a24adfcfc9f75d3fc38c6f5cf499fed188",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ea55c0a75b774fa7bde7efccc0cc867b342d9befb4bc28d876acccaa9392f7ec",
@@ -2534,7 +2534,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_113.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_113.yaml",
     "source_sha256": "b91ede7d2b836d788fb0920142c83171b841162d95303bf905a9b601593c8b33",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ea55c0a75b774fa7bde7efccc0cc867b342d9befb4bc28d876acccaa9392f7ec",
@@ -2548,7 +2548,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_114.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_114.yaml",
     "source_sha256": "5cb977ef33f353cdd1473a009814e4639419cc9383dadb25788df387e63eda51",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ea55c0a75b774fa7bde7efccc0cc867b342d9befb4bc28d876acccaa9392f7ec",
@@ -2562,7 +2562,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_115.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_115.yaml",
     "source_sha256": "e89cd99e590f41a5b86f6700168901a44c97b9d7ab6cb71e275ab908bf64d863",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ea55c0a75b774fa7bde7efccc0cc867b342d9befb4bc28d876acccaa9392f7ec",
@@ -2576,7 +2576,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_116.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_116.yaml",
     "source_sha256": "2192aaeb4c4d4e5827ac5b3e3e7abb74cb5ea6cc8808438fd31baa1592d58edd",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ea55c0a75b774fa7bde7efccc0cc867b342d9befb4bc28d876acccaa9392f7ec",
@@ -2590,7 +2590,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_117.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_117.yaml",
     "source_sha256": "29a8e3310b04b12d254cd769ff95dd8ca6fa2521a0a418f2e81a8e8ed8215308",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ea55c0a75b774fa7bde7efccc0cc867b342d9befb4bc28d876acccaa9392f7ec",
@@ -2604,7 +2604,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_118.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_118.yaml",
     "source_sha256": "f8f7d5d8e98565e779ffb87bdf4b195b077a7f86252646d73875ad4353df6916",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ea55c0a75b774fa7bde7efccc0cc867b342d9befb4bc28d876acccaa9392f7ec",
@@ -2618,7 +2618,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_119.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_119.yaml",
     "source_sha256": "f79dfbfd474ad7d78eed300ec92d2513ffaa9f85fa15607b737834af09da3c6e",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ef81c5a24b7b0691173bd6f5c74487eb850319e7cb4a38b91be367206165c112",
@@ -2632,7 +2632,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_120.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_120.yaml",
     "source_sha256": "7cdf6299b75645e2c2a843dd196c377004f2451318d2dceffc48830330287701",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ef81c5a24b7b0691173bd6f5c74487eb850319e7cb4a38b91be367206165c112",
@@ -2646,7 +2646,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_121.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_121.yaml",
     "source_sha256": "407c9d7b3c8e63db31ce29180fd60c259d08e6bb9e7fecd0adeaaad67b1e3b72",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ef81c5a24b7b0691173bd6f5c74487eb850319e7cb4a38b91be367206165c112",
@@ -2660,7 +2660,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_122.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_122.yaml",
     "source_sha256": "f026d43efbc0cf2be6c54464267b655142aafd2bdfe6eaa30fed2b6db51239c5",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ef81c5a24b7b0691173bd6f5c74487eb850319e7cb4a38b91be367206165c112",
@@ -2674,7 +2674,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_123.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_123.yaml",
     "source_sha256": "18bf8d8dac287d6ac53a62648f2eb90f35b137bb860d5b6f256a71a3445f6a8c",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ef81c5a24b7b0691173bd6f5c74487eb850319e7cb4a38b91be367206165c112",
@@ -2688,7 +2688,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_124.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_124.yaml",
     "source_sha256": "42db28368f863b71a2accf05c2e12f3e830d271df58a1c722dcbc2dd151299e1",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ef81c5a24b7b0691173bd6f5c74487eb850319e7cb4a38b91be367206165c112",
@@ -2702,7 +2702,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_125.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_125.yaml",
     "source_sha256": "f08724201ee1a115bf5e26d38f3484a00828bb3b38cdd71e5a8d13d811a1b621",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ef81c5a24b7b0691173bd6f5c74487eb850319e7cb4a38b91be367206165c112",
@@ -2716,7 +2716,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_126.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_126.yaml",
     "source_sha256": "26f84782e6ece8cb88b4f55cfced71ed279797a418ae6e06192d7c5717511114",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ef81c5a24b7b0691173bd6f5c74487eb850319e7cb4a38b91be367206165c112",
@@ -2730,7 +2730,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_127.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_127.yaml",
     "source_sha256": "5a2f609a14a432eeb01388ad59654e19f72f4229387fb1f2288ed1a522a435b5",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ef81c5a24b7b0691173bd6f5c74487eb850319e7cb4a38b91be367206165c112",
@@ -2744,7 +2744,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_128.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_128.yaml",
     "source_sha256": "80e9b742ccb085b77f586d3bc1d84869a7bbc618d36da50433b788267dfbd6be",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ea55c0a75b774fa7bde7efccc0cc867b342d9befb4bc28d876acccaa9392f7ec",
@@ -2758,7 +2758,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_129.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_129.yaml",
     "source_sha256": "1326291746a88d315f5bfce450ca4ead81b94f74268b3ecd75b0737871b4a329",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ea55c0a75b774fa7bde7efccc0cc867b342d9befb4bc28d876acccaa9392f7ec",
@@ -2772,7 +2772,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_130.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_130.yaml",
     "source_sha256": "dbef96f8b041d9ede6c5a2c0a69923f11fee2cb128699664bb25ade80daa7f99",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ea55c0a75b774fa7bde7efccc0cc867b342d9befb4bc28d876acccaa9392f7ec",
@@ -2786,7 +2786,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_131.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_131.yaml",
     "source_sha256": "b3c34507023876d43682f7e5697b084fefa62dd049734fac05e44e4dac523f6b",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "58955b3476dc110569989f9f6d9135dc59af23798cb7d36a0f6511ef4d31d171",
@@ -2800,7 +2800,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_132.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_132.yaml",
     "source_sha256": "55cd5629ddeecc80a57f15dc7c438883d089b06c1ae2357e82023f02f6bbd771",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "58955b3476dc110569989f9f6d9135dc59af23798cb7d36a0f6511ef4d31d171",
@@ -2814,7 +2814,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_133.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_133.yaml",
     "source_sha256": "1edf8617f121c39aaac5d11f1bf610c40762fe3145ad500fd973fd820ced64f8",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "58955b3476dc110569989f9f6d9135dc59af23798cb7d36a0f6511ef4d31d171",
@@ -2828,7 +2828,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_134.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_134.yaml",
     "source_sha256": "0a53426e654a4ae768d867fb7178b7e9ebedb9ca534c7f72a92d1ca954e4e51a",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "58955b3476dc110569989f9f6d9135dc59af23798cb7d36a0f6511ef4d31d171",
@@ -2842,7 +2842,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_135.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_135.yaml",
     "source_sha256": "91430b4a48116fdf0254db24cb4208941b975333d93c9e3e86fdb0fcb389ac44",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "56c4ea1b806de8b860340d52cd210ac1b0258560b5847726a227fec1b0fe9406",
@@ -2856,7 +2856,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_136.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_136.yaml",
     "source_sha256": "5e4dee890b280dfca32bbbfe4892f95324e4039f0f5e7d62986963ca616a4c3b",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "56c4ea1b806de8b860340d52cd210ac1b0258560b5847726a227fec1b0fe9406",
@@ -2870,7 +2870,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_137.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_137.yaml",
     "source_sha256": "8f8d21418b6d50255208390d820d8163f6c2691ba928d6eb3039cb91d418ec93",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "56c4ea1b806de8b860340d52cd210ac1b0258560b5847726a227fec1b0fe9406",
@@ -2884,7 +2884,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_138.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_138.yaml",
     "source_sha256": "cb51f53417032227d24e0f2645ae5e81dd1c591c81ad612221139a1f81303364",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "56c4ea1b806de8b860340d52cd210ac1b0258560b5847726a227fec1b0fe9406",
@@ -2898,7 +2898,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_139.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_139.yaml",
     "source_sha256": "bc6ca21e6584e8052e965e200824d7a2307b17f6dba9dcaf8155a82bf7d8bae2",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "fa1d1b243727d57240e3f592e2bf7b1763d5dc805da56cb90a57e87d0fa55811",
@@ -2912,7 +2912,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_140.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_140.yaml",
     "source_sha256": "bc76d4e897bd0ef1a9ca8f1d960189c7e0ded75f4c2a0cf2b54f58df8343a353",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "fa1d1b243727d57240e3f592e2bf7b1763d5dc805da56cb90a57e87d0fa55811",
@@ -2926,7 +2926,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_141.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_141.yaml",
     "source_sha256": "63b677e2889383ed37648e35da07907fedcbe0196064daa6bf81658542c3dae0",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "fa1d1b243727d57240e3f592e2bf7b1763d5dc805da56cb90a57e87d0fa55811",
@@ -2940,7 +2940,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_142.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_142.yaml",
     "source_sha256": "ac82507b0a87d710d65a9e680b57aac63d06c8d27160c73de6f14a07a0309804",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "fa1d1b243727d57240e3f592e2bf7b1763d5dc805da56cb90a57e87d0fa55811",
@@ -2954,7 +2954,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_143.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_143.yaml",
     "source_sha256": "7e0b6f5cc0a0706bbd50e8ad2cfee3526ce376320c0d70e7cd715c7255af235a",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "a37c4ffcd550bc918ac37c882b1184e5177248f83365f0b3e222fdd8946ceab2",
@@ -2968,7 +2968,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_144.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_144.yaml",
     "source_sha256": "2493b22b0aea018234055d11405acb4ef42edd5a2f46b618257b12ff92a022e2",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "a37c4ffcd550bc918ac37c882b1184e5177248f83365f0b3e222fdd8946ceab2",
@@ -2982,7 +2982,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_145.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_145.yaml",
     "source_sha256": "c0697e4a6eaca41726b8b60d44bb03f3658da6d2d3c9d80ee178d6811c9cde2b",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "a37c4ffcd550bc918ac37c882b1184e5177248f83365f0b3e222fdd8946ceab2",
@@ -2996,7 +2996,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_146.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_146.yaml",
     "source_sha256": "211d2a94841d0d25f107bad90534d50ea332a386cc2aa2ce270c59379f35e8fa",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "a37c4ffcd550bc918ac37c882b1184e5177248f83365f0b3e222fdd8946ceab2",
@@ -3010,7 +3010,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_147.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_147.yaml",
     "source_sha256": "6db6356f771d350e36e71c10923d8519583a83c5ee2b9716c70a3ceb114d165b",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "40496aa0415b309639244d6a4071b224294c3f016da79e0c50d5eb00d4e24824",
@@ -3024,7 +3024,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_148.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_148.yaml",
     "source_sha256": "8de0ed3fbead2dc2167e84715434038f5a2928ba26bec0d4dc02a714da640fac",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "40496aa0415b309639244d6a4071b224294c3f016da79e0c50d5eb00d4e24824",
@@ -3038,7 +3038,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_149.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_149.yaml",
     "source_sha256": "28082857ef8c0a5ded9b11ea9dd886482e024afb77ad425f682acf6a27311d0b",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "40496aa0415b309639244d6a4071b224294c3f016da79e0c50d5eb00d4e24824",
@@ -3052,7 +3052,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_150.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_150.yaml",
     "source_sha256": "96ce1eaaa01112130b552d53bd15c3d91063e38efd696df8c03039db32d7c0f3",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "40496aa0415b309639244d6a4071b224294c3f016da79e0c50d5eb00d4e24824",
@@ -3066,7 +3066,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_151.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_151.yaml",
     "source_sha256": "daae74e1c103eee1edc810bbab6745b808e9407e47d03bdbc998dc53709a5220",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "dd56d4da49c6f10bbe82054fd990d9e8229f4e7bdfc024f67539c1425e4533c7",
@@ -3080,7 +3080,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_152.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_152.yaml",
     "source_sha256": "aaab4d831bfec4e6277b327ad2b578f855cdc72f35a5596873ea64fce66be112",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "dd56d4da49c6f10bbe82054fd990d9e8229f4e7bdfc024f67539c1425e4533c7",
@@ -3094,7 +3094,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_153.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_153.yaml",
     "source_sha256": "af50c827313421f9e76cb35f2165abd114688e17bbc5c9a2c535e67c14a594b2",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "dd56d4da49c6f10bbe82054fd990d9e8229f4e7bdfc024f67539c1425e4533c7",
@@ -3108,7 +3108,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_154.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_154.yaml",
     "source_sha256": "147ab1002163e1637164e2387a81850dd5ec6d016f46802789a2da1bb9b047ea",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "dd56d4da49c6f10bbe82054fd990d9e8229f4e7bdfc024f67539c1425e4533c7",
@@ -3122,7 +3122,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_155.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_155.yaml",
     "source_sha256": "0ca2efd049d8e7791b4edd07939606a611e9b8b71349ccff8b0947a051d582bf",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ef81c5a24b7b0691173bd6f5c74487eb850319e7cb4a38b91be367206165c112",
@@ -3136,7 +3136,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_156.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_156.yaml",
     "source_sha256": "b873ab1762c8c7eb7625441d8a70bb64bf6647f247a14b71118b1c5c6ac82d3f",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ef81c5a24b7b0691173bd6f5c74487eb850319e7cb4a38b91be367206165c112",
@@ -3150,7 +3150,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_157.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_157.yaml",
     "source_sha256": "ad55843af2dbc40d03a527f4197b740294408e59cba3f94b288633ea4e4eafdf",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "ef81c5a24b7b0691173bd6f5c74487eb850319e7cb4a38b91be367206165c112",
@@ -3164,7 +3164,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_158.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_158.yaml",
     "source_sha256": "d4fd203282d8d2960f0703afa09cb40c3f31a984e04c8de33244ef75f64a1be6",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "f2a2b3db71e23be5faeb6b09b293cde4163d7388f3682da63d48123a4784936b",
@@ -3178,7 +3178,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_159.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_159.yaml",
     "source_sha256": "0315878b55d1da101f8ca527eb1baf130f1476a9548df1b97222c07f01e1dca2",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "f2a2b3db71e23be5faeb6b09b293cde4163d7388f3682da63d48123a4784936b",
@@ -3192,7 +3192,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_160.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_160.yaml",
     "source_sha256": "26291426310bd3b6b492f5a9ef96238ff60c9894e83a4bf17b088f6fa69efb6e",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "f2a2b3db71e23be5faeb6b09b293cde4163d7388f3682da63d48123a4784936b",
@@ -3206,7 +3206,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_161.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_161.yaml",
     "source_sha256": "8e6e3009a3e1935efe6a3f0010cfd41c8fee3d4ff58b48bb5738b0b48b19abbc",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "f2a2b3db71e23be5faeb6b09b293cde4163d7388f3682da63d48123a4784936b",
@@ -3220,7 +3220,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_162.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_162.yaml",
     "source_sha256": "60f0abe4fe1519f28a69b1436900e5b09c42e17fc68af94f8e8d140245b0be4d",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "26a388bca6db8e75d0861336f5c6a9f863c3bc561e0fdeb4d788b2256c17d4ce",
@@ -3234,7 +3234,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_163.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_163.yaml",
     "source_sha256": "4ec41f029c4822c9af598d6932c1111acfc67970b05dca336b76323d85259281",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "26a388bca6db8e75d0861336f5c6a9f863c3bc561e0fdeb4d788b2256c17d4ce",
@@ -3248,7 +3248,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_164.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_164.yaml",
     "source_sha256": "a35a5ab9941735d6af00092cdd85b014c0dacaa8638a03b406433929c1b72f91",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "26a388bca6db8e75d0861336f5c6a9f863c3bc561e0fdeb4d788b2256c17d4ce",
@@ -3262,7 +3262,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_165.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_165.yaml",
     "source_sha256": "6bdaf610c977a425e7bd6ab60373d28fc36574f272d42548e0994d3df1865371",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "26a388bca6db8e75d0861336f5c6a9f863c3bc561e0fdeb4d788b2256c17d4ce",
@@ -3276,7 +3276,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_166.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_166.yaml",
     "source_sha256": "296a9e45045d2f051472b613be6c537d3d358833d12d11eab0682ddfad6ce510",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "21d9078cf0fa74bf7660ecb2681f652a1e54af9c620d795bfd3bb7d6a9e7442c",
@@ -3290,7 +3290,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_167.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_167.yaml",
     "source_sha256": "a07a9a5f597750348727e6591eb86b20c7f78015b3f6db7e0b60930cf4220de3",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "21d9078cf0fa74bf7660ecb2681f652a1e54af9c620d795bfd3bb7d6a9e7442c",
@@ -3304,7 +3304,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_168.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_168.yaml",
     "source_sha256": "f3d8d462710b21ceb4635f2a97d1ef729a56bc9dede908835bd8bf5223893ea6",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "21d9078cf0fa74bf7660ecb2681f652a1e54af9c620d795bfd3bb7d6a9e7442c",
@@ -3318,7 +3318,7 @@
     "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
-    "source": "zip:results/inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_169.yaml",
+    "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#audits/resolved_configs/structural_main_p2_169.yaml",
     "source_sha256": "08a15131b27d86c2787d0ec980666ab42b8e27b304507b8ca8844bd77f56af7d",
     "dataset_version": "p100k-native-v2",
     "manifest_sha256": "21d9078cf0fa74bf7660ecb2681f652a1e54af9c620d795bfd3bb7d6a9e7442c",

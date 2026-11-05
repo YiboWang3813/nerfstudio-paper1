@@ -3,11 +3,12 @@
 import csv
 import hashlib
 import json
-import shutil
 from pathlib import Path
 
 ROOT = Path("/home/yibo/paper1")
-DEST = ROOT / "results/probes/native-5k-liver-l1"
+DEST = ROOT / "outputs/probes/native-5k-liver-l1"
+REPORT = ROOT / "docs/experiments/native-5k-liver-l1"
+REPORT.mkdir(parents=True, exist_ok=True)
 METHODS = (
     "ours",
     "ultragauss",
@@ -26,14 +27,16 @@ for method in METHODS:
     if record["status"] != "completed_for_review":
         raise RuntimeError(f"Incomplete: {path}")
     records.append((method, path, record))
-path = ROOT / "results/probes/native-5k-liver-l1-historical-parameters/ultrags_baseline/receipt.json"
+path = ROOT / "outputs/probes/native-5k-liver-l1-historical-parameters/ultrags_baseline/receipt.json"
 record = json.loads(path.read_text())
 if record["status"] != "completed_for_review":
     raise RuntimeError(f"Incomplete: {path}")
 records.append(("ultrags_baseline_historical_parameters", path, record))
 rows = []
 for label, path, record in records:
-    shutil.copyfile(record["native_config"], path.parent / "native-config.yml")
+    snapshot = path.parent / "native-config.yml"
+    if not snapshot.exists():
+        snapshot.write_bytes(Path(record["native_config"]).read_bytes())
     for key in METRICS:
         rows.append(
             {
@@ -43,10 +46,10 @@ for label, path, record in records:
                 "native": record["native_metrics"][key],
                 "delta_native_minus_historical": record["deltas"][key],
                 "parameter_variant": record.get("parameter_variant", "current_frozen_preset"),
-                "receipt": str(path.relative_to(ROOT / "results")),
+                "receipt": str(path.relative_to(ROOT)),
             }
         )
-with (DEST / "six-metrics.tsv").open("w") as stream:
+with (REPORT / "metrics.tsv").open("w") as stream:
     writer = csv.DictWriter(stream, fieldnames=list(rows[0]), delimiter="\t")
     writer.writeheader()
     writer.writerows(rows)
@@ -65,7 +68,7 @@ for label, path, r in records:
     )
 lines += [
     "",
-    "完整六项指标见 [six-metrics.tsv](six-metrics.tsv)。各方法目录保存执行回执、逐帧指标、冻结原生配置，以及三张目标图和重建图的并排图（左为目标，右为重建）。",
+    "完整六项指标见 [metrics.tsv](metrics.tsv)。执行回执、逐帧指标、冻结原生配置和对照图片位于 outputs/probes 对应方法目录（图片左为目标，右为重建）。",
     "",
     "七个方法使用当前冻结配置的结果与历史参照接近或更好。UltraGS baseline 当前配置存在明显 SSIM 差异；历史 stage1 的初始化、尺度与 opacity 学习率、密度控制、opacity reset 以及物理切片裁剪行为与当前参数不同。额外一行只用新原生实现重放历史参数，原始当前配置结果保留，不用复跑结果覆盖。",
     "",
@@ -76,17 +79,17 @@ lines += [
     "该对照用于用户要求的近似质量验收，不声称逐算子等价、种子统计等价或完整预算复现。历史高斯参照来自较早 stage1 参数版本；神经场参照来自 implicit_stage3_full_sweep 的 5k 中间记录。",
     "",
 ]
-(DEST / "README.md").write_text("\n".join(lines))
+(REPORT / "report.md").write_text("\n".join(lines))
 evidence = []
-for base in (DEST, ROOT / "results/probes/native-5k-liver-l1-historical-parameters"):
+for base in (DEST, ROOT / "outputs/probes/native-5k-liver-l1-historical-parameters"):
     for path in sorted(base.rglob("*")):
         if path.is_file() and path.name != "evidence-sha256.json":
             evidence.append(
                 {
-                    "path": str(path.relative_to(ROOT / "results")),
+                    "path": str(path.relative_to(ROOT)),
                     "sha256": hashlib.sha256(path.read_bytes()).hexdigest(),
                     "bytes": path.stat().st_size,
                 }
             )
-(DEST / "evidence-sha256.json").write_text(json.dumps(evidence, indent=2) + "\n")
+(REPORT / "evidence.json").write_text(json.dumps(evidence, indent=2) + "\n")
 print("\n".join(lines[:16]))

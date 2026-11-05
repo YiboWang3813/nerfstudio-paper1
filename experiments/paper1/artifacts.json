@@ -1,0 +1,18 @@
+{
+  "table_main_comparison": "docs/experiments/main-comparison/table-main.json",
+  "figure_main_2d_original": "docs/experiments/main-comparison/figure-2d-original.json",
+  "figure_main_2d_tmi": "docs/experiments/main-comparison/figure-2d-tmi.json",
+  "table_afgm_ablation": "docs/experiments/afgm-ablation/table-afgm.json",
+  "table_plgr_ablation": "docs/experiments/plgr-ablation/table-plgr.json",
+  "table_cgas_ablation": "docs/experiments/cgas-ablation/table-cgas.json",
+  "table_joint_ablation": "docs/experiments/joint-ablation/table-joint.json",
+  "figure_h1_afgm": "docs/experiments/afgm-sensitivity/figure-h1.json",
+  "figure_h2_plgr": "docs/experiments/plgr-sensitivity/figure-h2.json",
+  "figure_h3_cgas": "docs/experiments/cgas-sensitivity/figure-h3.json",
+  "figure_h4_cgas_population": "docs/experiments/cgas-population/figure-h4.json",
+  "archived_3d_visualizations": "docs/experiments/3d-visualization/historical-3d.json",
+  "figure_ablation_2d": "docs/experiments/ablation-2d/historical-2d.json",
+  "ablation-table-set": "docs/experiments/ablation-summary/table-set.json",
+  "hyperparameter-figure-set": "docs/experiments/hyperparameter-figures/figure-set.json",
+  "manuscript-methods-assets": "docs/experiments/manuscript-methods/writing-assets.json"
+}

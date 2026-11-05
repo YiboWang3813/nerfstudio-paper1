@@ -9,11 +9,11 @@
 | 配置转换来源 | `scripts/ultrasound/convert_protocols.py` |
 | 数据准备与包校验 | `scripts/ultrasound/{prepare_manifest,freeze_datasets,package_dataset,publish_dataset}.py` |
 | 原生工程短程验证 | `scripts/ultrasound/smoke_matrix.py` |
-| 代表 sweep 的实际指标对照 | [八方法结果](../../../results/probes/native-5k-liver-l1/README.md) |
+| 代表 sweep 的实际指标对照 | [八方法结果](../../../docs/experiments/native-5k-liver-l1/report.md) |
 | 历史指标参照探针 | `scripts/ultrasound/probes/results_probe.py` |
 | 工程验收证据 | `../../../migration/preformal-acceptance.json` |
 | 当前研究说明 | `../../../docs/current/README.md` |
-| 历史数值与图表 | `../../../results/README.md` |
+| 历史数值与图表 | `../../../docs/experiments/README.md` |
 
 ## 当前边界
 

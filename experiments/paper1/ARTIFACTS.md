@@ -1,26 +1,18 @@
-# Paper1 图表工程与实验协议
+# 图表工程与实验协议
 
-当前图表对象入口在 [results/objects](../../../results/objects/README.md)。每个对象区分输入、协议、脚本、历史导出和可重建的本地输出；原始实验身份不因迁移而改写。
+图表项目位于 [docs/experiments](../../../docs/experiments/README.md)，配置与轻量数值由 docs Git 维护；通用生成器位于 nerfstudio/research_artifacts。输入原图和历史重导出在 outputs/artifact-inputs，冻结证据包在 outputs/frozen-inputs，完整运行池在 outputs/eehpc。
 
-使用本项目入口，例如：
+从 paper1 根目录运行：
 
 ```bash
-/home/yibo/paper1/bin/paper1 artifacts --object figure_main_2d_tmi
-/home/yibo/paper1/bin/paper1 artifacts --object table_joint_ablation
+bin/paper1 artifacts --config docs/experiments/main-comparison/figure-2d-tmi.json
+bin/paper1 artifacts --object table_joint_ablation
 ```
 
-图表代码在 `nerfstudio/research_artifacts`，仅读取本机冻结证据，不导入旧训练器或旧算子。输出写入新的目录。二维图对象还单独保留实际使用的 PNG、逐帧指标和汇总表，重建不依赖整棵旧运行输出目录。
+[artifacts.json](artifacts.json) 仅将已有对象 ID 路由到 docs 配置，不保存第二份配置。JSON 的 parameters 提供生成器支持的方法顺序、选帧裁剪、面板和配色等设置；不覆盖算法、训练预算或冻结数值。静态历史导出配置没有 generator，不冒充可执行入口。
 
-238 份最终论文冻结协议已转换为 [原生配置](native-protocols/index.json)，包括 canonical uniform、file_step_norm 和 file_axis_projection。它们通过原生 YAML 读回；四份非均匀协议通过真实数据解析验证。配置准备不会启动训练。
+每次生成写入 outputs/artifacts/<generator>/<build-id>，保存有效 artifact-config.json、源配置 SHA256、生成器 SHA256、读取数值和图片的哈希及 build-receipt.json。生成器只读输入，不导入旧训练器、不编译旧算子、不训练。
 
-训练使用原生 Nerfstudio Trainer/DataParser/DataManager/Model/Pipeline 及 gsplat 策略和算子。历史训练代码仅保存在 `source_reference` 供追溯，不能当作当前运行入口。历史 checkpoints、旧环境和编译二进制未迁入。
+主实验由 [matrices/main.json](matrices/main.json) 和循环控制 624 个组合，`paper1 matrix` 默认只规划；正式 1M/30k 尚未开始。238 份原生 YAML 按需生成，原始科学配置仍在冻结证据包。旧证据通过 `paper1 history` 从保留的 Git 历史读取，不重新展开数万文件。
 
-完整旧运行输入保留在本机结果归档，SHA256 和消费者关系分块记录在 `results/catalog/complete-assets-20261105`。被 Git 忽略的源归档仍可能包含不可再生的历史渲染，不能按普通缓存清理；只有对象 `builds` 和 `artifact-builds` 是可重建输出。
-
-## 循环与按需生成
-
-主实验使用 `matrices/main.json`，通过 `paper1 matrix` 查看 624 个组合；显式指定 `--train` 才按循环逐个运行。没有提前展开 624 份 YAML。旧证据通过 `paper1 history` 按需读取，完整来源保存在 results/history.json 指定的 Git 快照。238 份原生协议 YAML 也改为按需生成；冻结原始科学协议仍保留。
-
-## 文档与冻结输入边界
-
-可读规约在 [docs/protocols](../../../docs/protocols/README.md)，文稿在 docs/manuscript；图表输出在 results/objects。原始最终证据包集中为 [paper-evidence-v1.zip](../../../results/inputs/paper-evidence-v1.zip)，同名 JSON 固定 SHA256。绘图入口校验后按需展开到 shared/cache，不依赖 docs/archive 或目录兼容镜像。
+详细边界与历史路径解释见 [存储规约](../../../docs/protocols/artifact-storage.md)。outputs 中的原始渲染和冻结输入可能不可再生；被 Git 忽略不表示可随意删除。

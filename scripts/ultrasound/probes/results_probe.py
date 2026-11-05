@@ -5,18 +5,20 @@ runtime dependency. One frozen sweep, original initialization size and schedules
 a bounded training prefix, and the complete matching held-out frame set.
 """
 
+# ruff: noqa: PLC0415 -- runtime imports require the shared environment/GPU lock.
+
 from __future__ import annotations
 
 import argparse
 import csv
 import gc
 import hashlib
+import io
 import json
 import time
 from pathlib import Path
 
 ROOT = Path("/home/yibo/paper1")
-ARCHIVE = ROOT / "results/archive/eehpc-20261017/evidence/legacy"
 METRICS = ("psnr", "l1", "ssim", "lpips", "dists", "gmsd")
 
 
@@ -27,7 +29,7 @@ def historical_run(method):
     else:
         stage = "preproduction/comparisons/us_recon_four_dataset_p100k_v1/runs/stage1_calibration"
         label = method
-    return ARCHIVE / stage / "nvs/synthetic_liver/l1" / label
+    return Path(stage) / "nvs/synthetic_liver/l1" / label
 
 
 def main():
@@ -49,6 +51,7 @@ def main():
         from torchvision.utils import save_image
 
         from nerfstudio.configs.ultrasound_protocol import METHODS, production_config
+        from nerfstudio.scripts.paper1_history import read_evidence
         from nerfstudio.scripts.train import _set_random_seed
         from nerfstudio.utils.ultrasound_provenance import execution_identity
 
@@ -56,16 +59,18 @@ def main():
             if method not in METHODS:
                 raise ValueError(method)
             namespace = "native-5k-liver-l1-historical-parameters" if args.historical_ultrags else "native-5k-liver-l1"
-            dest = ROOT / "results/probes" / namespace / method
+            dest = ROOT / "outputs/probes" / namespace / method
             dest.mkdir(parents=True, exist_ok=True)
             receipt = dest / "receipt.json"
             if receipt.exists():
                 raise RuntimeError(f"Existing probe evidence must not be overwritten: {receipt}")
             source = historical_run(method)
             table = source / "eval/per_frame_metrics_iteration_005000.tsv"
-            rows = list(csv.DictReader(table.open(), delimiter="\t"))
+            table_bytes = read_evidence(str(table))
+            config_bytes = read_evidence(str(source / "resolved_config.yaml"))
+            rows = list(csv.DictReader(io.StringIO(table_bytes.decode()), delimiter="\t"))
             historical = {key: sum(float(row[key]) for row in rows) / len(rows) for key in METRICS}
-            old_config = yaml.safe_load((source / "resolved_config.yaml").read_text())
+            old_config = yaml.safe_load(config_bytes)
             manifest = Path("/home/yibo/shared/datasets/synthetic_liver/p100k-native-v2/l1/manifest.json")
             _set_random_seed(42)
             cfg = production_config(method, manifest, ROOT / "outputs/results-probes")
@@ -112,9 +117,9 @@ def main():
                 else "current_frozen_preset",
                 "historical_metrics": historical,
                 "historical_frames": [int(row["frame_id"]) for row in rows],
-                "historical_table": str(table),
-                "historical_table_sha256": hashlib.sha256(table.read_bytes()).hexdigest(),
-                "historical_config_sha256": hashlib.sha256((source / "resolved_config.yaml").read_bytes()).hexdigest(),
+                "historical_table": "git:evidence/legacy/" + str(table),
+                "historical_table_sha256": hashlib.sha256(table_bytes).hexdigest(),
+                "historical_config_sha256": hashlib.sha256(config_bytes).hexdigest(),
                 "historical_source_commit": "80f15957ede5e48a37ebe5227c1a209404a53cb0",
                 "native_config": str(cfg.get_base_dir() / "config.yml"),
                 "native_execution": execution_identity(),

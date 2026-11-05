@@ -9,12 +9,22 @@ from pathlib import Path, PurePosixPath
 ROOT = Path(__file__).resolve().parents[3]
 
 
+def read_evidence(path):
+    """Read a frozen source member without restoring a results worktree."""
+    archive = json.loads((ROOT / "docs/resources/provenance/results-history.json").read_text())
+    member = PurePosixPath(path)
+    if member.is_absolute() or ".." in member.parts:
+        raise ValueError("Select a relative historical evidence path")
+    spec = archive["commit"] + ":" + archive["tree"] + "/" + str(member)
+    return subprocess.check_output(["git", "--git-dir=" + str(ROOT / archive["repository"]), "show", spec])
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("path", nargs="?", help="Path relative to archived evidence/legacy")
     args = parser.parse_args()
-    archive = json.loads((ROOT / "results/history.json").read_text())
-    repo = ROOT / "results"
+    archive = json.loads((ROOT / "docs/resources/provenance/results-history.json").read_text())
+    repo = ROOT / archive["repository"]
     if not args.path:
         print(json.dumps(archive, indent=2))
         return

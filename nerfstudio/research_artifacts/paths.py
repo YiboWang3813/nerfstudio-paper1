@@ -9,16 +9,17 @@ from functools import lru_cache
 from pathlib import Path
 
 WORKSPACE = Path(__file__).resolve().parents[3]
-RESULTS = WORKSPACE / "results/archive/eehpc-20261105"
+RUNS = WORKSPACE / "outputs/eehpc"
+REGISTRY = WORKSPACE / "nerfstudio/experiments/paper1/artifacts.json"
 DOCS = WORKSPACE / "docs"
 VIEW = WORKSPACE / "migration/complete-assets-20261105/compat-workspace"
 _OBJECT_ALIASES = {}
 
 
 @lru_cache(maxsize=1)
-def evidence_root():
+def evidence_root(archive_path="outputs/frozen-inputs/paper-evidence-v1.zip"):
     """Validate the immutable input package and expand it once into shared cache."""
-    archive = WORKSPACE / "results/inputs/paper-evidence-v1.zip"
+    archive = WORKSPACE / archive_path
     manifest = json.loads(archive.with_suffix(".json").read_text())
     digest = hashlib.sha256(archive.read_bytes()).hexdigest()
     if digest != manifest["sha256"]:
@@ -40,13 +41,23 @@ def evidence_root():
     return payload
 
 
-def configure_object(object_id=None):
+def load_artifact_config(object_id=None, config_path=None):
+    """Resolve a versioned figure/table project from docs or an explicit config."""
+    if config_path is not None:
+        path = Path(config_path).resolve()
+    elif object_id:
+        registry = json.loads(REGISTRY.read_text())
+        if object_id not in registry:
+            raise ValueError(f"Unknown artifact object: {object_id}")
+        path = WORKSPACE / registry[object_id]
+    else:
+        return {}, None
+    return json.loads(path.read_text()), path
+
+
+def configure_object(definition):
     global _OBJECT_ALIASES
-    _OBJECT_ALIASES = {}
-    if object_id:
-        root = WORKSPACE / "results/objects" / object_id
-        definition = json.loads((root / "object.json").read_text())
-        _OBJECT_ALIASES = {key: root / value for key, value in definition.get("input_aliases", {}).items()}
+    _OBJECT_ALIASES = {key: WORKSPACE / value for key, value in definition.get("input_aliases", {}).items()}
 
 
 def mapped_path(value=".", *parts):
@@ -59,11 +70,12 @@ def mapped_path(value=".", *parts):
         suffix = value.split(marker, 1)[1].lstrip("/")
         return evidence_root().joinpath(suffix, *parts)
     roots = {
-        "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs": RESULTS / "legacy/outputs",
+        "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs": RUNS,
         "/home/boywang25/ultrasound-scene-reconstruction/omniultra": VIEW,
-        "/home/boywang25/paper1/results": RESULTS,
+        "/home/boywang25/paper1/results/legacy/outputs": RUNS,
+        "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs": RUNS,
         "/home/boywang25/paper1/data": Path("/home/yibo/shared/datasets/paper1-unpublished/eehpc-20261017"),
-        "outputs": RESULTS / "legacy/outputs",
+        "outputs": RUNS,
     }
     for original, target in roots.items():
         if value == original or value.startswith(original + "/"):
@@ -80,6 +92,8 @@ def prepare_view():
             link.unlink()
         old_docs.rmdir()
     link = VIEW / "outputs"
-    if not link.exists() and not link.is_symlink():
-        link.symlink_to(RESULTS / "legacy/outputs", target_is_directory=True)
+    if link.is_symlink() and link.readlink() != RUNS:
+        link.unlink()
+    if not link.exists():
+        link.symlink_to(RUNS, target_is_directory=True)
     return VIEW

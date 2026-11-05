@@ -1,53 +1,28 @@
-# 实验研究
+# 实验记录与图表工程
 
-每个目录对应一个研究对象，最多一层实验 ID。源端记录注明历史身份；配置、矩阵和数值已按同名对象打包在 [results/inputs](../../results/inputs/README.md)，执行代码以当前 Nerfstudio 为准。
+每项研究只保留一层实验 ID。报告、图表 JSON、来源和小型数值跟踪 Git；runs、权重、日志、原图和批量导出在 outputs。配置分工见 [存储规约](../protocols/artifact-storage.md)。
 
-## fixed-main-and-ablations
-
-- [Proposed Batch2 — NOT authorized, NOT submitted](fixed-main-and-ablations/batch2-proposal.md)
-- [P2 Fixed+Full final method refresh](fixed-main-and-ablations/protocol.md)
-- [P2 sealed submission](fixed-main-and-ablations/submission-20260909.md)
-
-## fixed-main-candidate
-
-- [Paper-wide Fixed+Full candidate validation](fixed-main-candidate/protocol.md)
-- [Submission record](fixed-main-candidate/submission-20260909.md)
-
-## fps-rebuild
-
-- [Eight authorized Fixed FPS model reconstructions](fps-rebuild/protocol.md)
-
-## hyperparameter-sensitivity
-
-- [Final qualitative audit — 2026-09-10](hyperparameter-sensitivity/final-qualitative-audit.md)
-- [Final Hyperparameter Batch 2 — authorized numeric analysis](hyperparameter-sensitivity/protocol.md)
-- [Final Batch 2 submission — 2026-09-10](hyperparameter-sensitivity/submission-20260910.md)
-
-## method-semantics-freeze
-
-- [Pre-existing rotated local-covariance discrepancy](method-semantics-freeze/covariance-blocker.md)
-- [P0.5 corrected covariance freeze](method-semantics-freeze/p05-corrected-covariance.md)
-- [Paper alignment — P2 Fixed final design; canonical LaTeX still unconfirmed](method-semantics-freeze/paper-alignment.md)
-- [P0 semantic freeze and ablation infrastructure](method-semantics-freeze/protocol.md)
-
-## paper-protocol-freeze
-
-- [Batch 1 overnight checkpoint — 2026-09-09](paper-protocol-freeze/batch1-overnight-checkpoint-20260909.md)
-- [User-approved minimal checkpoint retention](paper-protocol-freeze/checkpoint-retention.md)
-- [Batch 1 execution handoff (GPU2)](paper-protocol-freeze/execution-status.md)
-- [RTX 4080 scheduling and frozen-binary compatibility check](paper-protocol-freeze/gpu-4080-probe.md)
-- [Approved GPU2 migration](paper-protocol-freeze/gpu2-migration.md)
-- [Corrected main claim audit](paper-protocol-freeze/main-corrected-claim-audit.md)
-- [Batch1 postprocessing closeout (2026-09-09)](paper-protocol-freeze/postprocessing-closeout-20260909.md)
-- [P1 Paper Protocol Freeze](paper-protocol-freeze/protocol.md)
-- [Corrected qualitative audit — inherited selections only](paper-protocol-freeze/qualitative-audit-20260909.md)
-- [Historical timing aggregation inconsistency](paper-protocol-freeze/timing-audit-addendum.md)
-
-## plgr-confirmation
-
-- [Targeted LGR confirmation (2026-09-09)](plgr-confirmation/protocol.md)
-
-## plgr-interaction
-
-- [Final targeted local-global interaction study](plgr-interaction/protocol.md)
-
+- [3d-visualization](3d-visualization/README.md)
+- [ablation-2d](ablation-2d/README.md)
+- [ablation-summary](ablation-summary/README.md)
+- [afgm-ablation](afgm-ablation/README.md)
+- [afgm-sensitivity](afgm-sensitivity/README.md)
+- [cgas-ablation](cgas-ablation/README.md)
+- [cgas-population](cgas-population/README.md)
+- [cgas-sensitivity](cgas-sensitivity/README.md)
+- [fixed-main-and-ablations](fixed-main-and-ablations/protocol.md)
+- [fixed-main-candidate](fixed-main-candidate/protocol.md)
+- [fps-rebuild](fps-rebuild/protocol.md)
+- [historical-support](historical-support/README.md)
+- [hyperparameter-figures](hyperparameter-figures/README.md)
+- [hyperparameter-sensitivity](hyperparameter-sensitivity/protocol.md)
+- [joint-ablation](joint-ablation/README.md)
+- [main-comparison](main-comparison/README.md)
+- [manuscript-methods](manuscript-methods/README.md)
+- [method-semantics-freeze](method-semantics-freeze/protocol.md)
+- [native-5k-liver-l1](native-5k-liver-l1/report.md)
+- [paper-protocol-freeze](paper-protocol-freeze/protocol.md)
+- [plgr-ablation](plgr-ablation/README.md)
+- [plgr-confirmation](plgr-confirmation/protocol.md)
+- [plgr-interaction](plgr-interaction/protocol.md)
+- [plgr-sensitivity](plgr-sensitivity/README.md)

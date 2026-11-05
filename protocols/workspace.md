@@ -2,7 +2,7 @@
 
 本机以 [/home/yibo/AGENTS.md](../../../AGENTS.md) 和 [paper1/AGENTS.md](../../AGENTS.md) 为权威规则。本文件取代旧工程文档中的 Python 3.7、Hydra-only、独立 protocol 仓库和本机必须使用 Slurm 的描述。
 
-代码位于 nerfstudio 与 gsplat 两个 fork，当前开发分支为 `refactor/native-ultrasound`。docs 与 results 各自使用已有 Git 仓库；可执行配置和实验矩阵归入 Nerfstudio，不新设一级 protocol 目录。
+代码位于 nerfstudio 与 gsplat 两个 fork，当前开发分支为 `refactor/native-ultrasound`。docs 使用独立 Git 仓库，outputs 保存不跟踪的运行产物；独立 results 已取消。可执行配置和实验矩阵归入 Nerfstudio，不新设一级 protocol 目录。
 
 所有入口通过 `../../bin/paper1` 选择 paper1 源码。共享 Python/Torch 在 shared/envs，项目覆盖层只路由源码。读取 registry.json 并现场核实工具链；安装变更持 provision.lock 独占锁，编译和运行持共享锁。GPU 使用前检查实际占用并取得对应设备锁，不伪造 Slurm 分配。
 

@@ -36,3 +36,11 @@
 - [ultragray-paper](papers/ultragray-paper.pdf)
 - [ultrags-paper](papers/ultrags-paper.pdf)
 - [ultranerf-paper](papers/ultranerf-paper.pdf)
+
+## 当前资产来源
+
+- [冻结输入包与 SHA256](provenance/evidence-packages.json)
+- [原 results Git 历史](provenance/results-history.json)
+- [当前目录迁移映射](provenance/artifact-storage-map.json)
+
+完整逐文件源清单在 outputs/provenance/source-catalog，保留原始记录身份；不将大规模 JSONL 当作文档日常文件跟踪。

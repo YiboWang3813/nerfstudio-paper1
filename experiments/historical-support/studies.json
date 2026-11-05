@@ -1,0 +1,230 @@
+[
+  {
+    "study": "preproduction/ablations/ours/hydra_runs",
+    "files": 11,
+    "bytes": 44545,
+    "source_root": "/home/yibo/paper1/outputs/eehpc/preproduction/ablations/ours/hydra_runs"
+  },
+  {
+    "study": "preproduction/baseline_reproduction/slice_adapted_3dgs",
+    "files": 90,
+    "bytes": 4674000,
+    "source_root": "/home/yibo/paper1/outputs/eehpc/preproduction/baseline_reproduction/slice_adapted_3dgs"
+  },
+  {
+    "study": "preproduction/baseline_reproduction/ultragray",
+    "files": 11,
+    "bytes": 34125,
+    "source_root": "/home/yibo/paper1/outputs/eehpc/preproduction/baseline_reproduction/ultragray"
+  },
+  {
+    "study": "preproduction/baseline_reproduction/ultrags_baseline",
+    "files": 111,
+    "bytes": 13566461,
+    "source_root": "/home/yibo/paper1/outputs/eehpc/preproduction/baseline_reproduction/ultrags_baseline"
+  },
+  {
+    "study": "preproduction/comparisons/us_recon_four_dataset_p100k_v1",
+    "files": 11588,
+    "bytes": 823662113,
+    "source_root": "/home/yibo/paper1/outputs/eehpc/preproduction/comparisons/us_recon_four_dataset_p100k_v1"
+  },
+  {
+    "study": "preproduction/debug/dc_strategy_smoke",
+    "files": 48,
+    "bytes": 1112659,
+    "source_root": "/home/yibo/paper1/outputs/eehpc/preproduction/debug/dc_strategy_smoke"
+  },
+  {
+    "study": "preproduction/debug/slice_adapted_3dgs_speed_smoke",
+    "files": 24,
+    "bytes": 107222,
+    "source_root": "/home/yibo/paper1/outputs/eehpc/preproduction/debug/slice_adapted_3dgs_speed_smoke"
+  },
+  {
+    "study": "preproduction/diagnostics/ours_gs_strict_diagnostics",
+    "files": 1044,
+    "bytes": 70248658,
+    "source_root": "/home/yibo/paper1/outputs/eehpc/preproduction/diagnostics/ours_gs_strict_diagnostics"
+  },
+  {
+    "study": "preproduction/diagnostics/tdsc_abus_2023_validation_100_ours_cause",
+    "files": 10,
+    "bytes": 536868,
+    "source_root": "/home/yibo/paper1/outputs/eehpc/preproduction/diagnostics/tdsc_abus_2023_validation_100_ours_cause"
+  },
+  {
+    "study": "preproduction/diagnostics/tdsc_abus_2023_validation_100_ours_echo_fix",
+    "files": 3,
+    "bytes": 5912,
+    "source_root": "/home/yibo/paper1/outputs/eehpc/preproduction/diagnostics/tdsc_abus_2023_validation_100_ours_echo_fix"
+  },
+  {
+    "study": "preproduction/diagnostics/tdsc_abus_2023_validation_100_ours_echo_lr_refine",
+    "files": 3,
+    "bytes": 4901,
+    "source_root": "/home/yibo/paper1/outputs/eehpc/preproduction/diagnostics/tdsc_abus_2023_validation_100_ours_echo_lr_refine"
+  },
+  {
+    "study": "preproduction/diagnostics/tdsc_abus_2023_validation_100_ours_gap",
+    "files": 10,
+    "bytes": 1990200,
+    "source_root": "/home/yibo/paper1/outputs/eehpc/preproduction/diagnostics/tdsc_abus_2023_validation_100_ours_gap"
+  },
+  {
+    "study": "preproduction/ideas/ours",
+    "files": 4008,
+    "bytes": 282079050,
+    "source_root": "/home/yibo/paper1/outputs/eehpc/preproduction/ideas/ours"
+  },
+  {
+    "study": "preproduction/regression/P2_fixed_full_final_20260909",
+    "files": 78,
+    "bytes": 29039277,
+    "source_root": "/home/yibo/paper1/outputs/eehpc/preproduction/regression/P2_fixed_full_final_20260909"
+  },
+  {
+    "study": "preproduction/regression/p05_corrected_covariance_20260908",
+    "files": 304,
+    "bytes": 187029061,
+    "source_root": "/home/yibo/paper1/outputs/eehpc/preproduction/regression/p05_corrected_covariance_20260908"
+  },
+  {
+    "study": "preproduction/regression/p0_semantic_freeze_20260908",
+    "files": 1099,
+    "bytes": 98908514,
+    "source_root": "/home/yibo/paper1/outputs/eehpc/preproduction/regression/p0_semantic_freeze_20260908"
+  },
+  {
+    "study": "preproduction/regression/p1_gpu2_memory_gate_20260908",
+    "files": 330,
+    "bytes": 21958536,
+    "source_root": "/home/yibo/paper1/outputs/eehpc/preproduction/regression/p1_gpu2_memory_gate_20260908"
+  },
+  {
+    "study": "preproduction/ultragauss_tus2024qc_ablation/runs",
+    "files": 708,
+    "bytes": 51752140,
+    "source_root": "/home/yibo/paper1/outputs/eehpc/preproduction/ultragauss_tus2024qc_ablation/runs"
+  },
+  {
+    "study": "preproduction/ultragauss_tus2024qc_ablation/tables",
+    "files": 8,
+    "bytes": 27781,
+    "source_root": "/home/yibo/paper1/outputs/eehpc/preproduction/ultragauss_tus2024qc_ablation/tables"
+  },
+  {
+    "study": "preproduction/ultragray_acc_speed_balance/runs",
+    "files": 333,
+    "bytes": 24442765,
+    "source_root": "/home/yibo/paper1/outputs/eehpc/preproduction/ultragray_acc_speed_balance/runs"
+  },
+  {
+    "study": "preproduction/ultragray_acc_speed_balance/tables",
+    "files": 4,
+    "bytes": 11615,
+    "source_root": "/home/yibo/paper1/outputs/eehpc/preproduction/ultragray_acc_speed_balance/tables"
+  },
+  {
+    "study": "production/ablations/ours",
+    "files": 3,
+    "bytes": 62088,
+    "source_root": "/home/yibo/paper1/outputs/eehpc/production/ablations/ours"
+  },
+  {
+    "study": "production/ablations/ours/P2_fixed_full_final_20260909",
+    "files": 297,
+    "bytes": 46525767,
+    "source_root": "/home/yibo/paper1/outputs/eehpc/production/ablations/ours/P2_fixed_full_final_20260909"
+  },
+  {
+    "study": "production/ablations/ours/expanded_paper_plan_20260702",
+    "files": 7050,
+    "bytes": 500294618,
+    "source_root": "/home/yibo/paper1/outputs/eehpc/production/ablations/ours/expanded_paper_plan_20260702"
+  },
+  {
+    "study": "production/ablations/ours/multisweep_mean_validation_20260702",
+    "files": 3311,
+    "bytes": 233782931,
+    "source_root": "/home/yibo/paper1/outputs/eehpc/production/ablations/ours/multisweep_mean_validation_20260702"
+  },
+  {
+    "study": "production/ablations/ours/notes",
+    "files": 1,
+    "bytes": 1730,
+    "source_root": "/home/yibo/paper1/outputs/eehpc/production/ablations/ours/notes"
+  },
+  {
+    "study": "production/ablations/ours/paper_final_corrected_covariance_20260908",
+    "files": 3401,
+    "bytes": 255594526,
+    "source_root": "/home/yibo/paper1/outputs/eehpc/production/ablations/ours/paper_final_corrected_covariance_20260908"
+  },
+  {
+    "study": "production/ablations/ours/path_aware_pruning_update_20260831",
+    "files": 6673,
+    "bytes": 461856824,
+    "source_root": "/home/yibo/paper1/outputs/eehpc/production/ablations/ours/path_aware_pruning_update_20260831"
+  },
+  {
+    "study": "production/ablations/ours/runs",
+    "files": 6380,
+    "bytes": 452539406,
+    "source_root": "/home/yibo/paper1/outputs/eehpc/production/ablations/ours/runs"
+  },
+  {
+    "study": "production/ablations/ours/sensorless_overnight_202runs_20260717",
+    "files": 11112,
+    "bytes": 765840602,
+    "source_root": "/home/yibo/paper1/outputs/eehpc/production/ablations/ours/sensorless_overnight_202runs_20260717"
+  },
+  {
+    "study": "production/ablations/ours/sensorless_stage1_canonical_main_20260716",
+    "files": 4291,
+    "bytes": 295051175,
+    "source_root": "/home/yibo/paper1/outputs/eehpc/production/ablations/ours/sensorless_stage1_canonical_main_20260716"
+  },
+  {
+    "study": "production/ablations/ours/sensorless_stage2_minimal_20260716",
+    "files": 1872,
+    "bytes": 131688843,
+    "source_root": "/home/yibo/paper1/outputs/eehpc/production/ablations/ours/sensorless_stage2_minimal_20260716"
+  },
+  {
+    "study": "production/ablations/ours/tables",
+    "files": 11,
+    "bytes": 70723,
+    "source_root": "/home/yibo/paper1/outputs/eehpc/production/ablations/ours/tables"
+  },
+  {
+    "study": "production/comparisons/P2_fixed_full_final_20260909",
+    "files": 494,
+    "bytes": 38534449,
+    "source_root": "/home/yibo/paper1/outputs/eehpc/production/comparisons/P2_fixed_full_final_20260909"
+  },
+  {
+    "study": "production/comparisons/paper_final_corrected_covariance_20260908",
+    "files": 4834,
+    "bytes": 370453970,
+    "source_root": "/home/yibo/paper1/outputs/eehpc/production/comparisons/paper_final_corrected_covariance_20260908"
+  },
+  {
+    "study": "production/comparisons/us_recon_four_dataset_p100k_v1",
+    "files": 17078,
+    "bytes": 3690739658,
+    "source_root": "/home/yibo/paper1/outputs/eehpc/production/comparisons/us_recon_four_dataset_p100k_v1"
+  },
+  {
+    "study": "tmp/matplotlib",
+    "files": 1,
+    "bytes": 50062,
+    "source_root": "/home/yibo/paper1/outputs/eehpc/tmp/matplotlib"
+  },
+  {
+    "study": "tmp/torch_extensions/gsplat_sm89",
+    "files": 6,
+    "bytes": 515939,
+    "source_root": "/home/yibo/paper1/outputs/eehpc/tmp/torch_extensions/gsplat_sm89"
+  }
+]

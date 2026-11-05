@@ -1,0 +1,15 @@
+{
+  "kind": "immutable_git_snapshot",
+  "tag": "archive/legacy-evidence-20261105",
+  "commit": "00305ee1affcde3c28bf751117755e658c9217c3",
+  "tree": "evidence/legacy",
+  "files": 33399,
+  "access": "bin/paper1 history RELATIVE_PATH",
+  "retention": "Keep this tag and the repository history; source evidence is stored in Git objects, not discarded.",
+  "logical_prefixes": [
+    "evidence/legacy/",
+    "archive/eehpc-20261017/evidence/legacy/",
+    "archive/eehpc-20261105/evidence/legacy/"
+  ],
+  "repository": "migration/git-history/results.git"
+}

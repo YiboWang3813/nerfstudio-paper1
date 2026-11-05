@@ -1,0 +1,365 @@
+{
+  "frozen_checkpoint_tolerance": {
+    "atol": 1e-06,
+    "rtol": 1e-05
+  },
+  "frozen_comparisons": [
+    {
+      "scene": "liver",
+      "frame": 1,
+      "field": "prediction",
+      "max_abs_difference": 0.0,
+      "passed": true
+    },
+    {
+      "scene": "liver",
+      "frame": 1,
+      "field": "depth",
+      "max_abs_difference": 0.0,
+      "passed": true
+    },
+    {
+      "scene": "liver",
+      "frame": 8,
+      "field": "prediction",
+      "max_abs_difference": 0.0,
+      "passed": true
+    },
+    {
+      "scene": "liver",
+      "frame": 8,
+      "field": "depth",
+      "max_abs_difference": 0.0,
+      "passed": true
+    },
+    {
+      "scene": "spine_phantom",
+      "frame": 1,
+      "field": "prediction",
+      "max_abs_difference": 0.0,
+      "passed": true
+    },
+    {
+      "scene": "spine_phantom",
+      "frame": 1,
+      "field": "depth",
+      "max_abs_difference": 0.0,
+      "passed": true
+    },
+    {
+      "scene": "spine_phantom",
+      "frame": 8,
+      "field": "prediction",
+      "max_abs_difference": 0.0,
+      "passed": true
+    },
+    {
+      "scene": "spine_phantom",
+      "frame": 8,
+      "field": "depth",
+      "max_abs_difference": 0.0,
+      "passed": true
+    },
+    {
+      "scene": "tdsc_abus_2023",
+      "frame": 1,
+      "field": "prediction",
+      "max_abs_difference": 0.0,
+      "passed": true
+    },
+    {
+      "scene": "tdsc_abus_2023",
+      "frame": 1,
+      "field": "depth",
+      "max_abs_difference": 0.0,
+      "passed": true
+    },
+    {
+      "scene": "tdsc_abus_2023",
+      "frame": 8,
+      "field": "prediction",
+      "max_abs_difference": 0.0,
+      "passed": true
+    },
+    {
+      "scene": "tdsc_abus_2023",
+      "frame": 8,
+      "field": "depth",
+      "max_abs_difference": 0.0,
+      "passed": true
+    },
+    {
+      "scene": "tus_rec_2024_qc",
+      "frame": 1,
+      "field": "prediction",
+      "max_abs_difference": 0.0,
+      "passed": true
+    },
+    {
+      "scene": "tus_rec_2024_qc",
+      "frame": 1,
+      "field": "depth",
+      "max_abs_difference": 0.0,
+      "passed": true
+    },
+    {
+      "scene": "tus_rec_2024_qc",
+      "frame": 8,
+      "field": "prediction",
+      "max_abs_difference": 0.0,
+      "passed": true
+    },
+    {
+      "scene": "tus_rec_2024_qc",
+      "frame": 8,
+      "field": "depth",
+      "max_abs_difference": 0.0,
+      "passed": true
+    }
+  ],
+  "independent_training_controls": [
+    {
+      "scene": "liver",
+      "step": "6",
+      "metric": "test/psnr",
+      "old": 16.4335451,
+      "migrated": 16.4334459,
+      "old_repeat": 16.4332066,
+      "migration_abs_difference": 9.92000000010762e-05,
+      "old_repeat_abs_difference": 0.00033850000000157365
+    },
+    {
+      "scene": "liver",
+      "step": "6",
+      "metric": "test/l1",
+      "old": 0.110895131,
+      "migrated": 0.110899884,
+      "old_repeat": 0.110901292,
+      "migration_abs_difference": 4.75300000001011e-06,
+      "old_repeat_abs_difference": 6.161000000004524e-06
+    },
+    {
+      "scene": "liver",
+      "step": "6",
+      "metric": "test/ssim",
+      "old": 0.110959489,
+      "migrated": 0.11088305,
+      "old_repeat": 0.110901322,
+      "migration_abs_difference": 7.643899999999759e-05,
+      "old_repeat_abs_difference": 5.816699999999786e-05
+    },
+    {
+      "scene": "liver",
+      "step": "12",
+      "metric": "test/psnr",
+      "old": 16.5747356,
+      "migrated": 16.5746422,
+      "old_repeat": 16.5742569,
+      "migration_abs_difference": 9.34000000007984e-05,
+      "old_repeat_abs_difference": 0.0004786999999986108
+    },
+    {
+      "scene": "liver",
+      "step": "12",
+      "metric": "test/l1",
+      "old": 0.109171081,
+      "migrated": 0.109175228,
+      "old_repeat": 0.109178215,
+      "migration_abs_difference": 4.146999999996015e-06,
+      "old_repeat_abs_difference": 7.13399999999198e-06
+    },
+    {
+      "scene": "liver",
+      "step": "12",
+      "metric": "test/ssim",
+      "old": 0.114748806,
+      "migrated": 0.114679761,
+      "old_repeat": 0.114684746,
+      "migration_abs_difference": 6.904499999998981e-05,
+      "old_repeat_abs_difference": 6.405999999999079e-05
+    },
+    {
+      "scene": "spine_phantom",
+      "step": "6",
+      "metric": "test/psnr",
+      "old": 27.363678,
+      "migrated": 27.3619328,
+      "old_repeat": 27.3636532,
+      "migration_abs_difference": 0.001745199999998448,
+      "old_repeat_abs_difference": 2.4799999998492694e-05
+    },
+    {
+      "scene": "spine_phantom",
+      "step": "6",
+      "metric": "test/l1",
+      "old": 0.0190813001,
+      "migrated": 0.019084773,
+      "old_repeat": 0.0190813374,
+      "migration_abs_difference": 3.4728999999990295e-06,
+      "old_repeat_abs_difference": 3.729999999840805e-08
+    },
+    {
+      "scene": "spine_phantom",
+      "step": "6",
+      "metric": "test/ssim",
+      "old": 0.562565863,
+      "migrated": 0.562470257,
+      "old_repeat": 0.562567562,
+      "migration_abs_difference": 9.560600000002584e-05,
+      "old_repeat_abs_difference": 1.6990000000216554e-06
+    },
+    {
+      "scene": "spine_phantom",
+      "step": "12",
+      "metric": "test/psnr",
+      "old": 27.6407061,
+      "migrated": 27.6388645,
+      "old_repeat": 27.6406012,
+      "migration_abs_difference": 0.0018415999999987775,
+      "old_repeat_abs_difference": 0.0001049000000001854
+    },
+    {
+      "scene": "spine_phantom",
+      "step": "12",
+      "metric": "test/l1",
+      "old": 0.0182194393,
+      "migrated": 0.0182236731,
+      "old_repeat": 0.0182195595,
+      "migration_abs_difference": 4.2337999999995934e-06,
+      "old_repeat_abs_difference": 1.2019999999848818e-07
+    },
+    {
+      "scene": "spine_phantom",
+      "step": "12",
+      "metric": "test/ssim",
+      "old": 0.574281424,
+      "migrated": 0.574179441,
+      "old_repeat": 0.574282438,
+      "migration_abs_difference": 0.0001019830000000832,
+      "old_repeat_abs_difference": 1.0139999999658755e-06
+    },
+    {
+      "scene": "tdsc_abus_2023",
+      "step": "6",
+      "metric": "test/psnr",
+      "old": 11.6451416,
+      "migrated": 11.6449647,
+      "old_repeat": 11.6451325,
+      "migration_abs_difference": 0.00017690000000136763,
+      "old_repeat_abs_difference": 9.099999999762076e-06
+    },
+    {
+      "scene": "tdsc_abus_2023",
+      "step": "6",
+      "metric": "test/l1",
+      "old": 0.219999745,
+      "migrated": 0.22000552,
+      "old_repeat": 0.219998926,
+      "migration_abs_difference": 5.775000000013408e-06,
+      "old_repeat_abs_difference": 8.189999999852482e-07
+    },
+    {
+      "scene": "tdsc_abus_2023",
+      "step": "6",
+      "metric": "test/ssim",
+      "old": 0.039016204,
+      "migrated": 0.0389379747,
+      "old_repeat": 0.0389414877,
+      "migration_abs_difference": 7.822929999999617e-05,
+      "old_repeat_abs_difference": 7.471629999999951e-05
+    },
+    {
+      "scene": "tdsc_abus_2023",
+      "step": "12",
+      "metric": "test/psnr",
+      "old": 11.7145071,
+      "migrated": 11.7144928,
+      "old_repeat": 11.7146983,
+      "migration_abs_difference": 1.430000000013365e-05,
+      "old_repeat_abs_difference": 0.00019119999999972492
+    },
+    {
+      "scene": "tdsc_abus_2023",
+      "step": "12",
+      "metric": "test/l1",
+      "old": 0.218011118,
+      "migrated": 0.218016468,
+      "old_repeat": 0.218009263,
+      "migration_abs_difference": 5.349999999987309e-06,
+      "old_repeat_abs_difference": 1.854999999995055e-06
+    },
+    {
+      "scene": "tdsc_abus_2023",
+      "step": "12",
+      "metric": "test/ssim",
+      "old": 0.0411533453,
+      "migrated": 0.041060349,
+      "old_repeat": 0.0410721768,
+      "migration_abs_difference": 9.299629999999504e-05,
+      "old_repeat_abs_difference": 8.116849999999926e-05
+    },
+    {
+      "scene": "tus_rec_2024_qc",
+      "step": "6",
+      "metric": "test/psnr",
+      "old": 16.0836821,
+      "migrated": 16.0834866,
+      "old_repeat": 16.0833902,
+      "migration_abs_difference": 0.00019550000000023715,
+      "old_repeat_abs_difference": 0.0002919000000005667
+    },
+    {
+      "scene": "tus_rec_2024_qc",
+      "step": "6",
+      "metric": "test/l1",
+      "old": 0.101257902,
+      "migrated": 0.101259276,
+      "old_repeat": 0.101260029,
+      "migration_abs_difference": 1.373999999998432e-06,
+      "old_repeat_abs_difference": 2.127000000004542e-06
+    },
+    {
+      "scene": "tus_rec_2024_qc",
+      "step": "6",
+      "metric": "test/ssim",
+      "old": 0.29002744,
+      "migrated": 0.29001911,
+      "old_repeat": 0.290004164,
+      "migration_abs_difference": 8.330000000000837e-06,
+      "old_repeat_abs_difference": 2.3276000000016506e-05
+    },
+    {
+      "scene": "tus_rec_2024_qc",
+      "step": "12",
+      "metric": "test/psnr",
+      "old": 16.1756525,
+      "migrated": 16.1754608,
+      "old_repeat": 16.1753445,
+      "migration_abs_difference": 0.00019170000000201526,
+      "old_repeat_abs_difference": 0.00030800000000041905
+    },
+    {
+      "scene": "tus_rec_2024_qc",
+      "step": "12",
+      "metric": "test/l1",
+      "old": 0.100089747,
+      "migrated": 0.100091469,
+      "old_repeat": 0.100092512,
+      "migration_abs_difference": 1.7219999999956714e-06,
+      "old_repeat_abs_difference": 2.764999999987916e-06
+    },
+    {
+      "scene": "tus_rec_2024_qc",
+      "step": "12",
+      "metric": "test/ssim",
+      "old": 0.29787758,
+      "migrated": 0.297868922,
+      "old_repeat": 0.297858596,
+      "migration_abs_difference": 8.657999999994725e-06,
+      "old_repeat_abs_difference": 1.8983999999999668e-05
+    }
+  ],
+  "failures": [],
+  "fixed_state_passed": true,
+  "independent_training_note": "Separate seeded CUDA training trajectories can diverge through atomic reductions and dynamic topology; tensor-by-index equality is not certified. These paired repeat controls quantify observed numerical variability, not a statistical equivalence claim."
+}

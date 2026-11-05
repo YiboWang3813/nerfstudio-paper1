@@ -1,0 +1,25 @@
+{
+  "id": "archived_3d_visualizations",
+  "title": "历史三维可视化探索与退出论文的决定",
+  "kind": "historical_figure",
+  "generator": null,
+  "output_subset": null,
+  "training_entry": "paper1 native Nerfstudio only; this object never starts training",
+  "source_tables": [],
+  "runs": [],
+  "missing_source_tables": [],
+  "raw_runs_are_essential_retained_inputs": true,
+  "checkpoints_migrated": false,
+  "source_receipts_immutable": true,
+  "historical_evidence_archive": "docs/resources/provenance/results-history.json",
+  "frozen_inputs": {
+    "archive": "outputs/frozen-inputs/paper-evidence-v1.zip",
+    "manifest": "outputs/frozen-inputs/paper-evidence-v1.json"
+  },
+  "schema_version": 1,
+  "output_root": "outputs/artifacts",
+  "asset_root": "outputs/artifact-inputs/archived_3d_visualizations",
+  "parameters": {},
+  "input_aliases": {},
+  "build_outputs": "outputs/artifacts/<generator>/<build-id>; effective config and hashes recorded per build"
+}

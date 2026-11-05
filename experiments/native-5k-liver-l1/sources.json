@@ -1,0 +1,7 @@
+{
+  "runs": "outputs/probes/native-5k-liver-l1",
+  "historical_parameter_variant": "outputs/probes/native-5k-liver-l1-historical-parameters",
+  "training_outputs": "outputs/results-probes",
+  "immutable_original_file_hashes": "outputs/probes/native-5k-liver-l1/evidence-sha256.json",
+  "note": "Paths in original receipts remain historical; current relocation is recorded separately."
+}

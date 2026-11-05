@@ -1,0 +1,311 @@
+{
+  "ours": {
+    "historical_config": "/home/yibo/paper1/results/archive/eehpc-20261017/evidence/legacy/preproduction/comparisons/us_recon_four_dataset_p100k_v1/runs/stage1_calibration/nvs/synthetic_liver/l1/ours/resolved_config.yaml",
+    "differences_from_frozen_native_preset": [
+      {
+        "path": "model.offline.density_control.responsibility.path_contribution_quantile",
+        "historical": null,
+        "current": 0.8
+      },
+      {
+        "path": "model.offline.density_control.responsibility.path_contribution_threshold",
+        "historical": null,
+        "current": 0.0
+      },
+      {
+        "path": "model.offline.density_control.responsibility.path_contribution_threshold_mode",
+        "historical": null,
+        "current": "quantile"
+      },
+      {
+        "path": "model.offline.density_control.responsibility.protect_attenuation_mode",
+        "historical": null,
+        "current": "path_contribution"
+      },
+      {
+        "path": "model.offline.density_control.responsibility.protect_attenuation_quantile",
+        "historical": 0.8,
+        "current": 0.9
+      },
+      {
+        "path": "model.pose_uncertainty",
+        "historical": {
+          "enabled": false,
+          "uncertainty_abspath": "",
+          "weight_mode": "direct",
+          "min_weight": 0.1,
+          "max_weight": 1.0,
+          "alpha": 1.0,
+          "image_loss_names": [
+            "l1",
+            "ssim",
+            "mse",
+            "lpips"
+          ],
+          "decouple_density_control": true,
+          "log_interval": 500,
+          "mc_enabled": false,
+          "mc_samples": 2,
+          "mc_trans_sigma_mm": 0.0,
+          "mc_rot_sigma_deg": 0.0
+        },
+        "current": null
+      },
+      {
+        "path": "model.slice_render.local_conditioning_mode",
+        "historical": null,
+        "current": "fixed"
+      },
+      {
+        "path": "model.slice_render.ray_attenuation_beta",
+        "historical": 0.6,
+        "current": 0.8
+      },
+      {
+        "path": "model.slice_render.ray_attenuation_formula",
+        "historical": "slice_depth",
+        "current": "integral"
+      },
+      {
+        "path": "model.slice_render.ray_attenuation_min_transmission",
+        "historical": 0.55,
+        "current": 0.35
+      },
+      {
+        "path": "model.slice_render.ray_attenuation_quadrature_points",
+        "historical": 1,
+        "current": 3
+      },
+      {
+        "path": "model.slice_render.ray_attenuation_strength",
+        "historical": 0.3,
+        "current": 0.55
+      }
+    ]
+  },
+  "ultragauss": {
+    "historical_config": "/home/yibo/paper1/results/archive/eehpc-20261017/evidence/legacy/preproduction/comparisons/us_recon_four_dataset_p100k_v1/runs/stage1_calibration/nvs/synthetic_liver/l1/ultragauss/resolved_config.yaml",
+    "differences_from_frozen_native_preset": [
+      {
+        "path": "model.gauss_container.lr.precision_tril",
+        "historical": 0.035,
+        "current": 0.004
+      }
+    ]
+  },
+  "ultragray": {
+    "historical_config": "/home/yibo/paper1/results/archive/eehpc-20261017/evidence/legacy/preproduction/comparisons/us_recon_four_dataset_p100k_v1/runs/stage1_calibration/nvs/synthetic_liver/l1/ultragray/resolved_config.yaml",
+    "differences_from_frozen_native_preset": [
+      {
+        "path": "model.offline.density_control.n_max",
+        "historical": 2000000,
+        "current": null
+      },
+      {
+        "path": "model.offline.density_control.thresholds.densify_grad",
+        "historical": 1e-05,
+        "current": 7.5e-06
+      },
+      {
+        "path": "model.offline.density_control.thresholds.max_scale_mm",
+        "historical": 5.0,
+        "current": 2.0
+      },
+      {
+        "path": "model.render.local_transmission_max_window_mm",
+        "historical": 4.0,
+        "current": 0.75
+      }
+    ]
+  },
+  "gaussianpile": {
+    "historical_config": "/home/yibo/paper1/results/archive/eehpc-20261017/evidence/legacy/preproduction/comparisons/us_recon_four_dataset_p100k_v1/runs/stage1_calibration/nvs/synthetic_liver/l1/gaussianpile/resolved_config.yaml",
+    "differences_from_frozen_native_preset": [
+      {
+        "path": "model.gauss_container.constraints.scale_activation",
+        "historical": "bounded_sigmoid",
+        "current": "exp"
+      },
+      {
+        "path": "model.offline.density_control.thresholds.min_prune_observations",
+        "historical": 2,
+        "current": 4
+      },
+      {
+        "path": "model.offline.density_control.thresholds.prune_opacity",
+        "historical": 0.02,
+        "current": 0.002
+      },
+      {
+        "path": "model.offline.diagnostics.restore_best_on_finish",
+        "historical": true,
+        "current": false
+      },
+      {
+        "path": "model.slice_render.sigma_z_ratio",
+        "historical": null,
+        "current": 0.75
+      }
+    ]
+  },
+  "slice_adapted_3dgs": {
+    "historical_config": "/home/yibo/paper1/results/archive/eehpc-20261017/evidence/legacy/preproduction/comparisons/us_recon_four_dataset_p100k_v1/runs/stage1_calibration/nvs/synthetic_liver/l1/slice_adapted_3dgs/resolved_config.yaml",
+    "differences_from_frozen_native_preset": [
+      {
+        "path": "model.offline.diagnostics.enable_render_stats",
+        "historical": true,
+        "current": false
+      },
+      {
+        "path": "model.render.slice_thickness_mm",
+        "historical": 0.3,
+        "current": null
+      },
+      {
+        "path": "model.render.slice_thickness_ratio",
+        "historical": null,
+        "current": 0.25
+      }
+    ]
+  },
+  "ultrags_baseline": {
+    "historical_config": "/home/yibo/paper1/results/archive/eehpc-20261017/evidence/legacy/preproduction/comparisons/us_recon_four_dataset_p100k_v1/runs/stage1_calibration/nvs/synthetic_liver/l1/ultrags_baseline/resolved_config.yaml",
+    "differences_from_frozen_native_preset": [
+      {
+        "path": "model.gauss_container.init_val.opacity",
+        "historical": 0.01,
+        "current": 0.005
+      },
+      {
+        "path": "model.gauss_container.init_val.scale_2d",
+        "historical": [
+          0.3,
+          0.3
+        ],
+        "current": [
+          0.25,
+          0.25
+        ]
+      },
+      {
+        "path": "model.gauss_container.lr.opacities",
+        "historical": 0.02,
+        "current": 0.01
+      },
+      {
+        "path": "model.gauss_container.lr.scales_2d",
+        "historical": 0.001,
+        "current": 0.0005
+      },
+      {
+        "path": "model.offline.density_control.enable.opacity_reset",
+        "historical": true,
+        "current": false
+      },
+      {
+        "path": "model.offline.density_control.thresholds.densify_grad",
+        "historical": 0.0002,
+        "current": 0.0016
+      },
+      {
+        "path": "model.offline.density_control.thresholds.max_scale_2d",
+        "historical": 3.0,
+        "current": 0.8
+      },
+      {
+        "path": "model.offline.density_control.thresholds.min_scale_2d",
+        "historical": 0.03,
+        "current": 0.05
+      },
+      {
+        "path": "model.offline.density_control.thresholds.n_max",
+        "historical": 1000000,
+        "current": null
+      },
+      {
+        "path": "model.offline.density_control.thresholds.opacity_cull",
+        "historical": 0.001,
+        "current": 0.05
+      },
+      {
+        "path": "model.render.enable_slice_cull",
+        "historical": null,
+        "current": true
+      },
+      {
+        "path": "model.render.opacity_slice_attenuation",
+        "historical": null,
+        "current": true
+      },
+      {
+        "path": "model.render.slice_cull_scale_multiplier",
+        "historical": null,
+        "current": 3.0
+      },
+      {
+        "path": "model.render.slice_cull_std",
+        "historical": null,
+        "current": 3.0
+      },
+      {
+        "path": "model.render.slice_thickness_mm",
+        "historical": null,
+        "current": null
+      },
+      {
+        "path": "model.render.slice_thickness_ratio",
+        "historical": null,
+        "current": 1.15
+      }
+    ]
+  },
+  "nerfus": {
+    "historical_config": "/home/yibo/paper1/results/archive/eehpc-20261017/evidence/legacy/production/comparisons/us_recon_four_dataset_p100k_v1/runs/implicit_stage3_full_sweep/nvs/synthetic_liver/l1/nerfus_no_prior/resolved_config.yaml",
+    "differences_from_frozen_native_preset": [
+      {
+        "path": "model.field.depth",
+        "historical": 5,
+        "current": 8
+      },
+      {
+        "path": "model.field.pe_num_freqs",
+        "historical": 6,
+        "current": 10
+      },
+      {
+        "path": "model.field.width",
+        "historical": 64,
+        "current": 128
+      },
+      {
+        "path": "model.render.psf_kernel_size",
+        "historical": 13,
+        "current": 7
+      },
+      {
+        "path": "model.render.psf_sigma_axial",
+        "historical": 2.0,
+        "current": 1.0
+      },
+      {
+        "path": "model.render.psf_sigma_lateral",
+        "historical": 4.0,
+        "current": 2.0
+      },
+      {
+        "path": "model.solver.lr",
+        "historical": 5e-05,
+        "current": 0.0001
+      },
+      {
+        "path": "model.solver.lr_final",
+        "historical": 5e-06,
+        "current": 1e-05
+      }
+    ]
+  },
+  "ultranerf": {
+    "historical_config": "/home/yibo/paper1/results/archive/eehpc-20261017/evidence/legacy/production/comparisons/us_recon_four_dataset_p100k_v1/runs/implicit_stage3_full_sweep/nvs/synthetic_liver/l1/ultranerf/resolved_config.yaml",
+    "differences_from_frozen_native_preset": []
+  }
+}

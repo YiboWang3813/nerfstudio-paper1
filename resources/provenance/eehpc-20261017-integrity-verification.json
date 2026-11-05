@@ -1,0 +1,10 @@
+{
+  "code_files_checked": 704,
+  "docs_files_checked": 2798,
+  "atomic_moves_checked": 1968,
+  "evidence_hashes_checked": 418,
+  "figure_images_checked": 36,
+  "failures": [],
+  "passed": true,
+  "scope": "File identities, source content, docs, selected evidence and figure references; GPU/config replay reported separately."
+}

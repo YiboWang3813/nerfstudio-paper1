@@ -1,0 +1,470 @@
+{
+  "id": "figure_main_2d_original",
+  "title": "二维重建对比图原始布局",
+  "kind": "figure",
+  "generator": "comparison_2d_original",
+  "output_subset": null,
+  "training_entry": "paper1 native Nerfstudio only; this object never starts training",
+  "source_tables": [],
+  "runs": [],
+  "missing_source_tables": [],
+  "raw_runs_are_essential_retained_inputs": true,
+  "checkpoints_migrated": false,
+  "source_receipts_immutable": true,
+  "input_aliases": {
+    "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/synthetic_liver/l3/ours": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/synthetic_liver/l3/ours",
+    "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/synthetic_liver/l3/ours": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/synthetic_liver/l3/ours",
+    "/home/boywang25/paper1/results/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/synthetic_liver/l3/ours": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/synthetic_liver/l3/ours",
+    "outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/synthetic_liver/l3/ours": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/synthetic_liver/l3/ours",
+    "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/synthetic_liver/l3/ultragauss": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/synthetic_liver/l3/ultragauss",
+    "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/synthetic_liver/l3/ultragauss": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/synthetic_liver/l3/ultragauss",
+    "/home/boywang25/paper1/results/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/synthetic_liver/l3/ultragauss": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/synthetic_liver/l3/ultragauss",
+    "outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/synthetic_liver/l3/ultragauss": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/synthetic_liver/l3/ultragauss",
+    "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/synthetic_liver/l3/ultragray": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/synthetic_liver/l3/ultragray",
+    "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/synthetic_liver/l3/ultragray": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/synthetic_liver/l3/ultragray",
+    "/home/boywang25/paper1/results/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/synthetic_liver/l3/ultragray": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/synthetic_liver/l3/ultragray",
+    "outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/synthetic_liver/l3/ultragray": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/synthetic_liver/l3/ultragray",
+    "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/synthetic_liver/l3/slice_adapted_3dgs": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/synthetic_liver/l3/slice_adapted_3dgs",
+    "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/synthetic_liver/l3/slice_adapted_3dgs": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/synthetic_liver/l3/slice_adapted_3dgs",
+    "/home/boywang25/paper1/results/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/synthetic_liver/l3/slice_adapted_3dgs": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/synthetic_liver/l3/slice_adapted_3dgs",
+    "outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/synthetic_liver/l3/slice_adapted_3dgs": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/synthetic_liver/l3/slice_adapted_3dgs",
+    "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/synthetic_liver/l3/gaussianpile": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/synthetic_liver/l3/gaussianpile",
+    "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/synthetic_liver/l3/gaussianpile": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/synthetic_liver/l3/gaussianpile",
+    "/home/boywang25/paper1/results/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/synthetic_liver/l3/gaussianpile": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/synthetic_liver/l3/gaussianpile",
+    "outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/synthetic_liver/l3/gaussianpile": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/synthetic_liver/l3/gaussianpile",
+    "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/synthetic_liver/l1/ours": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/synthetic_liver/l1/ours",
+    "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/synthetic_liver/l1/ours": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/synthetic_liver/l1/ours",
+    "/home/boywang25/paper1/results/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/synthetic_liver/l1/ours": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/synthetic_liver/l1/ours",
+    "outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/synthetic_liver/l1/ours": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/synthetic_liver/l1/ours",
+    "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/synthetic_liver/l1/ultragauss": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/synthetic_liver/l1/ultragauss",
+    "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/synthetic_liver/l1/ultragauss": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/synthetic_liver/l1/ultragauss",
+    "/home/boywang25/paper1/results/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/synthetic_liver/l1/ultragauss": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/synthetic_liver/l1/ultragauss",
+    "outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/synthetic_liver/l1/ultragauss": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/synthetic_liver/l1/ultragauss",
+    "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/synthetic_liver/l1/ultragray": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/synthetic_liver/l1/ultragray",
+    "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/synthetic_liver/l1/ultragray": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/synthetic_liver/l1/ultragray",
+    "/home/boywang25/paper1/results/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/synthetic_liver/l1/ultragray": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/synthetic_liver/l1/ultragray",
+    "outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/synthetic_liver/l1/ultragray": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/synthetic_liver/l1/ultragray",
+    "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/synthetic_liver/l1/slice_adapted_3dgs": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/synthetic_liver/l1/slice_adapted_3dgs",
+    "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/synthetic_liver/l1/slice_adapted_3dgs": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/synthetic_liver/l1/slice_adapted_3dgs",
+    "/home/boywang25/paper1/results/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/synthetic_liver/l1/slice_adapted_3dgs": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/synthetic_liver/l1/slice_adapted_3dgs",
+    "outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/synthetic_liver/l1/slice_adapted_3dgs": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/synthetic_liver/l1/slice_adapted_3dgs",
+    "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/synthetic_liver/l1/gaussianpile": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/synthetic_liver/l1/gaussianpile",
+    "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/synthetic_liver/l1/gaussianpile": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/synthetic_liver/l1/gaussianpile",
+    "/home/boywang25/paper1/results/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/synthetic_liver/l1/gaussianpile": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/synthetic_liver/l1/gaussianpile",
+    "outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/synthetic_liver/l1/gaussianpile": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/synthetic_liver/l1/gaussianpile",
+    "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/spine_phantom/left3_2/ours": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/spine_phantom/left3_2/ours",
+    "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/spine_phantom/left3_2/ours": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/spine_phantom/left3_2/ours",
+    "/home/boywang25/paper1/results/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/spine_phantom/left3_2/ours": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/spine_phantom/left3_2/ours",
+    "outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/spine_phantom/left3_2/ours": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/spine_phantom/left3_2/ours",
+    "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/spine_phantom/left3_2/ultragauss": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/spine_phantom/left3_2/ultragauss",
+    "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/spine_phantom/left3_2/ultragauss": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/spine_phantom/left3_2/ultragauss",
+    "/home/boywang25/paper1/results/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/spine_phantom/left3_2/ultragauss": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/spine_phantom/left3_2/ultragauss",
+    "outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/spine_phantom/left3_2/ultragauss": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/spine_phantom/left3_2/ultragauss",
+    "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/spine_phantom/left3_2/ultragray": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/spine_phantom/left3_2/ultragray",
+    "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/spine_phantom/left3_2/ultragray": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/spine_phantom/left3_2/ultragray",
+    "/home/boywang25/paper1/results/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/spine_phantom/left3_2/ultragray": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/spine_phantom/left3_2/ultragray",
+    "outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/spine_phantom/left3_2/ultragray": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/spine_phantom/left3_2/ultragray",
+    "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/spine_phantom/left3_2/slice_adapted_3dgs": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/spine_phantom/left3_2/slice_adapted_3dgs",
+    "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/spine_phantom/left3_2/slice_adapted_3dgs": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/spine_phantom/left3_2/slice_adapted_3dgs",
+    "/home/boywang25/paper1/results/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/spine_phantom/left3_2/slice_adapted_3dgs": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/spine_phantom/left3_2/slice_adapted_3dgs",
+    "outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/spine_phantom/left3_2/slice_adapted_3dgs": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/spine_phantom/left3_2/slice_adapted_3dgs",
+    "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/spine_phantom/left3_2/gaussianpile": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/spine_phantom/left3_2/gaussianpile",
+    "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/spine_phantom/left3_2/gaussianpile": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/spine_phantom/left3_2/gaussianpile",
+    "/home/boywang25/paper1/results/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/spine_phantom/left3_2/gaussianpile": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/spine_phantom/left3_2/gaussianpile",
+    "outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/spine_phantom/left3_2/gaussianpile": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/spine_phantom/left3_2/gaussianpile",
+    "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/spine_phantom/left1_1/ours": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/spine_phantom/left1_1/ours",
+    "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/spine_phantom/left1_1/ours": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/spine_phantom/left1_1/ours",
+    "/home/boywang25/paper1/results/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/spine_phantom/left1_1/ours": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/spine_phantom/left1_1/ours",
+    "outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/spine_phantom/left1_1/ours": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/spine_phantom/left1_1/ours",
+    "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/spine_phantom/left1_1/ultragauss": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/spine_phantom/left1_1/ultragauss",
+    "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/spine_phantom/left1_1/ultragauss": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/spine_phantom/left1_1/ultragauss",
+    "/home/boywang25/paper1/results/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/spine_phantom/left1_1/ultragauss": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/spine_phantom/left1_1/ultragauss",
+    "outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/spine_phantom/left1_1/ultragauss": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/spine_phantom/left1_1/ultragauss",
+    "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/spine_phantom/left1_1/ultragray": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/spine_phantom/left1_1/ultragray",
+    "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/spine_phantom/left1_1/ultragray": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/spine_phantom/left1_1/ultragray",
+    "/home/boywang25/paper1/results/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/spine_phantom/left1_1/ultragray": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/spine_phantom/left1_1/ultragray",
+    "outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/spine_phantom/left1_1/ultragray": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/spine_phantom/left1_1/ultragray",
+    "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/spine_phantom/left1_1/slice_adapted_3dgs": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/spine_phantom/left1_1/slice_adapted_3dgs",
+    "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/spine_phantom/left1_1/slice_adapted_3dgs": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/spine_phantom/left1_1/slice_adapted_3dgs",
+    "/home/boywang25/paper1/results/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/spine_phantom/left1_1/slice_adapted_3dgs": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/spine_phantom/left1_1/slice_adapted_3dgs",
+    "outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/spine_phantom/left1_1/slice_adapted_3dgs": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/spine_phantom/left1_1/slice_adapted_3dgs",
+    "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/spine_phantom/left1_1/gaussianpile": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/spine_phantom/left1_1/gaussianpile",
+    "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/spine_phantom/left1_1/gaussianpile": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/spine_phantom/left1_1/gaussianpile",
+    "/home/boywang25/paper1/results/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/spine_phantom/left1_1/gaussianpile": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/spine_phantom/left1_1/gaussianpile",
+    "outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/spine_phantom/left1_1/gaussianpile": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/spine_phantom/left1_1/gaussianpile",
+    "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_S_PtD_qc_0165_0364_s02/ours": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_S_PtD_qc_0165_0364_s02/ours",
+    "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_S_PtD_qc_0165_0364_s02/ours": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_S_PtD_qc_0165_0364_s02/ours",
+    "/home/boywang25/paper1/results/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_S_PtD_qc_0165_0364_s02/ours": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_S_PtD_qc_0165_0364_s02/ours",
+    "outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_S_PtD_qc_0165_0364_s02/ours": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_S_PtD_qc_0165_0364_s02/ours",
+    "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/ultragauss_chi2_5500_replacement/nvs/tus_rec_2024_qc/010_RH_Per_S_PtD_qc_0165_0364_s02/ultragauss": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/ultragauss_chi2_5500_replacement/nvs/tus_rec_2024_qc/010_RH_Per_S_PtD_qc_0165_0364_s02/ultragauss",
+    "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/ultragauss_chi2_5500_replacement/nvs/tus_rec_2024_qc/010_RH_Per_S_PtD_qc_0165_0364_s02/ultragauss": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/ultragauss_chi2_5500_replacement/nvs/tus_rec_2024_qc/010_RH_Per_S_PtD_qc_0165_0364_s02/ultragauss",
+    "/home/boywang25/paper1/results/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/ultragauss_chi2_5500_replacement/nvs/tus_rec_2024_qc/010_RH_Per_S_PtD_qc_0165_0364_s02/ultragauss": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/ultragauss_chi2_5500_replacement/nvs/tus_rec_2024_qc/010_RH_Per_S_PtD_qc_0165_0364_s02/ultragauss",
+    "outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/ultragauss_chi2_5500_replacement/nvs/tus_rec_2024_qc/010_RH_Per_S_PtD_qc_0165_0364_s02/ultragauss": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/ultragauss_chi2_5500_replacement/nvs/tus_rec_2024_qc/010_RH_Per_S_PtD_qc_0165_0364_s02/ultragauss",
+    "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_S_PtD_qc_0165_0364_s02/ultragray": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_S_PtD_qc_0165_0364_s02/ultragray",
+    "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_S_PtD_qc_0165_0364_s02/ultragray": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_S_PtD_qc_0165_0364_s02/ultragray",
+    "/home/boywang25/paper1/results/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_S_PtD_qc_0165_0364_s02/ultragray": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_S_PtD_qc_0165_0364_s02/ultragray",
+    "outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_S_PtD_qc_0165_0364_s02/ultragray": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_S_PtD_qc_0165_0364_s02/ultragray",
+    "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_S_PtD_qc_0165_0364_s02/slice_adapted_3dgs": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_S_PtD_qc_0165_0364_s02/slice_adapted_3dgs",
+    "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_S_PtD_qc_0165_0364_s02/slice_adapted_3dgs": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_S_PtD_qc_0165_0364_s02/slice_adapted_3dgs",
+    "/home/boywang25/paper1/results/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_S_PtD_qc_0165_0364_s02/slice_adapted_3dgs": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_S_PtD_qc_0165_0364_s02/slice_adapted_3dgs",
+    "outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_S_PtD_qc_0165_0364_s02/slice_adapted_3dgs": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_S_PtD_qc_0165_0364_s02/slice_adapted_3dgs",
+    "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_S_PtD_qc_0165_0364_s02/gaussianpile": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_S_PtD_qc_0165_0364_s02/gaussianpile",
+    "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_S_PtD_qc_0165_0364_s02/gaussianpile": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_S_PtD_qc_0165_0364_s02/gaussianpile",
+    "/home/boywang25/paper1/results/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_S_PtD_qc_0165_0364_s02/gaussianpile": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_S_PtD_qc_0165_0364_s02/gaussianpile",
+    "outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_S_PtD_qc_0165_0364_s02/gaussianpile": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_S_PtD_qc_0165_0364_s02/gaussianpile",
+    "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_C_PtD_qc_0006_0427/ours": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_C_PtD_qc_0006_0427/ours",
+    "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_C_PtD_qc_0006_0427/ours": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_C_PtD_qc_0006_0427/ours",
+    "/home/boywang25/paper1/results/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_C_PtD_qc_0006_0427/ours": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_C_PtD_qc_0006_0427/ours",
+    "outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_C_PtD_qc_0006_0427/ours": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_C_PtD_qc_0006_0427/ours",
+    "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/ultragauss_chi2_5500_replacement/nvs/tus_rec_2024_qc/010_RH_Per_C_PtD_qc_0006_0427/ultragauss": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/ultragauss_chi2_5500_replacement/nvs/tus_rec_2024_qc/010_RH_Per_C_PtD_qc_0006_0427/ultragauss",
+    "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/ultragauss_chi2_5500_replacement/nvs/tus_rec_2024_qc/010_RH_Per_C_PtD_qc_0006_0427/ultragauss": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/ultragauss_chi2_5500_replacement/nvs/tus_rec_2024_qc/010_RH_Per_C_PtD_qc_0006_0427/ultragauss",
+    "/home/boywang25/paper1/results/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/ultragauss_chi2_5500_replacement/nvs/tus_rec_2024_qc/010_RH_Per_C_PtD_qc_0006_0427/ultragauss": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/ultragauss_chi2_5500_replacement/nvs/tus_rec_2024_qc/010_RH_Per_C_PtD_qc_0006_0427/ultragauss",
+    "outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/ultragauss_chi2_5500_replacement/nvs/tus_rec_2024_qc/010_RH_Per_C_PtD_qc_0006_0427/ultragauss": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/ultragauss_chi2_5500_replacement/nvs/tus_rec_2024_qc/010_RH_Per_C_PtD_qc_0006_0427/ultragauss",
+    "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_C_PtD_qc_0006_0427/ultragray": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_C_PtD_qc_0006_0427/ultragray",
+    "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_C_PtD_qc_0006_0427/ultragray": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_C_PtD_qc_0006_0427/ultragray",
+    "/home/boywang25/paper1/results/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_C_PtD_qc_0006_0427/ultragray": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_C_PtD_qc_0006_0427/ultragray",
+    "outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_C_PtD_qc_0006_0427/ultragray": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_C_PtD_qc_0006_0427/ultragray",
+    "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_C_PtD_qc_0006_0427/slice_adapted_3dgs": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_C_PtD_qc_0006_0427/slice_adapted_3dgs",
+    "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_C_PtD_qc_0006_0427/slice_adapted_3dgs": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_C_PtD_qc_0006_0427/slice_adapted_3dgs",
+    "/home/boywang25/paper1/results/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_C_PtD_qc_0006_0427/slice_adapted_3dgs": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_C_PtD_qc_0006_0427/slice_adapted_3dgs",
+    "outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_C_PtD_qc_0006_0427/slice_adapted_3dgs": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_C_PtD_qc_0006_0427/slice_adapted_3dgs",
+    "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_C_PtD_qc_0006_0427/gaussianpile": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_C_PtD_qc_0006_0427/gaussianpile",
+    "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_C_PtD_qc_0006_0427/gaussianpile": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_C_PtD_qc_0006_0427/gaussianpile",
+    "/home/boywang25/paper1/results/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_C_PtD_qc_0006_0427/gaussianpile": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_C_PtD_qc_0006_0427/gaussianpile",
+    "outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_C_PtD_qc_0006_0427/gaussianpile": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_C_PtD_qc_0006_0427/gaussianpile",
+    "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tdsc_abus_2023/validation_116/ours": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tdsc_abus_2023/validation_116/ours",
+    "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tdsc_abus_2023/validation_116/ours": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tdsc_abus_2023/validation_116/ours",
+    "/home/boywang25/paper1/results/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tdsc_abus_2023/validation_116/ours": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tdsc_abus_2023/validation_116/ours",
+    "outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tdsc_abus_2023/validation_116/ours": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tdsc_abus_2023/validation_116/ours",
+    "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tdsc_abus_2023/validation_116/ultragauss": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tdsc_abus_2023/validation_116/ultragauss",
+    "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tdsc_abus_2023/validation_116/ultragauss": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tdsc_abus_2023/validation_116/ultragauss",
+    "/home/boywang25/paper1/results/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tdsc_abus_2023/validation_116/ultragauss": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tdsc_abus_2023/validation_116/ultragauss",
+    "outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tdsc_abus_2023/validation_116/ultragauss": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tdsc_abus_2023/validation_116/ultragauss",
+    "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tdsc_abus_2023/validation_116/ultragray": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tdsc_abus_2023/validation_116/ultragray",
+    "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tdsc_abus_2023/validation_116/ultragray": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tdsc_abus_2023/validation_116/ultragray",
+    "/home/boywang25/paper1/results/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tdsc_abus_2023/validation_116/ultragray": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tdsc_abus_2023/validation_116/ultragray",
+    "outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tdsc_abus_2023/validation_116/ultragray": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tdsc_abus_2023/validation_116/ultragray",
+    "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tdsc_abus_2023/validation_116/slice_adapted_3dgs": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tdsc_abus_2023/validation_116/slice_adapted_3dgs",
+    "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tdsc_abus_2023/validation_116/slice_adapted_3dgs": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tdsc_abus_2023/validation_116/slice_adapted_3dgs",
+    "/home/boywang25/paper1/results/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tdsc_abus_2023/validation_116/slice_adapted_3dgs": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tdsc_abus_2023/validation_116/slice_adapted_3dgs",
+    "outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tdsc_abus_2023/validation_116/slice_adapted_3dgs": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tdsc_abus_2023/validation_116/slice_adapted_3dgs",
+    "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tdsc_abus_2023/validation_116/gaussianpile": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tdsc_abus_2023/validation_116/gaussianpile",
+    "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tdsc_abus_2023/validation_116/gaussianpile": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tdsc_abus_2023/validation_116/gaussianpile",
+    "/home/boywang25/paper1/results/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tdsc_abus_2023/validation_116/gaussianpile": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tdsc_abus_2023/validation_116/gaussianpile",
+    "outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tdsc_abus_2023/validation_116/gaussianpile": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tdsc_abus_2023/validation_116/gaussianpile",
+    "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/tdsc_abus_2023/validation_101/ours": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/tdsc_abus_2023/validation_101/ours",
+    "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/tdsc_abus_2023/validation_101/ours": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/tdsc_abus_2023/validation_101/ours",
+    "/home/boywang25/paper1/results/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/tdsc_abus_2023/validation_101/ours": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/tdsc_abus_2023/validation_101/ours",
+    "outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/tdsc_abus_2023/validation_101/ours": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/tdsc_abus_2023/validation_101/ours",
+    "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/tdsc_abus_2023/validation_101/ultragauss": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/tdsc_abus_2023/validation_101/ultragauss",
+    "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/tdsc_abus_2023/validation_101/ultragauss": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/tdsc_abus_2023/validation_101/ultragauss",
+    "/home/boywang25/paper1/results/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/tdsc_abus_2023/validation_101/ultragauss": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/tdsc_abus_2023/validation_101/ultragauss",
+    "outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/tdsc_abus_2023/validation_101/ultragauss": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/tdsc_abus_2023/validation_101/ultragauss",
+    "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/tdsc_abus_2023/validation_101/ultragray": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/tdsc_abus_2023/validation_101/ultragray",
+    "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/tdsc_abus_2023/validation_101/ultragray": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/tdsc_abus_2023/validation_101/ultragray",
+    "/home/boywang25/paper1/results/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/tdsc_abus_2023/validation_101/ultragray": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/tdsc_abus_2023/validation_101/ultragray",
+    "outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/tdsc_abus_2023/validation_101/ultragray": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/tdsc_abus_2023/validation_101/ultragray",
+    "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/tdsc_abus_2023/validation_101/slice_adapted_3dgs": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/tdsc_abus_2023/validation_101/slice_adapted_3dgs",
+    "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/tdsc_abus_2023/validation_101/slice_adapted_3dgs": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/tdsc_abus_2023/validation_101/slice_adapted_3dgs",
+    "/home/boywang25/paper1/results/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/tdsc_abus_2023/validation_101/slice_adapted_3dgs": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/tdsc_abus_2023/validation_101/slice_adapted_3dgs",
+    "outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/tdsc_abus_2023/validation_101/slice_adapted_3dgs": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/tdsc_abus_2023/validation_101/slice_adapted_3dgs",
+    "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/tdsc_abus_2023/validation_101/gaussianpile": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/tdsc_abus_2023/validation_101/gaussianpile",
+    "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/tdsc_abus_2023/validation_101/gaussianpile": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/tdsc_abus_2023/validation_101/gaussianpile",
+    "/home/boywang25/paper1/results/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/tdsc_abus_2023/validation_101/gaussianpile": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/tdsc_abus_2023/validation_101/gaussianpile",
+    "outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/tdsc_abus_2023/validation_101/gaussianpile": "outputs/artifact-inputs/figure_main_2d_original/inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/tdsc_abus_2023/validation_101/gaussianpile"
+  },
+  "selected_image_inputs": [
+    {
+      "original_path": "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/synthetic_liver/l3/ours/vis/item_27/gt.png",
+      "object_path": "inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/synthetic_liver/l3/ours/vis/item_27/gt.png",
+      "sha256": "d2d4cf4c32f400ef012517de441a7e489e1ecfab5e6255c40296f7ca4c31abc3"
+    },
+    {
+      "original_path": "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/synthetic_liver/l3/ours/vis/item_27/pred.png",
+      "object_path": "inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/synthetic_liver/l3/ours/vis/item_27/pred.png",
+      "sha256": "8e77f5bada7d2aed81964a6edfa523d5875dc10386172f0e75a433f6d4c27a10"
+    },
+    {
+      "original_path": "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/synthetic_liver/l3/ultragauss/vis/item_27/pred.png",
+      "object_path": "inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/synthetic_liver/l3/ultragauss/vis/item_27/pred.png",
+      "sha256": "4360cc23d5615c424bc31b4252a303980a83de74501aa458688cc9dd2dd8d1b2"
+    },
+    {
+      "original_path": "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/synthetic_liver/l3/ultragray/vis/item_27/pred.png",
+      "object_path": "inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/synthetic_liver/l3/ultragray/vis/item_27/pred.png",
+      "sha256": "a6d75eaa063052c660fb7620530102e9dd148d9fc3f426611dbf43ff53617bf3"
+    },
+    {
+      "original_path": "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/synthetic_liver/l3/slice_adapted_3dgs/vis/item_27/pred.png",
+      "object_path": "inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/synthetic_liver/l3/slice_adapted_3dgs/vis/item_27/pred.png",
+      "sha256": "11f7ae1f5d9552e019e0a6fa4b53deb5b4fa60ad93fb08c819f1f86360df986a"
+    },
+    {
+      "original_path": "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/synthetic_liver/l3/gaussianpile/vis/item_27/pred.png",
+      "object_path": "inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/synthetic_liver/l3/gaussianpile/vis/item_27/pred.png",
+      "sha256": "31b41224a1717cc534ef43fd74b8ae2b7cb8cce4feb9e1d68d23470773268e47"
+    },
+    {
+      "original_path": "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/synthetic_liver/l1/ours/vis/item_31/gt.png",
+      "object_path": "inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/synthetic_liver/l1/ours/vis/item_31/gt.png",
+      "sha256": "9ca82b8b05fa1b9b9872620a810670f95cd5c22afb0e2c712706c08c5b6ee8d7"
+    },
+    {
+      "original_path": "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/synthetic_liver/l1/ours/vis/item_31/pred.png",
+      "object_path": "inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/synthetic_liver/l1/ours/vis/item_31/pred.png",
+      "sha256": "4fd061e2c13f4697e0c988f2e3d6f612d76b369d15a0241ed152a94f41e120b6"
+    },
+    {
+      "original_path": "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/synthetic_liver/l1/ultragauss/vis/item_31/pred.png",
+      "object_path": "inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/synthetic_liver/l1/ultragauss/vis/item_31/pred.png",
+      "sha256": "dd007dab0820bfba6c9a172d78738ed8c3ebb2b5ad231063d13116cf5a5ad910"
+    },
+    {
+      "original_path": "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/synthetic_liver/l1/ultragray/vis/item_31/pred.png",
+      "object_path": "inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/synthetic_liver/l1/ultragray/vis/item_31/pred.png",
+      "sha256": "7806b1818a2c9b1799e6edab74529b6a5cebed61fb3e0149d0710babd8d24d1a"
+    },
+    {
+      "original_path": "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/synthetic_liver/l1/slice_adapted_3dgs/vis/item_31/pred.png",
+      "object_path": "inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/synthetic_liver/l1/slice_adapted_3dgs/vis/item_31/pred.png",
+      "sha256": "7122bd131c4c72a4ddeb1bf04432bde909c40b012f6a9f76e7851c1cd507abfc"
+    },
+    {
+      "original_path": "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/synthetic_liver/l1/gaussianpile/vis/item_31/pred.png",
+      "object_path": "inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/synthetic_liver/l1/gaussianpile/vis/item_31/pred.png",
+      "sha256": "932f74388b7e48aa3dcc064e78ece1ab00a63d2db73b9ba2edf49f1b2467cb84"
+    },
+    {
+      "original_path": "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/spine_phantom/left3_2/ours/vis/item_17/gt.png",
+      "object_path": "inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/spine_phantom/left3_2/ours/vis/item_17/gt.png",
+      "sha256": "90a816a35136aec062f7d6e39f7a52bc5c77c49ce53cfda081a7cd3c3f00a4b0"
+    },
+    {
+      "original_path": "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/spine_phantom/left3_2/ours/vis/item_17/pred.png",
+      "object_path": "inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/spine_phantom/left3_2/ours/vis/item_17/pred.png",
+      "sha256": "41cfa82fc0301c0d4a9cac581f5a2181e6cc9986f14a65a95091be12cff45ed1"
+    },
+    {
+      "original_path": "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/spine_phantom/left3_2/ultragauss/vis/item_17/pred.png",
+      "object_path": "inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/spine_phantom/left3_2/ultragauss/vis/item_17/pred.png",
+      "sha256": "77ea52f81d4448726122c5a45b581d86d55da937493ae9ed3ef4909ad288bb21"
+    },
+    {
+      "original_path": "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/spine_phantom/left3_2/ultragray/vis/item_17/pred.png",
+      "object_path": "inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/spine_phantom/left3_2/ultragray/vis/item_17/pred.png",
+      "sha256": "0081c381bc72c8e4c2b0f741812567ee859aab1440cfeac24c3798d5c718778d"
+    },
+    {
+      "original_path": "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/spine_phantom/left3_2/slice_adapted_3dgs/vis/item_17/pred.png",
+      "object_path": "inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/spine_phantom/left3_2/slice_adapted_3dgs/vis/item_17/pred.png",
+      "sha256": "0adf5b96c94b36cdeb213a4f87496f1fab46fcb64fe5b47553ff11cd3bfba52b"
+    },
+    {
+      "original_path": "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/spine_phantom/left3_2/gaussianpile/vis/item_17/pred.png",
+      "object_path": "inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/spine_phantom/left3_2/gaussianpile/vis/item_17/pred.png",
+      "sha256": "34538bbe3cb54e300b71f8b7c09a908ca7bff5ae83cc6996ea8b7de6500a9a48"
+    },
+    {
+      "original_path": "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/spine_phantom/left1_1/ours/vis/item_18/gt.png",
+      "object_path": "inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/spine_phantom/left1_1/ours/vis/item_18/gt.png",
+      "sha256": "c41079fcfe72ab183cae1830c0527071162e5d6bf53979fa7963a01da3584053"
+    },
+    {
+      "original_path": "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/spine_phantom/left1_1/ours/vis/item_18/pred.png",
+      "object_path": "inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/spine_phantom/left1_1/ours/vis/item_18/pred.png",
+      "sha256": "c99395271813da12f7d98bf1ca21f9ba51162e9b772efe601215f1ad1b06a239"
+    },
+    {
+      "original_path": "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/spine_phantom/left1_1/ultragauss/vis/item_18/pred.png",
+      "object_path": "inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/spine_phantom/left1_1/ultragauss/vis/item_18/pred.png",
+      "sha256": "6442366cef99b06569983cc6b09e926bec0d32af705acb858fc1745b8af28c88"
+    },
+    {
+      "original_path": "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/spine_phantom/left1_1/ultragray/vis/item_18/pred.png",
+      "object_path": "inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/spine_phantom/left1_1/ultragray/vis/item_18/pred.png",
+      "sha256": "79a5ded99cf5ef37f1a14de5bcbdcf7f55e16e3cbfbcae28d5ffa3d7e1a4d775"
+    },
+    {
+      "original_path": "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/spine_phantom/left1_1/slice_adapted_3dgs/vis/item_18/pred.png",
+      "object_path": "inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/spine_phantom/left1_1/slice_adapted_3dgs/vis/item_18/pred.png",
+      "sha256": "803e932793788826c690c5fc0653e59cd6194e2ae79ffcb9a9c01a726d1cc276"
+    },
+    {
+      "original_path": "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/spine_phantom/left1_1/gaussianpile/vis/item_18/pred.png",
+      "object_path": "inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/spine_phantom/left1_1/gaussianpile/vis/item_18/pred.png",
+      "sha256": "9e670f1cbade68fc678cf89413565df112433fda9ccf83b10c17cf4deb062e5e"
+    },
+    {
+      "original_path": "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_S_PtD_qc_0165_0364_s02/ours/vis/item_18/gt.png",
+      "object_path": "inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_S_PtD_qc_0165_0364_s02/ours/vis/item_18/gt.png",
+      "sha256": "c4f3c0e585ff535348e2bf1fbc6efae5c591fb51b79dd631a0093b302f422f57"
+    },
+    {
+      "original_path": "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_S_PtD_qc_0165_0364_s02/ours/vis/item_18/pred.png",
+      "object_path": "inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_S_PtD_qc_0165_0364_s02/ours/vis/item_18/pred.png",
+      "sha256": "7a18d142ea5fc54eceb56f7126ab0790354811f44aec3dec57813dc266753955"
+    },
+    {
+      "original_path": "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/ultragauss_chi2_5500_replacement/nvs/tus_rec_2024_qc/010_RH_Per_S_PtD_qc_0165_0364_s02/ultragauss/vis/item_18/pred.png",
+      "object_path": "inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/ultragauss_chi2_5500_replacement/nvs/tus_rec_2024_qc/010_RH_Per_S_PtD_qc_0165_0364_s02/ultragauss/vis/item_18/pred.png",
+      "sha256": "8bd52abdec3de3fa7a3c9343ac2b414e10c2f769a0c9f7648f16c9b357f4d857"
+    },
+    {
+      "original_path": "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_S_PtD_qc_0165_0364_s02/ultragray/vis/item_18/pred.png",
+      "object_path": "inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_S_PtD_qc_0165_0364_s02/ultragray/vis/item_18/pred.png",
+      "sha256": "3a1f277c93db17ce1a1f490cecd545ae6cc2a97cecda9f41e88a3a87dce33fea"
+    },
+    {
+      "original_path": "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_S_PtD_qc_0165_0364_s02/slice_adapted_3dgs/vis/item_18/pred.png",
+      "object_path": "inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_S_PtD_qc_0165_0364_s02/slice_adapted_3dgs/vis/item_18/pred.png",
+      "sha256": "9eb9d6991d1eb1e21b4b5f897b5103c4c1caee77c40a06deec4f52fb821ee965"
+    },
+    {
+      "original_path": "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_S_PtD_qc_0165_0364_s02/gaussianpile/vis/item_18/pred.png",
+      "object_path": "inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_S_PtD_qc_0165_0364_s02/gaussianpile/vis/item_18/pred.png",
+      "sha256": "153384bc3fcc12d349ba7d8fd4e700e11e45e491338dc0bd36096a9c41c5e237"
+    },
+    {
+      "original_path": "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_C_PtD_qc_0006_0427/ours/vis/item_66/gt.png",
+      "object_path": "inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_C_PtD_qc_0006_0427/ours/vis/item_66/gt.png",
+      "sha256": "884c4f30771a3c13bd06ed35fd177a83bba81f3779d4541eea69afe19b46569d"
+    },
+    {
+      "original_path": "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_C_PtD_qc_0006_0427/ours/vis/item_66/pred.png",
+      "object_path": "inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_C_PtD_qc_0006_0427/ours/vis/item_66/pred.png",
+      "sha256": "d5c7e81d3b02083da91ae7f380ac152af556b318721458fc15c0a5eefcbd8ea6"
+    },
+    {
+      "original_path": "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/ultragauss_chi2_5500_replacement/nvs/tus_rec_2024_qc/010_RH_Per_C_PtD_qc_0006_0427/ultragauss/vis/item_66/pred.png",
+      "object_path": "inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/ultragauss_chi2_5500_replacement/nvs/tus_rec_2024_qc/010_RH_Per_C_PtD_qc_0006_0427/ultragauss/vis/item_66/pred.png",
+      "sha256": "bcc376abd61dec28b2a3d685765ad33b9cf3242b77408773735527c24d27191f"
+    },
+    {
+      "original_path": "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_C_PtD_qc_0006_0427/ultragray/vis/item_66/pred.png",
+      "object_path": "inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_C_PtD_qc_0006_0427/ultragray/vis/item_66/pred.png",
+      "sha256": "d4f0622db8090f468968b52fd4b1fdc763858d2d523a0e47d8f52ec2c749c882"
+    },
+    {
+      "original_path": "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_C_PtD_qc_0006_0427/slice_adapted_3dgs/vis/item_66/pred.png",
+      "object_path": "inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_C_PtD_qc_0006_0427/slice_adapted_3dgs/vis/item_66/pred.png",
+      "sha256": "622e1c22d76c8255e54e1d1a2502d487b2be2565cd693ff5f03b5df2552ea136"
+    },
+    {
+      "original_path": "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_C_PtD_qc_0006_0427/gaussianpile/vis/item_66/pred.png",
+      "object_path": "inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tus_rec_2024_qc/010_RH_Per_C_PtD_qc_0006_0427/gaussianpile/vis/item_66/pred.png",
+      "sha256": "e67dc1860c9462cb69efb64fa54530a6e4796c446688f0504ed6cff18a174875"
+    },
+    {
+      "original_path": "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tdsc_abus_2023/validation_116/ours/vis/item_39/gt.png",
+      "object_path": "inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tdsc_abus_2023/validation_116/ours/vis/item_39/gt.png",
+      "sha256": "bb8d6cb3fe1467c94704c2ad139061b376c179b1f0a816fc06dcd895ed7a3473"
+    },
+    {
+      "original_path": "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tdsc_abus_2023/validation_116/ours/vis/item_39/pred.png",
+      "object_path": "inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tdsc_abus_2023/validation_116/ours/vis/item_39/pred.png",
+      "sha256": "4b5c7c79fd9a42d89314b9002d8579b86b91d4bb91e68e9509796fc044893ea9"
+    },
+    {
+      "original_path": "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tdsc_abus_2023/validation_116/ultragauss/vis/item_39/pred.png",
+      "object_path": "inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tdsc_abus_2023/validation_116/ultragauss/vis/item_39/pred.png",
+      "sha256": "093f3b8a6d8daf6675248cc83f4b96a244623f94a46272fe6f004a415fa17b98"
+    },
+    {
+      "original_path": "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tdsc_abus_2023/validation_116/ultragray/vis/item_39/pred.png",
+      "object_path": "inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tdsc_abus_2023/validation_116/ultragray/vis/item_39/pred.png",
+      "sha256": "75a8c1fd2df9e5db91641a68973d82396e3ba4b5162dd69f6f32648d17adf857"
+    },
+    {
+      "original_path": "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tdsc_abus_2023/validation_116/slice_adapted_3dgs/vis/item_39/pred.png",
+      "object_path": "inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tdsc_abus_2023/validation_116/slice_adapted_3dgs/vis/item_39/pred.png",
+      "sha256": "4db18c587940d9099a324a6a4b3233284a16aa7e825ee960902e12762317f5b1"
+    },
+    {
+      "original_path": "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tdsc_abus_2023/validation_116/gaussianpile/vis/item_39/pred.png",
+      "object_path": "inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage3_full_sweep/nvs/tdsc_abus_2023/validation_116/gaussianpile/vis/item_39/pred.png",
+      "sha256": "fec71e8ed0082dd27532996e75db6182698a5eec6954d54efb93fd900867afa9"
+    },
+    {
+      "original_path": "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/tdsc_abus_2023/validation_101/ours/vis/item_32/gt.png",
+      "object_path": "inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/tdsc_abus_2023/validation_101/ours/vis/item_32/gt.png",
+      "sha256": "b89dfa00004609c501bbc75cc343b01e3810bf404c1b105b440b58db7b2ce3d7"
+    },
+    {
+      "original_path": "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/tdsc_abus_2023/validation_101/ours/vis/item_32/pred.png",
+      "object_path": "inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/tdsc_abus_2023/validation_101/ours/vis/item_32/pred.png",
+      "sha256": "3576e0711c09bb1db9f1d3c92d1f12ffe8c5b2dd9fed5315915c6933efa538cb"
+    },
+    {
+      "original_path": "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/tdsc_abus_2023/validation_101/ultragauss/vis/item_32/pred.png",
+      "object_path": "inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/tdsc_abus_2023/validation_101/ultragauss/vis/item_32/pred.png",
+      "sha256": "3628d1beafefb3c234b5e209822e7770ed5865c569209c219a2872a52ee70200"
+    },
+    {
+      "original_path": "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/tdsc_abus_2023/validation_101/ultragray/vis/item_32/pred.png",
+      "object_path": "inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/tdsc_abus_2023/validation_101/ultragray/vis/item_32/pred.png",
+      "sha256": "edd4ba076241ed0b005244695742205ed3be3da222b96e88291b05dd1fa5f29d"
+    },
+    {
+      "original_path": "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/tdsc_abus_2023/validation_101/slice_adapted_3dgs/vis/item_32/pred.png",
+      "object_path": "inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/tdsc_abus_2023/validation_101/slice_adapted_3dgs/vis/item_32/pred.png",
+      "sha256": "059a995d424bcebc3f3a61c35007d7d9d461f4a2e8dd0f6e897d316d3fcfa8f6"
+    },
+    {
+      "original_path": "/home/yibo/paper1/results/archive/eehpc-20261105/legacy/outputs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/tdsc_abus_2023/validation_101/gaussianpile/vis/item_32/pred.png",
+      "object_path": "inputs/selected-runs/production/comparisons/us_recon_four_dataset_p100k_v1/runs/stage2_fixed_subset/nvs/tdsc_abus_2023/validation_101/gaussianpile/vis/item_32/pred.png",
+      "sha256": "b3787b8f3f00d43deff5ee6152c0c7b7a2c46bfdb1208a113065215672a51f56"
+    }
+  ],
+  "large_source_pool": "retained locally with versioned SHA256 catalog; not a disposable cache",
+  "historical_evidence_archive": "docs/resources/provenance/results-history.json",
+  "frozen_inputs": {
+    "archive": "outputs/frozen-inputs/paper-evidence-v1.zip",
+    "manifest": "outputs/frozen-inputs/paper-evidence-v1.json"
+  },
+  "schema_version": 1,
+  "output_root": "outputs/artifacts",
+  "asset_root": "outputs/artifact-inputs/figure_main_2d_original",
+  "parameters": {
+    "SUMMARY_FILES": [
+      "gs_stage2_fixed_subset_per_run.tsv",
+      "gs_full_sweep_per_run.tsv",
+      "gs_ultragauss_tus_qc_chi2_5500_replacement.tsv"
+    ],
+    "METHODS": [
+      "ours",
+      "ultragauss",
+      "ultragray",
+      "gaussianpile",
+      "ultrags_baseline",
+      "slice_adapted_3dgs"
+    ],
+    "PAPER_METHODS": [
+      "ultragauss",
+      "ultragray",
+      "slice_adapted_3dgs",
+      "gaussianpile",
+      "ours",
+      "gt"
+    ],
+    "METHOD_LABEL": {
+      "ours": "Ours",
+      "ultragauss": "UltraGauss",
+      "ultragray": "UltraGray",
+      "gaussianpile": "GaussianPile",
+      "ultrags_baseline": "UltraGS",
+      "slice_adapted_3dgs": "Slice-3DGS",
+      "gt": "GT"
+    },
+    "GROUPS": {
+      "simulated": [
+        "synthetic_liver",
+        "spine_phantom"
+      ],
+      "real": [
+        "tus_rec_2024_qc",
+        "tdsc_abus_2023"
+      ]
+    }
+  },
+  "build_outputs": "outputs/artifacts/<generator>/<build-id>; effective config and hashes recorded per build"
+}

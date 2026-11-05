@@ -1,3 +1,9 @@
 __pycache__/
 *.py[cod]
 .DS_Store
+
+# Figure/table projects retain configs, small numeric inputs and provenance.
+# Heavy reference assets and bulk exports stay local; these are precise paths.
+/experiments/*/assets/
+/experiments/*/exports/
+/experiments/*/.cache/

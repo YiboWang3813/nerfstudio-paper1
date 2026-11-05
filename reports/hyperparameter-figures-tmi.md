@@ -11,9 +11,9 @@ The figure contract is in [FIGURE_CONTRACT.md](../protocols/hyperparameter-figur
 
 | Figure | PDF | 600-dpi PNG | Exact size |
 | --- | --- | --- | --- |
-| H1 — AFGM | [H1_AFGM.pdf](../../results/objects/figure_h1_afgm/published/ieee_tmi_final/H1_AFGM.pdf) | [H1_AFGM.png](../../results/objects/figure_h1_afgm/published/ieee_tmi_final/H1_AFGM.png) | 3.50 × 1.40 in |
-| H2 — PLGR | [H2_PLGR.pdf](../../results/objects/figure_h2_plgr/published/ieee_tmi_final/H2_PLGR.pdf) | [H2_PLGR.png](../../results/objects/figure_h2_plgr/published/ieee_tmi_final/H2_PLGR.png) | 3.50 × 3.80 in |
-| H3 — CGAS | [H3_CGAS.pdf](../../results/objects/figure_h3_cgas/published/ieee_tmi_final/H3_CGAS.pdf) | [H3_CGAS.png](../../results/objects/figure_h3_cgas/published/ieee_tmi_final/H3_CGAS.png) | 3.50 × 2.10 in |
+| H1 — AFGM | [H1_AFGM.pdf](../../outputs/artifact-inputs/figure_h1_afgm/published/ieee_tmi_final/H1_AFGM.pdf) | [H1_AFGM.png](../../outputs/artifact-inputs/figure_h1_afgm/published/ieee_tmi_final/H1_AFGM.png) | 3.50 × 1.40 in |
+| H2 — PLGR | [H2_PLGR.pdf](../../outputs/artifact-inputs/figure_h2_plgr/published/ieee_tmi_final/H2_PLGR.pdf) | [H2_PLGR.png](../../outputs/artifact-inputs/figure_h2_plgr/published/ieee_tmi_final/H2_PLGR.png) | 3.50 × 3.80 in |
+| H3 — CGAS | [H3_CGAS.pdf](../../outputs/artifact-inputs/figure_h3_cgas/published/ieee_tmi_final/H3_CGAS.pdf) | [H3_CGAS.png](../../outputs/artifact-inputs/figure_h3_cgas/published/ieee_tmi_final/H3_CGAS.png) | 3.50 × 2.10 in |
 
 H2 uses the specified 3.80-inch height, not the 3.50-inch fallback.
 PDFs contain vector marks and embedded, selectable DejaVu Sans text. The
@@ -22,24 +22,24 @@ three have opaque white backgrounds.
 
 ## Authoritative source data
 
-- H1: [rho_data.tsv](../../results/inputs/paper-evidence-v1.zip#ppp/rho_data.tsv)
+- H1: [rho_data.tsv](../../outputs/frozen-inputs/paper-evidence-v1.zip#ppp/rho_data.tsv)
   (14 rows; Liver and Arm, seven rho values each).
-- H2: [hyperparameter_data.tsv](../../results/inputs/paper-evidence-v1.zip#lgr/hyperparameter_data.tsv)
+- H2: [hyperparameter_data.tsv](../../outputs/frozen-inputs/paper-evidence-v1.zip#lgr/hyperparameter_data.tsv)
   (40 rows; five panels, two datasets). The final width values are
   0.8, 1.0, 1.5 and 2.0 mm; no proposed 0.5-mm point was substituted.
-- H3: [hyperparameter_data.tsv](../../results/inputs/paper-evidence-v1.zip#cga/hyperparameter_data.tsv)
+- H3: [hyperparameter_data.tsv](../../outputs/frozen-inputs/paper-evidence-v1.zip#cga/hyperparameter_data.tsv)
   (42 panel memberships; two 3×3 grids and three opacity settings per dataset).
   Actual B values are 0.001, 0.005 and 0.05.
 - P2 source/config audit:
-  [source_manifest.json](../../results/objects/hyperparameter-figure-set/published/ieee_tmi_final/source_manifest.json) and
-  [run_sources.tsv](../../results/inputs/paper-evidence-v1.zip#audits/run_sources.tsv).
+  [source_manifest.json](../../outputs/artifact-inputs/hyperparameter-figure-set/published/ieee_tmi_final/source_manifest.json) and
+  [run_sources.tsv](../../outputs/frozen-inputs/paper-evidence-v1.zip#audits/run_sources.tsv).
 - One full Markdown inventory of all raw values and run links:
-  [FOUR_FIGURES_RAW_DATA.md](../../results/objects/hyperparameter-figure-set/published/historical/FOUR_FIGURES_RAW_DATA.md).
+  [FOUR_FIGURES_RAW_DATA.md](../experiments/hyperparameter-figures/figure-set-historical-four-figures-raw-data.md).
 
 Exact figure inputs are saved as
-[H1_AFGM_plotted_data.tsv](../../results/objects/figure_h1_afgm/published/ieee_tmi_final/H1_AFGM_plotted_data.tsv),
-[H2_PLGR_plotted_data.tsv](../../results/objects/figure_h2_plgr/published/ieee_tmi_final/H2_PLGR_plotted_data.tsv) and
-[H3_CGAS_plotted_data.tsv](../../results/objects/figure_h3_cgas/published/ieee_tmi_final/H3_CGAS_plotted_data.tsv).
+[H1_AFGM_plotted_data.tsv](../experiments/afgm-sensitivity/figure-h1-ieee-tmi-final-h1-afgm-plotted-data.tsv),
+[H2_PLGR_plotted_data.tsv](../experiments/plgr-sensitivity/figure-h2-ieee-tmi-final-h2-plgr-plotted-data.tsv) and
+[H3_CGAS_plotted_data.tsv](../experiments/cgas-sensitivity/figure-h3-ieee-tmi-final-h3-cgas-plotted-data.tsv).
 Each row retains the source run ID. Default-relative PSNR is computed by
 subtracting that dataset/panel's archived default PSNR using Decimal arithmetic;
 the result matches the frozen delta field within 1e-12.
@@ -64,8 +64,8 @@ These are one-seed, one-run-per-setting values, with no invented error bars.
 - Page MediaBoxes: 252 × 100.8 pt, 252 × 273.6 pt and 252 × 151.2 pt.
 - PNG sizes: 2100 × 840, 2100 × 2280 and 2100 × 1260 pixels.
 - H2/H3 physical panel alignment: PASS, 1.5-pt tolerance; see
-  [H2 alignment](../../results/objects/figure_h2_plgr/published/ieee_tmi_final/H2_PLGR.alignment.json) and
-  [H3 alignment](../../results/objects/figure_h3_cgas/published/ieee_tmi_final/H3_CGAS.alignment.json).
+  [H2 alignment](../../outputs/artifact-inputs/figure_h2_plgr/published/ieee_tmi_final/H2_PLGR.alignment.json) and
+  [H3 alignment](../../outputs/artifact-inputs/figure_h3_cgas/published/ieee_tmi_final/H3_CGAS.alignment.json).
 - Final PDF collision audit: zero FAIL and zero WARN for all three. The
   detected contained heatmap cell-text overlays are intentional annotations.
 - Minimum rendered glyph sizes H1/H2/H3: 6.7/5.6/5.46 pt, above the 5-pt

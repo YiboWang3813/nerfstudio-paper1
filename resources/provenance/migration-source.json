@@ -1,0 +1,10 @@
+{
+  "source": "eehpc:/home/boywang25/paper1/results",
+  "source_commit": "80f15957ede5e48a37ebe5227c1a209404a53cb0",
+  "files": 33456,
+  "bytes": 1713345294,
+  "archive": "archive/eehpc-20261017",
+  "verification": "all versioned source blobs preserved byte-for-byte; SHA256 per file",
+  "excluded": "ignored raw outputs, private originals, environments, checkpoints",
+  "status": "historical_evidence_not_native_reproduction"
+}

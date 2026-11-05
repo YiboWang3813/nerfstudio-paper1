@@ -8,11 +8,11 @@
 - 196,856 个保留文件逐文件 SHA256 核验通过；逻辑内容约 18.57 GB。利用已有副本和去重，本阶段实际新增下载约 10.53 GB。
 - 当前八方法训练实现使用原生 Nerfstudio 和 gsplat；旧源码仅作可审计参考，不作为生产训练依赖。
 - 四个活动数据集共 78 个 sweep 仍位于 shared/datasets，冻结版本 p100k-native-v2。已有绘图示例包和第三方参考样例也在 shared/datasets 单独保留，不能当普通缓存丢弃。
-- 文稿、图表说明和文献位于 docs，论文图表输入与导出位于 results/objects；完整历史运行输入和证据位于 results 的源归档；私有迁移原件保存在项目仓库之外的受限目录。
+- 文稿、图表说明和文献位于 docs，论文图表工程与数值位于 docs/experiments；完整历史运行输入和证据位于 outputs；私有迁移原件保存在项目仓库之外的受限目录。
 
 ## 按图表对象整理
 
-[对象总入口](../../results/objects/README.md)列出主比较表、四类消融表、H1–H4 超参数图、两种二维对比布局和历史三维探索，共 12 个对象；另有 38 组历史支撑研究。每个对象区分 inputs、protocols、scripts、published 和可重建输出。
+[对象总入口](../experiments/README.md)列出主比较表、四类消融表、H1–H4 超参数图、两种二维对比布局和历史三维探索，共 12 个对象；另有 38 组历史支撑研究。每个对象区分 inputs、protocols、scripts、published 和可重建输出。
 
 二维对象单独保留实际使用的 36/48 张输入图片、逐帧指标和汇总表。用这些对象输入重建的三张 PNG 与使用完整旧输出池重建的结果逐字节相同。完整源输出池仍保留，不会因整理而被清理。
 
@@ -28,12 +28,14 @@
 
 保留范围内没有待迁文件、必要外链或图表输入缺失。源端 51,977 个相关目录的复核未发现变动，两棵源根目录没有新增/删除条目，检查时该用户没有 Slurm 作业。
 
-[机器可读验收记录](../../migration/complete-assets-20261105/completion.json)记录排除项、来源、校验和及证据；[分块来源清单](../../results/catalog/complete-assets-20261105/index.json)覆盖每个保留文件的目标、角色和消费者。
+[机器可读验收记录](../../migration/complete-assets-20261105/completion.json)记录排除项、来源、校验和及证据；[分块来源清单](../../outputs/provenance/source-catalog/complete-assets-20261105/index.json)覆盖每个保留文件的目标、角色和消费者。
 
 Git 忽略生成输出、缓存和完整原始运行池；图表实际使用的图片、协议、数值表、代码及来源清单已纳入版本管理。被忽略的完整源归档仍可能含不可再生的历史渲染，不能把“被忽略”等同于“可删除”。本轮 R2 请求为 0，没有安装或复制环境。
 
 ## 工作树收敛
 
-历史证据的 33,399 个文件现保存在 results/history.json 指定的不可变 Git 快照，不再展开到工作树。通过 `paper1 history` 按需读取；源字节仍完整保留。在本次文档整理前，results 日常跟踪文件曾从 35,406 个缩减至 595 个；本次再接收按图表对象分类的输入包与导出。965 个逐运行链接及 448 份冗余元数据副本被紧凑索引取代，238 份派生原生 YAML 改为按需生成。主实验由一份参数矩阵与循环脚本控制 624 个组合，未启动正式训练。
+历史证据的 33,399 个文件现保存在 docs/resources/provenance/results-history.json 指定的不可变 Git 快照，不再展开到工作树。通过 `paper1 history` 按需读取；源字节仍完整保留。在本次文档整理前，results 日常跟踪文件曾从 35,406 个缩减至 595 个；本次再接收按图表对象分类的输入包与导出。965 个逐运行链接及 448 份冗余元数据副本被紧凑索引取代，238 份派生原生 YAML 改为按需生成。主实验由一份参数矩阵与循环脚本控制 624 个组合，未启动正式训练。
 
-文档已按用途扁平化，不再保留 archive/supplement/source_workspace 或源码快照。原 docs 中科学输入转存 results/inputs，437 文件最终证据包及分实验输入包有独立 SHA256；图表导出放入具体对象的 published。逐文件去向见 [文档整理清单](../../results/catalog/docs-layout-20261105.json)。
+文档已按用途扁平化，不再保留 archive/supplement/source_workspace 或源码快照。原 docs 中冻结科学输入转存 outputs/frozen-inputs，437 文件最终证据包及分实验输入包有独立 SHA256；历史重图保存在 outputs/artifact-inputs，轻量数值与图表工程归入 docs/experiments。逐文件去向见 [文档整理清单](../resources/provenance/docs-layout-20261105.json)。
+
+2026-11-05 后续整理取消独立 results：原始 Git 数据库保留在 migration/git-history/results.git，物理迁移映射见 [当前记录](../resources/provenance/artifact-storage-map.json)。迁入时的原始清单不追改，旧路径通过该映射解释。

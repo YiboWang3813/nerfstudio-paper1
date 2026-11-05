@@ -1,0 +1,83 @@
+[
+  {
+    "role": "historical scientific inputs",
+    "study": "fixed-main-and-ablations",
+    "files": 233,
+    "sha256": "4ef34394d4ea40635f94824da0766f8a0bdd2d0c657336028c1992ead5ff9428",
+    "source_docs_tag": "history/docs-before-typed-layout-20261105",
+    "execution_code_included": false,
+    "archive": "outputs/frozen-inputs/fixed-main-and-ablations.zip"
+  },
+  {
+    "role": "historical scientific inputs",
+    "study": "fixed-main-candidate",
+    "files": 81,
+    "sha256": "9e5d3a4fb42306de32f626fbfed33da72b2060f02dac48bd91b1b94e27529969",
+    "source_docs_tag": "history/docs-before-typed-layout-20261105",
+    "execution_code_included": false,
+    "archive": "outputs/frozen-inputs/fixed-main-candidate.zip"
+  },
+  {
+    "role": "historical scientific inputs",
+    "study": "fps-rebuild",
+    "files": 11,
+    "sha256": "01cdd93ab04f06f552411cea55b7dc16df0a1a4f40bd66f0029abd0d3ec13685",
+    "source_docs_tag": "history/docs-before-typed-layout-20261105",
+    "execution_code_included": false,
+    "archive": "outputs/frozen-inputs/fps-rebuild.zip"
+  },
+  {
+    "role": "historical scientific inputs",
+    "study": "hyperparameter-sensitivity",
+    "files": 75,
+    "sha256": "97928f1168cdba8b8a00b4e2e0d014381f15937fd214dce80aa88ecb4616fe75",
+    "source_docs_tag": "history/docs-before-typed-layout-20261105",
+    "execution_code_included": false,
+    "archive": "outputs/frozen-inputs/hyperparameter-sensitivity.zip"
+  },
+  {
+    "role": "frozen scientific inputs for native paper figure/table generators",
+    "files": 437,
+    "sha256": "e06f3471e99791fe4959f24f10e2084992196095165b2deff40e6480e6f7fefc",
+    "source_docs_commit": "79ddbb98634ce99b4f466fecba69d7f3859d5eb3",
+    "source_tree": "04_experiments/production/final_paper_evidence_20260910",
+    "original_bytes_unchanged": true,
+    "archive": "outputs/frozen-inputs/paper-evidence-v1.zip"
+  },
+  {
+    "role": "historical scientific inputs",
+    "study": "paper-protocol-freeze",
+    "files": 149,
+    "sha256": "f33e6e21a8e530836e918e2ec7df961ee9f2824305fdf372c87e80f2982c0961",
+    "source_docs_tag": "history/docs-before-typed-layout-20261105",
+    "execution_code_included": false,
+    "archive": "outputs/frozen-inputs/paper-protocol-freeze.zip"
+  },
+  {
+    "role": "historical scientific inputs",
+    "study": "plgr-confirmation",
+    "files": 59,
+    "sha256": "378be4774e670e361c92ab516f3db15bc594ad801c00d368f744c536958b6138",
+    "source_docs_tag": "history/docs-before-typed-layout-20261105",
+    "execution_code_included": false,
+    "archive": "outputs/frozen-inputs/plgr-confirmation.zip"
+  },
+  {
+    "role": "historical scientific inputs",
+    "study": "plgr-interaction",
+    "files": 69,
+    "sha256": "0809dbefd41e0de4df549f4ac5a3f102e1b38846df34373e3f72433be1b14c2c",
+    "source_docs_tag": "history/docs-before-typed-layout-20261105",
+    "execution_code_included": false,
+    "archive": "outputs/frozen-inputs/plgr-interaction.zip"
+  },
+  {
+    "role": "historical scientific inputs",
+    "study": "sensorless-method-review",
+    "files": 1194,
+    "sha256": "4f298d90f5b68b097b31a12262f9b39ab8139059be5c45f95c9d452f78236737",
+    "source_docs_tag": "history/docs-before-typed-layout-20261105",
+    "execution_code_included": false,
+    "archive": "outputs/frozen-inputs/sensorless-method-review.zip"
+  }
+]

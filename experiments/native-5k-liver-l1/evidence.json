@@ -1,0 +1,317 @@
+[
+  {
+    "path": "outputs/probes/native-5k-liver-l1/gaussianpile/evaluation/step-4999/per-frame.csv",
+    "sha256": "ba970a18e7b6d723735fa9f0dd3c05887a86fd8cc5f4525d87d63005ae319601",
+    "bytes": 6113
+  },
+  {
+    "path": "outputs/probes/native-5k-liver-l1/gaussianpile/evaluation/step-4999/receipt.json",
+    "sha256": "0330d8aab5cc7027cfa023580a14cc05cabef1b0d4d02b7e2bd5e03b71970277",
+    "bytes": 4939
+  },
+  {
+    "path": "outputs/probes/native-5k-liver-l1/gaussianpile/frame-0010-target-prediction.png",
+    "sha256": "09dda5a17642ff2110bf65d143835881c8829c6797e8ef587d7850c631f619be",
+    "bytes": 150542
+  },
+  {
+    "path": "outputs/probes/native-5k-liver-l1/gaussianpile/frame-0102-target-prediction.png",
+    "sha256": "1a35e3f3ff6e120fea2cb4997f2b82a7542cc942731a0c7c82c1d381894571cf",
+    "bytes": 168616
+  },
+  {
+    "path": "outputs/probes/native-5k-liver-l1/gaussianpile/frame-0189-target-prediction.png",
+    "sha256": "78604b9cbf3b537042cd0c842dc4936878cb7c59a17e0e3b05ccd628c4b321eb",
+    "bytes": 180059
+  },
+  {
+    "path": "outputs/probes/native-5k-liver-l1/gaussianpile/native-config.yml",
+    "sha256": "067a3cd3d1853900cb2573f315f0ada6cbb06b50f6ac33b15c7c4812a0bd4b3f",
+    "bytes": 8696
+  },
+  {
+    "path": "outputs/probes/native-5k-liver-l1/gaussianpile/receipt.json",
+    "sha256": "44017d0fd5fab9995d8f10c942ff7ecd184a6e7ea4d0c6ed671a223864a85d85",
+    "bytes": 4324
+  },
+  {
+    "path": "outputs/probes/native-5k-liver-l1/nerfus/evaluation/step-4999/per-frame.csv",
+    "sha256": "06384b5b3037a948e849028390ae52aafa544388390169be59d935622486f6e2",
+    "bytes": 5596
+  },
+  {
+    "path": "outputs/probes/native-5k-liver-l1/nerfus/evaluation/step-4999/receipt.json",
+    "sha256": "6a68dd8a0499aaa2a2db5d428027f314b9a05ae685110272a98b0b8b26194155",
+    "bytes": 4905
+  },
+  {
+    "path": "outputs/probes/native-5k-liver-l1/nerfus/frame-0010-target-prediction.png",
+    "sha256": "4788fe7f6aa4f03f074a15049549ed75f079e12b1a5b68f60faa9dee91b00f4b",
+    "bytes": 110096
+  },
+  {
+    "path": "outputs/probes/native-5k-liver-l1/nerfus/frame-0102-target-prediction.png",
+    "sha256": "783c9befd6c80ba00ce7c79cf48e045f0b8ec878728d69f7d6746fba1859fafd",
+    "bytes": 120734
+  },
+  {
+    "path": "outputs/probes/native-5k-liver-l1/nerfus/frame-0189-target-prediction.png",
+    "sha256": "da56274361f4e538fadd2677c6c51424038619e7891f2e80802ed533c57fd755",
+    "bytes": 126893
+  },
+  {
+    "path": "outputs/probes/native-5k-liver-l1/nerfus/native-config.yml",
+    "sha256": "69986b74b260ae48ef44bd6ecc3c0a6d680029361b9cb9e1020e150b50897248",
+    "bytes": 6722
+  },
+  {
+    "path": "outputs/probes/native-5k-liver-l1/nerfus/receipt.json",
+    "sha256": "db877563291ff9d07795e63aba1fd60e254af40cd9596d1e7ff6a9494bb4ed6b",
+    "bytes": 4313
+  },
+  {
+    "path": "outputs/probes/native-5k-liver-l1/ours/evaluation/step-4999/per-frame.csv",
+    "sha256": "17c07c76f46cac6878f6068a7801035d6150da91ee1c2920e5b5b37db940af63",
+    "bytes": 6138
+  },
+  {
+    "path": "outputs/probes/native-5k-liver-l1/ours/evaluation/step-4999/receipt.json",
+    "sha256": "d2a55aee53fcecfdd48683fb426d8f3bc373953859af79a916b677c682acd094",
+    "bytes": 4942
+  },
+  {
+    "path": "outputs/probes/native-5k-liver-l1/ours/frame-0010-target-prediction.png",
+    "sha256": "f7a60492c02008c88a514497709bfbaddcb474d75e83547239b4108ab6d16db3",
+    "bytes": 142136
+  },
+  {
+    "path": "outputs/probes/native-5k-liver-l1/ours/frame-0102-target-prediction.png",
+    "sha256": "bd5f8ccfe4cc6001d708dfa2cb7f965396713d1ee52b699561c1f0e30567af23",
+    "bytes": 159845
+  },
+  {
+    "path": "outputs/probes/native-5k-liver-l1/ours/frame-0189-target-prediction.png",
+    "sha256": "698399e91916df1f5df0bd0d6fc94eb0060896e8c8e290457df0b1b2481665e8",
+    "bytes": 169542
+  },
+  {
+    "path": "outputs/probes/native-5k-liver-l1/ours/native-config.yml",
+    "sha256": "71fc6ba47b69f1fa05c77612671b9c14917d4c7ca8abe9663609e3a750673bd1",
+    "bytes": 9236
+  },
+  {
+    "path": "outputs/probes/native-5k-liver-l1/ours/receipt.json",
+    "sha256": "d76cde795f27aa8c6f4b29e6ea549f4964f8a8b989ab3ea287b9aa5371da8254",
+    "bytes": 4310
+  },
+  {
+    "path": "outputs/probes/native-5k-liver-l1/slice_adapted_3dgs/evaluation/step-4999/per-frame.csv",
+    "sha256": "843bcf1df1c9e153cc295e74a9093863aa04a66a9f2460a2e6dbd8b38a9030a8",
+    "bytes": 6125
+  },
+  {
+    "path": "outputs/probes/native-5k-liver-l1/slice_adapted_3dgs/evaluation/step-4999/receipt.json",
+    "sha256": "85c9d4363e57a16f8079b5e53248c30f9a77179da073b4958914a1a6748fbd16",
+    "bytes": 4942
+  },
+  {
+    "path": "outputs/probes/native-5k-liver-l1/slice_adapted_3dgs/frame-0010-target-prediction.png",
+    "sha256": "5b0026f15b9a75fa6b9f7fddfd2005372ee604791bdbef4cc208b90892dfaddd",
+    "bytes": 141292
+  },
+  {
+    "path": "outputs/probes/native-5k-liver-l1/slice_adapted_3dgs/frame-0102-target-prediction.png",
+    "sha256": "2518f4e08c8d468959c22ec8bb749313ac3a8313d4c5379fcac64162d65a2023",
+    "bytes": 158853
+  },
+  {
+    "path": "outputs/probes/native-5k-liver-l1/slice_adapted_3dgs/frame-0189-target-prediction.png",
+    "sha256": "b5584964fe0f8c11eab467e82906416285ad43db6bf90299a4084827b8c7a05a",
+    "bytes": 168492
+  },
+  {
+    "path": "outputs/probes/native-5k-liver-l1/slice_adapted_3dgs/native-config.yml",
+    "sha256": "a3461254f8ec1950d2912f37daadc8e4be8a03e0be026711134f8aad5cbe62bd",
+    "bytes": 10225
+  },
+  {
+    "path": "outputs/probes/native-5k-liver-l1/slice_adapted_3dgs/receipt.json",
+    "sha256": "0d7c36de943fcc075b68f42c1ddce8aa2a44956ab475f2a7ab8af13f39ccee4a",
+    "bytes": 4345
+  },
+  {
+    "path": "outputs/probes/native-5k-liver-l1/ultragauss/evaluation/step-4999/per-frame.csv",
+    "sha256": "9da0abc45c9dde090bf1d10b2c6a6cb8273f052e80398ad46e1a929f0e2e1e39",
+    "bytes": 6156
+  },
+  {
+    "path": "outputs/probes/native-5k-liver-l1/ultragauss/evaluation/step-4999/receipt.json",
+    "sha256": "81023b1cb9f639df18a3768503a00872c481f58d5dea081dac293e29dfaf7450",
+    "bytes": 4941
+  },
+  {
+    "path": "outputs/probes/native-5k-liver-l1/ultragauss/frame-0010-target-prediction.png",
+    "sha256": "cc91a4b4a1fb18f78a560e5e9575f6c19bd3b69715339b2bb4f2dc0a2a598016",
+    "bytes": 142841
+  },
+  {
+    "path": "outputs/probes/native-5k-liver-l1/ultragauss/frame-0102-target-prediction.png",
+    "sha256": "60369c2f1f53e7d5e7bae16de92b932687f1d61864272984face6b4d42daefb4",
+    "bytes": 160946
+  },
+  {
+    "path": "outputs/probes/native-5k-liver-l1/ultragauss/frame-0189-target-prediction.png",
+    "sha256": "b26e26dadc16d483901782f4d20e604c8d6b9db362c1e80bb8ca354ea4d73944",
+    "bytes": 170599
+  },
+  {
+    "path": "outputs/probes/native-5k-liver-l1/ultragauss/native-config.yml",
+    "sha256": "d48a833e9504f4ad3bd5676d78fb44bb491784017b64f990305cf7ae55d0d504",
+    "bytes": 8489
+  },
+  {
+    "path": "outputs/probes/native-5k-liver-l1/ultragauss/receipt.json",
+    "sha256": "d8fe02bf9228904515d253ddc832b9e750822a3cc455a2e3a78f2f78b8f122a5",
+    "bytes": 4326
+  },
+  {
+    "path": "outputs/probes/native-5k-liver-l1/ultragray/evaluation/step-4999/per-frame.csv",
+    "sha256": "5fb284ef99fba4b852faea9710bc468f2962b4717e5403366a990a619edce242",
+    "bytes": 6139
+  },
+  {
+    "path": "outputs/probes/native-5k-liver-l1/ultragray/evaluation/step-4999/receipt.json",
+    "sha256": "4832e366e4b2c263a055e21dfe9d0f2b7b14f4a01cfb2286e65da4e9457c9895",
+    "bytes": 4941
+  },
+  {
+    "path": "outputs/probes/native-5k-liver-l1/ultragray/frame-0010-target-prediction.png",
+    "sha256": "67c54314a96d3eda69a1bb0737df24366fb2c1d04bc58638f838026fb6b284d5",
+    "bytes": 142526
+  },
+  {
+    "path": "outputs/probes/native-5k-liver-l1/ultragray/frame-0102-target-prediction.png",
+    "sha256": "60e04d00bdac17f6206031b140bce83aa813e63dde78942c7e2b46e8cbed13be",
+    "bytes": 159729
+  },
+  {
+    "path": "outputs/probes/native-5k-liver-l1/ultragray/frame-0189-target-prediction.png",
+    "sha256": "af9ed480611157e3d4c91f565c1dd6a02a82f9446562a139613295a1dcd1eb3a",
+    "bytes": 169908
+  },
+  {
+    "path": "outputs/probes/native-5k-liver-l1/ultragray/native-config.yml",
+    "sha256": "30d818c4b502a0221dfd8e1eff041a0b934f3fef129060bb879c762fcf4b00e1",
+    "bytes": 9075
+  },
+  {
+    "path": "outputs/probes/native-5k-liver-l1/ultragray/receipt.json",
+    "sha256": "0f7968f20fcf5b86e6a8a75ee9bf3f099a5b5f91de610b37893183ea1ca03c06",
+    "bytes": 4320
+  },
+  {
+    "path": "outputs/probes/native-5k-liver-l1/ultrags_baseline/evaluation/step-4999/per-frame.csv",
+    "sha256": "fc95e22f7944b448bf06263d7e4705b672967b7aa163d26acc8b36895144143f",
+    "bytes": 6110
+  },
+  {
+    "path": "outputs/probes/native-5k-liver-l1/ultrags_baseline/evaluation/step-4999/receipt.json",
+    "sha256": "9d661e013830d671bb415968b408e3a96083ad7303ec48ab63416b5c46f318e3",
+    "bytes": 4942
+  },
+  {
+    "path": "outputs/probes/native-5k-liver-l1/ultrags_baseline/frame-0010-target-prediction.png",
+    "sha256": "9f5270437e2ae56f27c5c906f1189384fcdc8dba86a0a2e627284e830a97627b",
+    "bytes": 154792
+  },
+  {
+    "path": "outputs/probes/native-5k-liver-l1/ultrags_baseline/frame-0102-target-prediction.png",
+    "sha256": "569859d9fa4efb392fcd70831363877336a13d6a406ce95dd4f3e8ea7a309382",
+    "bytes": 172400
+  },
+  {
+    "path": "outputs/probes/native-5k-liver-l1/ultrags_baseline/frame-0189-target-prediction.png",
+    "sha256": "1c02552bd6aeb0a6248cd7490a309158e46354bb80a9fcf21dcdc83d10abba7f",
+    "bytes": 178448
+  },
+  {
+    "path": "outputs/probes/native-5k-liver-l1/ultrags_baseline/native-config.yml",
+    "sha256": "b75d426a437efd9fb00c82625479a38f5d77edbf971ce9bdbba781add0c7149e",
+    "bytes": 11334
+  },
+  {
+    "path": "outputs/probes/native-5k-liver-l1/ultrags_baseline/receipt.json",
+    "sha256": "2014dcd169ef5b76eb0b6767e47cb3fb47873c41f10f2f7f3e142c5217f76159",
+    "bytes": 4339
+  },
+  {
+    "path": "outputs/probes/native-5k-liver-l1/ultranerf/evaluation/step-4999/per-frame.csv",
+    "sha256": "466213344ac387f23ded3ebcd244dccd805e17b22db85294c7a5d58f6c5d5a72",
+    "bytes": 5634
+  },
+  {
+    "path": "outputs/probes/native-5k-liver-l1/ultranerf/evaluation/step-4999/receipt.json",
+    "sha256": "26f889b6fa02f44c2fdac05309339d904e73959efd43a6a0646363f76b5a0f35",
+    "bytes": 4905
+  },
+  {
+    "path": "outputs/probes/native-5k-liver-l1/ultranerf/frame-0010-target-prediction.png",
+    "sha256": "3d3404a164d9225c3f1b9de86943a86b9d5852d099c4b039071d7a29d25f4196",
+    "bytes": 135728
+  },
+  {
+    "path": "outputs/probes/native-5k-liver-l1/ultranerf/frame-0102-target-prediction.png",
+    "sha256": "a6547b7f4d4452e0941ce34c05cea6294b719b1b63c4180edb2d48bb0e56f875",
+    "bytes": 149881
+  },
+  {
+    "path": "outputs/probes/native-5k-liver-l1/ultranerf/frame-0189-target-prediction.png",
+    "sha256": "d7a1a06302468c3ed4fd41beeb1682512461dc54c984245359e6b4e53b43c19d",
+    "bytes": 155584
+  },
+  {
+    "path": "outputs/probes/native-5k-liver-l1/ultranerf/native-config.yml",
+    "sha256": "1d8f79e5371ac102212b2ce1beeba4aa6c003d571ca76f994ad06bf4e586132f",
+    "bytes": 6748
+  },
+  {
+    "path": "outputs/probes/native-5k-liver-l1/ultranerf/receipt.json",
+    "sha256": "532573080931295e672a42b223c908edebe0ac71bcdd1f4a5ab9edc834ecaeb7",
+    "bytes": 4318
+  },
+  {
+    "path": "outputs/probes/native-5k-liver-l1-historical-parameters/ultrags_baseline/evaluation/step-4999/per-frame.csv",
+    "sha256": "8c27013a62fbb817fd5b961b6053c9fd1ed26145e5045fc619c3761495b10028",
+    "bytes": 6079
+  },
+  {
+    "path": "outputs/probes/native-5k-liver-l1-historical-parameters/ultrags_baseline/evaluation/step-4999/receipt.json",
+    "sha256": "85961fe86e98decabc1656f9767d71a507a36193a2d07854124fb62f57e98b71",
+    "bytes": 4940
+  },
+  {
+    "path": "outputs/probes/native-5k-liver-l1-historical-parameters/ultrags_baseline/frame-0010-target-prediction.png",
+    "sha256": "38a8b934f836ea0aac1f8db7b16c3be62ead0fda10e55d10a19e87ea88bd00e3",
+    "bytes": 136155
+  },
+  {
+    "path": "outputs/probes/native-5k-liver-l1-historical-parameters/ultrags_baseline/frame-0102-target-prediction.png",
+    "sha256": "a88b4a80197a41ef6cab4a2547c94f5a5fc080abd6135e450fd80984c1d5d1a3",
+    "bytes": 142947
+  },
+  {
+    "path": "outputs/probes/native-5k-liver-l1-historical-parameters/ultrags_baseline/frame-0189-target-prediction.png",
+    "sha256": "cddb310a265291de49ffe084d659edc46a959184ffde67dadfa638e54c86b9ac",
+    "bytes": 150812
+  },
+  {
+    "path": "outputs/probes/native-5k-liver-l1-historical-parameters/ultrags_baseline/native-config.yml",
+    "sha256": "72876bb9c6bb066e841e1a42f0dabf78417aa34205a8907970317bf8f955c51c",
+    "bytes": 11324
+  },
+  {
+    "path": "outputs/probes/native-5k-liver-l1-historical-parameters/ultrags_baseline/receipt.json",
+    "sha256": "f300baa0f76d87f063b2606e15a8708d0d56f7fffe4406c8a1a6ed045d26bc02",
+    "bytes": 4414
+  }
+]

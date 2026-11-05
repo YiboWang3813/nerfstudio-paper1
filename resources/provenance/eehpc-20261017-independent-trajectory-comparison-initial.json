@@ -1,0 +1,184 @@
+{
+  "config_alias_count": 92,
+  "config_signatures_identical": true,
+  "existing_config_failures": {},
+  "four_dataset_signatures_identical": true,
+  "checkpoint_comparisons": [
+    {
+      "scene": "liver",
+      "file": "iteration_12_container.pth",
+      "tensor_count": 5,
+      "max_abs_difference": 0.6161169856786728
+    },
+    {
+      "scene": "liver",
+      "file": "iteration_6_container.pth",
+      "tensor_count": 5,
+      "max_abs_difference": 0.3755604177713394
+    },
+    {
+      "scene": "spine_phantom",
+      "file": "iteration_12_container.pth",
+      "tensor_count": 5,
+      "max_abs_difference": 0.3566169738769531
+    },
+    {
+      "scene": "spine_phantom",
+      "file": "iteration_6_container.pth",
+      "tensor_count": 5,
+      "max_abs_difference": 0.35675525665283203
+    },
+    {
+      "scene": "tdsc_abus_2023",
+      "file": "iteration_12_container.pth",
+      "tensor_count": 5,
+      "max_abs_difference": 28.46022605895996
+    },
+    {
+      "scene": "tdsc_abus_2023",
+      "file": "iteration_6_container.pth",
+      "tensor_count": 5,
+      "max_abs_difference": 0.48650455474853516
+    },
+    {
+      "scene": "tus_rec_2024_qc",
+      "file": "iteration_12_container.pth",
+      "tensor_count": 5,
+      "max_abs_difference": 1.1465559005737305
+    },
+    {
+      "scene": "tus_rec_2024_qc",
+      "file": "iteration_6_container.pth",
+      "tensor_count": 5,
+      "max_abs_difference": 1.1465606689453125
+    }
+  ],
+  "scalar_comparisons": [
+    {
+      "scene": "liver",
+      "rows": 254,
+      "max_abs_difference": 0.031005999999990763
+    },
+    {
+      "scene": "spine_phantom",
+      "rows": 254,
+      "max_abs_difference": 9.0
+    },
+    {
+      "scene": "tdsc_abus_2023",
+      "rows": 254,
+      "max_abs_difference": 1.0
+    },
+    {
+      "scene": "tus_rec_2024_qc",
+      "rows": 254,
+      "max_abs_difference": 4.0
+    }
+  ],
+  "tolerances": {
+    "checkpoint_atol": 1e-05,
+    "checkpoint_rtol": 0.0001,
+    "scalar_atol": 0.0001,
+    "scalar_rtol": 0.0001
+  },
+  "pytest_exit_codes": {
+    "old": 1,
+    "new": 4
+  },
+  "failures": [
+    "scalar:liver:value",
+    "scalar:liver:value",
+    "tensor:liver:/quats",
+    "tensor:liver:/echo_alphas",
+    "tensor:liver:/attenuations",
+    "tensor:liver:/means",
+    "tensor:liver:/scales",
+    "tensor:liver:/quats",
+    "tensor:liver:/echo_alphas",
+    "tensor:liver:/attenuations",
+    "tensor:liver:/means",
+    "tensor:liver:/scales",
+    "scalar:spine_phantom:value",
+    "scalar:spine_phantom:value",
+    "scalar:spine_phantom:value",
+    "scalar:spine_phantom:value",
+    "tensor:spine_phantom:/quats",
+    "tensor:spine_phantom:/echo_alphas",
+    "tensor:spine_phantom:/attenuations",
+    "tensor:spine_phantom:/means",
+    "tensor:spine_phantom:/scales",
+    "tensor:spine_phantom:/quats",
+    "tensor:spine_phantom:/echo_alphas",
+    "tensor:spine_phantom:/attenuations",
+    "tensor:spine_phantom:/means",
+    "tensor:spine_phantom:/scales",
+    "scalar:tdsc_abus_2023:value",
+    "scalar:tdsc_abus_2023:value",
+    "scalar:tdsc_abus_2023:value",
+    "scalar:tdsc_abus_2023:value",
+    "scalar:tdsc_abus_2023:value",
+    "scalar:tdsc_abus_2023:value",
+    "scalar:tdsc_abus_2023:value",
+    "scalar:tdsc_abus_2023:value",
+    "scalar:tdsc_abus_2023:value",
+    "scalar:tdsc_abus_2023:value",
+    "scalar:tdsc_abus_2023:value",
+    "scalar:tdsc_abus_2023:value",
+    "scalar:tdsc_abus_2023:value",
+    "scalar:tdsc_abus_2023:value",
+    "scalar:tdsc_abus_2023:value",
+    "scalar:tdsc_abus_2023:value",
+    "scalar:tdsc_abus_2023:value",
+    "scalar:tdsc_abus_2023:value",
+    "scalar:tdsc_abus_2023:value",
+    "scalar:tdsc_abus_2023:value",
+    "scalar:tdsc_abus_2023:value",
+    "scalar:tdsc_abus_2023:value",
+    "scalar:tdsc_abus_2023:value",
+    "scalar:tdsc_abus_2023:value",
+    "tensor:tdsc_abus_2023:/quats",
+    "tensor:tdsc_abus_2023:/echo_alphas",
+    "tensor:tdsc_abus_2023:/attenuations",
+    "tensor:tdsc_abus_2023:/means",
+    "tensor:tdsc_abus_2023:/scales",
+    "tensor:tdsc_abus_2023:/quats",
+    "tensor:tdsc_abus_2023:/echo_alphas",
+    "tensor:tdsc_abus_2023:/attenuations",
+    "tensor:tdsc_abus_2023:/means",
+    "tensor:tdsc_abus_2023:/scales",
+    "scalar:tus_rec_2024_qc:value",
+    "scalar:tus_rec_2024_qc:value",
+    "scalar:tus_rec_2024_qc:value",
+    "scalar:tus_rec_2024_qc:value",
+    "scalar:tus_rec_2024_qc:value",
+    "scalar:tus_rec_2024_qc:value",
+    "scalar:tus_rec_2024_qc:value",
+    "scalar:tus_rec_2024_qc:value",
+    "scalar:tus_rec_2024_qc:value",
+    "scalar:tus_rec_2024_qc:value",
+    "scalar:tus_rec_2024_qc:value",
+    "scalar:tus_rec_2024_qc:value",
+    "scalar:tus_rec_2024_qc:value",
+    "scalar:tus_rec_2024_qc:value",
+    "scalar:tus_rec_2024_qc:value",
+    "scalar:tus_rec_2024_qc:value",
+    "scalar:tus_rec_2024_qc:value",
+    "scalar:tus_rec_2024_qc:value",
+    "scalar:tus_rec_2024_qc:value",
+    "scalar:tus_rec_2024_qc:value",
+    "scalar:tus_rec_2024_qc:value",
+    "scalar:tus_rec_2024_qc:value",
+    "tensor:tus_rec_2024_qc:/quats",
+    "tensor:tus_rec_2024_qc:/echo_alphas",
+    "tensor:tus_rec_2024_qc:/attenuations",
+    "tensor:tus_rec_2024_qc:/means",
+    "tensor:tus_rec_2024_qc:/scales",
+    "tensor:tus_rec_2024_qc:/quats",
+    "tensor:tus_rec_2024_qc:/echo_alphas",
+    "tensor:tus_rec_2024_qc:/attenuations",
+    "tensor:tus_rec_2024_qc:/means",
+    "tensor:tus_rec_2024_qc:/scales",
+    "pytest failed; inspect old/new logs"
+  ],
+  "passed": false
+}

@@ -191,18 +191,5 @@ camera_paths/
 # pixi environments
 .pixi
 /third_party
-# Paper1 runtime compatibility links; actual artifacts live outside this fork.
-/paper1_legacy/ops
-/paper1_legacy/docs
-/paper1_legacy/outputs
-/paper1_legacy/logs
-/paper1_legacy/wandb
-/paper1_legacy/artifacts
-/paper1_legacy/workspace
-
-# Retained historical source archive: local custody, indexed by migration manifests.
-# This is not a disposable cache; current implementation is in nerfstudio/ and gsplat/.
-/experiments/paper1/source_reference/eehpc-20261105/
-
 # Prepared native configs are generated from the frozen source recipes when needed.
 /experiments/paper1/native-protocols/*.yaml

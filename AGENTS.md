@@ -1,27 +1,11 @@
 # Paper1 Nerfstudio fork
 
-## Hong Kong native refactor (2026-11-04)
-
-- Read /home/yibo/AGENTS.md and ../AGENTS.md first. Latest user instructions
-  supersede the historical relocation notes below.
-- Work on refactor/native-ultrasound. Active native code uses standard
-  Nerfstudio DataParser/DataManager/Model/Pipeline/Trainer interfaces.
-- paper1_legacy is source reference only; do not import it from native code.
-- Use ../bin/paper1 to enforce project source routing and the selected toolchain.
-- Use the shared Python/Torch stack through ../.venv. No duplicated Torch/CUDA.
-- Local GPU tests use an available RTX4090 directly; Slurm applies only on eehpc.
-- Historical checkpoints are deferred pending controlled probes and selection.
-- Historical docs/results may be curated; preserve their original experiment identities.
-- Protocol assets belong in this repository, not a sibling protocol project.
-- The ultrasound-dev method is an engineering preset, not an accepted paper run.
-
-Development branch: `paper1/main`; upstream base: `v1.1.5`.
-
-- `paper1_legacy/` is a preserved compatibility runtime, not a native Nerfstudio Pipeline.
-- Keep legacy algorithm, configuration and evaluation semantics unchanged during relocation.
-- Actual data/docs/weights/results/build caches live in sibling workspace directories.
-- Runtime symlinks inside `paper1_legacy/` are deliberately ignored by Git.
-- Current workspace rules are `../docs/03_engineering/workspace_rules.md`.
-- Record native framework adaptation separately and validate against legacy references.
-- Do not publish credentials, private source-history archives, weights or caches.
-- Run CUDA compilation, GPU tests and training through Slurm.
+- Read /home/yibo/AGENTS.md, ../AGENTS.md and ../docs/AGENTS.md. Current development branch: refactor/native-ultrasound; upstream base: v1.1.5.
+- Active methods use native DataParser/DataManager/Model/Pipeline/Trainer interfaces and gsplat strategies/kernels. Retired source and one-time Hydra conversion code have been removed; never restore old runtimes as production dependencies.
+- Use ../bin/paper1 for project source routing and the existing shared Python/Torch/CUDA stack. Do not install duplicate environments or upgrade shared dependencies.
+- This server does not use Slurm. GPU operations require actual idle-device checks and project resource locks; CPU-only work must not acquire a GPU.
+- Training/evaluation implementations, method presets and experiment matrices belong here. Figure/table project JSON, reports and small numeric sources belong in ../docs/experiments.
+- Runs, checkpoints, logs, rendered frames and bulk exports belong in ../outputs; dataset payloads belong in /home/yibo/shared/datasets. No sibling results or migration folder.
+- Formal 1M/30k experiments remain stopped until explicitly authorized. Never relabel historical eehpc results or short probes as native formal reproduction.
+- Mac Documents/paper1/manuscript is the current authority for retained historical paper assets. Output deletion requires verified per-figure/table source mapping.
+- Do not publish secrets or push rewritten Git history without explicit remote synchronization instructions.

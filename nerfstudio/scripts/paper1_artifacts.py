@@ -37,12 +37,10 @@ def build(name, object_id=None, config_path=None):
     definition.setdefault("generator", name)
     configure_object(definition)
     workspace = prepare_view()
-    output = WORKSPACE / "outputs/artifacts" / name / str(time.time_ns())
+    output = WORKSPACE / "outputs/paper-builds" / name / str(time.time_ns())
     output.mkdir(parents=True)
     module = importlib.import_module("nerfstudio.research_artifacts.generators." + name)
-    source = evidence_root(
-        definition.get("frozen_inputs", {}).get("archive", "outputs/frozen-inputs/paper-evidence-v1.zip")
-    )
+    source = evidence_root(definition.get("frozen_inputs", {}).get("archive", "outputs/paper-evidence/inputs-v1.zip"))
     for loaded_name, loaded in list(sys.modules.items()):
         if not loaded_name.startswith("nerfstudio.research_artifacts.generators.") or loaded is None:
             continue
@@ -65,6 +63,9 @@ def build(name, object_id=None, config_path=None):
         loaded.FIGURE_DIR = output / "figures"
         loaded.MANIFEST_DIR = output / "manifests"
         loaded.CONFIG_PATH = output / "2d_rendering_figure_config_tmi_v2.md"
+        loaded.FROZEN_MANIFEST = (
+            source / definition["qualitative_manifest"] if definition.get("qualitative_manifest") else None
+        )
     allowed = {
         "METHODS",
         "PAPER_METHODS",
@@ -114,10 +115,21 @@ def build(name, object_id=None, config_path=None):
                 opened_images[str(path.resolve())] = hashlib.sha256(path.read_bytes()).hexdigest()
         return original_open(file, *args, **kwargs)
 
+    source_reads = set()
+    recording = [True]
+
+    def audit_source_reads(event, args):
+        if recording[0] and event == "open" and isinstance(args[0], (str, bytes)):
+            value = args[0].decode() if isinstance(args[0], bytes) else args[0]
+            if value.startswith(str(source) + "/"):
+                source_reads.add(value)
+
+    sys.addaudithook(audit_source_reads)
     Image.open = tracked_open
     try:
         module.main()
     finally:
+        recording[0] = False
         Image.open = original_open
     files = [
         {
@@ -140,6 +152,10 @@ def build(name, object_id=None, config_path=None):
         "config_sha256": hashlib.sha256(config_source.read_bytes()).hexdigest() if config_source else None,
         "effective_config": "artifact-config.json",
         "frozen_reads": reads,
+        "snapshot_inputs": {
+            str(type(output)(p).relative_to(source)): hashlib.sha256(type(output)(p).read_bytes()).hexdigest()
+            for p in sorted(source_reads)
+        },
         "image_inputs": opened_images,
         "generator_sha256": hashlib.sha256(type(output)(module.__file__).read_bytes()).hexdigest(),
         "training_started": False,

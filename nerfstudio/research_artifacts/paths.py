@@ -9,15 +9,15 @@ from functools import lru_cache
 from pathlib import Path
 
 WORKSPACE = Path(__file__).resolve().parents[3]
-RUNS = WORKSPACE / "outputs/eehpc"
+RUNS = WORKSPACE / "outputs/paper-images"
 REGISTRY = WORKSPACE / "nerfstudio/experiments/paper1/artifacts.json"
 DOCS = WORKSPACE / "docs"
-VIEW = WORKSPACE / "migration/complete-assets-20261105/compat-workspace"
+VIEW = WORKSPACE.parent / "shared/cache/paper1-artifacts/path-view"
 _OBJECT_ALIASES = {}
 
 
 @lru_cache(maxsize=1)
-def evidence_root(archive_path="outputs/frozen-inputs/paper-evidence-v1.zip"):
+def evidence_root(archive_path="outputs/paper-evidence/inputs-v1.zip"):
     """Validate the immutable input package and expand it once into shared cache."""
     archive = WORKSPACE / archive_path
     manifest = json.loads(archive.with_suffix(".json").read_text())

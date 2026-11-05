@@ -18,7 +18,7 @@ from urllib.parse import quote
 
 BUCKET = "research-storage"
 HOST = "55c1cd021bfa87965a7b6ae1d6fc1fb1.r2.cloudflarestorage.com"
-MIGRATION = Path("/home/yibo/paper1/migration")
+PUBLICATION_RECORDS = Path("/home/yibo/paper1/docs/resources/provenance")
 LOCKS = Path("/home/yibo/shared/cache/locks")
 
 
@@ -148,7 +148,7 @@ def main():
         ledger = reserve(2 * (len(packages) + 4), 4 * (len(packages) + 4) + 8)
         client = S3()
         published = []
-        receipt = MIGRATION / "dataset-publications" / f"{args.dataset}-{args.version}.json"
+        receipt = PUBLICATION_RECORDS / f"dataset-publications-{args.dataset.replace(chr(95), chr(45))}-{args.version}.json"
         previous_attempt = json.loads(receipt.read_text()) if receipt.exists() else None
         prior_requests = (
             previous_attempt.get("requests", {"class_a": 0, "class_b": 0})
@@ -227,7 +227,7 @@ def main():
             status, headers, previous = client.request("GET", pointer)
             if status == 200:
                 save(
-                    MIGRATION / "dataset-publications" / f"{args.dataset}-previous-current.json",
+                    PUBLICATION_RECORDS / f"dataset-publications-{args.dataset.replace(chr(95), chr(45))}-previous-current.json",
                     {"payload": json.loads(previous), "etag": headers.get("etag")},
                 )
                 condition = {"if-match": headers["etag"]}

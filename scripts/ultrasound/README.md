@@ -7,11 +7,11 @@
 ```bash
 ./bin/paper1 identity
 ./bin/paper1 test -q
-./bin/paper1 preflight --output migration/preformal-data-config-validation.json
+./bin/paper1 preflight --output outputs/engineering/preformal-data-config-validation.json
 ./bin/paper1 prepare --method ours \
   --manifest /home/yibo/shared/datasets/synthetic_liver/p100k-native-v2/l1/manifest.json \
   --output /home/yibo/paper1/outputs/formal \
-  --config /home/yibo/paper1/migration/plans/ours-liver-l1.yml
+  --config /home/yibo/paper1/outputs/prepared-configs/ours-liver-l1.yml
 ```
 
 `prepare` 只生成官方 Nerfstudio 配置和检查回执，不启动训练。正式预算为
@@ -24,16 +24,14 @@ Nerfstudio 的 step 从 0 开始，因此第 30,000 次更新的最终评估在 
 当前比较方法为 Ours、UltraGauss、UltraGray、GaussianPile、Slice-adapted
 3DGS、UltraGS、Nerfus、UltraNeRF。模型使用原生 Model/Field，数据通过
 DataParser/DataManager 提供完整切片；训练、调度、检查点由原生 Trainer
-负责，密度控制通过 gsplat Strategy 和优化器状态操作实现。`paper1_legacy`
-仅保留来源代码和配置参考；原生执行不导入其 Engine/Scene/方法注册表。
+负责，密度控制通过 gsplat Strategy 和优化器状态操作实现。旧参考源码已删除；原生执行仅依赖当前 Nerfstudio 和 gsplat 实现。
 早期研究分支不冒充已验收的当前比较方法。
 
 `prepare` 支持 Ours 的局部条件化、全局衰减、增密和剪枝消融选项，以及
 `--pose-mode canonical`。canonical 默认使用冻结的 elevational spacing，
 不从文件位姿估计间距。路径剪枝与关闭全局衰减的矛盾组合直接报错。
 位姿残差、帧权重和 MC 边缘化配置由原生配置类提供，外部输入校验和保存在
-检查点中。离线 `convert_protocols.py` 可以重新解析历史配置以核对原生快照；
-Hydra 不参与原生训练。
+检查点中。一次性旧配置转换工具已退出；原生预设和冻结协议保留，Hydra 不参与原生训练。
 位姿残差与帧权重保持完整源序列的编号和长度，包含 held-out 位姿；图像损失
 仍只使用训练切片。这样保留源协议的时间平滑和外部先验语义。
 

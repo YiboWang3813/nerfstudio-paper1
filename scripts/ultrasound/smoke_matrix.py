@@ -30,7 +30,7 @@ def main():
 
         root = Path("/home/yibo/paper1")
         output = root / "outputs/preformal-smoke"
-        receipt = root / "migration/native-matrix-smoke.json"
+        receipt = root / "outputs/engineering/native-matrix-smoke.json"
         if args.dataset or args.method:
             receipt = receipt.with_name(
                 "native-matrix-smoke-"

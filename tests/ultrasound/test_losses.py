@@ -1,51 +1,34 @@
-"""Check the native loss against the preserved algorithm without loading its runtime."""
+"""Native loss and schedule contracts, independent of retired source code."""
 
-import ast
-from pathlib import Path
-
-import numpy as np
 import torch
-import torch.nn.functional as F
-from torch import nn
 
 from nerfstudio.engine.ultrasound_scheduler import UltrasoundExponentialSchedulerConfig
 from nerfstudio.model_components.ultrasound_losses import UltrasoundSSIM
 
 
 def test_native_schedule_preserves_one_based_update_timing():
-    source = Path(__file__).resolve().parents[2] / "paper1_legacy/gaussian/lr_scheduler_manager.py"
-    node = next(
-        node
-        for node in ast.parse(source.read_text()).body
-        if isinstance(node, ast.FunctionDef) and node.name == "get_expon_lr_func"
-    )
-    namespace = {"np": np}
-    exec(compile(ast.Module(body=[node], type_ignores=[]), str(source), "exec"), namespace)
-    expected = namespace["get_expon_lr_func"](1.6e-4, 1.6e-5, max_steps=30000)
-    optimizer = torch.optim.Adam([torch.nn.Parameter(torch.zeros(1))], lr=1.6e-4)
-    scheduler = UltrasoundExponentialSchedulerConfig().setup().get_scheduler(optimizer, 1.6e-4)
+    initial = 1.6e-4
+    optimizer = torch.optim.Adam([torch.nn.Parameter(torch.zeros(1))], lr=initial)
+    scheduler = UltrasoundExponentialSchedulerConfig().setup().get_scheduler(optimizer, initial)
     for step in (0, 1, 29998, 29999, 50000):
-        actual = scheduler.lr_lambdas[0](step) * 1.6e-4
-        assert abs(actual - expected(step + 1)) < 1e-12
+        expected = initial * 0.1 ** min((step + 1) / 30000, 1)
+        actual = scheduler.lr_lambdas[0](step) * initial
+        assert abs(actual - expected) < 1e-12
 
 
-def test_ssim_matches_frozen_loss_and_gradient():
-    source = Path(__file__).resolve().parents[2] / "paper1_legacy/utils/loss/image_loss.py"
-    node = next(
-        node
-        for node in ast.parse(source.read_text()).body
-        if isinstance(node, ast.ClassDef) and node.name == "SSIMLoss"
-    )
-    node.decorator_list = []
-    module = ast.Module(body=[node], type_ignores=[])
-    namespace = {"torch": torch, "nn": nn, "F": F}
-    exec(compile(module, str(source), "exec"), namespace)
+def test_ssim_identity_and_directional_gradient():
     torch.manual_seed(4)
-    pred = (torch.randn(2, 1, 19, 23) * 0.7).requires_grad_()
-    target = torch.rand_like(pred)
-    expected = namespace["SSIMLoss"]()(pred, target)
-    actual = 1 - UltrasoundSSIM()(pred, target)
-    torch.testing.assert_close(actual, expected, atol=1e-7, rtol=1e-7)
-    torch.testing.assert_close(
-        torch.autograd.grad(actual, pred)[0], torch.autograd.grad(expected, pred)[0], atol=1e-7, rtol=1e-6
-    )
+    metric = UltrasoundSSIM().double()
+    target = torch.rand(2, 3, 19, 23, dtype=torch.float64)
+    torch.testing.assert_close(metric(target, target), torch.ones((), dtype=torch.float64))
+    pred = (torch.randn_like(target) * 0.7).requires_grad_()
+    loss = 1 - metric(pred, target)
+    gradient = torch.autograd.grad(loss, pred)[0]
+    assert torch.isfinite(loss) and torch.isfinite(gradient).all()
+    direction = torch.randn_like(pred)
+    direction /= direction.norm()
+    epsilon = 1e-5
+    with torch.no_grad():
+        difference = metric(pred - epsilon * direction, target) - metric(pred + epsilon * direction, target)
+        numerical = difference / (2 * epsilon)
+    torch.testing.assert_close((gradient * direction).sum(), numerical, atol=1e-8, rtol=1e-5)

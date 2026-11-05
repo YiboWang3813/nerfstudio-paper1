@@ -24,6 +24,7 @@ FIGURE_DIR = OUT_ROOT / "figures"
 MANIFEST_DIR = OUT_ROOT / "manifests"
 CONFIG_PATH = OUT_ROOT / "2d_rendering_figure_config_tmi_v2.md"
 
+FROZEN_MANIFEST = None
 YELLOW = "#FFD54F"
 SUMMARY_FILES = [
     "gs_stage2_fixed_subset_per_run.tsv",
@@ -81,6 +82,13 @@ def _setup_style() -> None:
 
 def _read_rows() -> dict[tuple[str, str, str], dict[str, str]]:
     rows: dict[tuple[str, str, str], dict[str, str]] = {}
+    if FROZEN_MANIFEST is not None:
+        manifest = json.loads(FROZEN_MANIFEST.read_text())
+        return {
+            (panel["dataset"], panel["sweep"], panel["method"]): {"output_dir": panel["run_directory"]}
+            for panel in manifest["panels"]
+            if panel["method"] != "gt"
+        }
     for name in SUMMARY_FILES:
         with (TABLE_ROOT / name).open(newline="", encoding="utf-8") as handle:
             for row in csv.DictReader(handle, delimiter="\t"):

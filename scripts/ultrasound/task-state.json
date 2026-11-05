@@ -32,11 +32,11 @@
     "scientific_full_budget": "not started; outside this authorized stopping point"
   },
   "validation_artifacts": [
-    "/home/yibo/paper1/migration/contracts-2caa7953-e75ec98f.log",
-    "/home/yibo/paper1/migration/realdata-2caa7953-e75ec98f.json",
-    "/home/yibo/paper1/migration/realdata-2caa7953-e75ec98f.log",
-    "/home/yibo/paper1/migration/protocols-2caa7953-e75ec98f.json",
-    "/home/yibo/paper1/migration/cli-2caa7953-e75ec98f.json"
+    "/home/yibo/paper1/docs/resources/maintenance-assets/execution-records/contracts-2caa7953-e75ec98f.log",
+    "/home/yibo/paper1/docs/resources/provenance/local-realdata-2caa7953-e75ec98f.json",
+    "/home/yibo/paper1/docs/resources/maintenance-assets/execution-records/realdata-2caa7953-e75ec98f.log",
+    "/home/yibo/paper1/docs/resources/provenance/local-protocols-2caa7953-e75ec98f.json",
+    "/home/yibo/paper1/docs/resources/provenance/local-cli-2caa7953-e75ec98f.json"
   ],
   "cloud": {
     "class_a_request_attempts": 87,
@@ -54,7 +54,7 @@
     "Historical experiment weights",
     "Historical manuscripts, figures and result migration"
   ],
-  "administrative_status_file": "/home/yibo/paper1/migration/registry-registration.json",
+  "administrative_status_file": "/home/yibo/paper1/docs/resources/provenance/local-registry-registration.json",
   "prior_stage_snapshot": {
     "schema_version": 1,
     "task": "paper1-native-ultrasound-refactor",
@@ -91,10 +91,10 @@
       "scientific": "full method/config/metric coverage plus frozen full-budget experiments; not yet achieved"
     },
     "validation_artifacts": [
-      "/home/yibo/paper1/migration/native-final-tests.log",
-      "/home/yibo/paper1/migration/four-dataset-native-smoke.json",
-      "/home/yibo/paper1/migration/liver-global-native-smoke.log",
-      "/home/yibo/paper1/migration/cuda-build-final.log"
+      "/home/yibo/paper1/docs/resources/maintenance-assets/execution-records/native-final-tests.log",
+      "/home/yibo/paper1/docs/resources/provenance/local-four-dataset-native-smoke.json",
+      "/home/yibo/paper1/docs/resources/maintenance-assets/execution-records/liver-global-native-smoke.log",
+      "/home/yibo/paper1/docs/resources/maintenance-assets/execution-records/cuda-build-final.log"
     ],
     "cloud": {
       "r2_requests_by_this_task": 0,

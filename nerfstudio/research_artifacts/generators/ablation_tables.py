@@ -167,7 +167,7 @@ def load_sources(rel, section):
             assert dc["responsibility"]["protect_attenuation_mode"] == "path_contribution"
         item = dict(dataset=DS[r["dataset"]], case_id=r["sweep"], variant=newlabel)
         if section == "joint":
-            item.update(AFGM=a, PLGR=l, CGAS=g)
+            item.update(AFGM=a, PLGR=local_enabled, CGAS=g)
         item.update({m: D(r["final_" + m.lower()]) for m in MET})
         item.update(
             final_G=D(r["final_num_gaussians"]),

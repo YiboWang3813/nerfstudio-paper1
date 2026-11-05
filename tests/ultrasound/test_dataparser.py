@@ -54,3 +54,49 @@ def test_rejects_leakage_and_modified_payload(manifest):
         stream.write(b"modified")
     with pytest.raises(ValueError, match="checksum"):
         UltrasoundDataParserConfig(data=manifest).setup().get_dataparser_outputs("train")
+
+
+@pytest.mark.parametrize("mode,expected", [("file_step_norm", [2.5, 5.5]), ("file_axis_projection", [2.0, -1.0])])
+def test_nonuniform_canonical_spacing_preserves_source_steps_and_holdout(manifest, mode, expected):
+    import hashlib  # noqa: PLC0415 - import under the shared-runtime lock
+
+    import numpy as np  # noqa: PLC0415 - import under the shared-runtime lock
+
+    data = json.loads(manifest.read_text())
+    pose_file = manifest.parent / data["splits"]["train"]["poses"]["path"]
+    poses = np.load(pose_file)
+    poses[:4, :3, 3] = [[0, 0, 0], [3, 0, 4], [3, 0, 2], [3, 0, -2]]
+    np.save(pose_file, poses)
+    digest = hashlib.sha256(pose_file.read_bytes()).hexdigest()
+    for split in data["splits"].values():
+        split["poses"]["sha256"] = digest
+    manifest.write_text(json.dumps(data))
+    parser = UltrasoundDataParserConfig(
+        data=manifest,
+        pose_mode="canonical",
+        canonical_spacing_mm=1.0,
+        canonical_reference_frame_id=100,
+        canonical_spacing_mode=mode,
+        canonical_spacing_scale=0.5,
+    ).setup()
+    output = parser.get_dataparser_outputs("test")
+    torch.testing.assert_close(output.cameras.camera_to_worlds[:, 2, 3], torch.tensor(expected))
+
+
+def test_default_uniform_canonical_identity_keeps_existing_checkpoint_contract(manifest):
+    import hashlib  # noqa: PLC0415 - import under the shared-runtime lock
+
+    cfg = UltrasoundDataParserConfig(data=manifest, pose_mode="canonical", canonical_spacing_mm=2.0)
+    output = cfg.setup().get_dataparser_outputs("train")
+    old_identity = {
+        "manifest_sha256": hashlib.sha256(manifest.read_bytes()).hexdigest(),
+        "pose_mode": "canonical",
+        "canonical_spacing_mm": 2.0,
+        "canonical_axis": "z",
+        "canonical_reference_frame_id": 0,
+        "pose_validation": "rigid",
+    }
+    assert (
+        output.metadata["parser_identity_sha256"]
+        == hashlib.sha256(json.dumps(old_identity, sort_keys=True).encode()).hexdigest()
+    )

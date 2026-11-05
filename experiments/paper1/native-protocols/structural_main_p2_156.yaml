@@ -1,0 +1,305 @@
+!!python/object:nerfstudio.engine.trainer.TrainerConfig
+_target: !!python/name:nerfstudio.engine.trainer.Trainer ''
+data: null
+experiment_name: tus_rec_2024_qc-010_LH_Per_L_DtP_qc_0005_0370
+gradient_accumulation_steps: {}
+load_checkpoint: null
+load_config: null
+load_dir: null
+load_scheduler: true
+load_step: null
+log_gradients: false
+logging: !!python/object:nerfstudio.configs.base_config.LoggingConfig
+  local_writer: !!python/object:nerfstudio.configs.base_config.LocalWriterConfig
+    _target: !!python/name:nerfstudio.utils.writer.LocalWriter ''
+    enable: true
+    max_log_size: 10
+    stats_to_track: !!python/tuple
+    - !!python/object/apply:nerfstudio.utils.writer.EventName
+      - Train Iter (time)
+    - !!python/object/apply:nerfstudio.utils.writer.EventName
+      - Train Rays / Sec
+    - !!python/object/apply:nerfstudio.utils.writer.EventName
+      - Test PSNR
+    - !!python/object/apply:nerfstudio.utils.writer.EventName
+      - Vis Rays / Sec
+    - !!python/object/apply:nerfstudio.utils.writer.EventName
+      - Test Rays / Sec
+    - !!python/object/apply:nerfstudio.utils.writer.EventName
+      - ETA (time)
+  max_buffer_size: 20
+  profiler: basic
+  relative_log_dir: !!python/object/apply:pathlib.PosixPath []
+  steps_per_log: 10
+machine: !!python/object:nerfstudio.configs.base_config.MachineConfig
+  device_type: cuda
+  dist_url: auto
+  machine_rank: 0
+  num_devices: 1
+  num_machines: 1
+  seed: 42
+max_num_iterations: 30000
+method_name: ultrasound-ours
+mixed_precision: false
+optimizers:
+  attenuations:
+    optimizer: !!python/object:nerfstudio.engine.optimizers.AdamOptimizerConfig
+      _target: &id001 !!python/name:torch.optim.adam.Adam ''
+      eps: 1.0e-15
+      lr: 0.01
+      max_norm: null
+      weight_decay: 0
+    scheduler: null
+  echo_alphas:
+    optimizer: !!python/object:nerfstudio.engine.optimizers.AdamOptimizerConfig
+      _target: *id001
+      eps: 1.0e-15
+      lr: 0.08
+      max_norm: null
+      weight_decay: 0
+    scheduler: null
+  means:
+    optimizer: !!python/object:nerfstudio.engine.optimizers.AdamOptimizerConfig
+      _target: *id001
+      eps: 1.0e-15
+      lr: 0.00016
+      max_norm: null
+      weight_decay: 0
+    scheduler: !!python/object:nerfstudio.engine.ultrasound_scheduler.UltrasoundExponentialSchedulerConfig
+      _target: !!python/name:nerfstudio.engine.ultrasound_scheduler.UltrasoundExponentialScheduler ''
+      clamp_at_final: true
+      final_factor: 0.1
+      first_update: 1
+      max_steps: 30000
+  quats:
+    optimizer: !!python/object:nerfstudio.engine.optimizers.AdamOptimizerConfig
+      _target: *id001
+      eps: 1.0e-15
+      lr: 0.001
+      max_norm: null
+      weight_decay: 0
+    scheduler: null
+  scales:
+    optimizer: !!python/object:nerfstudio.engine.optimizers.AdamOptimizerConfig
+      _target: *id001
+      eps: 1.0e-15
+      lr: 0.005
+      max_norm: null
+      weight_decay: 0
+    scheduler: null
+output_dir: !!python/object/apply:pathlib.PosixPath
+- /
+- home
+- yibo
+- paper1
+- outputs
+- paper-protocol-reproduction
+pipeline: !!python/object:nerfstudio.pipelines.ultrasound.UltrasoundPipelineConfig
+  _target: !!python/name:nerfstudio.pipelines.ultrasound.UltrasoundPipeline ''
+  datamanager: !!python/object:nerfstudio.data.datamanagers.ultrasound_datamanager.UltrasoundDataManagerConfig
+    _target: !!python/name:nerfstudio.data.datamanagers.ultrasound_datamanager.UltrasoundDataManager ''
+    data: null
+    dataparser: !!python/object:nerfstudio.data.dataparsers.ultrasound_dataparser.UltrasoundDataParserConfig
+      _target: !!python/name:nerfstudio.data.dataparsers.ultrasound_dataparser.UltrasoundDataParser ''
+      canonical_axis: z
+      canonical_reference_frame_id: 0
+      canonical_spacing_mm: 0.0
+      canonical_spacing_mode: uniform
+      canonical_spacing_scale: 1.0
+      data: !!python/object/apply:pathlib.PosixPath
+      - /
+      - home
+      - yibo
+      - shared
+      - datasets
+      - tus_rec_2024_qc
+      - p100k-native-v2
+      - 010_LH_Per_L_DtP_qc_0005_0370
+      - manifest.json
+      pose_mode: file
+      pose_validation: rigid
+      verify_hashes: true
+    images_on_gpu: false
+    masks_on_gpu: false
+    seed: 42
+  evaluation_output: !!python/object/apply:pathlib.PosixPath
+  - /
+  - home
+  - yibo
+  - paper1
+  - outputs
+  - paper-protocol-reproduction
+  - tus_rec_2024_qc-010_LH_Per_L_DtP_qc_0005_0370
+  - ultrasound-ours
+  - 2026-11-05_131555
+  - evaluation
+  initial_quats_wxyz:
+  - 1.0
+  - 0.0
+  - 0.0
+  - 0.0
+  initial_scales_mm:
+  - 0.3
+  - 0.3
+  - 0.3
+  intensity_threshold: 0.03
+  jitter_radius_mm: 0.2
+  model: !!python/object:nerfstudio.models.ultrasound.UltrasoundModelConfig
+    _target: !!python/name:nerfstudio.models.ultrasound.UltrasoundModel ''
+    attenuation_max: 1.0
+    collider_params:
+      far_plane: 6.0
+      near_plane: 2.0
+    density: !!python/object:gsplat.strategy.ultrasound.UltrasoundStrategy
+      densification: residual_guided
+      densify: true
+      enabled: true
+      gradient_threshold: 1.5e-05
+      high_residual_quantile: 0.9
+      low_contribution_quantile: 0.1
+      max_fraction: 0.05
+      max_scale_mm: 0.0
+      min_score: 1.0e-06
+      path_contribution_quantile: 0.8
+      path_threshold: 0.0
+      path_threshold_mode: quantile
+      prune_echo_alpha: 0.0001
+      pruning: local_aware
+      refine_every: 2000
+      refine_start: 1000
+      refine_stop: 25000
+      score_quantile: 0.98
+      split_scale_mm: 0.6
+    echo_alpha_max: 0.2
+    enable_collider: false
+    eval_num_rays_per_chunk: 4096
+    full_metrics: true
+    initial_attenuation: 0.02
+    initial_echo_alpha: 0.1
+    initial_scale_mm: 0.3
+    l1_weight: 0.8
+    loss_coefficients:
+      rgb_loss_coarse: 1.0
+      rgb_loss_fine: 1.0
+    num_gaussians: 1000000
+    pose: !!python/object:nerfstudio.cameras.ultrasound_poses.UltrasoundPoseConfig
+      enabled: false
+      end_iter: -1
+      eval_train_count: 64
+      lambda_prior: 0.0
+      lambda_prior_rot: null
+      lambda_prior_trans: null
+      lambda_smooth_rot: 0.0
+      lambda_smooth_trans: 0.0
+      log_interval: 500
+      lr: 3.0e-05
+      lr_rot: null
+      lr_trans: null
+      noise_enabled: false
+      noise_rot_deg: 0.0
+      noise_seed: 20260526
+      noise_trans_mm: 0.0
+      optimize_rotation: true
+      optimize_translation: true
+      pose_only_end_iter: -1
+      pose_only_start_iter: -1
+      prior_poses_abspath: ''
+      residual_bound_rot_deg: 0.0
+      residual_bound_trans_mm: 0.0
+      start_iter: 0
+      trainable: false
+    prompt: null
+    renderer: !!python/object:gsplat.ultrasound.types.UltrasoundRenderConfig
+      H: 1
+      W: 1
+      axial_near_mm: 0.0
+      axial_spacing_mm_per_pix: 1.0
+      compositing_mode: additive
+      elev_corridor_half_mm: 0.202
+      enable_input_checks: false
+      fixed_bg_color: 0.0
+      k_sigma: 2.5
+      lateral_spacing_mm_per_pix: 1.0
+      local_conditioning_mode: adaptive
+      mapper_kind: tile
+      mapper_sort_by_v: false
+      num_pixels_axial: 5
+      num_pixels_lateral: 5
+      ray_attenuation_axial_margin_mm: 0.0
+      ray_attenuation_beta: 0.8
+      ray_attenuation_candidate_k_sigma: 2.0
+      ray_attenuation_enabled: false
+      ray_attenuation_formula: integral
+      ray_attenuation_mapper_kind: ray_csr
+      ray_attenuation_min_transmission: 0.35
+      ray_attenuation_quadrature_points: 3
+      ray_attenuation_quadrature_window_mm: 2.0
+      ray_attenuation_source: attenuation
+      ray_attenuation_strength: 0.55
+      ray_attenuation_weight_min: 0.0001
+      render_chunk_size: 256
+      shader_weight_mode: us_focus
+      slab_half_thickness_mm: 0.0
+      tile_size_px: 8
+      us_focus_det_eps: 1.0e-06
+      us_focus_det_gamma: 0.25
+      us_focus_inflate_ax_mm: 0.0
+      us_focus_inflate_lat_mm: 0.0
+      us_focus_sigma_ele_0: 1.0
+      us_focus_sigma_ele_1: 0.01
+      us_focus_sigma_ele_max: 5.0
+      us_focus_sigma_ele_min: 0.8
+      us_focus_sigma_lat_0: 0.8
+      us_focus_sigma_lat_1: 0.002
+      us_focus_sigma_lat_max: 3.0
+      us_focus_sigma_lat_min: 0.4
+      us_focus_use_lateral_focus: false
+      us_focus_weight_min: 1.0e-06
+    scale_max_mm: 3.0
+    scale_min_mm: 0.05
+    ssim_weight: 0.2
+    uncertainty: !!python/object:nerfstudio.cameras.ultrasound_poses.UltrasoundUncertaintyConfig
+      alpha: 1.0
+      decouple_density_control: true
+      enabled: false
+      image_loss_names: !!python/tuple
+      - l1
+      - ssim
+      - mse
+      - lpips
+      log_interval: 500
+      max_weight: 1.0
+      mc_enabled: false
+      mc_rot_sigma_deg: 0.0
+      mc_samples: 2
+      mc_trans_sigma_mm: 0.0
+      min_weight: 0.1
+      uncertainty_abspath: ''
+      weight_mode: direct
+  uniform_ratio: 0.3
+project_name: nerfstudio-project
+prompt: null
+relative_model_dir: !!python/object/apply:pathlib.PosixPath
+- nerfstudio_models
+save_only_latest_checkpoint: true
+start_paused: false
+steps_per_eval_all_images: 29999
+steps_per_eval_batch: 0
+steps_per_eval_image: 0
+steps_per_save: 30000
+timestamp: prepared-structural_main_p2_156
+use_grad_scaler: false
+viewer: !!python/object:nerfstudio.configs.base_config.ViewerConfig
+  camera_frustum_scale: 0.1
+  default_composite_depth: true
+  image_format: jpeg
+  jpeg_quality: 75
+  make_share_url: false
+  max_num_display_images: 512
+  num_rays_per_chunk: 32768
+  quit_on_train_completion: false
+  relative_log_filename: viewer_log_filename.txt
+  websocket_host: 0.0.0.0
+  websocket_port: null
+  websocket_port_default: 7007
+vis: tensorboard

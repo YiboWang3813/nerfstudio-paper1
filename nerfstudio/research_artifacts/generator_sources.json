@@ -1,0 +1,55 @@
+[
+  {
+    "module": "ablation_tables",
+    "source": "/home/yibo/paper1/nerfstudio/experiments/paper1/source_reference/eehpc-20261105/source_workspace/omniultra/scripts/production/ablations/ours/final_ablation_tables.py",
+    "source_sha256": "001c804f0c7bc8ba54e3187266756818ce72f41aab6873fcd33d776af131d84c",
+    "changes": "Scientific arithmetic retained; source-workspace Hydra audit replaced with explicit native config translation audit; portable local evidence routing"
+  },
+  {
+    "module": "main_table",
+    "source": "/home/yibo/paper1/nerfstudio/experiments/paper1/source_reference/eehpc-20261105/source_workspace/omniultra/scripts/production/ablations/ours/main_comparison_evidence.py",
+    "source_sha256": "f05adf01dfa98d2211d586af12de3a626fa4ea6a90a68cf0f0f427ae9bc28819",
+    "changes": "Scientific arithmetic retained; source-workspace Hydra audit replaced with explicit native config translation audit; portable local evidence routing"
+  },
+  {
+    "module": "hyperparameters_tmi",
+    "source": "/home/yibo/paper1/nerfstudio/experiments/paper1/source_reference/eehpc-20261105/source_workspace/omniultra/scripts/production/ablations/ours/final_hyperparameter_figures_ieee_tmi.py",
+    "source_sha256": "e46d093d35fd0be6ba40fc25112cd210e0c6fa376546d9bde0cffbc9d77605b5",
+    "changes": "Scientific plotting calculations retained; portable package imports, local source routing, isolated object outputs, style formatting"
+  },
+  {
+    "module": "hyperparameters_original",
+    "source": "/home/yibo/paper1/nerfstudio/experiments/paper1/source_reference/eehpc-20261105/source_workspace/omniultra/scripts/production/ablations/ours/final_hyperparameter_figures.py",
+    "source_sha256": "0780ca9292cc8bd60a44874e892aa9996e3aea4a848094acc8e07bb3f7a58393",
+    "changes": "Scientific plotting calculations retained; portable package imports, local source routing, isolated object outputs, style formatting"
+  },
+  {
+    "module": "hyperparameters_endo_h12",
+    "source": "/home/yibo/paper1/nerfstudio/experiments/paper1/source_reference/eehpc-20261105/source_workspace/omniultra/scripts/production/ablations/ours/final_hyperparameter_h1_h2_endogaussian.py",
+    "source_sha256": "74090e7d54cf0f93ca20736eb1341e1f381b74d0700a3dff9a38cb2b58425c89",
+    "changes": "Scientific plotting calculations retained; portable package imports, local source routing, isolated object outputs, style formatting"
+  },
+  {
+    "module": "hyperparameters_endo_h3",
+    "source": "/home/yibo/paper1/nerfstudio/experiments/paper1/source_reference/eehpc-20261105/source_workspace/omniultra/scripts/production/ablations/ours/final_hyperparameter_h3_endo_style.py",
+    "source_sha256": "a77799357d2e74b7a7e8c8e62f30475db8e65b9bfcd7042ba327aa058e9950d1",
+    "changes": "Scientific plotting calculations retained; portable package imports, local source routing, isolated object outputs, style formatting"
+  },
+  {
+    "module": "comparison_2d_tmi",
+    "source": "/home/yibo/paper1/nerfstudio/experiments/paper1/source_reference/eehpc-20261105/source_workspace/omniultra/scripts/production/comparisons/us_recon_four_dataset_p100k_v1/make_tmi_all_datasets_2d_rendering_v2.py",
+    "source_sha256": "6289a7a7c6c57fd3413ea84657cd997a9e247e7c287923d333a0b53e1b59057e",
+    "changes": "Scientific plotting calculations retained; portable package imports, local source routing, isolated object outputs, style formatting"
+  },
+  {
+    "module": "comparison_2d_original",
+    "source": "/home/yibo/paper1/nerfstudio/experiments/paper1/source_reference/eehpc-20261105/source_workspace/omniultra/scripts/production/comparisons/us_recon_four_dataset_p100k_v1/make_paper_2d_rendering_figures.py",
+    "source_sha256": "cca05b24d1e50a41ef98e39fa5d908465383cbc0e09a7ce442e9abee3a968a08",
+    "changes": "Scientific plotting calculations retained; portable package imports, local source routing, isolated object outputs, style formatting"
+  },
+  {
+    "module": "audit_panel_alignment",
+    "source": "eehpc:/home/boywang25/.codex/skills/nature-figure/scripts/audit_panel_alignment.py",
+    "source_sha256": "43958e6b49d897f326ff64e73cbed0bf057e17c06533b5b57d3dededf8111e76"
+  }
+]

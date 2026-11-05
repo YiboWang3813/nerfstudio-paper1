@@ -167,6 +167,7 @@ pythonVersion = "3.8"
 pythonPlatform = "Linux"
 
 [tool.ruff]
+extend-exclude = ["experiments/paper1/source_reference"]
 line-length = 120
 respect-gitignore = false
 lint.select = [

@@ -1,0 +1,26 @@
+{
+  "source_workspace": "eehpc:/home/boywang25/ultrasound-scene-reconstruction/omniultra",
+  "source_reference_commit": "8f4eb05563c17cf7dcefe0b50f015f8715e66d8f",
+  "current_methods": [
+    "ours",
+    "ultragauss",
+    "ultragray",
+    "gaussianpile",
+    "slice_adapted_3dgs",
+    "ultrags_baseline",
+    "nerfus",
+    "ultranerf"
+  ],
+  "native_mapping": {
+    "engine": "nerfstudio.engine.trainer.Trainer and nerfstudio.pipelines.ultrasound",
+    "scene": "nerfstudio.data.dataparsers.ultrasound_dataparser / datamanagers.ultrasound_datamanager / datasets.ultrasound_dataset",
+    "gaussian_container_and_solver": "native Model ParameterDict, Nerfstudio Optimizers/Scheduler, gsplat strategies",
+    "ours": "nerfstudio.models.ultrasound and gsplat.ultrasound",
+    "Gaussian_baselines": "nerfstudio.models.ultrasound_baselines, model_components.ultrasound_baselines, gsplat.strategy and CUDA backends",
+    "neural_fields": "nerfstudio.models.ultrasound_fields and native Field implementations",
+    "plotting": "nerfstudio.research_artifacts + results/objects",
+    "protocols": "nerfstudio.configs.paper1_frozen_protocol + experiments/paper1/native-protocols"
+  },
+  "historical_runtime_is_production_dependency": false,
+  "formal_training_started": false
+}

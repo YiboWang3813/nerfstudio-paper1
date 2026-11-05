@@ -23,6 +23,8 @@ class UltrasoundDataParserConfig(DataParserConfig):
     verify_hashes: bool = True
     pose_mode: Literal["file", "canonical"] = "file"
     canonical_spacing_mm: float = 0.0
+    canonical_spacing_mode: Literal["uniform", "file_step_norm", "file_axis_projection"] = "uniform"
+    canonical_spacing_scale: float = 1.0
     canonical_axis: Literal["x", "y", "z"] = "z"
     canonical_reference_frame_id: int = 0
     pose_validation: Literal["rigid", "preserve_source_affine"] = "rigid"
@@ -111,6 +113,24 @@ class UltrasoundDataParser(DataParser):
             domain_poses[:, axis, 3] = (
                 torch.tensor(pose_frame_ids) - self.config.canonical_reference_frame_id
             ) * self.config.canonical_spacing_mm
+            if self.config.canonical_spacing_mode != "uniform":
+                if not complete_domain:
+                    raise ValueError("Nonuniform canonical spacing requires the complete temporal source domain")
+                if self.config.canonical_spacing_scale <= 0:
+                    raise ValueError("Canonical spacing scale must be positive")
+                file_translations = torch.from_numpy(np.array(poses[:, :3, 3], dtype=np.float32))
+                steps = file_translations[1:] - file_translations[:-1]
+                if self.config.canonical_spacing_mode == "file_step_norm":
+                    increments = torch.linalg.vector_norm(steps, dim=-1)
+                elif self.config.canonical_spacing_mode == "file_axis_projection":
+                    increments = steps[:, axis]
+                else:
+                    raise ValueError("Unsupported canonical spacing mode")
+                offsets = torch.cat([torch.zeros(1), increments.cumsum(0)])
+                reference = pose_frame_ids.index(self.config.canonical_reference_frame_id)
+                offsets = (offsets - offsets[reference]) * self.config.canonical_spacing_scale
+                domain_poses[:, axis, 3] = offsets
+                probe_poses = domain_poses[torch.from_numpy(indices)].clone()
         rotation = probe_poses[:, :3, :3]
         if (
             not torch.isfinite(probe_poses).all()
@@ -187,6 +207,9 @@ class UltrasoundDataParser(DataParser):
             "canonical_reference_frame_id": self.config.canonical_reference_frame_id,
             "pose_validation": self.config.pose_validation,
         }
+        if self.config.canonical_spacing_mode != "uniform":
+            parser_identity["canonical_spacing_mode"] = self.config.canonical_spacing_mode
+            parser_identity["canonical_spacing_scale"] = self.config.canonical_spacing_scale
         metadata["parser_identity_sha256"] = hashlib.sha256(
             json.dumps(parser_identity, sort_keys=True).encode()
         ).hexdigest()

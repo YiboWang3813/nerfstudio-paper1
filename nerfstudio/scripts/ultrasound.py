@@ -33,11 +33,17 @@ def main():
 def dispatch():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
-        "command", choices=["identity", "train", "eval", "render", "viewer", "build", "prepare", "preflight", "test"]
+        "command", choices=["identity", "train", "eval", "render", "viewer", "build", "prepare", "preflight", "test", "artifacts"]
     )
     args = parser.parse_args(sys.argv[1:2])
     remaining = sys.argv[2:]
     sources = check_sources()
+    if args.command == "artifacts":
+        from nerfstudio.scripts import paper1_artifacts
+
+        sys.argv = ["paper1 artifacts"] + remaining
+        paper1_artifacts.main()
+        return
     if args.command == "test":
         import pytest
 

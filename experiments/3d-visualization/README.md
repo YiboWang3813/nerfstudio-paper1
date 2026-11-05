@@ -1,14 +1,5 @@
-# 3d-visualization
+# 3d-visualization（历史记录）
 
-本实验目录保存图表工程配置、来源和小型数值；执行代码在 Nerfstudio，原图和运行产物在 outputs。这里保留的是历史实验材料，不代表新代码正式复现。
+此图表或面板不在当前 Mac 文稿中，其原始 outputs 已按用户要求清理；这里只保留轻量历史记录。当前入口是 [文稿来源审计]（历史路径 `../manuscript-source-audit/README.md`，本轮已清理）。
 
-## 历史三维可视化探索与退出论文的决定
-
-- 配置：[historical-3d.json](historical-3d.json)
-- 原始输入与历史导出：[outputs/artifact-inputs/archived_3d_visualizations](../../../outputs/artifact-inputs/archived_3d_visualizations)
-
-历史参考材料，没有独立可执行生成入口。
-
-命令从 paper1 根目录运行。生成内容写入 outputs/artifacts；每次构建保存 artifact-config.json、配置 SHA256、读取的源文件哈希与 build-receipt.json。
-
-配置 parameters 控制生成器已支持的方法顺序、选帧与裁剪、面板或配色；不修改原始运行结果。assets/、exports/ 和 .cache/ 如在本目录生成，均被精确忽略。
+以上标注的历史路径不属于当前 Mac 文稿保留范围；当前图表来源以 manuscript-source-audit 的对应表和保留清单为准。

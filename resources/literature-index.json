@@ -1,0 +1,182 @@
+[
+  {
+    "path": "resources/papers/3dgs-fruitninja-paper.pdf",
+    "bytes": 8109827,
+    "sha256": "81f9afef8aad2b3a795648371387cbf7c2f3ea46bf23591a108b84b570dc68fd",
+    "role": "local literature; ignored by Git"
+  },
+  {
+    "path": "resources/papers/coarse-pose-paper.pdf",
+    "bytes": 12082016,
+    "sha256": "e3ad8799bebc2f79af107561f916894dfde4dddc929a6ccc6200e14aa9646645",
+    "role": "local literature; ignored by Git"
+  },
+  {
+    "path": "resources/papers/dclnet-paper.pdf",
+    "bytes": 1845499,
+    "sha256": "033586aa69192bd9582141d89c6b15767076614f852dad74f04f3b3d8b0438a8",
+    "role": "local literature; ignored by Git"
+  },
+  {
+    "path": "resources/papers/fima-paper.pdf",
+    "bytes": 3480724,
+    "sha256": "3ccda83162004f901a435aaf4a547d91282db7f4ffceb3234affe8457b83f44c",
+    "role": "local literature; ignored by Git"
+  },
+  {
+    "path": "resources/papers/fracture-gs-paper.pdf",
+    "bytes": 10320987,
+    "sha256": "11cf94561cc07c4e4109e5bc28595a9c338aefda8b28e85ee322849470723020",
+    "role": "local literature; ignored by Git"
+  },
+  {
+    "path": "resources/papers/free-splatter-paper.pdf",
+    "bytes": 3686806,
+    "sha256": "25fa588dd68bed7a2536cb628a547c373ec7fc6b57fba80a33588162ea79e941",
+    "role": "local literature; ignored by Git"
+  },
+  {
+    "path": "resources/papers/gaussianpile-paper.pdf",
+    "bytes": 49454725,
+    "sha256": "bf6b92cfdc1ae4fa0a62357d5a6e7838f97f84f6bc409d8b1f1472c33776e719",
+    "role": "local literature; ignored by Git"
+  },
+  {
+    "path": "resources/papers/grrt-paper.pdf",
+    "bytes": 11926075,
+    "sha256": "b5462725479829501d4b91a58b21cea587334c5dd412d7ef6352d9774611e58c",
+    "role": "local literature; ignored by Git"
+  },
+  {
+    "path": "resources/papers/hogs-paper.pdf",
+    "bytes": 3541657,
+    "sha256": "e25cd95bccdd0842c74109696dcd387478eab4893e8eee2caac1eed055386653",
+    "role": "local literature; ignored by Git"
+  },
+  {
+    "path": "resources/papers/litags-paper.pdf",
+    "bytes": 5052742,
+    "sha256": "6b7c156d10cb9380a9b0c6d8d5b5c67929eb272d6dfd10697c688764c7c93faa",
+    "role": "local literature; ignored by Git"
+  },
+  {
+    "path": "resources/papers/long-splat-paper.pdf",
+    "bytes": 5946098,
+    "sha256": "1c66c4c905e820dec26d01a57c8689358558da354a9f20779417d1368f85ae90",
+    "role": "local literature; ignored by Git"
+  },
+  {
+    "path": "resources/papers/loop-sparse-gs-paper.pdf",
+    "bytes": 10799388,
+    "sha256": "dea7428e576ef3f69565a9e730588ad36c6435cece26a174aed9af2fa18157e7",
+    "role": "local literature; ignored by Git"
+  },
+  {
+    "path": "resources/papers/mags-paper.pdf",
+    "bytes": 4834974,
+    "sha256": "a2065c555c6c4ca7209e4a73701c71274648f6a2082b3c0639d4594072ab2a18",
+    "role": "local literature; ignored by Git"
+  },
+  {
+    "path": "resources/papers/nerfus-dagli24a.pdf",
+    "bytes": 11696508,
+    "sha256": "50d0ed2cac7c761fb53a5f6b622c86b6df4ad41d973631105b78243123348ec1",
+    "role": "local literature; ignored by Git"
+  },
+  {
+    "path": "resources/papers/no-pose-no-problem-paper.pdf",
+    "bytes": 6008167,
+    "sha256": "143284931bcecb63de8d8e75c7808f6f788c4ca0b864435dc59c0d41b1ccb216",
+    "role": "local literature; ignored by Git"
+  },
+  {
+    "path": "resources/papers/nopo-room-paper.pdf",
+    "bytes": 2686280,
+    "sha256": "0d4f1c54774cdcfe2a4f2bfa71b0875e43f9171420db6a998a2c58ee1eb5ee97",
+    "role": "local literature; ignored by Git"
+  },
+  {
+    "path": "resources/papers/pcr-gs-paper.pdf",
+    "bytes": 6817106,
+    "sha256": "f65d8c8abdd1072cdb1378629cbd8731859f451db9ccd7367b98e6cd2ff428b8",
+    "role": "local literature; ignored by Git"
+  },
+  {
+    "path": "resources/papers/phys-splat-paper.pdf",
+    "bytes": 26905118,
+    "sha256": "2b7b6b12111ad5619709944368501d0bf56cfdaff9842fb84d3a01f104b90aed",
+    "role": "local literature; ignored by Git"
+  },
+  {
+    "path": "resources/papers/robust-pose-estimation-paper.pdf",
+    "bytes": 19851780,
+    "sha256": "2ecdbcfd5a3296df7bf57bac8778ac878fb49643887ba57627fb2895249ad406",
+    "role": "local literature; ignored by Git"
+  },
+  {
+    "path": "resources/papers/sdhnet-paper.pdf",
+    "bytes": 9847973,
+    "sha256": "0bb827730bcf5f51cfe1e8d5c7978771d4cf804c5fcbfa74afbd677bb1673bc1",
+    "role": "local literature; ignored by Git"
+  },
+  {
+    "path": "resources/papers/steam-gs-paper.pdf",
+    "bytes": 1836743,
+    "sha256": "833b8ae1e679867c40db364a1497daa3187b03d4a1bfb0a91dedec50d4f718a0",
+    "role": "local literature; ignored by Git"
+  },
+  {
+    "path": "resources/papers/topo4d-paper.pdf",
+    "bytes": 14804633,
+    "sha256": "ec72fe431f77923a41dcbc3b54a48f1fb17202cfb1956cb34aba46f27dce0d7f",
+    "role": "local literature; ignored by Git"
+  },
+  {
+    "path": "resources/papers/tus-rec-2024-summary.pdf",
+    "bytes": 9712519,
+    "sha256": "499a29f6739712f74b9c4b6e93b8744f660fed93ffcda094edf5cd48966f63d6",
+    "role": "local literature; ignored by Git"
+  },
+  {
+    "path": "resources/papers/ultragray-paper.pdf",
+    "bytes": 15626617,
+    "sha256": "7c5a9491f499ce7a5215b4116e8a2d4f7cff817637454d7b03f5de2a96cdc4f1",
+    "role": "local literature; ignored by Git"
+  },
+  {
+    "path": "resources/papers/ultrags-paper.pdf",
+    "bytes": 3186237,
+    "sha256": "ade764ad06c56b542d0648cc141ea2fae3ee31de297c20cec0638c9ad3ffeed3",
+    "role": "local literature; ignored by Git"
+  },
+  {
+    "path": "resources/papers/ultranerf-paper.pdf",
+    "bytes": 4896414,
+    "sha256": "ad6d10738e9da56b4c25aeac2a652e376d2da4365740a56207219691ab03c99a",
+    "role": "local literature; ignored by Git"
+  },
+  {
+    "path": "resources/research-notes/dynamic-notes-and-ideas.zip",
+    "bytes": 409045,
+    "sha256": "2aa9ccdee3a1b2c32353ac50a030494455e415ddd24a43b6da364eb8774e5c63",
+    "role": "local literature; ignored by Git"
+  },
+  {
+    "path": "resources/research-notes/foundation-notes-and-ideas.zip",
+    "bytes": 23609,
+    "sha256": "d9ad1d224f865042a553c6ed030e4a6d91322cd04ba4925ef82aefd268b792c6",
+    "role": "local literature; ignored by Git"
+  },
+  {
+    "path": "resources/research-notes/sparse-notes-and-ideas.zip",
+    "bytes": 211454,
+    "sha256": "31a6c6279c63a3dcfdef47e94ed5af5b1ba559b853931da99cfe655755b79da3",
+    "role": "local literature; ignored by Git"
+  },
+  {
+    "path": "resources/research-notes/uncertainty-notes-and-ideas.zip",
+    "bytes": 40115,
+    "sha256": "4047d303e2716721654e4be779301d712d7996c0fca407e9d3e8e85055a3ec21",
+    "role": "local literature; ignored by Git"
+  }
+]

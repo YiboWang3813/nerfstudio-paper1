@@ -40,7 +40,11 @@
 ## 当前资产来源
 
 - [冻结输入包与 SHA256](provenance/evidence-packages.json)
-- [原 results Git 历史](provenance/results-history.json)
+- [原 results Git 历史](provenance/paper-evidence.json)
 - [当前目录迁移映射](provenance/artifact-storage-map.json)
 
 完整逐文件源清单在 outputs/provenance/source-catalog，保留原始记录身份；不将大规模 JSONL 当作文档日常文件跟踪。
+
+文献 PDF 与研究笔记 ZIP 仅本机保留，不再进入 Git；题录文件名、大小与 SHA256 见 [literature-index.json](literature-index.json)。
+
+详细迁移日志、清单和回执已分类到本目录 maintenance-assets（忽略）与 provenance（轻量记录）；原 migration 顶层目录已删除。旧 Git 证据数据库已由逐项验证的论文 run ZIP 取代。

@@ -1,0 +1,170 @@
+{
+  "status": "publishing",
+  "dataset": "tdsc_abus_2023",
+  "version": "p100k-native-v2",
+  "request_reservation_ledger": "/home/yibo/shared/cache/r2/request-budget-2026-11.json",
+  "packages": [
+    {
+      "sweep": "validation_100",
+      "key": "shared/datasets/tdsc_abus_2023/p100k-native-v2/validation_100.zip",
+      "sha256": "5977f45f7cf850472153d990d44f5e9a7b0df3f73f233d4bbb01b61acfb128f4",
+      "size_bytes": 27059557,
+      "files": {
+        "images.npy": "f8183af8e126b9265562daef337f0d1bbc2b75131ca10ecfdc8e33165d8d6a1a",
+        "metadata.json": "844529da7b82ca6f338ce79c740fe78bb272ea53c18164c4dda37ecbbe3cdbc9",
+        "poses.npy": "5b8ec0342f59cea4fca10f0ecd033c33c5aac12941b5f6e48df1c9859db2d336",
+        "relative_poses.npy": "5b8ec0342f59cea4fca10f0ecd033c33c5aac12941b5f6e48df1c9859db2d336",
+        "manifest.json": "2943fb61cfd42a5a5a0ac7f7e2a0b7e1fa4b7c6cb5885fc8efd5b5ded6ee348b"
+      }
+    },
+    {
+      "sweep": "validation_101",
+      "key": "shared/datasets/tdsc_abus_2023/p100k-native-v2/validation_101.zip",
+      "sha256": "f4e46e020c66e701cbc6d1147d9d13f5c4377aa36f6a0485847fed5af6a86a32",
+      "size_bytes": 23695314,
+      "files": {
+        "images.npy": "998e7440f04d4ebb1c3b343627968793a3283f9920c17a6f4adc1376067061d0",
+        "metadata.json": "ea78f32ab3ef3e1bf6dbaee84bf81434a49e028a9a6c532671ffab4d73e3d1b0",
+        "poses.npy": "4390c0b336b9c73a63ff8bf0141932e43495616064169edc62db40ec5a075ee0",
+        "relative_poses.npy": "4390c0b336b9c73a63ff8bf0141932e43495616064169edc62db40ec5a075ee0",
+        "manifest.json": "197c5ee62bf9ef3a5889e93540bbff0dfe3f44e7d397535bda5af914297ac2ad"
+      }
+    },
+    {
+      "sweep": "validation_102",
+      "key": "shared/datasets/tdsc_abus_2023/p100k-native-v2/validation_102.zip",
+      "sha256": "b5d9d948bdc229b63d6824ba188ab17be08f8b52831058ed3797402eabb87254",
+      "size_bytes": 24760250,
+      "files": {
+        "images.npy": "6a322934057f83803976319d6a00e600fdd35537688182624f98864aed53daec",
+        "metadata.json": "14b57b3a0dff6551dcb9879b0a5c46752872d72a2f0c7c704d1423c50dbb45d0",
+        "poses.npy": "8ea5b5de9b2a69798423b93b741b533f276c4aa70a3312a5c00201c6aa7ee922",
+        "relative_poses.npy": "8ea5b5de9b2a69798423b93b741b533f276c4aa70a3312a5c00201c6aa7ee922",
+        "manifest.json": "bcd49c870d60f19f9b40c7b8c6c50fc11d6cfac2b1dad302d9d416e1cdf4e3a8"
+      }
+    },
+    {
+      "sweep": "validation_103",
+      "key": "shared/datasets/tdsc_abus_2023/p100k-native-v2/validation_103.zip",
+      "sha256": "dc8e1e6f83ff26394c10cc76814bed4becd79329d588ed068aa3235f8ee38905",
+      "size_bytes": 20635752,
+      "files": {
+        "images.npy": "e64b922539155b80c60f213c205137779dcedc4d108764c2e697b9d68dfb9d11",
+        "metadata.json": "338da3a43e3cd0dbd2b647ea3335f72fc215945fd5a67af33b907adbc5048817",
+        "poses.npy": "c0f2492adbd73a538a67eb9dab21022e9979a41e32097bee44dc5bb7fc6d91a6",
+        "relative_poses.npy": "c0f2492adbd73a538a67eb9dab21022e9979a41e32097bee44dc5bb7fc6d91a6",
+        "manifest.json": "34320bb5a8ca66b9e88427ee5ecb8e7d6c68d36b0dbc85fd3c5f6123fd66d02e"
+      }
+    },
+    {
+      "sweep": "validation_104",
+      "key": "shared/datasets/tdsc_abus_2023/p100k-native-v2/validation_104.zip",
+      "sha256": "aaed8158be03f6976081222739b4a9d3248d43859f6b7a81cc0297d1e9a709d7",
+      "size_bytes": 21023933,
+      "files": {
+        "images.npy": "b70d1d0024bc3108a34c25d5777ad8de5d5998106b224e60d455aa86da7b65fb",
+        "metadata.json": "26cd0031fd839f7cf92072ab84d99e717960480e8aa9a0c0c9a64680bf40b7c6",
+        "poses.npy": "c0f2492adbd73a538a67eb9dab21022e9979a41e32097bee44dc5bb7fc6d91a6",
+        "relative_poses.npy": "c0f2492adbd73a538a67eb9dab21022e9979a41e32097bee44dc5bb7fc6d91a6",
+        "manifest.json": "3bf4de781cd6f6bb3e453612e19ea95af80293771c8febc1903fbd131157bf69"
+      }
+    },
+    {
+      "sweep": "validation_105",
+      "key": "shared/datasets/tdsc_abus_2023/p100k-native-v2/validation_105.zip",
+      "sha256": "e03840f8ff7dbd42ea8d8f225e8ae89ab0e8a47cd76b9d0f7f65cdc37d5db8fc",
+      "size_bytes": 25533266,
+      "files": {
+        "images.npy": "92b12deafda3d4ebfdcc416c87275c31d2159a2b0234acc1abb7fd17291594a2",
+        "metadata.json": "6f7d582e2467cdc7bec5bd4559fdeda7386f5760a49e9d7a5f9bd5ccc0d98676",
+        "poses.npy": "00defffe44dfb58786603958230245a394b544d712dd2e52a19d20f7c1ab681f",
+        "relative_poses.npy": "00defffe44dfb58786603958230245a394b544d712dd2e52a19d20f7c1ab681f",
+        "manifest.json": "2c397c8bfee2e4112850c041ae28879e1fbc4496eb37242e4345044b9117aaf0"
+      }
+    },
+    {
+      "sweep": "validation_106",
+      "key": "shared/datasets/tdsc_abus_2023/p100k-native-v2/validation_106.zip",
+      "sha256": "f1c79fbc394bab3a847c9fa58ecabe32882f75c39264c4b6b0fa7267c6f14131",
+      "size_bytes": 16777511,
+      "files": {
+        "images.npy": "fa0620d9affa8b0a996437079c5461391117fae01c4ef9f7270632d32ce051af",
+        "metadata.json": "ca96c58828b8df87b85c54758ce473e636fd0367648c94a8efa7ad1214cafc33",
+        "poses.npy": "c0f2492adbd73a538a67eb9dab21022e9979a41e32097bee44dc5bb7fc6d91a6",
+        "relative_poses.npy": "c0f2492adbd73a538a67eb9dab21022e9979a41e32097bee44dc5bb7fc6d91a6",
+        "manifest.json": "9dcfae0db32f6ca7e835ccf1f80020e664bc1ec8419a7b821762ddd3022c8088"
+      }
+    },
+    {
+      "sweep": "validation_107",
+      "key": "shared/datasets/tdsc_abus_2023/p100k-native-v2/validation_107.zip",
+      "sha256": "f622cc65ecf718d5567fa3af8f255c02adf6fade7675c24f9ed45d1b9a522975",
+      "size_bytes": 24269693,
+      "files": {
+        "images.npy": "6a579d5e8033005f1367cc7d9019940c1288bf5aaa2eb3fcc38db4abfe44b00e",
+        "metadata.json": "b33a6a4c9c34bca61f15bcc8392390fe3776ac06fe09b8855f003e86488492d6",
+        "poses.npy": "4390c0b336b9c73a63ff8bf0141932e43495616064169edc62db40ec5a075ee0",
+        "relative_poses.npy": "4390c0b336b9c73a63ff8bf0141932e43495616064169edc62db40ec5a075ee0",
+        "manifest.json": "52a8d9cae337a38230d07b126058472e6b6f221fb841289f1a181ca931c715c6"
+      }
+    },
+    {
+      "sweep": "validation_108",
+      "key": "shared/datasets/tdsc_abus_2023/p100k-native-v2/validation_108.zip",
+      "sha256": "9d13af16e9063fa45bffbdde844675e8bd8d86438ec9dc430846219bdb389118",
+      "size_bytes": 17173505,
+      "files": {
+        "images.npy": "f6a92b7871ed7668f986c6778ed69e49166a9df7aa43687dd707835a21b32eea",
+        "metadata.json": "d3b078f3c2aeaef66c9940d98a8a69d7fa4db50081e7617aa1779c2008b56b03",
+        "poses.npy": "c0f2492adbd73a538a67eb9dab21022e9979a41e32097bee44dc5bb7fc6d91a6",
+        "relative_poses.npy": "c0f2492adbd73a538a67eb9dab21022e9979a41e32097bee44dc5bb7fc6d91a6",
+        "manifest.json": "2042275e4b6543536bcc7ecd102e6c46c33ba907e2e39d30cbee914cd03b9183"
+      }
+    },
+    {
+      "sweep": "validation_109",
+      "key": "shared/datasets/tdsc_abus_2023/p100k-native-v2/validation_109.zip",
+      "sha256": "7d12f362a7739c5e0cc203960b7887efba7ca1b6c6f9f8f0b480414318015693",
+      "size_bytes": 23128956,
+      "files": {
+        "images.npy": "d3406b5b1aaa916d1bdf96a0bf573865200d8727ff1d0f15d724be286dfb2801",
+        "metadata.json": "9437d4e00579c741872bb4ec220135f54374bb93b6be9760ffd402dbd93b4960",
+        "poses.npy": "c0f2492adbd73a538a67eb9dab21022e9979a41e32097bee44dc5bb7fc6d91a6",
+        "relative_poses.npy": "c0f2492adbd73a538a67eb9dab21022e9979a41e32097bee44dc5bb7fc6d91a6",
+        "manifest.json": "88475ea22df73d6d9fac7907c03d70b311ec38022dfe44f31c8bcc10b9547fb2"
+      }
+    },
+    {
+      "sweep": "validation_110",
+      "key": "shared/datasets/tdsc_abus_2023/p100k-native-v2/validation_110.zip",
+      "sha256": "c9bf82093c3bb9ede29d900f6db3219a8bf90919649da1350053898d5208bd14",
+      "size_bytes": 25787895,
+      "files": {
+        "images.npy": "faf6963007d13abb351c8ed761daee282a19c067278dfa594e5140c4024b4542",
+        "metadata.json": "d25cdba41d3f74c87e43ac1dc6c3c44ebf8d5b69d7a7c2b158e435d96d5a2bff",
+        "poses.npy": "5b8ec0342f59cea4fca10f0ecd033c33c5aac12941b5f6e48df1c9859db2d336",
+        "relative_poses.npy": "5b8ec0342f59cea4fca10f0ecd033c33c5aac12941b5f6e48df1c9859db2d336",
+        "manifest.json": "f1d75b1e262dda3afbb9cc82401536573ef75e201f866bb1112faffc18404a87"
+      }
+    },
+    {
+      "sweep": "validation_111",
+      "key": "shared/datasets/tdsc_abus_2023/p100k-native-v2/validation_111.zip",
+      "sha256": "ec4f2ee96a02b519ff1feae790a914a795b8046cf2f73bc7bf3c893cd03d0326",
+      "size_bytes": 18905741,
+      "files": {
+        "images.npy": "0ff660e17d6b6423ce47f1f05b1bf6d5907cd4da32ef84fe290ecc484dc70f5c",
+        "metadata.json": "8d496270eca94680812206273f5f667af10aaa0ecc0f2121e29334461c588e9f",
+        "poses.npy": "c0f2492adbd73a538a67eb9dab21022e9979a41e32097bee44dc5bb7fc6d91a6",
+        "relative_poses.npy": "c0f2492adbd73a538a67eb9dab21022e9979a41e32097bee44dc5bb7fc6d91a6",
+        "manifest.json": "0e251e3f40e5fcd7112f9c6eb8056146e61edb61d6bea76d90492baf6a13bea9"
+      }
+    }
+  ],
+  "source_preserved": true,
+  "disposable": false,
+  "requests": {
+    "class_a": 13,
+    "class_b": 25
+  }
+}

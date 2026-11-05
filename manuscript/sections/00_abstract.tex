@@ -1,0 +1,30 @@
+\begin{abstract}
+Reconstructing three-dimensional (3D) volumes from routine two-dimensional (2D)
+B-mode ultrasound images is pivotal for volumetric visualization and
+quantitative assessment in medical practice.
+Within this setting, sensorless methods are promising owing to independence from
+external tracking hardware, alleviating deployment complexity and
+sterility-related constraints.
+Despite recent progress, existing approaches remain limited by per-frame pose
+inference and Gaussian pipelines whose image synthesis and adaptation mechanisms
+are poorly matched to ultrasound formation physics.
+To overcome these bottlenecks, we propose \methodname{}, a Gaussian framework
+integrating ultrasound-specific geometry modeling with a physics-aware,
+ultrasound-tailored pipeline for fast, high-fidelity sensorless reconstruction.
+Specifically, we introduce an Acquisition-constrained Frame Geometry Model
+(AFGM), which replaces frame-wise 6-DoF motion estimation with canonical
+geometries regularized by acquisition priors for volumetric recovery.
+Then, to synthesize physically plausible B-mode images, we develop a
+Physics-aware Local-Global Renderer (PLGR), which models finite-slice local echo
+formation and path-dependent global transmission in a unified Gaussian-to-image
+process.
+Furthermore, to adapt Gaussian population management to ultrasound, we design a
+Contribution-guided Gaussian Adaptation Strategy (CGAS), which reformulates
+densification and pruning according to renderer-derived importance.
+Experiments across four ultrasound datasets demonstrate superior performance
+over state-of-the-art methods, achieving up to 34.11~dB PSNR and an L1 error of
+0.011 on real-world data, with real-time synthesis at 285.10~FPS.
+These results establish \methodname{} as a reliable, efficient, and robust
+Gaussian solution for sensorless 3D ultrasound reconstruction, with potential
+to advance anatomical interpretation and image-guided assessment.
+\end{abstract}

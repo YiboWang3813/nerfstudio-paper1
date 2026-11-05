@@ -1,0 +1,104 @@
+\vspace{-6mm}
+\section{Related Work}
+\label{sec:related-work}
+
+\subsection{Sensorless 3D US Reconstruction}
+\label{sec:related-work:sensorless-3d-us-reconstruction}
+
+Tracked 3D US reconstruction uses calibrated optical or electromagnetic
+tracking to localize B-mode frames before interpolation or compounding
+\cite{huang2017}.
+Sensorless reconstruction instead infers inter-frame geometry from image
+sequences through learned geometry-localization models, removing the need for
+external pose measurements.
+Within this paradigm, Prevost et al.~\cite{prevostDeepLearningSensorless2017}
+pioneered pairwise probe-motion regression from neighboring frames, while
+Guo et al.~\cite{guoSensorlessFreehand3D2020} extended it with contextual
+information from multiple consecutive frames.
+Subsequent methods incorporated anatomical shape priors,
+contextual-contrastive learning, online adaptation, and long-range sequence
+modeling to improve trajectory estimation
+\cite{luoSelfContextShape2021,guoUltrasoundVolumeReconstruction2023,
+luoRecONOnlineLearning2023,li2024f}.
+Despite these advances, most approaches still recover frame-wise or inter-frame
+6-DoF motion without explicitly exploiting regular sweep structure, retaining
+unnecessary geometric complexity
+\cite{huangMMSEReconstruction2008,liTUSREC2024}.
+In contrast, our AFGM exploits such regularity to avoid dense pose recovery,
+providing a compact and globally consistent spatial scaffold for robust
+downstream 3D reconstruction.
+
+\vspace{-3mm}
+\subsection{Non-Gaussian Methods for 3D US Reconstruction}
+\label{sec:related-work:non-gaussian-methods-for-3d-us-reconstruction}
+
+Initially, 3D US volumes were commonly reconstructed from localized B-mode
+slices through interpolation or compounding
+\cite{mozaffariFreehand3DUltrasound2017}.
+With the rise of Neural Radiance Fields (NeRF)
+\cite{mildenhallNeRFRepresentingScenes2020}, implicit neural representations
+became a prominent alternative to discrete volumetric reconstruction.
+Song et al.~\cite{song2022a} introduced an MLP-based implicit representation
+for freehand carotid reconstruction.
+ImplicitVol~\cite{yeungSensorlessVolumetricReconstruction2024} jointly
+optimized a continuous volume and sensorless slice locations, while
+RapidVol~\cite{eidRapidvolRapidReconstruction2025} factorized the representation
+to accelerate optimization.
+For ultrasound-specific neural rendering, Ultra-NeRF
+\cite{wysockiUltraNeRFNeuralRadiance2024} incorporated acoustic physics into
+NeRF; NeRF-US~\cite{dagliNeRFUSRemovingUltrasound2024} further introduced
+geometric priors to suppress artifacts in uncontrolled acquisitions, while
+Dou et al.~\cite{douContinuousBernoulliDistribution2024} explored probabilistic
+backscatter modeling.
+Although flexible, repeated neural-field evaluations increase optimization and
+rendering cost, motivating efficient explicit representations.
+
+\vspace{-3mm}
+\subsection{Gaussian Methods for 3D US Reconstruction}
+\label{sec:related-work:gaussian-methods-for-3d-us-reconstruction}
+
+Compared with NeRF, 3D Gaussian Splatting (3DGS) replaces neural-field queries
+with anisotropic Gaussians and differentiable splatting, enabling
+efficient, high-fidelity reconstruction and rendering
+\cite{kerbl3DGaussianSplatting2023}.
+Building on this backbone, natural-image methods adapt 3DGS to challenging
+acquisition settings through task-specific modules and optimization while
+retaining its splatting formulation.
+For motion-blurred inputs, BAD-Gaussians jointly models blur and camera motion,
+while DiET-GS combines event constraints with diffusion priors
+\cite{zhaoBADGaussiansBundle2024,leeDiETGSDiffusionPrior2025}.
+For sparse views, FSGS introduces proximity-guided unpooling, while LoopSparseGS
+combines initialization, depth alignment, and sparse-friendly sampling
+\cite{zhuFSGSRealTimeFewShot2025,baoLoopSparseGSLoopBased2025}.
+For dynamic scenes, Ex4DGS uses static-dynamic separation and temporal
+interpolation, SWinGS adopts sliding windows, and USplat4D models per-Gaussian
+uncertainty
+\cite{leeFullyExplicitDynamic2024,shawSWinGSSlidingWindows2024,
+guoUncertaintyMattersDynamic2026}.
+
+\input{figures/tex/methods_overview}
+
+When observations depart from pinhole-camera images, the imaging process
+changes, making the original 3DGS renderer and adaptation no longer directly
+applicable.
+For slice-based volumetric imaging, FruitNinja reconstructs object interiors
+from cross-sectional supervision, while GaussianPile introduces slice-aware
+Gaussian placement and finite-thickness projection
+\cite{wuFruitNinja3DObject2025,kongGaussianPileUnifiedSparse2026}.
+Compared with generic slice imaging, ultrasound additionally involves acoustic
+propagation, attenuation, and reflection, raising the need for specialized
+Gaussian designs.
+Accordingly, UltraGauss replaces perspective projection with probe-plane
+intersection and in-plane aggregation
+\cite{eidUltraGaussUltrafastGaussian2025}; UltraGS combines depth-aware
+Gaussians with physics-inspired acoustic rendering
+\cite{yangUltraGSRealTimePhysicallyDecoupled2025}; and UltraG-Ray further models
+attenuation and reflection through Gaussian ray casting
+\cite{duelmerUltraGRayPhysicsBasedGaussian2026}.
+However, existing methods emphasize either slice-local echo formation
+or path-dependent propagation, while Gaussian adaptation remains incompatible
+with these ultrasound-specific rendering roles.
+We propose PLGR to jointly model local echo and global transmission,
+together with CGAS to adapt the Gaussian population from their rendering
+contributions, enabling efficient, high-fidelity B-mode synthesis with
+ultrasound-consistent representation control.

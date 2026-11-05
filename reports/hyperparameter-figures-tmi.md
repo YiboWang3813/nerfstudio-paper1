@@ -11,9 +11,9 @@ The figure contract is in [FIGURE_CONTRACT.md](../protocols/hyperparameter-figur
 
 | Figure | PDF | 600-dpi PNG | Exact size |
 | --- | --- | --- | --- |
-| H1 — AFGM | [H1_AFGM.pdf](../../outputs/artifact-inputs/figure_h1_afgm/published/ieee_tmi_final/H1_AFGM.pdf) | [H1_AFGM.png](../../outputs/artifact-inputs/figure_h1_afgm/published/ieee_tmi_final/H1_AFGM.png) | 3.50 × 1.40 in |
-| H2 — PLGR | [H2_PLGR.pdf](../../outputs/artifact-inputs/figure_h2_plgr/published/ieee_tmi_final/H2_PLGR.pdf) | [H2_PLGR.png](../../outputs/artifact-inputs/figure_h2_plgr/published/ieee_tmi_final/H2_PLGR.png) | 3.50 × 3.80 in |
-| H3 — CGAS | [H3_CGAS.pdf](../../outputs/artifact-inputs/figure_h3_cgas/published/ieee_tmi_final/H3_CGAS.pdf) | [H3_CGAS.png](../../outputs/artifact-inputs/figure_h3_cgas/published/ieee_tmi_final/H3_CGAS.png) | 3.50 × 2.10 in |
+| H1 — AFGM | [H1_AFGM.pdf]（历史路径 `../../outputs/artifact-inputs/figure_h1_afgm/published/ieee_tmi_final/H1_AFGM.pdf`，本轮已清理） | [H1_AFGM.png]（历史路径 `../../outputs/artifact-inputs/figure_h1_afgm/published/ieee_tmi_final/H1_AFGM.png`，本轮已清理） | 3.50 × 1.40 in |
+| H2 — PLGR | [H2_PLGR.pdf]（历史路径 `../../outputs/artifact-inputs/figure_h2_plgr/published/ieee_tmi_final/H2_PLGR.pdf`，本轮已清理） | [H2_PLGR.png]（历史路径 `../../outputs/artifact-inputs/figure_h2_plgr/published/ieee_tmi_final/H2_PLGR.png`，本轮已清理） | 3.50 × 3.80 in |
+| H3 — CGAS | [H3_CGAS.pdf]（历史路径 `../../outputs/artifact-inputs/figure_h3_cgas/published/ieee_tmi_final/H3_CGAS.pdf`，本轮已清理） | [H3_CGAS.png]（历史路径 `../../outputs/artifact-inputs/figure_h3_cgas/published/ieee_tmi_final/H3_CGAS.png`，本轮已清理） | 3.50 × 2.10 in |
 
 H2 uses the specified 3.80-inch height, not the 3.50-inch fallback.
 PDFs contain vector marks and embedded, selectable DejaVu Sans text. The
@@ -22,17 +22,17 @@ three have opaque white backgrounds.
 
 ## Authoritative source data
 
-- H1: [rho_data.tsv](../../outputs/frozen-inputs/paper-evidence-v1.zip#ppp/rho_data.tsv)
+- H1: [rho_data.tsv](../../outputs/paper-evidence/inputs-v1.zip#ppp/rho_data.tsv)
   (14 rows; Liver and Arm, seven rho values each).
-- H2: [hyperparameter_data.tsv](../../outputs/frozen-inputs/paper-evidence-v1.zip#lgr/hyperparameter_data.tsv)
+- H2: [hyperparameter_data.tsv](../../outputs/paper-evidence/inputs-v1.zip#lgr/hyperparameter_data.tsv)
   (40 rows; five panels, two datasets). The final width values are
   0.8, 1.0, 1.5 and 2.0 mm; no proposed 0.5-mm point was substituted.
-- H3: [hyperparameter_data.tsv](../../outputs/frozen-inputs/paper-evidence-v1.zip#cga/hyperparameter_data.tsv)
+- H3: [hyperparameter_data.tsv](../../outputs/paper-evidence/inputs-v1.zip#cga/hyperparameter_data.tsv)
   (42 panel memberships; two 3×3 grids and three opacity settings per dataset).
   Actual B values are 0.001, 0.005 and 0.05.
 - P2 source/config audit:
-  [source_manifest.json](../../outputs/artifact-inputs/hyperparameter-figure-set/published/ieee_tmi_final/source_manifest.json) and
-  [run_sources.tsv](../../outputs/frozen-inputs/paper-evidence-v1.zip#audits/run_sources.tsv).
+  [source_manifest.json]（历史路径 `../../outputs/artifact-inputs/hyperparameter-figure-set/published/ieee_tmi_final/source_manifest.json`，本轮已清理） and
+  [run_sources.tsv](../../outputs/paper-evidence/inputs-v1.zip#audits/run_sources.tsv).
 - One full Markdown inventory of all raw values and run links:
   [FOUR_FIGURES_RAW_DATA.md](../experiments/hyperparameter-figures/figure-set-historical-four-figures-raw-data.md).
 
@@ -64,8 +64,8 @@ These are one-seed, one-run-per-setting values, with no invented error bars.
 - Page MediaBoxes: 252 × 100.8 pt, 252 × 273.6 pt and 252 × 151.2 pt.
 - PNG sizes: 2100 × 840, 2100 × 2280 and 2100 × 1260 pixels.
 - H2/H3 physical panel alignment: PASS, 1.5-pt tolerance; see
-  [H2 alignment](../../outputs/artifact-inputs/figure_h2_plgr/published/ieee_tmi_final/H2_PLGR.alignment.json) and
-  [H3 alignment](../../outputs/artifact-inputs/figure_h3_cgas/published/ieee_tmi_final/H3_CGAS.alignment.json).
+  [H2 alignment]（历史路径 `../../outputs/artifact-inputs/figure_h2_plgr/published/ieee_tmi_final/H2_PLGR.alignment.json`，本轮已清理） and
+  [H3 alignment]（历史路径 `../../outputs/artifact-inputs/figure_h3_cgas/published/ieee_tmi_final/H3_CGAS.alignment.json`，本轮已清理）.
 - Final PDF collision audit: zero FAIL and zero WARN for all three. The
   detected contained heatmap cell-text overlays are intentional annotations.
 - Minimum rendered glyph sizes H1/H2/H3: 6.7/5.6/5.46 pt, above the 5-pt
@@ -81,3 +81,5 @@ Reproduce with the existing plotting environment:
     scripts/production/ablations/ours/final_hyperparameter_figures_ieee_tmi.py
 
 Collision-overlay PDFs and alignment SVGs are QA diagnostics only.
+
+以上标注的历史路径不属于当前 Mac 文稿保留范围；当前图表来源以 manuscript-source-audit 的对应表和保留清单为准。

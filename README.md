@@ -14,6 +14,8 @@
 
 [代码与运行入口](../nerfstudio/experiments/paper1/README.md)、[图表工程](experiments/README.md)、[新旧指标参照](experiments/native-5k-liver-l1/report.md)分别由对应仓库维护。数据正文只在 shared/datasets，历史权重不迁入。
 
-旧代码文档和重复链接层已删除；图表工程与小型数值归入 docs/experiments，运行文件、重资产和批量导出归入 outputs。完整逐文件去向见 [整理记录](resources/provenance/docs-layout-20261105.json)，旧版本保留在本仓库 Git tag `history/docs-before-typed-layout-20261105`，无需在工作树保留归档镜像。
+旧代码文档和重复链接层已删除；图表工程与小型数值归入 docs/experiments，运行文件、重资产和批量导出归入 outputs。完整逐文件去向见 [整理记录](resources/maintenance-assets/source-inventories/docs-layout-20261105.json)，旧版本保留在本仓库 Git tag `history/docs-before-typed-layout-20261105`，无需在工作树保留归档镜像。
 
 目录与配置分工见 [存储规约](protocols/artifact-storage.md)。独立 results 已取消，原 Git 历史单独保全；不保留兼容目录或链接。
+
+当前论文金标准与保留范围见 [Mac 文稿逐图逐表审计](experiments/manuscript-source-audit/README.md)，完整 LaTeX 入口已收到并保存在 manuscript。旧迁移阶段“未找到完整文稿”的描述仅属于历史记录。

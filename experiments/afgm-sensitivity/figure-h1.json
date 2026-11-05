@@ -2,173 +2,101 @@
   "id": "figure_h1_afgm",
   "title": "H1 AFGM 超参数图",
   "kind": "figure",
-  "generator": "hyperparameters_tmi",
+  "generator": "hyperparameters_endo_h12",
   "output_subset": "H1_AFGM",
   "training_entry": "paper1 native Nerfstudio only; this object never starts training",
   "source_tables": [
     {
       "path": "ppp/rho_data.tsv",
       "sha256": "b6e4c2aa10add0dc6651e4d38f083fc9b1eaeb95bf7afcb58cfbdd6ebb656880",
-      "source": "zip:outputs/frozen-inputs/paper-evidence-v1.zip#ppp/rho_data.tsv"
+      "source": "zip:outputs/paper-evidence/inputs-v1.zip#ppp/rho_data.tsv"
     }
   ],
   "runs": [
     {
       "row_id": "p2_110",
       "historical_path": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/P2_fixed_full_final_20260909/runs/synthetic_liver/l1/p2_110",
-      "local_path": "/home/yibo/paper1/outputs/eehpc/production/ablations/ours/P2_fixed_full_final_20260909/runs/synthetic_liver/l1/p2_110",
-      "exists": true
+      "local_path": "zip:outputs/paper-evidence/runs-v1.zip#production/ablations/ours/P2_fixed_full_final_20260909/runs/synthetic_liver/l1/p2_110"
     },
     {
       "row_id": "p2_111",
       "historical_path": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/P2_fixed_full_final_20260909/runs/synthetic_liver/l1/p2_111",
-      "local_path": "/home/yibo/paper1/outputs/eehpc/production/ablations/ours/P2_fixed_full_final_20260909/runs/synthetic_liver/l1/p2_111",
-      "exists": true
+      "local_path": "zip:outputs/paper-evidence/runs-v1.zip#production/ablations/ours/P2_fixed_full_final_20260909/runs/synthetic_liver/l1/p2_111"
     },
     {
       "row_id": "p2_112",
       "historical_path": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/P2_fixed_full_final_20260909/runs/synthetic_liver/l1/p2_112",
-      "local_path": "/home/yibo/paper1/outputs/eehpc/production/ablations/ours/P2_fixed_full_final_20260909/runs/synthetic_liver/l1/p2_112",
-      "exists": true
+      "local_path": "zip:outputs/paper-evidence/runs-v1.zip#production/ablations/ours/P2_fixed_full_final_20260909/runs/synthetic_liver/l1/p2_112"
     },
     {
       "row_id": "p2_084",
       "historical_path": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/P2_fixed_full_final_20260909/runs/synthetic_liver/l1/p2_084",
-      "local_path": "/home/yibo/paper1/outputs/eehpc/production/ablations/ours/P2_fixed_full_final_20260909/runs/synthetic_liver/l1/p2_084",
-      "exists": true
+      "local_path": "zip:outputs/paper-evidence/runs-v1.zip#production/ablations/ours/P2_fixed_full_final_20260909/runs/synthetic_liver/l1/p2_084"
     },
     {
       "row_id": "p2_113",
       "historical_path": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/P2_fixed_full_final_20260909/runs/synthetic_liver/l1/p2_113",
-      "local_path": "/home/yibo/paper1/outputs/eehpc/production/ablations/ours/P2_fixed_full_final_20260909/runs/synthetic_liver/l1/p2_113",
-      "exists": true
+      "local_path": "zip:outputs/paper-evidence/runs-v1.zip#production/ablations/ours/P2_fixed_full_final_20260909/runs/synthetic_liver/l1/p2_113"
     },
     {
       "row_id": "p2_114",
       "historical_path": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/P2_fixed_full_final_20260909/runs/synthetic_liver/l1/p2_114",
-      "local_path": "/home/yibo/paper1/outputs/eehpc/production/ablations/ours/P2_fixed_full_final_20260909/runs/synthetic_liver/l1/p2_114",
-      "exists": true
+      "local_path": "zip:outputs/paper-evidence/runs-v1.zip#production/ablations/ours/P2_fixed_full_final_20260909/runs/synthetic_liver/l1/p2_114"
     },
     {
       "row_id": "p2_115",
       "historical_path": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/P2_fixed_full_final_20260909/runs/synthetic_liver/l1/p2_115",
-      "local_path": "/home/yibo/paper1/outputs/eehpc/production/ablations/ours/P2_fixed_full_final_20260909/runs/synthetic_liver/l1/p2_115",
-      "exists": true
+      "local_path": "zip:outputs/paper-evidence/runs-v1.zip#production/ablations/ours/P2_fixed_full_final_20260909/runs/synthetic_liver/l1/p2_115"
     },
     {
       "row_id": "p2_119",
       "historical_path": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/P2_fixed_full_final_20260909/runs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/p2_119",
-      "local_path": "/home/yibo/paper1/outputs/eehpc/production/ablations/ours/P2_fixed_full_final_20260909/runs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/p2_119",
-      "exists": true
+      "local_path": "zip:outputs/paper-evidence/runs-v1.zip#production/ablations/ours/P2_fixed_full_final_20260909/runs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/p2_119"
     },
     {
       "row_id": "p2_120",
       "historical_path": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/P2_fixed_full_final_20260909/runs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/p2_120",
-      "local_path": "/home/yibo/paper1/outputs/eehpc/production/ablations/ours/P2_fixed_full_final_20260909/runs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/p2_120",
-      "exists": true
+      "local_path": "zip:outputs/paper-evidence/runs-v1.zip#production/ablations/ours/P2_fixed_full_final_20260909/runs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/p2_120"
     },
     {
       "row_id": "p2_121",
       "historical_path": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/P2_fixed_full_final_20260909/runs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/p2_121",
-      "local_path": "/home/yibo/paper1/outputs/eehpc/production/ablations/ours/P2_fixed_full_final_20260909/runs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/p2_121",
-      "exists": true
+      "local_path": "zip:outputs/paper-evidence/runs-v1.zip#production/ablations/ours/P2_fixed_full_final_20260909/runs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/p2_121"
     },
     {
       "row_id": "p2_093",
       "historical_path": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/P2_fixed_full_final_20260909/runs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/p2_093",
-      "local_path": "/home/yibo/paper1/outputs/eehpc/production/ablations/ours/P2_fixed_full_final_20260909/runs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/p2_093",
-      "exists": true
+      "local_path": "zip:outputs/paper-evidence/runs-v1.zip#production/ablations/ours/P2_fixed_full_final_20260909/runs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/p2_093"
     },
     {
       "row_id": "p2_122",
       "historical_path": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/P2_fixed_full_final_20260909/runs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/p2_122",
-      "local_path": "/home/yibo/paper1/outputs/eehpc/production/ablations/ours/P2_fixed_full_final_20260909/runs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/p2_122",
-      "exists": true
+      "local_path": "zip:outputs/paper-evidence/runs-v1.zip#production/ablations/ours/P2_fixed_full_final_20260909/runs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/p2_122"
     },
     {
       "row_id": "p2_123",
       "historical_path": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/P2_fixed_full_final_20260909/runs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/p2_123",
-      "local_path": "/home/yibo/paper1/outputs/eehpc/production/ablations/ours/P2_fixed_full_final_20260909/runs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/p2_123",
-      "exists": true
+      "local_path": "zip:outputs/paper-evidence/runs-v1.zip#production/ablations/ours/P2_fixed_full_final_20260909/runs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/p2_123"
     },
     {
       "row_id": "p2_124",
       "historical_path": "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs/production/ablations/ours/P2_fixed_full_final_20260909/runs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/p2_124",
-      "local_path": "/home/yibo/paper1/outputs/eehpc/production/ablations/ours/P2_fixed_full_final_20260909/runs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/p2_124",
-      "exists": true
+      "local_path": "zip:outputs/paper-evidence/runs-v1.zip#production/ablations/ours/P2_fixed_full_final_20260909/runs/tus_rec_2024_qc/010_LH_Per_L_DtP_qc_0005_0370/p2_124"
     }
   ],
   "missing_source_tables": [],
   "raw_runs_are_essential_retained_inputs": true,
   "checkpoints_migrated": false,
   "source_receipts_immutable": true,
-  "historical_evidence_archive": "docs/resources/provenance/results-history.json",
   "frozen_inputs": {
-    "archive": "outputs/frozen-inputs/paper-evidence-v1.zip",
-    "manifest": "outputs/frozen-inputs/paper-evidence-v1.json"
+    "archive": "outputs/paper-evidence/inputs-v1.zip",
+    "manifest": "outputs/paper-evidence/inputs-v1.json"
   },
   "schema_version": 1,
-  "output_root": "outputs/artifacts",
-  "asset_root": "outputs/artifact-inputs/figure_h1_afgm",
-  "parameters": {
-    "PANELS": [
-      [
-        "sigma_ele",
-        [
-          ".8",
-          "1",
-          "1.5",
-          "2"
-        ],
-        "1",
-        "$\\sigma_{\\mathrm{ele}}$"
-      ],
-      [
-        "beta",
-        [
-          ".4",
-          ".6",
-          ".8",
-          "1"
-        ],
-        ".8",
-        "$\\beta$"
-      ],
-      [
-        "lambda_ray",
-        [
-          ".2",
-          ".35",
-          ".55",
-          ".75",
-          "1"
-        ],
-        ".55",
-        "$\\lambda_{\\mathrm{ray}}$"
-      ],
-      [
-        "Nq",
-        [
-          "1",
-          "2",
-          "3"
-        ],
-        "3",
-        "$N_q$"
-      ],
-      [
-        "half_window",
-        [
-          "1",
-          "2",
-          "3",
-          "4"
-        ],
-        "2",
-        "half-window"
-      ]
-    ]
-  },
+  "output_root": "outputs/paper-builds",
+  "asset_root": "outputs/paper-evidence",
+  "parameters": {},
   "input_aliases": {},
-  "build_outputs": "outputs/artifacts/<generator>/<build-id>; effective config and hashes recorded per build"
+  "build_outputs": "outputs/artifacts/<generator>/<build-id>; effective config and hashes recorded per build",
+  "manuscript_status": "exact PDF verified against Mac manuscript"
 }

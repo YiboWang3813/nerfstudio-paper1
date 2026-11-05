@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "dataset_version": "p100k-native-v1",
+  "sweep": "l1",
+  "package": "/home/yibo/shared/cache/dataset-packages/paper1/synthetic_liver/p100k-native-v1/l1.zip",
+  "sha256": "e03445e1192983d1af9d72a9fb0d8d9f8dc9270b2eb6a1031361955772312163",
+  "size_bytes": 16020647,
+  "files": {
+    "images.npy": "df7fe8052128048d5c62e6e918ac3057056a5221f63671ae8d6dc97dde3d43a9",
+    "metadata.json": "00dca3e5d87551f34f8fb5946d30655f3c546db6914b5e09f3f9dcbe99d87895",
+    "poses.npy": "37c72e3621536e8e6035ef2a7a388b8cdbb4a83d93a3de8e41aaf66f9d4ac568",
+    "relative_poses.npy": "fa138f75d7b80295c2ff682aaa6f36d7f1abc252393e23aff669274a48a2882d",
+    "test_images.npy": "328116ad8aa937e10a644f3b30594355b0d7bb923ae410542917dfec7d7366ba",
+    "test_poses.npy": "caefe73ab2dff352b37297c5084b124b33d4e9a3ab56acdd3bf72aa310e7e2c1",
+    "test_relative_poses.npy": "7a027d79138b35843ee6bf65481c4e08255187cd52efd30728cd75d58da4e55f",
+    "manifest.json": "9f7c71aa50422eb044f27806c893890674d65469650c685cbfe278f027701e34"
+  },
+  "verification": "all ZIP members read back and SHA256 checked",
+  "publication_status": "not_uploaded",
+  "r2_requests": 0,
+  "source_may_be_deleted": false
+}

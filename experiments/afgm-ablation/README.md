@@ -1,16 +1,13 @@
 # afgm-ablation
 
-本实验目录保存图表工程配置、来源和小型数值；执行代码在 Nerfstudio，原图和运行产物在 outputs。这里保留的是历史实验材料，不代表新代码正式复现。
-
-## AFGM 诊断与多 sweep 消融表
+当前依据 Mac manuscript-for-216-20261105-155440 文稿；完整逐图逐表核对见 [来源审计]（历史路径 `../manuscript-source-audit/README.md`，本轮已清理）。
 
 - 配置：[table-afgm.json](table-afgm.json)
-- 原始输入与历史导出：[outputs/artifact-inputs/table_afgm_ablation](../../../outputs/artifact-inputs/table_afgm_ablation)
 
 ```bash
 bin/paper1 artifacts --config docs/experiments/afgm-ablation/table-afgm.json
 ```
 
-命令从 paper1 根目录运行。生成内容写入 outputs/artifacts；每次构建保存 artifact-config.json、配置 SHA256、读取的源文件哈希与 build-receipt.json。
+数值与配置原件在 outputs/paper-evidence，定性面板在 outputs/paper-images；不再保留整棵旧运行树。生成写入 outputs/paper-builds，原始图表 PDF 使用 docs/manuscript 的 Mac 副本，不以本机字体替换版本覆盖。
 
-配置 parameters 控制生成器已支持的方法顺序、选帧与裁剪、面板或配色；不修改原始运行结果。assets/、exports/ 和 .cache/ 如在本目录生成，均被精确忽略。
+以上标注的历史路径不属于当前 Mac 文稿保留范围；当前图表来源以 manuscript-source-audit 的对应表和保留清单为准。

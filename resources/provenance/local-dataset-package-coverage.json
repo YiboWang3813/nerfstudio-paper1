@@ -1,0 +1,10 @@
+{
+  "source_index": "/home/yibo/paper1/migration/source-data.jsonl",
+  "medical_source_files_covered": 328,
+  "datasets": 4,
+  "sweeps": 78,
+  "zip_packages": 79,
+  "missing_source_files": [],
+  "cloud_readback": "full SHA256 of each published package verified before manifests and current pointers",
+  "source_originals_preserved": true
+}

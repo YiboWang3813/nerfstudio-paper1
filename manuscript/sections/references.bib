@@ -1,0 +1,519 @@
+% Compact IEEE/TMI bibliography controls. Full author metadata remains in each
+% entry; IEEEtran.bst shortens only lists containing more than six authors.
+@IEEEtranBSTCTL{tmiBSTcontrol,
+  CTLuse_forced_etal       = {yes},
+  CTLmax_names_forced_etal = {6},
+  CTLnames_show_etal       = {1},
+  CTLuse_url               = {no}
+}
+
+% Standardized abbreviations for non-IEEE periodicals used in this manuscript.
+@STRING{J_APPL_SCI = {Appl. Sci.}}
+@STRING{J_PMB      = {Phys. Med. Biol.}}
+@STRING{J_UMB      = {Ultrasound Med. Biol.}}
+@STRING{J_MIA      = {Med. Image Anal.}}
+@STRING{J_IJBI     = {Int. J. Biomed. Imag.}}
+@STRING{J_BMRI     = {Biomed Res. Int.}}
+@STRING{J_ACM_TOG  = {{ACM} Trans. Graph.}}
+@STRING{PROC_MICCAI = {Proc. {MICCAI}}}
+@STRING{PROC_ECCV   = {Proc. {ECCV}}}
+@STRING{PROC_CVPR   = {Proc. {CVPR}}}
+@STRING{PROC_ICCV   = {Proc. {ICCV}}}
+@STRING{PROC_ICLR   = {Proc. {ICLR}}}
+@STRING{PROC_NEURIPS = {Proc. {NeurIPS}}}
+@STRING{PROC_MIDL   = {Proc. {MIDL}}}
+@STRING{PROC_MLHC   = {Proc. {MLHC}}}
+@STRING{PROC_ISBI   = {Proc. {ISBI}}}
+@STRING{PROC_IUS    = {Proc. {IUS}}}
+@STRING{PROC_UFFCJS = {Proc. {UFFC-JS}}}
+@STRING{PROC_ICME   = {Proc. {ICME}}}
+
+@article{tsedendambaReviewLinearArray2025,
+  author  = {Tsedendamba, Ninjbadgar and Song, Yuon and Park, Eun-Yeong and Kim, Jeesu},
+  title   = {Review of Linear-Array-Transducer-Based Volumetric Ultrasound Imaging Techniques and Their Biomedical Applications},
+  journal = {Bioengineering},
+  year    = {2025},
+  volume  = {12},
+  number  = {9},
+  pages   = {906},
+  doi     = {10.3390/bioengineering12090906}
+}
+
+@article{tenajasRecentAdvancesAI2023,
+  author  = {Tenajas, Rebeca and Miraut, David and Illana, Carlos I. and Alonso-Gonzalez, Rodrigo and Arias-Valcayo, Fernando and Herraiz, Joaquin L.},
+  title   = {Recent Advances in Artificial Intelligence-Assisted Ultrasound Scanning},
+  journal = J_APPL_SCI,
+  year    = {2023},
+  volume  = {13},
+  number  = {6},
+  pages   = {3693},
+  doi     = {10.3390/app13063693}
+}
+
+@article{ingramThreeDimensionalUltrasound2025,
+  author  = {Ingram, Marcus and Antico, Maria and Cattani, Laura and Cvijic, Marta and Scheys, Lennart and D'hooge, Jan and Harris, Emma},
+  title   = {Three-dimensional ultrasound imaging: a review of the technology},
+  journal = J_PMB,
+  year    = {2025},
+  volume  = {70},
+  number  = {22},
+  pages   = {22TR01},
+  doi     = {10.1088/1361-6560/ae13cc}
+}
+
+@article{adriaansTrackerless3DFreehand2024,
+  author  = {Adriaans, Chrissy A. and Wijkhuizen, Mark and van Karnenbeek, Lennard M. and Geldof, Freija and Dashtbozorg, Behdad},
+  title   = {Trackerless 3D Freehand Ultrasound Reconstruction: A Review},
+  journal = J_APPL_SCI,
+  year    = {2024},
+  volume  = {14},
+  number  = {17},
+  pages   = {7991},
+  doi     = {10.3390/app14177991}
+}
+
+@article{mozaffariFreehand3DUltrasound2017,
+  author  = {Mozaffari, Mohammad Hamed and Lee, Won-Sook},
+  title   = {Freehand 3-D Ultrasound Imaging: A Systematic Review},
+  journal = J_UMB,
+  year    = {2017},
+  volume  = {43},
+  number  = {10},
+  pages   = {2099--2124},
+  doi     = {10.1016/j.ultrasmedbio.2017.06.009}
+}
+
+@misc{liTUSREC2024,
+  author  = {Li, Qi and Saeed, Shaheer U. and Huang, Yuliang and Luo, Mingyuan and Yan, Zhongnuo and Chen, Jiongquan and Yang, Xin and Ni, Dong and Winter, Nektarios and Nguyen, Phuc and Steinberger, Lucas and Haney, Caelan and Zhao, Yuan and Jiang, Mingjie and Ren, Bowen and Lee, SiYeoul and Kim, Seonho and Seo, MinKyung and Kim, MinWoo and Dou, Yimeng and Zhang, Zhiwei and Li, Yin and Varghese, Tomy and Barratt, Dean C. and Clarkson, Matthew J. and Vercauteren, Tom and Hu, Yipeng},
+  title   = {{TUS-REC2024}: A Challenge to Reconstruct 3D Freehand Ultrasound Without External Tracker},
+  year    = {2025},
+  pages   = {1--77},
+  note    = {arXiv:2506.21765},
+  eprint  = {2506.21765},
+  doi     = {10.48550/arXiv.2506.21765}
+}
+
+@inproceedings{prevostDeepLearningSensorless2017,
+  title = {Deep {{Learning}} for {{Sensorless 3D Freehand Ultrasound Imaging}}},
+  booktitle = PROC_MICCAI,
+  author = {Prevost, Raphael and Salehi, Mehrdad and Sprung, Julian and Ladikos, Alexander and Bauer, Robert and Wein, Wolfgang},
+  year = 2017,
+  pages = {628--636},
+  publisher = {Springer},
+  address = {Cham},
+  doi = {10.1007/978-3-319-66185-8_71},
+  urldate = {2025-03-06},
+  isbn = {978-3-319-66184-1 978-3-319-66185-8},
+  langid = {english},
+  keywords = {Area: Image Reconstruction,Learning: Supervised Learning},
+  file = {/Users/wangyibo/Zotero/storage/E9RFW7NE/Prevost 等 - 2017 - Deep Learning for Sensorless 3D Freehand Ultrasound Imaging.pdf}
+}
+
+@inproceedings{guoSensorlessFreehand3D2020,
+  title = {Sensorless {{Freehand 3D Ultrasound Reconstruction}} via {{Deep Contextual Learning}}},
+  booktitle = PROC_MICCAI,
+  author = {Guo, Hengtao and Xu, Sheng and Wood, Bradford and Yan, Pingkun},
+  year = 2020,
+  pages = {463--472},
+  publisher = {Springer},
+  address = {Cham},
+  doi = {10.1007/978-3-030-59716-0_44},
+  urldate = {2025-03-06},
+  abstract = {Transrectal ultrasound (US) is the most commonly used imaging modality to guide prostate biopsy and its 3D volume provides even richer context information. Current methods for 3D volume reconstruction from freehand US scans require external tracking devices to provide spatial position for every frame. In this paper, we propose a deep contextual learning network (DCL-Net), which can efficiently exploit the image feature relationship between US frames and reconstruct 3D US volumes without any tracking device. The proposed DCL-Net utilizes 3D convolutions over a US video segment for feature extraction. An embedded self-attention module makes the network focus on the speckle-rich areas for better spatial movement prediction. We also propose a novel case-wise correlation loss to stabilize the training process for improved accuracy. Highly promising results have been obtained by using the developed method. The experiments with ablation studies demonstrate superior performance of the proposed method by comparing against other state-of-the-art methods. Source code of this work is publicly available at https://github.com/DIAL-RPI/FreehandUSRecon.},
+  isbn = {978-3-030-59715-3 978-3-030-59716-0},
+  langid = {english},
+  keywords = {Area: Image Reconstruction,Learning: Supervised Learning},
+  file = {/Users/wangyibo/Documents/ZoteroLocalNotes/notes/Sensorless Freehand 3D Ultrasound Reconstruction via Deep Contextual Learning.md;/Users/wangyibo/Zotero/storage/3DJ5ZVN3/Guo 等 - 2020 - Sensorless Freehand 3D Ultrasound Reconstruction via Deep Contextual Learning.pdf}
+}
+
+@article{guoUltrasoundVolumeReconstruction2023,
+  title = {Ultrasound {{Volume Reconstruction From Freehand Scans Without Tracking}}},
+  author = {Guo, Hengtao and Chao, Hanqing and Xu, Sheng and Wood, Bradford J. and Wang, Jing and Yan, Pingkun},
+  year = 2023,
+  journal = IEEE_J_BME,
+  volume = {70},
+  number = {3},
+  pages = {970--979},
+  issn = {1558-2531},
+  doi = {10.1109/TBME.2022.3206596},
+  urldate = {2025-03-07},
+  abstract = {Transrectal ultrasound is commonly used for guiding prostate cancer biopsy, where 3D ultrasound volume reconstruction is often desired. Current methods for 3D reconstruction from freehand ultrasound scans require external tracking devices to provide spatial information of an ultrasound transducer. This paper presents a novel deep learning approach for sensorless ultrasound volume reconstruction, which efficiently exploits content correspondence between ultrasound frames to reconstruct 3D volumes without external tracking. The underlying deep learning model, deep contextual-contrastive network (DC\textsuperscript{2}-Net), utilizes self-attention to focus on the speckle-rich areas to estimate spatial movement and then minimizes a margin ranking loss for contrastive feature learning. A case-wise correlation loss over the entire input video helps further smooth the estimated trajectory. We train and validate DC\textsuperscript{2}-Net on two independent datasets, one containing 619 transrectal scans and the other having 100 transperineal scans. Our proposed approach attained superior performance compared with other methods, with a drift rate of 9.64\textbackslash mathbf\% and a prostate Dice of 0.89. The promising results demonstrate the capability of deep neural networks for universal ultrasound volume reconstruction from freehand 2D ultrasound scans without tracking information.},
+  langid = {american},
+  keywords = {Area: Image Reconstruction,Learning: Supervised Learning,Reconstruction: Volume Reconstruction},
+  file = {/Users/wangyibo/Zotero/storage/KMKZTJT8/Guo 等 - 2023 - Ultrasound Volume Reconstruction From Freehand Scans Without Tracking.pdf;/Users/wangyibo/Zotero/storage/N9898SQC/9891829.html}
+}
+
+@article{luoRecONOnlineLearning2023,
+  title = {{{RecON}}: {{Online}} Learning for Sensorless Freehand {{3D}} Ultrasound Reconstruction},
+  shorttitle = {{{RecON}}},
+  author = {Luo, Mingyuan and Yang, Xin and Wang, Hongzhang and Dou, Haoran and Hu, Xindi and Huang, Yuhao and Ravikumar, Nishant and Xu, Songcheng and Zhang, Yuanji and Xiong, Yi and Xue, Wufeng and Frangi, Alejandro F. and Ni, Dong and Sun, Litao},
+  year = 2023,
+  month = jul,
+  journal = J_MIA,
+  volume = {87},
+  pages = {102810},
+  issn = {13618415},
+  doi = {10.1016/j.media.2023.102810},
+  urldate = {2025-03-06},
+  abstract = {Sensorless freehand 3D ultrasound (US) reconstruction based on deep networks shows promising advantages, such as large field of view, relatively high resolution, low cost, and ease of use. However, existing methods mainly consider vanilla scan strategies with limited inter-frame variations. These methods thus are degraded on complex but routine scan sequences in clinics. In this context, we propose a novel online learning framework for freehand 3D US reconstruction under complex scan strategies with diverse scanning velocities and poses. First, we devise a motion-weighted training loss in training phase to regularize the scan variation frame-by-frame and better mitigate the negative effects of uneven inter-frame velocity. Second, we effectively drive online learning with local-to-global pseudo supervisions. It mines both the frame-level contextual consistency and the pathlevel similarity constraint to improve the inter-frame transformation estimation. We explore a global adversarial shape before transferring the latent anatomical prior as supervision. Third, we build a feasible differentiable reconstruction approximation to enable the end-to-end optimization of our online learning. Experimental results illustrate that our freehand 3D US reconstruction framework outperformed current methods on two large, simulated datasets and one real dataset. In addition, we applied the proposed framework to clinical scan videos to further validate its effectiveness and generalizability.},
+  langid = {english},
+  keywords = {Area: Image Reconstruction,Learning: Adversarial Learning,Learning: Self-supervised Learning,Learning: Supervised Learning,Reconstruction: Volume Reconstruction},
+  file = {/Users/wangyibo/Zotero/storage/D7FTVSAZ/Luo 等 - 2023 - RecON Online learning for sensorless freehand 3D ultrasound reconstruction.pdf}
+}
+
+@article{li2024f,
+  title = {Long-{{Term Dependency}} for {{3D Reconstruction}} of {{Freehand Ultrasound Without External Tracker}}},
+  author = {Li, Qi and Shen, Ziyi and Li, Qian and Barratt, Dean C. and Dowrick, Thomas and Clarkson, Matthew J. and Vercauteren, Tom and Hu, Yipeng},
+  year = 2024,
+  month = mar,
+  journal = IEEE_J_BME,
+  volume = {71},
+  number = {3},
+  pages = {1033--1042},
+  issn = {0018-9294, 1558-2531},
+  doi = {10.1109/TBME.2023.3325551},
+  urldate = {2025-03-06},
+  copyright = {https://ieeexplore.ieee.org/Xplorehelp/downloads/license-information/IEEE.html},
+  langid = {english},
+  file = {/Users/wangyibo/Zotero/storage/VYBSSB8G/Li 等 - 2024 - Long-Term Dependency for 3D Reconstruction of Freehand Ultrasound Without External Tracker.pdf}
+}
+
+@article{yeungSensorlessVolumetricReconstruction2024,
+  title = {Sensorless Volumetric Reconstruction of Fetal Brain Freehand Ultrasound Scans with Deep Implicit Representation},
+  author = {Yeung, Pak-Hei and Hesse, Linde S. and Aliasi, Moska and Haak, Monique C. and Xie, Weidi and Namburete, Ana I.L.},
+  year = 2024,
+  month = may,
+  journal = J_MIA,
+  volume = {94},
+  pages = {103147},
+  issn = {13618415},
+  doi = {10.1016/j.media.2024.103147},
+  urldate = {2025-03-06},
+  abstract = {Three-dimensional (3D) ultrasound imaging has contributed to our understanding of fetal developmental processes by providing rich contextual information of the inherently 3D anatomies. However, its use is limited in clinical settings, due to the high purchasing costs and limited diagnostic practicality. Freehand 2D ultrasound imaging, in contrast, is routinely used in standard obstetric exams, but inherently lacks a 3D representation of the anatomies, which limits its potential for more advanced assessment. Such full representations are challenging to recover even with external tracking devices due to internal fetal movement which is independent from the operator-led trajectory of the probe. Capitalizing on the flexibility offered by freehand 2D ultrasound acquisition, we propose ImplicitVol to reconstruct 3D volumes from non-sensortracked 2D ultrasound sweeps. Conventionally, reconstructions are performed on a discrete voxel grid. We, however, employ a deep neural network to represent, for the first time, the reconstructed volume as an implicit function. Specifically, ImplicitVol takes a set of 2D images as input, predicts their locations in 3D space, jointly refines the inferred locations, and learns a full volumetric reconstruction. When testing nativelyacquired and volume-sampled 2D ultrasound video sequences collected from different manufacturers, the 3D volumes reconstructed by ImplicitVol show significantly better visual and semantic quality than the existing interpolation-based reconstruction approaches. The inherent continuity of implicit representation also enables ImplicitVol to reconstruct the volume to arbitrarily high resolutions. As formulated, ImplicitVol has the potential to integrate seamlessly into the clinical workflow, while providing richer information for diagnosis and evaluation of the developing brain.},
+  langid = {english},
+  keywords = {Area: Image Reconstruction,Learning: Supervised Learning,Neural Implicit Representation,Reconstruction: Volume Reconstruction},
+  file = {/Users/wangyibo/Zotero/storage/59GPQSEX/Yeung 等 - 2024 - Sensorless volumetric reconstruction of fetal brain freehand ultrasound scans with deep implicit rep.pdf}
+}
+
+@inproceedings{wysockiUltraNeRFNeuralRadiance2024,
+  title = {Ultra-{{NeRF}}: {{Neural Radiance Fields}} for {{Ultrasound Imaging}}},
+  shorttitle = {Ultra-{{NeRF}}},
+  booktitle = PROC_MIDL,
+  author = {Wysocki, Magdalena and Azampour, Mohammad Farid and Eilers, Christine and Busam, Benjamin and Salehi, Mehrdad and Navab, Nassir},
+  year = 2024,
+  pages = {382--401},
+  publisher = {PMLR},
+  issn = {2640-3498},
+  urldate = {2025-03-11},
+  abstract = {We present a physics-enhanced implicit neural representation (INR) for ultrasound (US) imaging that learns tissue properties from overlapping US sweeps. Our proposed method leverages a ray-tracing-based neural rendering for novel view US synthesis. Recent publications demonstrated that INR models could encode a representation of a three-dimensional scene from a set of two-dimensional US frames. However, these models fail to consider the view-dependent changes in appearance and geometry intrinsic to US imaging. In our work, we discuss direction-dependent changes in the scene and show that a physics-inspired rendering improves the fidelity of US image synthesis. In particular, we demonstrate experimentally that our proposed method generates geometrically accurate B-mode images for regions with ambiguous representation owing to view-dependent differences of the US images. We conduct our experiments using simulated B-mode US sweeps of the liver and acquired US sweeps of a spine phantom tracked with a robotic arm. The experiments corroborate that our method generates US frames that enable consistent volume compounding from previously unseen views. To the best of our knowledge, the presented work is the first to address view-dependent US image synthesis using INR.},
+  langid = {english},
+  keywords = {Area: Image Reconstruction},
+  file = {/Users/wangyibo/Documents/ZoteroLocalNotes/notes/Ultra-NeRF\: Neural Radiance Fields for Ultrasound Imaging.md;/Users/wangyibo/Zotero/storage/IFYX6RBP/Wysocki 等 - 2024 - Ultra-NeRF Neural Radiance Fields for Ultrasound Imaging.pdf}
+}
+
+@inproceedings{dagliNeRFUSRemovingUltrasound2024,
+  title = {{{NeRF-US}}: {{Removing Ultrasound Imaging Artifacts}} from {{Neural Radiance Fields}} in the {{Wild}}},
+  shorttitle = {{{NeRF-US}}},
+  booktitle = PROC_MLHC,
+  author = {Dagli, Rishit and Hibi, Atsuhiro and Krishnan, Rahul G. and Tyrrell, Pascal N.},
+  year = 2024,
+  eprint = {2408.10258},
+  primaryclass = {cs},
+  pages = {1--31},
+  doi = {10.48550/arXiv.2408.10258},
+  urldate = {2025-03-29},
+  abstract = {Current methods for performing 3D reconstruction and novel view synthesis (NVS) in ultrasound imaging data often face severe artifacts when training NeRF-based approaches. The artifacts produced by current approaches differ from NeRF floaters in general scenes because of the unique nature of ultrasound capture. Furthermore, existing models fail to produce reasonable 3D reconstructions when ultrasound data is captured or obtained casually in uncontrolled environments, which is common in clinical settings. Consequently, existing reconstruction and NVS methods struggle to handle ultrasound motion, fail to capture intricate details, and cannot model transparent and reflective surfaces. In this work, we introduced NeRF-US, which incorporates 3D-geometry guidance for border probability and scattering density into NeRF training, while also utilizing ultrasound-specific rendering over traditional volume rendering. These 3D priors are learned through a diffusion model. Through experiments conducted on our new "Ultrasound in the Wild" dataset, we observed accurate, clinically plausible, artifact-free reconstructions.},
+  archiveprefix = {arXiv},
+  langid = {american},
+  file = {/Users/wangyibo/Zotero/storage/UPGXIARW/dagli24a.pdf;/Users/wangyibo/Zotero/storage/49YN8MBM/2408.html}
+}
+
+@article{kerbl3DGaussianSplatting2023,
+  title = {{{3D Gaussian Splatting}} for {{Real-Time Radiance Field Rendering}}},
+  author = {Kerbl, Bernhard and Kopanas, Georgios and Leimkuehler, Thomas and Drettakis, George},
+  year = 2023,
+  month = aug,
+  journal = J_ACM_TOG,
+  volume = {42},
+  number = {4},
+  pages = {1--14},
+  issn = {0730-0301, 1557-7368},
+  doi = {10.1145/3592433},
+  urldate = {2025-03-29},
+  abstract = {Radiance Field methods have recently revolutionized novel-view synthesis of scenes captured with multiple photos or videos. However, achieving high visual quality still requires neural networks that are costly to train and render, while recent faster methods inevitably trade off speed for quality. For unbounded and complete scenes (rather than isolated objects) and 1080p resolution rendering, no current method can achieve real-time display rates. We introduce three key elements that allow us to achieve state-of-the-art visual quality while maintaining competitive training times and importantly allow high-quality real-time ({$\geq$} 30 fps) novel-view synthesis at 1080p resolution. First, starting from sparse points produced during camera calibration, we represent the scene with 3D Gaussians that preserve desirable properties of continuous volumetric radiance fields for scene optimization while avoiding unnecessary computation in empty space; Second, we perform interleaved optimization/density control of the 3D Gaussians, notably optimizing anisotropic covariance to achieve an accurate representation of the scene; Third, we develop a fast visibility-aware rendering algorithm that supports anisotropic splatting and both accelerates training and allows realtime rendering. We demonstrate state-of-the-art visual quality and real-time rendering on several established datasets.},
+  langid = {english},
+  keywords = {Read},
+  file = {/Users/wangyibo/Documents/ZoteroLocalNotes/gs_abstract_hello_world_linked_test.txt;/Users/wangyibo/Zotero/storage/7LPH8QJP/Kerbl 等 - 2023 - 3D Gaussian Splatting for Real-Time Radiance Field Rendering.pdf}
+}
+
+@inproceedings{eidUltraGaussUltrafastGaussian2025,
+  title = {{{UltraGauss}}: {{Ultrafast Gaussian Reconstruction}} of {{3D Ultrasound Volumes}}},
+  shorttitle = {{{UltraGauss}}},
+  booktitle = PROC_ICLR,
+  author = {Eid, Mark C. and Namburete, Ana and Henriques, Joao F.},
+  year = 2026,
+  pages = {1--35},
+  eprint = {2505.05643},
+  archiveprefix = {arXiv},
+  doi = {10.48550/arXiv.2505.05643},
+  urldate = {2026-03-21},
+  abstract = {Ultrasound imaging is widely used due to its safety, affordability, and real-time capabilities, but its 2D interpretation is highly operator-dependent, leading to variability and increased cognitive demand. We present \$\textbackslash textbf\textbraceleft UltraGauss\textbraceright\$: an ultrasound-specific Gaussian Splatting framework that serves as an efficient approximation to acoustic image formation. Unlike projection-based splatting, UltraGauss renders by \$\textbackslash textit\textbraceleft probe-plane intersection\textbraceright\$ with in-plane aggregation, aligning with plane-based echo sampling while remaining fast and memory-efficient. A stable parameterisation and compute-aware GPU rasterisation make this method practical at scale. On clinical datasets, UltraGauss delivers state-of-the-art 2D-to-3D reconstructions in minutes on a single GPU (reaching 0.99 SSIM within \$\textbackslash sim\$20 minutes), and a clinical expert survey rates its reconstructions the most realistic among competing methods. To our knowledge, this is the first Gaussian Splatting approach tailored to ultrasound 2D-to-3D reconstruction. Our code is available at: https://www.robots.ox.ac.uk/\textasciitilde vgg/research/UltraGauss/},
+  langid = {english},
+  keywords = {Read},
+  file = {/Users/wangyibo/Documents/ZoteroLocalNotes/notes/UltraGauss\: Ultrafast Gaussian Reconstruction of 3D Ultrasound Volumes.md;/Users/wangyibo/Zotero/storage/SG8RKAXG/Eid 等 - 2026 - UltraGauss Ultrafast Gaussian Reconstruction of 3D Ultrasound Volumes.pdf}
+}
+
+@inproceedings{yangUltraGSRealTimePhysicallyDecoupled2025,
+  title = {{{UltraGS}}: {{Real-Time Physically-Decoupled Gaussian Splatting}} for {{Ultrasound Novel View Synthesis}}},
+  shorttitle = {{{UltraGS}}},
+  booktitle = PROC_ICME,
+  author = {Yang, Yuezhe and Ruan, Qingqing and Cai, Wenjie and Dong, Yudang and Yang, Dexin and Dong, Xingbo and Jin, Zhe and Dai, Yong},
+  year = 2026,
+  pages = {1--8},
+  eprint = {2511.07743},
+  archiveprefix = {arXiv},
+  doi = {10.48550/ARXIV.2511.07743},
+  urldate = {2026-06-02},
+  abstract = {Ultrasound imaging is a cornerstone of non-invasive clinical diagnostics, yet its limited field of view poses challenges for novel view synthesis. We present UltraGS, a real-time framework that adapts Gaussian Splatting to sensorless ultrasound imaging by integrating explicit radiance fields with lightweight, physics-inspired acoustic modeling. UltraGS employs depthaware Gaussian primitives with learnable fields of view to improve geometric consistency under unconstrained probe motion, and introduces PD Rendering, a differentiable acoustic operator that combines low-order spherical harmonics with first-order wave effects for efficient intensity synthesis. We further present a clinical ultrasound dataset acquired under real-world scanning protocols. Extensive evaluations across three datasets demonstrate that UltraGS establishes a new performance-efficiency frontier, achieving state-of-the-art results in PSNR (up to 29.55) and SSIM (up to 0.89) while achieving real-time synthesis at 64.69 fps on a single GPU. The code and dataset are open-sourced at: https://github.com/Bean-Young/UltraGS.},
+  copyright = {Creative Commons Attribution 4.0 International},
+  keywords = {Code,Read},
+  file = {/Users/wangyibo/Documents/ZoteroLocalNotes/notes/UltraGS\: Real-Time Physically-Decoupled Gaussian Splatting for Ultrasound Novel View Synthesis.md;/Users/wangyibo/Documents/ZoteroLocalNotes/notes/UltraGS\: Real-Time Physically-Decoupled Gaussian Splatting for Ultrasound Novel View Synthesis.md;/Users/wangyibo/Zotero/storage/GTZPWAH9/Yang 等 - 2025 - UltraGS Real-Time Physically-Decoupled Gaussian Splatting for Ultrasound Novel View Synthesis.pdf}
+}
+
+@misc{duelmerUltraGRayPhysicsBasedGaussian2026,
+  title = {{{UltraG-Ray}}: {{Physics-Based Gaussian Ray Casting}} for {{Novel Ultrasound View Synthesis}}},
+  author = {Duelmer, Felix and Klaushofer, Jakob and Wysocki, Magdalena and Navab, Nassir and Azampour, Mohammad Farid},
+  year = 2026,
+  pages = {1--19},
+  note = {arXiv:2603.29022},
+  eprint = {2603.29022},
+  doi = {10.48550/arXiv.2603.29022},
+  abstract = {Novel view synthesis (NVS) in ultrasound has gained attention as a technique for generating anatomically plausible views beyond the acquired frames, offering new capabilities for training clinicians or data augmentation. However, current methods struggle with complex tissue and view-dependent acoustic effects. Physics-based NVS aims to address these limitations by including the ultrasound image formation process into the simulation. Recent approaches combine a learnable implicit scene representation with an ultrasound-specific rendering module, yet a substantial gap between simulation and reality remains. In this work, we introduce UltraG-Ray, a novel ultrasound scene representation based on a learnable 3D Gaussian field, coupled to an efficient physics-based module for B-mode synthesis. We explicitly encode ultrasound-specific parameters, such as attenuation and reflection, into a Gaussian-based spatial representation and realize image synthesis within a novel ray casting scheme. In contrast to previous methods, this approach naturally captures view-dependent attenuation effects, thereby enabling the generation of physically informed B-mode images with increased realism. We compare our method to state-of-the-art and observe consistent gains in image quality metrics (up to 15\% increase on MS-SSIM), demonstrating clear improvement in terms of realism of the synthesized ultrasound images.},
+  langid = {english},
+  keywords = {modality:ultrasound,Read},
+  file = {/Users/wangyibo/Documents/ZoteroLocalNotes/notes/UltraG-Ray\: Physics-Based Gaussian Ray Casting for Novel Ultrasound View Synthesis.md;/Users/wangyibo/Zotero/storage/B2ZIDM3T/Duelmer 等 - 2025 - UltraG-Ray Physics-Based Gaussian Ray Casting for Novel Ultrasound View Synthesis.pdf;/Users/wangyibo/Zotero/storage/P95SJY3R/Duelmer 等 - UltraG-Ray Physics-Based Gaussian Ray Casting for Novel Ultrasound View Synthesis.pdf}
+}
+
+@article{huangMMSEReconstruction2008,
+  author  = {Huang, Wei and Zheng, Yibin},
+  title   = {MMSE Reconstruction for 3D Freehand Ultrasound Imaging},
+  journal = J_IJBI,
+  year    = {2008},
+  volume  = {2008},
+  pages   = {274164},
+  doi     = {10.1155/2008/274164}
+}
+
+@article{huang2017,
+  title = {A {{Review}} on {{Real-Time 3D Ultrasound Imaging Technology}}},
+  author = {Huang, Qinghua and Zeng, Zhaozheng},
+  year = 2017,
+  journal = J_BMRI,
+  volume = {2017},
+  pages = {1--20},
+  issn = {2314-6133, 2314-6141},
+  doi = {10.1155/2017/6027029},
+  urldate = {2023-11-02},
+  abstract = {Real-time three-dimensional (3D) ultrasound (US) has attracted much more attention in medical researches because it provides interactive feedback to help clinicians acquire high-quality images as well as timely spatial information of the scanned area and hence is necessary in intraoperative ultrasound examinations. Plenty of publications have been declared to complete the real-time or near real-time visualization of 3D ultrasound using volumetric probes or the routinely used two-dimensional (2D) probes. So far, a review on how to design an interactive system with appropriate processing algorithms remains missing, resulting in the lack of systematic understanding of the relevant technology. In this article, previous and the latest work on designing a real-time or near real-time 3D ultrasound imaging system are reviewed. Specifically, the data acquisition techniques, reconstruction algorithms, volume rendering methods, and clinical applications are presented. Moreover, the advantages and disadvantages of state-of-the-art approaches are discussed in detail.},
+  langid = {english},
+  file = {/Users/wangyibo/Zotero/storage/2V2BB3VK/Huang 和 Zeng - 2017 - A Review on Real-Time 3D Ultrasound Imaging Techno.pdf}
+}
+
+@inproceedings{luoSelfContextShape2021,
+  title = {Self {{Context}} and {{Shape Prior}} for {{Sensorless Freehand 3D Ultrasound Reconstruction}}},
+  booktitle = PROC_MICCAI,
+  author = {Luo, Mingyuan and Yang, Xin and Huang, Xiaoqiong and Huang, Yuhao and Zou, Yuxin and Hu, Xindi and Ravikumar, Nishant and Frangi, Alejandro F. and Ni, Dong},
+  year = 2021,
+  pages = {201--210},
+  publisher = {Springer},
+  address = {Cham},
+  doi = {10.1007/978-3-030-87231-1_20},
+  urldate = {2025-03-06},
+  isbn = {978-3-030-87230-4 978-3-030-87231-1},
+  langid = {english},
+  keywords = {Area: Image Reconstruction,Learning: Adversarial Learning,Learning: Self-supervised Learning},
+  file = {/Users/wangyibo/Zotero/storage/5PTKSSAU/Luo 等 - 2021 - Self Context and Shape Prior for Sensorless Freehand 3D Ultrasound Reconstruction.pdf}
+}
+
+@inproceedings{mildenhallNeRFRepresentingScenes2020,
+  title = {{{NeRF}}: {{Representing Scenes}} as {{Neural Radiance Fields}} for {{View Synthesis}}},
+  shorttitle = {{{NeRF}}},
+  booktitle = PROC_ECCV,
+  author = {Mildenhall, Ben and Srinivasan, Pratul P. and Tancik, Matthew and Barron, Jonathan T. and Ramamoorthi, Ravi and Ng, Ren},
+  year = 2020,
+  pages = {405--421},
+  publisher = {Springer},
+  address = {Cham},
+  doi = {10.1007/978-3-030-58452-8_24},
+  urldate = {2025-03-11},
+  abstract = {We present a method that achieves state-of-the-art results for synthesizing novel views of complex scenes by optimizing an underlying continuous volumetric scene function using a sparse set of input views. Our algorithm represents a scene using a fully-connected (nonconvolutional) deep network, whose input is a single continuous 5D coordinate (spatial location (x, y, z) and viewing direction (\texttheta, {$\varphi$})) and whose output is the volume density and view-dependent emitted radiance at that spatial location. We synthesize views by querying 5D coordinates along camera rays and use classic volume rendering techniques to project the output colors and densities into an image. Because volume rendering is naturally differentiable, the only input required to optimize our representation is a set of images with known camera poses. We describe how to effectively optimize neural radiance fields to render photorealistic novel views of scenes with complicated geometry and appearance, and demonstrate results that outperform prior work on neural rendering and view synthesis. View synthesis results are best viewed as videos, so we urge readers to view our supplementary video for convincing comparisons.},
+  isbn = {978-3-030-58451-1 978-3-030-58452-8},
+  langid = {english},
+  file = {/Users/wangyibo/Zotero/storage/UXL54CQ2/Mildenhall 等 - 2020 - NeRF Representing Scenes as Neural Radiance Fields for View Synthesis.pdf}
+}
+
+@inproceedings{song2022a,
+  title = {Development of {{Implicit Representation Method}} for {{Freehand 3D Ultrasound Image Reconstruction}} of {{Carotid Vessel}}},
+  booktitle = PROC_IUS,
+  author = {Song, Sheng and Huang, Yunqian and Li, Jiawen and Chen, Man and Zheng, Rui},
+  year = 2022,
+  month = oct,
+  pages = {1--4},
+  issn = {1948-5727},
+  doi = {10.1109/IUS54386.2022.9958448},
+  urldate = {2025-03-24},
+  abstract = {The objective of this study is to develop a novel 3D ultrasound reconstruction algorithm based on deep learning method, which can reduce the artifacts of 3D volume of carotid artery. The method implicitly inferred and represented the intensity and semantic probability of the voxel in the image volume using a multi-layer perceptron (MLP) network. Fifteen datasets were collected on the carotid atherosclerosis (CA) and healthy subjects in clinic and reconstructed to 3D volume after vessel segmentation. The discontinuity and distortion were defined to evaluate the artifact of the images volume, and the variation of overall curvature was calculated to evaluate the smoothness of the reconstructed vessel wall. The results showed our method outperformed traditional methods by reducing 34.79\% distortion and 61.61 \% discontinuity and yielding more than 60\% improved cases. It demonstrated that our method has the potential of providing smoother and more continuous image volume comparing with the conventional reconstruction method.},
+  file = {/Users/wangyibo/Zotero/storage/4GYFTCJT/Song 等 - 2022 - Development of Implicit Representation Method for Freehand 3D Ultrasound Image Reconstruction of Car.pdf;/Users/wangyibo/Zotero/storage/3LAFUH9P/9958448.html}
+}
+
+@inproceedings{eidRapidvolRapidReconstruction2025,
+  title = {Rapidvol: {{Rapid Reconstruction}} of {{3D Ultrasound Volumes}} from {{Sensorless 2D Scans}}},
+  shorttitle = {Rapidvol},
+  booktitle = PROC_ISBI,
+  author = {Eid, Mark C. and Yeung, Pak-Hei and Wyburd, Madeleine K. and Henriques, Jo{\~a}o F. and Namburete, Ana I.L.},
+  year = 2025,
+  month = apr,
+  pages = {1--5},
+  issn = {1945-8452},
+  doi = {10.1109/ISBI60581.2025.10980994},
+  urldate = {2025-09-06},
+  abstract = {Two-dimensional (2D) freehand ultrasonography is a widely used medical imaging modality, particularly in obstetrics and gynaecology. However, it only captures 2D cross-sectional views of inherently 3D anatomies, losing valuable contextual information. As an alternative to costly 3D ultrasound (US) scanners, 3D volumes can be artificially reconstructed from 2D scans, but this is usually prohibitively slow. Hence, we propose RapidVol: a neural representation framework to speed up slice-to-volume US reconstruction. We use tensor-rank decomposition to decompose the typical 3D volume into tri-planes, which are stored alongside a small neural network. With a set of 2D US scans and their estimated 3D orientation, RapidVol can achieve complete 3D reconstruction. To evaluate our method, we form reconstructions from real fetal brain scans, and then request novel cross-sectional views. Compared to prior fully implicit (e.g. neural radiance field) approaches, our method is over 3x quicker, 46\% more accurate, and more robust to errors in pose estimation. We also demonstrate that further speed-up is achievable by reconstructing from a structural prior rather than from random initialisation.},
+  keywords = {3D Reconstruction,Accuracy,Biomedical imaging,Image reconstruction,NeRF,Neural radiance field,Obstetrics,Pose estimation,Probes,Three-dimensional displays,Two-dimensional displays,Ultrasonography,Ultrasound},
+  file = {/Users/wangyibo/Zotero/storage/59PCUGW4/Eid 等 - 2025 - Rapidvol Rapid Reconstruction of 3D Ultrasound Volumes from Sensorless 2D Scans.pdf}
+}
+
+@inproceedings{douContinuousBernoulliDistribution2024,
+  title = {Continuous {{Bernoulli Distribution}} for {{More Realistic Ultrasound Reconstruction}} with {{NeRF}}},
+  booktitle = PROC_UFFCJS,
+  author = {Dou, Yimeng and Varghese, Tomy},
+  year = 2024,
+  pages = {1--4},
+  issn = {2375-0448},
+  doi = {10.1109/UFFC-JS60046.2024.10793769},
+  urldate = {2025-09-03},
+  abstract = {Three-dimensional visualization offers a significantly improved depiction of the underlying anatomical structure; however conventional ultrasound typically provides two-dimensional B-mode images of anatomical regions in real time. Recent breakthroughs in computer graphics have leveraged the ability of Neural Radiance Fields (NeRF) to reconstruct three-dimensional scenes implicitly. This is achieved by formulating the three-dimensional scenes as continuous signals using multi-layer perception (MLP). The reconstructed images can be viewed from novel perspectives using a differentiable rendering method. However, current methods cannot recover complex ultrasound anatomical structures and can introduce artifacts, which impact the reconstruction quality. We propose a probabilistic and differentiable approach to estimate backscattered data to provide a more realistic three-dimensional ultrasound reconstruction with NeRF. Our proposed method achieves an improved peak signal-to-noise ratio (PSNR) score of 27.73\textpm 0.98 dB compared to the baseline method with 26.31\textpm 1.91 dB, along with an improved structural similarity index measure (SSIM) value of 0.47\textpm 0.21 to 0.54\textpm 0.19 for NeRF.},
+  keywords = {Anatomical structure,Freehand Ultrasound,Image reconstruction,Indexes,Neural radiance field,Probabilistic logic,PSNR,Real-time systems,Rendering (computer graphics),Three-dimensional reconstruction,Ultrasonic imaging,Ultrasonic variables measurement},
+  file = {/Users/wangyibo/Zotero/storage/2Y66CL34/Dou和Varghese - 2024 - Continuous Bernoulli Distribution for More Realistic Ultrasound Reconstruction with NeRF.pdf}
+}
+
+@inproceedings{zhaoBADGaussiansBundle2024,
+  title     = {{BAD-Gaussians}: Bundle Adjusted Deblur Gaussian Splatting},
+  author    = {Zhao, Lingzhe and Wang, Peng and Liu, Peidong},
+  booktitle = PROC_ECCV,
+  year      = {2024},
+  pages     = {233--250},
+  publisher = {Springer},
+  doi       = {10.1007/978-3-031-72698-9_14}
+}
+
+@inproceedings{leeDiETGSDiffusionPrior2025,
+  title     = {{DiET-GS}: Diffusion Prior and Event Stream-Assisted Motion
+               Deblurring 3D Gaussian Splatting},
+  author    = {Lee, Seungjun and Lee, Gim Hee},
+  booktitle = PROC_CVPR,
+  year      = {2025},
+  pages     = {21739--21749},
+  doi       = {10.1109/CVPR52734.2025.02025}
+}
+
+@incollection{zhuFSGSRealTimeFewShot2025,
+  title = {{{FSGS}}: {{Real-Time Few-Shot View Synthesis Using Gaussian Splatting}}},
+  shorttitle = {{{FSGS}}},
+  booktitle = PROC_ECCV,
+  author = {Zhu, Zehao and Fan, Zhiwen and Jiang, Yifan and Wang, Zhangyang},
+  year = 2024,
+  pages = {145--163},
+  publisher = {Springer},
+  address = {Cham},
+  doi = {10.1007/978-3-031-72933-1_9},
+  urldate = {2026-03-19},
+  abstract = {Novel view synthesis from limited observations remains a crucial and ongoing challenge. In the realm of NeRF-based few-shot view synthesis, there is often a trade-off between the accuracy of the synthesized view and the efficiency of the 3D representation. To tackle this dilemma, we introduce a Few-Shot view synthesis framework based on 3D Gaussian Splatting, which facilitates real-time, photo-realistic synthesis from a minimal number of training views. FSGS employs an innovative Proximity-guided Gaussian Unpooling, specifically designed for sparse-view settings, to bridge the gap presented by the sparse initial point sets. This method involves the strategic placement of new Gaussians between existing ones, guided by a Gaussian proximity score, enhancing the adaptive density control. We have identified that Gaussian optimization can sometimes result in overly smooth textures and a propensity for overfitting when training views are limited. To mitigate these issues, FSGS introduces the synthesis of virtual views to replicate the parallax effect experienced during training, coupled with geometric regularization applied across both actual training and synthesized viewpoints. This strategy ensures that new Gaussians are placed in the most representative locations, fostering more accurate and detailed scene reconstruction. Our comprehensive evaluation across various datasetsincluding NeRF-Synthetic, LLFF, Shiny, and Mip-NeRF360 datasetsillustrates that FSGS not only delivers exceptional rendering quality but also achieves an inference speed more than 2000 times faster than existing state-of-the-art methods for sparse-view synthesis. Project webpage: https://zehaozhu.github.io/FSGS/.},
+  isbn = {978-3-031-72932-4 978-3-031-72933-1},
+  langid = {english},
+  file = {/Users/wangyibo/Documents/ZoteroLocalNotes/notes/FSGS\: Real-Time Few-Shot View Synthesis Using Gaussian Splatting.md;/Users/wangyibo/Zotero/storage/HW6KXDVJ/Zhu 等 - 2025 - FSGS Real-Time Few-Shot View Synthesis Using Gaussian Splatting.pdf;/Users/wangyibo/Zotero/storage/SVYVXV8N/Zhu 等 - 2024 - FSGS Real-Time Few-Shot View Synthesis Using Gaussian Splatting.pdf}
+}
+
+@article{baoLoopSparseGSLoopBased2025,
+  title   = {{LoopSparseGS}: Loop-Based Sparse-View Friendly Gaussian Splatting},
+  author  = {Bao, Zhenyu and Liao, Guibiao and Zhou, Kaichen and Liu, Kanglin
+             and Li, Qing and Qiu, Guoping},
+  journal = IEEE_J_IP,
+  year    = {2025},
+  volume  = {34},
+  pages   = {3889--3902},
+  doi     = {10.1109/TIP.2025.3574929}
+}
+
+@inproceedings{leeFullyExplicitDynamic2024,
+  title     = {Fully Explicit Dynamic Gaussian Splatting},
+  author    = {Lee, Junoh and Won, Changyeon and Jung, Hyunjun and
+               Bae, Inhwan and Jeon, Hae-Gon},
+  booktitle = PROC_NEURIPS,
+  year      = {2024},
+  pages     = {5384--5409},
+  doi       = {10.52202/079017-0174}
+}
+
+@inproceedings{shawSWinGSSlidingWindows2024,
+  title     = {{SWinGS}: Sliding Windows for Dynamic 3D Gaussian Splatting},
+  author    = {Shaw, Richard and Nazarczuk, Michal and Song, Jifei and
+               Moreau, Arthur and Catley-Chandar, Sibi and Dhamo, Helisa and
+               P{\'e}rez-Pellitero, Eduardo},
+  booktitle = PROC_ECCV,
+  year      = {2024},
+  pages     = {37--54},
+  publisher = {Springer},
+  doi       = {10.1007/978-3-031-73001-6_3}
+}
+
+@inproceedings{guoUncertaintyMattersDynamic2026,
+  title     = {Uncertainty Matters in Dynamic Gaussian Splatting for Monocular
+               4D Reconstruction},
+  author    = {Guo, Fengzhi and Hsu, Chih-Chuan and Ding, Sihao and Zhang, Cheng},
+  booktitle = PROC_ICLR,
+  year      = {2026},
+  pages     = {1--27}
+}
+
+@inproceedings{wuFruitNinja3DObject2025,
+  title = {{{FruitNinja}}: {{3D Object Interior Texture Generation}} with {{Gaussian Splatting}}},
+  shorttitle = {{{FruitNinja}}},
+  booktitle = PROC_CVPR,
+  author = {Wu, Fangyu and Chen, Yuhao},
+  year = 2025,
+  pages = {11051--11060},
+  urldate = {2026-03-23},
+  langid = {english},
+  file = {/Users/wangyibo/Zotero/storage/BSW5RMP9/Wu和Chen - 2025 - FruitNinja 3D Object Interior Texture Generation with Gaussian Splatting.pdf}
+}
+
+@inproceedings{kongGaussianPileUnifiedSparse2026,
+  title = {{{GaussianPile}}: {{A Unified Sparse Gaussian Splatting Framework}} for {{Slice-based Volumetric Reconstruction}}},
+  shorttitle = {{{GaussianPile}}},
+  booktitle = PROC_CVPR,
+  author = {Kong, Di and Wang, Yikai and Guo, Wenjie and Bu, Yifan and Zhang, Boya and Duan, Yuexin and Yue, Xiawei and Du, Wenbiao and Zhong, Yiman and Chen, Yuwen and Ma, Cheng},
+  year = 2026,
+  month = jun,
+  pages = {19022--19032},
+  doi = {10.48550/ARXIV.2603.20611},
+  urldate = {2026-05-12},
+  abstract = {Slice-based volumetric imaging is widely applied and it demands representations that compress aggressively while preserving internal structure for analysis. We introduce GaussianPile, unifying 3D Gaussian splatting with an imaging system-aware focus model to address this challenge. Our proposed method introduces three key innovations: (i) a slice-aware piling strategy that positions anisotropic 3D Gaussians to model through-slice contributions, (ii) a differentiable projection operator that encodes the finite-thickness point spread function of the imaging acquisition system, and (iii) a compact encoding and joint optimization pipeline that simultaneously reconstructs and compresses the Gaussian sets. Our CUDA-based design retains the compression and real-time rendering efficiency of Gaussian primitives while preserving high-frequency internal volumetric detail. Experiments on microscopy and ultrasound datasets demonstrate that our method reduces storage and reconstruction cost, sustains diagnostic fidelity, and enables fast 2D visualization, along with 3D voxelization. In practice, it delivers high-quality results in as few as 3 minutes, up to 11\texttimes{} faster than NeRF-based approaches, and achieves consistent 16\texttimes{} compression over voxel grids, offering a practical path to deployable compression and exploration of slice-based volumetric datasets.},
+  copyright = {arXiv.org perpetual, non-exclusive license},
+  keywords = {Middle},
+  file = {/Users/wangyibo/Documents/PaperFactory/ReadingNotes/Bucket0/GaussianPile\: A Unified Sparse Gaussian Splatting Framework for Slice-based Volumetric Reconstruction.md;/Users/wangyibo/Documents/ZoteroLocalNotes/notes/GaussianPile\: A Unified Sparse Gaussian Splatting Framework for Slice-based Volumetric Reconstruction.md;/Users/wangyibo/Zotero/storage/MVUFCQMG/Kong 等 - 2026 - GaussianPile A Unified Sparse Gaussian Splatting Framework for Slice-based Volumetric Reconstructio.pdf}
+}
+
+@misc{luoTDSCABUSChallenge2025,
+  title = {Tumor {{Detection}}, {{Segmentation}} and {{Classification Challenge}} on {{Automated 3D Breast Ultrasound}}: {{The TDSC-ABUS Challenge}}},
+  author = {Luo, Gongning and Xu, Mingwang and Chen, Hongyu and Liang, Xinjie and Tao, Xing and Ni, Dong and Jeong, Hyunsu and Kim, Chulhong and Stock, Raphael and Baumgartner, Michael and Kirchhoff, Yannick and Rokuss, Maximilian and Maier-Hein, Klaus and Yang, Zhikai and Fan, Tianyu and Boutry, Nicolas and Tereshchenko, Dmitry and Moine, Arthur and Charmetant, Maximilien and Sauer, Jan and Du, Hao and Bai, Xiang-Hui and Raikar, Vipul Pai and {Montoya-del-Angel}, Ricardo and Marti, Robert and Luna, Miguel and Lee, Dongmin and Qayyum, Abdul and Mazher, Moona and Guo, Qihui and Wang, Changyan and Awasthi, Navchetan and Zhao, Qiaochu and Wang, Wei and Wang, Kuanquan and Wang, Qiucheng and Dong, Suyu},
+  year = 2025,
+  month = jan,
+  pages = {1--22},
+  note = {arXiv:2501.15588},
+  number = {arXiv:2501.15588},
+  eprint = {2501.15588},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2501.15588},
+  archiveprefix = {arXiv},
+  langid = {english}
+}

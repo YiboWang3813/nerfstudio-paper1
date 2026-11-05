@@ -1,0 +1,96 @@
+{
+  "mac_package": "workspace/exchange/inbox/manuscript-for-216-20261105-155440",
+  "mac_git_head": "9d2649c1a6910fcf190f876ad3a283bce74d931b",
+  "figures": [
+    {
+      "mac_file": "manuscript/figures/pdf/methods_overview.pdf",
+      "sha256": "5c2c4810ddd02d7a40b5c8a098798e952e3928670bc8231df8c78ad128bac48f",
+      "status": "author-created method diagram; authoritative PDF supplied, editable drawing source not supplied",
+      "original_local_match": null,
+      "retained_copy": "docs/manuscript/figures/pdf/methods_overview.pdf"
+    },
+    {
+      "mac_file": "manuscript/figures/pdf/results_ablation_afgm.pdf",
+      "sha256": "965f6843f3001cad6f510d3d190ac3c44f09063c6add41f67b0029cd6e0a3ab9",
+      "status": "byte_identical",
+      "original_local_match": "outputs/artifact-inputs/figure_h1_afgm/published/ieee_tmi_endo_style/H1_AFGM.pdf",
+      "retained_copy": "docs/manuscript/figures/pdf/results_ablation_afgm.pdf"
+    },
+    {
+      "mac_file": "manuscript/figures/pdf/results_ablation_cgas.pdf",
+      "sha256": "a971edf08e0e56ab5e79dad58df2343d54ca23b534227393a6c2ca890fdf268f",
+      "status": "byte_identical",
+      "original_local_match": "outputs/artifact-inputs/figure_h3_cgas/published/ieee_tmi_endo_style/H3_CGAS.pdf",
+      "retained_copy": "docs/manuscript/figures/pdf/results_ablation_cgas.pdf"
+    },
+    {
+      "mac_file": "manuscript/figures/pdf/results_ablation_plgr.pdf",
+      "sha256": "3f051758844c34b5b243a9892542c455fe2af9b766c4dc3746b4f29b6742d801",
+      "status": "byte_identical",
+      "original_local_match": "outputs/artifact-inputs/figure_h2_plgr/published/ieee_tmi_endo_style/H2_PLGR.pdf",
+      "retained_copy": "docs/manuscript/figures/pdf/results_ablation_plgr.pdf"
+    },
+    {
+      "mac_file": "manuscript/figures/pdf/results_comparison_all_datasets.pdf",
+      "sha256": "043b776da897161cdcef2879e60faad7538b6ad73856823adf303271b380225b",
+      "status": "byte_identical",
+      "original_local_match": "outputs/artifact-inputs/figure_main_2d_original/published/historical/paper_all_datasets_2d_rendering.pdf",
+      "retained_copy": "docs/manuscript/figures/pdf/results_comparison_all_datasets.pdf"
+    }
+  ],
+  "tables": [
+    {
+      "mac_file": "manuscript/tables/comparison_four_datasets.tex",
+      "source_member": "main_comparison/final_main_table_raw.tsv",
+      "rows": 16,
+      "numeric_cells": 224,
+      "status": "all_displayed_numeric_cells_match",
+      "note": "Legacy manuscript-exchange TeX differs from the Mac Ours row; it is not an authoritative input."
+    },
+    {
+      "mac_file": "manuscript/tables/ablation_joint_components.tex",
+      "local_file": "docs/experiments/joint-ablation/table-joint-historical-table-latex.tex",
+      "rows": 8,
+      "numeric_cells": 48,
+      "status": "all_displayed_numeric_cells_match",
+      "additional_local_rows_not_in_manuscript": 0
+    },
+    {
+      "mac_file": "manuscript/tables/ablation_afgm.tex",
+      "local_file": "docs/experiments/afgm-ablation/table-afgm-historical-table-latex.tex",
+      "rows": 4,
+      "numeric_cells": 24,
+      "status": "all_displayed_numeric_cells_match",
+      "additional_local_rows_not_in_manuscript": 0
+    },
+    {
+      "mac_file": "manuscript/tables/ablation_plgr.tex",
+      "local_file": "docs/experiments/plgr-ablation/table-plgr-historical-table-latex.tex",
+      "rows": 5,
+      "numeric_cells": 30,
+      "status": "all_displayed_numeric_cells_match",
+      "additional_local_rows_not_in_manuscript": 0
+    },
+    {
+      "mac_file": "manuscript/tables/ablation_cgas.tex",
+      "local_file": "docs/experiments/cgas-ablation/table-cgas-historical-table-latex.tex",
+      "rows": 5,
+      "numeric_cells": 30,
+      "status": "all_displayed_numeric_cells_match",
+      "additional_local_rows_not_in_manuscript": 0
+    }
+  ],
+  "required_source_tables": [
+    "main_comparison/final_main_case_sources.tsv",
+    "main_comparison/final_main_table_raw.tsv",
+    "main_comparison/final_main_efficiency_panels.tsv",
+    "main/final_fixed_fps_per_run.tsv",
+    "joint/final_joint_sources.tsv",
+    "ppp/final_ppp_sources.tsv",
+    "lgr/structural_sources.tsv",
+    "cga/structural_sources.tsv",
+    "ppp/rho_data.tsv",
+    "lgr/hyperparameter_data.tsv",
+    "cga/hyperparameter_data.tsv"
+  ]
+}

@@ -1,0 +1,61 @@
+\begin{table}[!t]
+
+\centering
+
+\caption{Joint ablation of AFGM, PLGR, and CGAS.}
+
+\label{tab:ablation:joint}
+
+\normalsize
+\setlength{\tabcolsep}{2.2pt}
+\renewcommand{\arraystretch}{0.88}
+
+\resizebox{\columnwidth}{!}{%
+
+\begin{tabular}{ccc|rrr|rrr}
+
+\toprule
+
+\multicolumn{3}{c|}{Component}
+& \multicolumn{3}{c|}{Liver}
+& \multicolumn{3}{c}{Arm}\\
+
+\cmidrule(lr){1-3}\cmidrule(lr){4-6}\cmidrule(lr){7-9}
+
+AFGM & PLGR & CGAS
+& PSNR$\uparrow$ & SSIM$\uparrow$ & LPIPS$\downarrow$
+& PSNR$\uparrow$ & SSIM$\uparrow$ & LPIPS$\downarrow$\\
+
+\midrule
+
+           &            &            & 25.747 & 0.616 & 0.399
+                                      & 21.092 & 0.643 & 0.350\\
+
+\checkmark &            &            & 25.608 & 0.617 & 0.565
+                                      & 24.136 & 0.760 & 0.322\\
+
+           &            & \checkmark & 25.795 & 0.616 & 0.387
+                                      & 21.398 & 0.650 & 0.340\\
+
+\checkmark &            & \checkmark & 25.595 & 0.617 & 0.573
+                                      & 24.153 & 0.760 & 0.322\\
+
+           & \checkmark &            & 29.449 & 0.660 & \underline{0.158}
+                                      & 32.785 & 0.865 & 0.112\\
+
+\checkmark & \checkmark &            & \underline{29.648} & \underline{0.667} & 0.183
+                                      & \underline{33.263} & \underline{0.872} & \underline{0.108}\\
+
+           & \checkmark & \checkmark & 29.452 & 0.660 & \textbf{0.157}
+                                      & 32.817 & 0.866 & 0.112\\
+
+\checkmark & \checkmark & \checkmark & \textbf{29.648} & \textbf{0.667} & 0.182
+                                      & \textbf{33.271} & \textbf{0.872} & \textbf{0.108}\\
+
+\bottomrule
+
+\end{tabular}}
+
+\vspace{-6mm}
+
+\end{table}

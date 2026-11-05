@@ -1,0 +1,183 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-04",
+  "task": "native-ultrasound-refactor",
+  "status": "complete_assets_preserved_before_formal_reproduction",
+  "authorization": {
+    "weights": "excluded by latest user instruction",
+    "historical_docs_figures": "all useful tracked/untracked assets retained, organized and verified",
+    "data": "shared datasets; controlled versioned publication only",
+    "environment": "reuse paper2 shared stack",
+    "quality_validation": "new native runs compared with retained results; approximate quality agreement, no strict old-code execution"
+  },
+  "source": {
+    "nerfstudio": {
+      "ssh": "eehpc:/home/boywang25/paper1/nerfstudio",
+      "commit": "fa2006d8ad82149bb89ea50f554e8b49edfe77bb",
+      "excluded_runtime_links": [
+        {
+          "path": "paper1_legacy/logs",
+          "target": "/home/boywang25/paper1/results/legacy/logs"
+        },
+        {
+          "path": "paper1_legacy/artifacts",
+          "target": "/home/boywang25/paper1/results/legacy/artifacts"
+        },
+        {
+          "path": "paper1_legacy/ops",
+          "target": "/home/boywang25/paper1/gsplat/ultrasound_ops"
+        },
+        {
+          "path": "paper1_legacy/workspace",
+          "target": "/home/boywang25/paper1/results/legacy/workspace"
+        },
+        {
+          "path": "paper1_legacy/wandb",
+          "target": "/home/boywang25/paper1/results/legacy/wandb"
+        }
+      ]
+    },
+    "gsplat": {
+      "ssh": "eehpc:/home/boywang25/paper1/gsplat",
+      "commit": "a2c4c9b86ccbf0e0bc2a6cbca66be07f1af1e66f",
+      "excluded_runtime_links": []
+    }
+  },
+  "stages": {
+    "code_transfer": "complete; both fork histories retained; source originals preserved",
+    "runtime_isolation": "validated; project source routing; one shared Torch/CUDA stack; library-only IQA overlay",
+    "cuda_backend": "six native backends compiled locally; real forward/backward and independent reference checks passed; Ours quaternion derivative corrected analytically",
+    "native_ours": "native Model/Pipeline/Trainer/Strategy, complete temporal pose-prior domain, uncertainty and evaluation contracts validated",
+    "native_baselines": "five Gaussian native backends/strategies and two native Field RaySamples implementations validated",
+    "dataset_publication": "78 sweeps, 79 ZIPs, all 328 medical source files accounted for; full SHA256 readback and four current pointers verified",
+    "end_to_end_validation": "34 contract/kernel tests; 32 real-data native train/eval/continuation cases; official eval CLI; 624 frozen native recipes",
+    "historical_assets": "docs/results versioned files curated and verified; protocol integrated into nerfstudio; see curated-assets-validation.json",
+    "representative_quality_probes": "completed: eight methods at 5k on liver/l1; UltraGS historical-parameter follow-up matches; see representative-quality-acceptance.json"
+  },
+  "validation": [
+    {
+      "artifact": "/home/yibo/paper1/migration/native-final-tests.log",
+      "result": "13 passed",
+      "scope": "CUDA math, pose gradient, parser, canonical prior, loss semantics, topology and checkpoint continuation",
+      "execution_identity": "Executed from the uncommitted native working tree; delivery commits do not replace historical execution identities."
+    },
+    {
+      "artifact": "/home/yibo/paper1/migration/four-dataset-native-smoke.json",
+      "result": "4 train + 4 eval commands passed",
+      "scope": "4096 Gaussians, 12 steps each; engineering only",
+      "execution_identity": "Executed from the uncommitted native working tree; delivery commits do not replace historical execution identities."
+    },
+    {
+      "artifact": "/home/yibo/paper1/migration/liver-global-native-smoke.log",
+      "result": "passed",
+      "scope": "real-data integral attenuation, residual-guided adaptation and path-aware pruning; engineering only",
+      "execution_identity": "Executed from the uncommitted native working tree; delivery commits do not replace historical execution identities."
+    },
+    {
+      "artifact": "/home/yibo/paper1/migration/cuda-build-final.log",
+      "result": "compiled and kernel-tested",
+      "binary_identity": "/home/yibo/shared/cache/torch_extensions/paper1/31b97819c36a25c6536ecd6c/identity.json"
+    },
+    {
+      "artifact": "/home/yibo/paper1/migration/preformal-acceptance.json",
+      "result": "34 native contract/kernel tests; 32 real-data cases; 624 native recipes verified",
+      "execution_identity": "See immutable commit-named evidence in acceptance record; metadata-only delivery commit is separately recorded."
+    }
+  ],
+  "remaining": [
+    "Shared registry metadata update is queued for exclusive provision lock; no package mutations required."
+  ],
+  "cloud": {
+    "class_a_request_attempts": 87,
+    "class_b_request_attempts": 199,
+    "storage_class": "STANDARD",
+    "version": "p100k-native-v2",
+    "source_originals_preserved": true,
+    "billing_telemetry": "Not available; shared conservative reservation ledger retained"
+  },
+  "assets": {
+    "representative_dataset_bytes": 115076732,
+    "weights_from_source": 0,
+    "historical_manuscripts_or_figures_transferred": false
+  },
+  "execution_notes": [
+    {
+      "issue": "Default editable finder was shadowed by the shared stock gsplat package",
+      "resolution": "Project-local setuptools editable_mode=compat; source paths verified from the paper2 checkout and /tmp"
+    },
+    {
+      "issue": "Shared runtime temporarily had incompatible websockets/Viser and TensorBoard/protobuf versions",
+      "resolution": "Temporary project-only overrides removed after the shared runtime was reconciled; no duplicated general packages remain"
+    },
+    {
+      "issue": "Ninja executable not found in the initial launcher PATH",
+      "resolution": "Launcher includes the shared runtime bin directory and explicit CUDA 12.4 toolchain"
+    },
+    {
+      "issue": "Preserved headers had trailing whitespace",
+      "resolution": "Whitespace normalized and the new content-addressed extension rebuilt and tested"
+    },
+    {
+      "issue": "The old native-final-tests.log path was reused in later engineering validation.",
+      "resolution": "Prior summary/execution identities retained; current final evidence archived with implementation commit IDs."
+    }
+  ],
+  "local_dataset_packages": [
+    "/home/yibo/shared/cache/dataset-packages/paper1/tus_rec_2024_qc/p100k-native-v1/010_LH_Per_L_DtP_qc_0005_0370.receipt.json",
+    "/home/yibo/shared/cache/dataset-packages/paper1/synthetic_liver/p100k-native-v1/l1.receipt.json",
+    "/home/yibo/shared/cache/dataset-packages/paper1/spine_phantom/p100k-native-v1/left1.receipt.json",
+    "/home/yibo/shared/cache/dataset-packages/paper1/tdsc_abus_2023/p100k-native-v1/validation_100.receipt.json"
+  ],
+  "delivery_commits": {
+    "nerfstudio": "e984c097f15da7db4fabf59d10c587fd083274e6",
+    "gsplat": "e75ec98f9adb5d440345f918ce7d122923a79e84"
+  },
+  "prior_stage_snapshot": {
+    "status": "in_progress",
+    "stages": {
+      "code_transfer": "complete; both fork histories retained; git connectivity and tracked transfer identity checked",
+      "runtime_isolation": "validated; independent Nerfstudio/gsplat sources and a single shared Torch stack",
+      "cuda_backend": "ours native kernel integrated and compiled; forward/backward/global path/pose checks passed",
+      "native_ours": "native core validated; production preset, full metrics and full-budget acceptance pending",
+      "native_baselines": "pending; historical code transferred but not native-adapted",
+      "dataset_publication": "four representative sweeps verified locally and packaged; zero R2 requests; no pointers published",
+      "end_to_end_validation": "engineering smoke passed for four datasets; formal reproduction pending"
+    },
+    "remaining": [
+      "production configuration conversion and fail-closed option coverage",
+      "complete six-metric evaluation and per-frame provenance",
+      "pose refinement, uncertainty and full ablation coverage",
+      "native baseline model/backend ports",
+      "remaining dataset packages and controlled R2 publication after shared usage verification",
+      "formal 1M/30k experiment validation; manuscripts and figures remain deferred"
+    ],
+    "cloud": {
+      "r2_requests_by_this_task": 0,
+      "uploads": 0,
+      "current_pointer_writes": 0,
+      "published": false
+    },
+    "delivery_commits": {
+      "nerfstudio": "5deee98ac7650e071dbece115b8b621a907b95ef",
+      "gsplat": "ef0d83d4ebe35449cae4b3edef8f5e9dcbe9d2cf"
+    }
+  },
+  "formal_training_started": false,
+  "deferred_by_user": [
+    "Formal 1M/30k reproduction",
+    "Historical experiment weights",
+    "Historical manuscripts, figures and result migration"
+  ],
+  "preformal_acceptance": "/home/yibo/paper1/migration/preformal-acceptance.json",
+  "environment_registration_status": "/home/yibo/paper1/migration/registry-registration.json",
+  "current_delivery_commits": {
+    "nerfstudio": "18d4ff9b119f1260f6be8461fb5bdd6aabff6617",
+    "docs": "b7cee5ce72ce1f0f42617a8c2c531d3c99c917c4",
+    "results": "00305ee1affcde3c28bf751117755e658c9217c3",
+    "gsplat": "e75ec98f9adb5d440345f918ce7d122923a79e84"
+  },
+  "complete_asset_migration": "migration/complete-assets-20261105/completion.json",
+  "historical_checkpoints": "excluded by latest user instruction",
+  "checkpoints": "excluded; no historical checkpoints migrated",
+  "canonical_tracking": "One canonical copy; compatibility archive links; full source reference snapshot retained locally and ignored"
+}

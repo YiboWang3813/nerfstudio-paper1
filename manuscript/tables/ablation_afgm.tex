@@ -1,0 +1,54 @@
+\begin{table}[!t]
+
+\centering
+
+\caption{Internal ablation of AFGM, where MP denotes full measured poses,
+while MG-S and MG-A retain only step magnitude and axial projection,
+respectively.}
+
+\label{tab:ablation:afgm}
+
+\scriptsize
+\setlength{\tabcolsep}{2.2pt}
+\renewcommand{\arraystretch}{0.88}
+
+\resizebox{0.86\columnwidth}{!}{%
+
+\begin{tabular}{lrrr|rrr}
+
+\toprule
+
+& \multicolumn{3}{c|}{Liver}
+& \multicolumn{3}{c}{Arm}\\
+
+\cmidrule(lr){2-4}\cmidrule(lr){5-7}
+
+Variant
+& PSNR$\uparrow$ & SSIM$\uparrow$ & LPIPS$\downarrow$
+& PSNR$\uparrow$ & SSIM$\uparrow$ & LPIPS$\downarrow$\\
+
+\midrule
+
+MP
+& 29.452 & 0.660 & \textbf{0.157}
+& 32.817 & 0.866 & 0.112\\
+
+MG-S
+& 29.641 & 0.667 & \underline{0.182}
+& \underline{33.033} & \underline{0.869} & \underline{0.110}\\
+
+MG-A
+& \textbf{29.680} & \textbf{0.669} & 0.185
+& 32.779 & 0.865 & 0.126\\
+
+AFGM
+& \underline{29.648} & \underline{0.667} & 0.182
+& \textbf{33.271} & \textbf{0.872} & \textbf{0.108}\\
+
+\bottomrule
+
+\end{tabular}}
+
+\vspace{-4mm}
+
+\end{table}

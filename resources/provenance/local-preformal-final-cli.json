@@ -1,0 +1,23 @@
+{
+  "experiment_name": "spine_phantom-left1",
+  "method_name": "ultrasound-ours",
+  "checkpoint": "/home/yibo/paper1/outputs/preformal-smoke/spine_phantom-left1/ultrasound-ours/engineering-1793787543105974219/nerfstudio_models/step-000000002.ckpt",
+  "results": {
+    "psnr": 23.273954264322917,
+    "num_parameters": 3072.0,
+    "l1": 0.029792400635778905,
+    "ssim_window": 0.4941823412974676,
+    "ssim": 0.47673708697160083,
+    "lpips": 0.5558961451053619,
+    "dists": 0.540086446205775,
+    "gmsd": 0.28058864176273346,
+    "psnr_std": 3.3088959057250404,
+    "num_parameters_std": 0.0,
+    "l1_std": 0.013103235968381059,
+    "ssim_window_std": 0.05259405873830642,
+    "ssim_std": 0.05388372758266527,
+    "lpips_std": 0.04230238323381705,
+    "dists_std": 0.04876633783647706,
+    "gmsd_std": 0.026581342423969232
+  }
+}

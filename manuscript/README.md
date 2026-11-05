@@ -1,21 +1,5 @@
-# 论文写作
+# 当前论文文稿
 
-从 [写作说明](writing-guide.md) 开始。源码只维护在 Nerfstudio/gsplat，配图工程在 results，不携带源码副本。LaTeX 片段保留原身份，完整论文编译工程尚未找到。
+当前金标准来自 Mac Documents/paper1/manuscript 的已校验交换批次。完整 LaTeX 入口为 [main.tex](main.tex)，正文、五张表和五张图的包装定义按 Mac 原样保留。
 
-- [Final claim adjudication](claims-and-evidence.md)
-- [Code To Formula Map](code-formula-map.md)
-- [Ours Introduction Notes for Writing Agents](introduction.md)
-- [Final Fixed main claim audit](main-comparison-claims.md)
-- [Draft Methods Structure](methods-draft.md)
-- [Ours Method Notes for Writing Agents](methods.md)
-- [Ours Methods Source Of Truth](ours-methods-source.md)
-- [Suggested prose / captions (not applied to canonical LaTeX)](results-prose.md)
-- [Manuscript Facts](sensorless-facts.md)
-- [Validated Ours Innovations for Paper](validated-contributions.md)
-- [论文写作材料](writing-guide.md)
-
-## LaTeX 交换片段
-
-- [experiments-and-results](experiments-and-results.tex)
-- [methods-exchange](methods-exchange.tex)
-- [methods-outline](methods-outline.tex)
+PDF 在 figures/pdf 本地保留并忽略，build/dist 不进入 Git。旧 Markdown 草稿作为历史写作材料，不能替代当前 TeX 或原始图表数据。五图五表与本机来源的核对见 [来源审计](../experiments/manuscript-source-audit/README.md)。本轮没有重新编译整篇论文，也不将收到的现有 build 当作本机编译通过。

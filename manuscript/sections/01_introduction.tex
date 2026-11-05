@@ -1,0 +1,119 @@
+\vspace{-6mm}
+\section{Introduction}
+\label{sec:introduction}
+
+Owing to its non-ionizing, real-time, portable, and low-cost nature, ultrasound
+(US) is widely used in diagnosis, monitoring, and image-guided interventions
+\cite{tsedendambaReviewLinearArray2025}.
+However, routine US remains predominantly 2D, requiring sonographers to sweep
+regions of interest and mentally integrate sequential cross-sections into 3D
+anatomy, increasing visuospatial burden and operator dependence
+\cite{tenajasRecentAdvancesAI2023}.
+Although dedicated 3D/4D probes directly acquire volumetric data, broader
+adoption is limited by specialized hardware and trade-offs in field of view,
+spatial and temporal resolution, and system complexity
+\cite{ingramThreeDimensionalUltrasound2025}.
+Consequently, reconstructing 3D US volumes from routine 2D B-mode sequences
+offers a flexible and cost-effective alternative for volumetric visualization,
+quantitative assessment, and downstream clinical analysis.
+To characterize this paradigm, we consider two complementary aspects:
+acquisition setting and reconstruction pipeline design.
+
+From the acquisition perspective, methods are broadly categorized as tracked or
+sensorless according to how frame-wise spatial information is obtained
+\cite{adriaansTrackerless3DFreehand2024}.
+Tracked reconstruction synchronizes B-mode frames with probe poses measured by
+optical or electromagnetic devices, requiring extra hardware, calibration, and
+setup that increase cost and hinder routine deployment
+\cite{mozaffariFreehand3DUltrasound2017,
+adriaansTrackerless3DFreehand2024}.
+By contrast, sensorless reconstruction estimates inter-frame geometry directly
+from US sequences, eliminating dedicated tracking hardware and improving
+portability and accessibility, and has therefore attracted increasing attention
+in freehand 3D US reconstruction
+\cite{adriaansTrackerless3DFreehand2024,liTUSREC2024}.
+
+From the pipeline perspective, 3D US reconstruction involves geometry
+localization and scene representation.
+Geometry localization estimates inter-frame transformations before localized
+slices are assembled by interpolation or compounding, making pose estimation
+the primary focus
+\cite{prevostDeepLearningSensorless2017,guoSensorlessFreehand3D2020,
+guoUltrasoundVolumeReconstruction2023,luoRecONOnlineLearning2023,li2024f}.
+Scene representation instead encodes localized B-mode observations into a
+coherent 3D model, with geometry measured, estimated, or jointly refined.
+Early approaches mainly used implicit neural representations to learn continuous
+spatial-to-intensity or ultrasound-parameter mappings
+\cite{yeungSensorlessVolumetricReconstruction2024,
+wysockiUltraNeRFNeuralRadiance2024,
+dagliNeRFUSRemovingUltrasound2024}.
+Although expressive, repeated neural-field evaluations incur substantial
+optimization and rendering costs.
+More recently, 3D Gaussian Splatting (3DGS) explicitly represents scenes with
+anisotropic Gaussian primitives optimized through differentiable rasterization,
+enabling efficient rendering and direct inspection
+\cite{kerbl3DGaussianSplatting2023}.
+These advantages have driven growing interest in Gaussian-based US reconstruction
+\cite{eidUltraGaussUltrafastGaussian2025,
+yangUltraGSRealTimePhysicallyDecoupled2025,
+duelmerUltraGRayPhysicsBasedGaussian2026}.
+
+Nevertheless, sensorless Gaussian-based 3D US reconstruction remains
+challenging in both acquisition and pipeline design.
+From the acquisition side, sensorless reconstruction lacks measured frame-wise
+poses, while limited inter-slice overlap and view-dependent speckle make
+unconstrained motion recovery difficult and prone to accumulated geometric
+inconsistency.
+Existing methods mainly estimate frame-wise or inter-frame 6-DoF probe
+transformations from neighboring frames or temporal sequences
+\cite{prevostDeepLearningSensorless2017,guoSensorlessFreehand3D2020,
+guoUltrasoundVolumeReconstruction2023,luoRecONOnlineLearning2023,li2024f}.
+However, this pose-centric formulation underuses the regularity of many
+practical sweeps, where neighboring slices are approximately parallel and probe
+motion is predominantly translational, introducing redundant degrees of freedom
+\cite{huangMMSEReconstruction2008,liTUSREC2024}.
+Exploiting this regularity for globally consistent geometry without independent
+per-frame poses therefore remains open.
+From the representation side, directly transferring the original 3DGS pipeline
+to ultrasound is inadequate because both its renderer and Gaussian adaptation
+are designed around optical image formation.
+Standard 3DGS relies on perspective projection and front-to-back alpha
+compositing, whereas B-mode ultrasound arises from acoustic propagation,
+attenuation, reflection, and finite-slice scattering, making image formation
+depend on both localized echo generation and tissues along the preceding
+propagation path.
+This mismatch demands an ultrasound-specific renderer that jointly models local
+echo formation and path-dependent transmission.
+Moreover, Gaussian adaptation must also be reconsidered: image-space gradients
+can be corrupted by speckle, while opacity cannot capture path-dependent
+primitive utility.
+Therefore, robustly estimating per-Gaussian contributions for adaptive
+densification and pruning remains another key challenge.
+
+To address these challenges, we propose \methodname{}, a Gaussian-based
+framework for sensorless 3D US reconstruction that integrates compact geometry
+modeling, ultrasound-specific rendering, and a tailored adaptation strategy,
+enabling high-fidelity volumetric reconstruction, efficient optimization, and
+high-speed rendering without external tracking.
+To establish globally consistent sensorless geometry, \methodname{} employs an
+\emph{Acquisition-constrained Frame Geometry Model (AFGM)}, which replaces
+independent frame-wise pose recovery with a compact acquisition model, providing
+a stable and coherent spatial scaffold for Gaussian reconstruction under
+regular, translation-dominant sweeps.
+Given this geometry, we develop a \emph{Physics-aware Local-Global Renderer
+(PLGR)} as the core scene-representation component of \methodname{}, where a
+finite-slice local pathway models localized echo formation and a complementary
+global pathway captures path-dependent transmission from causally preceding
+tissues, preserving slice-specific structural detail and propagation-consistent
+acoustic context to improve B-mode reconstruction fidelity.
+Building directly on PLGR, a \emph{Contribution-guided Gaussian Adaptation
+Strategy (CGAS)} uses residual-weighted local contributions to densify
+under-reconstructed regions and joint local-global contributions for pruning,
+concentrating Gaussian capacity on insufficiently modeled structures while
+preserving primitives with meaningful path effects and aligning population
+control with ultrasound image formation.
+Comprehensive experiments on four synthetic and real-world datasets covering
+liver, spine, arm, and breast anatomy demonstrate robust reconstruction across
+diverse acquisition settings, underscoring the potential of \methodname{} for
+efficient and practical sensorless 3D US reconstruction in real-world
+volumetric ultrasound applications.

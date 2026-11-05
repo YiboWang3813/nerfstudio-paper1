@@ -1,0 +1,109 @@
+{
+  "status": "published_verified",
+  "dataset": "synthetic_liver",
+  "version": "p100k-native-v2",
+  "request_reservation_ledger": "/home/yibo/shared/cache/r2/request-budget-2026-11.json",
+  "packages": [
+    {
+      "sweep": "l1",
+      "key": "shared/datasets/synthetic_liver/p100k-native-v2/l1.zip",
+      "sha256": "91751bc611288ad1ffb7e54e850f7a3d51d3cd31db458c04b2984d74d4e026ed",
+      "size_bytes": 16020645,
+      "files": {
+        "images.npy": "df7fe8052128048d5c62e6e918ac3057056a5221f63671ae8d6dc97dde3d43a9",
+        "metadata.json": "00dca3e5d87551f34f8fb5946d30655f3c546db6914b5e09f3f9dcbe99d87895",
+        "poses.npy": "37c72e3621536e8e6035ef2a7a388b8cdbb4a83d93a3de8e41aaf66f9d4ac568",
+        "relative_poses.npy": "fa138f75d7b80295c2ff682aaa6f36d7f1abc252393e23aff669274a48a2882d",
+        "test_images.npy": "328116ad8aa937e10a644f3b30594355b0d7bb923ae410542917dfec7d7366ba",
+        "test_poses.npy": "caefe73ab2dff352b37297c5084b124b33d4e9a3ab56acdd3bf72aa310e7e2c1",
+        "test_relative_poses.npy": "7a027d79138b35843ee6bf65481c4e08255187cd52efd30728cd75d58da4e55f",
+        "manifest.json": "ea55c0a75b774fa7bde7efccc0cc867b342d9befb4bc28d876acccaa9392f7ec"
+      }
+    },
+    {
+      "sweep": "l2",
+      "key": "shared/datasets/synthetic_liver/p100k-native-v2/l2.zip",
+      "sha256": "642d347fa1e65823f1046c385b60fe5a8c8b5c48b5f92a038bb3a88b0771e790",
+      "size_bytes": 16238707,
+      "files": {
+        "images.npy": "a15472bb9a358ce929d6a7b341f69fd19e8d69cbea0c084ce7534821c0e852b9",
+        "metadata.json": "e468ba352e6e02677a28b6d216fe5937ca4516b3ddb293791491d08d9e3d4d18",
+        "poses.npy": "ca6af88a83345e15b7d4dc47f587b1c3d115a48d4445438e52deaaffc2ba0983",
+        "relative_poses.npy": "0cfb90d80a6ddc793fe2bc42b057d5c6b1ba955162be2bdd5e8f972d2d6bf135",
+        "test_images.npy": "e5c104950c57b1fbf6e9696b55d2db2d7f5bba9f140f731c61d9c5de47f8486b",
+        "test_poses.npy": "0ca3cd43c87e641a9f639ec7b887470d6c0ef19d15b3ae34801cbef3ce597749",
+        "manifest.json": "58955b3476dc110569989f9f6d9135dc59af23798cb7d36a0f6511ef4d31d171"
+      }
+    },
+    {
+      "sweep": "l3",
+      "key": "shared/datasets/synthetic_liver/p100k-native-v2/l3.zip",
+      "sha256": "3500208bb11ec1b950e519b13b0a9fc2de729833bd941724a6b38e28d5f0239e",
+      "size_bytes": 16277208,
+      "files": {
+        "images.npy": "0ac7f0cae2b72eca43db0f0e8ca7a1997ca4c528e8cdeb97b2873aa24ef159b4",
+        "metadata.json": "18ae2e4c9cee89adf9eafd1a936fb3c3922e83c2b684864ca35998311d574be5",
+        "poses.npy": "f8ad3eeedf152efbc50de506a632beec76683a55c9b473ffbe8ef9cfa0828e1d",
+        "relative_poses.npy": "46a9d43fedcf8d9b7ac2010075439b45d2b54cd6ac15835d18da27165c7143c4",
+        "test_images.npy": "036d8536b725fdfbefc9d43080006397c4bd28b8cf380a0cf3303ccf2e7d919d",
+        "test_poses.npy": "efe763458d88a31ca6d2a8f773fbf8b7f210228ff5f4a7c7e9118088fdf75ae1",
+        "manifest.json": "56c4ea1b806de8b860340d52cd210ac1b0258560b5847726a227fec1b0fe9406"
+      }
+    },
+    {
+      "sweep": "r1",
+      "key": "shared/datasets/synthetic_liver/p100k-native-v2/r1.zip",
+      "sha256": "a161bb19ddb3fb4d655a7e9afaf329d2c905309f8ab8bf0e4499db60a0c474bd",
+      "size_bytes": 16068519,
+      "files": {
+        "images.npy": "91501075b3ebbe0d838990380f9c7f34424d0d5f0a06afc1cf8c63bde23b952c",
+        "metadata.json": "65867fc92c9f19b410b42401a77018fd175b6c75c995e7511c81b940dce7a21d",
+        "poses.npy": "ce4338f2e53b2d12eb52720b053dfd4f01220125903fc68dd916469e205de75e",
+        "relative_poses.npy": "06f9ca0558692d6b05116183825a205a0c9357f70322572eabde0917944f3cea",
+        "test_images.npy": "ad77e93b285b71838347371bce931559dddde72f4ebd2919126164cb642dcc6f",
+        "test_poses.npy": "764ad40b640271f0fbb507c050b46a0b4c607860ad73f65f600932769ebd5a7b",
+        "manifest.json": "fa1d1b243727d57240e3f592e2bf7b1763d5dc805da56cb90a57e87d0fa55811"
+      }
+    },
+    {
+      "sweep": "r2",
+      "key": "shared/datasets/synthetic_liver/p100k-native-v2/r2.zip",
+      "sha256": "b2d1cedd55a8469b4fc1c018f0907d7a89a975d715ee1db3e2ec791adf5502f7",
+      "size_bytes": 16375439,
+      "files": {
+        "images.npy": "d1724c2b371575aec8ccdf74b206e3ddf78afd1b0b1360e15abe04ee8688098c",
+        "metadata.json": "6369ebd7c42e9dd5c5f60dc3c7d8fa02462e94e53484e9254dafe1948ab8a6e3",
+        "poses.npy": "c7079d6e672f2f94b5632c6a04e33bb3be5d4c3074f2ccc043a1e828da845d66",
+        "relative_poses.npy": "18eb8c0b1085d03564b094b577dd30ad874331d3e40de5dd8f478d17e25a9ff1",
+        "test_images.npy": "0dc49822b2c7d05788208d0dca9dd04aed4e4a9bc03748e3f16ded0f925ce1fb",
+        "test_poses.npy": "ae52b7d923f7f5df6751049151d717cea6075e815be4a9ec693c8739e7e3cb9a",
+        "manifest.json": "a37c4ffcd550bc918ac37c882b1184e5177248f83365f0b3e222fdd8946ceab2"
+      }
+    },
+    {
+      "sweep": "r3",
+      "key": "shared/datasets/synthetic_liver/p100k-native-v2/r3.zip",
+      "sha256": "e37a9c739305d0027702f32c996726a2b8bcfdf09d3c3af432a24d598d6823c8",
+      "size_bytes": 16427275,
+      "files": {
+        "images.npy": "84068d47c265412a16f8c00a64b633ca980ef6cd0a0586fdb4e31bb72b4fc9fb",
+        "metadata.json": "444217c602a194ce379306756f17e6b443c1bb15c8c91ec03bb705c1442cdc54",
+        "poses.npy": "9e291ea8b6c9dc3b85954526ae769897cedfa09e3676611e04133e4c1b687ea8",
+        "relative_poses.npy": "7767b4f1f0cca1c4e70829c63848c9df2ff1373ad1f906524ad9fad6bea78154",
+        "test_images.npy": "b06c844c4843bd407c376e636684626f2dcfc287e5fea0a54203d8b6805a06bc",
+        "test_poses.npy": "64a715f896465747ee15d3ff0661e48d3b1105da28736e62165feab5f8854e7f",
+        "manifest.json": "40496aa0415b309639244d6a4071b224294c3f016da79e0c50d5eb00d4e24824"
+      }
+    }
+  ],
+  "source_preserved": true,
+  "disposable": true,
+  "requests": {
+    "class_a": 8,
+    "class_b": 16
+  },
+  "manifest_key": "shared/datasets/synthetic_liver/p100k-native-v2/manifest.json",
+  "manifest_sha256": "de5985a5e9335496cbaddd6758e6d912185594ec825a3782f5f7a2c4ec0c2fa8",
+  "auxiliary_package": null,
+  "current_pointer_verified": true
+}

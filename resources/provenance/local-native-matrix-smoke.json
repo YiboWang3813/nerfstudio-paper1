@@ -1,0 +1,2602 @@
+{
+  "status": "engineering_only",
+  "formal_training_started": false,
+  "execution_at_start": {
+    "python": "/home/yibo/paper1/.venv/bin/python",
+    "torch": "2.5.1+cu124",
+    "torch_path": "/home/yibo/shared/envs/torch251-cu124-py311/lib/python3.11/site-packages/torch/__init__.py",
+    "cuda_runtime": "12.4",
+    "sources": {
+      "nerfstudio": {
+        "root": "/home/yibo/paper1/nerfstudio",
+        "commit": "2caa7953b4e305d9fbbdb0a386a77dafa61928de",
+        "dirty": false,
+        "tree_sha256": "718c4d9443ce1b975204972ba8ea88dbcb528cd09f1412d054f0933a909e354b"
+      },
+      "gsplat": {
+        "root": "/home/yibo/paper1/gsplat",
+        "commit": "e75ec98f9adb5d440345f918ce7d122923a79e84",
+        "dirty": false,
+        "tree_sha256": "5e6516f6ee31757da4db27433ed081cc47791810d8bd24d2a4bee29c88328fdb"
+      }
+    },
+    "toolchain": {
+      "nvcc": {
+        "path": "/usr/local/cuda-12.4/bin/nvcc",
+        "version": "nvcc: NVIDIA (R) Cuda compiler driver\nCopyright (c) 2005-2024 NVIDIA Corporation\nBuilt on Thu_Mar_28_02:18:24_PDT_2024\nCuda compilation tools, release 12.4, V12.4.131\nBuild cuda_12.4.r12.4/compiler.34097967_0\n"
+      },
+      "cc": {
+        "path": "/usr/bin/x86_64-linux-gnu-gcc-11",
+        "version": "gcc (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0\nCopyright (C) 2021 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n"
+      },
+      "cxx": {
+        "path": "/usr/bin/x86_64-linux-gnu-g++-11",
+        "version": "g++ (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0\nCopyright (C) 2021 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n"
+      }
+    },
+    "cuda_visible_devices": "4",
+    "packages": {
+      "numpy": "1.26.4",
+      "torchvision": "0.20.1+cu124",
+      "pyiqa": "0.1.7"
+    }
+  },
+  "results": [
+    {
+      "dataset": "synthetic_liver",
+      "sweep": "l1",
+      "method": "ours",
+      "updates": 3,
+      "continuation_update": 4,
+      "initial_gaussians": 256,
+      "eval_frame_id": 10,
+      "metrics": {
+        "psnr": 15.49228286743164,
+        "num_parameters": 3072.0,
+        "l1": 0.12749099731445312,
+        "ssim_window": 0.04346645623445511,
+        "ssim": 0.03505856543779373,
+        "lpips": 0.6218966841697693,
+        "dists": 0.6574970483779907,
+        "gmsd": 0.2567555904388428
+      },
+      "continuation_validation": {
+        "dataset": "synthetic_liver",
+        "method": "ours",
+        "parameters": {
+          "device_indicator_param": {
+            "raw_max": 0.0,
+            "gradient_max": null,
+            "gradient_difference_max": null
+          },
+          "gaussians.attenuations": {
+            "raw_max": 0.0,
+            "gradient_max": 7.911980048902478e-08,
+            "gradient_difference_max": 7.105427357601002e-15
+          },
+          "gaussians.echo_alphas": {
+            "raw_max": 0.0,
+            "gradient_max": 7.753732461424079e-06,
+            "gradient_difference_max": 0.0
+          },
+          "gaussians.means": {
+            "raw_max": 0.0,
+            "gradient_max": 2.1861585992155597e-05,
+            "gradient_difference_max": 2.2737367544323206e-13
+          },
+          "gaussians.quats": {
+            "raw_max": 0.0,
+            "gradient_max": 4.3655742132386877e-08,
+            "gradient_difference_max": 0.0
+          },
+          "gaussians.scales": {
+            "raw_max": 0.0,
+            "gradient_max": 1.4737429410160985e-05,
+            "gradient_difference_max": 0.0
+          }
+        },
+        "loss_difference": 0.0,
+        "render_abs_max": 0.0
+      },
+      "rng_optimizer_sampler_restored_exact": true,
+      "seconds": 6.535727248003241,
+      "manifest_sha256": "ea55c0a75b774fa7bde7efccc0cc867b342d9befb4bc28d876acccaa9392f7ec",
+      "config": "/home/yibo/paper1/outputs/preformal-smoke/synthetic_liver-l1/ultrasound-ours/engineering-1793787524587568965/config.yml",
+      "checkpoint": "/home/yibo/paper1/outputs/preformal-smoke/synthetic_liver-l1/ultrasound-ours/engineering-1793787524587568965/nerfstudio_models/step-000000002.ckpt"
+    },
+    {
+      "dataset": "synthetic_liver",
+      "sweep": "l1",
+      "method": "ultragauss",
+      "updates": 3,
+      "continuation_update": 4,
+      "initial_gaussians": 256,
+      "eval_frame_id": 10,
+      "metrics": {
+        "psnr": 15.498366355895996,
+        "num_parameters": 2816.0,
+        "l1": 0.12749417126178741,
+        "ssim_window": 0.042744625359773636,
+        "ssim": 0.03436090052127838,
+        "lpips": 0.607011079788208,
+        "dists": 0.6684827208518982,
+        "gmsd": 0.2561546862125397
+      },
+      "continuation_validation": {
+        "dataset": "synthetic_liver",
+        "method": "ultragauss",
+        "parameters": {
+          "device_indicator_param": {
+            "raw_max": 0.0,
+            "gradient_max": null,
+            "gradient_difference_max": null
+          },
+          "gaussians.intensities": {
+            "raw_max": 0.0,
+            "gradient_max": 8.941347005020361e-06,
+            "gradient_difference_max": 1.3642420526593924e-12
+          },
+          "gaussians.means": {
+            "raw_max": 0.0,
+            "gradient_max": 7.873508955924535e-09,
+            "gradient_difference_max": 2.220446049250313e-16
+          },
+          "gaussians.opacities": {
+            "raw_max": 0.0,
+            "gradient_max": 9.973161185783397e-11,
+            "gradient_difference_max": 2.0816681711721685e-17
+          },
+          "gaussians.precision_tril": {
+            "raw_max": 2.3283064365386963e-10,
+            "gradient_max": 2.6223645477330138e-09,
+            "gradient_difference_max": 3.191891195797325e-16
+          }
+        },
+        "loss_difference": 0.0,
+        "render_abs_max": 0.0
+      },
+      "rng_optimizer_sampler_restored_exact": true,
+      "seconds": 1.2800006900215521,
+      "manifest_sha256": "ea55c0a75b774fa7bde7efccc0cc867b342d9befb4bc28d876acccaa9392f7ec",
+      "config": "/home/yibo/paper1/outputs/preformal-smoke/synthetic_liver-l1/ultrasound-ultragauss/engineering-1793787531359315744/config.yml",
+      "checkpoint": "/home/yibo/paper1/outputs/preformal-smoke/synthetic_liver-l1/ultrasound-ultragauss/engineering-1793787531359315744/nerfstudio_models/step-000000002.ckpt"
+    },
+    {
+      "dataset": "synthetic_liver",
+      "sweep": "l1",
+      "method": "ultragray",
+      "updates": 3,
+      "continuation_update": 4,
+      "initial_gaussians": 256,
+      "eval_frame_id": 10,
+      "metrics": {
+        "psnr": 15.488542556762695,
+        "num_parameters": 3840.0,
+        "l1": 0.1276015192270279,
+        "ssim_window": 0.04259725287556648,
+        "ssim": 0.034378740936517715,
+        "lpips": 0.6215466856956482,
+        "dists": 0.6723923683166504,
+        "gmsd": 0.25631484389305115
+      },
+      "continuation_validation": {
+        "dataset": "synthetic_liver",
+        "method": "ultragray",
+        "parameters": {
+          "device_indicator_param": {
+            "raw_max": 0.0,
+            "gradient_max": null,
+            "gradient_difference_max": null
+          },
+          "gaussians.attenuations": {
+            "raw_max": 0.0,
+            "gradient_max": 6.241860006639399e-08,
+            "gradient_difference_max": 1.1102230246251565e-16
+          },
+          "gaussians.means": {
+            "raw_max": 0.0,
+            "gradient_max": 4.6019747969694436e-05,
+            "gradient_difference_max": 9.094947017729282e-13
+          },
+          "gaussians.quats": {
+            "raw_max": 0.0,
+            "gradient_max": 5.240252676230739e-13,
+            "gradient_difference_max": 0.0
+          },
+          "gaussians.scales": {
+            "raw_max": 0.0,
+            "gradient_max": 4.612757402355783e-05,
+            "gradient_difference_max": 3.637978807091713e-12
+          },
+          "gaussians.sh_dc": {
+            "raw_max": 0.0,
+            "gradient_max": 0.00044914084719493985,
+            "gradient_difference_max": 7.275957614183426e-12
+          },
+          "gaussians.sh_rest": {
+            "raw_max": 0.0,
+            "gradient_max": null,
+            "gradient_difference_max": null
+          }
+        },
+        "loss_difference": 0.0,
+        "render_abs_max": 0.0
+      },
+      "rng_optimizer_sampler_restored_exact": true,
+      "seconds": 1.5152736330055632,
+      "manifest_sha256": "ea55c0a75b774fa7bde7efccc0cc867b342d9befb4bc28d876acccaa9392f7ec",
+      "config": "/home/yibo/paper1/outputs/preformal-smoke/synthetic_liver-l1/ultrasound-ultragray/engineering-1793787532841291683/config.yml",
+      "checkpoint": "/home/yibo/paper1/outputs/preformal-smoke/synthetic_liver-l1/ultrasound-ultragray/engineering-1793787532841291683/nerfstudio_models/step-000000002.ckpt"
+    },
+    {
+      "dataset": "synthetic_liver",
+      "sweep": "l1",
+      "method": "gaussianpile",
+      "updates": 3,
+      "continuation_update": 4,
+      "initial_gaussians": 256,
+      "eval_frame_id": 10,
+      "metrics": {
+        "psnr": 15.491398811340332,
+        "num_parameters": 2816.0,
+        "l1": 0.1275918036699295,
+        "ssim_window": 0.042366646230220795,
+        "ssim": 0.034309230744838715,
+        "lpips": 0.6111358404159546,
+        "dists": 0.6649271249771118,
+        "gmsd": 0.25635555386543274
+      },
+      "continuation_validation": {
+        "dataset": "synthetic_liver",
+        "method": "gaussianpile",
+        "parameters": {
+          "device_indicator_param": {
+            "raw_max": 0.0,
+            "gradient_max": null,
+            "gradient_difference_max": null
+          },
+          "gaussians.means": {
+            "raw_max": 0.0,
+            "gradient_max": 0.00013008329551666975,
+            "gradient_difference_max": 0.0
+          },
+          "gaussians.opacities": {
+            "raw_max": 0.0,
+            "gradient_max": 5.060250623500906e-05,
+            "gradient_difference_max": 0.0
+          },
+          "gaussians.quats": {
+            "raw_max": 0.0,
+            "gradient_max": 2.4505423425580375e-05,
+            "gradient_difference_max": 0.0
+          },
+          "gaussians.scales": {
+            "raw_max": 0.0,
+            "gradient_max": 5.0325248594162986e-05,
+            "gradient_difference_max": 0.0
+          }
+        },
+        "loss_difference": 0.0,
+        "render_abs_max": 0.0
+      },
+      "rng_optimizer_sampler_restored_exact": true,
+      "seconds": 1.6295911890338175,
+      "manifest_sha256": "ea55c0a75b774fa7bde7efccc0cc867b342d9befb4bc28d876acccaa9392f7ec",
+      "config": "/home/yibo/paper1/outputs/preformal-smoke/synthetic_liver-l1/ultrasound-gaussianpile/engineering-1793787534621706945/config.yml",
+      "checkpoint": "/home/yibo/paper1/outputs/preformal-smoke/synthetic_liver-l1/ultrasound-gaussianpile/engineering-1793787534621706945/nerfstudio_models/step-000000002.ckpt"
+    },
+    {
+      "dataset": "synthetic_liver",
+      "sweep": "l1",
+      "method": "slice_adapted_3dgs",
+      "updates": 3,
+      "continuation_update": 4,
+      "initial_gaussians": 256,
+      "eval_frame_id": 10,
+      "metrics": {
+        "psnr": 15.490473747253418,
+        "num_parameters": 3584.0,
+        "l1": 0.12759467959403992,
+        "ssim_window": 0.042608533054590225,
+        "ssim": 0.03418196737766266,
+        "lpips": 0.6169266104698181,
+        "dists": 0.6848340630531311,
+        "gmsd": 0.25645118951797485
+      },
+      "continuation_validation": {
+        "dataset": "synthetic_liver",
+        "method": "slice_adapted_3dgs",
+        "parameters": {
+          "device_indicator_param": {
+            "raw_max": 0.0,
+            "gradient_max": null,
+            "gradient_difference_max": null
+          },
+          "gaussians.means": {
+            "raw_max": 0.0,
+            "gradient_max": 6.410173955373466e-05,
+            "gradient_difference_max": 0.0
+          },
+          "gaussians.opacities": {
+            "raw_max": 0.0,
+            "gradient_max": 1.1710455510183237e-05,
+            "gradient_difference_max": 0.0
+          },
+          "gaussians.quats": {
+            "raw_max": 0.0,
+            "gradient_max": 0.0,
+            "gradient_difference_max": 0.0
+          },
+          "gaussians.scales_3d": {
+            "raw_max": 0.0,
+            "gradient_max": 2.8464497518143617e-05,
+            "gradient_difference_max": 0.0
+          },
+          "gaussians.sh_dc": {
+            "raw_max": 0.0,
+            "gradient_max": 2.227846380264964e-05,
+            "gradient_difference_max": 0.0
+          },
+          "gaussians.sh_rest": {
+            "raw_max": 0.0,
+            "gradient_max": null,
+            "gradient_difference_max": null
+          }
+        },
+        "loss_difference": 0.0,
+        "render_abs_max": 0.0
+      },
+      "rng_optimizer_sampler_restored_exact": true,
+      "seconds": 1.8681505920249037,
+      "manifest_sha256": "ea55c0a75b774fa7bde7efccc0cc867b342d9befb4bc28d876acccaa9392f7ec",
+      "config": "/home/yibo/paper1/outputs/preformal-smoke/synthetic_liver-l1/ultrasound-slice_adapted_3dgs/engineering-1793787536482191176/config.yml",
+      "checkpoint": "/home/yibo/paper1/outputs/preformal-smoke/synthetic_liver-l1/ultrasound-slice_adapted_3dgs/engineering-1793787536482191176/nerfstudio_models/step-000000002.ckpt"
+    },
+    {
+      "dataset": "synthetic_liver",
+      "sweep": "l1",
+      "method": "ultrags_baseline",
+      "updates": 3,
+      "continuation_update": 4,
+      "initial_gaussians": 256,
+      "eval_frame_id": 10,
+      "metrics": {
+        "psnr": 15.485614776611328,
+        "num_parameters": 9984.0,
+        "l1": 0.12762725353240967,
+        "ssim_window": 0.04253053665161133,
+        "ssim": 0.03410182148218155,
+        "lpips": 0.6277909278869629,
+        "dists": 0.6918058395385742,
+        "gmsd": 0.25725215673446655
+      },
+      "continuation_validation": {
+        "dataset": "synthetic_liver",
+        "method": "ultrags_baseline",
+        "parameters": {
+          "device_indicator_param": {
+            "raw_max": 0.0,
+            "gradient_max": null,
+            "gradient_difference_max": null
+          },
+          "gaussians.fov_x": {
+            "raw_max": 0.0,
+            "gradient_max": null,
+            "gradient_difference_max": null
+          },
+          "gaussians.fov_y": {
+            "raw_max": 0.0,
+            "gradient_max": null,
+            "gradient_difference_max": null
+          },
+          "gaussians.means": {
+            "raw_max": 0.0,
+            "gradient_max": 1.8614018770790608e-08,
+            "gradient_difference_max": 0.0
+          },
+          "gaussians.opacities": {
+            "raw_max": 0.0,
+            "gradient_max": 2.1946236827830035e-08,
+            "gradient_difference_max": 0.0
+          },
+          "gaussians.quats": {
+            "raw_max": 0.0,
+            "gradient_max": 3.1611471773551614e-10,
+            "gradient_difference_max": 0.0
+          },
+          "gaussians.scales_2d": {
+            "raw_max": 0.0,
+            "gradient_max": 1.617608380577451e-09,
+            "gradient_difference_max": 0.0
+          },
+          "gaussians.sh_dc": {
+            "raw_max": 0.0,
+            "gradient_max": 3.932659353722556e-08,
+            "gradient_difference_max": 0.0
+          },
+          "gaussians.sh_rest": {
+            "raw_max": 0.0,
+            "gradient_max": 0.0,
+            "gradient_difference_max": 0.0
+          }
+        },
+        "loss_difference": 0.0,
+        "render_abs_max": 0.0
+      },
+      "rng_optimizer_sampler_restored_exact": true,
+      "seconds": 1.6674541449756362,
+      "manifest_sha256": "ea55c0a75b774fa7bde7efccc0cc867b342d9befb4bc28d876acccaa9392f7ec",
+      "config": "/home/yibo/paper1/outputs/preformal-smoke/synthetic_liver-l1/ultrasound-ultrags_baseline/engineering-1793787538587138855/config.yml",
+      "checkpoint": "/home/yibo/paper1/outputs/preformal-smoke/synthetic_liver-l1/ultrasound-ultrags_baseline/engineering-1793787538587138855/nerfstudio_models/step-000000002.ckpt"
+    },
+    {
+      "dataset": "synthetic_liver",
+      "sweep": "l1",
+      "method": "nerfus",
+      "updates": 3,
+      "continuation_update": 4,
+      "initial_gaussians": null,
+      "eval_frame_id": 10,
+      "metrics": {
+        "psnr": 15.633573532104492,
+        "l1": 0.12641862034797668,
+        "ssim_window": 0.0383945032954216,
+        "ssim": 0.029919764026999474,
+        "lpips": 0.6333616971969604,
+        "dists": 0.6488833427429199,
+        "gmsd": 0.25280097126960754
+      },
+      "continuation_validation": {
+        "dataset": "synthetic_liver",
+        "method": "nerfus",
+        "parameters": {
+          "device_indicator_param": {
+            "raw_max": 0.0,
+            "gradient_max": null,
+            "gradient_difference_max": null
+          },
+          "field.layers.0.weight": {
+            "raw_max": 0.0,
+            "gradient_max": 4.5005597826275334e-07,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.0.bias": {
+            "raw_max": 0.0,
+            "gradient_max": 2.91487538106594e-07,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.1.weight": {
+            "raw_max": 0.0,
+            "gradient_max": 8.510990028298693e-07,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.1.bias": {
+            "raw_max": 0.0,
+            "gradient_max": 8.778333153713902e-07,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.2.weight": {
+            "raw_max": 0.0,
+            "gradient_max": 8.396635848839651e-07,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.2.bias": {
+            "raw_max": 0.0,
+            "gradient_max": 2.205046030212543e-06,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.3.weight": {
+            "raw_max": 0.0,
+            "gradient_max": 1.4296297194960061e-06,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.3.bias": {
+            "raw_max": 0.0,
+            "gradient_max": 5.494434844877105e-06,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.4.weight": {
+            "raw_max": 0.0,
+            "gradient_max": 3.562440178939141e-05,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.4.bias": {
+            "raw_max": 0.0,
+            "gradient_max": 1.9696120943990536e-05,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.5.weight": {
+            "raw_max": 0.0,
+            "gradient_max": 2.028466587944422e-05,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.5.bias": {
+            "raw_max": 0.0,
+            "gradient_max": 3.9592006942257285e-05,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.6.weight": {
+            "raw_max": 0.0,
+            "gradient_max": 1.8454418750479817e-05,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.6.bias": {
+            "raw_max": 0.0,
+            "gradient_max": 8.174181857611984e-05,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.7.weight": {
+            "raw_max": 0.0,
+            "gradient_max": 2.7222573407925665e-05,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.7.bias": {
+            "raw_max": 0.0,
+            "gradient_max": 0.00020653482351917773,
+            "gradient_difference_max": 0.0
+          },
+          "field.output.weight": {
+            "raw_max": 0.0,
+            "gradient_max": 0.00014824923709966242,
+            "gradient_difference_max": 0.0
+          },
+          "field.output.bias": {
+            "raw_max": 0.0,
+            "gradient_max": 0.0012044038157910109,
+            "gradient_difference_max": 0.0
+          }
+        },
+        "loss_difference": 0.0,
+        "render_abs_max": 0.0
+      },
+      "rng_optimizer_sampler_restored_exact": true,
+      "seconds": 1.0891847939928994,
+      "manifest_sha256": "ea55c0a75b774fa7bde7efccc0cc867b342d9befb4bc28d876acccaa9392f7ec",
+      "config": "/home/yibo/paper1/outputs/preformal-smoke/synthetic_liver-l1/ultrasound-nerfus/engineering-1793787540487318498/config.yml",
+      "checkpoint": "/home/yibo/paper1/outputs/preformal-smoke/synthetic_liver-l1/ultrasound-nerfus/engineering-1793787540487318498/nerfstudio_models/step-000000002.ckpt"
+    },
+    {
+      "dataset": "synthetic_liver",
+      "sweep": "l1",
+      "method": "ultranerf",
+      "updates": 3,
+      "continuation_update": 4,
+      "initial_gaussians": null,
+      "eval_frame_id": 10,
+      "metrics": {
+        "psnr": 15.627702713012695,
+        "l1": 0.12646344304084778,
+        "ssim_window": 0.03795873373746872,
+        "ssim": 0.029805617406964302,
+        "lpips": 0.626923680305481,
+        "dists": 0.6360746622085571,
+        "gmsd": 0.2525453567504883
+      },
+      "continuation_validation": {
+        "dataset": "synthetic_liver",
+        "method": "ultranerf",
+        "parameters": {
+          "device_indicator_param": {
+            "raw_max": 0.0,
+            "gradient_max": null,
+            "gradient_difference_max": null
+          },
+          "field.layers.0.weight": {
+            "raw_max": 0.0,
+            "gradient_max": 4.414081615777832e-07,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.0.bias": {
+            "raw_max": 0.0,
+            "gradient_max": 3.129826211534237e-07,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.1.weight": {
+            "raw_max": 0.0,
+            "gradient_max": 8.095712473732419e-07,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.1.bias": {
+            "raw_max": 0.0,
+            "gradient_max": 7.939738679851871e-07,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.2.weight": {
+            "raw_max": 0.0,
+            "gradient_max": 6.636451530539489e-07,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.2.bias": {
+            "raw_max": 0.0,
+            "gradient_max": 2.025017238338478e-06,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.3.weight": {
+            "raw_max": 0.0,
+            "gradient_max": 1.0244616532872897e-06,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.3.bias": {
+            "raw_max": 0.0,
+            "gradient_max": 4.044285560667049e-06,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.4.weight": {
+            "raw_max": 0.0,
+            "gradient_max": 2.9923290639999323e-05,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.4.bias": {
+            "raw_max": 0.0,
+            "gradient_max": 1.9472683561616577e-05,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.5.weight": {
+            "raw_max": 0.0,
+            "gradient_max": 2.199192749685608e-05,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.5.bias": {
+            "raw_max": 0.0,
+            "gradient_max": 4.440879638423212e-05,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.6.weight": {
+            "raw_max": 0.0,
+            "gradient_max": 2.292255339853e-05,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.6.bias": {
+            "raw_max": 0.0,
+            "gradient_max": 0.00010907625255640596,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.7.weight": {
+            "raw_max": 0.0,
+            "gradient_max": 2.8855338314315304e-05,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.7.bias": {
+            "raw_max": 0.0,
+            "gradient_max": 0.00022037142480257899,
+            "gradient_difference_max": 0.0
+          },
+          "field.output.weight": {
+            "raw_max": 0.0,
+            "gradient_max": 0.00023577349202241749,
+            "gradient_difference_max": 0.0
+          },
+          "field.output.bias": {
+            "raw_max": 0.0,
+            "gradient_max": 0.0019456091104075313,
+            "gradient_difference_max": 0.0
+          }
+        },
+        "loss_difference": 0.0,
+        "render_abs_max": 0.0
+      },
+      "rng_optimizer_sampler_restored_exact": true,
+      "seconds": 1.0243956420454197,
+      "manifest_sha256": "ea55c0a75b774fa7bde7efccc0cc867b342d9befb4bc28d876acccaa9392f7ec",
+      "config": "/home/yibo/paper1/outputs/preformal-smoke/synthetic_liver-l1/ultrasound-ultranerf/engineering-1793787541823316956/config.yml",
+      "checkpoint": "/home/yibo/paper1/outputs/preformal-smoke/synthetic_liver-l1/ultrasound-ultranerf/engineering-1793787541823316956/nerfstudio_models/step-000000002.ckpt"
+    },
+    {
+      "dataset": "spine_phantom",
+      "sweep": "left1",
+      "method": "ours",
+      "updates": 3,
+      "continuation_update": 4,
+      "initial_gaussians": 256,
+      "eval_frame_id": 8,
+      "metrics": {
+        "psnr": 27.84517478942871,
+        "num_parameters": 3072.0,
+        "l1": 0.016330786049365997,
+        "ssim_window": 0.5339478850364685,
+        "ssim": 0.5186810493469238,
+        "lpips": 0.5049619674682617,
+        "dists": 0.4605708718299866,
+        "gmsd": 0.2498825639486313
+      },
+      "continuation_validation": {
+        "dataset": "spine_phantom",
+        "method": "ours",
+        "parameters": {
+          "device_indicator_param": {
+            "raw_max": 0.0,
+            "gradient_max": null,
+            "gradient_difference_max": null
+          },
+          "gaussians.attenuations": {
+            "raw_max": 0.0,
+            "gradient_max": 1.8385975408818922e-07,
+            "gradient_difference_max": 1.1102230246251565e-16
+          },
+          "gaussians.echo_alphas": {
+            "raw_max": 0.0,
+            "gradient_max": 3.447241397225298e-05,
+            "gradient_difference_max": 0.0
+          },
+          "gaussians.means": {
+            "raw_max": 0.0,
+            "gradient_max": 0.00021813888452015817,
+            "gradient_difference_max": 1.4551915228366852e-11
+          },
+          "gaussians.quats": {
+            "raw_max": 0.0,
+            "gradient_max": 5.173932322577457e-07,
+            "gradient_difference_max": 1.0658141036401503e-14
+          },
+          "gaussians.scales": {
+            "raw_max": 0.0,
+            "gradient_max": 4.150756649323739e-05,
+            "gradient_difference_max": 5.2025939112354536e-11
+          }
+        },
+        "loss_difference": 0.0,
+        "render_abs_max": 0.0
+      },
+      "rng_optimizer_sampler_restored_exact": true,
+      "seconds": 2.1162795230047777,
+      "manifest_sha256": "cb1517ddf16b428ec3a0fd1ad8014533324ebb1dd5dfef84e9a864fa09eda37b",
+      "config": "/home/yibo/paper1/outputs/preformal-smoke/spine_phantom-left1/ultrasound-ours/engineering-1793787543105974219/config.yml",
+      "checkpoint": "/home/yibo/paper1/outputs/preformal-smoke/spine_phantom-left1/ultrasound-ours/engineering-1793787543105974219/nerfstudio_models/step-000000002.ckpt"
+    },
+    {
+      "dataset": "spine_phantom",
+      "sweep": "left1",
+      "method": "ultragauss",
+      "updates": 3,
+      "continuation_update": 4,
+      "initial_gaussians": 256,
+      "eval_frame_id": 8,
+      "metrics": {
+        "psnr": 27.883453369140625,
+        "num_parameters": 2816.0,
+        "l1": 0.016165489330887794,
+        "ssim_window": 0.5358424782752991,
+        "ssim": 0.5202300548553467,
+        "lpips": 0.5374202132225037,
+        "dists": 0.489928662776947,
+        "gmsd": 0.250192254781723
+      },
+      "continuation_validation": {
+        "dataset": "spine_phantom",
+        "method": "ultragauss",
+        "parameters": {
+          "device_indicator_param": {
+            "raw_max": 0.0,
+            "gradient_max": null,
+            "gradient_difference_max": null
+          },
+          "gaussians.intensities": {
+            "raw_max": 0.0,
+            "gradient_max": 3.7320583942346275e-05,
+            "gradient_difference_max": 5.4569682106375694e-12
+          },
+          "gaussians.means": {
+            "raw_max": 0.0,
+            "gradient_max": 2.24865193132473e-08,
+            "gradient_difference_max": 5.329070518200751e-15
+          },
+          "gaussians.opacities": {
+            "raw_max": 0.0,
+            "gradient_max": 6.748373526654916e-10,
+            "gradient_difference_max": 2.220446049250313e-16
+          },
+          "gaussians.precision_tril": {
+            "raw_max": 0.0,
+            "gradient_max": 1.3306473256591289e-08,
+            "gradient_difference_max": 8.881784197001252e-16
+          }
+        },
+        "loss_difference": 0.0,
+        "render_abs_max": 0.0
+      },
+      "rng_optimizer_sampler_restored_exact": true,
+      "seconds": 1.0682889549643733,
+      "manifest_sha256": "cb1517ddf16b428ec3a0fd1ad8014533324ebb1dd5dfef84e9a864fa09eda37b",
+      "config": "/home/yibo/paper1/outputs/preformal-smoke/spine_phantom-left1/ultrasound-ultragauss/engineering-1793787545455600335/config.yml",
+      "checkpoint": "/home/yibo/paper1/outputs/preformal-smoke/spine_phantom-left1/ultrasound-ultragauss/engineering-1793787545455600335/nerfstudio_models/step-000000002.ckpt"
+    },
+    {
+      "dataset": "spine_phantom",
+      "sweep": "left1",
+      "method": "ultragray",
+      "updates": 3,
+      "continuation_update": 4,
+      "initial_gaussians": 256,
+      "eval_frame_id": 8,
+      "metrics": {
+        "psnr": 27.8875732421875,
+        "num_parameters": 3840.0,
+        "l1": 0.016128094866871834,
+        "ssim_window": 0.5361568331718445,
+        "ssim": 0.5206779837608337,
+        "lpips": 0.5560154914855957,
+        "dists": 0.501712441444397,
+        "gmsd": 0.25043821334838867
+      },
+      "continuation_validation": {
+        "dataset": "spine_phantom",
+        "method": "ultragray",
+        "parameters": {
+          "device_indicator_param": {
+            "raw_max": 0.0,
+            "gradient_max": null,
+            "gradient_difference_max": null
+          },
+          "gaussians.attenuations": {
+            "raw_max": 0.0,
+            "gradient_max": 4.057213942587623e-08,
+            "gradient_difference_max": 0.0
+          },
+          "gaussians.means": {
+            "raw_max": 0.0,
+            "gradient_max": 7.371399988187477e-05,
+            "gradient_difference_max": 6.821210263296962e-13
+          },
+          "gaussians.quats": {
+            "raw_max": 1.0710209608078003e-07,
+            "gradient_max": 1.5362572325372525e-12,
+            "gradient_difference_max": 6.938893903907228e-18
+          },
+          "gaussians.scales": {
+            "raw_max": 0.0,
+            "gradient_max": 4.458783223526552e-05,
+            "gradient_difference_max": 3.637978807091713e-12
+          },
+          "gaussians.sh_dc": {
+            "raw_max": 0.0,
+            "gradient_max": 0.000352913310052827,
+            "gradient_difference_max": 0.0
+          },
+          "gaussians.sh_rest": {
+            "raw_max": 0.0,
+            "gradient_max": null,
+            "gradient_difference_max": null
+          }
+        },
+        "loss_difference": 0.0,
+        "render_abs_max": 0.0
+      },
+      "rng_optimizer_sampler_restored_exact": true,
+      "seconds": 1.0829198939609341,
+      "manifest_sha256": "cb1517ddf16b428ec3a0fd1ad8014533324ebb1dd5dfef84e9a864fa09eda37b",
+      "config": "/home/yibo/paper1/outputs/preformal-smoke/spine_phantom-left1/ultrasound-ultragray/engineering-1793787546735460740/config.yml",
+      "checkpoint": "/home/yibo/paper1/outputs/preformal-smoke/spine_phantom-left1/ultrasound-ultragray/engineering-1793787546735460740/nerfstudio_models/step-000000002.ckpt"
+    },
+    {
+      "dataset": "spine_phantom",
+      "sweep": "left1",
+      "method": "gaussianpile",
+      "updates": 3,
+      "continuation_update": 4,
+      "initial_gaussians": 256,
+      "eval_frame_id": 8,
+      "metrics": {
+        "psnr": 27.068889617919922,
+        "num_parameters": 2816.0,
+        "l1": 0.01689700037240982,
+        "ssim_window": 0.5315147638320923,
+        "ssim": 0.5165840983390808,
+        "lpips": 0.5402705669403076,
+        "dists": 0.4683123826980591,
+        "gmsd": 0.2547481060028076
+      },
+      "continuation_validation": {
+        "dataset": "spine_phantom",
+        "method": "gaussianpile",
+        "parameters": {
+          "device_indicator_param": {
+            "raw_max": 0.0,
+            "gradient_max": null,
+            "gradient_difference_max": null
+          },
+          "gaussians.means": {
+            "raw_max": 0.0,
+            "gradient_max": 0.00019377523858565837,
+            "gradient_difference_max": 0.0
+          },
+          "gaussians.opacities": {
+            "raw_max": 0.0,
+            "gradient_max": 0.00010229675535811111,
+            "gradient_difference_max": 0.0
+          },
+          "gaussians.quats": {
+            "raw_max": 0.0,
+            "gradient_max": 0.00010803290933836251,
+            "gradient_difference_max": 0.0
+          },
+          "gaussians.scales": {
+            "raw_max": 0.0,
+            "gradient_max": 0.00011457520304247737,
+            "gradient_difference_max": 0.0
+          }
+        },
+        "loss_difference": 0.0,
+        "render_abs_max": 0.0
+      },
+      "rng_optimizer_sampler_restored_exact": true,
+      "seconds": 1.031175345997326,
+      "manifest_sha256": "cb1517ddf16b428ec3a0fd1ad8014533324ebb1dd5dfef84e9a864fa09eda37b",
+      "config": "/home/yibo/paper1/outputs/preformal-smoke/spine_phantom-left1/ultrasound-gaussianpile/engineering-1793787548074021025/config.yml",
+      "checkpoint": "/home/yibo/paper1/outputs/preformal-smoke/spine_phantom-left1/ultrasound-gaussianpile/engineering-1793787548074021025/nerfstudio_models/step-000000002.ckpt"
+    },
+    {
+      "dataset": "spine_phantom",
+      "sweep": "left1",
+      "method": "slice_adapted_3dgs",
+      "updates": 3,
+      "continuation_update": 4,
+      "initial_gaussians": 256,
+      "eval_frame_id": 8,
+      "metrics": {
+        "psnr": 27.889307022094727,
+        "num_parameters": 3584.0,
+        "l1": 0.016117103397846222,
+        "ssim_window": 0.5359057188034058,
+        "ssim": 0.5201806426048279,
+        "lpips": 0.5664840936660767,
+        "dists": 0.5117345452308655,
+        "gmsd": 0.2506282329559326
+      },
+      "continuation_validation": {
+        "dataset": "spine_phantom",
+        "method": "slice_adapted_3dgs",
+        "parameters": {
+          "device_indicator_param": {
+            "raw_max": 0.0,
+            "gradient_max": null,
+            "gradient_difference_max": null
+          },
+          "gaussians.means": {
+            "raw_max": 0.0,
+            "gradient_max": 8.998483826871961e-05,
+            "gradient_difference_max": 0.0
+          },
+          "gaussians.opacities": {
+            "raw_max": 0.0,
+            "gradient_max": 3.127130912616849e-05,
+            "gradient_difference_max": 0.0
+          },
+          "gaussians.quats": {
+            "raw_max": 0.0,
+            "gradient_max": 0.0,
+            "gradient_difference_max": 0.0
+          },
+          "gaussians.scales_3d": {
+            "raw_max": 0.0,
+            "gradient_max": 3.6162749893264845e-05,
+            "gradient_difference_max": 0.0
+          },
+          "gaussians.sh_dc": {
+            "raw_max": 0.0,
+            "gradient_max": 4.5042121200822294e-05,
+            "gradient_difference_max": 0.0
+          },
+          "gaussians.sh_rest": {
+            "raw_max": 0.0,
+            "gradient_max": null,
+            "gradient_difference_max": null
+          }
+        },
+        "loss_difference": 0.0,
+        "render_abs_max": 0.0
+      },
+      "rng_optimizer_sampler_restored_exact": true,
+      "seconds": 1.0972025190130807,
+      "manifest_sha256": "cb1517ddf16b428ec3a0fd1ad8014533324ebb1dd5dfef84e9a864fa09eda37b",
+      "config": "/home/yibo/paper1/outputs/preformal-smoke/spine_phantom-left1/ultrasound-slice_adapted_3dgs/engineering-1793787549324959337/config.yml",
+      "checkpoint": "/home/yibo/paper1/outputs/preformal-smoke/spine_phantom-left1/ultrasound-slice_adapted_3dgs/engineering-1793787549324959337/nerfstudio_models/step-000000002.ckpt"
+    },
+    {
+      "dataset": "spine_phantom",
+      "sweep": "left1",
+      "method": "ultrags_baseline",
+      "updates": 3,
+      "continuation_update": 4,
+      "initial_gaussians": 256,
+      "eval_frame_id": 8,
+      "metrics": {
+        "psnr": 27.876798629760742,
+        "num_parameters": 9984.0,
+        "l1": 0.016138194128870964,
+        "ssim_window": 0.535027265548706,
+        "ssim": 0.5192970633506775,
+        "lpips": 0.5845111608505249,
+        "dists": 0.5257244110107422,
+        "gmsd": 0.2518705427646637
+      },
+      "continuation_validation": {
+        "dataset": "spine_phantom",
+        "method": "ultrags_baseline",
+        "parameters": {
+          "device_indicator_param": {
+            "raw_max": 0.0,
+            "gradient_max": null,
+            "gradient_difference_max": null
+          },
+          "gaussians.fov_x": {
+            "raw_max": 0.0,
+            "gradient_max": null,
+            "gradient_difference_max": null
+          },
+          "gaussians.fov_y": {
+            "raw_max": 0.0,
+            "gradient_max": null,
+            "gradient_difference_max": null
+          },
+          "gaussians.means": {
+            "raw_max": 0.0,
+            "gradient_max": 1.697645046760954e-08,
+            "gradient_difference_max": 8.881784197001252e-16
+          },
+          "gaussians.opacities": {
+            "raw_max": 0.0,
+            "gradient_max": 5.7695917377031947e-08,
+            "gradient_difference_max": 0.0
+          },
+          "gaussians.quats": {
+            "raw_max": 5.820766091346741e-11,
+            "gradient_max": 5.245955669863633e-09,
+            "gradient_difference_max": 2.0816681711721685e-17
+          },
+          "gaussians.scales_2d": {
+            "raw_max": 0.0,
+            "gradient_max": 8.212429847276326e-09,
+            "gradient_difference_max": 0.0
+          },
+          "gaussians.sh_dc": {
+            "raw_max": 0.0,
+            "gradient_max": 1.0010946738248094e-07,
+            "gradient_difference_max": 0.0
+          },
+          "gaussians.sh_rest": {
+            "raw_max": 0.0,
+            "gradient_max": 0.0,
+            "gradient_difference_max": 0.0
+          }
+        },
+        "loss_difference": 0.0,
+        "render_abs_max": 0.0
+      },
+      "rng_optimizer_sampler_restored_exact": true,
+      "seconds": 1.238865239021834,
+      "manifest_sha256": "cb1517ddf16b428ec3a0fd1ad8014533324ebb1dd5dfef84e9a864fa09eda37b",
+      "config": "/home/yibo/paper1/outputs/preformal-smoke/spine_phantom-left1/ultrasound-ultrags_baseline/engineering-1793787550705572586/config.yml",
+      "checkpoint": "/home/yibo/paper1/outputs/preformal-smoke/spine_phantom-left1/ultrasound-ultrags_baseline/engineering-1793787550705572586/nerfstudio_models/step-000000002.ckpt"
+    },
+    {
+      "dataset": "spine_phantom",
+      "sweep": "left1",
+      "method": "nerfus",
+      "updates": 3,
+      "continuation_update": 4,
+      "initial_gaussians": null,
+      "eval_frame_id": 8,
+      "metrics": {
+        "psnr": 26.8598575592041,
+        "l1": 0.017836900427937508,
+        "ssim_window": 0.5282021760940552,
+        "ssim": 0.5151092410087585,
+        "lpips": 0.5926439166069031,
+        "dists": 0.4990180730819702,
+        "gmsd": 0.25940242409706116
+      },
+      "continuation_validation": {
+        "dataset": "spine_phantom",
+        "method": "nerfus",
+        "parameters": {
+          "device_indicator_param": {
+            "raw_max": 0.0,
+            "gradient_max": null,
+            "gradient_difference_max": null
+          },
+          "field.layers.0.weight": {
+            "raw_max": 0.0,
+            "gradient_max": 3.842995681679895e-07,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.0.bias": {
+            "raw_max": 0.0,
+            "gradient_max": 3.843440765649575e-07,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.1.weight": {
+            "raw_max": 0.0,
+            "gradient_max": 8.052499538280244e-07,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.1.bias": {
+            "raw_max": 0.0,
+            "gradient_max": 9.392979336553253e-07,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.2.weight": {
+            "raw_max": 0.0,
+            "gradient_max": 1.1583880450416473e-06,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.2.bias": {
+            "raw_max": 0.0,
+            "gradient_max": 2.66433744400274e-06,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.3.weight": {
+            "raw_max": 0.0,
+            "gradient_max": 1.5810393279025448e-06,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.3.bias": {
+            "raw_max": 0.0,
+            "gradient_max": 6.524488526338246e-06,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.4.weight": {
+            "raw_max": 0.0,
+            "gradient_max": 1.8000995623879135e-05,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.4.bias": {
+            "raw_max": 0.0,
+            "gradient_max": 1.8002912838710472e-05,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.5.weight": {
+            "raw_max": 0.0,
+            "gradient_max": 3.462042877799831e-05,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.5.bias": {
+            "raw_max": 0.0,
+            "gradient_max": 6.642681546509266e-05,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.6.weight": {
+            "raw_max": 0.0,
+            "gradient_max": 3.5048196878051385e-05,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.6.bias": {
+            "raw_max": 0.0,
+            "gradient_max": 0.0001421377237420529,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.7.weight": {
+            "raw_max": 0.0,
+            "gradient_max": 5.215742567088455e-05,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.7.bias": {
+            "raw_max": 0.0,
+            "gradient_max": 0.00032662885496392846,
+            "gradient_difference_max": 0.0
+          },
+          "field.output.weight": {
+            "raw_max": 0.0,
+            "gradient_max": 0.00028402870520949364,
+            "gradient_difference_max": 0.0
+          },
+          "field.output.bias": {
+            "raw_max": 0.0,
+            "gradient_max": 0.0022015273571014404,
+            "gradient_difference_max": 0.0
+          }
+        },
+        "loss_difference": 0.0,
+        "render_abs_max": 0.0
+      },
+      "rng_optimizer_sampler_restored_exact": true,
+      "seconds": 1.1036572579760104,
+      "manifest_sha256": "cb1517ddf16b428ec3a0fd1ad8014533324ebb1dd5dfef84e9a864fa09eda37b",
+      "config": "/home/yibo/paper1/outputs/preformal-smoke/spine_phantom-left1/ultrasound-nerfus/engineering-1793787552201791547/config.yml",
+      "checkpoint": "/home/yibo/paper1/outputs/preformal-smoke/spine_phantom-left1/ultrasound-nerfus/engineering-1793787552201791547/nerfstudio_models/step-000000002.ckpt"
+    },
+    {
+      "dataset": "spine_phantom",
+      "sweep": "left1",
+      "method": "ultranerf",
+      "updates": 3,
+      "continuation_update": 4,
+      "initial_gaussians": null,
+      "eval_frame_id": 8,
+      "metrics": {
+        "psnr": 26.799116134643555,
+        "l1": 0.01788037084043026,
+        "ssim_window": 0.5273101329803467,
+        "ssim": 0.5143815279006958,
+        "lpips": 0.5956201553344727,
+        "dists": 0.507953405380249,
+        "gmsd": 0.25951704382896423
+      },
+      "continuation_validation": {
+        "dataset": "spine_phantom",
+        "method": "ultranerf",
+        "parameters": {
+          "device_indicator_param": {
+            "raw_max": 0.0,
+            "gradient_max": null,
+            "gradient_difference_max": null
+          },
+          "field.layers.0.weight": {
+            "raw_max": 0.0,
+            "gradient_max": 1.9695934838637186e-07,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.0.bias": {
+            "raw_max": 0.0,
+            "gradient_max": 1.9698497055742337e-07,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.1.weight": {
+            "raw_max": 0.0,
+            "gradient_max": 3.3281065725532244e-07,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.1.bias": {
+            "raw_max": 0.0,
+            "gradient_max": 3.798634793383826e-07,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.2.weight": {
+            "raw_max": 0.0,
+            "gradient_max": 4.005196956313739e-07,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.2.bias": {
+            "raw_max": 0.0,
+            "gradient_max": 9.495834092376754e-07,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.3.weight": {
+            "raw_max": 0.0,
+            "gradient_max": 6.284475944084988e-07,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.3.bias": {
+            "raw_max": 0.0,
+            "gradient_max": 2.676234089449281e-06,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.4.weight": {
+            "raw_max": 0.0,
+            "gradient_max": 1.114563929149881e-05,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.4.bias": {
+            "raw_max": 0.0,
+            "gradient_max": 1.114658334699925e-05,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.5.weight": {
+            "raw_max": 0.0,
+            "gradient_max": 1.4879338777973317e-05,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.5.bias": {
+            "raw_max": 0.0,
+            "gradient_max": 2.940401464002207e-05,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.6.weight": {
+            "raw_max": 0.0,
+            "gradient_max": 2.1408137399703264e-05,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.6.bias": {
+            "raw_max": 0.0,
+            "gradient_max": 8.509773761034012e-05,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.7.weight": {
+            "raw_max": 0.0,
+            "gradient_max": 2.4322722310898826e-05,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.7.bias": {
+            "raw_max": 0.0,
+            "gradient_max": 0.00015507431817241013,
+            "gradient_difference_max": 0.0
+          },
+          "field.output.weight": {
+            "raw_max": 0.0,
+            "gradient_max": 0.00019599277584347874,
+            "gradient_difference_max": 0.0
+          },
+          "field.output.bias": {
+            "raw_max": 0.0,
+            "gradient_max": 0.0014888851437717676,
+            "gradient_difference_max": 0.0
+          }
+        },
+        "loss_difference": 0.0,
+        "render_abs_max": 0.0
+      },
+      "rng_optimizer_sampler_restored_exact": true,
+      "seconds": 0.9986700550070964,
+      "manifest_sha256": "cb1517ddf16b428ec3a0fd1ad8014533324ebb1dd5dfef84e9a864fa09eda37b",
+      "config": "/home/yibo/paper1/outputs/preformal-smoke/spine_phantom-left1/ultrasound-ultranerf/engineering-1793787553543663455/config.yml",
+      "checkpoint": "/home/yibo/paper1/outputs/preformal-smoke/spine_phantom-left1/ultrasound-ultranerf/engineering-1793787553543663455/nerfstudio_models/step-000000002.ckpt"
+    },
+    {
+      "dataset": "tus_rec_2024_qc",
+      "sweep": "010_LH_Per_L_DtP_qc_0005_0370",
+      "method": "ours",
+      "updates": 3,
+      "continuation_update": 4,
+      "initial_gaussians": 256,
+      "eval_frame_id": 10,
+      "metrics": {
+        "psnr": 15.4323091506958,
+        "num_parameters": 3072.0,
+        "l1": 0.10954209417104721,
+        "ssim_window": 0.3163292407989502,
+        "ssim": 0.2809818983078003,
+        "lpips": 0.5750784277915955,
+        "dists": 0.6486506462097168,
+        "gmsd": 0.2757023274898529
+      },
+      "continuation_validation": {
+        "dataset": "tus_rec_2024_qc",
+        "method": "ours",
+        "parameters": {
+          "device_indicator_param": {
+            "raw_max": 0.0,
+            "gradient_max": null,
+            "gradient_difference_max": null
+          },
+          "gaussians.attenuations": {
+            "raw_max": 0.0,
+            "gradient_max": 1.84419923776602e-09,
+            "gradient_difference_max": 1.1102230246251565e-16
+          },
+          "gaussians.echo_alphas": {
+            "raw_max": 7.450580596923828e-09,
+            "gradient_max": 1.9536179024726152e-05,
+            "gradient_difference_max": 1.4210854715202004e-14
+          },
+          "gaussians.means": {
+            "raw_max": 0.0,
+            "gradient_max": 4.557068314170465e-05,
+            "gradient_difference_max": 2.842170943040401e-14
+          },
+          "gaussians.quats": {
+            "raw_max": 0.0,
+            "gradient_max": 3.9297133255788985e-12,
+            "gradient_difference_max": 0.0
+          },
+          "gaussians.scales": {
+            "raw_max": 0.0,
+            "gradient_max": 8.337506187672261e-06,
+            "gradient_difference_max": 2.6012969556177268e-11
+          }
+        },
+        "loss_difference": 0.0,
+        "render_abs_max": 0.0
+      },
+      "rng_optimizer_sampler_restored_exact": true,
+      "seconds": 2.3993226700113155,
+      "manifest_sha256": "ef81c5a24b7b0691173bd6f5c74487eb850319e7cb4a38b91be367206165c112",
+      "config": "/home/yibo/paper1/outputs/preformal-smoke/tus_rec_2024_qc-010_LH_Per_L_DtP_qc_0005_0370/ultrasound-ours/engineering-1793787554791357685/config.yml",
+      "checkpoint": "/home/yibo/paper1/outputs/preformal-smoke/tus_rec_2024_qc-010_LH_Per_L_DtP_qc_0005_0370/ultrasound-ours/engineering-1793787554791357685/nerfstudio_models/step-000000002.ckpt"
+    },
+    {
+      "dataset": "tus_rec_2024_qc",
+      "sweep": "010_LH_Per_L_DtP_qc_0005_0370",
+      "method": "ultragauss",
+      "updates": 3,
+      "continuation_update": 4,
+      "initial_gaussians": 256,
+      "eval_frame_id": 10,
+      "metrics": {
+        "psnr": 15.434127807617188,
+        "num_parameters": 2816.0,
+        "l1": 0.10950365662574768,
+        "ssim_window": 0.3162805140018463,
+        "ssim": 0.28093433380126953,
+        "lpips": 0.5764121413230896,
+        "dists": 0.649635910987854,
+        "gmsd": 0.27598562836647034
+      },
+      "continuation_validation": {
+        "dataset": "tus_rec_2024_qc",
+        "method": "ultragauss",
+        "parameters": {
+          "device_indicator_param": {
+            "raw_max": 0.0,
+            "gradient_max": null,
+            "gradient_difference_max": null
+          },
+          "gaussians.intensities": {
+            "raw_max": 0.0,
+            "gradient_max": 2.2067051759222522e-05,
+            "gradient_difference_max": 9.094947017729282e-13
+          },
+          "gaussians.means": {
+            "raw_max": 0.0,
+            "gradient_max": 4.818845766862978e-09,
+            "gradient_difference_max": 5.551115123125783e-17
+          },
+          "gaussians.opacities": {
+            "raw_max": 0.0,
+            "gradient_max": 3.359733879992888e-10,
+            "gradient_difference_max": 3.469446951953614e-18
+          },
+          "gaussians.precision_tril": {
+            "raw_max": 2.3283064365386963e-10,
+            "gradient_max": 3.689141214735514e-09,
+            "gradient_difference_max": 1.3877787807814457e-17
+          }
+        },
+        "loss_difference": 0.0,
+        "render_abs_max": 0.0
+      },
+      "rng_optimizer_sampler_restored_exact": true,
+      "seconds": 1.6003869880223647,
+      "manifest_sha256": "ef81c5a24b7b0691173bd6f5c74487eb850319e7cb4a38b91be367206165c112",
+      "config": "/home/yibo/paper1/outputs/preformal-smoke/tus_rec_2024_qc-010_LH_Per_L_DtP_qc_0005_0370/ultrasound-ultragauss/engineering-1793787557430555243/config.yml",
+      "checkpoint": "/home/yibo/paper1/outputs/preformal-smoke/tus_rec_2024_qc-010_LH_Per_L_DtP_qc_0005_0370/ultrasound-ultragauss/engineering-1793787557430555243/nerfstudio_models/step-000000002.ckpt"
+    },
+    {
+      "dataset": "tus_rec_2024_qc",
+      "sweep": "010_LH_Per_L_DtP_qc_0005_0370",
+      "method": "ultragray",
+      "updates": 3,
+      "continuation_update": 4,
+      "initial_gaussians": 256,
+      "eval_frame_id": 10,
+      "metrics": {
+        "psnr": 15.430706977844238,
+        "num_parameters": 3840.0,
+        "l1": 0.10956567525863647,
+        "ssim_window": 0.3162693381309509,
+        "ssim": 0.2809111773967743,
+        "lpips": 0.5914427638053894,
+        "dists": 0.6529222130775452,
+        "gmsd": 0.27610132098197937
+      },
+      "continuation_validation": {
+        "dataset": "tus_rec_2024_qc",
+        "method": "ultragray",
+        "parameters": {
+          "device_indicator_param": {
+            "raw_max": 0.0,
+            "gradient_max": null,
+            "gradient_difference_max": null
+          },
+          "gaussians.attenuations": {
+            "raw_max": 0.0,
+            "gradient_max": 1.174452002317139e-08,
+            "gradient_difference_max": 0.0
+          },
+          "gaussians.means": {
+            "raw_max": 0.0,
+            "gradient_max": 1.909570346469991e-05,
+            "gradient_difference_max": 0.0
+          },
+          "gaussians.quats": {
+            "raw_max": 0.0,
+            "gradient_max": 4.3348657996489237e-13,
+            "gradient_difference_max": 0.0
+          },
+          "gaussians.scales": {
+            "raw_max": 0.0,
+            "gradient_max": 1.9214241547160782e-05,
+            "gradient_difference_max": 9.094947017729282e-13
+          },
+          "gaussians.sh_dc": {
+            "raw_max": 0.0,
+            "gradient_max": 0.0001543917169328779,
+            "gradient_difference_max": 0.0
+          },
+          "gaussians.sh_rest": {
+            "raw_max": 0.0,
+            "gradient_max": null,
+            "gradient_difference_max": null
+          }
+        },
+        "loss_difference": 0.0,
+        "render_abs_max": 0.0
+      },
+      "rng_optimizer_sampler_restored_exact": true,
+      "seconds": 1.8138635540381074,
+      "manifest_sha256": "ef81c5a24b7b0691173bd6f5c74487eb850319e7cb4a38b91be367206165c112",
+      "config": "/home/yibo/paper1/outputs/preformal-smoke/tus_rec_2024_qc-010_LH_Per_L_DtP_qc_0005_0370/ultrasound-ultragray/engineering-1793787559242186391/config.yml",
+      "checkpoint": "/home/yibo/paper1/outputs/preformal-smoke/tus_rec_2024_qc-010_LH_Per_L_DtP_qc_0005_0370/ultrasound-ultragray/engineering-1793787559242186391/nerfstudio_models/step-000000002.ckpt"
+    },
+    {
+      "dataset": "tus_rec_2024_qc",
+      "sweep": "010_LH_Per_L_DtP_qc_0005_0370",
+      "method": "gaussianpile",
+      "updates": 3,
+      "continuation_update": 4,
+      "initial_gaussians": 256,
+      "eval_frame_id": 10,
+      "metrics": {
+        "psnr": 15.432291984558105,
+        "num_parameters": 2816.0,
+        "l1": 0.10953889042139053,
+        "ssim_window": 0.3163279592990875,
+        "ssim": 0.28097763657569885,
+        "lpips": 0.575531005859375,
+        "dists": 0.6502550840377808,
+        "gmsd": 0.27605190873146057
+      },
+      "continuation_validation": {
+        "dataset": "tus_rec_2024_qc",
+        "method": "gaussianpile",
+        "parameters": {
+          "device_indicator_param": {
+            "raw_max": 0.0,
+            "gradient_max": null,
+            "gradient_difference_max": null
+          },
+          "gaussians.means": {
+            "raw_max": 0.0,
+            "gradient_max": 3.6502944567473605e-05,
+            "gradient_difference_max": 0.0
+          },
+          "gaussians.opacities": {
+            "raw_max": 0.0,
+            "gradient_max": 3.635081884567626e-05,
+            "gradient_difference_max": 0.0
+          },
+          "gaussians.quats": {
+            "raw_max": 0.0,
+            "gradient_max": 2.473097811162006e-05,
+            "gradient_difference_max": 0.0
+          },
+          "gaussians.scales": {
+            "raw_max": 0.0,
+            "gradient_max": 1.9522847651387565e-05,
+            "gradient_difference_max": 0.0
+          }
+        },
+        "loss_difference": 0.0,
+        "render_abs_max": 0.0
+      },
+      "rng_optimizer_sampler_restored_exact": true,
+      "seconds": 1.6977729040081613,
+      "manifest_sha256": "ef81c5a24b7b0691173bd6f5c74487eb850319e7cb4a38b91be367206165c112",
+      "config": "/home/yibo/paper1/outputs/preformal-smoke/tus_rec_2024_qc-010_LH_Per_L_DtP_qc_0005_0370/ultrasound-gaussianpile/engineering-1793787561298012673/config.yml",
+      "checkpoint": "/home/yibo/paper1/outputs/preformal-smoke/tus_rec_2024_qc-010_LH_Per_L_DtP_qc_0005_0370/ultrasound-gaussianpile/engineering-1793787561298012673/nerfstudio_models/step-000000002.ckpt"
+    },
+    {
+      "dataset": "tus_rec_2024_qc",
+      "sweep": "010_LH_Per_L_DtP_qc_0005_0370",
+      "method": "slice_adapted_3dgs",
+      "updates": 3,
+      "continuation_update": 4,
+      "initial_gaussians": 256,
+      "eval_frame_id": 10,
+      "metrics": {
+        "psnr": 15.430789947509766,
+        "num_parameters": 3584.0,
+        "l1": 0.10956833511590958,
+        "ssim_window": 0.31617531180381775,
+        "ssim": 0.2808137536048889,
+        "lpips": 0.5862429141998291,
+        "dists": 0.6561994552612305,
+        "gmsd": 0.2760128378868103
+      },
+      "continuation_validation": {
+        "dataset": "tus_rec_2024_qc",
+        "method": "slice_adapted_3dgs",
+        "parameters": {
+          "device_indicator_param": {
+            "raw_max": 0.0,
+            "gradient_max": null,
+            "gradient_difference_max": null
+          },
+          "gaussians.means": {
+            "raw_max": 0.0,
+            "gradient_max": 4.121927486266941e-05,
+            "gradient_difference_max": 0.0
+          },
+          "gaussians.opacities": {
+            "raw_max": 0.0,
+            "gradient_max": 1.0515442227188032e-05,
+            "gradient_difference_max": 0.0
+          },
+          "gaussians.quats": {
+            "raw_max": 0.0,
+            "gradient_max": 0.0,
+            "gradient_difference_max": 0.0
+          },
+          "gaussians.scales_3d": {
+            "raw_max": 0.0,
+            "gradient_max": 1.3148391190043185e-05,
+            "gradient_difference_max": 0.0
+          },
+          "gaussians.sh_dc": {
+            "raw_max": 0.0,
+            "gradient_max": 4.4850345148006454e-05,
+            "gradient_difference_max": 0.0
+          },
+          "gaussians.sh_rest": {
+            "raw_max": 0.0,
+            "gradient_max": null,
+            "gradient_difference_max": null
+          }
+        },
+        "loss_difference": 0.0,
+        "render_abs_max": 0.0
+      },
+      "rng_optimizer_sampler_restored_exact": true,
+      "seconds": 1.882185855996795,
+      "manifest_sha256": "ef81c5a24b7b0691173bd6f5c74487eb850319e7cb4a38b91be367206165c112",
+      "config": "/home/yibo/paper1/outputs/preformal-smoke/tus_rec_2024_qc-010_LH_Per_L_DtP_qc_0005_0370/ultrasound-slice_adapted_3dgs/engineering-1793787563198321482/config.yml",
+      "checkpoint": "/home/yibo/paper1/outputs/preformal-smoke/tus_rec_2024_qc-010_LH_Per_L_DtP_qc_0005_0370/ultrasound-slice_adapted_3dgs/engineering-1793787563198321482/nerfstudio_models/step-000000002.ckpt"
+    },
+    {
+      "dataset": "tus_rec_2024_qc",
+      "sweep": "010_LH_Per_L_DtP_qc_0005_0370",
+      "method": "ultrags_baseline",
+      "updates": 3,
+      "continuation_update": 4,
+      "initial_gaussians": 256,
+      "eval_frame_id": 10,
+      "metrics": {
+        "psnr": 15.429335594177246,
+        "num_parameters": 9984.0,
+        "l1": 0.10958398878574371,
+        "ssim_window": 0.3161317706108093,
+        "ssim": 0.28076913952827454,
+        "lpips": 0.5978084802627563,
+        "dists": 0.6639696359634399,
+        "gmsd": 0.2763860821723938
+      },
+      "continuation_validation": {
+        "dataset": "tus_rec_2024_qc",
+        "method": "ultrags_baseline",
+        "parameters": {
+          "device_indicator_param": {
+            "raw_max": 0.0,
+            "gradient_max": null,
+            "gradient_difference_max": null
+          },
+          "gaussians.fov_x": {
+            "raw_max": 0.0,
+            "gradient_max": null,
+            "gradient_difference_max": null
+          },
+          "gaussians.fov_y": {
+            "raw_max": 0.0,
+            "gradient_max": null,
+            "gradient_difference_max": null
+          },
+          "gaussians.means": {
+            "raw_max": 0.0,
+            "gradient_max": 1.330155541268141e-08,
+            "gradient_difference_max": 0.0
+          },
+          "gaussians.opacities": {
+            "raw_max": 0.0,
+            "gradient_max": 1.852989228723345e-08,
+            "gradient_difference_max": 0.0
+          },
+          "gaussians.quats": {
+            "raw_max": 0.0,
+            "gradient_max": 1.367853746936376e-10,
+            "gradient_difference_max": 0.0
+          },
+          "gaussians.scales_2d": {
+            "raw_max": 0.0,
+            "gradient_max": 1.8965397308168264e-10,
+            "gradient_difference_max": 0.0
+          },
+          "gaussians.sh_dc": {
+            "raw_max": 0.0,
+            "gradient_max": 7.148756964170389e-08,
+            "gradient_difference_max": 0.0
+          },
+          "gaussians.sh_rest": {
+            "raw_max": 0.0,
+            "gradient_max": 0.0,
+            "gradient_difference_max": 0.0
+          }
+        },
+        "loss_difference": 0.0,
+        "render_abs_max": 0.0
+      },
+      "rng_optimizer_sampler_restored_exact": true,
+      "seconds": 1.9261958479764871,
+      "manifest_sha256": "ef81c5a24b7b0691173bd6f5c74487eb850319e7cb4a38b91be367206165c112",
+      "config": "/home/yibo/paper1/outputs/preformal-smoke/tus_rec_2024_qc-010_LH_Per_L_DtP_qc_0005_0370/ultrasound-ultrags_baseline/engineering-1793787565326421184/config.yml",
+      "checkpoint": "/home/yibo/paper1/outputs/preformal-smoke/tus_rec_2024_qc-010_LH_Per_L_DtP_qc_0005_0370/ultrasound-ultrags_baseline/engineering-1793787565326421184/nerfstudio_models/step-000000002.ckpt"
+    },
+    {
+      "dataset": "tus_rec_2024_qc",
+      "sweep": "010_LH_Per_L_DtP_qc_0005_0370",
+      "method": "nerfus",
+      "updates": 3,
+      "continuation_update": 4,
+      "initial_gaussians": null,
+      "eval_frame_id": 10,
+      "metrics": {
+        "psnr": 15.207897186279297,
+        "l1": 0.11586636304855347,
+        "ssim_window": 0.267164409160614,
+        "ssim": 0.24754253029823303,
+        "lpips": 0.628814697265625,
+        "dists": 0.6284664869308472,
+        "gmsd": 0.29670071601867676
+      },
+      "continuation_validation": {
+        "dataset": "tus_rec_2024_qc",
+        "method": "nerfus",
+        "parameters": {
+          "device_indicator_param": {
+            "raw_max": 0.0,
+            "gradient_max": null,
+            "gradient_difference_max": null
+          },
+          "field.layers.0.weight": {
+            "raw_max": 0.0,
+            "gradient_max": 1.6190904261748074e-06,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.0.bias": {
+            "raw_max": 0.0,
+            "gradient_max": 1.6466494798805797e-06,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.1.weight": {
+            "raw_max": 0.0,
+            "gradient_max": 3.7398779113573255e-06,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.1.bias": {
+            "raw_max": 0.0,
+            "gradient_max": 4.743139470519964e-06,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.2.weight": {
+            "raw_max": 0.0,
+            "gradient_max": 6.502353244286496e-06,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.2.bias": {
+            "raw_max": 0.0,
+            "gradient_max": 1.5229878954414744e-05,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.3.weight": {
+            "raw_max": 0.0,
+            "gradient_max": 7.292771897482453e-06,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.3.bias": {
+            "raw_max": 0.0,
+            "gradient_max": 3.20427498081699e-05,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.4.weight": {
+            "raw_max": 0.0,
+            "gradient_max": 9.811812924453989e-05,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.4.bias": {
+            "raw_max": 0.0,
+            "gradient_max": 9.950700041372329e-05,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.5.weight": {
+            "raw_max": 0.0,
+            "gradient_max": 0.00013030681293457747,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.5.bias": {
+            "raw_max": 0.0,
+            "gradient_max": 0.00031154468888416886,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.6.weight": {
+            "raw_max": 0.0,
+            "gradient_max": 0.00020357190805952996,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.6.bias": {
+            "raw_max": 0.0,
+            "gradient_max": 0.0011102892458438873,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.7.weight": {
+            "raw_max": 0.0,
+            "gradient_max": 0.0004042964428663254,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.7.bias": {
+            "raw_max": 0.0,
+            "gradient_max": 0.0031775592360645533,
+            "gradient_difference_max": 0.0
+          },
+          "field.output.weight": {
+            "raw_max": 0.0,
+            "gradient_max": 0.0023476043716073036,
+            "gradient_difference_max": 0.0
+          },
+          "field.output.bias": {
+            "raw_max": 0.0,
+            "gradient_max": 0.01868356764316559,
+            "gradient_difference_max": 0.0
+          }
+        },
+        "loss_difference": 0.0,
+        "render_abs_max": 0.0
+      },
+      "rng_optimizer_sampler_restored_exact": true,
+      "seconds": 1.2515860239509493,
+      "manifest_sha256": "ef81c5a24b7b0691173bd6f5c74487eb850319e7cb4a38b91be367206165c112",
+      "config": "/home/yibo/paper1/outputs/preformal-smoke/tus_rec_2024_qc-010_LH_Per_L_DtP_qc_0005_0370/ultrasound-nerfus/engineering-1793787567504718632/config.yml",
+      "checkpoint": "/home/yibo/paper1/outputs/preformal-smoke/tus_rec_2024_qc-010_LH_Per_L_DtP_qc_0005_0370/ultrasound-nerfus/engineering-1793787567504718632/nerfstudio_models/step-000000002.ckpt"
+    },
+    {
+      "dataset": "tus_rec_2024_qc",
+      "sweep": "010_LH_Per_L_DtP_qc_0005_0370",
+      "method": "ultranerf",
+      "updates": 3,
+      "continuation_update": 4,
+      "initial_gaussians": null,
+      "eval_frame_id": 10,
+      "metrics": {
+        "psnr": 15.199112892150879,
+        "l1": 0.11581989377737045,
+        "ssim_window": 0.26652199029922485,
+        "ssim": 0.24749338626861572,
+        "lpips": 0.6302223801612854,
+        "dists": 0.6158424615859985,
+        "gmsd": 0.2969464659690857
+      },
+      "continuation_validation": {
+        "dataset": "tus_rec_2024_qc",
+        "method": "ultranerf",
+        "parameters": {
+          "device_indicator_param": {
+            "raw_max": 0.0,
+            "gradient_max": null,
+            "gradient_difference_max": null
+          },
+          "field.layers.0.weight": {
+            "raw_max": 0.0,
+            "gradient_max": 1.0206850902250153e-06,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.0.bias": {
+            "raw_max": 0.0,
+            "gradient_max": 1.0334556463931222e-06,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.1.weight": {
+            "raw_max": 0.0,
+            "gradient_max": 2.6462464575160993e-06,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.1.bias": {
+            "raw_max": 0.0,
+            "gradient_max": 3.0747794426133623e-06,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.2.weight": {
+            "raw_max": 0.0,
+            "gradient_max": 4.679974153987132e-06,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.2.bias": {
+            "raw_max": 0.0,
+            "gradient_max": 1.0752823982329573e-05,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.3.weight": {
+            "raw_max": 0.0,
+            "gradient_max": 6.781947831768775e-06,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.3.bias": {
+            "raw_max": 0.0,
+            "gradient_max": 2.9179271223256364e-05,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.4.weight": {
+            "raw_max": 0.0,
+            "gradient_max": 8.44702371978201e-05,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.4.bias": {
+            "raw_max": 0.0,
+            "gradient_max": 8.514440560247749e-05,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.5.weight": {
+            "raw_max": 0.0,
+            "gradient_max": 0.0001259640121133998,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.5.bias": {
+            "raw_max": 0.0,
+            "gradient_max": 0.00031635124469175935,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.6.weight": {
+            "raw_max": 0.0,
+            "gradient_max": 0.00017223834584001452,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.6.bias": {
+            "raw_max": 0.0,
+            "gradient_max": 0.0009424799354746938,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.7.weight": {
+            "raw_max": 0.0,
+            "gradient_max": 0.0002453673805575818,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.7.bias": {
+            "raw_max": 0.0,
+            "gradient_max": 0.0018560815369710326,
+            "gradient_difference_max": 0.0
+          },
+          "field.output.weight": {
+            "raw_max": 0.0,
+            "gradient_max": 0.002517093438655138,
+            "gradient_difference_max": 0.0
+          },
+          "field.output.bias": {
+            "raw_max": 0.0,
+            "gradient_max": 0.019804703071713448,
+            "gradient_difference_max": 0.0
+          }
+        },
+        "loss_difference": 0.0,
+        "render_abs_max": 0.0
+      },
+      "rng_optimizer_sampler_restored_exact": true,
+      "seconds": 1.0211590940016322,
+      "manifest_sha256": "ef81c5a24b7b0691173bd6f5c74487eb850319e7cb4a38b91be367206165c112",
+      "config": "/home/yibo/paper1/outputs/preformal-smoke/tus_rec_2024_qc-010_LH_Per_L_DtP_qc_0005_0370/ultrasound-ultranerf/engineering-1793787569002561353/config.yml",
+      "checkpoint": "/home/yibo/paper1/outputs/preformal-smoke/tus_rec_2024_qc-010_LH_Per_L_DtP_qc_0005_0370/ultrasound-ultranerf/engineering-1793787569002561353/nerfstudio_models/step-000000002.ckpt"
+    },
+    {
+      "dataset": "tdsc_abus_2023",
+      "sweep": "validation_100",
+      "method": "ours",
+      "updates": 3,
+      "continuation_update": 4,
+      "initial_gaussians": 256,
+      "eval_frame_id": 10,
+      "metrics": {
+        "psnr": 11.157739639282227,
+        "num_parameters": 3072.0,
+        "l1": 0.23431967198848724,
+        "ssim_window": 0.003569999011233449,
+        "ssim": 0.0032012835144996643,
+        "lpips": 0.7930675745010376,
+        "dists": 0.707724928855896,
+        "gmsd": 0.3549312651157379
+      },
+      "continuation_validation": {
+        "dataset": "tdsc_abus_2023",
+        "method": "ours",
+        "parameters": {
+          "device_indicator_param": {
+            "raw_max": 0.0,
+            "gradient_max": null,
+            "gradient_difference_max": null
+          },
+          "gaussians.attenuations": {
+            "raw_max": 0.0,
+            "gradient_max": 9.55963752602429e-09,
+            "gradient_difference_max": 1.7763568394002505e-15
+          },
+          "gaussians.echo_alphas": {
+            "raw_max": 0.0,
+            "gradient_max": 7.337016995734302e-06,
+            "gradient_difference_max": 0.0
+          },
+          "gaussians.means": {
+            "raw_max": 0.0,
+            "gradient_max": 1.5362567864940502e-05,
+            "gradient_difference_max": 2.2737367544323206e-13
+          },
+          "gaussians.quats": {
+            "raw_max": 0.0,
+            "gradient_max": 4.800462544835016e-12,
+            "gradient_difference_max": 4.0657581468206416e-20
+          },
+          "gaussians.scales": {
+            "raw_max": 0.0,
+            "gradient_max": 1.6101656001410447e-05,
+            "gradient_difference_max": 0.0
+          }
+        },
+        "loss_difference": 0.0,
+        "render_abs_max": 0.0
+      },
+      "rng_optimizer_sampler_restored_exact": true,
+      "seconds": 2.701629374001641,
+      "manifest_sha256": "2943fb61cfd42a5a5a0ac7f7e2a0b7e1fa4b7c6cb5885fc8efd5b5ded6ee348b",
+      "config": "/home/yibo/paper1/outputs/preformal-smoke/tdsc_abus_2023-validation_100/ultrasound-ours/engineering-1793787570243494538/config.yml",
+      "checkpoint": "/home/yibo/paper1/outputs/preformal-smoke/tdsc_abus_2023-validation_100/ultrasound-ours/engineering-1793787570243494538/nerfstudio_models/step-000000002.ckpt"
+    },
+    {
+      "dataset": "tdsc_abus_2023",
+      "sweep": "validation_100",
+      "method": "ultragauss",
+      "updates": 3,
+      "continuation_update": 4,
+      "initial_gaussians": 256,
+      "eval_frame_id": 10,
+      "metrics": {
+        "psnr": 11.163585662841797,
+        "num_parameters": 2816.0,
+        "l1": 0.2341991364955902,
+        "ssim_window": 0.003670736448839307,
+        "ssim": 0.003338257782161236,
+        "lpips": 0.7600546479225159,
+        "dists": 0.7026853561401367,
+        "gmsd": 0.35436972975730896
+      },
+      "continuation_validation": {
+        "dataset": "tdsc_abus_2023",
+        "method": "ultragauss",
+        "parameters": {
+          "device_indicator_param": {
+            "raw_max": 0.0,
+            "gradient_max": null,
+            "gradient_difference_max": null
+          },
+          "gaussians.intensities": {
+            "raw_max": 0.0,
+            "gradient_max": 3.3067295589717105e-05,
+            "gradient_difference_max": 7.275957614183426e-12
+          },
+          "gaussians.means": {
+            "raw_max": 0.0,
+            "gradient_max": 9.233787956475226e-09,
+            "gradient_difference_max": 6.661338147750939e-16
+          },
+          "gaussians.opacities": {
+            "raw_max": 0.0,
+            "gradient_max": 4.148717203111829e-10,
+            "gradient_difference_max": 6.938893903907228e-18
+          },
+          "gaussians.precision_tril": {
+            "raw_max": 2.3283064365386963e-10,
+            "gradient_max": 5.450355722302902e-09,
+            "gradient_difference_max": 4.440892098500626e-16
+          }
+        },
+        "loss_difference": 0.0,
+        "render_abs_max": 0.0
+      },
+      "rng_optimizer_sampler_restored_exact": true,
+      "seconds": 2.5839242849615403,
+      "manifest_sha256": "2943fb61cfd42a5a5a0ac7f7e2a0b7e1fa4b7c6cb5885fc8efd5b5ded6ee348b",
+      "config": "/home/yibo/paper1/outputs/preformal-smoke/tdsc_abus_2023-validation_100/ultrasound-ultragauss/engineering-1793787573171612328/config.yml",
+      "checkpoint": "/home/yibo/paper1/outputs/preformal-smoke/tdsc_abus_2023-validation_100/ultrasound-ultragauss/engineering-1793787573171612328/nerfstudio_models/step-000000002.ckpt"
+    },
+    {
+      "dataset": "tdsc_abus_2023",
+      "sweep": "validation_100",
+      "method": "ultragray",
+      "updates": 3,
+      "continuation_update": 4,
+      "initial_gaussians": 256,
+      "eval_frame_id": 10,
+      "metrics": {
+        "psnr": 11.157917022705078,
+        "num_parameters": 3840.0,
+        "l1": 0.23433707654476166,
+        "ssim_window": 0.003484617453068495,
+        "ssim": 0.0031066874507814646,
+        "lpips": 0.809231162071228,
+        "dists": 0.7144656777381897,
+        "gmsd": 0.3547031879425049
+      },
+      "continuation_validation": {
+        "dataset": "tdsc_abus_2023",
+        "method": "ultragray",
+        "parameters": {
+          "device_indicator_param": {
+            "raw_max": 0.0,
+            "gradient_max": null,
+            "gradient_difference_max": null
+          },
+          "gaussians.attenuations": {
+            "raw_max": 0.0,
+            "gradient_max": 2.0988377258390756e-08,
+            "gradient_difference_max": 8.881784197001252e-16
+          },
+          "gaussians.means": {
+            "raw_max": 0.0,
+            "gradient_max": 2.738917464739643e-05,
+            "gradient_difference_max": 9.094947017729282e-13
+          },
+          "gaussians.quats": {
+            "raw_max": 0.0,
+            "gradient_max": 2.595701431573616e-13,
+            "gradient_difference_max": 0.0
+          },
+          "gaussians.scales": {
+            "raw_max": 0.0,
+            "gradient_max": 3.235903204767965e-05,
+            "gradient_difference_max": 1.8189894035458565e-12
+          },
+          "gaussians.sh_dc": {
+            "raw_max": 0.0,
+            "gradient_max": 0.00022418271692004055,
+            "gradient_difference_max": 7.275957614183426e-12
+          },
+          "gaussians.sh_rest": {
+            "raw_max": 0.0,
+            "gradient_max": null,
+            "gradient_difference_max": null
+          }
+        },
+        "loss_difference": 0.0,
+        "render_abs_max": 0.0
+      },
+      "rng_optimizer_sampler_restored_exact": true,
+      "seconds": 2.362334707984701,
+      "manifest_sha256": "2943fb61cfd42a5a5a0ac7f7e2a0b7e1fa4b7c6cb5885fc8efd5b5ded6ee348b",
+      "config": "/home/yibo/paper1/outputs/preformal-smoke/tdsc_abus_2023-validation_100/ultrasound-ultragray/engineering-1793787575998854166/config.yml",
+      "checkpoint": "/home/yibo/paper1/outputs/preformal-smoke/tdsc_abus_2023-validation_100/ultrasound-ultragray/engineering-1793787575998854166/nerfstudio_models/step-000000002.ckpt"
+    },
+    {
+      "dataset": "tdsc_abus_2023",
+      "sweep": "validation_100",
+      "method": "gaussianpile",
+      "updates": 3,
+      "continuation_update": 4,
+      "initial_gaussians": 256,
+      "eval_frame_id": 10,
+      "metrics": {
+        "psnr": 11.161494255065918,
+        "num_parameters": 2816.0,
+        "l1": 0.23425054550170898,
+        "ssim_window": 0.0036085182800889015,
+        "ssim": 0.003250874113291502,
+        "lpips": 0.7667784690856934,
+        "dists": 0.7068888545036316,
+        "gmsd": 0.3544324040412903
+      },
+      "continuation_validation": {
+        "dataset": "tdsc_abus_2023",
+        "method": "gaussianpile",
+        "parameters": {
+          "device_indicator_param": {
+            "raw_max": 0.0,
+            "gradient_max": null,
+            "gradient_difference_max": null
+          },
+          "gaussians.means": {
+            "raw_max": 0.0,
+            "gradient_max": 6.319421663647518e-05,
+            "gradient_difference_max": 0.0
+          },
+          "gaussians.opacities": {
+            "raw_max": 0.0,
+            "gradient_max": 2.643006700964179e-05,
+            "gradient_difference_max": 0.0
+          },
+          "gaussians.quats": {
+            "raw_max": 0.0,
+            "gradient_max": 4.5285556552698836e-05,
+            "gradient_difference_max": 0.0
+          },
+          "gaussians.scales": {
+            "raw_max": 0.0,
+            "gradient_max": 3.7893183616688475e-05,
+            "gradient_difference_max": 0.0
+          }
+        },
+        "loss_difference": 0.0,
+        "render_abs_max": 0.0
+      },
+      "rng_optimizer_sampler_restored_exact": true,
+      "seconds": 2.4432435859926045,
+      "manifest_sha256": "2943fb61cfd42a5a5a0ac7f7e2a0b7e1fa4b7c6cb5885fc8efd5b5ded6ee348b",
+      "config": "/home/yibo/paper1/outputs/preformal-smoke/tdsc_abus_2023-validation_100/ultrasound-gaussianpile/engineering-1793787578580946183/config.yml",
+      "checkpoint": "/home/yibo/paper1/outputs/preformal-smoke/tdsc_abus_2023-validation_100/ultrasound-gaussianpile/engineering-1793787578580946183/nerfstudio_models/step-000000002.ckpt"
+    },
+    {
+      "dataset": "tdsc_abus_2023",
+      "sweep": "validation_100",
+      "method": "slice_adapted_3dgs",
+      "updates": 3,
+      "continuation_update": 4,
+      "initial_gaussians": 256,
+      "eval_frame_id": 10,
+      "metrics": {
+        "psnr": 11.159597396850586,
+        "num_parameters": 3584.0,
+        "l1": 0.23430372774600983,
+        "ssim_window": 0.0035280182491987944,
+        "ssim": 0.00316109461709857,
+        "lpips": 0.781328558921814,
+        "dists": 0.7109296321868896,
+        "gmsd": 0.3544987738132477
+      },
+      "continuation_validation": {
+        "dataset": "tdsc_abus_2023",
+        "method": "slice_adapted_3dgs",
+        "parameters": {
+          "device_indicator_param": {
+            "raw_max": 0.0,
+            "gradient_max": null,
+            "gradient_difference_max": null
+          },
+          "gaussians.means": {
+            "raw_max": 0.0,
+            "gradient_max": 6.610099808312953e-05,
+            "gradient_difference_max": 0.0
+          },
+          "gaussians.opacities": {
+            "raw_max": 0.0,
+            "gradient_max": 1.9068558685830794e-05,
+            "gradient_difference_max": 0.0
+          },
+          "gaussians.quats": {
+            "raw_max": 0.0,
+            "gradient_max": 0.0,
+            "gradient_difference_max": 0.0
+          },
+          "gaussians.scales_3d": {
+            "raw_max": 0.0,
+            "gradient_max": 1.856022390711587e-05,
+            "gradient_difference_max": 0.0
+          },
+          "gaussians.sh_dc": {
+            "raw_max": 0.0,
+            "gradient_max": 1.3918945114710368e-05,
+            "gradient_difference_max": 0.0
+          },
+          "gaussians.sh_rest": {
+            "raw_max": 0.0,
+            "gradient_max": null,
+            "gradient_difference_max": null
+          }
+        },
+        "loss_difference": 0.0,
+        "render_abs_max": 0.0
+      },
+      "rng_optimizer_sampler_restored_exact": true,
+      "seconds": 2.6612567710108124,
+      "manifest_sha256": "2943fb61cfd42a5a5a0ac7f7e2a0b7e1fa4b7c6cb5885fc8efd5b5ded6ee348b",
+      "config": "/home/yibo/paper1/outputs/preformal-smoke/tdsc_abus_2023-validation_100/ultrasound-slice_adapted_3dgs/engineering-1793787581266417369/config.yml",
+      "checkpoint": "/home/yibo/paper1/outputs/preformal-smoke/tdsc_abus_2023-validation_100/ultrasound-slice_adapted_3dgs/engineering-1793787581266417369/nerfstudio_models/step-000000002.ckpt"
+    },
+    {
+      "dataset": "tdsc_abus_2023",
+      "sweep": "validation_100",
+      "method": "ultrags_baseline",
+      "updates": 3,
+      "continuation_update": 4,
+      "initial_gaussians": 256,
+      "eval_frame_id": 10,
+      "metrics": {
+        "psnr": 11.15670108795166,
+        "num_parameters": 9984.0,
+        "l1": 0.23435772955417633,
+        "ssim_window": 0.003471444360911846,
+        "ssim": 0.0030974142719060183,
+        "lpips": 0.8204248547554016,
+        "dists": 0.721771776676178,
+        "gmsd": 0.35518890619277954
+      },
+      "continuation_validation": {
+        "dataset": "tdsc_abus_2023",
+        "method": "ultrags_baseline",
+        "parameters": {
+          "device_indicator_param": {
+            "raw_max": 0.0,
+            "gradient_max": null,
+            "gradient_difference_max": null
+          },
+          "gaussians.fov_x": {
+            "raw_max": 0.0,
+            "gradient_max": null,
+            "gradient_difference_max": null
+          },
+          "gaussians.fov_y": {
+            "raw_max": 0.0,
+            "gradient_max": null,
+            "gradient_difference_max": null
+          },
+          "gaussians.means": {
+            "raw_max": 0.0,
+            "gradient_max": 2.275998411960245e-08,
+            "gradient_difference_max": 0.0
+          },
+          "gaussians.opacities": {
+            "raw_max": 0.0,
+            "gradient_max": 4.3497056623209573e-08,
+            "gradient_difference_max": 0.0
+          },
+          "gaussians.quats": {
+            "raw_max": 0.0,
+            "gradient_max": 2.5274271564512674e-10,
+            "gradient_difference_max": 0.0
+          },
+          "gaussians.scales_2d": {
+            "raw_max": 0.0,
+            "gradient_max": 4.349308024842458e-09,
+            "gradient_difference_max": 0.0
+          },
+          "gaussians.sh_dc": {
+            "raw_max": 0.0,
+            "gradient_max": 1.7686224040858178e-08,
+            "gradient_difference_max": 0.0
+          },
+          "gaussians.sh_rest": {
+            "raw_max": 0.0,
+            "gradient_max": 0.0,
+            "gradient_difference_max": 0.0
+          }
+        },
+        "loss_difference": 0.0,
+        "render_abs_max": 0.0
+      },
+      "rng_optimizer_sampler_restored_exact": true,
+      "seconds": 2.926403269986622,
+      "manifest_sha256": "2943fb61cfd42a5a5a0ac7f7e2a0b7e1fa4b7c6cb5885fc8efd5b5ded6ee348b",
+      "config": "/home/yibo/paper1/outputs/preformal-smoke/tdsc_abus_2023-validation_100/ultrasound-ultrags_baseline/engineering-1793787584363843431/config.yml",
+      "checkpoint": "/home/yibo/paper1/outputs/preformal-smoke/tdsc_abus_2023-validation_100/ultrasound-ultrags_baseline/engineering-1793787584363843431/nerfstudio_models/step-000000002.ckpt"
+    },
+    {
+      "dataset": "tdsc_abus_2023",
+      "sweep": "validation_100",
+      "method": "nerfus",
+      "updates": 3,
+      "continuation_update": 4,
+      "initial_gaussians": null,
+      "eval_frame_id": 10,
+      "metrics": {
+        "psnr": 11.286421775817871,
+        "l1": 0.23066796362400055,
+        "ssim_window": 0.007878998294472694,
+        "ssim": 0.006029403302818537,
+        "lpips": 0.8165320754051208,
+        "dists": 0.6855967044830322,
+        "gmsd": 0.34144166111946106
+      },
+      "continuation_validation": {
+        "dataset": "tdsc_abus_2023",
+        "method": "nerfus",
+        "parameters": {
+          "device_indicator_param": {
+            "raw_max": 0.0,
+            "gradient_max": null,
+            "gradient_difference_max": null
+          },
+          "field.layers.0.weight": {
+            "raw_max": 0.0,
+            "gradient_max": 9.430403906662832e-07,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.0.bias": {
+            "raw_max": 0.0,
+            "gradient_max": 9.426029805581493e-07,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.1.weight": {
+            "raw_max": 0.0,
+            "gradient_max": 2.1792870938952547e-06,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.1.bias": {
+            "raw_max": 0.0,
+            "gradient_max": 2.4209150524256984e-06,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.2.weight": {
+            "raw_max": 0.0,
+            "gradient_max": 3.0199958018783946e-06,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.2.bias": {
+            "raw_max": 0.0,
+            "gradient_max": 7.147638825699687e-06,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.3.weight": {
+            "raw_max": 0.0,
+            "gradient_max": 6.025103175488766e-06,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.3.bias": {
+            "raw_max": 0.0,
+            "gradient_max": 2.224187301180791e-05,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.4.weight": {
+            "raw_max": 0.0,
+            "gradient_max": 4.95458189107012e-05,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.4.bias": {
+            "raw_max": 0.0,
+            "gradient_max": 4.9545938964001834e-05,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.5.weight": {
+            "raw_max": 0.0,
+            "gradient_max": 6.556134030688554e-05,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.5.bias": {
+            "raw_max": 0.0,
+            "gradient_max": 0.00014095749065745622,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.6.weight": {
+            "raw_max": 0.0,
+            "gradient_max": 8.297595923068002e-05,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.6.bias": {
+            "raw_max": 0.0,
+            "gradient_max": 0.000349009147612378,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.7.weight": {
+            "raw_max": 0.0,
+            "gradient_max": 0.00012868104386143386,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.7.bias": {
+            "raw_max": 0.0,
+            "gradient_max": 0.0007973575266078115,
+            "gradient_difference_max": 0.0
+          },
+          "field.output.weight": {
+            "raw_max": 0.0,
+            "gradient_max": 0.0007251121569424868,
+            "gradient_difference_max": 0.0
+          },
+          "field.output.bias": {
+            "raw_max": 0.0,
+            "gradient_max": 0.005422480870038271,
+            "gradient_difference_max": 0.0
+          }
+        },
+        "loss_difference": 0.0,
+        "render_abs_max": 0.0
+      },
+      "rng_optimizer_sampler_restored_exact": true,
+      "seconds": 1.4415857400163077,
+      "manifest_sha256": "2943fb61cfd42a5a5a0ac7f7e2a0b7e1fa4b7c6cb5885fc8efd5b5ded6ee348b",
+      "config": "/home/yibo/paper1/outputs/preformal-smoke/tdsc_abus_2023-validation_100/ultrasound-nerfus/engineering-1793787587611592737/config.yml",
+      "checkpoint": "/home/yibo/paper1/outputs/preformal-smoke/tdsc_abus_2023-validation_100/ultrasound-nerfus/engineering-1793787587611592737/nerfstudio_models/step-000000002.ckpt"
+    },
+    {
+      "dataset": "tdsc_abus_2023",
+      "sweep": "validation_100",
+      "method": "ultranerf",
+      "updates": 3,
+      "continuation_update": 4,
+      "initial_gaussians": null,
+      "eval_frame_id": 10,
+      "metrics": {
+        "psnr": 11.279821395874023,
+        "l1": 0.2308482974767685,
+        "ssim_window": 0.007683620322495699,
+        "ssim": 0.005627680569887161,
+        "lpips": 0.788695752620697,
+        "dists": 0.6573081016540527,
+        "gmsd": 0.3411889672279358
+      },
+      "continuation_validation": {
+        "dataset": "tdsc_abus_2023",
+        "method": "ultranerf",
+        "parameters": {
+          "device_indicator_param": {
+            "raw_max": 0.0,
+            "gradient_max": null,
+            "gradient_difference_max": null
+          },
+          "field.layers.0.weight": {
+            "raw_max": 0.0,
+            "gradient_max": 4.111302587261889e-07,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.0.bias": {
+            "raw_max": 0.0,
+            "gradient_max": 4.111306282084115e-07,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.1.weight": {
+            "raw_max": 0.0,
+            "gradient_max": 1.1074990879933466e-06,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.1.bias": {
+            "raw_max": 0.0,
+            "gradient_max": 1.2597423619808978e-06,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.2.weight": {
+            "raw_max": 0.0,
+            "gradient_max": 1.4838400375083438e-06,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.2.bias": {
+            "raw_max": 0.0,
+            "gradient_max": 3.575579285097774e-06,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.3.weight": {
+            "raw_max": 0.0,
+            "gradient_max": 2.8021497655572603e-06,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.3.bias": {
+            "raw_max": 0.0,
+            "gradient_max": 1.0472771464264952e-05,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.4.weight": {
+            "raw_max": 0.0,
+            "gradient_max": 2.9153728974051774e-05,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.4.bias": {
+            "raw_max": 0.0,
+            "gradient_max": 2.9153790819691494e-05,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.5.weight": {
+            "raw_max": 0.0,
+            "gradient_max": 2.847534415195696e-05,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.5.bias": {
+            "raw_max": 0.0,
+            "gradient_max": 7.188833114923909e-05,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.6.weight": {
+            "raw_max": 0.0,
+            "gradient_max": 4.986471321899444e-05,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.6.bias": {
+            "raw_max": 0.0,
+            "gradient_max": 0.0002081685815937817,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.7.weight": {
+            "raw_max": 0.0,
+            "gradient_max": 5.6391720136161894e-05,
+            "gradient_difference_max": 0.0
+          },
+          "field.layers.7.bias": {
+            "raw_max": 0.0,
+            "gradient_max": 0.0003478030557744205,
+            "gradient_difference_max": 0.0
+          },
+          "field.output.weight": {
+            "raw_max": 0.0,
+            "gradient_max": 0.0005479805986396968,
+            "gradient_difference_max": 0.0
+          },
+          "field.output.bias": {
+            "raw_max": 0.0,
+            "gradient_max": 0.003962046001106501,
+            "gradient_difference_max": 0.0
+          }
+        },
+        "loss_difference": 0.0,
+        "render_abs_max": 0.0
+      },
+      "rng_optimizer_sampler_restored_exact": true,
+      "seconds": 1.2274710549972951,
+      "manifest_sha256": "2943fb61cfd42a5a5a0ac7f7e2a0b7e1fa4b7c6cb5885fc8efd5b5ded6ee348b",
+      "config": "/home/yibo/paper1/outputs/preformal-smoke/tdsc_abus_2023-validation_100/ultrasound-ultranerf/engineering-1793787589398419204/config.yml",
+      "checkpoint": "/home/yibo/paper1/outputs/preformal-smoke/tdsc_abus_2023-validation_100/ultrasound-ultranerf/engineering-1793787589398419204/nerfstudio_models/step-000000002.ckpt"
+    }
+  ]
+}

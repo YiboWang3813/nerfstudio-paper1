@@ -1,0 +1,304 @@
+\vspace{-1mm}
+\section{Experiments and Results}
+\label{sec:experiments}
+\label{sec:results}
+
+\subsection{Experimental Settings}
+\label{sec:experiments:settings}
+
+\subsubsection{Datasets}
+\label{sec:experiments:datasets}
+
+We conduct experiments on four datasets: \textbf{Liver} and \textbf{Spine}
+for synthetic/phantom evaluation, and \textbf{Arm} and \textbf{Breast} for
+real-world evaluation. Liver and Spine are adopted from
+Ultra-NeRF~\cite{wysockiUltraNeRFNeuralRadiance2024}: Liver contains 6
+CT-based simulated sweeps with 200 frames each at $480\times640$, whereas
+Spine contains robotic sweeps of a lumbar-spine phantom with 150 frames each
+at $168\times1300$. Arm and Breast are derived from
+TUS-REC-2024~\cite{liTUSREC2024} and
+TDSC-ABUS-2023~\cite{luoTDSCABUSChallenge2025}, respectively. Arm consists of
+freehand forearm scans from 85 volunteers at $480\times640$, while Breast
+contains automated 3D breast ultrasound volumes with typical sizes of
+approximately $850\times600\times300$ voxels. We use all 6 Liver sweeps, 9
+Spine sweeps, 33 Arm sweeps, and 30 publicly available Breast volumes. 
+All images are adaptively downsampled to approximately $10^5$ pixels per frame
+to balance reconstruction accuracy and GPU memory usage.
+
+\subsubsection{Baseline Methods}
+\label{sec:experiments:baselines}
+
+We compare our method with seven representative baseline methods from three
+categories: NeRF-based Methods, Ultrasound Gaussian Methods, and Adapted
+Gaussian Methods. For NeRF-based Methods, we include
+Ultra-NeRF~\cite{wysockiUltraNeRFNeuralRadiance2024} and
+NeRF-US~\cite{dagliNeRFUSRemovingUltrasound2024}, both of which
+combine implicit neural fields with ultrasound-specific rendering. For
+Ultrasound Gaussian Methods, we compare with
+UltraGauss~\cite{eidUltraGaussUltrafastGaussian2025},
+UltraG-Ray~\cite{duelmerUltraGRayPhysicsBasedGaussian2026}, and
+UltraGS~\cite{yangUltraGSRealTimePhysicallyDecoupled2025}, which respectively
+emphasize plane-based aggregation, physics-based ray casting, and wave-inspired
+Gaussian rendering. For Adapted Gaussian Methods, we adapt vanilla
+3DGS~\cite{kerbl3DGaussianSplatting2023} and
+GaussianPile~\cite{kongGaussianPileUnifiedSparse2026} to ultrasound
+reconstruction by modifying their data interfaces and renderers.
+For fair comparison, all baselines are adapted to the same reconstruction
+setting and evaluated using the same measured probe poses.
+
+\subsubsection{Evaluation Metrics}
+\label{sec:experiments:metrics}
+
+We evaluate reconstruction quality using PSNR, L1, SSIM, LPIPS, DISTS, and
+GMSD. Higher PSNR and SSIM indicate better performance, whereas lower L1,
+LPIPS, DISTS, and GMSD are preferred. We additionally report training time and
+rendering frames per second (FPS) for computational efficiency.
+
+\subsubsection{Implementation Details}
+\label{sec:experiments:implementation}
+
+We initialize each scene with $10^6$ Gaussians and optimize it for 30k
+iterations using Adam. For AFGM, we set $\rho=1$, use the first retained frame
+as $i_0$, adopt the dataset-specific nominal acquisition spacing $d_0$, and use
+the predefined canonical scan direction. For the local pathway of PLGR, we use
+a shared elevational width $\sigma^{\mathrm{ele}}=1$~mm, a support multiplier
+of $2.5$, and $\gamma=0.25$. For the global pathway, we use a support
+multiplier of $2.0$, 3-point Gauss--Legendre quadrature with a 2-mm integration
+half-window, $\lambda_{\mathrm{ray}}=0.55$, and $T_{\min}=0.35$, with
+$\beta=0.8$ for local-global modulation. CGAS is applied every 2k iterations
+during the active adaptation stage. Residual-guided densification uses
+$q_{\mathrm d}=0.98$, $\tau_{\omega}=10^{-6}$, a per-event candidate budget
+of approximately $5\%$ of the current Gaussian population, and a $0.6$-mm
+scale threshold. Path-aware pruning uses $\tau_{\alpha}=10^{-4}$,
+$q_{\mathrm p}=0.10$, and $q_{\mathrm A}=0.80$. Unless otherwise specified,
+the same hyperparameters are used across all sequences without per-sequence
+tuning. Rendering FPS is measured on an NVIDIA RTX 4090 using pure forward
+passes.
+
+\input{tables/comparison_four_datasets}
+
+\vspace{-3mm}
+\subsection{Comparison with Baseline Methods}
+\label{sec:results:comparison}
+
+We compare \methodname{} with seven baseline methods from the NeRF-based,
+Ultrasound Gaussian, and Adapted Gaussian categories on the Liver, Spine, Arm,
+and Breast datasets, in terms of PSNR, L1, SSIM, LPIPS, DISTS, and GMSD,
+together with training time and rendering FPS, as reported in
+Table~\ref{tab:comparison:main}, with the corresponding qualitative results
+presented in Fig.~\ref{fig:comparison:all_datasets}.
+Overall, \methodname{} achieves the best PSNR, L1, and GMSD on all four
+datasets, while attaining best or second-best SSIM, LPIPS, and DISTS
+throughout, showing consistent pixel-wise accuracy and perceptual fidelity
+across anatomical targets and acquisition settings.
+
+\subsubsection{Comparison with NeRF-based Methods}
+
+Compared with Ultra-NeRF and NeRF-US, \methodname{} achieves consistently
+higher reconstruction accuracy across all four datasets. In particular,
+\methodname{} outperforms the strongest NeRF-based baseline on Liver and
+Breast, improving PSNR from $22.07\!\rightarrow\!29.03$ dB and
+$22.00\!\rightarrow\!28.99$ dB, respectively. On Spine and Arm,
+\methodname{} further raises PSNR from 27.46 to 31.04 dB and from 29.43 to
+34.11 dB, while improving SSIM from 0.692 to 0.797 and from 0.836 to 0.887.
+It also reduces L1 by 39.9\%, 25.5\%, 33.9\%, and 50.9\% on Liver, Spine,
+Arm, and Breast, respectively, with consistent gains in the remaining
+perceptual and structural metrics. Across both NeRF-based baselines,
+\methodname{} improves all six quality metrics on every dataset while
+retaining fast rendering.
+Similar trends appear in Fig.~\ref{fig:comparison:all_datasets}:
+\methodname{} retains the major echo and shadow patterns in Liver, the layered
+and curved responses in Spine, and the principal layer organization and echo
+patterns in the real Arm and Breast examples, consistent with its quantitative
+advantages over NeRF-based methods.
+
+\subsubsection{Comparison with Ultrasound Gaussian Methods}
+
+Among ultrasound-specific Gaussian methods, \methodname{} achieves the most
+consistent reconstruction performance across all four datasets. On Liver,
+\methodname{} outperforms UltraGS by 1.01 dB in PSNR
+($28.02\!\rightarrow\!29.03$ dB) and improves SSIM from 0.594 to 0.635,
+while on Spine it surpasses UltraG-Ray with PSNR increasing from 30.63 to
+31.04 dB and L1 decreasing by 10.0\%. On real data, \methodname{} exceeds
+UltraG-Ray on Arm by 0.30 dB in PSNR, reduces L1 from 0.013 to 0.011, and
+raises SSIM from 0.832 to 0.887; on Breast, it further outperforms UltraGauss
+by 1.23 dB in PSNR while improving SSIM from 0.782 to 0.809.
+Although UltraG-Ray yields lower LPIPS and DISTS on Liver and lower DISTS on
+Spine, \methodname{} achieves the best PSNR, L1, SSIM, and GMSD among the
+ultrasound-specific Gaussian methods on all four datasets, with best or
+second-best LPIPS and DISTS throughout. Its pure-forward rendering reaches
+204.94 FPS on the synthetic/phantom panel and 285.10 FPS on the real-data
+panel, retaining fast rendering while prioritizing reconstruction fidelity.
+\methodname{} also preserves the major Liver echo and shadow patterns,
+layered and curved responses in Spine, and coherent layer organization in the
+real Arm and Breast examples in Fig.~\ref{fig:comparison:all_datasets},
+consistent with its quantitative advantages over specialized Gaussian
+baselines.
+
+\subsubsection{Comparison with Adapted Gaussian Methods}
+
+Compared with vanilla 3DGS and GaussianPile, \methodname{} achieves higher
+reconstruction quality across the four datasets, as shown in
+Table~\ref{tab:comparison:main}. On Liver, \methodname{} outperforms 3DGS by
+2.30 dB in PSNR ($26.73\!\rightarrow\!29.03$ dB) and reduces L1 by 21.4\%,
+while on Spine it surpasses the stronger GaussianPile result by 2.82 dB and
+decreases L1 from 0.020 to 0.014. On real data, \methodname{} improves 3DGS
+on Arm from 33.96 to 34.11 dB while reducing L1 by 3.9\%, although its SSIM
+is slightly lower (0.887 versus 0.889). On Breast, it raises PSNR by 1.91 dB
+($27.08\!\rightarrow\!28.99$ dB). Overall, \methodname{} improves all six
+metrics over GaussianPile on every dataset and all metrics except Arm SSIM
+over 3DGS.
+Qualitatively, Fig.~\ref{fig:comparison:all_datasets} shows that
+\methodname{} retains the major Liver echo pattern, layered Spine responses,
+and coherent echo organization in the real examples. Together, these results
+show that \methodname{} provides more consistent reconstruction quality than
+the generic Gaussian adaptations considered here.
+
+\input{figures/tex/results_comparison_all_datasets}
+
+\vspace{-3mm}
+\subsection{Ablation Studies}
+\label{sec:results:ablation}
+
+In this section, we conduct ablation studies on the Liver and Arm datasets to
+assess the joint and internal contributions of the Acquisition-constrained
+Frame Geometry Model (AFGM), Physics-aware Local-Global Renderer (PLGR), and
+Contribution-guided Gaussian Adaptation Strategy (CGAS). We first analyze
+their joint effects and then examine the key design choices within each
+component. The same arrow notation and font formatting are used throughout.
+
+\input{tables/ablation_joint_components}
+
+\subsubsection{Joint Component Analysis}
+
+We first design a $2^3$ factorial ablation in
+Table~\ref{tab:ablation:joint} to assess AFGM, PLGR, and CGAS, where
+each component is compared across four paired configurations with the other
+two fixed. 
+Comparing Rows 1/5, 2/6, 3/7, and 4/8 clearly reveals the dominant
+contribution of PLGR: relative to its Plane/no-global counterpart, PLGR yields
+average PSNR gains of 3.863 and 10.339~dB and LPIPS reductions of 0.311 and
+0.223 on Liver and Arm, respectively. In contrast, AFGM and CGAS mainly serve
+frame-geometry construction and Gaussian population adaptation rather than
+direct fidelity enhancement, so their quality effects are smaller. For
+instance, CGAS raises Arm PSNR by 0.032~dB in Rows 5/7, while AFGM lowers Arm
+LPIPS by 0.004 in Rows 7/8. 
+Thus, PLGR mainly drives fidelity, while AFGM and CGAS provide complementary
+geometric and structural support.
+When all three are enabled, Row 8 attains the best PSNR/SSIM
+29.648/0.667 on Liver and 33.271/0.872 on Arm, demonstrating their
+complementary roles in 3D US reconstruction.
+
+\input{tables/ablation_afgm}
+
+\subsubsection{Acquisition-constrained Frame Geometry Model}
+
+Next, we study measured-pose completeness using MP, step-magnitude-only MG-S,
+axial-projection-only MG-A, and AFGM without measured geometry, as shown
+in Table~\ref{tab:ablation:afgm}. Replacing MP with MG-S
+(Rows 1/2) slightly improves PSNR from 29.452 to 29.641 on Liver and from
+32.817 to 33.033 on Arm, showing that step magnitude alone is sufficient 
+for pixel-wise accuracy.
+MG-A (Row 3) improves Liver PSNR/SSIM while remaining comparable to MP on Arm,
+suggesting that axial progression captures most useful
+geometric information. Consistent with both observations, AFGM preserves the essential
+progression cues while discarding measured-pose details, achieving the best
+Arm PSNR of 33.271~dB and LPIPS of 0.108 and validating its simplified design.
+
+\input{tables/ablation_plgr.tex}
+
+\subsubsection{Physics-aware Local-Global Renderer}
+
+Subsequently, we examine the rationale of PLGR's designs by
+varying elevational conditioning in local echo formation and ray integration
+in global transmission, while keeping probe-plane marginalization and
+ray-aware association fixed, as shown in Table~\ref{tab:ablation:plgr}.
+For local echo formation, Plane omits finite-slice conditioning, while Fixed
+and Adaptive use shared and depth-adaptive slice widths, respectively.
+Fixed (Rows 1/2) improves PSNR by 4.069 and 12.236~dB on Liver and Arm,
+respectively, with lower LPIPS, confirming finite-slice modeling.
+Adaptive further improves Liver PSNR/SSIM but
+yields worse LPIPS and lower Arm performance, exposing a dataset-dependent
+trade-off and favoring Fixed as the simpler, more balanced local formulation.
+For global transmission, Simple uses approximate path integration, whereas
+Full performs causal integration along the pre-pixel acoustic path.
+Simple (Rows 2/4) raises Arm PSNR to 34.024~dB and lowers LPIPS on both
+datasets, supporting path-dependent transmission.
+Moving from Simple to Full (Rows 4/5) gives a further Arm gain
+while leaving Liver results nearly unchanged, suggesting a modest advantage
+from complete causal integration. 
+These results motivate the final Fixed+Full PLGR, which combines
+stable finite-slice conditioning with complete causal transmission and
+achieves the strongest Arm performance with comparable Liver accuracy.
+
+\input{tables/ablation_cgas}
+
+\input{figures/tex/results_ablation_afgm}
+
+\subsubsection{Contribution-guided Gaussian Adaptation Strategy}
+
+Finally, we examine CGAS by contrasting gradient-based densification (GD) with
+residual-guided densification (RGD), together with amplitude-only pruning
+(AP), local-aware pruning (LP), and path-aware pruning in CGAS, as shown
+in Table~\ref{tab:ablation:cgas}. Under the same AP rule (Rows 1/3), replacing
+GD with RGD maintains comparable quality.
+Without pruning, RGD retains 1051k/1023k Gaussians on Liver/Arm, motivating
+population control. AP and LP reduce these populations by
+about 39\% and 32\%, respectively, while keeping PSNR/LPIPS nearly unchanged.
+Full CGAS retains more Gaussians than LP, indicating that
+path-aware pruning preserves globally useful capacity while maintaining stable
+quality.
+
+\input{figures/tex/results_ablation_plgr}
+
+\input{figures/tex/results_ablation_cgas}
+
+\vspace{-5mm}
+\subsection{Hyperparameter Analysis}
+
+\label{sec:results:hyperparameters}
+
+We further analyze the sensitivity of the key hyperparameters in AFGM, PLGR,
+and CGAS on representative Liver and Arm sequences, with all results reported
+relative to the corresponding default settings to directly reveal parameter
+sensitivity and the rationale of the adopted configuration.
+
+\subsubsection{AFGM Spacing Sensitivity}
+
+In \Cref{fig:ablation:afgm}, we use a dual-dataset response curve to examine
+how the spacing scale $\rho$ affects reconstruction under synthetic and real
+acquisitions, with $\rho=1$ denoting the nominal acquisition spacing. The
+Liver curve favors smaller $\rho$, whereas Arm reaches a shallow optimum
+around $\rho=1.25$, only 0.069~dB above the default; this opposite preference
+around $\rho=1$ indicates that dataset-specific tuning offers no consistent
+cross-domain advantage and therefore supports the nominal setting as a simple,
+transferable choice without sequence-specific calibration.
+
+\subsubsection{PLGR Rendering Sensitivity}
+
+To examine the robustness of PLGR to its rendering parameters, we vary the
+finite-slice width $\sigma^{\mathrm{ele}}$, composition weight $\beta$, ray
+attenuation $\lambda_{\mathrm{ray}}$, quadrature order $N_q$, and integration
+half-window $w$ independently, as shown in
+\Cref{fig:ablation:plgr}. Among them, $\sigma^{\mathrm{ele}}$ exhibits the
+strongest domain-dependent response and $\beta$ introduces a milder Liver--Arm
+trade-off, whereas $\lambda_{\mathrm{ray}}$ and $w$ remain stable over their
+evaluated ranges, indicating substantially lower sensitivity to attenuation
+strength and integration extent. The response to $N_q$ is instead
+non-monotonic, with $N_q=2$ causing a clear degradation and the adopted
+$N_q=3$ recovering strong performance on both datasets, so the final PLGR
+configuration represents a balanced operating point across acquisition
+domains rather than a dataset-specific peak.
+
+\subsubsection{CGAS Adaptation Sensitivity}
+
+\Cref{fig:ablation:cgas} summarizes CGAS sensitivity using two heatmaps for
+$(q_d,B)$ and $(q_p,q_A)$ and a heat strip for $\tau_\alpha$, jointly showing
+quality and Gaussian population changes. Across all configurations, PSNR
+varies by less than 0.016~dB and forms broad quality plateaus around the
+defaults while the Gaussian population changes noticeably, indicating that
+these parameters primarily regulate representation capacity rather than
+reconstruction fidelity. Since the adopted settings remain within these stable
+regions, they provide robust reconstruction quality with controllable Gaussian
+complexity, while avoiding unnecessary sensitivity to individual
+densification or pruning hyperparameters.

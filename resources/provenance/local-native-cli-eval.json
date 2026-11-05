@@ -1,0 +1,23 @@
+{
+  "experiment_name": "synthetic_liver-l1",
+  "method_name": "ultrasound-ultragray",
+  "checkpoint": "/home/yibo/paper1/outputs/preformal-smoke/synthetic_liver-l1/ultrasound-ultragray/engineering-1793784941082706317/nerfstudio_models/step-000000002.ckpt",
+  "results": {
+    "psnr": 14.151748132705688,
+    "num_parameters": 3840.0,
+    "l1": 0.1710115484893322,
+    "ssim_window": 0.024847809039056302,
+    "ssim": 0.018096402822993695,
+    "lpips": 0.7314009457826615,
+    "dists": 0.683764711022377,
+    "gmsd": 0.25930981487035754,
+    "psnr_std": 0.5380679226451416,
+    "num_parameters_std": 0.0,
+    "l1_std": 0.016272864372654947,
+    "ssim_window_std": 0.0047360359503253015,
+    "ssim_std": 0.004208416408736887,
+    "lpips_std": 0.05085287707889548,
+    "dists_std": 0.017693035499457468,
+    "gmsd_std": 0.006485957822788701
+  }
+}

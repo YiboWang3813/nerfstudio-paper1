@@ -1,0 +1,58 @@
+\begin{table}[!t]
+
+\centering
+
+\caption{Internal ablation of PLGR, where Plane, Fixed, and Adaptive denote
+elevational-conditioning variants for local echo formation, while Simple and
+Full denote ray-integration variants for global transmission.}
+
+\label{tab:ablation:plgr}
+
+\scriptsize
+\setlength{\tabcolsep}{2.2pt}
+\renewcommand{\arraystretch}{0.88}
+
+\resizebox{0.975\columnwidth}{!}{%
+
+\begin{tabular}{lrrr|rrr}
+
+\toprule
+
+& \multicolumn{3}{c|}{Liver}
+& \multicolumn{3}{c}{Arm}\\
+
+\cmidrule(lr){2-4}\cmidrule(lr){5-7}
+
+Variant
+& PSNR$\uparrow$ & SSIM$\uparrow$ & LPIPS$\downarrow$
+& PSNR$\uparrow$ & SSIM$\uparrow$ & LPIPS$\downarrow$\\
+
+\midrule
+
+Plane
+& 25.092 & 0.600 & 0.427
+& 21.438 & 0.676 & 0.344\\
+
+Fixed
+& \underline{29.161} & \underline{0.643} & 0.169
+& 33.674 & 0.884 & 0.126\\
+
+Adaptive
+& \textbf{29.339} & \textbf{0.653} & 0.195
+& 33.411 & 0.880 & 0.136\\
+
+Fixed + Simple
+& 29.057 & 0.636 & \textbf{0.156}
+& \underline{34.024} & \underline{0.887} & \underline{0.113}\\
+
+Fixed + Full
+& 29.025 & 0.635 & \underline{0.157}
+& \textbf{34.125} & \textbf{0.888} & \textbf{0.112}\\
+
+\bottomrule
+
+\end{tabular}}
+
+\vspace{-6mm}
+
+\end{table}

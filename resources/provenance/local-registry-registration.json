@@ -1,0 +1,14 @@
+{
+  "status": "complete",
+  "proof": "/home/yibo/paper1/migration/environment-preformal-validation.json",
+  "expected_source_heads": {
+    "nerfstudio": "e984c097f15da7db4fabf59d10c587fd083274e6",
+    "gsplat": "e75ec98f9adb5d440345f918ce7d122923a79e84"
+  },
+  "mutates_packages": false,
+  "completed_at": "2026-11-04T11:22:17.463872+00:00",
+  "source_heads_at_registration": {
+    "nerfstudio": "72e389dbf88737592c5e55407a5d4c3eda3ad381",
+    "gsplat": "e75ec98f9adb5d440345f918ce7d122923a79e84"
+  }
+}

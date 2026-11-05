@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "status": "code_and_compute_validated_preformal",
+  "formal_training_started": false,
+  "validated_at_utc": "2026-11-04T10:25:48.854497+00:00",
+  "implementation_commits": {
+    "nerfstudio": "2caa7953b4e305d9fbbdb0a386a77dafa61928de",
+    "gsplat": "e75ec98f9adb5d440345f918ce7d122923a79e84"
+  },
+  "native_methods": [
+    "ours",
+    "ultragauss",
+    "ultragray",
+    "gaussianpile",
+    "slice_adapted_3dgs",
+    "ultrags_baseline",
+    "nerfus",
+    "ultranerf"
+  ],
+  "contract_tests": 34,
+  "real_data_cases": 32,
+  "engineering_budget": {
+    "initial_gaussians": 256,
+    "train_updates": 3,
+    "continuation_update": 4
+  },
+  "full_reference_metrics": [
+    "psnr",
+    "l1",
+    "ssim",
+    "lpips",
+    "dists",
+    "gmsd"
+  ],
+  "dataset_sweeps": 78,
+  "native_formal_recipes": 624,
+  "source_files_covered": 328,
+  "zip_packages_published": 79,
+  "cloud": {
+    "class_a_request_attempts": 87,
+    "class_b_request_attempts": 199,
+    "storage_class": "STANDARD",
+    "version": "p100k-native-v2",
+    "source_originals_preserved": true,
+    "billing_telemetry": "Not available; shared conservative reservation ledger retained"
+  },
+  "evidence": {
+    "preformal-final-contracts.log": "/home/yibo/paper1/migration/contracts-2caa7953-e75ec98f.log",
+    "native-matrix-smoke.json": "/home/yibo/paper1/migration/realdata-2caa7953-e75ec98f.json",
+    "preformal-final-matrix.log": "/home/yibo/paper1/migration/realdata-2caa7953-e75ec98f.log",
+    "preformal-final-protocols.json": "/home/yibo/paper1/migration/protocols-2caa7953-e75ec98f.json",
+    "preformal-final-cli.json": "/home/yibo/paper1/migration/cli-2caa7953-e75ec98f.json"
+  },
+  "runtime_proof": "/home/yibo/paper1/migration/environment-preformal-validation.json",
+  "runtime_registry_update": {
+    "status": "queued_for_exclusive_lock",
+    "live_status_file": "/home/yibo/paper1/migration/registry-registration.json",
+    "note": "Existing paper2 long training jobs retain shared locks. Registration changes metadata only; no package mutation."
+  },
+  "numeric_fixes": [
+    "UltraGauss finite initialization for intensities at 1",
+    "Ours analytic normalized-quaternion derivative replacing finite differences",
+    "Full temporal pose/uncertainty prior domain preserved across holdout splits",
+    "Evaluation preserves training RNG",
+    "Final evaluation uses native zero-based step 29999 for 30000 updates"
+  ],
+  "deferred_by_user": [
+    "Formal 1M/30k reproduction",
+    "Historical experiment weights"
+  ],
+  "github": {
+    "remote_refs_modified": false,
+    "delivery": "local committed task branches; no public release requested"
+  },
+  "delivery_commits": {
+    "nerfstudio": "e984c097f15da7db4fabf59d10c587fd083274e6",
+    "gsplat": "e75ec98f9adb5d440345f918ce7d122923a79e84"
+  },
+  "representative_quality_probes": {
+    "status": "completed_practical_historical_reference_check",
+    "methods": 8,
+    "runs": 9,
+    "dataset": "synthetic_liver",
+    "sweep": "l1",
+    "updates_per_run": 5000,
+    "gaussian_initialization": 1000000,
+    "formal_training_started": false,
+    "summary": "/home/yibo/paper1/results/probes/native-5k-liver-l1/README.md",
+    "full_metrics": "/home/yibo/paper1/results/probes/native-5k-liver-l1/six-metrics.tsv",
+    "integrity": "/home/yibo/paper1/results/probes/native-5k-liver-l1/evidence-sha256.json",
+    "comparison_policy": "native-only metrics and reconstruction quality; no strict legacy implementation equivalence",
+    "assessment": "Seven current presets are close to or better than historical references. UltraGS current preset has a notable SSIM reduction; native replay of historical parameters closely matches historical metrics. Both results retained; production defaults unchanged.",
+    "ultrags_historical_parameter_deltas": {
+      "psnr": -0.005479097366333008,
+      "l1": 2.285512164235115e-05,
+      "ssim": -0.0009681388735770513,
+      "lpips": -0.001967068761587143,
+      "dists": -0.004554305970668804,
+      "gmsd": -2.2495537996297665e-05
+    },
+    "execution_commits": [
+      "72e389dbf88737592c5e55407a5d4c3eda3ad381",
+      "f6d5963d2c83cf8025bfa4751f6f106363368555"
+    ],
+    "delivery_heads": {
+      "nerfstudio": "0171fac68082948aaaf3c167e1e451d9332ff90e",
+      "gsplat": "e75ec98f9adb5d440345f918ce7d122923a79e84",
+      "docs": "4ffc5b51c3e18526f94829fcc56dd6b9c51bf174",
+      "results": "d96625d261a69dd8b6ce416f18839c478777f771"
+    }
+  },
+  "historical_assets_validation": "/home/yibo/paper1/migration/curated-assets-validation.json",
+  "current_delivery_commits": {
+    "nerfstudio": "0171fac68082948aaaf3c167e1e451d9332ff90e",
+    "gsplat": "e75ec98f9adb5d440345f918ce7d122923a79e84",
+    "docs": "4ffc5b51c3e18526f94829fcc56dd6b9c51bf174",
+    "results": "d96625d261a69dd8b6ce416f18839c478777f771"
+  },
+  "complete_asset_migration": "/home/yibo/paper1/migration/complete-assets-20261105/completion.json",
+  "native_protocol_extension_validation": {
+    "tests_passed": 21,
+    "prepared_native_protocols": 238,
+    "nonuniform_real_data_cases": 4,
+    "evidence": "/home/yibo/paper1/migration/complete-assets-20261105/final-native-protocol-tests-leased.log"
+  }
+}

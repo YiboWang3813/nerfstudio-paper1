@@ -1,0 +1,14 @@
+{
+  "kind": "sha256_verified_zip_members",
+  "archive": "outputs/paper-evidence/runs-v1.zip",
+  "manifest": "outputs/paper-evidence/runs-v1.json",
+  "sha256": "424858dd1ff43d690659209834b79847e77f629c4532fafa4b0f4c53d45a1d6d",
+  "runs": 774,
+  "files": 5155,
+  "access": "bin/paper1 history RELATIVE_PATH",
+  "retired_git_snapshot": {
+    "old_commit": "00305ee1affcde3c28bf751117755e658c9217c3",
+    "old_tree": "evidence/legacy",
+    "status": "replaced by Mac-paper-only verified run archive; unrelated history not retained"
+  }
+}

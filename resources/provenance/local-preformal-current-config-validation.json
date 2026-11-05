@@ -1,0 +1,1477 @@
+{
+  "status": "configuration_and_data_verified",
+  "formal_training_started": false,
+  "sweeps": [
+    {
+      "dataset": "synthetic_liver",
+      "sweep": "l1",
+      "manifest_sha256": "ea55c0a75b774fa7bde7efccc0cc867b342d9befb4bc28d876acccaa9392f7ec",
+      "train_frames": 160,
+      "test_frames": 40,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "de5985a5e9335496cbaddd6758e6d912185594ec825a3782f5f7a2c4ec0c2fa8"
+    },
+    {
+      "dataset": "synthetic_liver",
+      "sweep": "l2",
+      "manifest_sha256": "58955b3476dc110569989f9f6d9135dc59af23798cb7d36a0f6511ef4d31d171",
+      "train_frames": 160,
+      "test_frames": 40,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "de5985a5e9335496cbaddd6758e6d912185594ec825a3782f5f7a2c4ec0c2fa8"
+    },
+    {
+      "dataset": "synthetic_liver",
+      "sweep": "l3",
+      "manifest_sha256": "56c4ea1b806de8b860340d52cd210ac1b0258560b5847726a227fec1b0fe9406",
+      "train_frames": 160,
+      "test_frames": 40,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "de5985a5e9335496cbaddd6758e6d912185594ec825a3782f5f7a2c4ec0c2fa8"
+    },
+    {
+      "dataset": "synthetic_liver",
+      "sweep": "r1",
+      "manifest_sha256": "fa1d1b243727d57240e3f592e2bf7b1763d5dc805da56cb90a57e87d0fa55811",
+      "train_frames": 160,
+      "test_frames": 40,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "de5985a5e9335496cbaddd6758e6d912185594ec825a3782f5f7a2c4ec0c2fa8"
+    },
+    {
+      "dataset": "synthetic_liver",
+      "sweep": "r2",
+      "manifest_sha256": "a37c4ffcd550bc918ac37c882b1184e5177248f83365f0b3e222fdd8946ceab2",
+      "train_frames": 160,
+      "test_frames": 40,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "de5985a5e9335496cbaddd6758e6d912185594ec825a3782f5f7a2c4ec0c2fa8"
+    },
+    {
+      "dataset": "synthetic_liver",
+      "sweep": "r3",
+      "manifest_sha256": "40496aa0415b309639244d6a4071b224294c3f016da79e0c50d5eb00d4e24824",
+      "train_frames": 160,
+      "test_frames": 40,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "de5985a5e9335496cbaddd6758e6d912185594ec825a3782f5f7a2c4ec0c2fa8"
+    },
+    {
+      "dataset": "spine_phantom",
+      "sweep": "left1",
+      "manifest_sha256": "cb1517ddf16b428ec3a0fd1ad8014533324ebb1dd5dfef84e9a864fa09eda37b",
+      "train_frames": 122,
+      "test_frames": 30,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "8da3c695f65bedc8c70d1d3008944900dac492aa2fed4fcd96bfc28c115581ed"
+    },
+    {
+      "dataset": "spine_phantom",
+      "sweep": "left1_1",
+      "manifest_sha256": "43d4b99a5a2dc9072322a12c1478b91961bad216c9a30ddd683c4b4c1807477e",
+      "train_frames": 122,
+      "test_frames": 31,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "8da3c695f65bedc8c70d1d3008944900dac492aa2fed4fcd96bfc28c115581ed"
+    },
+    {
+      "dataset": "spine_phantom",
+      "sweep": "left2",
+      "manifest_sha256": "bfd9064ec2f9e397344f8003318c1c58719cba41b35cfe0b49b547a02a806b02",
+      "train_frames": 121,
+      "test_frames": 30,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "8da3c695f65bedc8c70d1d3008944900dac492aa2fed4fcd96bfc28c115581ed"
+    },
+    {
+      "dataset": "spine_phantom",
+      "sweep": "left3",
+      "manifest_sha256": "9493cf81e4e50d7d6310856df32d95b4715505b30be95cbe9b0d281c472bda1b",
+      "train_frames": 122,
+      "test_frames": 30,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "8da3c695f65bedc8c70d1d3008944900dac492aa2fed4fcd96bfc28c115581ed"
+    },
+    {
+      "dataset": "spine_phantom",
+      "sweep": "left3_2",
+      "manifest_sha256": "7a9918497be6a6104d94a7f1e17b04336141c647d9d99b0f34e88079cc4bd0e6",
+      "train_frames": 118,
+      "test_frames": 30,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "8da3c695f65bedc8c70d1d3008944900dac492aa2fed4fcd96bfc28c115581ed"
+    },
+    {
+      "dataset": "spine_phantom",
+      "sweep": "right1",
+      "manifest_sha256": "71c839f887965ab839f51d48a00fa6179ba0001a1c94339172c72fb6b00050b0",
+      "train_frames": 117,
+      "test_frames": 29,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "8da3c695f65bedc8c70d1d3008944900dac492aa2fed4fcd96bfc28c115581ed"
+    },
+    {
+      "dataset": "spine_phantom",
+      "sweep": "right1_1",
+      "manifest_sha256": "56682a97e8742f6c47cf7278a4ea39e596a07dcde96ccfb650c5205b0b0abeb1",
+      "train_frames": 120,
+      "test_frames": 30,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "8da3c695f65bedc8c70d1d3008944900dac492aa2fed4fcd96bfc28c115581ed"
+    },
+    {
+      "dataset": "spine_phantom",
+      "sweep": "right3",
+      "manifest_sha256": "337627647814ebba779fb818b6c9e9f0d5a4d23325c59b3288e58888bcbdd2d0",
+      "train_frames": 118,
+      "test_frames": 30,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "8da3c695f65bedc8c70d1d3008944900dac492aa2fed4fcd96bfc28c115581ed"
+    },
+    {
+      "dataset": "spine_phantom",
+      "sweep": "right3_2",
+      "manifest_sha256": "c23512c4adf36406255897ef505c98a074dc150a38b6643b7dcf2c80ab11f706",
+      "train_frames": 113,
+      "test_frames": 28,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "8da3c695f65bedc8c70d1d3008944900dac492aa2fed4fcd96bfc28c115581ed"
+    },
+    {
+      "dataset": "tus_rec_2024_qc",
+      "sweep": "010_LH_Par_C_DtP_qc_0008_0107",
+      "manifest_sha256": "408ea0bfa5f31f243db5ea48cd3731b4e1f71a472bed518831e3fb8f44f0e50d",
+      "train_frames": 79,
+      "test_frames": 20,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "a829244c445d5ac7d447ec99d97c8f3dfe5688014a31393eae7c56d1f48b5312"
+    },
+    {
+      "dataset": "tus_rec_2024_qc",
+      "sweep": "010_LH_Per_C_DtP_qc_0140_0514",
+      "manifest_sha256": "dd56d4da49c6f10bbe82054fd990d9e8229f4e7bdfc024f67539c1425e4533c7",
+      "train_frames": 299,
+      "test_frames": 75,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "a829244c445d5ac7d447ec99d97c8f3dfe5688014a31393eae7c56d1f48b5312"
+    },
+    {
+      "dataset": "tus_rec_2024_qc",
+      "sweep": "010_LH_Per_C_PtD_qc_0007_0470",
+      "manifest_sha256": "1064eb510e920ed2d17ddd9c3dcdbe5084dcc8b52f03dd88020a446596b1afaf",
+      "train_frames": 370,
+      "test_frames": 93,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "a829244c445d5ac7d447ec99d97c8f3dfe5688014a31393eae7c56d1f48b5312"
+    },
+    {
+      "dataset": "tus_rec_2024_qc",
+      "sweep": "010_LH_Per_L_DtP_qc_0005_0370",
+      "manifest_sha256": "ef81c5a24b7b0691173bd6f5c74487eb850319e7cb4a38b91be367206165c112",
+      "train_frames": 292,
+      "test_frames": 73,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "a829244c445d5ac7d447ec99d97c8f3dfe5688014a31393eae7c56d1f48b5312"
+    },
+    {
+      "dataset": "tus_rec_2024_qc",
+      "sweep": "010_LH_Per_L_PtD_qc_0020_0222_s01",
+      "manifest_sha256": "b624b196b9c186af3ceb6369a596beb4dac882085521b0fb02193938324cb8c1",
+      "train_frames": 162,
+      "test_frames": 40,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "a829244c445d5ac7d447ec99d97c8f3dfe5688014a31393eae7c56d1f48b5312"
+    },
+    {
+      "dataset": "tus_rec_2024_qc",
+      "sweep": "010_LH_Per_L_PtD_qc_0238_0488_s02",
+      "manifest_sha256": "d82129b5b5aead0cf907b4710ee02d3d3b4da6d521ad8f33a2e32245cbccc874",
+      "train_frames": 200,
+      "test_frames": 50,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "a829244c445d5ac7d447ec99d97c8f3dfe5688014a31393eae7c56d1f48b5312"
+    },
+    {
+      "dataset": "tus_rec_2024_qc",
+      "sweep": "010_LH_Per_S_DtP_qc_0085_0442_s01",
+      "manifest_sha256": "d15f36c2f44efa30fc8ed7ac4112bc9f7b8f8248cb2ae59585bbf66049f20224",
+      "train_frames": 286,
+      "test_frames": 71,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "a829244c445d5ac7d447ec99d97c8f3dfe5688014a31393eae7c56d1f48b5312"
+    },
+    {
+      "dataset": "tus_rec_2024_qc",
+      "sweep": "010_LH_Per_S_DtP_qc_0460_0586_s02",
+      "manifest_sha256": "107ac37ba4ac2d07b7194c4c5100ad3a31ab72003ccec3f27be8aaa5fc675006",
+      "train_frames": 101,
+      "test_frames": 25,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "a829244c445d5ac7d447ec99d97c8f3dfe5688014a31393eae7c56d1f48b5312"
+    },
+    {
+      "dataset": "tus_rec_2024_qc",
+      "sweep": "010_LH_Per_S_PtD_qc_0078_0394",
+      "manifest_sha256": "6ee3a77c6105eb3120ef9279900964b0cc7660bd768c2c1ad0baf2129955943f",
+      "train_frames": 253,
+      "test_frames": 63,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "a829244c445d5ac7d447ec99d97c8f3dfe5688014a31393eae7c56d1f48b5312"
+    },
+    {
+      "dataset": "tus_rec_2024_qc",
+      "sweep": "010_RH_Par_S_DtP_qc_0005_0091",
+      "manifest_sha256": "15ee14f1c603930b552d6c42750d8467670529274efb83c6144fab0316775065",
+      "train_frames": 69,
+      "test_frames": 17,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "a829244c445d5ac7d447ec99d97c8f3dfe5688014a31393eae7c56d1f48b5312"
+    },
+    {
+      "dataset": "tus_rec_2024_qc",
+      "sweep": "010_RH_Per_C_DtP_qc_0269_0627",
+      "manifest_sha256": "82a89710c738bd6784ea1ebb7195bdece254ad2c6b47492c90fd9d394e622ffc",
+      "train_frames": 286,
+      "test_frames": 72,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "a829244c445d5ac7d447ec99d97c8f3dfe5688014a31393eae7c56d1f48b5312"
+    },
+    {
+      "dataset": "tus_rec_2024_qc",
+      "sweep": "010_RH_Per_C_PtD_qc_0006_0427",
+      "manifest_sha256": "ffb6a999376938a923817df163ac4cdf197fdf3b01b46bef58a45c3344f32b03",
+      "train_frames": 337,
+      "test_frames": 84,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "a829244c445d5ac7d447ec99d97c8f3dfe5688014a31393eae7c56d1f48b5312"
+    },
+    {
+      "dataset": "tus_rec_2024_qc",
+      "sweep": "010_RH_Per_L_DtP_qc_0005_0574",
+      "manifest_sha256": "f2a2b3db71e23be5faeb6b09b293cde4163d7388f3682da63d48123a4784936b",
+      "train_frames": 455,
+      "test_frames": 114,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "a829244c445d5ac7d447ec99d97c8f3dfe5688014a31393eae7c56d1f48b5312"
+    },
+    {
+      "dataset": "tus_rec_2024_qc",
+      "sweep": "010_RH_Per_L_PtD_qc_0006_0546",
+      "manifest_sha256": "1f739fed20a81733ad806c0c28ffc77dbbba55c39cf0520c26f85d6a54dffa50",
+      "train_frames": 432,
+      "test_frames": 108,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "a829244c445d5ac7d447ec99d97c8f3dfe5688014a31393eae7c56d1f48b5312"
+    },
+    {
+      "dataset": "tus_rec_2024_qc",
+      "sweep": "010_RH_Per_S_DtP_qc_0096_0411_s01",
+      "manifest_sha256": "7e3784d13f379855e7bab983d5713c646d664b6e68022492aac97a794cc9a6a8",
+      "train_frames": 252,
+      "test_frames": 63,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "a829244c445d5ac7d447ec99d97c8f3dfe5688014a31393eae7c56d1f48b5312"
+    },
+    {
+      "dataset": "tus_rec_2024_qc",
+      "sweep": "010_RH_Per_S_DtP_qc_0426_0538_s02",
+      "manifest_sha256": "9d627548dc039446bc0ff9aa6ac343d4dbed5f57c2fb8aeb695fbb94981c2347",
+      "train_frames": 90,
+      "test_frames": 22,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "a829244c445d5ac7d447ec99d97c8f3dfe5688014a31393eae7c56d1f48b5312"
+    },
+    {
+      "dataset": "tus_rec_2024_qc",
+      "sweep": "010_RH_Per_S_PtD_qc_0062_0150_s01",
+      "manifest_sha256": "ee35ff0b0dae80bea5418571d3b154f265bb95ce3607f4ac5f77c65b41257977",
+      "train_frames": 70,
+      "test_frames": 18,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "a829244c445d5ac7d447ec99d97c8f3dfe5688014a31393eae7c56d1f48b5312"
+    },
+    {
+      "dataset": "tus_rec_2024_qc",
+      "sweep": "010_RH_Per_S_PtD_qc_0165_0364_s02",
+      "manifest_sha256": "e0622644e654c866985eb7c67207fb065ad5a2f4ff92bf957c86cde46fbe480e",
+      "train_frames": 159,
+      "test_frames": 40,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "a829244c445d5ac7d447ec99d97c8f3dfe5688014a31393eae7c56d1f48b5312"
+    },
+    {
+      "dataset": "tus_rec_2024_qc",
+      "sweep": "011_LH_Par_S_DtP_qc_0155_0249",
+      "manifest_sha256": "d8185708fa732aec706af2a8849047dae491eb22c3d34f08bc8601ce99bf0601",
+      "train_frames": 75,
+      "test_frames": 19,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "a829244c445d5ac7d447ec99d97c8f3dfe5688014a31393eae7c56d1f48b5312"
+    },
+    {
+      "dataset": "tus_rec_2024_qc",
+      "sweep": "011_LH_Par_S_PtD_qc_0112_0224",
+      "manifest_sha256": "f0ce69dcf369247f6ba0e9119281d6e24fa66f43716fceb8d592ab99860d08e7",
+      "train_frames": 90,
+      "test_frames": 22,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "a829244c445d5ac7d447ec99d97c8f3dfe5688014a31393eae7c56d1f48b5312"
+    },
+    {
+      "dataset": "tus_rec_2024_qc",
+      "sweep": "011_LH_Per_C_DtP_qc_0115_0556",
+      "manifest_sha256": "358b69387fa37713255fd9845df8d977ce3ebe6b17bbe9ef6857d154ed5e60b5",
+      "train_frames": 353,
+      "test_frames": 88,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "a829244c445d5ac7d447ec99d97c8f3dfe5688014a31393eae7c56d1f48b5312"
+    },
+    {
+      "dataset": "tus_rec_2024_qc",
+      "sweep": "011_LH_Per_C_PtD_qc_0006_0568",
+      "manifest_sha256": "2dc68fbef87448dfd88f1d8a5f7afca00aee1b76697ccd7b5163982e49b1c760",
+      "train_frames": 450,
+      "test_frames": 112,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "a829244c445d5ac7d447ec99d97c8f3dfe5688014a31393eae7c56d1f48b5312"
+    },
+    {
+      "dataset": "tus_rec_2024_qc",
+      "sweep": "011_LH_Per_L_DtP_qc_0005_0594",
+      "manifest_sha256": "52d56224f7ee99d04c9672e93b407323aa8c512e3d98ae4af894b0504a6daa1b",
+      "train_frames": 471,
+      "test_frames": 118,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "a829244c445d5ac7d447ec99d97c8f3dfe5688014a31393eae7c56d1f48b5312"
+    },
+    {
+      "dataset": "tus_rec_2024_qc",
+      "sweep": "011_LH_Per_L_PtD_qc_0006_0690",
+      "manifest_sha256": "10e026cb16b05187ed0cc6ad9e3d07091db99628122fa8a9e2e176eb73cf0b8c",
+      "train_frames": 547,
+      "test_frames": 137,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "a829244c445d5ac7d447ec99d97c8f3dfe5688014a31393eae7c56d1f48b5312"
+    },
+    {
+      "dataset": "tus_rec_2024_qc",
+      "sweep": "011_LH_Per_S_DtP_qc_0118_0529",
+      "manifest_sha256": "a8945e0ba9ce5b0a1015ac92a3dd879b978d21123ce33dbba9390561da87911a",
+      "train_frames": 329,
+      "test_frames": 82,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "a829244c445d5ac7d447ec99d97c8f3dfe5688014a31393eae7c56d1f48b5312"
+    },
+    {
+      "dataset": "tus_rec_2024_qc",
+      "sweep": "011_LH_Per_S_PtD_qc_0008_0447",
+      "manifest_sha256": "26a388bca6db8e75d0861336f5c6a9f863c3bc561e0fdeb4d788b2256c17d4ce",
+      "train_frames": 351,
+      "test_frames": 88,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "a829244c445d5ac7d447ec99d97c8f3dfe5688014a31393eae7c56d1f48b5312"
+    },
+    {
+      "dataset": "tus_rec_2024_qc",
+      "sweep": "011_RH_Per_C_DtP_qc_0137_0372",
+      "manifest_sha256": "c8a0ba2f370307acb2491c03f5c43d270eab4b5e7bc554066b964637eab5b253",
+      "train_frames": 188,
+      "test_frames": 47,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "a829244c445d5ac7d447ec99d97c8f3dfe5688014a31393eae7c56d1f48b5312"
+    },
+    {
+      "dataset": "tus_rec_2024_qc",
+      "sweep": "011_RH_Per_C_PtD_qc_0006_0170_s01",
+      "manifest_sha256": "aafc3ab74c2d538bb08460f3334176d52dbea0c73286468fc65c300dfdd2d44f",
+      "train_frames": 131,
+      "test_frames": 33,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "a829244c445d5ac7d447ec99d97c8f3dfe5688014a31393eae7c56d1f48b5312"
+    },
+    {
+      "dataset": "tus_rec_2024_qc",
+      "sweep": "011_RH_Per_C_PtD_qc_0186_0557_s02",
+      "manifest_sha256": "c885a9d8bc76e315245aeccaa5cca2f1aa6393b27756180f6fa124e533dd293e",
+      "train_frames": 297,
+      "test_frames": 74,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "a829244c445d5ac7d447ec99d97c8f3dfe5688014a31393eae7c56d1f48b5312"
+    },
+    {
+      "dataset": "tus_rec_2024_qc",
+      "sweep": "011_RH_Per_L_DtP_qc_0007_0584",
+      "manifest_sha256": "21d9078cf0fa74bf7660ecb2681f652a1e54af9c620d795bfd3bb7d6a9e7442c",
+      "train_frames": 462,
+      "test_frames": 115,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "a829244c445d5ac7d447ec99d97c8f3dfe5688014a31393eae7c56d1f48b5312"
+    },
+    {
+      "dataset": "tus_rec_2024_qc",
+      "sweep": "011_RH_Per_L_PtD_qc_0006_0459",
+      "manifest_sha256": "592d119c2eaeb81b6e0f19de9f5ec51489273888ae83f1bdc8d3840aeed6e39e",
+      "train_frames": 362,
+      "test_frames": 91,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "a829244c445d5ac7d447ec99d97c8f3dfe5688014a31393eae7c56d1f48b5312"
+    },
+    {
+      "dataset": "tus_rec_2024_qc",
+      "sweep": "011_RH_Per_S_DtP_qc_0166_0553",
+      "manifest_sha256": "2075a742f15c3da63858323a218c241f2f565e882a8c1880f109ce402973ac46",
+      "train_frames": 310,
+      "test_frames": 77,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "a829244c445d5ac7d447ec99d97c8f3dfe5688014a31393eae7c56d1f48b5312"
+    },
+    {
+      "dataset": "tus_rec_2024_qc",
+      "sweep": "011_RH_Per_S_PtD_qc_0028_0185",
+      "manifest_sha256": "50a956770b6c864359baa9b70b6bc13e29e9aa3c201a2b78337a9d8405bd24d5",
+      "train_frames": 126,
+      "test_frames": 31,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "a829244c445d5ac7d447ec99d97c8f3dfe5688014a31393eae7c56d1f48b5312"
+    },
+    {
+      "dataset": "tdsc_abus_2023",
+      "sweep": "validation_100",
+      "manifest_sha256": "2943fb61cfd42a5a5a0ac7f7e2a0b7e1fa4b7c6cb5885fc8efd5b5ded6ee348b",
+      "train_frames": 282,
+      "test_frames": 71,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "49018eb36951290f8f22c14abd3d2c9ab8fda7dbac5d9cad4794ce9d5ebc8d3f"
+    },
+    {
+      "dataset": "tdsc_abus_2023",
+      "sweep": "validation_101",
+      "manifest_sha256": "197c5ee62bf9ef3a5889e93540bbff0dfe3f44e7d397535bda5af914297ac2ad",
+      "train_frames": 278,
+      "test_frames": 70,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "49018eb36951290f8f22c14abd3d2c9ab8fda7dbac5d9cad4794ce9d5ebc8d3f"
+    },
+    {
+      "dataset": "tdsc_abus_2023",
+      "sweep": "validation_102",
+      "manifest_sha256": "bcd49c870d60f19f9b40c7b8c6c50fc11d6cfac2b1dad302d9d416e1cdf4e3a8",
+      "train_frames": 280,
+      "test_frames": 70,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "49018eb36951290f8f22c14abd3d2c9ab8fda7dbac5d9cad4794ce9d5ebc8d3f"
+    },
+    {
+      "dataset": "tdsc_abus_2023",
+      "sweep": "validation_103",
+      "manifest_sha256": "34320bb5a8ca66b9e88427ee5ecb8e7d6c68d36b0dbc85fd3c5f6123fd66d02e",
+      "train_frames": 264,
+      "test_frames": 66,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "49018eb36951290f8f22c14abd3d2c9ab8fda7dbac5d9cad4794ce9d5ebc8d3f"
+    },
+    {
+      "dataset": "tdsc_abus_2023",
+      "sweep": "validation_104",
+      "manifest_sha256": "3bf4de781cd6f6bb3e453612e19ea95af80293771c8febc1903fbd131157bf69",
+      "train_frames": 264,
+      "test_frames": 66,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "49018eb36951290f8f22c14abd3d2c9ab8fda7dbac5d9cad4794ce9d5ebc8d3f"
+    },
+    {
+      "dataset": "tdsc_abus_2023",
+      "sweep": "validation_105",
+      "manifest_sha256": "2c397c8bfee2e4112850c041ae28879e1fbc4496eb37242e4345044b9117aaf0",
+      "train_frames": 279,
+      "test_frames": 70,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "49018eb36951290f8f22c14abd3d2c9ab8fda7dbac5d9cad4794ce9d5ebc8d3f"
+    },
+    {
+      "dataset": "tdsc_abus_2023",
+      "sweep": "validation_106",
+      "manifest_sha256": "9dcfae0db32f6ca7e835ccf1f80020e664bc1ec8419a7b821762ddd3022c8088",
+      "train_frames": 264,
+      "test_frames": 66,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "49018eb36951290f8f22c14abd3d2c9ab8fda7dbac5d9cad4794ce9d5ebc8d3f"
+    },
+    {
+      "dataset": "tdsc_abus_2023",
+      "sweep": "validation_107",
+      "manifest_sha256": "52a8d9cae337a38230d07b126058472e6b6f221fb841289f1a181ca931c715c6",
+      "train_frames": 278,
+      "test_frames": 70,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "49018eb36951290f8f22c14abd3d2c9ab8fda7dbac5d9cad4794ce9d5ebc8d3f"
+    },
+    {
+      "dataset": "tdsc_abus_2023",
+      "sweep": "validation_108",
+      "manifest_sha256": "2042275e4b6543536bcc7ecd102e6c46c33ba907e2e39d30cbee914cd03b9183",
+      "train_frames": 264,
+      "test_frames": 66,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "49018eb36951290f8f22c14abd3d2c9ab8fda7dbac5d9cad4794ce9d5ebc8d3f"
+    },
+    {
+      "dataset": "tdsc_abus_2023",
+      "sweep": "validation_109",
+      "manifest_sha256": "88475ea22df73d6d9fac7907c03d70b311ec38022dfe44f31c8bcc10b9547fb2",
+      "train_frames": 264,
+      "test_frames": 66,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "49018eb36951290f8f22c14abd3d2c9ab8fda7dbac5d9cad4794ce9d5ebc8d3f"
+    },
+    {
+      "dataset": "tdsc_abus_2023",
+      "sweep": "validation_110",
+      "manifest_sha256": "f1d75b1e262dda3afbb9cc82401536573ef75e201f866bb1112faffc18404a87",
+      "train_frames": 282,
+      "test_frames": 71,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "49018eb36951290f8f22c14abd3d2c9ab8fda7dbac5d9cad4794ce9d5ebc8d3f"
+    },
+    {
+      "dataset": "tdsc_abus_2023",
+      "sweep": "validation_111",
+      "manifest_sha256": "0e251e3f40e5fcd7112f9c6eb8056146e61edb61d6bea76d90492baf6a13bea9",
+      "train_frames": 264,
+      "test_frames": 66,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "49018eb36951290f8f22c14abd3d2c9ab8fda7dbac5d9cad4794ce9d5ebc8d3f"
+    },
+    {
+      "dataset": "tdsc_abus_2023",
+      "sweep": "validation_112",
+      "manifest_sha256": "6b2c406a2e4960bfc159375aff6fc9b41d0ccd60f31addfeec530d72bfe72f79",
+      "train_frames": 264,
+      "test_frames": 66,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "49018eb36951290f8f22c14abd3d2c9ab8fda7dbac5d9cad4794ce9d5ebc8d3f"
+    },
+    {
+      "dataset": "tdsc_abus_2023",
+      "sweep": "validation_113",
+      "manifest_sha256": "85059ecaed9f8ad13fc782d663b36a1637e8790fba12f7f080ac365ab5d87124",
+      "train_frames": 279,
+      "test_frames": 70,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "49018eb36951290f8f22c14abd3d2c9ab8fda7dbac5d9cad4794ce9d5ebc8d3f"
+    },
+    {
+      "dataset": "tdsc_abus_2023",
+      "sweep": "validation_114",
+      "manifest_sha256": "2910feec1dbc874f1d93eebcd3616103ea7b97c8d1a3b5d7036f54ab132b12ad",
+      "train_frames": 264,
+      "test_frames": 66,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "49018eb36951290f8f22c14abd3d2c9ab8fda7dbac5d9cad4794ce9d5ebc8d3f"
+    },
+    {
+      "dataset": "tdsc_abus_2023",
+      "sweep": "validation_115",
+      "manifest_sha256": "d91f78c7680ec6f4ca878bb2ba3a588c91d4243de1d4221840ecb1992bd0282b",
+      "train_frames": 264,
+      "test_frames": 66,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "49018eb36951290f8f22c14abd3d2c9ab8fda7dbac5d9cad4794ce9d5ebc8d3f"
+    },
+    {
+      "dataset": "tdsc_abus_2023",
+      "sweep": "validation_116",
+      "manifest_sha256": "9a7caf5a1d4b296408d29e082812b5a224d52e011d32e17d52668cba384296ae",
+      "train_frames": 278,
+      "test_frames": 70,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "49018eb36951290f8f22c14abd3d2c9ab8fda7dbac5d9cad4794ce9d5ebc8d3f"
+    },
+    {
+      "dataset": "tdsc_abus_2023",
+      "sweep": "validation_117",
+      "manifest_sha256": "5c0c918453cd749f96af17d4267acb7db5fb53e2e66e74d3b22504d97ad53ea0",
+      "train_frames": 282,
+      "test_frames": 71,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "49018eb36951290f8f22c14abd3d2c9ab8fda7dbac5d9cad4794ce9d5ebc8d3f"
+    },
+    {
+      "dataset": "tdsc_abus_2023",
+      "sweep": "validation_118",
+      "manifest_sha256": "553182a409c6983f1a743a95cd3907ab65e6423ec627a86a8035f5236c44f99b",
+      "train_frames": 282,
+      "test_frames": 70,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "49018eb36951290f8f22c14abd3d2c9ab8fda7dbac5d9cad4794ce9d5ebc8d3f"
+    },
+    {
+      "dataset": "tdsc_abus_2023",
+      "sweep": "validation_119",
+      "manifest_sha256": "624d7de7cb5b7973139de464927ef582bfed18b129c920d2b4656b2bdbc1a408",
+      "train_frames": 279,
+      "test_frames": 70,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "49018eb36951290f8f22c14abd3d2c9ab8fda7dbac5d9cad4794ce9d5ebc8d3f"
+    },
+    {
+      "dataset": "tdsc_abus_2023",
+      "sweep": "validation_120",
+      "manifest_sha256": "fc2b81b91043076f465e0d97b97211097b2928f94e792897e6d92127d35e6b6d",
+      "train_frames": 279,
+      "test_frames": 70,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "49018eb36951290f8f22c14abd3d2c9ab8fda7dbac5d9cad4794ce9d5ebc8d3f"
+    },
+    {
+      "dataset": "tdsc_abus_2023",
+      "sweep": "validation_121",
+      "manifest_sha256": "cc819b9ada5f80c9dc89e325dd48e8d1a00cd72e228a30638ac7d4cc123010f2",
+      "train_frames": 282,
+      "test_frames": 70,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "49018eb36951290f8f22c14abd3d2c9ab8fda7dbac5d9cad4794ce9d5ebc8d3f"
+    },
+    {
+      "dataset": "tdsc_abus_2023",
+      "sweep": "validation_122",
+      "manifest_sha256": "a61372ca7e1547da83ecd7669f9721357952380cb262bfaf6c84be3fafdba50f",
+      "train_frames": 279,
+      "test_frames": 70,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "49018eb36951290f8f22c14abd3d2c9ab8fda7dbac5d9cad4794ce9d5ebc8d3f"
+    },
+    {
+      "dataset": "tdsc_abus_2023",
+      "sweep": "validation_123",
+      "manifest_sha256": "7cef0554fb6736da6d123406284654e89462c00f3d06c1e59853769a52dabe48",
+      "train_frames": 283,
+      "test_frames": 71,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "49018eb36951290f8f22c14abd3d2c9ab8fda7dbac5d9cad4794ce9d5ebc8d3f"
+    },
+    {
+      "dataset": "tdsc_abus_2023",
+      "sweep": "validation_124",
+      "manifest_sha256": "964a9b3da7b5b2095b411576c25c1265a8e5dfe1c49bf96cd68e20749c3361cd",
+      "train_frames": 264,
+      "test_frames": 66,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "49018eb36951290f8f22c14abd3d2c9ab8fda7dbac5d9cad4794ce9d5ebc8d3f"
+    },
+    {
+      "dataset": "tdsc_abus_2023",
+      "sweep": "validation_125",
+      "manifest_sha256": "2dfbdaf1290d11a353d193e49686cb1a74398286d744e59d333eee6049f6e734",
+      "train_frames": 282,
+      "test_frames": 70,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "49018eb36951290f8f22c14abd3d2c9ab8fda7dbac5d9cad4794ce9d5ebc8d3f"
+    },
+    {
+      "dataset": "tdsc_abus_2023",
+      "sweep": "validation_126",
+      "manifest_sha256": "0ecc3b71530d8252938400d636bcf16f1759b9fda8991a5da5c8fb646e26dc78",
+      "train_frames": 278,
+      "test_frames": 70,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "49018eb36951290f8f22c14abd3d2c9ab8fda7dbac5d9cad4794ce9d5ebc8d3f"
+    },
+    {
+      "dataset": "tdsc_abus_2023",
+      "sweep": "validation_127",
+      "manifest_sha256": "d32bc3b94b7666133257181edef322dcb7d5f05df65882286ed45e73a616557c",
+      "train_frames": 264,
+      "test_frames": 66,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "49018eb36951290f8f22c14abd3d2c9ab8fda7dbac5d9cad4794ce9d5ebc8d3f"
+    },
+    {
+      "dataset": "tdsc_abus_2023",
+      "sweep": "validation_128",
+      "manifest_sha256": "26d4fe324fa6ef88fe3b0b4ee7d9b270a2c30638043bdcfc72f05ac64e7a6066",
+      "train_frames": 264,
+      "test_frames": 66,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "49018eb36951290f8f22c14abd3d2c9ab8fda7dbac5d9cad4794ce9d5ebc8d3f"
+    },
+    {
+      "dataset": "tdsc_abus_2023",
+      "sweep": "validation_129",
+      "manifest_sha256": "13e5207e6c25915afad52e0927f205c659b1336231a622d5af2b7ef19fed3080",
+      "train_frames": 278,
+      "test_frames": 70,
+      "methods": [
+        "ours",
+        "ultragauss",
+        "ultragray",
+        "gaussianpile",
+        "slice_adapted_3dgs",
+        "ultrags_baseline",
+        "nerfus",
+        "ultranerf"
+      ],
+      "publication_manifest_sha256": "49018eb36951290f8f22c14abd3d2c9ab8fda7dbac5d9cad4794ce9d5ebc8d3f"
+    }
+  ],
+  "native_recipes": 624,
+  "metric_assets": [
+    {
+      "url": "https://download.pytorch.org/models/alexnet-owt-7be5be79.pth",
+      "filename": "alexnet-owt-7be5be79.pth",
+      "sha256": "7be5be791159472b1fbf3c69796f7cb30dca7ad8466c2df70058c37116cdee02",
+      "size_bytes": 244408911
+    },
+    {
+      "url": "https://download.pytorch.org/models/vgg16-397923af.pth",
+      "filename": "vgg16-397923af.pth",
+      "sha256": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0",
+      "size_bytes": 553433881
+    },
+    {
+      "url": "https://github.com/chaofengc/IQA-Toolbox-Python/releases/download/v0.1-weights/LPIPS_v0.1_alex-df73285e.pth",
+      "filename": "LPIPS_v0.1_alex-df73285e.pth",
+      "sha256": "df73285e35b22355a2df87cdb6b70b343713b667eddbda73e1977e0c860835c0",
+      "size_bytes": 6009
+    },
+    {
+      "url": "https://github.com/chaofengc/IQA-PyTorch/releases/download/v0.1-weights/DISTS_weights-f5e65c96.pth",
+      "filename": "DISTS_weights-f5e65c96.pth",
+      "sha256": "f5e65c96230b7f6ca995691647d482237e4cab8a50c5c4a5784f219ef0748218",
+      "size_bytes": 12288
+    }
+  ],
+  "execution": {
+    "python": "/home/yibo/paper1/.venv/bin/python",
+    "torch": "2.5.1+cu124",
+    "torch_path": "/home/yibo/shared/envs/torch251-cu124-py311/lib/python3.11/site-packages/torch/__init__.py",
+    "cuda_runtime": "12.4",
+    "sources": {
+      "nerfstudio": {
+        "root": "/home/yibo/paper1/nerfstudio",
+        "commit": "d884ff2a2ceb10d982fc9106d797d16f253567a1",
+        "dirty": false,
+        "tree_sha256": "7beae7cfe895f3591382e141a955775e5c7c621f8b689eb59ffcf2c2f95125ff"
+      },
+      "gsplat": {
+        "root": "/home/yibo/paper1/gsplat",
+        "commit": "904819713eb987868cec2799dd740843cc6f704c",
+        "dirty": false,
+        "tree_sha256": "b3618438994655a959875655016445c30d0575e7aa65c2fec0aee1d5a99ff3a4"
+      }
+    },
+    "toolchain": {
+      "nvcc": {
+        "path": "/usr/local/cuda-12.4/bin/nvcc",
+        "version": "nvcc: NVIDIA (R) Cuda compiler driver\nCopyright (c) 2005-2024 NVIDIA Corporation\nBuilt on Thu_Mar_28_02:18:24_PDT_2024\nCuda compilation tools, release 12.4, V12.4.131\nBuild cuda_12.4.r12.4/compiler.34097967_0\n"
+      },
+      "cc": {
+        "path": "/usr/bin/x86_64-linux-gnu-gcc-11",
+        "version": "gcc (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0\nCopyright (C) 2021 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n"
+      },
+      "cxx": {
+        "path": "/usr/bin/x86_64-linux-gnu-g++-11",
+        "version": "g++ (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0\nCopyright (C) 2021 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n"
+      }
+    },
+    "cuda_visible_devices": null,
+    "packages": {
+      "numpy": "1.26.4",
+      "torchvision": "0.20.1+cu124",
+      "pyiqa": "0.1.7"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "path": "nerfstudio/paper1_legacy",
+    "files": 705
+  },
+  {
+    "path": "nerfstudio/experiments/paper1/source_reference",
+    "files": 6966
+  },
+  {
+    "path": "gsplat/ultrasound_ops",
+    "files": 117
+  },
+  {
+    "path": "nerfstudio/scripts/ultrasound/convert_protocols.py",
+    "reason": "retired one-time converter; native presets already retained"
+  }
+]

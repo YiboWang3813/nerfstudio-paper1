@@ -1,0 +1,33 @@
+{
+  "status": "completed_practical_historical_reference_check",
+  "methods": 8,
+  "runs": 9,
+  "dataset": "synthetic_liver",
+  "sweep": "l1",
+  "updates_per_run": 5000,
+  "gaussian_initialization": 1000000,
+  "formal_training_started": false,
+  "summary": "/home/yibo/paper1/results/probes/native-5k-liver-l1/README.md",
+  "full_metrics": "/home/yibo/paper1/results/probes/native-5k-liver-l1/six-metrics.tsv",
+  "integrity": "/home/yibo/paper1/results/probes/native-5k-liver-l1/evidence-sha256.json",
+  "comparison_policy": "native-only metrics and reconstruction quality; no strict legacy implementation equivalence",
+  "assessment": "Seven current presets are close to or better than historical references. UltraGS current preset has a notable SSIM reduction; native replay of historical parameters closely matches historical metrics. Both results retained; production defaults unchanged.",
+  "ultrags_historical_parameter_deltas": {
+    "psnr": -0.005479097366333008,
+    "l1": 2.285512164235115e-05,
+    "ssim": -0.0009681388735770513,
+    "lpips": -0.001967068761587143,
+    "dists": -0.004554305970668804,
+    "gmsd": -2.2495537996297665e-05
+  },
+  "execution_commits": [
+    "72e389dbf88737592c5e55407a5d4c3eda3ad381",
+    "f6d5963d2c83cf8025bfa4751f6f106363368555"
+  ],
+  "delivery_heads": {
+    "nerfstudio": "0171fac68082948aaaf3c167e1e451d9332ff90e",
+    "gsplat": "e75ec98f9adb5d440345f918ce7d122923a79e84",
+    "docs": "4ffc5b51c3e18526f94829fcc56dd6b9c51bf174",
+    "results": "d96625d261a69dd8b6ce416f18839c478777f771"
+  }
+}

@@ -1,20 +1,19 @@
 # 实验记录、图表工程与运行产物
 
-| 位置 | 内容 | 版本管理 |
-| --- | --- | --- |
-| nerfstudio / gsplat | 算法、训练与评估实现、方法默认配置、参数矩阵、通用生成器 | 对应代码 Git |
-| docs/experiments/<study> | 图表配置、来源、报告、小型数值与交换表格 | docs Git |
-| outputs/<实验或运行目录> | 所有 runs 的权重、日志、有效配置、逐帧指标、渲染、视频、点云及批量导出 | 不进代码或 docs Git |
-| shared/datasets | 数据正文 | 遵守冻结版本与发布政策 |
+代码与训练/评价配置维护在 nerfstudio/gsplat，图表 JSON、报告和小型数值维护在 docs/experiments。数据正文仅在 shared/datasets，运行日志、权重、预测、渲染和生成文件不进源码或文档 Git。
 
-训练和评价的可执行配置由 Nerfstudio 维护，实验矩阵通过代码循环展开。图表工程配置由 docs 维护，规定输入来源、方法顺序、指标、面板、选帧和裁剪等生成器支持的参数；算法与数值计算逻辑只维护在代码仓库。实际执行保存有效配置快照、代码/脚本身份和输入校验。
+当前保留范围以 Mac manuscript-for-216-20261105-155440 的五图五表为准，逐项来源见 [文稿审计](../experiments/manuscript-source-audit/README.md)。正式 1M/30k 未启动。历史结果和本机重建图表不能冒称新代码正式实验。
 
-示例：从 paper1 根目录运行 `bin/paper1 artifacts --config docs/experiments/main-comparison/figure-2d-tmi.json`。兼容的对象 ID 命令通过代码仓库 artifacts.json 路由到同一份 docs 配置，不复制配置。
+| 位置 | 当前内容 |
+| --- | --- |
+| outputs/paper-evidence | 270 个图表输入/构建审计依赖，以及 774 个相关 run 的 5155 个原始数值与配置文件；按 ZIP 保存并逐项验证 SHA256 |
+| outputs/paper-images | 正式定性图实际使用的 36 个面板 |
+| outputs/paper-figure-sources | Mac 对应 endo 图的可编辑 SVG、数值与生成来源记录 |
+| outputs/paper-builds | 仅保留当前论文对应的最近一次验证构建；后续构建保存有效配置、源配置和输入哈希 |
+| docs/manuscript | Mac 完整 TeX 源项目，作者 PDF 仅本机保留并忽略，build/dist 不跟踪 |
 
-每次构建写入 outputs/artifacts/<generator>/<build-id>，保留 artifact-config.json 和 build-receipt.json。配置源 SHA256 与实际读取的图片哈希用于追溯；不会启动训练。原始冻结证据包在 outputs/frozen-inputs，其 SHA256 清单在 [evidence-packages.json](../resources/provenance/evidence-packages.json)。
+从 paper1 根目录运行 `bin/paper1 artifacts --config docs/experiments/main-comparison/figure-2d-tmi.json`。对象 ID 由代码仓库 artifacts.json 路由至同一份 docs 配置，不复制配置。图表生成不会训练。
 
-历史运行池位于 outputs/eehpc；探针实际文件位于 outputs/probes，训练输出仍在 outputs/results-probes。保留的图表原图和历史重导出在 outputs/artifact-inputs；这些可能不可再生，不能当缓存随意删除。小型数值与报告放回各实验目录。
+`bin/paper1 history <原始outputs相对路径>` 按需读取保留的 run ZIP；没有纳入 Mac 文稿来源链的旧文件不再提供。旧 results Git 数据库和 migration 杂物目录已退出；原始收据不追改，来源哈希与历史执行提交仍保留为事实。
 
-确需随工程保存的人工素材可放实验目录 assets/，批量导出放 exports/，这些路径精确忽略。不能忽略整个实验目录或全局忽略全部 PNG/PDF，避免吞掉配置、来源与有意选择的文档插图。
-
-独立 results 已取消。原 Git 数据库及其 tag 保存在 migration/git-history/results.git；`bin/paper1 history <相对证据路径>` 按需读取原字节。原配置、数据版本、收据、时间与执行身份不追改，旧路径由 [迁移映射](../resources/provenance/artifact-storage-map.json) 解释。
+重文献、本地重素材与详细维护日志按明确路径忽略；不得忽略整个实验目录或全局忽略所有图像而隐藏复现配置和来源。新的训练若日后获授权，仍按 outputs/<study>/<runID> 保存运行文件，不能擅自复用旧论文原件目录。

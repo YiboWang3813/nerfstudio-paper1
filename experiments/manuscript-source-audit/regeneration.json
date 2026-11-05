@@ -1,0 +1,40 @@
+[
+  {
+    "figure": "results_ablation_afgm.pdf",
+    "regenerated_pdf": "outputs/artifacts/hyperparameters_endo_h12/1793865728620728274/H1_AFGM.pdf",
+    "same_shape": true,
+    "mean_absolute_pixel_difference": 0.7283950617283951,
+    "changed_pixel_fraction": 0.05329585537918871
+  },
+  {
+    "figure": "results_ablation_plgr.pdf",
+    "regenerated_pdf": "outputs/artifacts/hyperparameters_endo_h12/1793865728620728274/H2_PLGR.pdf",
+    "same_shape": true,
+    "mean_absolute_pixel_difference": 1.0204456730673959,
+    "changed_pixel_fraction": 0.06292729326437192
+  },
+  {
+    "figure": "results_ablation_cgas.pdf",
+    "regenerated_pdf": "outputs/artifacts/hyperparameters_endo_h3/1793865728547475451/H3_CGAS.pdf",
+    "same_shape": true,
+    "mean_absolute_pixel_difference": 2.3230636390358614,
+    "changed_pixel_fraction": 0.13894400352733685
+  },
+  {
+    "figure": "results_comparison_all_datasets.pdf",
+    "regenerated_pdf": "outputs/artifacts/comparison_2d_tmi/1793865717723944362/figures/paper_all_datasets_2d_rendering.pdf",
+    "same_shape": false,
+    "shapes": [
+      [
+        564,
+        1232,
+        3
+      ],
+      [
+        562,
+        1229,
+        3
+      ]
+    ]
+  }
+]

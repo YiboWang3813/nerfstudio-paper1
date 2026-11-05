@@ -1,0 +1,38 @@
+[
+  {
+    "dataset": "liver",
+    "train_exit_code": 0,
+    "log": "/home/yibo/paper1/migration/liver-native-core-a03.log",
+    "purpose": "engineering smoke only; not paper reproduction",
+    "gaussians": 4096,
+    "iterations": 12,
+    "eval_exit_code": 0
+  },
+  {
+    "dataset": "spine",
+    "train_exit_code": 0,
+    "log": "/home/yibo/paper1/migration/spine-native-core-a03.log",
+    "purpose": "engineering smoke only; not paper reproduction",
+    "gaussians": 4096,
+    "iterations": 12,
+    "eval_exit_code": 0
+  },
+  {
+    "dataset": "tus",
+    "train_exit_code": 0,
+    "log": "/home/yibo/paper1/migration/tus-native-core-a03.log",
+    "purpose": "engineering smoke only; not paper reproduction",
+    "gaussians": 4096,
+    "iterations": 12,
+    "eval_exit_code": 0
+  },
+  {
+    "dataset": "tdsc",
+    "train_exit_code": 0,
+    "log": "/home/yibo/paper1/migration/tdsc-native-core-a03.log",
+    "purpose": "engineering smoke only; not paper reproduction",
+    "gaussians": 4096,
+    "iterations": 12,
+    "eval_exit_code": 0
+  }
+]

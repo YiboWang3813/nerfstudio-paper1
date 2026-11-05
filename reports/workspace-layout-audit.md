@@ -42,3 +42,5 @@
 这些历史承担来源和固定证据 tag 的保全。本轮不做 filter-repo、强推或删除 Git 对象；若后续要求缩减整个仓库历史，需要单独设计来源、旧提交引用与远端协作的保留方式。不能将普通忽略操作描述成历史空间已经回收。
 
 详细机器清单位于 paper1/migration/workspace-layout-audit.json，包含逐仓库大文件、目录分布和物理文件统计。
+
+后续整改已按用户授权执行：旧参考代码删除，文献仅本地忽略，migration 撤出，Mac 稿图表逐项匹配后筛选 outputs。此审计中的目录/大小是整改前快照，当前依据见 [文稿来源审计](../experiments/manuscript-source-audit/README.md) 和最终清理任务记录。

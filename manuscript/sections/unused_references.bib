@@ -1,0 +1,497 @@
+% Bibliography entries not currently cited by the main manuscript.
+% The string definitions below make this archive readable on its own; do not
+% load it together with references.bib unless duplicate definitions are removed.
+
+@STRING{J_APPL_SCI = {Appl. Sci.}}
+@STRING{J_PMB      = {Phys. Med. Biol.}}
+@STRING{J_UMB      = {Ultrasound Med. Biol.}}
+@STRING{J_MIA      = {Med. Image Anal.}}
+@STRING{J_IJBI     = {Int. J. Biomed. Imag.}}
+@STRING{J_BMRI     = {Biomed Res. Int.}}
+@STRING{J_ACM_TOG  = {{ACM} Trans. Graph.}}
+@STRING{PROC_MICCAI = {Proc. {MICCAI}}}
+@STRING{PROC_ECCV   = {Proc. {ECCV}}}
+@STRING{PROC_CVPR   = {Proc. {CVPR}}}
+@STRING{PROC_ICCV   = {Proc. {ICCV}}}
+@STRING{PROC_ICLR   = {Proc. {ICLR}}}
+@STRING{PROC_NEURIPS = {Proc. {NeurIPS}}}
+@STRING{PROC_MIDL   = {Proc. {MIDL}}}
+@STRING{PROC_MLHC   = {Proc. {MLHC}}}
+@STRING{PROC_ISBI   = {Proc. {ISBI}}}
+@STRING{PROC_IUS    = {Proc. {IUS}}}
+@STRING{PROC_UFFCJS = {Proc. {UFFC-JS}}}
+@STRING{PROC_ICME   = {Proc. {ICME}}}
+
+@inproceedings{barronMipNeRF360Unbounded2022,
+  title = {Mip-{{NeRF}} 360: {{Unbounded Anti-Aliased Neural Radiance Fields}}},
+  shorttitle = {Mip-{{NeRF}} 360},
+  booktitle = PROC_CVPR,
+  author = {Barron, Jonathan T. and Mildenhall, Ben and Verbin, Dor and Srinivasan, Pratul P. and Hedman, Peter},
+  year = 2022,
+  month = jun,
+  pages = {5460--5469},
+  publisher = {IEEE},
+  address = {New Orleans, LA, USA},
+  doi = {10.1109/CVPR52688.2022.00539},
+  urldate = {2025-04-02},
+  abstract = {Though neural radiance fields (NeRF) have demonstrated impressive view synthesis results on objects and small bounded regions of space, they struggle on ``unbounded'' scenes, where the camera may point in any direction and content may exist at any distance. In this setting, existing NeRF-like models often produce blurry or low-resolution renderings (due to the unbalanced detail and scale of nearby and distant objects), are slow to train, and may exhibit artifacts due to the inherent ambiguity of the task of reconstructing a large scene from a small set of images. We present an extension of mip-NeRF (a NeRF variant that addresses sampling and aliasing) that uses a non-linear scene parameterization, online distillation, and a novel distortion-based regularizer to overcome the challenges presented by unbounded scenes. Our model, which we dub ``mip-NeRF 360'' as we target scenes in which the camera rotates 360 degrees around a point, reduces meansquared error by 57\% compared to mip-NeRF, and is able to produce realistic synthesized views and detailed depth maps for highly intricate, unbounded real-world scenes.},
+  copyright = {https://doi.org/10.15223/policy-029},
+  isbn = {978-1-6654-6946-3},
+  langid = {english},
+  file = {/Users/wangyibo/Zotero/storage/H3UYS6RN/Barron 等 - 2022 - Mip-NeRF 360 Unbounded Anti-Aliased Neural Radiance Fields.pdf}
+}
+
+@inproceedings{barronMipNeRFMultiscaleRepresentation2021,
+  title = {Mip-{{NeRF}}: {{A Multiscale Representation}} for {{Anti-Aliasing Neural Radiance Fields}}},
+  shorttitle = {Mip-{{NeRF}}},
+  booktitle = PROC_ICCV,
+  author = {Barron, Jonathan T. and Mildenhall, Ben and Tancik, Matthew and Hedman, Peter and {Martin-Brualla}, Ricardo and Srinivasan, Pratul P.},
+  year = 2021,
+  month = oct,
+  pages = {5835--5844},
+  publisher = {IEEE},
+  address = {Montreal, QC, Canada},
+  doi = {10.1109/ICCV48922.2021.00580},
+  urldate = {2025-04-02},
+  abstract = {The rendering procedure used by neural radiance fields (NeRF) samples a scene with a single ray per pixel and may therefore produce renderings that are excessively blurred or aliased when training or testing images observe scene content at different resolutions. The straightforward solution of supersampling by rendering with multiple rays per pixel is impractical for NeRF, because rendering each ray requires querying a multilayer perceptron hundreds of times. Our solution, which we call ``mip-NeRF'' (`a la ``mipmap''), extends NeRF to represent the scene at a continuously-valued scale. By efficiently rendering anti-aliased conical frustums instead of rays, mip-NeRF reduces objectionable aliasing artifacts and significantly improves NeRF's ability to represent fine details, while also being 7\% faster than NeRF and half the size. Compared to NeRF, mip-NeRF reduces average error rates by 17\% on the dataset presented with NeRF and by 60\% on a challenging multiscale variant of that dataset that we present. Mip-NeRF is also able to match the accuracy of a brute-force supersampled NeRF on our multiscale dataset while being 22\texttimes{} faster.},
+  copyright = {https://doi.org/10.15223/policy-029},
+  isbn = {978-1-6654-2812-5},
+  langid = {english},
+  file = {/Users/wangyibo/Zotero/storage/Q9QTRJKZ/Barron 等 - 2021 - Mip-NeRF A Multiscale Representation for Anti-Aliasing Neural Radiance Fields.pdf}
+}
+
+@inproceedings{luScaffoldGSStructured3D2024,
+  title = {Scaffold-{{GS}}: {{Structured 3D Gaussians}} for {{View-Adaptive Rendering}}},
+  shorttitle = {Scaffold-{{GS}}},
+  booktitle = PROC_CVPR,
+  author = {Lu, Tao and Yu, Mulin and Xu, Linning and Xiangli, Yuanbo and Wang, Limin and Lin, Dahua and Dai, Bo},
+  year = 2024,
+  month = jun,
+  pages = {20654--20664},
+  publisher = {IEEE},
+  address = {Seattle, WA, USA},
+  doi = {10.1109/CVPR52733.2024.01952},
+  urldate = {2025-12-27},
+  copyright = {https://doi.org/10.15223/policy-029},
+  isbn = {979-8-3503-5300-6},
+  langid = {english},
+  file = {/Users/wangyibo/Zotero/storage/W6KMUDUZ/Lu 等 - 2024 - Scaffold-GS Structured 3D Gaussians for View-Adaptive Rendering.pdf}
+}
+
+@inproceedings{guedonSuGaRSurfaceAlignedGaussian2024,
+  title = {{{SuGaR}}: {{Surface-Aligned Gaussian Splatting}} for {{Efficient 3D Mesh Reconstruction}} and {{High-Quality Mesh Rendering}}},
+  shorttitle = {{{SuGaR}}},
+  booktitle = PROC_CVPR,
+  author = {Gu{\'e}don, Antoine and Lepetit, Vincent},
+  year = 2024,
+  month = jun,
+  pages = {5354--5363},
+  publisher = {IEEE},
+  address = {Seattle, WA, USA},
+  doi = {10.1109/CVPR52733.2024.00512},
+  urldate = {2025-09-04},
+  abstract = {We propose a method to allow precise and extremely fast mesh extraction from 3D Gaussian Splatting [15]. Gaussian Splatting has recently become very popular as it yields realistic rendering while being significantly faster to train than NeRFs. It is however challenging to extract a mesh from the millions of tiny 3D Gaussians as these Gaussians tend to be unorganized after optimization and no method has been proposed so far. Our first key contribution is a regularization term that encourages the Gaussians to align well with the surface of the scene. We then introduce a method that exploits this alignment to extract a mesh from the Gaussians using Poisson reconstruction, which is fast, scalable, and preserves details, in contrast to the Marching Cubes algorithm usually applied to extract meshes from Neural SDFs. Finally, we introduce an optional refinement strategy that binds Gaussians to the surface of the mesh, and jointly optimizes these Gaussians and the mesh through Gaussian splatting rendering. This enables easy editing, sculpting, animating, and relighting of the Gaussians by manipulating the mesh instead of the Gaussians themselves. Retrieving such an editable mesh for realistic rendering is done within minutes with our method, compared to hours with the state-of-the-art method on SDFs, while providing a better rendering quality.},
+  copyright = {https://doi.org/10.15223/policy-029},
+  isbn = {979-8-3503-5300-6},
+  langid = {english},
+  file = {/Users/wangyibo/Zotero/storage/PYXAN3KP/Guédon和Lepetit - 2024 - SuGaR Surface-Aligned Gaussian Splatting for Efficient 3D Mesh Reconstruction and High-Quality Mesh.pdf}
+}
+
+@inproceedings{yuMipSplattingAliasFree3D2024,
+  title = {Mip-{{Splatting}}: {{Alias-Free 3D Gaussian Splatting}}},
+  shorttitle = {Mip-{{Splatting}}},
+  booktitle = PROC_CVPR,
+  author = {Yu, Zehao and Chen, Anpei and Huang, Binbin and Sattler, Torsten and Geiger, Andreas},
+  year = 2024,
+  month = jun,
+  pages = {19447--19456},
+  publisher = {IEEE},
+  address = {Seattle, WA, USA},
+  doi = {10.1109/CVPR52733.2024.01839},
+  urldate = {2025-12-10},
+  abstract = {Recently, 3D Gaussian Splatting has demonstrated impressive novel view synthesis results, reaching high fidelity and efficiency. However, strong artifacts can be observed when changing the sampling rate, e.g., by changing focal length or camera distance. We find that the source for this phenomenon can be attributed to the lack of 3D frequency constraints and the usage of a 2D dilation filter. To address this problem, we introduce a 3D smoothing filter to constrains the size of the 3D Gaussian primitives based on the maximal sampling frequency induced by the input views. It eliminates high-frequency artifacts when zooming in. Moreover, replacing 2D dilation with a 2D Mip filter, which simulates a 2D box filter, effectively mitigates aliasing and dilation issues. Our evaluation, including scenarios such a training on single-scale images and testing on multiple scales, validates the effectiveness of our approach.},
+  copyright = {https://doi.org/10.15223/policy-029},
+  isbn = {979-8-3503-5300-6},
+  langid = {english},
+  file = {/Users/wangyibo/Zotero/storage/7VPAQM8S/Yu 等 - 2024 - Mip-Splatting Alias-Free 3D Gaussian Splatting.pdf}
+}
+
+@article{yeung2021a,
+  title = {Learning to Map {{2D}} Ultrasound Images into {{3D}} Space with Minimal Human Annotation},
+  author = {Yeung, Pak-Hei and Aliasi, Moska and Papageorghiou, Aris T. and Haak, Monique and Xie, Weidi and Namburete, Ana I.L.},
+  year = 2021,
+  month = may,
+  journal = J_MIA,
+  volume = {70},
+  pages = {101998},
+  issn = {13618415},
+  doi = {10.1016/j.media.2021.101998},
+  urldate = {2025-03-29},
+  abstract = {In fetal neurosonography, aligning two-dimensional (2D) ultrasound scans to their corresponding plane in the three-dimensional (3D) space remains a challenging task. In this paper, we propose a convolutional neural network that predicts the position of 2D ultrasound fetal brain scans in 3D atlas space. Instead of purely supervised learning that requires heavy annotations for each 2D scan, we train the model by sampling 2D slices from 3D fetal brain volumes, and target the model to predict the inverse of the sampling process, resembling the idea of self-supervised learning.},
+  langid = {english},
+  file = {/Users/wangyibo/Zotero/storage/UNVFUGMY/Yeung 等 - 2021 - Learning to map 2D ultrasound images into 3D space with minimal human annotation.pdf}
+}
+
+@inproceedings{charatanPixelSplat3DGaussian2024,
+  title = {{{pixelSplat}}: {{3D Gaussian Splats}} from {{Image Pairs}} for {{Scalable Generalizable 3D Reconstruction}}},
+  shorttitle = {{{pixelSplat}}},
+  booktitle = PROC_CVPR,
+  author = {Charatan, David and Li, Sizhe Lester and Tagliasacchi, Andrea and Sitzmann, Vincent},
+  year = 2024,
+  pages = {19457--19467},
+  urldate = {2026-03-23},
+  langid = {english},
+  file = {/Users/wangyibo/Zotero/storage/AYS972GF/Charatan 等 - 2024 - pixelSplat 3D Gaussian Splats from Image Pairs for Scalable Generalizable 3D Reconstruction.pdf}
+}
+
+@article{bao3DGaussianSplatting2025,
+  title = {{{3D Gaussian Splatting}}: {{Survey}}, {{Technologies}}, {{Challenges}}, and {{Opportunities}}},
+  shorttitle = {{{3D Gaussian Splatting}}},
+  author = {Bao, Yanqi and Ding, Tianyu and Huo, Jing and Liu, Yaoli and Li, Yuxin and Li, Wenbin and Gao, Yang and Luo, Jiebo},
+  year = 2025,
+  journal = IEEE_J_CASVT,
+  pages = {1--20},
+  issn = {1051-8215, 1558-2205},
+  doi = {10.1109/TCSVT.2025.3538684},
+  urldate = {2025-04-16},
+  copyright = {https://ieeexplore.ieee.org/Xplorehelp/downloads/license-information/IEEE.html},
+  langid = {english},
+  keywords = {survey},
+  file = {/Users/wangyibo/Zotero/storage/XCG9USP6/Bao 等 - 2025 - 3D Gaussian Splatting Survey, Technologies, Challenges, and Opportunities.pdf}
+}
+
+@inproceedings{leeCompact3DGaussian,
+  title = {Compact {{3D Gaussian Representation}} for {{Radiance Field}}},
+  booktitle = PROC_CVPR,
+  author = {Lee, Joo Chan and Rho, Daniel and Sun, Xiangyu and Ko, Jong Hwan and Park, Eunbyung},
+  year = 2024,
+  month = jun,
+  pages = {21719--21728},
+  langid = {english},
+  file = {/Users/wangyibo/Zotero/storage/2HK28PFT/Lee 等 - Compact 3D Gaussian Representation for Radiance Field.pdf}
+}
+
+@inproceedings{niedermayrCompressed3DGaussian2024,
+  title = {Compressed {{3D Gaussian Splatting}} for {{Accelerated Novel View Synthesis}}},
+  booktitle = PROC_CVPR,
+  author = {Niedermayr, Simon and Stumpfegger, Josef and Westermann, R{\"u}diger},
+  year = 2024,
+  month = jun,
+  pages = {10349--10358},
+  publisher = {IEEE},
+  address = {Seattle, WA, USA},
+  doi = {10.1109/CVPR52733.2024.00985},
+  urldate = {2026-03-19},
+  abstract = {Recently, high-fidelity scene reconstruction with an optimized 3D Gaussian splat representation has been introduced for novel view synthesis from sparse image sets. Making such representations suitable for applications like network streaming and rendering on low-power devices requires significantly reduced memory consumption as well as improved rendering efficiency. We propose a compressed 3D Gaussian splat representation that utilizes sensitivityaware vector clustering with quantization-aware training to compress directional colors and Gaussian parameters. The learned codebooks have low bitrates and achieve a compression rate of up to 31\texttimes{} on real-world scenes with only minimal degradation of visual quality. We demonstrate that the compressed splat representation can be efficiently rendered with hardware rasterization on lightweight GPUs at up to 4\texttimes{} higher framerates than reported via an optimized GPU compute pipeline. Extensive experiments across multiple datasets demonstrate the robustness and rendering speed of the proposed approach.},
+  copyright = {https://doi.org/10.15223/policy-029},
+  isbn = {979-8-3503-5300-6},
+  langid = {english},
+  file = {/Users/wangyibo/Zotero/storage/LSYNSGZI/Niedermayr 等 - 2024 - Compressed 3D Gaussian Splatting for Accelerated Novel View Synthesis.pdf}
+}
+
+@inproceedings{navaneetCompGSSmallerFaster2025,
+  title = {{{CompGS}}: {{Smaller}} and~{{Faster Gaussian Splatting}} with~{{Vector Quantization}}},
+  shorttitle = {{{CompGS}}},
+  booktitle = PROC_ECCV,
+  author = {Navaneet, K. L. and Pourahmadi Meibodi, Kossar and Abbasi Koohpayegani, Soroush and Pirsiavash, Hamed},
+  editor = {Leonardis, Ale{\v s} and Ricci, Elisa and Roth, Stefan and Russakovsky, Olga and Sattler, Torsten and Varol, G{\"u}l},
+  year = 2024,
+  pages = {330--349},
+  publisher = {Springer Nature Switzerland},
+  address = {Cham},
+  doi = {10.1007/978-3-031-73411-3_19},
+  abstract = {3D Gaussian Splatting (3DGS) is a new method for modeling and rendering 3D radiance fields that achieves much faster learning and rendering time compared to SOTA NeRF methods. However, it comes with a drawback in the much larger storage demand compared to NeRF methods since it needs to store the parameters for several 3D Gaussians. We notice that many Gaussians may share similar parameters, so we introduce a simple vector quantization method based on K-means to quantize the Gaussian parameters while optimizing them. Then, we store the small codebook along with the index of the code for each Gaussian. We compress the indices further by sorting them and using a method similar to run-length encoding. Moreover, we use a simple regularizer to encourage zero opacity (invisible Gaussians) to reduce the storage and rendering time by a large factor through reducing the number of Gaussians. We do extensive experiments on standard benchmarks as well as an existing 3D dataset that is an order of magnitude larger than the standard benchmarks used in this field. We show that our simple yet effective method can reduce the storage cost for 3DGS by \$\$40\textbackslash times \$\$40\texttimes to \$\$50\textbackslash times \$\$50\texttimes and rendering time by \$\$2\textbackslash times \$\$2\texttimes to \$\$3\textbackslash times \$\$3\texttimes with a very small drop in the quality of rendered images. Our code is available here: https://github.com/UCDvision/compact3d.},
+  isbn = {978-3-031-73411-3},
+  langid = {english},
+  file = {/Users/wangyibo/Zotero/storage/QS46237T/Navaneet 等 - 2024 - CompGS Smaller and Faster Gaussian Splatting with Vector Quantization.pdf}
+}
+
+@inproceedings{girishEAGLESEfficientAccelerated2025a,
+  title = {{{EAGLES}}: {{Efficient Accelerated 3D Gaussians}} with~{{Lightweight EncodingS}}},
+  shorttitle = {{{EAGLES}}},
+  booktitle = PROC_ECCV,
+  author = {Girish, Sharath and Gupta, Kamal and Shrivastava, Abhinav},
+  editor = {Leonardis, Ale{\v s} and Ricci, Elisa and Roth, Stefan and Russakovsky, Olga and Sattler, Torsten and Varol, G{\"u}l},
+  year = 2024,
+  pages = {54--71},
+  publisher = {Springer Nature Switzerland},
+  address = {Cham},
+  doi = {10.1007/978-3-031-73036-8_4},
+  abstract = {Recently, 3D Gaussian splatting (3D-GS) has gained popularity in novel-view scene synthesis. It addresses the challenges of lengthy training times and slow rendering speeds associated with Neural Radiance Fields (NeRFs). Through rapid, differentiable rasterization of 3D Gaussians, 3D-GS achieves real-time rendering and accelerated training. They, however, demand substantial memory resources for both training and storage, as they require millions of Gaussians in their point cloud representation for each scene. We present a technique utilizing quantized embeddings to significantly reduce per-point memory storage requirements and a coarse-to-fine training strategy for a faster and more stable optimization of the Gaussian point clouds. Our approach develops a pruning stage which results in scene representations with fewer Gaussians, leading to faster training times and rendering speeds for real-time rendering of high resolution scenes. We reduce storage memory by more than an order of magnitude all while preserving the reconstruction quality. We validate the effectiveness of our approach on a variety of datasets and scenes preserving the visual quality while consuming 10--20\$\$\textbackslash times \$\$\texttimes less memory and faster training/inference speed. Code is available here.},
+  isbn = {978-3-031-73036-8},
+  langid = {english},
+  file = {/Users/wangyibo/Zotero/storage/JJH92GCS/Girish 等 - 2024 - EAGLES Efficient Accelerated 3D Gaussians with Lightweight EncodingS.pdf}
+}
+
+@article{li3DGRCTSparseviewCT2025,
+  title = {{{3DGR-CT}}: {{Sparse-view CT}} Reconstruction with a {{3D Gaussian}} Representation},
+  shorttitle = {{{3DGR-CT}}},
+  author = {Li, Yingtai and Fu, Xueming and Li, Han and Zhao, Shang and Jin, Ruiyang and Zhou, S. Kevin},
+  year = 2025,
+  month = jul,
+  journal = J_MIA,
+  volume = {103},
+  pages = {103585},
+  issn = {13618415},
+  doi = {10.1016/j.media.2025.103585},
+  urldate = {2026-03-21},
+  abstract = {Sparse-view computed tomography (CT) reduces radiation exposure by acquiring fewer projections, making it a valuable tool in clinical scenarios where low-dose radiation is essential. However, this often results in increased noise and artifacts due to limited data. In this paper we propose a novel 3D Gaussian representation (3DGR) based method for sparse-view CT reconstruction. Inspired by recent success in novel view synthesis driven by 3D Gaussian splatting, we leverage the efficiency and expressiveness of 3D Gaussian representation as an alternative to implicit neural representation. To unleash the potential of 3DGR for CT imaging scenario, we propose two key innovations: (i) FBP-image-guided Guassian initialization and (ii) efficient integration with a differentiable CT projector. Extensive experiments and ablations on diverse datasets demonstrate the proposed 3DGR-CT consistently outperforms state-of-the-art counterpart methods, achieving higher reconstruction accuracy with faster convergence. Furthermore, we showcase the potential of 3DGR-CT for real-time physical simulation, which holds important clinical applications while challenging for implicit neural representations. Code available at: https://github.com/SigmaLDC/3DGR-CT.},
+  langid = {english},
+  keywords = {Read:Results:Comparison},
+  file = {/Users/wangyibo/Zotero/storage/63773JVN/Li 等 - 2025 - 3DGR-CT Sparse-view CT reconstruction with a 3D Gaussian representation.pdf}
+}
+
+@inproceedings{wuDiscretizedGaussianRepresentation2025,
+  title = {Discretized {{Gaussian Representation}} for {{Tomographic Reconstruction}}},
+  booktitle = PROC_ICCV,
+  author = {Wu, Shaokai and Lu, Yuxiang and Guo, Yapan and Ji, Wei and Huang, Suizhi and Yang, Fengyu and Sirejiding, Shalayiding and He, Qichen and Tong, Jing and Ji, Yanbiao and Ding, Yue and Lu, Hongtao},
+  year = 2025,
+  pages = {25073--25082},
+  urldate = {2026-03-24},
+  langid = {english},
+  file = {/Users/wangyibo/Zotero/storage/CNUL2F5A/Wu 等 - 2025 - Discretized Gaussian Representation for Tomographic Reconstruction.pdf}
+}
+
+@article{zhangSG3DGSSequentialGrowing2025,
+  title = {{{SG-3DGS}}: {{Sequential Growing 3D Gaussian Splatting}} for {{Scene Reconstruction}} of {{Monocular Endoscope Video}}},
+  shorttitle = {{{SG-3DGS}}},
+  author = {Zhang, Ziang and Song, Hong and Fan, Jingfan and Shao, Long and Fu, Tianyu and Ai, Danni and Xiao, Deqiang and Wang, Yuanyuan and Lin, Yucong and Yang, Jian},
+  year = 2025,
+  journal = IEEE_J_MI,
+  pages = {1--1},
+  issn = {0278-0062, 1558-254X},
+  doi = {10.1109/TMI.2025.3639759},
+  urldate = {2026-03-21},
+  abstract = {The reconstruction of monocular endoscope video scenes is essential for enhancing the application and analysis of surgical endoscopic images. However, restricted by the narrow space of endoscopic movement and the obstruction of vision within cavities, it is difficult for most conventional methods to perform high-quality reconstruction. To address these challenges, a novel dynamic growing 3D gaussian splatting architecture is proposed to construct the 3D model of endoscopic scene without precomputed camera poses or Structure from Motion. Firstly, to establish spatial feature associations between interframes, a 2D-3D displacement fields are designed by utilizing dense feature matches and depth prediction. On this basis, a novel displacement field variational optimization is developed to obtain relative poses by minimizing the energy functional associated with field transformation. Secondly, to address the constraint of the endoscopic view, by gaussian sequential transformation and differential gradient field optimization, a novel Sequential Gaussian Growing Module is proposed to grow the local gaussian model sequentially. Finally, a novel Forward-Reconstruction\&Backward-Optimization architecture is proposed to generate the global gaussian model. The evaluation is conducted on two public endoscopic datasets: Scared and C3VD. The experimental results demonstrate that the proposed method outperforms stateof-the-art methods in both quantitative metrics (PSNR, SSIM, LPIPS, ATE, RMSE, MAE) and qualitative comparisons. The project page is https://iheckzza.github.io/DG3DGS/.},
+  copyright = {https://ieeexplore.ieee.org/Xplorehelp/downloads/license-information/IEEE.html},
+  langid = {english},
+  keywords = {Read:Results:Comparison},
+  file = {/Users/wangyibo/Zotero/storage/7TQ3IRLG/Zhang 等 - 2025 - SG-3DGS Sequential Growing 3D Gaussian Splatting for Scene Reconstruction of Monocular Endoscope Vi.pdf}
+}
+
+@article{zengNeeCoImageSynthesis2026,
+  title = {{{NeeCo}}: {{Image Synthesis}} of {{Novel Instrument States Based}} on {{Dynamic}} and {{Deformable 3D Gaussian Reconstruction}}},
+  shorttitle = {{{NeeCo}}},
+  author = {Zeng, Tianle and Hu, Junlei and Galindo, Gerardo Loza and Ali, Sharib and Sarikaya, Duygu and Valdastri, Pietro and Jones, Dominic},
+  year = 2026,
+  journal = IEEE_J_MI,
+  pages = {1--1},
+  issn = {0278-0062, 1558-254X},
+  doi = {10.1109/TMI.2025.3648299},
+  urldate = {2026-03-21},
+  abstract = {Computer vision-based technologies significantly enhance surgical automation by advancing tool tracking, detection, and localization. However, Current data-driven approaches are data-voracious, requiring large, high-quality labeled image datasets. Our Work introduces a novel dynamic Gaussian Splatting technique to address the data scarcity in surgical image datasets. We propose a dynamic Gaussian model to represent dynamic surgical scenes, enabling the rendering of surgical instruments from unseen viewpoints and deformations with real tissue backgrounds. We utilize a dynamic training adjustment strategy to address challenges posed by poorly calibrated camera poses from real-world scenarios. Additionally, automatically generate annotations for our synthetic data. For evaluation, we constructed a new dataset featuring seven scenes with 14,000 frames of tool and camera motion and tool jaw articulation, with a background of an exvivo porcine model. Using this dataset, we synthetically replicate the scene deformation from the ground truth data, allowing direct comparisons of synthetic image quality. Experimental results illustrate that our method generates photo-realistic labeled image datasets with the highest PSNR (29.87). We further evaluate the performance of medical-specific neural networks trained on real and synthetic images using an unseen real-world image dataset. Our results show that the performance of models trained on synthetic images generated by the proposed method outperforms those trained with state-of-the-art standard data augmentation by 10\%, leading to an overall improvement in model performances by nearly 15\%.},
+  copyright = {https://ieeexplore.ieee.org/Xplorehelp/downloads/license-information/IEEE.html},
+  langid = {english},
+  keywords = {Read:Results:Ablation,Read:Results:Comparison},
+  file = {/Users/wangyibo/Zotero/storage/87WDHP2B/Zeng 等 - 2026 - NeeCo Image Synthesis of Novel Instrument States Based on Dynamic and Deformable 3D Gaussian Recons.pdf}
+}
+
+@misc{guoUlReNeRF3DUltrasound2024,
+  title = {{{UlRe-NeRF}}: {{3D Ultrasound Imaging}} through {{Neural Rendering}} with {{Ultrasound Reflection Direction Parameterization}}},
+  shorttitle = {{{UlRe-NeRF}}},
+  author = {Guo, Ziwen and Fang, Zi and Fu, Zhuang},
+  year = 2024,
+  month = sep,
+  pages = {1--20},
+  note = {arXiv:2408.00860},
+  number = {arXiv:2408.00860},
+  eprint = {2408.00860},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2408.00860},
+  urldate = {2025-03-29},
+  abstract = {Three-dimensional ultrasound imaging is a critical technology widely used in medical diagnostics. However, traditional 3D ultrasound imaging methods have limitations such as fixed resolution, low storage efficiency, and insufficient contextual connectivity, leading to poor performance in handling complex artifacts and reflection characteristics. Recently, techniques based on NeRF (Neural Radiance Fields) have made significant progress in view synthesis and 3D reconstruction, but there remains a research gap in high-quality ultrasound imaging. To address these issues, we propose a new model, UlRe-NeRF, which combines implicit neural networks and explicit ultrasound volume rendering into an ultrasound neural rendering architecture. This model incorporates reflection direction parameterization and harmonic encoding, using a directional MLP module to generate view-dependent high-frequency reflection intensity estimates, and a spatial MLP module to produce the medium's physical property parameters. These parameters are used in the volume rendering process to accurately reproduce the propagation and reflection behavior of ultrasound waves in the medium. Experimental results demonstrate that the UlRe-NeRF model significantly enhances the realism and accuracy of high-fidelity ultrasound image reconstruction, especially in handling complex medium structures.},
+  archiveprefix = {arXiv},
+  langid = {american},
+  keywords = {Read},
+  file = {/Users/wangyibo/Zotero/storage/QG3URCTL/Guo 等 - 2024 - UlRe-NeRF 3D Ultrasound Imaging through Neural Rendering with Ultrasound Reflection Direction Param.pdf;/Users/wangyibo/Zotero/storage/FBZ2WIUC/2408.html}
+}
+
+@article{stevensHighVolumeRate2025,
+  title = {High {{Volume Rate 3D Ultrasound Reconstruction}} with {{Diffusion Models}}},
+  author = {Stevens, Tristan S.W. and Nolan, Ois{\'i}n and Somphone, Oudom and Robert, Jean-Luc and Van Sloun, Ruud J.G.},
+  year = 2025,
+  journal = IEEE_J_MI,
+  pages = {1--1},
+  issn = {0278-0062, 1558-254X},
+  doi = {10.1109/TMI.2025.3645849},
+  urldate = {2026-03-21},
+  copyright = {https://ieeexplore.ieee.org/Xplorehelp/downloads/license-information/IEEE.html},
+  langid = {english},
+  file = {/Users/wangyibo/Zotero/storage/V3CIMWEQ/Stevens 等 - 2025 - High Volume Rate 3D Ultrasound Reconstruction with Diffusion Models.pdf}
+}
+
+@inproceedings{wu4DGaussianSplatting2024,
+  title = {{{4D Gaussian Splatting}} for {{Real-Time Dynamic Scene Rendering}}},
+  booktitle = PROC_CVPR,
+  author = {Wu, Guanjun and Yi, Taoran and Fang, Jiemin and Xie, Lingxi and Zhang, Xiaopeng and Wei, Wei and Liu, Wenyu and Tian, Qi and Wang, Xinggang},
+  year = 2024,
+  month = jun,
+  pages = {20310--20320},
+  publisher = {IEEE},
+  address = {Seattle, WA, USA},
+  doi = {10.1109/CVPR52733.2024.01920},
+  urldate = {2025-04-17},
+  copyright = {https://doi.org/10.15223/policy-029},
+  isbn = {979-8-3503-5300-6},
+  langid = {english},
+  keywords = {Code,Dynamic Scene,Easy,Feature Encoder,Gaussian Splatting},
+  file = {/Users/wangyibo/Documents/ZoteroLocalNotes/notes/4D Gaussian Splatting for Real-Time Dynamic Scene Rendering.md;/Users/wangyibo/Zotero/storage/ZH3L2R9U/Wu 等 - 2024 - 4D Gaussian Splatting for Real-Time Dynamic Scene Rendering.pdf}
+}
+
+@inproceedings{wangNeuSLearningNeural2021,
+  title = {{{NeuS}}: {{Learning Neural Implicit Surfaces}} by {{Volume Rendering}} for {{Multi-view Reconstruction}}},
+  shorttitle = {{{NeuS}}},
+  booktitle = PROC_NEURIPS,
+  author = {Wang, Peng and Liu, Lingjie and Liu, Yuan and Theobalt, Christian and Komura, Taku and Wang, Wenping},
+  year = 2021,
+  volume = {34},
+  pages = {27171--27183},
+  publisher = {Curran Associates, Inc.},
+  urldate = {2025-04-02},
+  abstract = {We present a novel neural surface reconstruction method, called NeuS, for reconstructing objects and scenes with high fidelity from 2D image inputs. Existing neural surface reconstruction approaches, such as DVR [Niemeyer et al., 2020] and IDR [Yariv et al., 2020], require foreground mask as supervision, easily get trapped in local minima, and therefore struggle with the reconstruction of objects with severe self-occlusion or thin structures. Meanwhile, recent neural methods for novel view synthesis, such as NeRF [Mildenhall et al., 2020] and its variants, use volume rendering to produce a neural scene representation with robustness of optimization, even for highly complex objects. However, extracting high-quality surfaces from this learned implicit representation is difficult because there are not sufficient surface constraints in the representation. In NeuS, we propose to represent a surface as the zero-level set of a signed distance function (SDF) and develop a new volume rendering method to train a neural SDF representation. We observe that the conventional volume rendering method causes inherent geometric errors (i.e. bias) for surface reconstruction, and therefore propose a new formulation that is free of bias in the first order of approximation, thus leading to more accurate surface reconstruction even without the mask supervision. Experiments on the DTU dataset and the BlendedMVS dataset show that NeuS outperforms the state-of-the-arts in high-quality surface reconstruction, especially for objects and scenes with complex structures and self-occlusion.},
+  file = {/Users/wangyibo/Zotero/storage/YHMKR6ME/Wang 等 - 2021 - NeuS Learning Neural Implicit Surfaces by Volume Rendering for Multi-view Reconstruction.pdf}
+}
+
+@inproceedings{yangDeformable3DGaussians,
+  title = {Deformable {{3D Gaussians}} for {{High-Fidelity Monocular Dynamic Scene Reconstruction}}},
+  booktitle = PROC_CVPR,
+  author = {Yang, Ziyi and Gao, Xinyu and Zhou, Wen and Jiao, Shaohui and Zhang, Yuqing and Jin, Xiaogang},
+  year = 2024,
+  month = jun,
+  pages = {20331--20341},
+  langid = {english},
+  keywords = {Code,Dynamic Scene,Easy,Gaussian Splatting,MLP for Deformation,Monocular},
+  file = {/Users/wangyibo/Documents/ZoteroLocalNotes/notes/Deformable 3D Gaussians for High-Fidelity Monocular Dynamic Scene Reconstruction.md;/Users/wangyibo/Zotero/storage/4M3UHI55/Yang 等 - Deformable 3D Gaussians for High-Fidelity Monocular Dynamic Scene Reconstruction.pdf}
+}
+
+@article{guoMotionAware3DGaussian2025,
+  title = {Motion-{{Aware 3D Gaussian Splatting}} for {{Efficient Dynamic Scene Reconstruction}}},
+  author = {Guo, Zhiyang and Zhou, Wengang and Li, Li and Wang, Min and Li, Houqiang},
+  year = 2025,
+  month = apr,
+  journal = IEEE_J_CASVT,
+  volume = {35},
+  number = {4},
+  pages = {3119--3133},
+  issn = {1558-2205},
+  doi = {10.1109/TCSVT.2024.3502257},
+  urldate = {2025-10-09},
+  abstract = {3D Gaussian Splatting (3DGS) has become an emerging tool for dynamic scene reconstruction. However, existing methods mainly focus on developing various strategies to extend static 3DGS into a time-variant representation, while overlooking the rich motion information implicitly carried by 2D observations, thus suffering from performance degradation and model redundancy. To address the above problem, we propose a novel motion-aware enhancement framework for dynamic scene reconstruction, which mines useful motion cues from optical flow to improve different paradigms of dynamic 3DGS. Specifically, we first step beyond the vanilla render-based cross-dimensional supervision that suffers from ambiguity and instability, and establish a more robust and effective dense correspondence between 3D Gaussian movements and pixel-level flows. Then a novel flow augmentation method is introduced with additional insights into uncertainty and loss collaboration. Furthermore, for the prevalent deformation-based paradigm that presents a harder optimization problem, a transient-aware deformation auxiliary module is proposed. We conduct extensive experiments on both multi-view and monocular scenes to verify the merits of our work. Compared with the baselines, our method shows significant superiority in both rendering quality and efficiency. The code will be publicly available at https://github.com/jasongzy/MAGS.},
+  file = {/Users/wangyibo/Zotero/storage/838UTX2R/Guo 等 - 2025 - Motion-Aware 3D Gaussian Splatting for Efficient Dynamic Scene Reconstruction.pdf}
+}
+
+@article{liuGeoRGSGeometricRegularization2024,
+  title = {{{GeoRGS}}: {{Geometric Regularization}} for {{Real-Time Novel View Synthesis From Sparse Inputs}}},
+  shorttitle = {{{GeoRGS}}},
+  author = {Liu, Zhaoliang and Su, Jinhe and Cai, Guorong and Chen, Yidong and Zeng, Binghui and Wang, Zongyue},
+  year = 2024,
+  month = dec,
+  journal = IEEE_J_CASVT,
+  volume = {34},
+  number = {12},
+  pages = {13113--13126},
+  issn = {1051-8215, 1558-2205},
+  doi = {10.1109/TCSVT.2024.3447113},
+  urldate = {2026-03-21},
+  abstract = {When the number of available training views is limited, NeRF and 3DGS will soon overfit the optimization and learn the wrong scene geometry. For this challenge, a common solution is to provide depth prior as supervision to correct scene geometry. In this work, we present Geometric Regularized 3D Gaussian Splatting (GeoRGS), a priors-independent method for improving novel view synthesis from sparse inputs. We analyze the problems of the density control strategy in 3DGS with sparse inputs, and find that correcting the erroneous Gaussian growth trend at the beginning of training is effective in mitigating overfitting. Based on this analysis, we propose two geometric regularization methods that do not require prior information. One is based on selecting seed patches of 3D Gaussian from the scene, which guides growth to form correct scene geometry, while the other focuses on regularizing depth similarity between object surfaces and edges. GeoRGS achieves state-of-the-art performance in novel view synthesis from sparse input on LLFF, Blender, RealEstate10K and MipNeRF360 datasets, while also demonstrating significantly faster training speeds and rendering efficiency compared to other baselines.},
+  copyright = {https://ieeexplore.ieee.org/Xplorehelp/downloads/license-information/IEEE.html},
+  langid = {english},
+  file = {/Users/wangyibo/Zotero/storage/5GQ5EYPU/Liu 等 - 2024 - GeoRGS Geometric Regularization for Real-Time Novel View Synthesis From Sparse Inputs.pdf}
+}
+
+@inproceedings{liangGSIR3DGaussian2024,
+  title = {{{GS-IR}}: {{3D Gaussian Splatting}} for {{Inverse Rendering}}},
+  shorttitle = {{{GS-IR}}},
+  booktitle = PROC_CVPR,
+  author = {Liang, Zhihao and Zhang, Qi and Feng, Ying and Shan, Ying and Jia, Kui},
+  year = 2024,
+  pages = {21644--21653},
+  urldate = {2026-03-23},
+  langid = {english},
+  file = {/Users/wangyibo/Zotero/storage/ZU5PDIBG/Liang 等 - 2024 - GS-IR 3D Gaussian Splatting for Inverse Rendering.pdf}
+}
+
+@inproceedings{chenGaussianEditorSwiftControllable2024,
+  title = {{{GaussianEditor}}: {{Swift}} and {{Controllable 3D Editing}} with {{Gaussian Splatting}}},
+  shorttitle = {{{GaussianEditor}}},
+  booktitle = PROC_CVPR,
+  author = {Chen, Yiwen and Chen, Zilong and Zhang, Chi and Wang, Feng and Yang, Xiaofeng and Wang, Yikai and Cai, Zhongang and Yang, Lei and Liu, Huaping and Lin, Guosheng},
+  year = 2024,
+  pages = {21476--21485},
+  urldate = {2026-03-23},
+  langid = {english},
+  file = {/Users/wangyibo/Zotero/storage/XGGJ9VMG/Chen 等 - 2024 - GaussianEditor Swift and Controllable 3D Editing with Gaussian Splatting.pdf}
+}
+
+@article{songUniqueSplatViewConditioned3D2025,
+  title = {{{UniqueSplat}}: {{View-Conditioned 3D Gaussian Splatting}} for {{Generalizable 3D Reconstruction}}},
+  shorttitle = {{{UniqueSplat}}},
+  author = {Song, Haixu and Yang, Xiaoke and Zhang, Shengjun and Lu, Jiwen and Duan, Yueqi},
+  year = 2025,
+  journal = IEEE_J_IP,
+  volume = {34},
+  pages = {8376--8389},
+  issn = {1941-0042},
+  doi = {10.1109/TIP.2025.3642574},
+  urldate = {2026-06-14},
+  abstract = {In this paper, we propose UniqueSplat, a view-conditioned feed-forward 3D Gaussian Splatting model to reconstruct customized 3D radiance fields for each view query. Existing feed-forward methods such as pixelSplat and MVSplat aim to generate fixed Gaussians across all views of each scene by minimizing the error between rendered views and ground-truth images. However, such fixed Gaussians generally render images from all views and lack the ability to adapt to specific viewpoints, as they do not incorporate target view information when predicting Gaussians. To address this, our UniqueSplat learns the view-conditioned information as a prior and incorporates this knowledge into network parameters, so that Gaussians are dynamically adjusted in accordance with different views. Specifically, we propose a two-branch view-conditioned hyperNetwork to simultaneously learn view-agnostic embeddings and view-specific knowledge, which not only explores the shareable knowledge from various views, but also adapts the model to specific views at test time. Extensive experiments on widely-used datasets including RealEstate10K, ACID and DTU demonstrate the superiority of UniqueSplat over the state-of-the-art methods. Moreover, UniqueSplat encouragingly outperforms existing methods in cross-dataset evaluation, showing its notable generalization ability.},
+  keywords = {Adaptation models,Costs,Feature extraction,Feed-forward 3D Gaussian Splatting,generalizable novel view synthesis,Image reconstruction,Predictive models,Real-time systems,Rendering (computer graphics),Solid modeling,sparse-view,Three-dimensional displays,Training,view-conditioned},
+  file = {/Users/wangyibo/Zotero/storage/S9D8NRXY/Song 等 - 2025 - UniqueSplat View-Conditioned 3D Gaussian Splatting for Generalizable 3D Reconstruction.pdf}
+}
+
+@article{wangPhysicallyPlausibleHuman2026,
+  title = {Physically {{Plausible Human}}--{{Object Rendering From Sparse Views}} via {{3D Gaussian Splatting}}},
+  author = {Wang, Weiquan and Xiao, Jun and Yang, Yi and Zhuang, Yueting and Chen, Long},
+  year = 2026,
+  journal = IEEE_J_IP,
+  volume = {35},
+  pages = {3938--3953},
+  issn = {1941-0042},
+  doi = {10.1109/TIP.2026.3682124},
+  urldate = {2026-06-14},
+  abstract = {Rendering realistic human-object interactions (HOIs) from sparse-view inputs is a challenging yet crucial task for various real-world applications. Existing methods often struggle to simultaneously achieve high rendering quality, physical plausibility, and computational efficiency. To address these limitations, we propose HOGS (Human-Object Rendering via 3D Gaussian Splatting), a novel framework for efficient HOI rendering with physically plausible geometric constraints from sparse views. HOGS represents both humans and objects as dynamic 3D Gaussians. Central to HOGS is a novel optimization process that operates directly on these Gaussians to enforce geometric consistency (i.e., preventing inter-penetration or floating contacts) to achieve physical plausibility. To support this core optimization under sparse-view ambiguity, our framework incorporates two pre-trained modules: an optimization-guided Human Pose Refiner for robust estimation under sparse-view occlusions, and a Human-Object Contact Predictor that efficiently identifies interaction regions to guide our novel contact and separation losses. Extensive experiments on both human-object and hand-object interaction datasets demonstrate that HOGS achieves state-of-the-art rendering quality and maintains high computational efficiency.},
+  keywords = {3D Gaussian splatting,Activity recognition,Avatars,Circuits and systems,Communications technology,Contacts,Filtering,Filters,Graphical user interfaces,Human activity recognition,Human-object interactions,Modulation,physically plausible optimization,sparse-view rendering},
+  file = {/Users/wangyibo/Zotero/storage/3EYHGB6M/Wang 等 - 2026 - Physically Plausible Human–Object Rendering From Sparse Views via 3D Gaussian Splatting.pdf}
+}
+
+@article{huSAGDBoundaryEnhancedSegment2026,
+  title = {{{SAGD}}: {{Boundary-Enhanced Segment Anything}} in {{3D Gaussian}} via {{Gaussian Decomposition}}},
+  shorttitle = {{{SAGD}}},
+  author = {Hu, Xu and Wang, Yuxi and Fan, Lue and Luo, Chuanchen and Fan, Junsong and Lei, Zhen and Li, Qing and Peng, Junran and Zhang, Zhaoxiang},
+  year = 2026,
+  journal = IEEE_J_IP,
+  volume = {35},
+  pages = {4934--4946},
+  issn = {1941-0042},
+  doi = {10.1109/TIP.2026.3689408},
+  urldate = {2026-06-14},
+  abstract = {3D Gaussian Splatting has emerged as an alternative 3D representation for novel view synthesis, benefiting from its high-quality rendering results and real-time rendering speed. However, the 3D Gaussians learned by 3D-GS have ambiguous structures without any geometry constraints. This inherent issue in 3D-GS leads to a rough boundary when segmenting individual objects. To remedy these problems, we propose SAGD, a conceptually simple yet effective boundary-enhanced segmentation pipeline for 3D-GS to improve segmentation accuracy while preserving segmentation speed. Specifically, we introduce a Gaussian Decomposition scheme, which ingeniously utilizes the special structure of 3D Gaussians, finds out, and then decomposes the boundary Gaussians. Moreover, to achieve fast interactive 3D segmentation, we introduce a novel training-free pipeline by lifting a 2D foundation model to 3D-GS. Extensive experiments demonstrate that our approach achieves high-quality 3D segmentation without rough boundary issues, which can be easily applied to other scene editing tasks. Our code is publicly available at https://github.com/XuHu0529/SAGS},
+  keywords = {3D Gaussian splatting,3D segmentation,boundary issues,Computer vision,Computers,Conferences,Labeling,Modeling,Neural radiance field,Object detection,Pattern recognition,Rendering (computer graphics),Timing},
+  file = {/Users/wangyibo/Zotero/storage/DIC7563T/Hu 等 - 2026 - SAGD Boundary-Enhanced Segment Anything in 3D Gaussian via Gaussian Decomposition.pdf}
+}
+
+@inproceedings{schonbergerStructureFromMotionRevisited2016,
+  title = {Structure-{{From-Motion Revisited}}},
+  booktitle = PROC_CVPR,
+  author = {Schonberger, Johannes L. and Frahm, Jan-Michael},
+  year = 2016,
+  pages = {4104--4113},
+  urldate = {2026-07-09},
+  file = {/Users/wangyibo/Zotero/storage/SPUBE5MA/Schonberger和Frahm - 2016 - Structure-From-Motion Revisited.pdf}
+}
+
+@article{chang3DUSFramePositioning2003,
+  title = {3-{{D US}} Frame Positioning Using Speckle Decorrelation and Image Registration},
+  author = {Chang, Ruey-Feng and Wu, Wen-Jie and Chen, Dar-Ren and Chen, Wei-Ming and Shu, Wei and Lee, Jau-Hong and Jeng, Long-Bin},
+  year = 2003,
+  month = jun,
+  journal = J_UMB,
+  volume = {29},
+  number = {6},
+  pages = {801--812},
+  issn = {0301-5629},
+  doi = {10.1016/S0301-5629(03)00036-X},
+  langid = {english},
+  keywords = {paper1}
+}

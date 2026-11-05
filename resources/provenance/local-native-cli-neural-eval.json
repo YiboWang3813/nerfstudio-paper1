@@ -1,0 +1,21 @@
+{
+  "experiment_name": "synthetic_liver-l1",
+  "method_name": "ultrasound-nerfus",
+  "checkpoint": "/home/yibo/paper1/outputs/preformal-smoke/synthetic_liver-l1/ultrasound-nerfus/engineering-1793785745872021114/nerfstudio_models/step-000000002.ckpt",
+  "results": {
+    "psnr": 14.261180520057678,
+    "l1": 0.16977582760155202,
+    "ssim_window": 0.02109596850350499,
+    "ssim": 0.014255635067820549,
+    "lpips": 0.7432864546775818,
+    "dists": 0.6612342089414597,
+    "gmsd": 0.2551553167402744,
+    "psnr_std": 0.5452956973831582,
+    "l1_std": 0.0162276110106406,
+    "ssim_window_std": 0.004490961454110778,
+    "ssim_std": 0.004026328698859053,
+    "lpips_std": 0.05303451938784339,
+    "dists_std": 0.018202415649334436,
+    "gmsd_std": 0.006395019830632522
+  }
+}

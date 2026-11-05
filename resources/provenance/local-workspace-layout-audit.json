@@ -1,0 +1,1465 @@
+{
+  "repos": {
+    "docs": {
+      "tracked_files": 397,
+      "tracked_bytes": 272262555,
+      "largest": [
+        {
+          "path": "resources/papers/gaussianpile-paper.pdf",
+          "bytes": 49454725,
+          "symlink": false
+        },
+        {
+          "path": "resources/papers/phys-splat-paper.pdf",
+          "bytes": 26905118,
+          "symlink": false
+        },
+        {
+          "path": "resources/papers/robust-pose-estimation-paper.pdf",
+          "bytes": 19851780,
+          "symlink": false
+        },
+        {
+          "path": "resources/papers/ultragray-paper.pdf",
+          "bytes": 15626617,
+          "symlink": false
+        },
+        {
+          "path": "resources/papers/topo4d-paper.pdf",
+          "bytes": 14804633,
+          "symlink": false
+        },
+        {
+          "path": "resources/papers/coarse-pose-paper.pdf",
+          "bytes": 12082016,
+          "symlink": false
+        },
+        {
+          "path": "resources/papers/grrt-paper.pdf",
+          "bytes": 11926075,
+          "symlink": false
+        },
+        {
+          "path": "resources/papers/nerfus-dagli24a.pdf",
+          "bytes": 11696508,
+          "symlink": false
+        },
+        {
+          "path": "resources/papers/loop-sparse-gs-paper.pdf",
+          "bytes": 10799388,
+          "symlink": false
+        },
+        {
+          "path": "resources/papers/fracture-gs-paper.pdf",
+          "bytes": 10320987,
+          "symlink": false
+        },
+        {
+          "path": "resources/papers/sdhnet-paper.pdf",
+          "bytes": 9847973,
+          "symlink": false
+        },
+        {
+          "path": "resources/papers/tus-rec-2024-summary.pdf",
+          "bytes": 9712519,
+          "symlink": false
+        }
+      ],
+      "extensions": {
+        ".md": 230,
+        ".tsv": 86,
+        ".json": 38,
+        ".pdf": 26,
+        ".tex": 12,
+        ".zip": 4,
+        "": 1
+      },
+      "top_directories": {
+        "experiments": 168,
+        "reports": 96,
+        "resources": 54,
+        "development": 31,
+        "protocols": 24,
+        "manuscript": 15,
+        "decisions": 6,
+        ".gitignore": 1,
+        "AGENTS.md": 1,
+        "README.md": 1
+      },
+      "tracked_symlinks": [],
+      "status": ""
+    },
+    "nerfstudio": {
+      "tracked_files": 1332,
+      "tracked_bytes": 80391731,
+      "largest": [
+        {
+          "path": "docs/nerfology/model_components/visualize_spatial_distortions.ipynb",
+          "bytes": 15364953,
+          "symlink": false
+        },
+        {
+          "path": "experiments/paper1/provenance/eehpc-20261017/migration/numeric_snapshot_manifest.json",
+          "bytes": 13222337,
+          "symlink": false
+        },
+        {
+          "path": "docs/nerfology/model_components/visualize_cameras.ipynb",
+          "bytes": 7576126,
+          "symlink": false
+        },
+        {
+          "path": "docs/nerfology/model_components/visualize_samples.ipynb",
+          "bytes": 7161821,
+          "symlink": false
+        },
+        {
+          "path": "experiments/paper1/provenance/eehpc-20261017/migration/import_commits_results.json",
+          "bytes": 5977593,
+          "symlink": false
+        },
+        {
+          "path": "docs/nerfology/model_components/visualize_samplers.ipynb",
+          "bytes": 4089889,
+          "symlink": false
+        },
+        {
+          "path": "docs/quickstart/imgs/record_3d_export_selection.png",
+          "bytes": 3907216,
+          "symlink": false
+        },
+        {
+          "path": "docs/extensions/imgs/sdfstudio_overview.svg",
+          "bytes": 2985428,
+          "symlink": false
+        },
+        {
+          "path": "docs/quickstart/imgs/record_3d_video_selection.png",
+          "bytes": 2485615,
+          "symlink": false
+        },
+        {
+          "path": "experiments/paper1/provenance/eehpc-20261017/migration/docs_chronology.json",
+          "bytes": 1229394,
+          "symlink": false
+        },
+        {
+          "path": "docs/nerfology/model_components/visualize_encoders.ipynb",
+          "bytes": 950266,
+          "symlink": false
+        },
+        {
+          "path": "docs/quickstart/imgs/record3d_promo.png",
+          "bytes": 847234,
+          "symlink": false
+        }
+      ],
+      "extensions": {
+        ".py": 692,
+        ".sh": 214,
+        ".yaml": 117,
+        ".md": 75,
+        ".png": 63,
+        ".json": 45,
+        ".rst": 31,
+        ".jsx": 28,
+        ".js": 14,
+        "": 12,
+        ".yml": 7,
+        ".ipynb": 6
+      },
+      "top_directories": {
+        "paper1_legacy": 705,
+        "nerfstudio": 336,
+        "docs": 164,
+        "experiments": 50,
+        "tests": 39,
+        "scripts": 14,
+        ".github": 6,
+        ".vscode": 3,
+        ".devcontainer": 2,
+        ".dockerignore": 1,
+        ".gitattributes": 1,
+        ".gitignore": 1
+      },
+      "tracked_symlinks": [],
+      "status": ""
+    },
+    "gsplat": {
+      "tracked_files": 773,
+      "tracked_bytes": 31955865,
+      "largest": [
+        {
+          "path": "docs/source/assets/training.gif",
+          "bytes": 21189221,
+          "symlink": false
+        },
+        {
+          "path": "docs/source/assets/square.gif",
+          "bytes": 3475855,
+          "symlink": false
+        },
+        {
+          "path": "assets/test_garden.npz",
+          "bytes": 2083288,
+          "symlink": false
+        },
+        {
+          "path": "docs/source/assets/viewer_garden_480p.mp4",
+          "bytes": 697351,
+          "symlink": false
+        },
+        {
+          "path": "gsplat/cuda/csrc/ultrasound/src/shader/ray_attenuation.cu",
+          "bytes": 116597,
+          "symlink": false
+        },
+        {
+          "path": "gsplat/cuda/csrc/ultrasound/backends/ultrags/third_party/glm/glm/gtx/vec_swizzle.hpp",
+          "bytes": 76321,
+          "symlink": false
+        },
+        {
+          "path": "gsplat/cuda/csrc/ultrasound/backends/ultrags/third_party/stbi_image_write.h",
+          "bytes": 71220,
+          "symlink": false
+        },
+        {
+          "path": "gsplat/cuda/csrc/ultrasound/backends/ultrags/third_party/glm/glm/gtc/type_aligned.hpp",
+          "bytes": 67983,
+          "symlink": false
+        },
+        {
+          "path": "gsplat/cuda/csrc/ultrasound/backends/ultrags/third_party/glm/glm/gtc/type_precision.hpp",
+          "bytes": 64221,
+          "symlink": false
+        },
+        {
+          "path": "gsplat/cuda/_wrapper.py",
+          "bytes": 63688,
+          "symlink": false
+        },
+        {
+          "path": "gsplat/rendering.py",
+          "bytes": 57737,
+          "symlink": false
+        },
+        {
+          "path": "gsplat/cuda/csrc/ultrasound/backends/ultrags/third_party/glm/glm/detail/_swizzle.hpp",
+          "bytes": 48409,
+          "symlink": false
+        }
+      ],
+      "extensions": {
+        ".hpp": 277,
+        ".inl": 139,
+        ".py": 101,
+        ".cu": 75,
+        ".cuh": 69,
+        ".sh": 20,
+        ".h": 19,
+        ".cpp": 15,
+        ".rst": 14,
+        "": 12,
+        ".md": 11,
+        ".yml": 5
+      },
+      "top_directories": {
+        "gsplat": 604,
+        "ultrasound_ops": 92,
+        "docs": 24,
+        "examples": 23,
+        ".github": 10,
+        "tests": 7,
+        ".clang-format": 1,
+        ".clangd_template": 1,
+        ".gitignore": 1,
+        ".gitmodules": 1,
+        "AGENTS.md": 1,
+        "CITATION.bib": 1
+      },
+      "tracked_symlinks": [],
+      "status": ""
+    }
+  },
+  "filesystem": {
+    "directory_totals": {
+      "outputs/eehpc": {
+        "files": 148130,
+        "bytes": 12732620799,
+        "symlinks": 0
+      },
+      "nerfstudio/experiments": {
+        "files": 6588,
+        "bytes": 394301808,
+        "symlinks": 438
+      },
+      "outputs/eehpc-logs": {
+        "files": 4598,
+        "bytes": 659238980,
+        "symlinks": 0
+      },
+      "outputs/preformal-smoke": {
+        "files": 776,
+        "bytes": 93984471,
+        "symlinks": 0
+      },
+      "nerfstudio/paper1_legacy": {
+        "files": 705,
+        "bytes": 3184927,
+        "symlinks": 0
+      },
+      "gsplat/gsplat": {
+        "files": 657,
+        "bytes": 4297880,
+        "symlinks": 0
+      },
+      "outputs/artifacts": {
+        "files": 594,
+        "bytes": 91533340,
+        "symlinks": 0
+      },
+      "nerfstudio/nerfstudio": {
+        "files": 551,
+        "bytes": 5543663,
+        "symlinks": 0
+      },
+      "outputs/provenance": {
+        "files": 413,
+        "bytes": 154370617,
+        "symlinks": 0
+      },
+      "outputs/artifact-inputs": {
+        "files": 333,
+        "bytes": 49198961,
+        "symlinks": 55
+      },
+      "docs/experiments": {
+        "files": 168,
+        "bytes": 3660917,
+        "symlinks": 0
+      },
+      "nerfstudio/docs": {
+        "files": 164,
+        "bytes": 50100629,
+        "symlinks": 0
+      },
+      "migration/complete-assets-20261105": {
+        "files": 96,
+        "bytes": 718920379,
+        "symlinks": 4
+      },
+      "docs/reports": {
+        "files": 96,
+        "bytes": 876741,
+        "symlinks": 0
+      },
+      "gsplat/ultrasound_ops": {
+        "files": 92,
+        "bytes": 407844,
+        "symlinks": 25
+      },
+      "outputs/probes": {
+        "files": 64,
+        "bytes": 4352469,
+        "symlinks": 0
+      },
+      "docs/resources": {
+        "files": 54,
+        "bytes": 266682362,
+        "symlinks": 0
+      },
+      "nerfstudio/tests": {
+        "files": 46,
+        "bytes": 239392,
+        "symlinks": 0
+      },
+      "outputs/reference-releases": {
+        "files": 43,
+        "bytes": 1314605,
+        "symlinks": 0
+      },
+      "outputs/results-probes": {
+        "files": 36,
+        "bytes": 1727046841,
+        "symlinks": 0
+      },
+      "outputs/engineering": {
+        "files": 33,
+        "bytes": 4272024,
+        "symlinks": 0
+      },
+      "docs/development": {
+        "files": 31,
+        "bytes": 526882,
+        "symlinks": 0
+      },
+      ".venv/lib": {
+        "files": 26,
+        "bytes": 68519,
+        "symlinks": 0
+      },
+      "gsplat/docs": {
+        "files": 24,
+        "bytes": 25425886,
+        "symlinks": 0
+      },
+      "docs/protocols": {
+        "files": 24,
+        "bytes": 314252,
+        "symlinks": 0
+      },
+      "gsplat/examples": {
+        "files": 23,
+        "bytes": 169140,
+        "symlinks": 0
+      },
+      "nerfstudio/.ruff_cache": {
+        "files": 22,
+        "bytes": 20654,
+        "symlinks": 0
+      },
+      "outputs/frozen-inputs": {
+        "files": 19,
+        "bytes": 20357532,
+        "symlinks": 0
+      },
+      "nerfstudio/scripts": {
+        "files": 16,
+        "bytes": 84358,
+        "symlinks": 0
+      },
+      ".venv/bin": {
+        "files": 15,
+        "bytes": 17626,
+        "symlinks": 3
+      },
+      "docs/manuscript": {
+        "files": 15,
+        "bytes": 157059,
+        "symlinks": 0
+      },
+      "gsplat/.github": {
+        "files": 10,
+        "bytes": 28667,
+        "symlinks": 0
+      },
+      "outputs/eehpc-wandb": {
+        "files": 10,
+        "bytes": 15532,
+        "symlinks": 3
+      },
+      "gsplat/tests": {
+        "files": 8,
+        "bytes": 66221,
+        "symlinks": 0
+      },
+      "migration/converted-protocol-check": {
+        "files": 8,
+        "bytes": 49613,
+        "symlinks": 0
+      },
+      "migration/plans": {
+        "files": 7,
+        "bytes": 39092,
+        "symlinks": 0
+      },
+      "nerfstudio/.github": {
+        "files": 6,
+        "bytes": 6087,
+        "symlinks": 0
+      },
+      "docs/decisions": {
+        "files": 6,
+        "bytes": 40410,
+        "symlinks": 0
+      },
+      "migration/dataset-publications": {
+        "files": 5,
+        "bytes": 70366,
+        "symlinks": 0
+      },
+      "nerfstudio/.pytest_cache": {
+        "files": 5,
+        "bytes": 4109,
+        "symlinks": 0
+      },
+      "gsplat/.pytest_cache": {
+        "files": 4,
+        "bytes": 781,
+        "symlinks": 0
+      },
+      "nerfstudio/.vscode": {
+        "files": 3,
+        "bytes": 8368,
+        "symlinks": 0
+      },
+      "outputs/reference-assets": {
+        "files": 3,
+        "bytes": 5207,
+        "symlinks": 5
+      },
+      "nerfstudio/.devcontainer": {
+        "files": 2,
+        "bytes": 994,
+        "symlinks": 0
+      },
+      "AGENTS.md": {
+        "files": 1,
+        "bytes": 8006,
+        "symlinks": 0
+      },
+      "gsplat/.gitmodules": {
+        "files": 1,
+        "bytes": 129,
+        "symlinks": 0
+      },
+      "gsplat/MANIFEST.in": {
+        "files": 1,
+        "bytes": 176,
+        "symlinks": 0
+      },
+      "gsplat/README.md": {
+        "files": 1,
+        "bytes": 5655,
+        "symlinks": 0
+      },
+      "gsplat/.gitignore": {
+        "files": 1,
+        "bytes": 1431,
+        "symlinks": 0
+      },
+      "gsplat/.clangd_template": {
+        "files": 1,
+        "bytes": 663,
+        "symlinks": 0
+      },
+      "gsplat/AGENTS.md": {
+        "files": 1,
+        "bytes": 1410,
+        "symlinks": 0
+      },
+      "gsplat/setup.py": {
+        "files": 1,
+        "bytes": 4628,
+        "symlinks": 0
+      },
+      "gsplat/.clang-format": {
+        "files": 1,
+        "bytes": 118,
+        "symlinks": 0
+      },
+      "gsplat/EXPLORATION.md": {
+        "files": 1,
+        "bytes": 3208,
+        "symlinks": 0
+      },
+      "gsplat/LICENSE": {
+        "files": 1,
+        "bytes": 11357,
+        "symlinks": 0
+      },
+      "gsplat/CITATION.bib": {
+        "files": 1,
+        "bytes": 517,
+        "symlinks": 0
+      },
+      "gsplat/profiling": {
+        "files": 1,
+        "bytes": 11853,
+        "symlinks": 0
+      },
+      "gsplat/assets": {
+        "files": 1,
+        "bytes": 2083288,
+        "symlinks": 0
+      },
+      "migration/native-density-tests.log": {
+        "files": 1,
+        "bytes": 4308,
+        "symlinks": 0
+      },
+      "migration/publish-tus_rec_2024_qc.log": {
+        "files": 1,
+        "bytes": 4132,
+        "symlinks": 0
+      },
+      "migration/prepared-formal-config.log": {
+        "files": 1,
+        "bytes": 3635,
+        "symlinks": 0
+      },
+      "migration/native-tests-d884ff2a.log": {
+        "files": 1,
+        "bytes": 8343,
+        "symlinks": 0
+      },
+      "migration/analytic-quaternion-continuation.log": {
+        "files": 1,
+        "bytes": 8319,
+        "symlinks": 0
+      },
+      "migration/protocols-2caa7953-e75ec98f.json": {
+        "files": 1,
+        "bytes": 45476,
+        "symlinks": 0
+      },
+      "migration/iqa-install.log": {
+        "files": 1,
+        "bytes": 182,
+        "symlinks": 0
+      },
+      "migration/spine-native-core-a03.log": {
+        "files": 1,
+        "bytes": 12477,
+        "symlinks": 0
+      },
+      "migration/artifact-storage-validation.json": {
+        "files": 1,
+        "bytes": 985,
+        "symlinks": 0
+      },
+      "migration/cuda-kernel-tests.log": {
+        "files": 1,
+        "bytes": 791,
+        "symlinks": 0
+      },
+      "migration/full-metrics.log": {
+        "files": 1,
+        "bytes": 2557,
+        "symlinks": 0
+      },
+      "migration/liver-native-eval.log": {
+        "files": 1,
+        "bytes": 1797,
+        "symlinks": 0
+      },
+      "migration/native-style-final.log": {
+        "files": 1,
+        "bytes": 104,
+        "symlinks": 0
+      },
+      "migration/registry-registration.log": {
+        "files": 1,
+        "bytes": 67,
+        "symlinks": 0
+      },
+      "migration/metric-assets.log": {
+        "files": 1,
+        "bytes": 360,
+        "symlinks": 0
+      },
+      "migration/medical-transfer.log": {
+        "files": 1,
+        "bytes": 22632,
+        "symlinks": 0
+      },
+      "migration/native-protocol-tests.log": {
+        "files": 1,
+        "bytes": 8343,
+        "symlinks": 0
+      },
+      "migration/liver-native-eval-a03.log": {
+        "files": 1,
+        "bytes": 1808,
+        "symlinks": 0
+      },
+      "migration/liver-native-smoke.log": {
+        "files": 1,
+        "bytes": 12087,
+        "symlinks": 0
+      },
+      "migration/native-cli-neural-eval.json": {
+        "files": 1,
+        "bytes": 773,
+        "symlinks": 0
+      },
+      "migration/docs-layout-20261105.json": {
+        "files": 1,
+        "bytes": 971270,
+        "symlinks": 0
+      },
+      "migration/tus-transfer.log": {
+        "files": 1,
+        "bytes": 0,
+        "symlinks": 0
+      },
+      "migration/spine-transfer.log": {
+        "files": 1,
+        "bytes": 0,
+        "symlinks": 0
+      },
+      "migration/source-ultranerf.json": {
+        "files": 1,
+        "bytes": 7148,
+        "symlinks": 0
+      },
+      "migration/build-gaussianpile.log": {
+        "files": 1,
+        "bytes": 13221,
+        "symlinks": 0
+      },
+      "migration/source-overlay-install.log": {
+        "files": 1,
+        "bytes": 775,
+        "symlinks": 0
+      },
+      "migration/continuation-diagnosis.log": {
+        "files": 1,
+        "bytes": 9041,
+        "symlinks": 0
+      },
+      "migration/docs-obsolete-links-20261105.json": {
+        "files": 1,
+        "bytes": 28169,
+        "symlinks": 0
+      },
+      "migration/protocol-transfer.log": {
+        "files": 1,
+        "bytes": 27,
+        "symlinks": 0
+      },
+      "migration/audit_workspace_layout.py": {
+        "files": 1,
+        "bytes": 2647,
+        "symlinks": 0
+      },
+      "migration/liver-transfer.log": {
+        "files": 1,
+        "bytes": 109,
+        "symlinks": 0
+      },
+      "migration/native-cli.log": {
+        "files": 1,
+        "bytes": 11715,
+        "symlinks": 0
+      },
+      "migration/representative-quality-acceptance.json": {
+        "files": 1,
+        "bytes": 1540,
+        "symlinks": 0
+      },
+      "migration/source-data.jsonl": {
+        "files": 1,
+        "bytes": 206786,
+        "symlinks": 0
+      },
+      "migration/registry-registration.pid": {
+        "files": 1,
+        "bytes": 8,
+        "symlinks": 0
+      },
+      "migration/build-ultrags.log": {
+        "files": 1,
+        "bytes": 49439,
+        "symlinks": 0
+      },
+      "migration/preformal-final-matrix.log": {
+        "files": 1,
+        "bytes": 196541,
+        "symlinks": 0
+      },
+      "migration/probe-summary-storage-check.log": {
+        "files": 1,
+        "bytes": 1094,
+        "symlinks": 0
+      },
+      "migration/preformal-acceptance.json": {
+        "files": 1,
+        "bytes": 5169,
+        "symlinks": 0
+      },
+      "migration/docs-transfer.log": {
+        "files": 1,
+        "bytes": 0,
+        "symlinks": 0
+      },
+      "migration/curate_assets.py": {
+        "files": 1,
+        "bytes": 2632,
+        "symlinks": 0
+      },
+      "migration/native-loss-semantics-tests.log": {
+        "files": 1,
+        "bytes": 791,
+        "symlinks": 0
+      },
+      "migration/merge_results_into_docs.py": {
+        "files": 1,
+        "bytes": 11963,
+        "symlinks": 0
+      },
+      "migration/native-method-help.log": {
+        "files": 1,
+        "bytes": 54150,
+        "symlinks": 0
+      },
+      "migration/publish-spine_phantom.log": {
+        "files": 1,
+        "bytes": 894,
+        "symlinks": 0
+      },
+      "migration/prepared-native-formal-config.log": {
+        "files": 1,
+        "bytes": 3642,
+        "symlinks": 0
+      },
+      "migration/source-ultragray.json": {
+        "files": 1,
+        "bytes": 7210,
+        "symlinks": 0
+      },
+      "migration/reference-backend-build.log": {
+        "files": 1,
+        "bytes": 110649,
+        "symlinks": 0
+      },
+      "migration/results-probe-gpu4.log": {
+        "files": 1,
+        "bytes": 14629,
+        "symlinks": 0
+      },
+      "migration/preformal-ready-config.log": {
+        "files": 1,
+        "bytes": 3641,
+        "symlinks": 0
+      },
+      "migration/medical-files.txt": {
+        "files": 1,
+        "bytes": 15821,
+        "symlinks": 0
+      },
+      "migration/source-ultrags_baseline.json": {
+        "files": 1,
+        "bytes": 8476,
+        "symlinks": 0
+      },
+      "migration/package-cache-repair.json": {
+        "files": 1,
+        "bytes": 412,
+        "symlinks": 0
+      },
+      "migration/native-matrix-9348e3cd.log": {
+        "files": 1,
+        "bytes": 157443,
+        "symlinks": 0
+      },
+      "migration/results-probe-gpu5.log": {
+        "files": 1,
+        "bytes": 14482,
+        "symlinks": 0
+      },
+      "migration/publish-synthetic_liver.log": {
+        "files": 1,
+        "bytes": 582,
+        "symlinks": 0
+      },
+      "migration/rewrite_artifact_links.py": {
+        "files": 1,
+        "bytes": 1540,
+        "symlinks": 0
+      },
+      "migration/preformal-final-protocols.json": {
+        "files": 1,
+        "bytes": 45476,
+        "symlinks": 0
+      },
+      "migration/registry-registration.json": {
+        "files": 1,
+        "bytes": 503,
+        "symlinks": 0
+      },
+      "migration/iqa-extra-install.log": {
+        "files": 1,
+        "bytes": 234,
+        "symlinks": 0
+      },
+      "migration/liver-native-smoke-a02.log": {
+        "files": 1,
+        "bytes": 12087,
+        "symlinks": 0
+      },
+      "migration/liver-global-native-smoke.log": {
+        "files": 1,
+        "bytes": 12482,
+        "symlinks": 0
+      },
+      "migration/summarize_results_probes.py": {
+        "files": 1,
+        "bytes": 4311,
+        "symlinks": 0
+      },
+      "migration/spine-native-eval-a03.log": {
+        "files": 1,
+        "bytes": 1808,
+        "symlinks": 0
+      },
+      "migration/preformal-data-config-validation.log": {
+        "files": 1,
+        "bytes": 66,
+        "symlinks": 0
+      },
+      "migration/preformal-current-config-validation.json": {
+        "files": 1,
+        "bytes": 45476,
+        "symlinks": 0
+      },
+      "migration/build-slice3dgs.log": {
+        "files": 1,
+        "bytes": 3468,
+        "symlinks": 0
+      },
+      "migration/source-ultragauss.json": {
+        "files": 1,
+        "bytes": 7303,
+        "symlinks": 0
+      },
+      "migration/native-matrix-d884ff2a.log": {
+        "files": 1,
+        "bytes": 157443,
+        "symlinks": 0
+      },
+      "migration/results-probe-ultrags-historical.log": {
+        "files": 1,
+        "bytes": 6074,
+        "symlinks": 0
+      },
+      "migration/fix_historical_artifact_links.py": {
+        "files": 1,
+        "bytes": 1956,
+        "symlinks": 0
+      },
+      "migration/preformal-realdata-acceptance.log": {
+        "files": 1,
+        "bytes": 46548,
+        "symlinks": 0
+      },
+      "migration/preformal-final-contracts.log": {
+        "files": 1,
+        "bytes": 8343,
+        "symlinks": 0
+      },
+      "migration/native-matrix-smoke.log": {
+        "files": 1,
+        "bytes": 17322,
+        "symlinks": 0
+      },
+      "migration/tus-native-eval-a03.log": {
+        "files": 1,
+        "bytes": 1804,
+        "symlinks": 0
+      },
+      "migration/source-ours.json": {
+        "files": 1,
+        "bytes": 10558,
+        "symlinks": 0
+      },
+      "migration/native-matrix-smoke.json": {
+        "files": 1,
+        "bytes": 94996,
+        "symlinks": 0
+      },
+      "migration/native-tests-5f6c435a.log": {
+        "files": 1,
+        "bytes": 8343,
+        "symlinks": 0
+      },
+      "migration/preformal-final-protocols.log": {
+        "files": 1,
+        "bytes": 66,
+        "symlinks": 0
+      },
+      "migration/preformal-acceptance-tests.log": {
+        "files": 1,
+        "bytes": 8343,
+        "symlinks": 0
+      },
+      "migration/preformal-data-config-validation.json": {
+        "files": 1,
+        "bytes": 45476,
+        "symlinks": 0
+      },
+      "migration/native-matrix-d884ff2a.json": {
+        "files": 1,
+        "bytes": 34223,
+        "symlinks": 0
+      },
+      "migration/probe-pause.json": {
+        "files": 1,
+        "bytes": 155,
+        "symlinks": 0
+      },
+      "migration/tdsc-native-eval-a03.log": {
+        "files": 1,
+        "bytes": 1806,
+        "symlinks": 0
+      },
+      "migration/liver-package.json": {
+        "files": 1,
+        "bytes": 1192,
+        "symlinks": 0
+      },
+      "migration/analytic-quaternion-acceptance.log": {
+        "files": 1,
+        "bytes": 8354,
+        "symlinks": 0
+      },
+      "migration/results-transfer.log": {
+        "files": 1,
+        "bytes": 0,
+        "symlinks": 0
+      },
+      "migration/environment-preformal-validation.json": {
+        "files": 1,
+        "bytes": 1384,
+        "symlinks": 0
+      },
+      "migration/preformal-combined-tests.log": {
+        "files": 1,
+        "bytes": 8354,
+        "symlinks": 0
+      },
+      "migration/native-matrix-9348e3cd.json": {
+        "files": 1,
+        "bytes": 34224,
+        "symlinks": 0
+      },
+      "migration/native-cli-eval.log": {
+        "files": 1,
+        "bytes": 4144,
+        "symlinks": 0
+      },
+      "migration/cuda-build.log": {
+        "files": 1,
+        "bytes": 14389,
+        "symlinks": 0
+      },
+      "migration/native-refactor-tests.log": {
+        "files": 1,
+        "bytes": 8343,
+        "symlinks": 0
+      },
+      "migration/source-gaussianpile.json": {
+        "files": 1,
+        "bytes": 7884,
+        "symlinks": 0
+      },
+      "migration/native-matrix-current.log": {
+        "files": 1,
+        "bytes": 157443,
+        "symlinks": 0
+      },
+      "migration/realdata-2caa7953-e75ec98f.json": {
+        "files": 1,
+        "bytes": 94996,
+        "symlinks": 0
+      },
+      "migration/native-cli-eval.json": {
+        "files": 1,
+        "bytes": 843,
+        "symlinks": 0
+      },
+      "migration/contracts-2caa7953-e75ec98f.log": {
+        "files": 1,
+        "bytes": 8343,
+        "symlinks": 0
+      },
+      "migration/dataset-freeze-v2.log": {
+        "files": 1,
+        "bytes": 7834,
+        "symlinks": 0
+      },
+      "migration/preformal-final-cli.json": {
+        "files": 1,
+        "bytes": 830,
+        "symlinks": 0
+      },
+      "migration/environment-registration.log": {
+        "files": 1,
+        "bytes": 0,
+        "symlinks": 0
+      },
+      "migration/data-contract-tests.log": {
+        "files": 1,
+        "bytes": 2723,
+        "symlinks": 0
+      },
+      "migration/realdata-2caa7953-e75ec98f.log": {
+        "files": 1,
+        "bytes": 196541,
+        "symlinks": 0
+      },
+      "migration/publish-tdsc_abus_2023-resume.log": {
+        "files": 1,
+        "bytes": 3240,
+        "symlinks": 0
+      },
+      "migration/source-nerfus.json": {
+        "files": 1,
+        "bytes": 7115,
+        "symlinks": 0
+      },
+      "migration/cli-2caa7953-e75ec98f.json": {
+        "files": 1,
+        "bytes": 830,
+        "symlinks": 0
+      },
+      "migration/native-baseline-tests.log": {
+        "files": 1,
+        "bytes": 5020,
+        "symlinks": 0
+      },
+      "migration/tdsc-native-core-a03.log": {
+        "files": 1,
+        "bytes": 12496,
+        "symlinks": 0
+      },
+      "migration/publish-tdsc_abus_2023.log": {
+        "files": 1,
+        "bytes": 3461,
+        "symlinks": 0
+      },
+      "migration/complete_env_registration.py": {
+        "files": 1,
+        "bytes": 4373,
+        "symlinks": 0
+      },
+      "migration/production-ours-source.json": {
+        "files": 1,
+        "bytes": 10557,
+        "symlinks": 0
+      },
+      "migration/build-ultragauss.log": {
+        "files": 1,
+        "bytes": 9931,
+        "symlinks": 0
+      },
+      "migration/cuda-build-final.log": {
+        "files": 1,
+        "bytes": 14389,
+        "symlinks": 0
+      },
+      "migration/native-cli-neural-eval.log": {
+        "files": 1,
+        "bytes": 4148,
+        "symlinks": 0
+      },
+      "migration/build-ultragray.log": {
+        "files": 1,
+        "bytes": 9907,
+        "symlinks": 0
+      },
+      "migration/preformal-final-cli-retry.log": {
+        "files": 1,
+        "bytes": 4144,
+        "symlinks": 0
+      },
+      "migration/native-lint.log": {
+        "files": 1,
+        "bytes": 1357,
+        "symlinks": 0
+      },
+      "migration/preformal-current-config-validation.log": {
+        "files": 1,
+        "bytes": 66,
+        "symlinks": 0
+      },
+      "migration/native-integration-tests.log": {
+        "files": 1,
+        "bytes": 4130,
+        "symlinks": 0
+      },
+      "migration/native-combined-tests.log": {
+        "files": 1,
+        "bytes": 4219,
+        "symlinks": 0
+      },
+      "migration/artifact-storage-map.json": {
+        "files": 1,
+        "bytes": 54503,
+        "symlinks": 0
+      },
+      "migration/tdsc-transfer.log": {
+        "files": 1,
+        "bytes": 0,
+        "symlinks": 0
+      },
+      "migration/state.json": {
+        "files": 1,
+        "bytes": 9602,
+        "symlinks": 0
+      },
+      "migration/dataset-package-tests.log": {
+        "files": 1,
+        "bytes": 791,
+        "symlinks": 0
+      },
+      "migration/native-all-tests.log": {
+        "files": 1,
+        "bytes": 5347,
+        "symlinks": 0
+      },
+      "migration/native-final-tests.log": {
+        "files": 1,
+        "bytes": 8343,
+        "symlinks": 0
+      },
+      "migration/tus-native-core-a03.log": {
+        "files": 1,
+        "bytes": 12526,
+        "symlinks": 0
+      },
+      "migration/four-dataset-native-smoke.json": {
+        "files": 1,
+        "bytes": 1041,
+        "symlinks": 0
+      },
+      "migration/source-slice_adapted_3dgs.json": {
+        "files": 1,
+        "bytes": 7980,
+        "symlinks": 0
+      },
+      "migration/native-matrix-smoke-final.log": {
+        "files": 1,
+        "bytes": 157443,
+        "symlinks": 0
+      },
+      "migration/finish_docs_layout.py": {
+        "files": 1,
+        "bytes": 4064,
+        "symlinks": 0
+      },
+      "migration/curated-assets-validation.json": {
+        "files": 1,
+        "bytes": 667,
+        "symlinks": 0
+      },
+      "migration/protocol-conversion.log": {
+        "files": 1,
+        "bytes": 0,
+        "symlinks": 0
+      },
+      "migration/dataset-package-coverage.json": {
+        "files": 1,
+        "bytes": 340,
+        "symlinks": 0
+      },
+      "migration/preformal-final-cli.log": {
+        "files": 1,
+        "bytes": 1439,
+        "symlinks": 0
+      },
+      "migration/reorganize_docs.py": {
+        "files": 1,
+        "bytes": 16607,
+        "symlinks": 0
+      },
+      "migration/native-final-api-tests.log": {
+        "files": 1,
+        "bytes": 8343,
+        "symlinks": 0
+      },
+      "migration/liver-native-core-a03.log": {
+        "files": 1,
+        "bytes": 12475,
+        "symlinks": 0
+      },
+      "migration/docs-layout-validation-20261105.json": {
+        "files": 1,
+        "bytes": 2194,
+        "symlinks": 0
+      },
+      "migration/curation-state.json": {
+        "files": 1,
+        "bytes": 1736,
+        "symlinks": 0
+      },
+      "nerfstudio/.prettierrc.js": {
+        "files": 1,
+        "bytes": 126,
+        "symlinks": 0
+      },
+      "nerfstudio/pyproject.toml": {
+        "files": 1,
+        "bytes": 6404,
+        "symlinks": 0
+      },
+      "nerfstudio/pixi.toml": {
+        "files": 1,
+        "bytes": 1817,
+        "symlinks": 0
+      },
+      "nerfstudio/.dockerignore": {
+        "files": 1,
+        "bytes": 3390,
+        "symlinks": 0
+      },
+      "nerfstudio/README.md": {
+        "files": 1,
+        "bytes": 21558,
+        "symlinks": 0
+      },
+      "nerfstudio/.gitignore": {
+        "files": 1,
+        "bytes": 4018,
+        "symlinks": 0
+      },
+      "nerfstudio/Dockerfile": {
+        "files": 1,
+        "bytes": 5288,
+        "symlinks": 0
+      },
+      "nerfstudio/.gitattributes": {
+        "files": 1,
+        "bytes": 30,
+        "symlinks": 0
+      },
+      "nerfstudio/.pre-commit-config.yaml": {
+        "files": 1,
+        "bytes": 772,
+        "symlinks": 0
+      },
+      "nerfstudio/AGENTS.md": {
+        "files": 1,
+        "bytes": 1702,
+        "symlinks": 0
+      },
+      "nerfstudio/LICENSE": {
+        "files": 1,
+        "bytes": 11349,
+        "symlinks": 0
+      },
+      "nerfstudio/pixi.lock": {
+        "files": 1,
+        "bytes": 354059,
+        "symlinks": 0
+      },
+      "nerfstudio/colab": {
+        "files": 1,
+        "bytes": 15407,
+        "symlinks": 0
+      },
+      ".venv/pyvenv.cfg": {
+        "files": 1,
+        "bytes": 328,
+        "symlinks": 0
+      },
+      ".venv/.lock": {
+        "files": 1,
+        "bytes": 0,
+        "symlinks": 0
+      },
+      "bin/paper1": {
+        "files": 1,
+        "bytes": 124,
+        "symlinks": 0
+      },
+      "docs/README.md": {
+        "files": 1,
+        "bytes": 1662,
+        "symlinks": 0
+      },
+      "docs/.gitignore": {
+        "files": 1,
+        "bytes": 260,
+        "symlinks": 0
+      },
+      "docs/AGENTS.md": {
+        "files": 1,
+        "bytes": 2010,
+        "symlinks": 0
+      },
+      ".venv/lib64": {
+        "files": 0,
+        "bytes": 0,
+        "symlinks": 1
+      }
+    },
+    "files_over_50MiB": [
+      {
+        "path": "outputs/results-probes/synthetic_liver-l1/ultrasound-ultrags_baseline/probe5k-1793791463023210606/nerfstudio_models/step-000004999.ckpt",
+        "bytes": 464028030
+      },
+      {
+        "path": "outputs/results-probes/synthetic_liver-l1/ultrasound-ultrags_baseline/probe5k-1793791188243265896/nerfstudio_models/step-000004999.ckpt",
+        "bytes": 420875774
+      },
+      {
+        "path": "outputs/results-probes/synthetic_liver-l1/ultrasound-ultragray/probe5k-1793791143442523103/nerfstudio_models/step-000004999.ckpt",
+        "bytes": 187488178
+      },
+      {
+        "path": "migration/complete-assets-20261105/all-decisions.jsonl",
+        "bytes": 177507797
+      },
+      {
+        "path": "migration/complete-assets-20261105/all-transferred.jsonl",
+        "bytes": 167787681
+      },
+      {
+        "path": "migration/complete-assets-20261105/all-hashes.jsonl",
+        "bytes": 164244273
+      },
+      {
+        "path": "outputs/results-probes/synthetic_liver-l1/ultrasound-slice_adapted_3dgs/probe5k-1793791201835283775/nerfstudio_models/step-000004999.ckpt",
+        "bytes": 159173542
+      },
+      {
+        "path": "outputs/results-probes/synthetic_liver-l1/ultrasound-ours/probe5k-1793791035421445019/nerfstudio_models/step-000004999.ckpt",
+        "bytes": 152561010
+      },
+      {
+        "path": "outputs/results-probes/synthetic_liver-l1/ultrasound-gaussianpile/probe5k-1793791137654372786/nerfstudio_models/step-000004999.ckpt",
+        "bytes": 152020062
+      },
+      {
+        "path": "outputs/results-probes/synthetic_liver-l1/ultrasound-ultragauss/probe5k-1793791111630570526/nerfstudio_models/step-000004999.ckpt",
+        "bytes": 138120082
+      },
+      {
+        "path": "migration/complete-assets-20261105/source-inventory.jsonl",
+        "bytes": 122126777
+      },
+      {
+        "path": "outputs/eehpc/production/comparisons/us_recon_four_dataset_p100k_v1/figures/exports/paper_3d_point_clouds/tus_rec_2024_qc/010_RH_Per_S_PtD_qc_0165_0364_s02/gt.ply",
+        "bytes": 108000210
+      },
+      {
+        "path": "outputs/eehpc/production/comparisons/us_recon_four_dataset_p100k_v1/figures/exports/paper_3d_point_clouds/tus_rec_2024_qc/010_RH_Per_C_PtD_qc_0006_0427/gt.ply",
+        "bytes": 108000210
+      },
+      {
+        "path": "outputs/eehpc/production/comparisons/us_recon_four_dataset_p100k_v1/figures/exports/paper_3d_point_clouds/synthetic_liver/l3/gt.ply",
+        "bytes": 108000210
+      },
+      {
+        "path": "outputs/eehpc/production/comparisons/us_recon_four_dataset_p100k_v1/figures/exports/paper_3d_point_clouds/synthetic_liver/l1/gt.ply",
+        "bytes": 108000210
+      },
+      {
+        "path": "outputs/eehpc/production/comparisons/us_recon_four_dataset_p100k_v1/figures/exports/paper_3d_point_clouds/tdsc_abus_2023/validation_101/gt.ply",
+        "bytes": 108000210
+      },
+      {
+        "path": "outputs/eehpc/production/comparisons/us_recon_four_dataset_p100k_v1/figures/exports/paper_3d_point_clouds/tdsc_abus_2023/validation_116/gt.ply",
+        "bytes": 108000210
+      },
+      {
+        "path": "outputs/eehpc/production/comparisons/us_recon_four_dataset_p100k_v1/figures/exports/paper_3d_point_clouds/spine_phantom/left1_1/gt.ply",
+        "bytes": 103960308
+      },
+      {
+        "path": "outputs/eehpc/production/comparisons/us_recon_four_dataset_p100k_v1/figures/exports/paper_3d_point_clouds/spine_phantom/left3_2/gt.ply",
+        "bytes": 98949108
+      },
+      {
+        "path": "outputs/eehpc-logs/comparison/us_recon_four_dataset_p100k_v1/us4impw_66836.out",
+        "bytes": 74320213
+      },
+      {
+        "path": "migration/complete-assets-20261105/all-download-request.json",
+        "bytes": 73903048
+      }
+    ]
+  }
+}

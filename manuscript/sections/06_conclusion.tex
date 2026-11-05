@@ -1,0 +1,25 @@
+\vspace{-3mm}
+\section{Conclusion}
+\label{sec:conclusion}
+
+In this work, we present \methodname{}, a Gaussian framework for fast and
+high-fidelity sensorless 3D ultrasound reconstruction from 2D B-mode
+sweeps.
+Its three designs, AFGM, PLGR, and CGAS, address acquisition
+geometry, ultrasound-specific rendering, and Gaussian population adaptation,
+forming a unified reconstruction pipeline from spatial organization to image
+formation and representation control.
+AFGM exploits acquisition regularity to replace independent frame-wise
+6-DoF motion estimation with a canonical geometry, providing a
+spatial basis for volumetric recovery. PLGR couples finite-slice local echo
+formation with path-dependent global transmission in a unified
+Gaussian-to-image process, while CGAS aligns densification and pruning with
+renderer-derived contributions for ultrasound-aware population control.
+Extensive experiments across synthetic and real-world datasets demonstrate
+superior reconstruction fidelity, robust generalization across
+acquisition settings, and real-time rendering efficiency over state-of-the-art
+approaches. Still, the geometry model assumes regular sweep progression,
+and extending it to more irregular probe trajectories remains future work.
+Overall, \methodname{} provides a reliable and efficient Gaussian solution for
+sensorless 3D ultrasound reconstruction, supporting volumetric imaging and
+quantitative analysis in clinical workflows.

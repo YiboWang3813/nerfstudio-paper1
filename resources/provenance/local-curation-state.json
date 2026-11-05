@@ -1,0 +1,36 @@
+{
+  "status": "complete_assets_preserved_before_formal_reproduction",
+  "scope": [
+    "eight-method native probes compared with historical results",
+    "curated docs and results migration",
+    "integrate protocol into nerfstudio"
+  ],
+  "checkpoints": "excluded; no historical checkpoints migrated",
+  "excluded": [
+    "old environments",
+    "old compiled binaries",
+    "raw tus_rec_2024",
+    "natural_llff",
+    "retired methods and early experiments"
+  ],
+  "formal_training_started": false,
+  "docs_results": "versioned content transferred, catalogued, reorganized and locally committed",
+  "protocol": "integrated in nerfstudio/experiments/paper1; no sibling protocol project",
+  "probe_policy": "native runs against historical results only; no strict legacy execution",
+  "probes": "8 native 5k runs plus one UltraGS historical-parameter follow-up completed; see representative-quality-acceptance.json",
+  "delivery_heads": {
+    "nerfstudio": "0171fac68082948aaaf3c167e1e451d9332ff90e",
+    "gsplat": "e75ec98f9adb5d440345f918ce7d122923a79e84",
+    "docs": "4ffc5b51c3e18526f94829fcc56dd6b9c51bf174",
+    "results": "d96625d261a69dd8b6ce416f18839c478777f771"
+  },
+  "complete_asset_migration": "migration/complete-assets-20261105/completion.json",
+  "historical_checkpoints": "excluded by latest user instruction",
+  "current_delivery_commits": {
+    "nerfstudio": "18d4ff9b119f1260f6be8461fb5bdd6aabff6617",
+    "docs": "b7cee5ce72ce1f0f42617a8c2c531d3c99c917c4",
+    "results": "00305ee1affcde3c28bf751117755e658c9217c3",
+    "gsplat": "e75ec98f9adb5d440345f918ce7d122923a79e84"
+  },
+  "canonical_tracking": "One canonical copy; compatibility archive links; full source reference snapshot retained locally and ignored"
+}

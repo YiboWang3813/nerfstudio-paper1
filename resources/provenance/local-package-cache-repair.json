@@ -1,0 +1,6 @@
+{
+  "path": "/home/yibo/shared/cache/dataset-packages/paper1/synthetic_liver/p100k-native-v2/l1.zip",
+  "observed_corrupt_sha256": "002ea982488f27ce896c9f2daa45b7ba1c44295a0d659ec903a8b214baff4129",
+  "original_and_rebuilt_sha256": "91751bc611288ad1ffb7e54e850f7a3d51d3cd31db458c04b2984d74d4e026ed",
+  "action": "Replace only corrupted reproducible cache; original raw payload, manifest and receipt unchanged"
+}

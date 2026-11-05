@@ -1,0 +1,135 @@
+{
+  "status": "published_verified",
+  "dataset": "spine_phantom",
+  "version": "p100k-native-v2",
+  "request_reservation_ledger": "/home/yibo/shared/cache/r2/request-budget-2026-11.json",
+  "packages": [
+    {
+      "sweep": "left1",
+      "key": "shared/datasets/spine_phantom/p100k-native-v2/left1.zip",
+      "sha256": "f0bcb885a36b1b4653170e0c4614fae77d55b10b9f922d3842818dfb7b24e4fd",
+      "size_bytes": 5223057,
+      "files": {
+        "images.npy": "89082ee128ab1ab523d3a7dff1d1c0c8311c51062d2fe80e538764400b59e1ca",
+        "metadata.json": "4793dedc015dd577fa812239b9a2f11a597540b01ab23c2961808988ced00bf3",
+        "poses.npy": "bc6d528c7a947c71dcebecb1a11524b0c2bb21939a68878bcd082c21d66ddee2",
+        "relative_poses.npy": "9dc490b8ea488bdcca0e9d4fc326e30456f369839987c07290e0d80e626e5b74",
+        "manifest.json": "cb1517ddf16b428ec3a0fd1ad8014533324ebb1dd5dfef84e9a864fa09eda37b"
+      }
+    },
+    {
+      "sweep": "left1_1",
+      "key": "shared/datasets/spine_phantom/p100k-native-v2/left1_1.zip",
+      "sha256": "df14e95384efffc98ccbdc9c13a1fcb959de0d61d8cb43b0586386d5ed6af1f2",
+      "size_bytes": 5323228,
+      "files": {
+        "images.npy": "e0fba1434a885ed6131f1df4bddfb7c85353a9d5cbc7288c6fb6029cdc09031c",
+        "metadata.json": "6b6f2aab43fe2840343c5b6d391401d5727c12426519316faaf356145ab3f453",
+        "poses.npy": "0d15be37ee8b3cb93a1eb2c87a32ff4d5fc0030e6e6dc3e09f812bd635ad2152",
+        "relative_poses.npy": "45e08335e16fbaae9f6776741b21dddb111b19a15b197ee4e43716ae8dde227f",
+        "manifest.json": "43d4b99a5a2dc9072322a12c1478b91961bad216c9a30ddd683c4b4c1807477e"
+      }
+    },
+    {
+      "sweep": "left2",
+      "key": "shared/datasets/spine_phantom/p100k-native-v2/left2.zip",
+      "sha256": "ec4406603c9e26b6f176211df582ecca3a6114d27e23067afa7661e149e3872c",
+      "size_bytes": 5619051,
+      "files": {
+        "images.npy": "da9456ae79d3a9c407283f85bd12bf4dbcccc40b5a5c845a7e2509796a9b27b0",
+        "metadata.json": "1de6a13b1dab6aadbb49dd7deb7d239ba9471f38ccc290d3425de4cf25143409",
+        "poses.npy": "2fdcf3ff38374488265e610ff11c8f11fdd3a5726e5cc623029714cd2136d285",
+        "relative_poses.npy": "3a863bbbe881a7702e8ea930e593f53031f39a966fabd6147e1ef0724dd86020",
+        "manifest.json": "bfd9064ec2f9e397344f8003318c1c58719cba41b35cfe0b49b547a02a806b02"
+      }
+    },
+    {
+      "sweep": "left3",
+      "key": "shared/datasets/spine_phantom/p100k-native-v2/left3.zip",
+      "sha256": "e5b031182a4d30ad1b5335d5494a6c61cb2ca681fd2d03be8b5d5e5d0bf8b279",
+      "size_bytes": 5430331,
+      "files": {
+        "images.npy": "befbd61a07171a91ee3ca48fdd7cea727bbe45e91565aa5e1587f95838f93ab7",
+        "metadata.json": "312f6f7ea47ab3abb64468a50ea308d0d6aa6d7e2f6f263f27dfea59cc89d9e7",
+        "poses.npy": "d3fb2c32cb51ee7a1fe727ab8eef4fdf42a929eae3f2547bc8da3527da11b1cf",
+        "relative_poses.npy": "8385ea37c3900d31f58c6057f49707ef3875e51de739faa10370debb2981ca25",
+        "manifest.json": "9493cf81e4e50d7d6310856df32d95b4715505b30be95cbe9b0d281c472bda1b"
+      }
+    },
+    {
+      "sweep": "left3_2",
+      "key": "shared/datasets/spine_phantom/p100k-native-v2/left3_2.zip",
+      "sha256": "ba0f70ca562fe8ee2e37432f5e54b8c2bd6f1c15f051b223c00dae6c50e51cf9",
+      "size_bytes": 4995894,
+      "files": {
+        "images.npy": "c6076fd284e9b4e29908ce33a6ba4c18ee35e7dc7e30b3d0977e20f79ff71e21",
+        "metadata.json": "f544687c766cc80afaedec9ef3fa2bee3f12aba15c82a336d52167d2ad0c4844",
+        "poses.npy": "6c1014a6933e312bed36d0731ce69fd65600b932170af512fcc0ce7bd0a879fd",
+        "relative_poses.npy": "886e3af1d41cff1ed4f3dc628a1f2aa2a5276bf3d85017c5ad654258d103e7a3",
+        "manifest.json": "7a9918497be6a6104d94a7f1e17b04336141c647d9d99b0f34e88079cc4bd0e6"
+      }
+    },
+    {
+      "sweep": "right1",
+      "key": "shared/datasets/spine_phantom/p100k-native-v2/right1.zip",
+      "sha256": "c411d08e137350e60a71304148586c3cbc5aec2364a8186bfa22d1cd027fba45",
+      "size_bytes": 5345267,
+      "files": {
+        "images.npy": "5962eb4c6ddd372501505907ddb95350413d48cba1836d170621e437f69ed03e",
+        "metadata.json": "0195013f6c3cc36b4229da4a4506e7369224b9e27ed9b90d0881f0d496719c34",
+        "poses.npy": "6a7d79a9a1ad2a8382e40b4c40b939e4d4277d161f3a56b7d5346657c1e7c9e8",
+        "relative_poses.npy": "3233965711bd0712e99423325d316c4636905e64287b24c92c5338d5a6b30793",
+        "manifest.json": "71c839f887965ab839f51d48a00fa6179ba0001a1c94339172c72fb6b00050b0"
+      }
+    },
+    {
+      "sweep": "right1_1",
+      "key": "shared/datasets/spine_phantom/p100k-native-v2/right1_1.zip",
+      "sha256": "9fe0cd83b4f160fca80fa9a440798b0b55bb90bed0bdec3db44b881109253255",
+      "size_bytes": 5163211,
+      "files": {
+        "images.npy": "f6c4a3ccda1d4a782d217587b47f7b23cd60d746f5592d0c03a230909a3a6065",
+        "metadata.json": "8eb6b4f39eaa7b57b7970fd221050f0167effa4d0981cd14d2b5767f7b15874c",
+        "poses.npy": "f58a040f65ffaaaa58d43dc3532e17f1f487e683b071f0820429c53cee55f3ea",
+        "relative_poses.npy": "97a2115537f214b186ca9fde108eb8e5ad19827ad29281c3a6658cf0ea6b1e1a",
+        "manifest.json": "56682a97e8742f6c47cf7278a4ea39e596a07dcde96ccfb650c5205b0b0abeb1"
+      }
+    },
+    {
+      "sweep": "right3",
+      "key": "shared/datasets/spine_phantom/p100k-native-v2/right3.zip",
+      "sha256": "c5f5bf8b6e99839f711488eaeae26eb2cceb657a5dcd7617ff35717c9cc9dc57",
+      "size_bytes": 5450169,
+      "files": {
+        "images.npy": "a6394edfcc3fdefb4854c94d7bdcc9e7b4b1aa89b1307d32a421677fcab8c5af",
+        "metadata.json": "a0b3186e0bbfc90f1713ab3aca422d89dcc2284addf7714fb6eaf1374d70ca1f",
+        "poses.npy": "dec12bd34c8a93c09a554766fd322c32f10902db58b556bd9604dc315f3e1eb5",
+        "relative_poses.npy": "7a4115614d1295f53aab3b3d7f91d1a70298a64d22e9bfd912d5b0d468a44a7c",
+        "manifest.json": "337627647814ebba779fb818b6c9e9f0d5a4d23325c59b3288e58888bcbdd2d0"
+      }
+    },
+    {
+      "sweep": "right3_2",
+      "key": "shared/datasets/spine_phantom/p100k-native-v2/right3_2.zip",
+      "sha256": "9873b47648bf27577454813cc0aa8a31cbd8c47ce50bc8b14aeca278639da5ea",
+      "size_bytes": 5002271,
+      "files": {
+        "images.npy": "42497f08d9af58707b9e783fc3a54fde8bb63ff5f7f37599ef216513aa568cd6",
+        "metadata.json": "1ea739ccab4656fe43b3f26febd92088e09f01b70b461816fe93667b9fd6ae6b",
+        "poses.npy": "42f2b296f0319260bcfd3d3df7bd741e84f5158770dde090b78825cf8d888551",
+        "relative_poses.npy": "2eaafe1e10af2d024cebaa2a6f0074121f3c07fda5ac803068734520474d7959",
+        "manifest.json": "c23512c4adf36406255897ef505c98a074dc150a38b6643b7dcf2c80ab11f706"
+      }
+    }
+  ],
+  "source_preserved": true,
+  "disposable": true,
+  "requests": {
+    "class_a": 11,
+    "class_b": 22
+  },
+  "manifest_key": "shared/datasets/spine_phantom/p100k-native-v2/manifest.json",
+  "manifest_sha256": "8da3c695f65bedc8c70d1d3008944900dac492aa2fed4fcd96bfc28c115581ed",
+  "auxiliary_package": null,
+  "current_pointer_verified": true
+}

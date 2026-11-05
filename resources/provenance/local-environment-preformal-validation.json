@@ -1,0 +1,31 @@
+{
+  "status": "validated_preformal",
+  "validated_at": "2026-11-04T10:25:48.854497+00:00",
+  "validation_commits": {
+    "nerfstudio": "2caa7953b4e305d9fbbdb0a386a77dafa61928de",
+    "gsplat": "e75ec98f9adb5d440345f918ce7d122923a79e84"
+  },
+  "runtime": {
+    "python": "/home/yibo/paper1/.venv/bin/python",
+    "torch": "2.5.1+cu124",
+    "cuda_toolkit": "12.4.131",
+    "compiler": "GCC 11.4.0",
+    "pyiqa": "0.1.7"
+  },
+  "evidence": [
+    "/home/yibo/paper1/migration/contracts-2caa7953-e75ec98f.log",
+    "/home/yibo/paper1/migration/realdata-2caa7953-e75ec98f.json",
+    "/home/yibo/paper1/migration/realdata-2caa7953-e75ec98f.log",
+    "/home/yibo/paper1/migration/protocols-2caa7953-e75ec98f.json",
+    "/home/yibo/paper1/migration/cli-2caa7953-e75ec98f.json"
+  ],
+  "scope": "34 native contract/kernel tests; 32 real-data native train/eval/exact-state continuation cases; 78 frozen sweeps/624 recipes; official full eval CLI. Formal 1M/30k not started.",
+  "copies_of_torch_in_project_overlay": 0,
+  "formal_training_started": false,
+  "library_overlay_source_sha256": "4f38d47ad195f6090c50f2c55d275785e13773152c79cf578a0b7f17aefb7642",
+  "library_overlay": "/home/yibo/shared/envs/overlays/iqa017-torch251",
+  "expected_source_heads_at_closure": {
+    "nerfstudio": "e984c097f15da7db4fabf59d10c587fd083274e6",
+    "gsplat": "e75ec98f9adb5d440345f918ce7d122923a79e84"
+  }
+}

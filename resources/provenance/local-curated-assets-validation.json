@@ -1,0 +1,23 @@
+{
+  "docs": {
+    "files": 2806,
+    "bytes": 360867522,
+    "commit": "7b6be932a661e32348c6e224bf6830b51e7dc80f",
+    "all_archive_files_tracked": true,
+    "all_bytes_sha256_and_source_git_blob_verified": true
+  },
+  "results": {
+    "files": 33456,
+    "bytes": 1713345294,
+    "commit": "e2a01d961a79fd3b110ad615c9c1bc3dff3cc4a3",
+    "all_archive_files_tracked": true,
+    "all_bytes_sha256_and_source_git_blob_verified": true
+  },
+  "protocol": {
+    "files": 43,
+    "source_commit": "042cc1baa39fedde52130029e61ff6c00f3d1148",
+    "source_blobs_verified": true,
+    "integrated_into_nerfstudio": true,
+    "standalone_top_level_protocol_created": false
+  }
+}

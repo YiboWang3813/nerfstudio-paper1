@@ -7,3 +7,16 @@ __pycache__/
 /experiments/*/assets/
 /experiments/*/exports/
 /experiments/*/.cache/
+
+# Local literature payloads; bibliography/hash index remains versioned.
+/resources/papers/*.pdf
+/resources/research-notes/*.zip
+
+# Locally retained detailed receipts, logs and source inventories.
+/resources/maintenance-assets/
+/resources/history/
+
+# Canonical manuscript author PDFs and local TeX compilation products.
+/manuscript/figures/pdf/
+/manuscript/build/
+/manuscript/dist/

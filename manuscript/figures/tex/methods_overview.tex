@@ -1,0 +1,13 @@
+\begin{figure*}[t]
+    \centering
+    \includegraphics[scale=0.5]{figures/pdf/methods_overview.pdf}
+    \vspace{-3mm}
+    \caption{
+        Overview of ULGSplat.
+        (a) Acquisition-constrained Frame Geometry Model (AFGM) constructs canonical geometry and provides $\mathcal{T}^{\mathrm A}$ to (b) Gaussian Scene Representation maintaining primitives $\mathcal{G}$.
+        (c) Physics-aware Local-Global Renderer (PLGR) uses $\mathcal{G}$ and $\mathcal{T}^{\mathrm A}$ for finite-slice local echo formation and path-dependent global transmission, rendering B-mode images whose GT residuals optimize $\mathcal{G}$.
+        (d) Contribution-guided Gaussian Adaptation Strategy (CGAS) periodically updates $\mathcal{G}$ via residual-guided densification and path-aware pruning.
+    }
+    \vspace{-4mm}
+    \label{fig:methods-pipeline}
+\end{figure*}

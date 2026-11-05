@@ -28,14 +28,16 @@
 
 保留范围内没有待迁文件、必要外链或图表输入缺失。源端 51,977 个相关目录的复核未发现变动，两棵源根目录没有新增/删除条目，检查时该用户没有 Slurm 作业。
 
-[机器可读验收记录](../../migration/complete-assets-20261105/completion.json)记录排除项、来源、校验和及证据；[分块来源清单](../../outputs/provenance/source-catalog/complete-assets-20261105/index.json)覆盖每个保留文件的目标、角色和消费者。
+[机器可读验收记录](../resources/maintenance-assets/validation-receipts/complete-assets-20261105-completion.json)记录排除项、来源、校验和及证据；[分块来源清单]（历史路径 `../../outputs/provenance/source-catalog/complete-assets-20261105/index.json`，本轮已清理）覆盖每个保留文件的目标、角色和消费者。
 
 Git 忽略生成输出、缓存和完整原始运行池；图表实际使用的图片、协议、数值表、代码及来源清单已纳入版本管理。被忽略的完整源归档仍可能含不可再生的历史渲染，不能把“被忽略”等同于“可删除”。本轮 R2 请求为 0，没有安装或复制环境。
 
 ## 工作树收敛
 
-历史证据的 33,399 个文件现保存在 docs/resources/provenance/results-history.json 指定的不可变 Git 快照，不再展开到工作树。通过 `paper1 history` 按需读取；源字节仍完整保留。在本次文档整理前，results 日常跟踪文件曾从 35,406 个缩减至 595 个；本次再接收按图表对象分类的输入包与导出。965 个逐运行链接及 448 份冗余元数据副本被紧凑索引取代，238 份派生原生 YAML 改为按需生成。主实验由一份参数矩阵与循环脚本控制 624 个组合，未启动正式训练。
+历史证据的 33,399 个文件现保存在 docs/resources/provenance/paper-evidence.json 指定的不可变 Git 快照，不再展开到工作树。通过 `paper1 history` 按需读取；源字节仍完整保留。在本次文档整理前，results 日常跟踪文件曾从 35,406 个缩减至 595 个；本次再接收按图表对象分类的输入包与导出。965 个逐运行链接及 448 份冗余元数据副本被紧凑索引取代，238 份派生原生 YAML 改为按需生成。主实验由一份参数矩阵与循环脚本控制 624 个组合，未启动正式训练。
 
-文档已按用途扁平化，不再保留 archive/supplement/source_workspace 或源码快照。原 docs 中冻结科学输入转存 outputs/frozen-inputs，437 文件最终证据包及分实验输入包有独立 SHA256；历史重图保存在 outputs/artifact-inputs，轻量数值与图表工程归入 docs/experiments。逐文件去向见 [文档整理清单](../resources/provenance/docs-layout-20261105.json)。
+文档已按用途扁平化，不再保留 archive/supplement/source_workspace 或源码快照。原 docs 中冻结科学输入转存 outputs/frozen-inputs，437 文件最终证据包及分实验输入包有独立 SHA256；历史重图保存在 outputs/artifact-inputs，轻量数值与图表工程归入 docs/experiments。逐文件去向见 [文档整理清单](../resources/maintenance-assets/source-inventories/docs-layout-20261105.json)。
 
 2026-11-05 后续整理取消独立 results：原始 Git 数据库保留在 migration/git-history/results.git，物理迁移映射见 [当前记录](../resources/provenance/artifact-storage-map.json)。迁入时的原始清单不追改，旧路径通过该映射解释。
+
+以上标注的历史路径不属于当前 Mac 文稿保留范围；当前图表来源以 manuscript-source-audit 的对应表和保留清单为准。

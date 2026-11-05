@@ -1,0 +1,38 @@
+{
+  "status": "complete",
+  "mac_package_files_verified": 39,
+  "manuscript_figures": 5,
+  "manuscript_tables": 5,
+  "matched_numeric_cells": 356,
+  "experimental_figure_pdf_exact_sha256_matches": 4,
+  "editable_method_diagram_supplied": false,
+  "retained_runs": 774,
+  "original_run_members_sha256_verified": 5155,
+  "snapshot_members_sha256_verified": 270,
+  "source_panels_sha256_verified": 36,
+  "deleted_original_output_files": 155138,
+  "deleted_original_output_bytes": 15545952235,
+  "remaining_output_files": 137,
+  "remaining_output_bytes": 177464196,
+  "broken_doc_links": 0,
+  "literature_ignored": 30,
+  "retired_source_removed": true,
+  "migration_directory_removed": true,
+  "local_history_max_blob_limit": 5242880,
+  "remote_force_push": false,
+  "cpu_tests": {
+    "passed": 14,
+    "skipped": 9,
+    "failed": 0,
+    "CUDA_VISIBLE_DEVICES": ""
+  },
+  "earlier_test_selection_error": {
+    "passed": 17,
+    "failed": 6,
+    "reason": "CUDA was not hidden in the first direct pytest invocation; GPU tests were unintentionally selected, then explicitly excluded in the CPU-only rerun"
+  },
+  "formal_training_started": false,
+  "r2_requests": 0,
+  "shared_environment_changed": false,
+  "pdf_regeneration_limitation": "Original Mac PDFs retained; regenerated PDFs differ in font/layout, not asserted byte- or pixel-identical."
+}

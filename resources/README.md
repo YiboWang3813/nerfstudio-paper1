@@ -48,3 +48,5 @@
 文献 PDF 与研究笔记 ZIP 仅本机保留，不再进入 Git；题录文件名、大小与 SHA256 见 [literature-index.json](literature-index.json)。
 
 详细迁移日志、清单和回执已分类到本目录 maintenance-assets（忽略）与 provenance（轻量记录）；原 migration 顶层目录已删除。旧 Git 证据数据库已由逐项验证的论文 run ZIP 取代。
+
+历史清理后的来源提交映射见 [git-history-rewrite.json](provenance/git-history-rewrite.json)；原实验收据中的旧提交保持原始身份，通过映射解释，不静默改写旧实验来源。

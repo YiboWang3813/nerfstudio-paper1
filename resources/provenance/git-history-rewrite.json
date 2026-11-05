@@ -1,0 +1,29 @@
+{
+  "docs": {
+    "old_head": "03248e5be553937d7bcef048239221bb106e183d",
+    "rewritten_head": "806f43f520b16a7b78bfe02d9e7a0cc5b3c9e612",
+    "commit_map": "docs/resources/provenance/docs-commit-rewrite.txt",
+    "maximum_retained_blob_bytes": 5242880,
+    "remote_updated": false,
+    "largest_remaining_blob_bytes": 3094346,
+    "git_storage_kib": 44836
+  },
+  "nerfstudio": {
+    "old_head": "c881ceb22a12128d1eb0946aceefbf241e6c05f5",
+    "rewritten_head": "db3da2614953f786aa1698eebb04e7cd66ed79ac",
+    "commit_map": "docs/resources/provenance/nerfstudio-commit-rewrite.txt",
+    "maximum_retained_blob_bytes": 5242880,
+    "remote_updated": false,
+    "largest_remaining_blob_bytes": 4586506,
+    "git_storage_kib": 43016
+  },
+  "gsplat": {
+    "old_head": "9406bf255e6a466a256396107d02e4d60fd58f8a",
+    "rewritten_head": "c6e66d87d16b3dab1a4ad3df7e4b602861996067",
+    "commit_map": "docs/resources/provenance/gsplat-commit-rewrite.txt",
+    "maximum_retained_blob_bytes": 5242880,
+    "remote_updated": false,
+    "largest_remaining_blob_bytes": 3475855,
+    "git_storage_kib": 12716
+  }
+}

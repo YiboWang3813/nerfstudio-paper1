@@ -1,3 +1,5 @@
+> 当前金标准：[Mac 文稿逐图逐表审计](manuscript-source-audit/README.md)。未进入该范围的条目只保留轻量历史记录。
+
 # 实验记录与图表工程
 
 每项研究只保留一层实验 ID。报告、图表 JSON、来源和小型数值跟踪 Git；runs、权重、日志、原图和批量导出在 outputs。配置分工见 [存储规约](../protocols/artifact-storage.md)。

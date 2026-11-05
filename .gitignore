@@ -203,3 +203,6 @@ camera_paths/
 # Retained historical source archive: local custody, indexed by migration manifests.
 # This is not a disposable cache; current implementation is in nerfstudio/ and gsplat/.
 /experiments/paper1/source_reference/eehpc-20261105/
+
+# Prepared native configs are generated from the frozen source recipes when needed.
+/experiments/paper1/native-protocols/*.yaml

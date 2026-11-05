@@ -1,0 +1,9 @@
+{
+  "dataset_root": "/home/yibo/shared/datasets",
+  "dataset_version": "p100k-native-v2",
+  "datasets": ["synthetic_liver", "spine_phantom", "tus_rec_2024_qc", "tdsc_abus_2023"],
+  "methods": ["ours", "ultragauss", "ultragray", "gaussianpile", "slice_adapted_3dgs", "ultrags_baseline", "nerfus", "ultranerf"],
+  "seed": 42,
+  "budget": "frozen native presets; no algorithm or schedule overrides",
+  "output_root": "/home/yibo/paper1/outputs/formal"
+}

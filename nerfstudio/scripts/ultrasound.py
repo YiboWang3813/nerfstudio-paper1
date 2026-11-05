@@ -33,11 +33,16 @@ def main():
 def dispatch():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
-        "command", choices=["identity", "train", "eval", "render", "viewer", "build", "prepare", "preflight", "test", "artifacts"]
+        "command", choices=["identity", "train", "eval", "render", "viewer", "build", "prepare", "preflight", "test", "artifacts", "matrix", "history"]
     )
     args = parser.parse_args(sys.argv[1:2])
     remaining = sys.argv[2:]
     sources = check_sources()
+    if args.command in ("matrix", "history"):
+        module = importlib.import_module("nerfstudio.scripts.paper1_" + args.command)
+        sys.argv = ["paper1 " + args.command] + remaining
+        module.main()
+        return
     if args.command == "artifacts":
         from nerfstudio.scripts import paper1_artifacts
 

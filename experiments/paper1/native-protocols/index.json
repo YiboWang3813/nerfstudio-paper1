@@ -10,7 +10,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/hyperparameter_h2_000.yaml",
     "source_id": "hyperparameter_h2_000",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/hyperparameter_h2_001.yaml",
@@ -23,7 +24,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/hyperparameter_h2_001.yaml",
     "source_id": "hyperparameter_h2_001",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/hyperparameter_h2_002.yaml",
@@ -36,7 +38,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/hyperparameter_h2_002.yaml",
     "source_id": "hyperparameter_h2_002",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/hyperparameter_h2_003.yaml",
@@ -49,7 +52,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/hyperparameter_h2_003.yaml",
     "source_id": "hyperparameter_h2_003",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/hyperparameter_h2_004.yaml",
@@ -62,7 +66,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/hyperparameter_h2_004.yaml",
     "source_id": "hyperparameter_h2_004",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/hyperparameter_h2_005.yaml",
@@ -75,7 +80,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/hyperparameter_h2_005.yaml",
     "source_id": "hyperparameter_h2_005",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/hyperparameter_h2_006.yaml",
@@ -88,7 +94,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/hyperparameter_h2_006.yaml",
     "source_id": "hyperparameter_h2_006",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/hyperparameter_h2_007.yaml",
@@ -101,7 +108,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/hyperparameter_h2_007.yaml",
     "source_id": "hyperparameter_h2_007",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/hyperparameter_h2_008.yaml",
@@ -114,7 +122,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/hyperparameter_h2_008.yaml",
     "source_id": "hyperparameter_h2_008",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/hyperparameter_h2_009.yaml",
@@ -127,7 +136,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/hyperparameter_h2_009.yaml",
     "source_id": "hyperparameter_h2_009",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/hyperparameter_h2_010.yaml",
@@ -140,7 +150,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/hyperparameter_h2_010.yaml",
     "source_id": "hyperparameter_h2_010",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/hyperparameter_h2_011.yaml",
@@ -153,7 +164,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/hyperparameter_h2_011.yaml",
     "source_id": "hyperparameter_h2_011",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/hyperparameter_h2_012.yaml",
@@ -166,7 +178,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/hyperparameter_h2_012.yaml",
     "source_id": "hyperparameter_h2_012",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/hyperparameter_h2_013.yaml",
@@ -179,7 +192,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/hyperparameter_h2_013.yaml",
     "source_id": "hyperparameter_h2_013",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/hyperparameter_h2_014.yaml",
@@ -192,7 +206,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/hyperparameter_h2_014.yaml",
     "source_id": "hyperparameter_h2_014",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/hyperparameter_h2_015.yaml",
@@ -205,7 +220,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/hyperparameter_h2_015.yaml",
     "source_id": "hyperparameter_h2_015",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/hyperparameter_h2_016.yaml",
@@ -218,7 +234,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/hyperparameter_h2_016.yaml",
     "source_id": "hyperparameter_h2_016",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/hyperparameter_h2_017.yaml",
@@ -231,7 +248,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/hyperparameter_h2_017.yaml",
     "source_id": "hyperparameter_h2_017",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/hyperparameter_h2_018.yaml",
@@ -244,7 +262,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/hyperparameter_h2_018.yaml",
     "source_id": "hyperparameter_h2_018",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/hyperparameter_h2_019.yaml",
@@ -257,7 +276,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/hyperparameter_h2_019.yaml",
     "source_id": "hyperparameter_h2_019",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/hyperparameter_h2_020.yaml",
@@ -270,7 +290,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/hyperparameter_h2_020.yaml",
     "source_id": "hyperparameter_h2_020",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/hyperparameter_h2_021.yaml",
@@ -283,7 +304,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/hyperparameter_h2_021.yaml",
     "source_id": "hyperparameter_h2_021",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/hyperparameter_h2_022.yaml",
@@ -296,7 +318,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/hyperparameter_h2_022.yaml",
     "source_id": "hyperparameter_h2_022",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/hyperparameter_h2_023.yaml",
@@ -309,7 +332,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/hyperparameter_h2_023.yaml",
     "source_id": "hyperparameter_h2_023",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/hyperparameter_h2_024.yaml",
@@ -322,7 +346,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/hyperparameter_h2_024.yaml",
     "source_id": "hyperparameter_h2_024",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/hyperparameter_h2_025.yaml",
@@ -335,7 +360,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/hyperparameter_h2_025.yaml",
     "source_id": "hyperparameter_h2_025",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/hyperparameter_h2_026.yaml",
@@ -348,7 +374,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/hyperparameter_h2_026.yaml",
     "source_id": "hyperparameter_h2_026",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/hyperparameter_h2_027.yaml",
@@ -361,7 +388,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/hyperparameter_h2_027.yaml",
     "source_id": "hyperparameter_h2_027",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/hyperparameter_h2_028.yaml",
@@ -374,7 +402,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/hyperparameter_h2_028.yaml",
     "source_id": "hyperparameter_h2_028",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/hyperparameter_h2_029.yaml",
@@ -387,7 +416,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/hyperparameter_h2_029.yaml",
     "source_id": "hyperparameter_h2_029",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/hyperparameter_h2_030.yaml",
@@ -400,7 +430,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/hyperparameter_h2_030.yaml",
     "source_id": "hyperparameter_h2_030",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/hyperparameter_h2_031.yaml",
@@ -413,7 +444,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/hyperparameter_h2_031.yaml",
     "source_id": "hyperparameter_h2_031",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/hyperparameter_h2_032.yaml",
@@ -426,7 +458,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/hyperparameter_h2_032.yaml",
     "source_id": "hyperparameter_h2_032",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/hyperparameter_h2_033.yaml",
@@ -439,7 +472,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/hyperparameter_h2_033.yaml",
     "source_id": "hyperparameter_h2_033",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/hyperparameter_h2_034.yaml",
@@ -452,7 +486,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/hyperparameter_h2_034.yaml",
     "source_id": "hyperparameter_h2_034",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/hyperparameter_h2_035.yaml",
@@ -465,7 +500,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/hyperparameter_h2_035.yaml",
     "source_id": "hyperparameter_h2_035",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/hyperparameter_h2_036.yaml",
@@ -478,7 +514,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/hyperparameter_h2_036.yaml",
     "source_id": "hyperparameter_h2_036",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/hyperparameter_h2_037.yaml",
@@ -491,7 +528,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/hyperparameter_h2_037.yaml",
     "source_id": "hyperparameter_h2_037",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/hyperparameter_h2_038.yaml",
@@ -504,7 +542,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/hyperparameter_h2_038.yaml",
     "source_id": "hyperparameter_h2_038",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/hyperparameter_h2_039.yaml",
@@ -517,7 +556,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/hyperparameter_h2_039.yaml",
     "source_id": "hyperparameter_h2_039",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/hyperparameter_h2_040.yaml",
@@ -530,7 +570,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/hyperparameter_h2_040.yaml",
     "source_id": "hyperparameter_h2_040",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/hyperparameter_h2_041.yaml",
@@ -543,7 +584,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/hyperparameter_h2_041.yaml",
     "source_id": "hyperparameter_h2_041",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/hyperparameter_h2_042.yaml",
@@ -556,7 +598,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/hyperparameter_h2_042.yaml",
     "source_id": "hyperparameter_h2_042",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/hyperparameter_h2_043.yaml",
@@ -569,7 +612,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/hyperparameter_h2_043.yaml",
     "source_id": "hyperparameter_h2_043",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/hyperparameter_h2_044.yaml",
@@ -582,7 +626,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/hyperparameter_h2_044.yaml",
     "source_id": "hyperparameter_h2_044",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/hyperparameter_h2_045.yaml",
@@ -595,7 +640,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/hyperparameter_h2_045.yaml",
     "source_id": "hyperparameter_h2_045",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/hyperparameter_h2_046.yaml",
@@ -608,7 +654,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/hyperparameter_h2_046.yaml",
     "source_id": "hyperparameter_h2_046",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/hyperparameter_h2_047.yaml",
@@ -621,7 +668,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/hyperparameter_h2_047.yaml",
     "source_id": "hyperparameter_h2_047",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/hyperparameter_h2_048.yaml",
@@ -634,7 +682,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/hyperparameter_h2_048.yaml",
     "source_id": "hyperparameter_h2_048",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/hyperparameter_h2_049.yaml",
@@ -647,7 +696,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/hyperparameter_h2_049.yaml",
     "source_id": "hyperparameter_h2_049",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/hyperparameter_h2_050.yaml",
@@ -660,7 +710,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/hyperparameter_h2_050.yaml",
     "source_id": "hyperparameter_h2_050",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/hyperparameter_h2_051.yaml",
@@ -673,7 +724,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/hyperparameter_h2_051.yaml",
     "source_id": "hyperparameter_h2_051",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/hyperparameter_h2_052.yaml",
@@ -686,7 +738,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/hyperparameter_h2_052.yaml",
     "source_id": "hyperparameter_h2_052",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/hyperparameter_h2_053.yaml",
@@ -699,7 +752,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/hyperparameter_h2_053.yaml",
     "source_id": "hyperparameter_h2_053",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/hyperparameter_h2_054.yaml",
@@ -712,7 +766,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/hyperparameter_h2_054.yaml",
     "source_id": "hyperparameter_h2_054",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/hyperparameter_h2_055.yaml",
@@ -725,7 +780,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/hyperparameter_h2_055.yaml",
     "source_id": "hyperparameter_h2_055",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/hyperparameter_h2_056.yaml",
@@ -738,7 +794,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/hyperparameter_h2_056.yaml",
     "source_id": "hyperparameter_h2_056",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/hyperparameter_h2_057.yaml",
@@ -751,7 +808,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/hyperparameter_h2_057.yaml",
     "source_id": "hyperparameter_h2_057",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/hyperparameter_h2_058.yaml",
@@ -764,7 +822,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/hyperparameter_h2_058.yaml",
     "source_id": "hyperparameter_h2_058",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/hyperparameter_h2_059.yaml",
@@ -777,7 +836,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/hyperparameter_h2_059.yaml",
     "source_id": "hyperparameter_h2_059",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/hyperparameter_h2_060.yaml",
@@ -790,7 +850,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/hyperparameter_h2_060.yaml",
     "source_id": "hyperparameter_h2_060",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/hyperparameter_h2_061.yaml",
@@ -803,7 +864,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/hyperparameter_h2_061.yaml",
     "source_id": "hyperparameter_h2_061",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/hyperparameter_h2_062.yaml",
@@ -816,7 +878,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/hyperparameter_h2_062.yaml",
     "source_id": "hyperparameter_h2_062",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/hyperparameter_h2_063.yaml",
@@ -829,7 +892,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/hyperparameter_h2_063.yaml",
     "source_id": "hyperparameter_h2_063",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/hyperparameter_h2_064.yaml",
@@ -842,7 +906,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/hyperparameter_h2_064.yaml",
     "source_id": "hyperparameter_h2_064",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/hyperparameter_h2_065.yaml",
@@ -855,7 +920,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/hyperparameter_h2_065.yaml",
     "source_id": "hyperparameter_h2_065",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/hyperparameter_h2_066.yaml",
@@ -868,7 +934,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/hyperparameter_h2_066.yaml",
     "source_id": "hyperparameter_h2_066",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/hyperparameter_h2_067.yaml",
@@ -881,7 +948,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/hyperparameter_h2_067.yaml",
     "source_id": "hyperparameter_h2_067",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_000.yaml",
@@ -894,7 +962,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_000.yaml",
     "source_id": "structural_main_p2_000",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_001.yaml",
@@ -907,7 +976,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_001.yaml",
     "source_id": "structural_main_p2_001",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_002.yaml",
@@ -920,7 +990,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_002.yaml",
     "source_id": "structural_main_p2_002",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_003.yaml",
@@ -933,7 +1004,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_003.yaml",
     "source_id": "structural_main_p2_003",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_004.yaml",
@@ -946,7 +1018,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_004.yaml",
     "source_id": "structural_main_p2_004",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_005.yaml",
@@ -959,7 +1032,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_005.yaml",
     "source_id": "structural_main_p2_005",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_006.yaml",
@@ -972,7 +1046,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_006.yaml",
     "source_id": "structural_main_p2_006",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_007.yaml",
@@ -985,7 +1060,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_007.yaml",
     "source_id": "structural_main_p2_007",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_008.yaml",
@@ -998,7 +1074,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_008.yaml",
     "source_id": "structural_main_p2_008",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_009.yaml",
@@ -1011,7 +1088,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_009.yaml",
     "source_id": "structural_main_p2_009",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_010.yaml",
@@ -1024,7 +1102,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_010.yaml",
     "source_id": "structural_main_p2_010",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_011.yaml",
@@ -1037,7 +1116,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_011.yaml",
     "source_id": "structural_main_p2_011",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_012.yaml",
@@ -1050,7 +1130,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_012.yaml",
     "source_id": "structural_main_p2_012",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_013.yaml",
@@ -1063,7 +1144,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_013.yaml",
     "source_id": "structural_main_p2_013",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_014.yaml",
@@ -1076,7 +1158,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_014.yaml",
     "source_id": "structural_main_p2_014",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_015.yaml",
@@ -1089,7 +1172,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_015.yaml",
     "source_id": "structural_main_p2_015",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_016.yaml",
@@ -1102,7 +1186,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_016.yaml",
     "source_id": "structural_main_p2_016",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_017.yaml",
@@ -1115,7 +1200,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_017.yaml",
     "source_id": "structural_main_p2_017",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_018.yaml",
@@ -1128,7 +1214,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_018.yaml",
     "source_id": "structural_main_p2_018",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_019.yaml",
@@ -1141,7 +1228,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_019.yaml",
     "source_id": "structural_main_p2_019",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_020.yaml",
@@ -1154,7 +1242,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_020.yaml",
     "source_id": "structural_main_p2_020",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_021.yaml",
@@ -1167,7 +1256,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_021.yaml",
     "source_id": "structural_main_p2_021",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_022.yaml",
@@ -1180,7 +1270,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_022.yaml",
     "source_id": "structural_main_p2_022",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_023.yaml",
@@ -1193,7 +1284,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_023.yaml",
     "source_id": "structural_main_p2_023",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_024.yaml",
@@ -1206,7 +1298,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_024.yaml",
     "source_id": "structural_main_p2_024",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_025.yaml",
@@ -1219,7 +1312,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_025.yaml",
     "source_id": "structural_main_p2_025",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_026.yaml",
@@ -1232,7 +1326,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_026.yaml",
     "source_id": "structural_main_p2_026",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_027.yaml",
@@ -1245,7 +1340,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_027.yaml",
     "source_id": "structural_main_p2_027",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_028.yaml",
@@ -1258,7 +1354,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_028.yaml",
     "source_id": "structural_main_p2_028",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_029.yaml",
@@ -1271,7 +1368,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_029.yaml",
     "source_id": "structural_main_p2_029",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_030.yaml",
@@ -1284,7 +1382,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_030.yaml",
     "source_id": "structural_main_p2_030",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_031.yaml",
@@ -1297,7 +1396,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_031.yaml",
     "source_id": "structural_main_p2_031",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_032.yaml",
@@ -1310,7 +1410,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_032.yaml",
     "source_id": "structural_main_p2_032",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_033.yaml",
@@ -1323,7 +1424,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_033.yaml",
     "source_id": "structural_main_p2_033",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_034.yaml",
@@ -1336,7 +1438,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_034.yaml",
     "source_id": "structural_main_p2_034",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_035.yaml",
@@ -1349,7 +1452,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_035.yaml",
     "source_id": "structural_main_p2_035",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_036.yaml",
@@ -1362,7 +1466,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_036.yaml",
     "source_id": "structural_main_p2_036",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_037.yaml",
@@ -1375,7 +1480,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_037.yaml",
     "source_id": "structural_main_p2_037",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_038.yaml",
@@ -1388,7 +1494,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_038.yaml",
     "source_id": "structural_main_p2_038",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_039.yaml",
@@ -1401,7 +1508,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_039.yaml",
     "source_id": "structural_main_p2_039",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_040.yaml",
@@ -1414,7 +1522,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_040.yaml",
     "source_id": "structural_main_p2_040",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_041.yaml",
@@ -1427,7 +1536,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_041.yaml",
     "source_id": "structural_main_p2_041",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_042.yaml",
@@ -1440,7 +1550,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_042.yaml",
     "source_id": "structural_main_p2_042",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_043.yaml",
@@ -1453,7 +1564,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_043.yaml",
     "source_id": "structural_main_p2_043",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_044.yaml",
@@ -1466,7 +1578,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_044.yaml",
     "source_id": "structural_main_p2_044",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_045.yaml",
@@ -1479,7 +1592,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_045.yaml",
     "source_id": "structural_main_p2_045",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_046.yaml",
@@ -1492,7 +1606,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_046.yaml",
     "source_id": "structural_main_p2_046",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_047.yaml",
@@ -1505,7 +1620,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_047.yaml",
     "source_id": "structural_main_p2_047",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_048.yaml",
@@ -1518,7 +1634,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_048.yaml",
     "source_id": "structural_main_p2_048",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_049.yaml",
@@ -1531,7 +1648,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_049.yaml",
     "source_id": "structural_main_p2_049",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_050.yaml",
@@ -1544,7 +1662,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_050.yaml",
     "source_id": "structural_main_p2_050",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_051.yaml",
@@ -1557,7 +1676,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_051.yaml",
     "source_id": "structural_main_p2_051",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_052.yaml",
@@ -1570,7 +1690,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_052.yaml",
     "source_id": "structural_main_p2_052",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_053.yaml",
@@ -1583,7 +1704,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_053.yaml",
     "source_id": "structural_main_p2_053",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_054.yaml",
@@ -1596,7 +1718,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_054.yaml",
     "source_id": "structural_main_p2_054",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_055.yaml",
@@ -1609,7 +1732,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_055.yaml",
     "source_id": "structural_main_p2_055",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_056.yaml",
@@ -1622,7 +1746,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_056.yaml",
     "source_id": "structural_main_p2_056",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_057.yaml",
@@ -1635,7 +1760,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_057.yaml",
     "source_id": "structural_main_p2_057",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_058.yaml",
@@ -1648,7 +1774,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_058.yaml",
     "source_id": "structural_main_p2_058",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_059.yaml",
@@ -1661,7 +1788,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_059.yaml",
     "source_id": "structural_main_p2_059",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_060.yaml",
@@ -1674,7 +1802,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_060.yaml",
     "source_id": "structural_main_p2_060",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_061.yaml",
@@ -1687,7 +1816,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_061.yaml",
     "source_id": "structural_main_p2_061",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_062.yaml",
@@ -1700,7 +1830,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_062.yaml",
     "source_id": "structural_main_p2_062",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_063.yaml",
@@ -1713,7 +1844,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_063.yaml",
     "source_id": "structural_main_p2_063",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_064.yaml",
@@ -1726,7 +1858,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_064.yaml",
     "source_id": "structural_main_p2_064",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_065.yaml",
@@ -1739,7 +1872,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_065.yaml",
     "source_id": "structural_main_p2_065",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_066.yaml",
@@ -1752,7 +1886,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_066.yaml",
     "source_id": "structural_main_p2_066",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_067.yaml",
@@ -1765,7 +1900,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_067.yaml",
     "source_id": "structural_main_p2_067",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_068.yaml",
@@ -1778,7 +1914,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_068.yaml",
     "source_id": "structural_main_p2_068",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_069.yaml",
@@ -1791,7 +1928,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_069.yaml",
     "source_id": "structural_main_p2_069",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_070.yaml",
@@ -1804,7 +1942,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_070.yaml",
     "source_id": "structural_main_p2_070",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_071.yaml",
@@ -1817,7 +1956,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_071.yaml",
     "source_id": "structural_main_p2_071",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_072.yaml",
@@ -1830,7 +1970,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_072.yaml",
     "source_id": "structural_main_p2_072",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_073.yaml",
@@ -1843,7 +1984,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_073.yaml",
     "source_id": "structural_main_p2_073",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_074.yaml",
@@ -1856,7 +1998,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_074.yaml",
     "source_id": "structural_main_p2_074",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_075.yaml",
@@ -1869,7 +2012,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_075.yaml",
     "source_id": "structural_main_p2_075",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_076.yaml",
@@ -1882,7 +2026,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_076.yaml",
     "source_id": "structural_main_p2_076",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_077.yaml",
@@ -1895,7 +2040,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_077.yaml",
     "source_id": "structural_main_p2_077",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_078.yaml",
@@ -1908,7 +2054,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_078.yaml",
     "source_id": "structural_main_p2_078",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_079.yaml",
@@ -1921,7 +2068,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_079.yaml",
     "source_id": "structural_main_p2_079",
     "pose_mode": "canonical",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_080.yaml",
@@ -1934,7 +2082,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_080.yaml",
     "source_id": "structural_main_p2_080",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_081.yaml",
@@ -1947,7 +2096,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_081.yaml",
     "source_id": "structural_main_p2_081",
     "pose_mode": "canonical",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_082.yaml",
@@ -1960,7 +2110,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_082.yaml",
     "source_id": "structural_main_p2_082",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_083.yaml",
@@ -1973,7 +2124,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_083.yaml",
     "source_id": "structural_main_p2_083",
     "pose_mode": "canonical",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_084.yaml",
@@ -1986,7 +2138,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_084.yaml",
     "source_id": "structural_main_p2_084",
     "pose_mode": "canonical",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_085.yaml",
@@ -1999,7 +2152,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_085.yaml",
     "source_id": "structural_main_p2_085",
     "pose_mode": "canonical",
-    "canonical_spacing_mode": "file_step_norm"
+    "canonical_spacing_mode": "file_step_norm",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_086.yaml",
@@ -2012,7 +2166,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_086.yaml",
     "source_id": "structural_main_p2_086",
     "pose_mode": "canonical",
-    "canonical_spacing_mode": "file_axis_projection"
+    "canonical_spacing_mode": "file_axis_projection",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_087.yaml",
@@ -2025,7 +2180,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_087.yaml",
     "source_id": "structural_main_p2_087",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_088.yaml",
@@ -2038,7 +2194,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_088.yaml",
     "source_id": "structural_main_p2_088",
     "pose_mode": "canonical",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_089.yaml",
@@ -2051,7 +2208,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_089.yaml",
     "source_id": "structural_main_p2_089",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_090.yaml",
@@ -2064,7 +2222,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_090.yaml",
     "source_id": "structural_main_p2_090",
     "pose_mode": "canonical",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_091.yaml",
@@ -2077,7 +2236,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_091.yaml",
     "source_id": "structural_main_p2_091",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_092.yaml",
@@ -2090,7 +2250,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_092.yaml",
     "source_id": "structural_main_p2_092",
     "pose_mode": "canonical",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_093.yaml",
@@ -2103,7 +2264,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_093.yaml",
     "source_id": "structural_main_p2_093",
     "pose_mode": "canonical",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_094.yaml",
@@ -2116,7 +2278,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_094.yaml",
     "source_id": "structural_main_p2_094",
     "pose_mode": "canonical",
-    "canonical_spacing_mode": "file_step_norm"
+    "canonical_spacing_mode": "file_step_norm",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_095.yaml",
@@ -2129,7 +2292,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_095.yaml",
     "source_id": "structural_main_p2_095",
     "pose_mode": "canonical",
-    "canonical_spacing_mode": "file_axis_projection"
+    "canonical_spacing_mode": "file_axis_projection",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_096.yaml",
@@ -2142,7 +2306,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_096.yaml",
     "source_id": "structural_main_p2_096",
     "pose_mode": "canonical",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_097.yaml",
@@ -2155,7 +2320,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_097.yaml",
     "source_id": "structural_main_p2_097",
     "pose_mode": "canonical",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_098.yaml",
@@ -2168,7 +2334,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_098.yaml",
     "source_id": "structural_main_p2_098",
     "pose_mode": "canonical",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_099.yaml",
@@ -2181,7 +2348,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_099.yaml",
     "source_id": "structural_main_p2_099",
     "pose_mode": "canonical",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_100.yaml",
@@ -2194,7 +2362,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_100.yaml",
     "source_id": "structural_main_p2_100",
     "pose_mode": "canonical",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_101.yaml",
@@ -2207,7 +2376,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_101.yaml",
     "source_id": "structural_main_p2_101",
     "pose_mode": "canonical",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_102.yaml",
@@ -2220,7 +2390,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_102.yaml",
     "source_id": "structural_main_p2_102",
     "pose_mode": "canonical",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_103.yaml",
@@ -2233,7 +2404,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_103.yaml",
     "source_id": "structural_main_p2_103",
     "pose_mode": "canonical",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_104.yaml",
@@ -2246,7 +2418,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_104.yaml",
     "source_id": "structural_main_p2_104",
     "pose_mode": "canonical",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_105.yaml",
@@ -2259,7 +2432,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_105.yaml",
     "source_id": "structural_main_p2_105",
     "pose_mode": "canonical",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_106.yaml",
@@ -2272,7 +2446,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_106.yaml",
     "source_id": "structural_main_p2_106",
     "pose_mode": "canonical",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_107.yaml",
@@ -2285,7 +2460,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_107.yaml",
     "source_id": "structural_main_p2_107",
     "pose_mode": "canonical",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_108.yaml",
@@ -2298,7 +2474,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_108.yaml",
     "source_id": "structural_main_p2_108",
     "pose_mode": "canonical",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_109.yaml",
@@ -2311,7 +2488,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_109.yaml",
     "source_id": "structural_main_p2_109",
     "pose_mode": "canonical",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_110.yaml",
@@ -2324,7 +2502,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_110.yaml",
     "source_id": "structural_main_p2_110",
     "pose_mode": "canonical",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_111.yaml",
@@ -2337,7 +2516,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_111.yaml",
     "source_id": "structural_main_p2_111",
     "pose_mode": "canonical",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_112.yaml",
@@ -2350,7 +2530,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_112.yaml",
     "source_id": "structural_main_p2_112",
     "pose_mode": "canonical",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_113.yaml",
@@ -2363,7 +2544,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_113.yaml",
     "source_id": "structural_main_p2_113",
     "pose_mode": "canonical",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_114.yaml",
@@ -2376,7 +2558,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_114.yaml",
     "source_id": "structural_main_p2_114",
     "pose_mode": "canonical",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_115.yaml",
@@ -2389,7 +2572,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_115.yaml",
     "source_id": "structural_main_p2_115",
     "pose_mode": "canonical",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_116.yaml",
@@ -2402,7 +2586,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_116.yaml",
     "source_id": "structural_main_p2_116",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_117.yaml",
@@ -2415,7 +2600,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_117.yaml",
     "source_id": "structural_main_p2_117",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_118.yaml",
@@ -2428,7 +2614,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_118.yaml",
     "source_id": "structural_main_p2_118",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_119.yaml",
@@ -2441,7 +2628,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_119.yaml",
     "source_id": "structural_main_p2_119",
     "pose_mode": "canonical",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_120.yaml",
@@ -2454,7 +2642,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_120.yaml",
     "source_id": "structural_main_p2_120",
     "pose_mode": "canonical",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_121.yaml",
@@ -2467,7 +2656,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_121.yaml",
     "source_id": "structural_main_p2_121",
     "pose_mode": "canonical",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_122.yaml",
@@ -2480,7 +2670,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_122.yaml",
     "source_id": "structural_main_p2_122",
     "pose_mode": "canonical",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_123.yaml",
@@ -2493,7 +2684,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_123.yaml",
     "source_id": "structural_main_p2_123",
     "pose_mode": "canonical",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_124.yaml",
@@ -2506,7 +2698,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_124.yaml",
     "source_id": "structural_main_p2_124",
     "pose_mode": "canonical",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_125.yaml",
@@ -2519,7 +2712,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_125.yaml",
     "source_id": "structural_main_p2_125",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_126.yaml",
@@ -2532,7 +2726,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_126.yaml",
     "source_id": "structural_main_p2_126",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_127.yaml",
@@ -2545,7 +2740,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_127.yaml",
     "source_id": "structural_main_p2_127",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_128.yaml",
@@ -2558,7 +2754,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_128.yaml",
     "source_id": "structural_main_p2_128",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_129.yaml",
@@ -2571,7 +2768,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_129.yaml",
     "source_id": "structural_main_p2_129",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_130.yaml",
@@ -2584,7 +2782,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_130.yaml",
     "source_id": "structural_main_p2_130",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_131.yaml",
@@ -2597,7 +2796,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_131.yaml",
     "source_id": "structural_main_p2_131",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_132.yaml",
@@ -2610,7 +2810,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_132.yaml",
     "source_id": "structural_main_p2_132",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_133.yaml",
@@ -2623,7 +2824,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_133.yaml",
     "source_id": "structural_main_p2_133",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_134.yaml",
@@ -2636,7 +2838,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_134.yaml",
     "source_id": "structural_main_p2_134",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_135.yaml",
@@ -2649,7 +2852,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_135.yaml",
     "source_id": "structural_main_p2_135",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_136.yaml",
@@ -2662,7 +2866,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_136.yaml",
     "source_id": "structural_main_p2_136",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_137.yaml",
@@ -2675,7 +2880,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_137.yaml",
     "source_id": "structural_main_p2_137",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_138.yaml",
@@ -2688,7 +2894,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_138.yaml",
     "source_id": "structural_main_p2_138",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_139.yaml",
@@ -2701,7 +2908,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_139.yaml",
     "source_id": "structural_main_p2_139",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_140.yaml",
@@ -2714,7 +2922,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_140.yaml",
     "source_id": "structural_main_p2_140",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_141.yaml",
@@ -2727,7 +2936,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_141.yaml",
     "source_id": "structural_main_p2_141",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_142.yaml",
@@ -2740,7 +2950,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_142.yaml",
     "source_id": "structural_main_p2_142",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_143.yaml",
@@ -2753,7 +2964,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_143.yaml",
     "source_id": "structural_main_p2_143",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_144.yaml",
@@ -2766,7 +2978,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_144.yaml",
     "source_id": "structural_main_p2_144",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_145.yaml",
@@ -2779,7 +2992,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_145.yaml",
     "source_id": "structural_main_p2_145",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_146.yaml",
@@ -2792,7 +3006,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_146.yaml",
     "source_id": "structural_main_p2_146",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_147.yaml",
@@ -2805,7 +3020,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_147.yaml",
     "source_id": "structural_main_p2_147",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_148.yaml",
@@ -2818,7 +3034,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_148.yaml",
     "source_id": "structural_main_p2_148",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_149.yaml",
@@ -2831,7 +3048,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_149.yaml",
     "source_id": "structural_main_p2_149",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_150.yaml",
@@ -2844,7 +3062,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_150.yaml",
     "source_id": "structural_main_p2_150",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_151.yaml",
@@ -2857,7 +3076,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_151.yaml",
     "source_id": "structural_main_p2_151",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_152.yaml",
@@ -2870,7 +3090,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_152.yaml",
     "source_id": "structural_main_p2_152",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_153.yaml",
@@ -2883,7 +3104,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_153.yaml",
     "source_id": "structural_main_p2_153",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_154.yaml",
@@ -2896,7 +3118,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_154.yaml",
     "source_id": "structural_main_p2_154",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_155.yaml",
@@ -2909,7 +3132,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_155.yaml",
     "source_id": "structural_main_p2_155",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_156.yaml",
@@ -2922,7 +3146,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_156.yaml",
     "source_id": "structural_main_p2_156",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_157.yaml",
@@ -2935,7 +3160,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_157.yaml",
     "source_id": "structural_main_p2_157",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_158.yaml",
@@ -2948,7 +3174,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_158.yaml",
     "source_id": "structural_main_p2_158",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_159.yaml",
@@ -2961,7 +3188,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_159.yaml",
     "source_id": "structural_main_p2_159",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_160.yaml",
@@ -2974,7 +3202,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_160.yaml",
     "source_id": "structural_main_p2_160",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_161.yaml",
@@ -2987,7 +3216,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_161.yaml",
     "source_id": "structural_main_p2_161",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_162.yaml",
@@ -3000,7 +3230,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_162.yaml",
     "source_id": "structural_main_p2_162",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_163.yaml",
@@ -3013,7 +3244,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_163.yaml",
     "source_id": "structural_main_p2_163",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_164.yaml",
@@ -3026,7 +3258,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_164.yaml",
     "source_id": "structural_main_p2_164",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_165.yaml",
@@ -3039,7 +3272,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_165.yaml",
     "source_id": "structural_main_p2_165",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_166.yaml",
@@ -3052,7 +3286,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_166.yaml",
     "source_id": "structural_main_p2_166",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_167.yaml",
@@ -3065,7 +3300,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_167.yaml",
     "source_id": "structural_main_p2_167",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_168.yaml",
@@ -3078,7 +3314,8 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_168.yaml",
     "source_id": "structural_main_p2_168",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   },
   {
     "source": "/home/yibo/paper1/docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs/structural_main_p2_169.yaml",
@@ -3091,6 +3328,7 @@
     "native_config": "/home/yibo/paper1/nerfstudio/experiments/paper1/native-protocols/structural_main_p2_169.yaml",
     "source_id": "structural_main_p2_169",
     "pose_mode": "file",
-    "canonical_spacing_mode": "uniform"
+    "canonical_spacing_mode": "uniform",
+    "materialization": "generated on demand by prepare_paper_protocols.py; not checked out as one YAML per case"
   }
 ]

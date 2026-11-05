@@ -16,3 +16,7 @@
 训练使用原生 Nerfstudio Trainer/DataParser/DataManager/Model/Pipeline 及 gsplat 策略和算子。历史训练代码仅保存在 `source_reference` 供追溯，不能当作当前运行入口。历史 checkpoints、旧环境和编译二进制未迁入。
 
 完整旧运行输入保留在本机结果归档，SHA256 和消费者关系分块记录在 `results/catalog/complete-assets-20261105`。被 Git 忽略的源归档仍可能包含不可再生的历史渲染，不能按普通缓存清理；只有对象 `builds` 和 `artifact-builds` 是可重建输出。
+
+## 循环与按需生成
+
+主实验使用 `matrices/main.json`，通过 `paper1 matrix` 查看 624 个组合；显式指定 `--train` 才按循环逐个运行。没有提前展开 624 份 YAML。旧证据通过 `paper1 history` 按需读取，完整来源保存在 results/history.json 指定的 Git 快照。238 份原生协议 YAML 也改为按需生成；冻结原始科学协议仍保留。

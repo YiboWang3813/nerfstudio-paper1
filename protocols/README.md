@@ -1,0 +1,26 @@
+# 统一规约
+
+本机工作与资源规则先读 [workspace](workspace.md) 和 [development-workflow](development-workflow.md)。方法公式、评估划分、指标与图形显示约定均集中于本目录；带历史标记的协议说明当时实验，不自动变更当前训练矩阵。
+
+- [Ours Ablation Figure Generation Config](ablation-2d-figure-layout.md)
+- [TMI v2 Ablation Figure Configuration](ablation-figure-layout-tmi.md)
+- [Ultrasound Responsibility Density Control Fixed-Protocol Validation Plan](density-control-validation.md)
+- [开发与实验交付规约](development-workflow.md)
+- [P1 paper-final metric protocol (2026-09-08)](final-paper-metrics-freeze-stage.md)
+- [P1 paper-final metric protocol (2026-09-08)](final-paper-metrics.md)
+- [Holdout Protocol Analysis](holdout-splits.md)
+- [IEEE single-column sensitivity figure contract](hyperparameter-figure-layout-tmi.md)
+- [Skill-guided figure revision](hyperparameter-figure-layout.md)
+- [Ours + FiMA joint feasibility: Milestone A/B validation](joint-pose-ab-protocol-and-gradient-bridge.md)
+- [NVS 与插值评测双协议策略（当前代码基线）](liver-nvs-and-interpolation.md)
+- [TMI v2 Four-Dataset 2D Rendering Figure](main-2d-figure-layout-tmi.md)
+- [Frozen 2D Rendering Figure Production Config](main-2d-figure-layout.md)
+- [Multi-Method Production Comparison Lifecycle](main-comparison.md)
+- [Ours Production Ablation Lifecycle](ours-ablations.md)
+- [Ours Renderer：Tile Mapper + Alpha 合成（`plane_cond2d`）数学推导](plane-conditioning-math.md)
+- [FiMA Pose Protocol Stage 1](pose-prior-fima-pose-protocol-stage1.md)
+- [简化切片深度衰减公式验证记录（2026-06-17）](slice-depth-attenuation.md)
+- [Online Local Window：每帧等预算步数调度（推导与伪代码）](ultrags-baseline-online-local-window-budget.md)
+- [ultrags-baseline-online-stable-computation-burden](ultrags-baseline-online-stable-computation-burden.md)
+- [Online Ultrasound GS 更新规格](ultrags-baseline-online-update-spec.md)
+- [本机工作区与资源规约](workspace.md)

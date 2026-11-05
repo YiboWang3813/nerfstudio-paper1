@@ -4,6 +4,7 @@
 
 | 入口 | 用途 |
 | --- | --- |
+| [完整资产迁移与删除准备度](current/COMPLETE_ASSET_MIGRATION.md) | 覆盖未提交和被忽略资产、图表工程及完整校验 |
 | [当前研究导航](current/README.md) | 八种保留方法、四类数据、当前验证与文稿边界 |
 | [历史论文证据](archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/README.md) | 源端最终证据包，保留原始实验身份 |
 | [历史消融表](archive/eehpc-20261017/04_experiments/production/final_ablation_tables_20260916/README.md) | 原始消融表及来源 |

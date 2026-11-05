@@ -199,3 +199,7 @@ camera_paths/
 /paper1_legacy/wandb
 /paper1_legacy/artifacts
 /paper1_legacy/workspace
+
+# Retained historical source archive: local custody, indexed by migration manifests.
+# This is not a disposable cache; current implementation is in nerfstudio/ and gsplat/.
+/experiments/paper1/source_reference/eehpc-20261105/

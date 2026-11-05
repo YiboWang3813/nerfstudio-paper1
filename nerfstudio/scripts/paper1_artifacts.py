@@ -6,7 +6,14 @@ import importlib
 import json
 import sys
 
-from nerfstudio.research_artifacts.paths import DOCS, RESULTS, WORKSPACE, configure_object, mapped_path, prepare_view
+from nerfstudio.research_artifacts.paths import (
+    RESULTS,
+    WORKSPACE,
+    configure_object,
+    evidence_root,
+    mapped_path,
+    prepare_view,
+)
 from nerfstudio.scripts.ultrasound_resources import resources
 
 GENERATORS = (
@@ -30,9 +37,7 @@ def build(name, object_id=None):
     output = WORKSPACE / "results/artifact-builds" / name / str(time.time_ns())
     output.mkdir(parents=True)
     module = importlib.import_module("nerfstudio.research_artifacts.generators." + name)
-    source = DOCS / "04_experiments/production/final_paper_evidence_20260910"
-    if not source.is_dir():
-        source = WORKSPACE / "docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910"
+    source = evidence_root()
     for loaded_name, loaded in list(sys.modules.items()):
         if not loaded_name.startswith("nerfstudio.research_artifacts.generators.") or loaded is None:
             continue

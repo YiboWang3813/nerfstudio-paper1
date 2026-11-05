@@ -3,19 +3,17 @@
 import json
 from pathlib import Path
 
+from nerfstudio.research_artifacts.paths import evidence_root
 from nerfstudio.scripts.ultrasound_resources import resources
 
 
 def main():
     root = Path("/home/yibo/paper1")
-    source = (
-        root
-        / "docs/archive/eehpc-20261017/04_experiments/production/final_paper_evidence_20260910/audits/resolved_configs"
-    )
     dest = root / "nerfstudio/experiments/paper1/native-protocols"
     dest.mkdir(exist_ok=True)
     rows = []
     with resources(gpu=False):
+        source = evidence_root() / "audits/resolved_configs"
         import yaml  # noqa: PLC0415 - import under the shared-runtime lock
 
         from nerfstudio.configs.paper1_frozen_protocol import native_frozen_config  # noqa: PLC0415

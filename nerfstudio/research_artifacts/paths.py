@@ -1,15 +1,43 @@
-"""Resolve historical source references while preserving stored experiment IDs."""
+"""Resolve frozen evidence and historical run paths without a documentation mirror."""
 
+import fcntl
+import hashlib
 import json
+import shutil
+import zipfile
+from functools import lru_cache
 from pathlib import Path
 
 WORKSPACE = Path(__file__).resolve().parents[3]
 RESULTS = WORKSPACE / "results/archive/eehpc-20261105"
-DOCS = WORKSPACE / "docs/archive/eehpc-20261105/supplement"
+DOCS = WORKSPACE / "docs"
 VIEW = WORKSPACE / "migration/complete-assets-20261105/compat-workspace"
-
-
 _OBJECT_ALIASES = {}
+
+
+@lru_cache(maxsize=1)
+def evidence_root():
+    """Validate the immutable input package and expand it once into shared cache."""
+    archive = WORKSPACE / "results/inputs/paper-evidence-v1.zip"
+    manifest = json.loads(archive.with_suffix(".json").read_text())
+    digest = hashlib.sha256(archive.read_bytes()).hexdigest()
+    if digest != manifest["sha256"]:
+        raise ValueError(f"Frozen evidence checksum mismatch: {archive}")
+    cache = WORKSPACE.parent / "shared/cache/paper1-artifacts/evidence" / digest
+    cache.mkdir(parents=True, exist_ok=True)
+    payload = cache / "payload"
+    with (cache / "extract.lock").open("a") as lock:
+        fcntl.flock(lock, fcntl.LOCK_EX)
+        if not (cache / "complete").exists():
+            shutil.rmtree(payload, ignore_errors=True)
+            payload.mkdir()
+            with zipfile.ZipFile(archive) as source:
+                for member in source.infolist():
+                    if not (payload / member.filename).resolve().is_relative_to(payload.resolve()):
+                        raise ValueError(f"Unsafe evidence member: {member.filename}")
+                source.extractall(payload)
+            (cache / "complete").write_text(digest + "\n")
+    return payload
 
 
 def configure_object(object_id=None):
@@ -26,15 +54,16 @@ def mapped_path(value=".", *parts):
     for original in sorted(_OBJECT_ALIASES, key=len, reverse=True):
         if value == original or value.startswith(original + "/"):
             return Path(_OBJECT_ALIASES[original], value[len(original) :].lstrip("/"), *parts)
+    marker = "final_paper_evidence_20260910"
+    if marker in value.split("/"):
+        suffix = value.split(marker, 1)[1].lstrip("/")
+        return evidence_root().joinpath(suffix, *parts)
     roots = {
         "/home/boywang25/ultrasound-scene-reconstruction/omniultra/outputs": RESULTS / "legacy/outputs",
-        "/home/boywang25/ultrasound-scene-reconstruction/omniultra/docs": VIEW / "docs",
         "/home/boywang25/ultrasound-scene-reconstruction/omniultra": VIEW,
         "/home/boywang25/paper1/results": RESULTS,
-        "/home/boywang25/paper1/docs": DOCS,
         "/home/boywang25/paper1/data": Path("/home/yibo/shared/datasets/paper1-unpublished/eehpc-20261017"),
         "outputs": RESULTS / "legacy/outputs",
-        "docs": VIEW / "docs",
     }
     for original, target in roots.items():
         if value == original or value.startswith(original + "/"):
@@ -43,34 +72,14 @@ def mapped_path(value=".", *parts):
 
 
 def prepare_view():
-    """Local path compatibility only; never exposes a source checkpoint directory."""
-    (VIEW / "docs").mkdir(parents=True, exist_ok=True)
-    for old, new in {
-        "production": "04_experiments/production",
-        "datasets": "02_datasets",
-        "experiments": "04_experiments/protocol_notes",
-        "methods": "01_problem_and_methods",
-        "literature": "06_literature",
-        "paper": "05_manuscript/legacy_writing",
-    }.items():
-        link = VIEW / "docs" / old
-        target = DOCS / new
-        if not target.exists():
-            target = WORKSPACE / "docs/archive/eehpc-20261017" / new
-        if link.is_symlink() and link.readlink() != target:
+    """Keep historical run resolution local; documentation has no compatibility tree."""
+    VIEW.mkdir(parents=True, exist_ok=True)
+    old_docs = VIEW / "docs"
+    if old_docs.is_dir() and all(p.is_symlink() for p in old_docs.iterdir()):
+        for link in old_docs.iterdir():
             link.unlink()
-        if not link.is_symlink():
-            link.symlink_to(target, target_is_directory=True)
-    for name in ("configs_hydra", "configs", "scripts"):
-        link = VIEW / name
-        target = (
-            WORKSPACE
-            / "nerfstudio/experiments/paper1/source_reference/eehpc-20261105/source_workspace/omniultra"
-            / name
-        )
-        if not link.is_symlink():
-            link.symlink_to(target, target_is_directory=True)
+        old_docs.rmdir()
     link = VIEW / "outputs"
-    if not link.is_symlink():
+    if not link.exists() and not link.is_symlink():
         link.symlink_to(RESULTS / "legacy/outputs", target_is_directory=True)
     return VIEW

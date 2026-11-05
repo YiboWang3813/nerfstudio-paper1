@@ -20,3 +20,7 @@
 ## 循环与按需生成
 
 主实验使用 `matrices/main.json`，通过 `paper1 matrix` 查看 624 个组合；显式指定 `--train` 才按循环逐个运行。没有提前展开 624 份 YAML。旧证据通过 `paper1 history` 按需读取，完整来源保存在 results/history.json 指定的 Git 快照。238 份原生协议 YAML 也改为按需生成；冻结原始科学协议仍保留。
+
+## 文档与冻结输入边界
+
+可读规约在 [docs/protocols](../../../docs/protocols/README.md)，文稿在 docs/manuscript；图表输出在 results/objects。原始最终证据包集中为 [paper-evidence-v1.zip](../../../results/inputs/paper-evidence-v1.zip)，同名 JSON 固定 SHA256。绘图入口校验后按需展开到 shared/cache，不依赖 docs/archive 或目录兼容镜像。
